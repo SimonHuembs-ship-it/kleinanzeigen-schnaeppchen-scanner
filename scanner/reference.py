@@ -47,23 +47,24 @@ def _auto_query(titel: str, ziel: dict | None = None) -> str:
         ersatz = ziel.get("referenz_marke", "")
         for falsch in ziel.get("tippfehler", []) or []:
             text = re.sub(rf"\b{re.escape(str(falsch))}\b", ersatz, text, flags=re.I)
-    token = []
+
+    woerter, zahlen = [], []
     for wort in re.split(r"[\s,;|/*#\-]+", text):
-        sauber = wort.strip(".:!?()[]\"'")
-        if sauber.lower() in RAUSCHEN:
+        sauber = wort.strip(".:!?()[]")
+        if not sauber or sauber.lower() in RAUSCHEN:
             continue
-        if len(sauber) < 2 and not (sauber.isupper() or sauber.isdigit()):
+        if sauber.lower() in {t.lower() for t in woerter + zahlen}:
             continue
-        if not sauber:
-            continue
-        if not re.search(r"[A-Za-zÄÖÜäöü0-9]", sauber):
-            continue
-        if sauber.lower() in {t.lower() for t in token}:
-            continue
-        token.append(sauber)
-        if len(token) == 4:
-            break
-    return " ".join(token)
+        if any(z.isdigit() for z in sauber):
+            zahlen.append(sauber)
+        elif len(sauber) > 1:
+            woerter.append(sauber)
+
+    # Zahlen tragen den Preis: Baujahr, Speichergroesse, Typcode. Sie stehen im
+    # Titel aber oft hinten, deshalb werden sie getrennt eingesammelt statt
+    # abgeschnitten. Ein MacBook Pro 16 Zoll von 2019 mit i7 kostet sonst
+    # denselben Referenzpreis wie eines mit M4.
+    return " ".join(woerter[:3] + zahlen[:3])
 
 
 def _frage_token(frage: str) -> list:
@@ -81,15 +82,19 @@ def _passt_zur_frage(titel: str, token: list) -> bool:
     if not token:
         return False
     text = vorfilter.normalisieren(titel).lower()
+    zahlen = [t for t in token if any(z.isdigit() for z in t)]
+    if any(t not in text for t in zahlen):
+        return False
     treffer = sum(1 for t in token if t in text)
-    return treffer >= max(2, round(len(token) * 0.75))
+    return treffer >= max(2, round(len(token) * 0.7))
 
 
 def _kennwerte(preise: list) -> tuple:
     preise = sorted(preise)
     median = statistics.median(preise)
     p25 = preise[max(0, len(preise) // 4 - 1)]
-    return median, p25
+    p75 = preise[min(len(preise) - 1, (len(preise) * 3) // 4)]
+    return median, p25, p75
 
 
 def referenzpreis(api, ziel: dict, anzeige, detail=None, cache: dict | None = None) -> dict | None:
@@ -148,7 +153,7 @@ def referenzpreis(api, ziel: dict, anzeige, detail=None, cache: dict | None = No
     elif len(preise) < MINDEST_VERGLEICHE:
         ergebnis = None
     else:
-        median, p25 = _kennwerte(preise)
+        median, p25, p75 = _kennwerte(preise)
         # Angebotspreise liegen ueber Transaktionspreisen. Bei Fahrzeugen ist
         # der Abstand mit 8 bis 15 Prozent belegt, deshalb der Abschlag.
         korrektur = float(ziel.get("angebotsaufschlag", 0.0))
@@ -159,6 +164,10 @@ def referenzpreis(api, ziel: dict, anzeige, detail=None, cache: dict | None = No
             "n": len(preise),
             "query": frage,
             "korrektur": korrektur,
+            # Streut das Vergleichsfeld zu breit, vergleicht die Frage
+            # verschiedene Produkte und der Median traegt nicht.
+            "streuung": round(p75 / p25, 2) if p25 else None,
+            "belastbar": bool(p25 and p75 / p25 <= 2.5),
         }
 
     if cache is not None:

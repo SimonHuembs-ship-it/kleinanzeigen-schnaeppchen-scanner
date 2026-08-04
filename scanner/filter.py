@@ -39,6 +39,7 @@ def normalisieren(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text or "")
     text = ZIERRAT.sub(" ", text)
     text = unicodedata.normalize("NFC", text)
+    text = re.sub(r"[\u2018\u2019\u201a\u201c\u201d\u201e\u2032\u2033\"']", "", text)
     return re.sub(r"\s+", " ", text).strip()
 
 

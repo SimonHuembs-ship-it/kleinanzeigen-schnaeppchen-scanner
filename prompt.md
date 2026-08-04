@@ -39,8 +39,31 @@ Für jeden Kandidaten gehst du diese fünf Punkte durch.
 Unter `referenz.query` steht, wonach für den Median gesucht wurde. Prüfe gegen
 Titel, `attribute` und Beschreibung, ob das dasselbe Produkt ist. Ein 256-GB-Gerät
 gegen 512-GB-Anzeigen zu vergleichen erzeugt Phantomersparnisse, ebenso ein
-Basismodell gegen eine Ausstattungsvariante. Passt es nicht, verwirf den Kandidaten
-oder korrigiere die Einschätzung nach unten und schreib das in die Begründung.
+Basismodell gegen eine Ausstattungsvariante oder ein Baujahr gegen ein anderes.
+
+`referenz.belastbar` sagt dir, ob das Vergleichsfeld eng genug war. Steht dort
+`false` oder ist `referenz.streuung` größer als 2,5, dann hat der Median
+verschiedene Produkte gemischt. Behandle ihn dann als nicht vorhanden.
+
+**Der Nachweis liegt bei dir, nicht beim Median.** Für jeden Fund, den du meldest,
+musst du den Marktwert selbst bestätigt haben, und zwar auf einem dieser Wege:
+
+- mindestens zwei konkrete Vergleichsangebote desselben Modells mit derselben
+  wesentlichen Ausstattung, per Websuche gefunden, oder
+- eine der Referenzquellen aus Punkt d), oder
+- bei Nischenware eine belegbare Preisangabe aus einer Fachquelle
+
+Nenne das bestätigte Preisniveau in der Begründung. Ein Median ohne eigene
+Bestätigung ist kein Beleg.
+
+**Mindestabstand:** Ein Fund muss nach deiner eigenen Prüfung mindestens
+20 Prozent unter dem bestätigten Marktwert liegen. Liegt er darüber, verwirf ihn,
+auch wenn der Kleinanzeigen-Median etwas anderes suggeriert.
+
+**Erklärt sich der niedrige Preis von selbst, ist es kein Fund.** Unfallschaden,
+Defekt, hohe Laufleistung, ausgelaufener Support, Umbauten, die den Sammlerwert
+senken: In all diesen Fällen ist der Preis richtig und nicht zu niedrig. Ein Fund
+liegt nur vor, wenn der Preis ohne erkennbaren Grund unter dem Markt liegt.
 
 **b) Existiert das Produkt überhaupt?**
 Erfundene Modellnamen mit echt klingenden Spezifikationen sind eine reale Masche.
