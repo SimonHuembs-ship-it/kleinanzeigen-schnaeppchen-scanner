@@ -81,9 +81,18 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
                  "nach_preisschwelle": 0, "nach_scoring": 0, "ausschluesse": {}}
     start = time.time()
 
+    budget = int(einstellungen.get("max_requests", 4000))
+
     for ziel in ziele:
+        if api.requests >= budget:
+            statistik["budget_erschoepft"] = True
+            print(f"Budget erschoepft, Ziel {ziel['id']} und folgende uebersprungen",
+                  file=sys.stderr)
+            break
         cache: dict = {}
         anzeigen = anzeigen_sammeln(api, ziel, von, bis, statistik)
+        print(f"  {ziel['id']}: {len(anzeigen)} Anzeigen gesichtet, "
+              f"{api.requests} Requests bisher", file=sys.stderr, flush=True)
 
         # Bei einem Sweep ist "posted" der einzige Zeitfilter, denn modAfter
         # erfasst auch Bearbeitungen. Rund 2 Prozent sind gebumpte Altanzeigen.
@@ -111,12 +120,25 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
         statistik["nach_vorfilter"] += len(gefiltert)
 
         schwelle = float(ziel.get("schwelle", 0.80))
+        ohne_referenz = int(ziel.get("ohne_referenz", 0))
         for anzeige in gefiltert:
+            if api.requests >= budget:
+                statistik["budget_erschoepft"] = True
+                break
+
             referenzwert = reference.referenzpreis(api, ziel, anzeige, cache=cache)
             if referenzwert:
                 verhaeltnis = float(anzeige.price) / referenzwert["median"]
                 if verhaeltnis > schwelle:
                     continue
+            elif ohne_referenz > 0:
+                # Ohne Vergleichsbasis faellt der Preisfilter aus. Nur begrenzt
+                # zulassen, sonst laeuft jede gematchte Anzeige in den teuren
+                # Detailabruf.
+                ohne_referenz -= 1
+            else:
+                statistik["ohne_referenz_verworfen"] = statistik.get("ohne_referenz_verworfen", 0) + 1
+                continue
             statistik["nach_preisschwelle"] += 1
 
             detail = api.detail(anzeige.id)

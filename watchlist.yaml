@@ -12,6 +12,9 @@
 einstellungen:
   rate_limit: 0.8
   mindestpunkte: 60
+  # Harte Obergrenze pro Lauf. Wird sie erreicht, bricht der Scan ab und
+  # vermerkt das im Laufprotokoll, statt still weniger zu liefern.
+  max_requests: 4000
 
 ziele:
 
@@ -35,7 +38,8 @@ ziele:
     ausschluss: [cayenne, macan, panamera, taycan, boxster, cayman, modellauto,
                  "1:18", "1:43", felgen, teppich, schluesselanhaenger, sitze,
                  lenkrad, auspuff, motorhaube, stossstange, teileträger, "et träger"]
-    referenz_query: "Porsche 911 Carrera"
+    referenz_query: auto
+    referenz_marke: "Porsche 911"
 
   - id: tesla
     aktiv: true
@@ -50,7 +54,8 @@ ziele:
     tippfehler: [telsa, tesle, performenc, perfomance, performence, longrange]
     ausschluss: [wandladestation, wallbox, ladekabel, felgen, modellauto,
                  spielzeug, "tesla coil", teslaspule, powerwall]
-    referenz_query: "Tesla Model"
+    referenz_query: auto
+    referenz_marke: "Tesla"
 
   - id: youngtimer-alltag
     aktiv: true
@@ -82,7 +87,8 @@ ziele:
     # Zustand 3 kostet 7.100 Euro und frisst ein Vielfaches an Elektronik.
     ausschluss: [w140, a8, 750i, 730i, "s 320", "s320", teileträger, "et träger",
                  modellauto, felgen, prospekt, ersatzteile, bastlerfahrzeug]
-    referenz_query: "Youngtimer Oldtimer"
+    referenz_query: auto
+    referenz_marke: ""
 
   # -- Consumer-Elektronik ---------------------------------------------------
 
@@ -98,8 +104,8 @@ ziele:
     tippfehler: [ipone, iphon, "i-phone", iphione, ihpone, aple]
     ausschluss: [huelle, hülle, case, panzerglas, ladekabel, adapter, display,
                  ersatzteil, defekt, backcover, akku, kaputt, gesperrt, icloud]
-    referenz_query: "iPhone"
-    referenz_attribute: [Art]
+    referenz_query: auto
+    referenz_marke: "iPhone"
 
   - id: macbook
     aktiv: true
@@ -114,7 +120,8 @@ ziele:
     tippfehler: [mackbook, macbock, macboock, "mac book"]
     ausschluss: [huelle, hülle, tasche, netzteil, ladekabel, display, ersatzteil,
                  defekt, tastatur, akku, logicboard, "nur teile", neo]
-    referenz_query: "MacBook Pro"
+    referenz_query: auto
+    referenz_marke: "MacBook"
 
   - id: grafikkarten
     aktiv: true
@@ -132,7 +139,8 @@ ziele:
     tippfehler: [nvidea, nividia, geforze, "ge force", graphikkarte, grafikarte]
     ausschluss: [wasserkuehler, wakue, backplate, halterung, riser, luefter,
                  defekt, "nur karton", ovp only, attrappe]
-    referenz_query: "Grafikkarte"
+    referenz_query: auto
+    referenz_marke: "Nvidia"
 
   - id: kameras-leica
     aktiv: true
@@ -146,7 +154,9 @@ ziele:
     tippfehler: [leika, leia, leca, leiga, sumicron, summikron, noktilux]
     ausschluss: [huelle, tasche, filter, gegenlichtblende, deckel, riemen,
                  prospekt, buch, poster, repro, replika]
-    referenz_query: "Leica"
+    referenz_query: auto
+    referenz_marke: "Leica"
+    ohne_referenz: 3
 
   # -- Nischenteile ----------------------------------------------------------
 
@@ -175,7 +185,9 @@ ziele:
     tippfehler: [neuman, "neumann u 87", "akg c 414", revoy, refox, studert]
     ausschluss: [nachbau, clone, replika, china, staender, spinne, kabel,
                  popschutz, adapter, prospekt]
-    referenz_query: "Neumann Mikrofon"
+    referenz_query: auto
+    referenz_marke: ""
+    ohne_referenz: 5
 
   - id: vintage-hifi
     aktiv: true
@@ -190,7 +202,9 @@ ziele:
                  klipsh, klipch, "mc intosh", makintosh, nakamishi]
     ausschluss: [nadel, tonabnehmer einzeln, riemen, haube, prospekt, poster,
                  nachbau, replika, defekt bastler]
-    referenz_query: "Plattenspieler Verstaerker"
+    referenz_query: auto
+    referenz_marke: ""
+    ohne_referenz: 5
 
   # -- Notverkaeufe kategorieuebergreifend -----------------------------------
 
@@ -204,4 +218,6 @@ ziele:
                "Haushaltsaufloesung wertvoll", "muss schnell weg wegen Umzug"]
     tippfehler: ["Not Verkauf", "Sammlungs Aufloesung"]
     ausschluss: [gesucht, ankauf, entruempelung, container]
-    referenz_query: ""
+    referenz_query: auto
+    referenz_marke: ""
+    ohne_referenz: 8
