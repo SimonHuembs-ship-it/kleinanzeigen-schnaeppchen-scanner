@@ -227,8 +227,10 @@ ziele:
                "Tannoy Monitor", "Accuphase", "Luxman Verstaerker"]
     tippfehler: [techniks, technix, tehnics, thorrens, thoren, torens,
                  klipsh, klipch, "mc intosh", makintosh, nakamishi]
-    ausschluss: [nadel, tonabnehmer einzeln, riemen, haube, prospekt, poster,
-                 nachbau, replika, defekt bastler]
+    # TA Technix ist eine Fahrwerksmarke und faengt sich sonst im
+    # Technics-Tippfehlermuster.
+    ausschluss: ["ta technix", gewindefahrwerk, fahrwerk, federbein, felgen,
+                 nadel, riemen, haube, prospekt, poster, nachbau, replika]
     referenz_query: auto
     referenz_marke: ""
     ohne_referenz: 5

@@ -80,7 +80,7 @@ def tippfehler_im_titel(titel: str, ziel: dict) -> str | None:
     """
     text = normalisieren(titel).lower()
     for falsch in ziel.get("tippfehler", []):
-        if re.search(rf"\b{re.escape(str(falsch).lower())}", text):
+        if re.search(rf"\b{re.escape(str(falsch).lower())}\b", text):
             return str(falsch)
     return None
 

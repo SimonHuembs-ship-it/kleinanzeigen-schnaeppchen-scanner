@@ -44,8 +44,14 @@ def main() -> int:
             "subject": betreff,
             "html": inhalt,
         }).encode("utf-8"),
+        # Cloudflare vor api.resend.com blockt den Standard-User-Agent von
+        # urllib mit Fehlercode 1010. Ein regulaerer Browser-Header genuegt.
         headers={"Authorization": f"Bearer {schluessel}",
-                 "Content-Type": "application/json"},
+                 "Content-Type": "application/json",
+                 "Accept": "application/json",
+                 "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                "Chrome/124.0.0.0 Safari/537.36")},
         method="POST",
     )
 
