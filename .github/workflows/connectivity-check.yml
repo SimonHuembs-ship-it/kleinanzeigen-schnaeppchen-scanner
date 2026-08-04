@@ -1,0 +1,63 @@
+name: Connectivity Check
+
+# Klaert die einzige offene Architekturfrage: kommt ein GitHub-Actions-Runner
+# an die Kleinanzeigen-Mobile-API heran, oder blockt sie Rechenzentrums-IPs?
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Runner-Herkunft
+        run: |
+          echo "Oeffentliche IP des Runners:"
+          curl -s https://ifconfig.me/ip || true
+          echo
+          curl -s "https://ipinfo.io/json" || true
+
+      - name: Abhaengigkeit installieren
+        run: pip install --quiet kleinanzeigen-api
+
+      - name: API-Zugriff testen
+        run: |
+          python - <<'PY'
+          import sys, traceback
+          from kleinanzeigen_api import KleinanzeigenAPI
+
+          api = KleinanzeigenAPI()
+
+          try:
+              ads = api.search(q="iphone 15 pro", sort_type="DATE_DESCENDING", pages=1)
+          except Exception:
+              print("FEHLGESCHLAGEN bei search()")
+              traceback.print_exc()
+              sys.exit(1)
+
+          print(f"search(): {len(ads)} Treffer")
+          if not ads:
+              print("LEERE ERGEBNISMENGE - sieht aus wie eine stille Sperre")
+              sys.exit(1)
+
+          a = ads[0]
+          print(f"  neueste Anzeige: {a.id} | {a.posted} | {a.price} EUR | {a.title[:60]}")
+
+          try:
+              raw = api._fetch_ad_json(a.id)
+              v = list(raw.values())[0]["value"]
+              print("get_ad(): ok")
+              print(f"  Konto seit: {v.get('user-since-date-time', {}).get('value')}")
+              print(f"  Bewertung:  {v.get('user-rating')}")
+              print(f"  Versand:    {v.get('shipping-options')}")
+          except Exception:
+              print("FEHLGESCHLAGEN bei get_ad()")
+              traceback.print_exc()
+              sys.exit(1)
+
+          print("ERGEBNIS: GitHub Actions kommt an die API heran.")
+          PY
