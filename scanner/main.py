@@ -1,0 +1,275 @@
+"""Stufe 1: der Sammler.
+
+Holt Rohdaten, filtert deterministisch, rechnet Referenzpreise, scort die
+Serioesitaet und schreibt candidates.json. Das inhaltliche Urteil faellt Stufe 2.
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import sys
+import time
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+import yaml
+
+from .api import Api, Gesperrt, eingestellt, jetzt
+from . import filter as vorfilter
+from . import reference, score as scoring
+
+WURZEL = Path(__file__).resolve().parent.parent
+SEEN = WURZEL / "seen_ads.csv"
+KANDIDATEN = WURZEL / "candidates.json"
+BERLIN = timezone(timedelta(hours=2))
+
+
+def gesehene_laden() -> set:
+    if not SEEN.exists():
+        return set()
+    with SEEN.open(encoding="utf-8") as datei:
+        return {zeile["ad_id"] for zeile in csv.DictReader(datei)}
+
+
+def gesehene_ergaenzen(neu: set, stempel: str) -> None:
+    existiert = SEEN.exists()
+    with SEEN.open("a", newline="", encoding="utf-8") as datei:
+        schreiber = csv.writer(datei)
+        if not existiert:
+            schreiber.writerow(["ad_id", "erste_sichtung"])
+        for ad_id in sorted(neu):
+            schreiber.writerow([ad_id, stempel])
+
+
+def anzeigen_sammeln(api: Api, ziel: dict, von: datetime, bis: datetime, statistik: dict) -> list:
+    """Kategorie-Sweep oder Keyword-Suchen, je nach Ziel."""
+    gefunden = {}
+
+    if ziel.get("verfahren") == "sweep":
+        for anzeige in api.fenster(category_id=ziel["kategorie"], von=von, bis=bis,
+                                   min_price=ziel.get("preis_min"),
+                                   max_price=ziel.get("preis_max")):
+            gefunden[anzeige.id] = anzeige
+    else:
+        begriffe = list(ziel.get("begriffe", [])) + list(ziel.get("tippfehler", []))
+        for begriff in begriffe:
+            for anzeige in api.suche(begriff,
+                                     category_id=ziel.get("kategorie"),
+                                     min_price=ziel.get("preis_min"),
+                                     max_price=ziel.get("preis_max"),
+                                     seiten=1):
+                gefunden[anzeige.id] = anzeige
+
+    statistik["gesichtet"] += len(gefunden)
+    return list(gefunden.values())
+
+
+def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
+    konfiguration = yaml.safe_load(watchlist_pfad.read_text(encoding="utf-8"))
+    einstellungen = konfiguration.get("einstellungen", {})
+    ziele = [z for z in konfiguration["ziele"] if z.get("aktiv", True)]
+
+    api = Api(rate_limit=float(einstellungen.get("rate_limit", 0.8)))
+    bis = jetzt()
+    von = bis - timedelta(hours=stunden)
+    gesehen = gesehene_laden()
+    neue_ids: set = set()
+    kandidaten = []
+    statistik = {"gesichtet": 0, "nach_modellmatch": 0, "nach_vorfilter": 0,
+                 "nach_preisschwelle": 0, "nach_scoring": 0, "ausschluesse": {}}
+    start = time.time()
+
+    for ziel in ziele:
+        cache: dict = {}
+        anzeigen = anzeigen_sammeln(api, ziel, von, bis, statistik)
+
+        # Bei einem Sweep ist "posted" der einzige Zeitfilter, denn modAfter
+        # erfasst auch Bearbeitungen. Rund 2 Prozent sind gebumpte Altanzeigen.
+        anzeigen = [a for a in anzeigen if (eingestellt(a) or von) >= von]
+
+        passend = []
+        for anzeige in anzeigen:
+            if anzeige.id in gesehen:
+                continue
+            if vorfilter.ist_gesuch(anzeige.title):
+                continue
+            if not vorfilter.passt_zum_ziel(anzeige.title, ziel):
+                continue
+            passend.append(anzeige)
+        statistik["nach_modellmatch"] += len(passend)
+
+        gefiltert = []
+        for anzeige in passend:
+            neue_ids.add(anzeige.id)
+            if vorfilter.ist_lockpreis(anzeige.price):
+                continue
+            if vorfilter.ist_faelschung(f"{anzeige.title} {anzeige.description or ''}"):
+                continue
+            gefiltert.append(anzeige)
+        statistik["nach_vorfilter"] += len(gefiltert)
+
+        schwelle = float(ziel.get("schwelle", 0.80))
+        for anzeige in gefiltert:
+            referenzwert = reference.referenzpreis(api, ziel, anzeige, cache=cache)
+            if referenzwert:
+                verhaeltnis = float(anzeige.price) / referenzwert["median"]
+                if verhaeltnis > schwelle:
+                    continue
+            statistik["nach_preisschwelle"] += 1
+
+            detail = api.detail(anzeige.id)
+            if not detail:
+                continue
+
+            verkaeufer_anzeigen = None
+            if detail.verkaeufer.id:
+                verkaeufer_anzeigen = api.anzeigen_des_verkaeufers(detail.verkaeufer.id)
+
+            bewertung = scoring.bewerten(anzeige, detail, referenzwert, ziel, verkaeufer_anzeigen)
+            if "ausschluss" in bewertung:
+                grund = bewertung["ausschluss"]
+                statistik["ausschluesse"][grund] = statistik["ausschluesse"].get(grund, 0) + 1
+                continue
+            if bewertung["punkte"] < int(einstellungen.get("mindestpunkte", 60)):
+                statistik["ausschluesse"]["score_zu_niedrig"] = \
+                    statistik["ausschluesse"].get("score_zu_niedrig", 0) + 1
+                continue
+
+            tippfehler = vorfilter.tippfehler_im_titel(anzeige.title, ziel)
+            generisch = vorfilter.wirkt_generisch(anzeige.title)
+            bonus = scoring.unkenntnis_profil(anzeige, detail, bewertung, tippfehler, generisch)
+
+            ersparnis = None
+            if referenzwert:
+                ersparnis = round(referenzwert["median"] - float(anzeige.price), 2)
+
+            kandidaten.append({
+                "id": anzeige.id,
+                "watchlist_id": ziel["id"],
+                "titel": anzeige.title,
+                "url": anzeige.url,
+                "preis": anzeige.price,
+                "preis_typ": anzeige.price_type,
+                "referenz": referenzwert,
+                "p_ratio": bewertung["p_ratio"],
+                "ersparnis_eur": ersparnis,
+                "ort": anzeige.city,
+                "plz": anzeige.zip_code,
+                "eingestellt": eingestellt(anzeige).isoformat() if eingestellt(anzeige) else None,
+                "bilder": detail.bilder[:4],
+                "beschreibung": detail.beschreibung[:1500],
+                "attribute": detail.attribute,
+                "verkaeufer": {
+                    "id": detail.verkaeufer.id,
+                    "name": detail.verkaeufer.name,
+                    "typ": detail.verkaeufer.typ,
+                    "konto_seit": detail.verkaeufer.konto_seit.date().isoformat()
+                                  if detail.verkaeufer.konto_seit else None,
+                    "konto_alter_tage": bewertung["konto_alter_tage"],
+                    "bewertung": detail.verkaeufer.bewertung,
+                    "abzeichen": detail.verkaeufer.abzeichen,
+                    "anzahl_anzeigen": bewertung["anzahl_anzeigen"],
+                },
+                "uebergabe": {
+                    "abholung": bewertung["abholung"],
+                    "versand": detail.versand_moeglich,
+                    "kaeuferschutz": bewertung["kaeuferschutz"],
+                },
+                "score": bewertung["punkte"],
+                "signale": {
+                    "gruen": bewertung["gruen"],
+                    "rot": bewertung["rot"],
+                    "unkenntnis_bonus": bonus,
+                    "tippfehler_im_titel": tippfehler,
+                },
+            })
+            statistik["nach_scoring"] += 1
+
+    kandidaten.sort(key=lambda k: ((k["signale"]["unkenntnis_bonus"], k["ersparnis_eur"] or 0)),
+                    reverse=True)
+    if limit:
+        kandidaten = kandidaten[:limit]
+
+    statistik["requests"] = api.requests
+    statistik["laufzeit_sekunden"] = round(time.time() - start)
+
+    ergebnis = {
+        "generiert": datetime.now(BERLIN).isoformat(timespec="seconds"),
+        "zeitraum": {"von": von.astimezone(BERLIN).isoformat(timespec="seconds"),
+                     "bis": bis.astimezone(BERLIN).isoformat(timespec="seconds")},
+        "statistik": statistik,
+        "kandidaten": kandidaten,
+    }
+
+    KANDIDATEN.write_text(json.dumps(ergebnis, ensure_ascii=False, indent=2), encoding="utf-8")
+    gesehene_ergaenzen(neue_ids - gesehen, bis.date().isoformat())
+    _protokoll_schreiben(ergebnis)
+    return ergebnis
+
+
+def _protokoll_schreiben(ergebnis: dict) -> None:
+    tag = datetime.now(BERLIN).date().isoformat()
+    ordner = WURZEL / "runs" / tag
+    nummer = 1
+    while ordner.exists():
+        nummer += 1
+        ordner = WURZEL / "runs" / f"{tag}-{nummer}"
+    ordner.mkdir(parents=True)
+
+    statistik = ergebnis["statistik"]
+    zeilen = [
+        f"# Scan-Lauf {ergebnis['generiert']}",
+        "",
+        f"Zeitraum: {ergebnis['zeitraum']['von']} bis {ergebnis['zeitraum']['bis']}",
+        "",
+        "| Filterstufe | verbleibend |",
+        "|---|---|",
+        f"| gesichtet | {statistik['gesichtet']} |",
+        f"| Modell-Match | {statistik['nach_modellmatch']} |",
+        f"| Vorfilter | {statistik['nach_vorfilter']} |",
+        f"| Preisschwelle | {statistik['nach_preisschwelle']} |",
+        f"| Scoring | {statistik['nach_scoring']} |",
+        "",
+        f"Requests: {statistik['requests']}, Laufzeit: {statistik['laufzeit_sekunden']} Sekunden",
+        "",
+    ]
+    if statistik["ausschluesse"]:
+        zeilen += ["## Ausschlussgruende", ""]
+        for grund, anzahl in sorted(statistik["ausschluesse"].items(), key=lambda p: -p[1]):
+            zeilen.append(f"- {grund}: {anzahl}")
+        zeilen.append("")
+    (ordner / "scan.md").write_text("\n".join(zeilen), encoding="utf-8")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Kleinanzeigen Schnaeppchen-Scanner, Stufe 1")
+    parser.add_argument("--watchlist", default=str(WURZEL / "watchlist.yaml"))
+    parser.add_argument("--stunden", type=int, default=24)
+    parser.add_argument("--limit", type=int, default=40)
+    argumente = parser.parse_args()
+
+    try:
+        ergebnis = lauf(Path(argumente.watchlist), argumente.stunden, argumente.limit)
+    except Gesperrt as fehler:
+        print(f"ABBRUCH: {fehler}", file=sys.stderr)
+        return 2
+
+    statistik = ergebnis["statistik"]
+    print(f"gesichtet {statistik['gesichtet']}, "
+          f"Modell-Match {statistik['nach_modellmatch']}, "
+          f"Preisschwelle {statistik['nach_preisschwelle']}, "
+          f"Kandidaten {len(ergebnis['kandidaten'])}, "
+          f"{statistik['requests']} Requests in {statistik['laufzeit_sekunden']}s")
+
+    # Eine leere Ergebnismenge bei vorher erfolgreichen Laeufen sieht fuer den
+    # Client genauso aus wie eine Sperre. Deshalb hart melden.
+    if statistik["gesichtet"] == 0:
+        print("ABBRUCH: keine einzige Anzeige gesichtet, vermutlich gesperrt", file=sys.stderr)
+        return 2
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

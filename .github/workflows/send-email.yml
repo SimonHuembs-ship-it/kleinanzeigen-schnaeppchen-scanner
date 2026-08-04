@@ -1,0 +1,28 @@
+name: Mail versenden
+
+# Stufe 3. Loest aus, sobald ein Push email_output.html beruehrt. Die Routine
+# committet diese Datei nur, wenn sie tatsaechlich Funde gefunden hat, also
+# ist der Push selbst das Signal.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "email_output.html"
+  workflow_dispatch:
+
+jobs:
+  senden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Senden
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_AN: ${{ vars.MAIL_AN || 'kleinanzeigen-bot@simonhuembs.com' }}
+          MAIL_VON: ${{ vars.MAIL_VON || 'Kleinanzeigen-Bot <kleinanzeigen-bot@simonhuembs.com>' }}
+        run: python scripts/send_mail.py

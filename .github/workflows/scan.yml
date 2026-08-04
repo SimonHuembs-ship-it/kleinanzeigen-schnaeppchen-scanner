@@ -1,0 +1,45 @@
+name: Scan
+
+# Stufe 1: sammelt die Rohdaten, bevor die Routine um 07:00 urteilt.
+# Cron steht in UTC. Im Winter laeuft der Scan dadurch eine Stunde frueher,
+# was unkritisch ist, weil bis 07:00 genug Puffer bleibt.
+
+on:
+  schedule:
+    - cron: "15 4 * * *"
+  workflow_dispatch:
+    inputs:
+      stunden:
+        description: "Zeitfenster in Stunden"
+        default: "24"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet -r requirements.txt
+
+      - name: Scan
+        env:
+          KLEINANZEIGEN_BASIC_USER: ${{ secrets.KLEINANZEIGEN_BASIC_USER }}
+          KLEINANZEIGEN_BASIC_PW: ${{ secrets.KLEINANZEIGEN_BASIC_PW }}
+        run: python -m scanner.main --stunden "${{ inputs.stunden || 24 }}" --limit 40
+
+      - name: Ergebnis committen
+        run: |
+          git config user.name "kleinanzeigen-scanner"
+          git config user.email "actions@github.com"
+          git add candidates.json seen_ads.csv runs/
+          git diff --staged --quiet && echo "nichts Neues" && exit 0
+          git commit -m "Scan $(date -u +%Y-%m-%d)"
+          git pull --rebase --autostash origin main
+          git push origin main

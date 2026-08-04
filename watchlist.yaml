@@ -1,0 +1,207 @@
+# Jagdziele fuer den Schnaeppchen-Scanner.
+#
+# verfahren: keyword  -> gezielte Suchen inkl. Falschschreibungen. Billig,
+#                        richtig fuer Nischen mit wenigen Anzeigen pro Tag.
+# verfahren: sweep    -> ganze Kategorie im Zeitfenster, Matching lokal.
+#                        Tippfehlerimmun, aber teuer. Nur mit Preisband.
+#
+# schwelle: Anteil des Referenzmedians, bis zu dem ein Treffer weitergeht.
+# angebotsaufschlag: Abschlag auf den Median, weil Angebotspreise ueber den
+#   tatsaechlich erzielten liegen. Bei Fahrzeugen mit 8 bis 15 Prozent belegt.
+
+einstellungen:
+  rate_limit: 0.8
+  mindestpunkte: 60
+
+ziele:
+
+  # -- Fahrzeuge -------------------------------------------------------------
+
+  - id: porsche-911
+    aktiv: true
+    verfahren: sweep
+    kategorie: 216
+    preis_min: 25000
+    preis_max: 160000
+    schwelle: 0.75
+    angebotsaufschlag: 0.10
+    muster:
+      - '\b911\b'
+      - '\b99[123](\.\d)?\b'
+      - '\bcarrera\b'
+      - '\bgt3\b'
+      - '\belfer\b'
+    tippfehler: [porshe, porche, prosche, posche, carrea, carera, carrerra, trubo]
+    ausschluss: [cayenne, macan, panamera, taycan, boxster, cayman, modellauto,
+                 "1:18", "1:43", felgen, teppich, schluesselanhaenger, sitze,
+                 lenkrad, auspuff, motorhaube, stossstange, teileträger, "et träger"]
+    referenz_query: "Porsche 911 Carrera"
+
+  - id: tesla
+    aktiv: true
+    verfahren: sweep
+    kategorie: 216
+    preis_min: 12000
+    preis_max: 70000
+    schwelle: 0.72
+    angebotsaufschlag: 0.10
+    muster:
+      - '\btesla\b'
+    tippfehler: [telsa, tesle, performenc, perfomance, performence, longrange]
+    ausschluss: [wandladestation, wallbox, ladekabel, felgen, modellauto,
+                 spielzeug, "tesla coil", teslaspule, powerwall]
+    referenz_query: "Tesla Model"
+
+  - id: youngtimer-alltag
+    aktiv: true
+    verfahren: sweep
+    kategorie: 216
+    preis_min: 1500
+    preis_max: 25000
+    schwelle: 0.70
+    angebotsaufschlag: 0.10
+    # Die hoechsten Wertzuwaechse liegen bei ehemaligen Alltagsautos, nicht bei
+    # den Ikonen: Honda CRX +260 Prozent seit 2020, BMW 325i Baur +245.
+    muster:
+      - '\bw12[46]\b'
+      - '\bw201\b'
+      - '\br129\b'
+      - '\be30\b'
+      - '\be36\b'
+      - '\bcrx\b'
+      - '\bgolf\s*(1|i|2|ii)\s*(gti|g60)\b'
+      - '\bcorrado\b'
+      - '\b944\b'
+      - '\b968\b'
+      - '\bur[- ]?quattro\b'
+      - '\bintegrale\b'
+      - '\bcosworth\b'
+      - '\b850\s*t5\b'
+    tippfehler: [bwm, merzedes, mercedez, quatro, intergrale, coswort, yountimer]
+    # Billige Oberklasse-Youngtimer sind Wertfallen, keine Funde: W140 S320 in
+    # Zustand 3 kostet 7.100 Euro und frisst ein Vielfaches an Elektronik.
+    ausschluss: [w140, a8, 750i, 730i, "s 320", "s320", teileträger, "et träger",
+                 modellauto, felgen, prospekt, ersatzteile, bastlerfahrzeug]
+    referenz_query: "Youngtimer Oldtimer"
+
+  # -- Consumer-Elektronik ---------------------------------------------------
+
+  - id: apple-mobil
+    aktiv: true
+    verfahren: sweep
+    kategorie: 173
+    preis_min: 150
+    preis_max: 2000
+    schwelle: 0.70
+    muster:
+      - '\biphone\s*1[2-7]\b'
+    tippfehler: [ipone, iphon, "i-phone", iphione, ihpone, aple]
+    ausschluss: [huelle, hülle, case, panzerglas, ladekabel, adapter, display,
+                 ersatzteil, defekt, backcover, akku, kaputt, gesperrt, icloud]
+    referenz_query: "iPhone"
+    referenz_attribute: [Art]
+
+  - id: macbook
+    aktiv: true
+    verfahren: sweep
+    kategorie: 278
+    preis_min: 300
+    preis_max: 5000
+    schwelle: 0.70
+    muster:
+      - '\bmacbook\b'
+      - '\bmbp\b'
+    tippfehler: [mackbook, macbock, macboock, "mac book"]
+    ausschluss: [huelle, hülle, tasche, netzteil, ladekabel, display, ersatzteil,
+                 defekt, tastatur, akku, logicboard, "nur teile", neo]
+    referenz_query: "MacBook Pro"
+
+  - id: grafikkarten
+    aktiv: true
+    verfahren: sweep
+    kategorie: 225
+    preis_min: 250
+    preis_max: 5000
+    schwelle: 0.70
+    # Speicherkrise: gebrauchte GPUs sind derzeit im Wert steigende Gueter. Wer
+    # nach dem Preisgefuehl von 2024 einstellt, liegt massiv unter Markt.
+    muster:
+      - '\brtx\s*(3090|4080|4090|5080|5090)\b'
+      - '\btesla\s*(p40|p100|v100)\b'
+      - '\ba[0-9]{3,4}\s*(gpu|grafikkarte)\b'
+    tippfehler: [nvidea, nividia, geforze, "ge force", graphikkarte, grafikarte]
+    ausschluss: [wasserkuehler, wakue, backplate, halterung, riser, luefter,
+                 defekt, "nur karton", ovp only, attrappe]
+    referenz_query: "Grafikkarte"
+
+  - id: kameras-leica
+    aktiv: true
+    verfahren: keyword
+    kategorie: 245
+    preis_min: 200
+    preis_max: 20000
+    schwelle: 0.70
+    begriffe: ["Leica M", "Leitz Objektiv", "Summicron", "Summilux",
+               "Leica Nachlass", "Fotoausruestung Nachlass", "Kamera Konvolut"]
+    tippfehler: [leika, leia, leca, leiga, sumicron, summikron, noktilux]
+    ausschluss: [huelle, tasche, filter, gegenlichtblende, deckel, riemen,
+                 prospekt, buch, poster, repro, replika]
+    referenz_query: "Leica"
+
+  # -- Nischenteile ----------------------------------------------------------
+
+  - id: dometic-tempomat
+    aktiv: true
+    verfahren: keyword
+    preis_max: 1200
+    schwelle: 0.70
+    begriffe: ["Dometic MagicSpeed", "MS-50 Tempomat", "AP60B", "MagicSpeed MS50",
+               "Waeco MagicSpeed"]
+    tippfehler: ["Magic Speed MS 50", "Dometic Tempomat", "Waeco MS-50", "MS50 Tempomat"]
+    ausschluss: [gesucht, defekt, anleitung, prospekt]
+    referenz_query: "Dometic MagicSpeed MS-50"
+
+  - id: studio-audio
+    aktiv: true
+    verfahren: keyword
+    preis_min: 100
+    preis_max: 8000
+    schwelle: 0.70
+    # Ein Neumann KM84 ist ein unscheinbares Staebchenmikrofon fuer 2.650 bis
+    # 2.980 Euro und wird aus Nachlaessen regelmaessig auf 150 Euro taxiert.
+    begriffe: ["Neumann Mikrofon", "Neumann KM84", "Neumann U87", "AKG C414",
+               "Revox PR99", "Studer Tonbandmaschine", "Tonstudio Aufloesung",
+               "altes Mikrofon Nachlass", "Studiomikrofon Konvolut"]
+    tippfehler: [neuman, "neumann u 87", "akg c 414", revoy, refox, studert]
+    ausschluss: [nachbau, clone, replika, china, staender, spinne, kabel,
+                 popschutz, adapter, prospekt]
+    referenz_query: "Neumann Mikrofon"
+
+  - id: vintage-hifi
+    aktiv: true
+    verfahren: keyword
+    preis_min: 100
+    preis_max: 15000
+    schwelle: 0.70
+    begriffe: ["Technics SL-1200", "Thorens TD", "Linn Sondek", "Klipschorn",
+               "McIntosh Verstaerker", "Quad ESL", "Nakamichi Dragon",
+               "alte Stereoanlage Dachboden", "HiFi Nachlass"]
+    tippfehler: [techniks, technix, tehnics, thorrens, thoren, torens,
+                 klipsh, klipch, "mc intosh", makintosh, nakamishi]
+    ausschluss: [nadel, tonabnehmer einzeln, riemen, haube, prospekt, poster,
+                 nachbau, replika, defekt bastler]
+    referenz_query: "Plattenspieler Verstaerker"
+
+  # -- Notverkaeufe kategorieuebergreifend -----------------------------------
+
+  - id: notverkaeufe
+    aktiv: true
+    verfahren: keyword
+    preis_min: 300
+    preis_max: 50000
+    schwelle: 0.80
+    begriffe: ["Notverkauf", "Sammlungsaufloesung", "Nachlass Sammlung",
+               "Haushaltsaufloesung wertvoll", "muss schnell weg wegen Umzug"]
+    tippfehler: ["Not Verkauf", "Sammlungs Aufloesung"]
+    ausschluss: [gesucht, ankauf, entruempelung, container]
+    referenz_query: ""
