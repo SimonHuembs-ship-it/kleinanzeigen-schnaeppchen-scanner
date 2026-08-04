@@ -6,7 +6,10 @@ name: Scan
 
 on:
   schedule:
-    - cron: "15 4 * * *"
+    # 05:15 Berliner Sommerzeit. Der Scan ueber 24 Stunden dauert deutlich
+    # laenger als der Sechs-Stunden-Test, deshalb knapp zwei Stunden Vorlauf
+    # vor der Routine um 07:00 statt der urspruenglichen 45 Minuten.
+    - cron: "15 3 * * *"
   workflow_dispatch:
     inputs:
       stunden:
@@ -19,7 +22,7 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
