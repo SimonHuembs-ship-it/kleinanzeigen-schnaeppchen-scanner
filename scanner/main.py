@@ -125,6 +125,20 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
         schwelle = float(ziel.get("schwelle", 0.80))
         ohne_referenz = int(ziel.get("ohne_referenz", 0))
         vorgemerkt = []
+
+        # Die Referenzfrage kommt aus dem Titel und ist damit fast immer
+        # einmalig, der Cache greift also kaum: eine Suche pro Anzeige. Deshalb
+        # gedeckelt, und zwar bei den guenstigsten zuerst. Der Preis allein ist
+        # ein grober, aber brauchbarer Vorsortierer, solange der Marktwert noch
+        # nicht bekannt ist.
+        referenz_limit = int(ziel.get("referenz_limit",
+                                      einstellungen.get("referenz_limit", 80)))
+        gefiltert.sort(key=lambda a: float(a.price or 0))
+        if len(gefiltert) > referenz_limit:
+            statistik["referenz_gekappt"] = (statistik.get("referenz_gekappt", 0)
+                                             + len(gefiltert) - referenz_limit)
+            gefiltert = gefiltert[:referenz_limit]
+
         for anzeige in gefiltert:
             if api.requests >= budget:
                 statistik["budget_erschoepft"] = True
