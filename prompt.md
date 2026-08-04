@@ -162,12 +162,20 @@ Dann:
 
 ## Schritt 5: Committen
 
-**Kein gemeldeter Fund heißt: nichts committen, nichts pushen, keine Mail.** Der
-Lauf ist dann beendet, `run_results.md` bleibt lokal.
+Was den Versand auslöst, ist **ausschließlich** eine Änderung an
+`email_output.html` auf `main`. Der Versand-Workflow filtert auf genau diese
+Datei und diesen Branch. Danach richtet sich, was du committen darfst.
 
-Sonst `deals.json`, `email_output.html`, `deal_log.csv` und den `runs/`-Ordner
-committen und nach `main` pushen. Der Push löst `.github/workflows/send-email.yml`
-aus, das die Mail über Resend verschickt.
+**Kein gemeldeter Fund:** Committe **nur** `runs/JJJJ-MM-TT/run_results.md` und
+pushe es nach `main`. `email_output.html`, `deals.json` und `deal_log.csv` lässt
+du unverändert. Damit bleibt das Laufprotokoll erhalten, ohne eine Mail
+auszulösen. Lege dafür keinen Arbeitsbranch an.
+
+**Mindestens ein Fund:** Committe `deals.json`, `email_output.html`,
+`deal_log.csv` und den `runs/`-Ordner und pushe direkt nach `main`, nicht auf
+einen Arbeitsbranch. Der Push löst `.github/workflows/send-email.yml` aus, das
+die Mail über Resend verschickt. Landet der Commit auf einem anderen Branch,
+kommt keine Mail an.
 
 ## Was du nicht tust
 
