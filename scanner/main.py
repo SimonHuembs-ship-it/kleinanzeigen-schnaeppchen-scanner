@@ -71,6 +71,13 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
     einstellungen = konfiguration.get("einstellungen", {})
     ziele = [z for z in konfiguration["ziele"] if z.get("aktiv", True)]
 
+    # Die Kleinanzeigen-Suche ist unscharf und liefert auch lose Verwandtes.
+    # Ohne positives Modellmuster sammelt ein Ziel deshalb ein, was ihm die
+    # Suche vorsetzt. Das faellt sonst erst in der Mail auf.
+    ohne_muster = [z["id"] for z in ziele if not z.get("muster")]
+    if ohne_muster:
+        raise ValueError(f"Ziele ohne Modellmuster: {', '.join(ohne_muster)}")
+
     api = Api(rate_limit=float(einstellungen.get("rate_limit", 0.8)))
     bis = jetzt()
     von = bis - timedelta(hours=stunden)
@@ -188,7 +195,13 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
                 grund = bewertung["ausschluss"]
                 statistik["ausschluesse"][grund] = statistik["ausschluesse"].get(grund, 0) + 1
                 continue
-            if bewertung["punkte"] < int(einstellungen.get("mindestpunkte", 60)):
+            # Zwischen 25 und 45 Prozent des Marktwerts liegt der Bereich, in
+            # dem Betrug und Totalschaden haeufiger sind als echte Funde. Dort
+            # reicht die normale Mindestpunktzahl nicht.
+            grenzwert = int(einstellungen.get("mindestpunkte", 60))
+            if bewertung["p_ratio"] is not None and bewertung["p_ratio"] < 0.45:
+                grenzwert = max(grenzwert, int(einstellungen.get("mindestpunkte_tiefpreis", 80)))
+            if bewertung["punkte"] < grenzwert:
                 statistik["ausschluesse"]["score_zu_niedrig"] = \
                     statistik["ausschluesse"].get("score_zu_niedrig", 0) + 1
                 continue

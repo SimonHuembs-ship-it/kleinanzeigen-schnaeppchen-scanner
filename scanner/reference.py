@@ -66,6 +66,25 @@ def _auto_query(titel: str, ziel: dict | None = None) -> str:
     return " ".join(token)
 
 
+def _frage_token(frage: str) -> list:
+    return [t.lower() for t in re.split(r"\s+", frage)
+            if len(t) > 2 or any(z.isdigit() for z in t)]
+
+
+def _passt_zur_frage(titel: str, token: list) -> bool:
+    """Prueft, ob eine Vergleichsanzeige wirklich dasselbe Produkt ist.
+
+    Die Kleinanzeigen-Suche ist unscharf: eine Suche nach "iPhone 13 Pro 128"
+    liefert auch 14er und 15er. Ohne diese Pruefung ist der Median eine
+    Mischung ueber mehrere Generationen und die Ersparnis frei erfunden.
+    """
+    if not token:
+        return False
+    text = vorfilter.normalisieren(titel).lower()
+    treffer = sum(1 for t in token if t in text)
+    return treffer >= max(2, round(len(token) * 0.75))
+
+
 def _kennwerte(preise: list) -> tuple:
     preise = sorted(preise)
     median = statistics.median(preise)
@@ -109,6 +128,7 @@ def referenzpreis(api, ziel: dict, anzeige, detail=None, cache: dict | None = No
         seiten=1,
     )
 
+    token = _frage_token(frage)
     preise = []
     for kandidat in treffer:
         if kandidat.id == anzeige.id:
@@ -118,6 +138,8 @@ def referenzpreis(api, ziel: dict, anzeige, detail=None, cache: dict | None = No
         if vorfilter.ist_gesuch(kandidat.title):
             continue
         if not vorfilter.passt_zum_ziel(kandidat.title, ziel):
+            continue
+        if not _passt_zur_frage(kandidat.title, token):
             continue
         preise.append(float(kandidat.price))
 

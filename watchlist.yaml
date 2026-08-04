@@ -12,6 +12,9 @@
 einstellungen:
   rate_limit: 0.8
   mindestpunkte: 60
+  # Zwischen 25 und 45 Prozent Marktwert sind Betrug und Totalschaden
+  # haeufiger als echte Funde. Dort gilt eine hoehere Huerde.
+  mindestpunkte_tiefpreis: 80
   # Harte Obergrenze pro Lauf. Wird sie erreicht, bricht der Scan ab und
   # vermerkt das im Laufprotokoll, statt still weniger zu liefern.
   max_requests: 4000
@@ -149,8 +152,11 @@ ziele:
     preis_min: 200
     preis_max: 20000
     schwelle: 0.70
+    muster:
+      - '\b(leica|leitz|leika|leia|leca)\b'
+      - '\b(summicron|summilux|noctilux|elmarit|elmar|sumicron)\b'
     begriffe: ["Leica M", "Leitz Objektiv", "Summicron", "Summilux",
-               "Leica Nachlass", "Fotoausruestung Nachlass", "Kamera Konvolut"]
+               "Leica Nachlass", "Leica Konvolut"]
     tippfehler: [leika, leia, leca, leiga, sumicron, summikron, noktilux]
     ausschluss: [huelle, tasche, filter, gegenlichtblende, deckel, riemen,
                  prospekt, buch, poster, repro, replika]
@@ -167,6 +173,9 @@ ziele:
     schwelle: 0.70
     # AP60B ist kein Dometic-Produkt, sondern der australische Command-Klon
     # des Waeco MS-50. Beide Linien deshalb getrennt suchen.
+    muster:
+      - '\b(magicspeed|magic\s*speed|ms[- ]?50|ap\s*60\s*b)\b'
+      - '\btempomat\b'
     begriffe: ["Waeco MagicSpeed", "MS-50 Tempomat", "AP60B", "MagicSpeed MS50",
                "Dometic MagicSpeed", "Tempomat Nachruestsatz"]
     tippfehler: ["Magic Speed MS 50", "Waeco MS-50", "MS50 Tempomat",
@@ -182,9 +191,14 @@ ziele:
     schwelle: 0.70
     # Ein Neumann KM84 ist ein unscheinbares Staebchenmikrofon fuer 2.650 bis
     # 2.980 Euro und wird aus Nachlaessen regelmaessig auf 150 Euro taxiert.
+    muster:
+      - '\b(neumann|neuman)\b'
+      - '\bakg\s*c\s*\d{2,3}\b'
+      - '\b(revox|revoy|refox|studer|studert)\b'
+      - '\b(km\s*8[④4]|u\s*8[77]|u\s*47|c\s*12)\b'
+      - '\b(urei|teletronix|la[- ]2a|1176)\b'
     begriffe: ["Neumann Mikrofon", "Neumann KM84", "Neumann U87", "AKG C414",
-               "Revox PR99", "Studer Tonbandmaschine", "Tonstudio Aufloesung",
-               "altes Mikrofon Nachlass", "Studiomikrofon Konvolut"]
+               "Revox PR99", "Studer Tonbandmaschine", "Neumann Nachlass"]
     tippfehler: [neuman, "neumann u 87", "akg c 414", revoy, refox, studert]
     ausschluss: [nachbau, clone, replika, china, staender, spinne, kabel,
                  popschutz, adapter, prospekt]
@@ -198,9 +212,19 @@ ziele:
     preis_min: 100
     preis_max: 15000
     schwelle: 0.70
+    muster:
+      - '\b(technics|techniks|technix|tehnics)\b'
+      - '\b(thorens|thorrens|thoren|torens)\b'
+      - '\b(linn|sondek|sondeck)\b'
+      - '\b(klipsch|klipsh|klipch|klipschorn|la\s*scala|heresy)\b'
+      - '\b(mc\s*intosh|mcintosh|makintosh)\b'
+      - '\bquad\s*(esl|303|405)\b'
+      - '\b(nakamichi|nakamishi|nacamichi)\b'
+      - '\b(tannoy|tanoy|accuphase|acuphase|luxman|luxmann)\b'
+      - '\bjbl\s*(l\s*100|43\d{2})\b'
     begriffe: ["Technics SL-1200", "Thorens TD", "Linn Sondek", "Klipschorn",
                "McIntosh Verstaerker", "Quad ESL", "Nakamichi Dragon",
-               "alte Stereoanlage Dachboden", "HiFi Nachlass"]
+               "Tannoy Monitor", "Accuphase", "Luxman Verstaerker"]
     tippfehler: [techniks, technix, tehnics, thorrens, thoren, torens,
                  klipsh, klipch, "mc intosh", makintosh, nakamishi]
     ausschluss: [nadel, tonabnehmer einzeln, riemen, haube, prospekt, poster,
@@ -217,8 +241,16 @@ ziele:
     preis_min: 300
     preis_max: 50000
     schwelle: 0.80
+    # Die Suche ist unscharf, deshalb muss der Anlass wirklich im Titel stehen.
+    muster:
+      - '\bnotverkauf\b'
+      - '\bsammlungsaufl(oe|ö)sung\b'
+      - '\bnachlass\b'
+      - '\bhaushaltsaufl(oe|ö)sung\b'
+      - '\bhaushalsaufl(oe|ö)sung\b'
+      - '\bwohnungsaufl(oe|ö)sung\b'
     begriffe: ["Notverkauf", "Sammlungsaufloesung", "Nachlass Sammlung",
-               "Haushaltsaufloesung wertvoll", "muss schnell weg wegen Umzug"]
+               "Haushaltsaufloesung", "Wohnungsaufloesung"]
     tippfehler: ["Not Verkauf", "Sammlungs Aufloesung"]
     ausschluss: [gesucht, ankauf, entruempelung, container]
     referenz_query: auto
