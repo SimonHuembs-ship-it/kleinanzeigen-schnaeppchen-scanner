@@ -160,16 +160,19 @@ ziele:
 
   # -- Nischenteile ----------------------------------------------------------
 
-  - id: dometic-tempomat
+  - id: tempomat-nachruest
     aktiv: true
     verfahren: keyword
     preis_max: 1200
     schwelle: 0.70
-    begriffe: ["Dometic MagicSpeed", "MS-50 Tempomat", "AP60B", "MagicSpeed MS50",
-               "Waeco MagicSpeed"]
-    tippfehler: ["Magic Speed MS 50", "Dometic Tempomat", "Waeco MS-50", "MS50 Tempomat"]
+    # AP60B ist kein Dometic-Produkt, sondern der australische Command-Klon
+    # des Waeco MS-50. Beide Linien deshalb getrennt suchen.
+    begriffe: ["Waeco MagicSpeed", "MS-50 Tempomat", "AP60B", "MagicSpeed MS50",
+               "Dometic MagicSpeed", "Tempomat Nachruestsatz"]
+    tippfehler: ["Magic Speed MS 50", "Waeco MS-50", "MS50 Tempomat",
+                 "Tempomat nachruesten", "AP 60B"]
     ausschluss: [gesucht, defekt, anleitung, prospekt]
-    referenz_query: "Dometic MagicSpeed MS-50"
+    referenz_query: "MagicSpeed MS-50 Tempomat"
 
   - id: studio-audio
     aktiv: true

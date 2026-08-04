@@ -106,7 +106,7 @@ def referenzpreis(api, ziel: dict, anzeige, detail=None, cache: dict | None = No
         category_id=ziel.get("kategorie"),
         min_price=ziel.get("preis_min"),
         max_price=ziel.get("preis_max"),
-        seiten=2,
+        seiten=1,
     )
 
     preise = []

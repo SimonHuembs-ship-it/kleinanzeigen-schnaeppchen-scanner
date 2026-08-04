@@ -119,8 +119,12 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
             gefiltert.append(anzeige)
         statistik["nach_vorfilter"] += len(gefiltert)
 
+        # Erst der billige Teil: Referenzpreis fuer alle, gecacht ueber die
+        # Referenzfrage. Danach wird sortiert, damit die anschliessende
+        # Deckelung die guenstigsten Treffer behaelt und nicht die ersten.
         schwelle = float(ziel.get("schwelle", 0.80))
         ohne_referenz = int(ziel.get("ohne_referenz", 0))
+        vorgemerkt = []
         for anzeige in gefiltert:
             if api.requests >= budget:
                 statistik["budget_erschoepft"] = True
@@ -136,10 +140,26 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
                 # zulassen, sonst laeuft jede gematchte Anzeige in den teuren
                 # Detailabruf.
                 ohne_referenz -= 1
+                verhaeltnis = 1.0
             else:
                 statistik["ohne_referenz_verworfen"] = statistik.get("ohne_referenz_verworfen", 0) + 1
                 continue
             statistik["nach_preisschwelle"] += 1
+            vorgemerkt.append((verhaeltnis, anzeige, referenzwert))
+
+        # Detailabruf und Verkaeuferhistorie kosten zwei Requests pro Anzeige
+        # und sind der teuerste Teil des Laufs. Was die Deckelung abschneidet,
+        # steht im Laufprotokoll, damit die Kappung nicht still passiert.
+        grenze = int(ziel.get("detail_limit", einstellungen.get("detail_limit", 30)))
+        vorgemerkt.sort(key=lambda eintrag: eintrag[0])
+        if len(vorgemerkt) > grenze:
+            statistik["detail_gekappt"] = statistik.get("detail_gekappt", 0) + len(vorgemerkt) - grenze
+            vorgemerkt = vorgemerkt[:grenze]
+
+        for _, anzeige, referenzwert in vorgemerkt:
+            if api.requests >= budget:
+                statistik["budget_erschoepft"] = True
+                break
 
             detail = api.detail(anzeige.id)
             if not detail:
