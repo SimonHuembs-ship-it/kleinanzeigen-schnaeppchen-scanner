@@ -6,16 +6,16 @@ name: Scan
 
 on:
   schedule:
-    # Alle zwei Stunden statt einmal nachts. Grund: Ein Fund vom 5. August war
-    # bereits reserviert, bevor die Morgenmail ihn meldete. Bei liquider Ware
-    # entscheiden Stunden, nicht Tage. Fenster drei Stunden mit Ueberlappung,
-    # damit eine verschobene Ausfuehrung keine Luecke reisst.
-    - cron: "5 */2 * * *"
+    # Alle vier Stunden ueber ein Fuenf-Stunden-Fenster mit Ueberlappung.
+    # Der Sammler laeuft oefter als gemeldet wird: er fuellt nur die Warteschlange,
+    # damit ein Fund nicht erst Stunden nach dem Inserat entdeckt wird. Gemailt
+    # wird trotzdem nur zweimal taeglich, das entscheidet die Routine.
+    - cron: "0 */4 * * *"
   workflow_dispatch:
     inputs:
       stunden:
         description: "Zeitfenster in Stunden"
-        default: "3"
+        default: "5"
 
 permissions:
   contents: write
@@ -23,7 +23,7 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,7 +36,7 @@ jobs:
         env:
           KLEINANZEIGEN_BASIC_USER: ${{ secrets.KLEINANZEIGEN_BASIC_USER }}
           KLEINANZEIGEN_BASIC_PW: ${{ secrets.KLEINANZEIGEN_BASIC_PW }}
-        run: python -m scanner.main --stunden "${{ inputs.stunden || 3 }}" --limit 40
+        run: python -m scanner.main --stunden "${{ inputs.stunden || 5 }}" --limit 40
 
       - name: Ergebnis committen
         run: |

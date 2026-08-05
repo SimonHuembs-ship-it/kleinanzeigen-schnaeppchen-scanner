@@ -32,16 +32,17 @@ Prüfe das Feld `generiert` in `candidates.json`. Ist es älter als vier Stunden
 hat der Scan nicht rechtzeitig geliefert: brich ab und halte den Befund im
 Laufprotokoll fest. Dasselbe gilt für eine leere Kandidatenliste.
 
-Der Scan läuft alle zwei Stunden über ein Drei-Stunden-Fenster, und
+Der Scan läuft alle vier Stunden über ein Fünf-Stunden-Fenster, und
 `candidates.json` sammelt die noch nicht gemeldeten Kandidaten der letzten
 24 Stunden an. Du siehst also auch Funde, die seit dem letzten Lauf dazugekommen
 sind, und keine doppelt: Gemeldetes verschwindet über `deal_log.csv`.
 
-**Tempo geht vor Vollständigkeit.** Ein Fund vom 5. August war bereits
-reserviert, bevor die Meldung ihn erreichte. Prüfe deshalb zuerst die
-Kandidaten mit dem größten absoluten Abstand zum Marktwert und bei liquider
-Ware wie Drohnen, Uhren, Apple-Geräten und Grafikkarten. Wenn du nach zehn
-bestätigten Funden bist, hör auf zu prüfen und melde.
+**Zweimal täglich, morgens und abends.** Ein Fund vom 5. August war bereits
+reserviert, bevor die Meldung ihn erreichte. Weil nur zweimal gemeldet wird,
+zählt die Reihenfolge: Prüfe zuerst die Kandidaten mit dem größten absoluten
+Abstand zum Marktwert und bei liquider Ware wie Drohnen, Uhren, Apple-Geräten
+und Grafikkarten. Wenn du nach zehn bestätigten Funden bist, hör auf zu prüfen
+und melde.
 
 ## Schritt 2: Jeden Kandidaten prüfen
 
