@@ -205,3 +205,61 @@ die verbaute 1-TB-SSD mit möglichen Aufnahmen des Vorbesitzers.
 Ein Fund heißt nach prompt.md Schritt 5: `deals.json`, `email_output.html`, `deal_log.csv`
 und der `runs`-Ordner gehen direkt nach `main`. `python -m scanner.report` wurde ausgeführt,
 die Änderung an `email_output.html` löst den Versand über Resend aus.
+
+# Routine-Lauf 2026-08-05T18:21+02:00 (dritter Lauf des Tages)
+
+- Datenquelle: `candidates.json`, generiert 2026-08-05T16:19:55+02:00 (2 h 01 min alt, Frist 4 h eingehalten)
+- Zeitraum des Scans: 2026-08-04T13:18:25+02:00 bis 2026-08-05T13:18:25+02:00
+- Gesichtete Anzeigen laut Scan: 503.904
+- Kandidaten in der Datei: 40
+- Bereits in `deal_log.csv` und deshalb übersprungen: 1 (3476798448, DJI Mavic 3 Cine Premium Combo)
+- Inhaltlich geprüft: 39
+- **Gemeldete Funde: 0**
+
+## Befund zur Pipeline: kein neuer Bestand
+
+`candidates.json` ist unverändert der Bestand, den der Lauf von 16:31 Uhr schon vollständig
+abgearbeitet hat — gleiches `generiert`-Feld (16:19:55), gleiches Zeitfenster, gleiche 40 IDs.
+Der Scan-Cron sollte alle zwei Stunden laufen; seit 16:19 Uhr ist keine neue Datei entstanden.
+Mit 2 h 01 min liegt die Datei noch innerhalb der Vier-Stunden-Frist aus prompt.md Schritt 1,
+ein Abbruch war deshalb nicht angezeigt. Beim nächsten Lauf ohne frischen Scan reißt die Frist.
+
+Der einzige Unterschied zum Lauf von 16:31 Uhr: Die Mavic 3 steht jetzt in `deal_log.csv` und
+fällt korrekt aus der Prüfung. Die Doppelmeldungssperre funktioniert.
+
+## Prüfung
+
+Die 39 verbliebenen Kandidaten habe ich unabhängig neu bewertet, zuerst die mit dem größten
+absoluten Abstand und die liquide Ware (Uhren, Apple, Drohnen). Ergebnis deckt sich mit dem
+Lauf von 16:31 Uhr; keine Bewertung ist gekippt. Die eigenständig gegengeprüften Marktwerte:
+
+| ID | Titel | Preis | Eigene Marktwertprüfung | Ergebnis |
+|---|---|---|---|---|
+| 3471192328 | Tudor Black Bay 41 Fullset (Ref. 79540) | 2.249 € | Chrono24: gebrauchte 79540 zwischen 1.643 € und 2.970 €, Einzelangebote 2.400 €, 2.490 €, 2.500 €, 2.623 €. Bestätigtes Niveau rund 2.400 €. | Höchstens 6 % Abstand, 20-%-Schwelle verfehlt. Der Kleinanzeigen-Median von 3.499 € ist die Neupreis-Ecke, nicht der Gebrauchtmarkt. Verworfen. |
+| 3476670704 | Tudor Black Bay Pro (M79470) | 2.200 € | Chrono24: Einzelangebote 2.715 $ und 2.998 $, Gesamtspanne 3.046–4.755 $. Bestätigtes Niveau rund 2.800 €. | Abstand rechnerisch knapp über 20 %, aber das Verkäuferprofil trägt nicht: Konto sechs Tage alt, keine Bewertung, zweizeiliger englischer Textbaustein, Attribut "Nur Abholung" bei gleichzeitigem Versandangebot. Kein `unkenntnis_bonus`, exakte Modellbezeichnung, acht Bilder — das ist das Betrugsmuster aus der Leitidee, nicht der schlecht gemachte Verkauf eines Ahnungslosen. Verworfen. |
+| 3476216336 | Rolex Oysterdate Precision 6694 | 1.999 € | Händlerangebote 2.395 $ und 3.159 $, ein Vintage-Portfolio-Angebot zu 4.040 €; alle mit Händlermarge und Gewährleistung. Privatmarkt liegt darunter. | Kein Abstand von 20 % zu einem belastbaren Privatmarktwert belegbar. Dazu Bewertung 0,66 und ein "Echtheitszertifikat", das es für die 6694 privat nicht gibt. Verworfen. |
+| 3454937502 | Gibson LP Special '57 Reissue Custom Shop TV Yellow (2019) | 2.550 € | GuitarPoint (deutscher Fachhändler) führt dasselbe Modell gebraucht zu 2.936,97 €; Reverb-Angebot USA 3.200 $. Bestätigtes Niveau rund 2.900 € Händler, privat darunter. | 13 % unter dem Händlerpreis, und Privatpreise liegen ohnehin unter Händlerpreisen. 20-%-Schwelle verfehlt. Verworfen. |
+| 3476543389 | Jaeger-LeCoultre Atmos Tischuhr | 650 € | Dorotheum-Zuschlag 02/2025: 1.105 €. Aber Chrono24-Privatangebote derselben Bauart ab 745 € und 1.550 €, Händler bis 3.500 €. Spanne zu breit. | Gegen das untere Privatniveau von 745 € ist kein Abstand von 20 % belegbar. Kein belastbarer Referenzwert, deshalb keine Schätzung. Verworfen. |
+| 3476334149 | Hilti TE 30 | 220 € | eBay.de gebraucht: 220 €, 350 €, 379,99 €, 399 €. Bestätigte Spanne 220–399 €. | 220 € ist selbst der untere Rand der belegten Spanne, kein Abstand. Zudem nennt die Anzeige die Variante nicht. Verworfen. |
+| 3458067537 | Specialized Sirrus X 2.0 | 350 € | Neupreis laut Specialized 799–899 $. Zwei konkrete Gebrauchtangebote desselben Modelljahrs habe ich nicht gefunden: Bicycle Blue Book und buycycle antworten auf Abruf mit 403. | Ohne belegten Gebrauchtwert wird nicht geschätzt. Dazu Konto 22 Tage alt, keine Bewertung, drei Monate altes Rad zu 40 % des Neupreises. Verworfen. |
+| 3476186282 | Vitra/Herman Miller Eames Fiberglass Armchair PACC | 280 € | Belegt sind nur Händlerpreise für Fiberglas-*Beistuhl*-Schalen (400–575 €) und 1stDibs-Niveaus; kein Vergleichsangebot für die PACC-Armlehnvariante mit Rollenfuß im Privatmarkt. | Kein belastbarer Referenzwert für genau diese Ausführung, Zustand nur "In Ordnung". Verworfen. |
+
+Die übrigen 31 Kandidaten sind aus denselben Gründen verworfen wie im Protokoll des Laufs
+von 16:31 Uhr weiter oben: Referenz nicht belastbar oder Referenzgruppe nicht vergleichbar
+(3375969368, 3476491670, 3476746718, 3476790153, 3465629604, 3476581731, 3476827083,
+3476343058, 3476348448, 3476314216, 3476581313, 3476715579, 3476260941, 3476833512,
+3476899238), Preis erklärt sich selbst durch Defekt, Umbau oder fehlende Papiere
+(3476971684, 3476768887, 3476958211, 3476515699, 3476674397, 3476706032, 3476927039),
+oder Preis auf Marktniveau ohne 20 % Abstand (3476822088, 3476656447, 3476947459,
+3476687897, 3476619512, 3476499778, 2948649270, 3476334149, 3476554968).
+
+Zu 3476554968 (Honda Fireblade 1000, 4.000 €) ausdrücklich: Die Anzeige nennt kein Baujahr.
+Die CBR1000RR läuft von 2004 bis 2023 mit Gebrauchtwerten zwischen 4.000 und 15.000 €. Ohne
+Modelljahr ist kein Marktwert bestimmbar, der Median (n=10, Streuung 2,83, `belastbar: false`)
+trägt nicht. Kein Fund, sondern nicht bewertbar.
+
+## Was committet wird
+
+Kein Fund heißt nach prompt.md Schritt 5: **nur** dieses Laufprotokoll geht nach `main`.
+`deals.json`, `email_output.html` und `deal_log.csv` bleiben unverändert,
+`python -m scanner.report` wurde nicht ausgeführt, es wird keine Mail ausgelöst.
