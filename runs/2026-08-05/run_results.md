@@ -220,9 +220,18 @@ die Änderung an `email_output.html` löst den Versand über Resend aus.
 
 `candidates.json` ist unverändert der Bestand, den der Lauf von 16:31 Uhr schon vollständig
 abgearbeitet hat — gleiches `generiert`-Feld (16:19:55), gleiches Zeitfenster, gleiche 40 IDs.
-Der Scan-Cron sollte alle zwei Stunden laufen; seit 16:19 Uhr ist keine neue Datei entstanden.
 Mit 2 h 01 min liegt die Datei noch innerhalb der Vier-Stunden-Frist aus prompt.md Schritt 1,
-ein Abbruch war deshalb nicht angezeigt. Beim nächsten Lauf ohne frischen Scan reißt die Frist.
+ein Abbruch war deshalb nicht angezeigt.
+
+Grund für den fehlenden Nachschub: Der nächste Scan läuft bereits, er ist um 18:25 Uhr
+gestartet und war bei Ende dieses Laufs noch `in_progress`. Das Klonen des Repos fiel also
+genau in die Lücke zwischen zwei Scans. Die Pipeline ist in Ordnung, es fehlt nur der
+Bestand dieses Fensters.
+
+Eine Randbeobachtung zum Cron: Von den Scan-Läufen der letzten beiden Tage wurde genau
+einer (05:59 Uhr UTC) per `schedule` ausgelöst, alle übrigen per `workflow_dispatch`.
+Der Zwei-Stunden-Takt aus `bc03293` ist frisch, das kann sich noch einlaufen — beim
+nächsten Lauf ist zu prüfen, ob der Zeitplan von selbst greift.
 
 Der einzige Unterschied zum Lauf von 16:31 Uhr: Die Mavic 3 steht jetzt in `deal_log.csv` und
 fällt korrekt aus der Prüfung. Die Doppelmeldungssperre funktioniert.
