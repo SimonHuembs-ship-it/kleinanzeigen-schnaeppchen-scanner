@@ -28,8 +28,11 @@ nicht nach Anzeigenqualität herunter.
   Existiert die Datei nicht, lege sie mit dieser Kopfzeile an.
 - Jeden Kandidaten verwerfen, dessen `id` schon in `deal_log.csv` steht.
 
-Ist `candidates.json` älter als 12 Stunden oder die Kandidatenliste leer, brich ab
-und committe nichts.
+Prüfe das Feld `generiert` in `candidates.json`. Stammt es nicht vom heutigen
+Tag oder ist es älter als 12 Stunden, hat der Scan nicht rechtzeitig geliefert:
+brich ab und werte nicht erneut denselben Bestand aus. Halte den Befund im
+Laufprotokoll fest, damit die Verzögerung sichtbar wird. Dasselbe gilt für eine
+leere Kandidatenliste.
 
 ## Schritt 2: Jeden Kandidaten prüfen
 

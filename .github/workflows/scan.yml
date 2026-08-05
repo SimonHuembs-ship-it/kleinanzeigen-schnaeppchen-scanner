@@ -6,10 +6,14 @@ name: Scan
 
 on:
   schedule:
-    # 05:15 Berliner Sommerzeit. Der Scan ueber 24 Stunden dauert deutlich
-    # laenger als der Sechs-Stunden-Test, deshalb knapp zwei Stunden Vorlauf
-    # vor der Routine um 07:00 statt der urspruenglichen 45 Minuten.
-    - cron: "15 3 * * *"
+    # 00:15 Berliner Sommerzeit, also fast sieben Stunden vor der Routine.
+    # GitHub verschiebt geplante Laeufe auf privaten Repos bei Last, am
+    # 5. August um zwei Stunden und 44 Minuten. Ein Puffer von zwei Stunden
+    # reichte deshalb nicht: der Scan lief erst nach der Routine.
+    # Nur ein Cron-Eintrag, kein zweiter als Rueckfall: ein zweiter Lauf
+    # wuerde candidates.json mit einer kleineren Menge ueberschreiben, weil
+    # seen_ads.csv die Treffer des ersten Laufs bereits kennt.
+    - cron: "15 22 * * *"
   workflow_dispatch:
     inputs:
       stunden:
