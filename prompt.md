@@ -28,11 +28,20 @@ nicht nach Anzeigenqualität herunter.
   Existiert die Datei nicht, lege sie mit dieser Kopfzeile an.
 - Jeden Kandidaten verwerfen, dessen `id` schon in `deal_log.csv` steht.
 
-Prüfe das Feld `generiert` in `candidates.json`. Stammt es nicht vom heutigen
-Tag oder ist es älter als 12 Stunden, hat der Scan nicht rechtzeitig geliefert:
-brich ab und werte nicht erneut denselben Bestand aus. Halte den Befund im
-Laufprotokoll fest, damit die Verzögerung sichtbar wird. Dasselbe gilt für eine
-leere Kandidatenliste.
+Prüfe das Feld `generiert` in `candidates.json`. Ist es älter als vier Stunden,
+hat der Scan nicht rechtzeitig geliefert: brich ab und halte den Befund im
+Laufprotokoll fest. Dasselbe gilt für eine leere Kandidatenliste.
+
+Der Scan läuft alle zwei Stunden über ein Drei-Stunden-Fenster, und
+`candidates.json` sammelt die noch nicht gemeldeten Kandidaten der letzten
+24 Stunden an. Du siehst also auch Funde, die seit dem letzten Lauf dazugekommen
+sind, und keine doppelt: Gemeldetes verschwindet über `deal_log.csv`.
+
+**Tempo geht vor Vollständigkeit.** Ein Fund vom 5. August war bereits
+reserviert, bevor die Meldung ihn erreichte. Prüfe deshalb zuerst die
+Kandidaten mit dem größten absoluten Abstand zum Marktwert und bei liquider
+Ware wie Drohnen, Uhren, Apple-Geräten und Grafikkarten. Wenn du nach zehn
+bestätigten Funden bist, hör auf zu prüfen und melde.
 
 ## Schritt 2: Jeden Kandidaten prüfen
 

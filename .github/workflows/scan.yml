@@ -6,19 +6,16 @@ name: Scan
 
 on:
   schedule:
-    # 00:15 Berliner Sommerzeit, also fast sieben Stunden vor der Routine.
-    # GitHub verschiebt geplante Laeufe auf privaten Repos bei Last, am
-    # 5. August um zwei Stunden und 44 Minuten. Ein Puffer von zwei Stunden
-    # reichte deshalb nicht: der Scan lief erst nach der Routine.
-    # Nur ein Cron-Eintrag, kein zweiter als Rueckfall: ein zweiter Lauf
-    # wuerde candidates.json mit einer kleineren Menge ueberschreiben, weil
-    # seen_ads.csv die Treffer des ersten Laufs bereits kennt.
-    - cron: "15 22 * * *"
+    # Alle zwei Stunden statt einmal nachts. Grund: Ein Fund vom 5. August war
+    # bereits reserviert, bevor die Morgenmail ihn meldete. Bei liquider Ware
+    # entscheiden Stunden, nicht Tage. Fenster drei Stunden mit Ueberlappung,
+    # damit eine verschobene Ausfuehrung keine Luecke reisst.
+    - cron: "5 */2 * * *"
   workflow_dispatch:
     inputs:
       stunden:
         description: "Zeitfenster in Stunden"
-        default: "24"
+        default: "3"
 
 permissions:
   contents: write
@@ -26,7 +23,7 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -39,7 +36,7 @@ jobs:
         env:
           KLEINANZEIGEN_BASIC_USER: ${{ secrets.KLEINANZEIGEN_BASIC_USER }}
           KLEINANZEIGEN_BASIC_PW: ${{ secrets.KLEINANZEIGEN_BASIC_PW }}
-        run: python -m scanner.main --stunden "${{ inputs.stunden || 24 }}" --limit 40
+        run: python -m scanner.main --stunden "${{ inputs.stunden || 3 }}" --limit 40
 
       - name: Ergebnis committen
         run: |

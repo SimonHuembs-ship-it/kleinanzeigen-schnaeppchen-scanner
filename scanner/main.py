@@ -327,10 +327,47 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
         "kandidaten": kandidaten,
     }
 
+    # Bei kurzen Fenstern liefert ein einzelner Lauf zu wenig. Deshalb sammeln
+    # sich Kandidaten ueber 24 Stunden an, bis die Routine sie abholt oder sie
+    # veralten. Schon gemeldete verschwinden ueber deal_log.csv.
+    ergebnis["kandidaten"] = _zusammenfuehren(kandidaten, bis)
+
     KANDIDATEN.write_text(json.dumps(ergebnis, ensure_ascii=False, indent=2), encoding="utf-8")
     gesehene_ergaenzen(neue_ids - gesehen, bis.date().isoformat())
     _protokoll_schreiben(ergebnis)
     return ergebnis
+
+
+def _zusammenfuehren(neu: list, bis: datetime) -> list:
+    """Neue Kandidaten mit den noch offenen aus frueheren Laeufen mischen."""
+    gemeldet = set()
+    log = WURZEL / "deal_log.csv"
+    if log.exists():
+        with log.open(encoding="utf-8") as datei:
+            gemeldet = {z.get("ad_id") for z in csv.DictReader(datei)}
+
+    gesammelt = {}
+    if KANDIDATEN.exists():
+        try:
+            alt = json.loads(KANDIDATEN.read_text(encoding="utf-8")).get("kandidaten", [])
+        except json.JSONDecodeError:
+            alt = []
+        grenze = bis - timedelta(hours=24)
+        for kandidat in alt:
+            zeit = kandidat.get("eingestellt")
+            if not zeit:
+                continue
+            if datetime.fromisoformat(zeit) < grenze.astimezone(BERLIN):
+                continue
+            gesammelt[kandidat["id"]] = kandidat
+
+    for kandidat in neu:
+        gesammelt[kandidat["id"]] = kandidat
+
+    offen = [k for k in gesammelt.values() if k["id"] not in gemeldet]
+    offen.sort(key=lambda k: (k["signale"]["unkenntnis_bonus"], k["ersparnis_eur"] or 0),
+               reverse=True)
+    return offen
 
 
 def _protokoll_schreiben(ergebnis: dict) -> None:
