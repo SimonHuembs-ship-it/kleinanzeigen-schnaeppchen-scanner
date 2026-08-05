@@ -163,9 +163,11 @@ ziele:
                "Leica Nachlass", "Leica Konvolut"]
     tippfehler: [leika, leia, leca, leiga, sumicron, summikron, noktilux]
     ausschluss: [huelle, tasche, filter, gegenlichtblende, deckel, riemen,
-                 prospekt, buch, poster, repro, replika, mikroskop,
-                 vergroesserer, vergrößerer, focomat, focotar, projektor,
-                 kameratasche, stativ, blitz]
+                 prospekt, buch, poster, repro, replika, kameratasche, blitz]
+    # Mikroskope, Vergroesserer und Focotar-Objektive bleiben ausdruecklich
+    # drin: der Leitz-Biomed-Fund vom 5. August war 200 Euro fuer vier
+    # Leitz-Objektive, von denen eines allein 299 bis 369 Euro kostet.
+    # Leitz-Optik ist Ziel, nicht Zubehoer.
     referenz_query: auto
     referenz_marke: "Leica"
     ohne_referenz: 3
@@ -306,9 +308,11 @@ ziele:
       - '\bpentax\s*(67|6x7)\b'
     tippfehler: [leika, leia, sumicron, hasselbald, ziess, mamia]
     ausschluss: [huelle, hülle, tasche, filter, gegenlichtblende, deckel, riemen,
-                 prospekt, buch, poster, repro, replika, adapter, "nur karton", mikroskop,
-                 vergroesserer, vergrößerer, focomat, focotar, projektor,
-                 kameratasche, stativ, blitz]
+                 prospekt, buch, poster, repro, replika, adapter, "nur karton", kameratasche, blitz]
+    # Mikroskope, Vergroesserer und Focotar-Objektive bleiben ausdruecklich
+    # drin: der Leitz-Biomed-Fund vom 5. August war 200 Euro fuer vier
+    # Leitz-Objektive, von denen eines allein 299 bis 369 Euro kostet.
+    # Leitz-Optik ist Ziel, nicht Zubehoer.
     referenz_query: auto
     referenz_marke: ""
 
