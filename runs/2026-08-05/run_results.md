@@ -70,3 +70,53 @@ Ausgeschlossene IDs: 3431889887, 3475862357, 3476454355, 3476468044, 3476665944,
 - handyverkauf.net, Clevertronic, asgoodasnew für iPhone 12 Pro 512 GB
 - eBay für MacBook Pro 13" 2019 i5 / 16 GB / 256 GB
 - recordinghacks.com und slashcam für Neumann M50 / M50c Kapselbestückung und Preisniveau
+
+---
+
+# Zweiter Routine-Lauf 2026-08-05T07:08+02:00
+
+- Datenquelle: unverändert `candidates.json`, generiert 2026-08-05T00:06:08+02:00 (7 h 02 min alt, Frist 12 h eingehalten)
+- Kandidaten in der Datei: 31, bereits in `deal_log.csv`: 6, inhaltlich geprüft: 25
+- **Gemeldete Funde: 0**
+
+`deal_log.csv` existiert inzwischen (Commit `ff45765`) und hat die sechs Anzeigen der
+ersten Mail diesmal regulär ausgeschlossen. Der Befund 1 des ersten Laufs ist damit erledigt.
+
+## Der Lauf hat keine neuen Daten bekommen
+
+Der um 00:41 eingerichtete Cron (`15 3 * * *`, also 05:15 Berliner Zeit) ist bis 07:08 nicht
+gelaufen. Die Actions-Historie kennt für `scan.yml` genau drei Läufe, alle vom 4. August und
+alle per `workflow_dispatch`; ein `schedule`-Lauf hat nie stattgefunden. `origin/main` steht
+weiterhin auf `dbc9995`, `candidates.json` ist unverändert die Datei von 00:06.
+
+Wahrscheinlichste Ursache: Ein frisch gepushter Cron greift bei GitHub Actions oft erst ab
+dem übernächsten Fenster, dazwischen liegen bei Scheduled Workflows regelmäßig Verzögerungen
+von mehreren Stunden. Zwischen Push (22:41 UTC) und erstem Termin (03:15 UTC) lagen nur
+4 h 34 min. Ob sich das morgen von selbst einrenkt, zeigt der Lauf am 6. August. Wenn nicht,
+bleibt der `workflow_dispatch` als manueller Auslöser, oder der Scan wird an den Anfang der
+Routine gehängt, statt ihn auf einen eigenen Cron zu setzen.
+
+## Ergebnis der erneuten Prüfung
+
+Geprüft wurde derselbe Bestand noch einmal unabhängig, inklusive erneuter Websuche für die
+vier Posten über 1.000 €. Die Bewertung deckt sich in allen 25 Fällen mit der Tabelle oben,
+kein Kandidat kippt in die andere Richtung. Die drei Fälle, die überhaupt in die Nähe eines
+Fundes kamen:
+
+| ID | Titel | Preis | Bestätigtes Preisniveau | Ergebnis |
+|---|---|---|---|---|
+| 3476636757 | Nakamichi Dragon | 2.750 € | 3.400 € (willhaben, 12.06.2026), 3.699 € (Audioweb, 07.06.2026), 3.800 € (Catawiki-Zuschlag, 12.07.2026), 3.500 € refurbished (Kleinanzeigen, 06.06.2026) | Alle belegten Preise betreffen revidierte oder als funktionsgeprüft angebotene Geräte. Die Anzeige nennt keinen Servicestand. Gegen den niedrigsten Beleg sind es 19,1 % Abstand, die 20-%-Schwelle ist damit nicht erreicht. Verworfen. |
+| 3476674868 | Neumann M50c | 8.000 € | ~16.000 € für originale M50 (slashcam zur M-50-V-Neuauflage, recordinghacks zur Baureihe) | Das M50c von 1965 trägt ab Werk die Mylar-Kapsel K83. Die Anzeige nennt selbst eine eingebaute M49-M7-Kapsel, das Gerät ist damit kein originales M50c und der M50-Preis nicht übertragbar. Dazu Konto 33 Tage alt, Weltversand, eBay-Baustein "nach Auktionsende". Kein bestätigter Marktwert, verworfen. |
+| 3468854544 | Mercedes A220 4Matic AMG Line | 23.990 € | 19.590–26.870 € (AutoScout24), 19.411–27.937 € (mobile.de), beide für Baujahr 2019 | 23.990 € bei 64.000 km liegt mittig im Band. Kein Abstand, verworfen. |
+
+Der einzige Kandidat mit `unkenntnis_bonus` (3476623613, iPhone 13 Pro, 200 €) scheitert nicht
+an der Anzeigenqualität, sondern am gerissenen Frontglas: Der Preis erklärt sich selbst, und
+ohne Angabe der Speichergröße ist kein Marktwert bestimmbar.
+
+`referenz.belastbar` und `referenz.streuung` fehlen weiterhin in jedem der 31 Kandidaten, weil
+die Datei aus dem Scan vor Commit `b7cdcf2` stammt. Die Prüfung aus prompt.md Schritt 2a lief
+erneut ins Leere, jeder Marktwert wurde eigenständig belegt.
+
+Kein Fund heißt nach prompt.md Schritt 5: nur dieses Protokoll wird committet.
+`deals.json`, `email_output.html` und `deal_log.csv` bleiben unverändert,
+`python -m scanner.report` wurde nicht ausgeführt, es geht keine Mail raus.
