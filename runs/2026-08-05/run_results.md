@@ -120,3 +120,88 @@ erneut ins Leere, jeder Marktwert wurde eigenständig belegt.
 Kein Fund heißt nach prompt.md Schritt 5: nur dieses Protokoll wird committet.
 `deals.json`, `email_output.html` und `deal_log.csv` bleiben unverändert,
 `python -m scanner.report` wurde nicht ausgeführt, es geht keine Mail raus.
+
+---
+
+# Routine-Lauf 2026-08-05T16:31+02:00 (zweiter Lauf des Tages)
+
+- Datenquelle: `candidates.json`, generiert 2026-08-05T16:19:55+02:00 (12 Minuten alt, Frist 12 h eingehalten)
+- Zeitraum des Scans: 2026-08-04T13:18:25+02:00 bis 2026-08-05T13:18:25+02:00
+- Gesichtete Anzeigen laut Scan: 503.904
+- Kandidaten in der Datei: 40
+- Bereits in `deal_log.csv` und deshalb übersprungen: 0
+- Inhaltlich geprüft: 40
+- **Gemeldete Funde: 1**
+
+Dies ist ein neuer Bestand, nicht der des Laufs von 00:37 Uhr: Der Scan von 16:19 Uhr
+(`runs/2026-08-05-2/scan.md`) hat den Zeitraum auf 24 Stunden geweitet und liefert 40 statt
+31 Kandidaten. Anders als beim Bestand von heute Nacht sind `referenz.belastbar` und
+`referenz.streuung` diesmal in allen Kandidaten gesetzt.
+
+## Fund
+
+| ID | Titel | Preis | Bestätigtes Preisniveau | Abstand |
+|---|---|---|---|---|
+| 3476798448 | DJI Mavic 3 Cine Premium Combo | 1.100 € | ~1.700 € | 35 % |
+
+Belege für das Preisniveau: MPB (Referenzquelle für Kameras nach prompt.md Schritt 2d) führt
+sieben gebrauchte Cine Premium Combos zu 1.839–1.919 US-Dollar, also rund 1.690–1.765 €. Ein
+deutsches Händlerangebot auf gebrauchte-veranstaltungstechnik.de mit RC Pro, drei Akkus,
+ND-Filtern, Tasche und OVP steht bei 1.700 €. Der Kleinanzeigen-Median (1.750 €, n = 29,
+Streuung 1,43, belastbar) deckt sich damit, war aber nicht die Grundlage der Entscheidung.
+
+Kein Umstand erklärt den Preis: kein Absturz, kein Defekt, Zubehör vollständig, Verkäufer
+steigt auf die Mavic 4 um. Konto seit 2013, Bewertung 0,97, 14 Bilder, Käuferschutz möglich.
+Warnflags aus prompt.md Schritt 2e greifen bei dieser Kategorie nicht; als Risiko ist der
+Akkuverschleiß nach vier Jahren und das C1-Klassenlabel vermerkt, als Prüfpunkt zusätzlich
+die verbaute 1-TB-SSD mit möglichen Aufnahmen des Vorbesitzers.
+
+## Verworfene Kandidaten
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3476715579 | Cube Mtb Fahrrad | 300 € | `unkenntnis_bonus`, aber weder Modell noch Baujahr genannt, ein Bild. Für ein unbestimmtes Cube-MTB ist kein Marktwert belegbar; Referenz nicht belastbar (Streuung 4,64). Nicht nach Anzeigenqualität verworfen, sondern mangels bestimmbarem Objekt. |
+| 3476554968 | Honda Fireblade 1000 | 4.000 € | Baujahr fehlt, die CBR1000RR reicht von 2004 bis 2023 mit Preisen von 4.000 bis 15.000 €. Referenz nicht belastbar (2,83). Ohne Modelljahr kein Marktwert. |
+| 3476927039 | Mercedes W201 190er | 2.600 € | 301.216 km, reparierter Frontunfall, Rost, Tieferlegung, HU Februar 2026 abgelaufen. Der Preis erklärt sich selbst. |
+| 3454937502 | Gibson LP Special 57 Reissue TV Yellow | 2.550 € | Eigene Prüfung: ein '57 LP Special VOS Reissue ging auf eBay Deutschland für 2.997 US-Dollar (≈ 2.552 €) weg, US-Händler verlangen 3.130–3.598 US-Dollar. Der Angebotspreis liegt auf dem bestätigten Niveau, nicht 20 % darunter. Der Median 4.600 € stammt aus der Suche "Gibson Les Paul 57" und mischt Goldtop- und Black-Beauty-Reissues ein. |
+| 3476827083 | Mercruiser/Volvo Penta Lenkung | 1.850 € | Referenz nicht belastbar (5,88), Nischenteil ohne Typbezeichnung, Set unvollständig (zwei Schläuche fehlen). Kein belegbarer Marktwert. |
+| 3476670704 | Tudor Black Bay Pro | 2.200 € | Konto sieben Tage alt, englischer Textbaustein ("Bought it two years ago, just wear it four times"), Versand trotz Attribut "Nur Abholung". Betrugsprofil bei hochliquider Ware, kein `unkenntnis_bonus`. Verworfen. |
+| 3375969368 | Jaeger LeCoultre Uhr | 1.300 € | Referenz nicht belastbar (5,03), kein Referenzmodell genannt, nur Kaliber K886 und 34 mm. Vintage-JLC ohne Modellbestimmung nicht bewertbar. |
+| 3471192328 | Tudor Black Bay 41 Fullset | 2.249 € | Chrono24 führt Fullsets der Ref. 79540 zu 2.390–2.997 €, Einzelvarianten ab rund 2.000 €. 2.249 € liegen höchstens 6 % unter dem belegten Niveau, die 20-%-Schwelle ist nicht erreicht. |
+| 3476216336 | Rolex Oysterdate Precision 6694 | 1.999 € | Belegte Händlerpreise 2.410 € bzw. ~3.300 US-Dollar enthalten Händlermarge; im Privatmarkt liegt die 6694 bei 1.500–2.200 €. Kein Abstand von 20 % belegbar. Zusatzbedenken: Bewertung 0,66 und ein "Echtheitszertifikat", das Rolex nicht nachträglich ausstellt. |
+| 3475062349 | Tudor Prince Date | 1.899 € | Konto drei Tage alt bei einer 1.899-€-Uhr mit Versandangebot. Verworfen. |
+| 3476822088 | Tag Heuer Aquaracer | 850 € | Keine Referenznummer, Batteriewechsel weist auf Quarzwerk hin; gebrauchte Quarz-Aquaracer liegen bei 600–900 €. Preis auf Marktniveau. |
+| 3476515699 | Fender Jazz Bass 1978 | 1.750 € | Neu bundiert, Hals angeschliffen, Pickups neu gewickelt, Brücke, Elektronik und Mechaniken getauscht. Umbauten dieser Tiefe senken den Sammlerwert, der Preis ist damit richtig. |
+| 3476491670 | Gibson Les Paul Studio 2020 | 1.200 € | Referenz nicht belastbar (2,58); gebrauchte LP Studio liegen bei 900–1.300 €. Preis auf Marktniveau. |
+| 3476674397 | Simson Star DDR | 1.350 € | Papiere und Schlüssel fehlen, Verkauf als Bastlerfahrzeug. Nach prompt.md Schritt 2e ohne Zulassungsbescheinigung Teil II richtig bepreist, nicht billig. |
+| 3476543389 | JLC Atmos Tischuhr | 650 € | Referenz nicht belastbar (4,89), Kaliber und Baujahr fehlen. Gängige Vintage-Atmos liegen bei 400–900 €, kein Abstand belegbar. |
+| 3476581731 | Hilti Kernbohrgerät | 480 € | Referenz nicht belastbar (3,3), und die Anzeige nennt keine Typbezeichnung (DD 130, DD 150-U, DD 200 unterscheiden sich um den Faktor drei). Ohne Modell kein belastbarer Referenzwert; geschätzt wird nicht. |
+| 3476343058 | Damen Trekking-Fahrrad | 300 € | Marke "Bike Manufaktur" ohne belegbares Preisniveau, Referenz nicht belastbar (4,01). Der genannte Neupreis von 1.300 € ist eine Verkäuferangabe. Gebrauchte Trekkingräder dieser Klasse liegen bei 250–400 €. |
+| 3476746718 | Gibson LP Junior Tribute DC 2019 | 1.100 € | Referenz nicht belastbar (3,56). Gebrauchtniveau 700–950 €; der getauschte Humbucker statt des originalen P90 senkt den Wert zusätzlich. Preis liegt über Markt. |
+| 3465629604 | Truma Aventa Comfort | 899 € | Baujahr 2011, Referenz nicht belastbar (3,22). 15 Jahre alte Dachklimaanlagen liegen bei 700–1.000 €. Preis auf Marktniveau. |
+| 3476971684 | Apple iPhone 16 128GB | 285 € | Rückseitenglas gebrochen, Sturzmacken, Displaykratzer. Der Preis erklärt sich selbst. |
+| 3476186282 | Eames Fiberglass Armchair PACC | 280 € | Referenz nicht belastbar (2,98), belegbare Spanne für gebrauchte Eames-Fiberglasschalen 199–1.389 € je nach Hersteller, Alter und Zustand. Bei "starken Gebrauchsspuren" und nachträglicher Vollpolsterung kein Abstand belegbar. |
+| 3458067537 | Specialized Sirrus X 2.0 | 350 € | UVP 725 €, Straßenpreis neu ab 688 €. Für ein drei Monate altes Rad wären 350 € auffällig, aber zwei konkrete Gebrauchtvergleiche desselben Modelljahrs fand ich nicht, und das Konto ist drei Wochen alt ohne Bewertung. Nicht überzeugt, verworfen. |
+| 3476581313 | Cube Travel 28 Zoll | 350 € | Baujahr fehlt, Shimano Altus deutet auf Einstiegsklasse. Ohne Modelljahr reicht die Gebrauchtspanne von 250 bis 600 €, kein Abstand belegbar. |
+| 3476656447 | MacBook Air 13" 2020 M1 | 380 € | M1 Air 8/256 GB liegt Mitte 2026 bei 350–450 €. Preis auf Marktniveau. |
+| 3476899238 | Apple MacBook Air Laptop | 400 € | Weder Baujahr noch Chip, RAM oder SSD genannt; die Beschreibung listet nur Gehäuse und Tastatur. Ohne Modellbestimmung kein Marktwert. |
+| 3476790153 | TAG Heuer Damenuhr CL1212 | 650 € | Referenz nicht belastbar (3,2). Quarz-Damenuhren der 2000er-Serie liegen bei 250–450 €, ohne Box und Papiere eher darunter. Preis über Markt. |
+| 3476947459 | MacBook Pro M2 13" | 590 € | Gebrauchtniveau 550–700 €. Kein Abstand. |
+| 3476314216 | Specialized Mountainbike | 350 € | Kein Modell, kein Baujahr, Bowdenzug defekt. Referenz nicht belastbar (3,43). Nicht bewertbar. |
+| 3476706032 | Prophete Trekking E-Bike | 333 € | Verkäufer beschreibt selbst ein beschädigtes Planetengetriebe im Motor. Der Preis erklärt sich selbst. |
+| 3476768887 | iPhone 15 Pro Max | 325 € | Kameragehäuse defekt, dazu Konto seit Mai 2026, nur Versand, drei Bilder, zwei Sätze Beschreibung. Defekt erklärt den Preis, das Profil spricht zusätzlich dagegen. |
+| 3476687897 | DJI Mavic Pro + More Combo | 250 € | Referenz nicht belastbar (2,85). Die ursprüngliche Mavic Pro von 2016 liegt gebraucht bei 250–350 €. Kein Abstand. |
+| 3476619512 | Intex Ultra XTR Frame Pool | 300 € | Komplettset neu bei 600–800 €; für einen gebrauchten Aufstellpool mit Sandfilter ist 300 € Marktniveau, dazu saisonaler Verschleißartikel. |
+| 3476348448 | Herren Trekking-Fahrrad | 300 € | Gegenstück zu 3476343058, gleiche Begründung: Referenz nicht belastbar (4,21), Marke ohne belegbares Preisniveau. |
+| 3476499778 | Trek Marlin 7 (2018) | 330 € | Acht Jahre altes Einstiegs-MTB, Gebrauchtniveau 300–450 €. Kein Abstand. |
+| 3476833512 | LEGO Minas Tirith Figuren | 349 € | Verkauft werden nur die zehn Minifiguren, der Median 567 € stammt aus Anzeigen für komplette Sets. Referenzgruppe nicht vergleichbar, die Ersparnis ist ein Phantom. Die genannte Setnummer 11377 ist zudem keine reguläre LEGO-Nummer. |
+| 3476958211 | iPhone 15 Pro 256 GB | 390 € | Kameraglas gesprungen, 1x-Kamera verschwommen. Der Preis erklärt sich selbst. Zudem kein Bild in der Anzeige. |
+| 3476260941 | Freischwinger Mart Stam | 180 € | Die Anzeige sagt "im Bauhaus-/Thonet-Stil", also gerade kein Thonet-Original. Referenz nicht belastbar (2,72), Konto einen Tag alt. Für eine Nachbildung ist 180 € kein Fund. |
+| 2948649270 | N64 Banjo-Tooie OVP | 150 € | Gewerblicher Händler (retroworld.de UG). Pricecharting ist nach prompt.md als Obergrenze zu lesen, CIB-PAL-Preise liegen bei 100–160 €. Preis auf Marktniveau. |
+| 3476334149 | Hilti TE 30 | 220 € | Variante nicht genannt (TE 30, TE 30-AVR, TE 30-A36 unterscheiden sich deutlich). Belegte Auktionszuschläge liegen bei 100–130 €, Händlerangebote bei 189–995 €. Kein belastbarer Referenzwert. |
+
+## Was committet wird
+
+Ein Fund heißt nach prompt.md Schritt 5: `deals.json`, `email_output.html`, `deal_log.csv`
+und der `runs`-Ordner gehen direkt nach `main`. `python -m scanner.report` wurde ausgeführt,
+die Änderung an `email_output.html` löst den Versand über Resend aus.
