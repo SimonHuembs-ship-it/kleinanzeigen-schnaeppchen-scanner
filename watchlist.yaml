@@ -22,8 +22,11 @@ einstellungen:
   # Harte Obergrenze pro Lauf. Wird sie erreicht, bricht der Scan ab und
   # vermerkt das im Laufprotokoll, statt still weniger zu liefern.
   max_requests: 15000
-  detail_limit: 20
-  referenz_limit: 60
+  # Actions-Minuten sind seit dem oeffentlichen Repo unbegrenzt, deshalb
+  # grosszuegiger: bei 60 Referenzsuchen je Ziel waeren im 24-Stunden-Lauf
+  # nur rund fuenf Prozent der Treffer bepreist worden.
+  detail_limit: 25
+  referenz_limit: 150
 
 ziele:
 

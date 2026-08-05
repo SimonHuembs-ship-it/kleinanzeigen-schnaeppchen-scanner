@@ -87,7 +87,10 @@ def anzeigen_sammeln(api: Api, ziel: dict, von: datetime, bis: datetime, statist
                                      seiten=1):
                 gefunden[anzeige.id] = anzeige
 
-    statistik["gesichtet"] += len(gefunden)
+    # Beim Gesamtsweep ist der Pool schon gezaehlt; sonst zaehlt jedes Ziel
+    # dieselben Anzeigen erneut und die Statistik meldet ein Vielfaches.
+    if not (ziel.get("verfahren") == "sweep" and pool is not None):
+        statistik["gesichtet"] += len(gefunden)
     return list(gefunden.values())
 
 
@@ -123,6 +126,7 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
         pool = api.fenster(von=von, bis=bis,
                            min_price=einstellungen.get("preis_ab", 150))
         statistik["pool"] = len(pool)
+        statistik["gesichtet"] += len(pool)
         print(f"  Gesamtsweep: {len(pool)} Anzeigen, {api.requests} Requests",
               file=sys.stderr, flush=True)
 
