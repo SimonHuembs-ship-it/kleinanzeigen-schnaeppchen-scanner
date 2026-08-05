@@ -18,7 +18,7 @@ import yaml
 
 from .api import Api, Gesperrt, eingestellt, jetzt
 from . import filter as vorfilter
-from . import reference, score as scoring
+from . import reference, score as scoring, typos
 
 WURZEL = Path(__file__).resolve().parent.parent
 SEEN = WURZEL / "seen_ads.csv"
@@ -54,6 +54,16 @@ def anzeigen_sammeln(api: Api, ziel: dict, von: datetime, bis: datetime, statist
             gefunden[anzeige.id] = anzeige
     else:
         begriffe = list(ziel.get("begriffe", [])) + list(ziel.get("tippfehler", []))
+
+        # Von Hand gepflegte Tippfehlerlisten sind immer unvollstaendig.
+        # Systematisch erzeugte Varianten decken die Fehlerklassen ab, die
+        # deutsche Nutzer tatsaechlich produzieren.
+        anzahl = int(ziel.get("tippfehler_auto", 4))
+        if anzahl:
+            for begriff in list(ziel.get("begriffe", [])):
+                begriffe.extend(typos.erzeugen(begriff, anzahl))
+        begriffe = list(dict.fromkeys(b.lower() for b in begriffe))
+
         for begriff in begriffe:
             for anzeige in api.suche(begriff,
                                      category_id=ziel.get("kategorie"),
@@ -103,7 +113,12 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
 
         # Bei einem Sweep ist "posted" der einzige Zeitfilter, denn modAfter
         # erfasst auch Bearbeitungen. Rund 2 Prozent sind gebumpte Altanzeigen.
-        anzeigen = [a for a in anzeigen if (eingestellt(a) or von) >= von]
+        #
+        # Nischen-Ziele laufen ohne Zeitfilter: dort stehen wenige Anzeigen
+        # wochenlang unverkauft, und eine unterbewertete Leica waere nach Tag
+        # eins sonst fuer immer unsichtbar. Wiederholungen faengt seen_ads.csv.
+        if ziel.get("zeitfilter", True):
+            anzeigen = [a for a in anzeigen if (eingestellt(a) or von) >= von]
 
         passend = []
         for anzeige in anzeigen:

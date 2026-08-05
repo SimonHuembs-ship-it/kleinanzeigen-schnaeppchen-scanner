@@ -17,7 +17,8 @@ einstellungen:
   mindestpunkte_tiefpreis: 80
   # Harte Obergrenze pro Lauf. Wird sie erreicht, bricht der Scan ab und
   # vermerkt das im Laufprotokoll, statt still weniger zu liefern.
-  max_requests: 4000
+  max_requests: 6500
+  # Neun Sweeps statt sechs, dazu erzeugte Tippfehler.
 
 ziele:
 
@@ -148,6 +149,9 @@ ziele:
   - id: kameras-leica
     aktiv: true
     verfahren: keyword
+    # Ohne Zeitfilter: in Nischen stehen Anzeigen wochenlang unverkauft.
+    zeitfilter: false
+    tippfehler_auto: 5
     kategorie: 245
     preis_min: 200
     preis_max: 20000
@@ -169,6 +173,9 @@ ziele:
   - id: tempomat-nachruest
     aktiv: true
     verfahren: keyword
+    # Ohne Zeitfilter: in Nischen stehen Anzeigen wochenlang unverkauft.
+    zeitfilter: false
+    tippfehler_auto: 5
     preis_max: 1200
     schwelle: 0.70
     # AP60B ist kein Dometic-Produkt, sondern der australische Command-Klon
@@ -186,6 +193,9 @@ ziele:
   - id: studio-audio
     aktiv: true
     verfahren: keyword
+    # Ohne Zeitfilter: in Nischen stehen Anzeigen wochenlang unverkauft.
+    zeitfilter: false
+    tippfehler_auto: 5
     preis_min: 100
     preis_max: 8000
     schwelle: 0.70
@@ -209,6 +219,9 @@ ziele:
   - id: vintage-hifi
     aktiv: true
     verfahren: keyword
+    # Ohne Zeitfilter: in Nischen stehen Anzeigen wochenlang unverkauft.
+    zeitfilter: false
+    tippfehler_auto: 5
     preis_min: 100
     preis_max: 15000
     schwelle: 0.70
@@ -240,21 +253,106 @@ ziele:
   - id: notverkaeufe
     aktiv: true
     verfahren: keyword
+    # Ohne Zeitfilter: in Nischen stehen Anzeigen wochenlang unverkauft.
+    zeitfilter: false
+    tippfehler_auto: 5
     preis_min: 300
     preis_max: 50000
     schwelle: 0.80
     # Die Suche ist unscharf, deshalb muss der Anlass wirklich im Titel stehen.
     muster:
-      - '\bnotverkauf\b'
-      - '\bsammlungsaufl(oe|ö)sung\b'
-      - '\bnachlass\b'
-      - '\bhaushaltsaufl(oe|ö)sung\b'
+      - '\bnot(fall)?verkauf\b'
+      - '\b\w*aufl(oe|ö)sung\b'
+      - '\bnachlass\w*\b'
       - '\bhaushalsaufl(oe|ö)sung\b'
-      - '\bwohnungsaufl(oe|ö)sung\b'
-    begriffe: ["Notverkauf", "Sammlungsaufloesung", "Nachlass Sammlung",
-               "Haushaltsaufloesung", "Wohnungsaufloesung"]
+      - '\berbschaft\b'
+      - '\bscheunenfund\b'
+      - '\bentr(ue|ü)mpelung\b'
+      - '\bh(oe|ö)re\s+mit\s+dem\s+hobby\s+auf\b'
+      - '\bsammlung\s+(wird\s+)?aufgel(oe|ö)st\b'
+    begriffe: ["Notverkauf", "Notfallverkauf", "Sammlungsaufloesung",
+               "Nachlass Sammlung", "Haushaltsaufloesung", "Wohnungsaufloesung",
+               "Geschaeftsaufloesung", "Studioaufloesung", "Praxisaufloesung",
+               "Scheunenfund", "Erbschaft Sammlung", "Sammlung wird aufgeloest"]
     tippfehler: ["Not Verkauf", "Sammlungs Aufloesung"]
     ausschluss: [gesucht, ankauf, entruempelung, container]
     referenz_query: auto
     referenz_marke: ""
     ohne_referenz: 8
+
+  # -- Zusaetzliche Kategorie-Sweeps -----------------------------------------
+  # Ohne Suchbegriff und damit tippfehlerimmun. Ergaenzen die Keyword-Ziele:
+  # der Sweep faengt Neuzugaenge, die Keyword-Suche den Altbestand.
+
+  - id: foto-sweep
+    aktiv: true
+    verfahren: sweep
+    kategorie: 245
+    preis_min: 150
+    preis_max: 25000
+    schwelle: 0.70
+    muster:
+      - '\b(leica|leitz|leika|leia|leca|leiga)\b'
+      - '\b(summicron|summilux|noctilux|elmarit|elmar|sumicron|summikron)\b'
+      - '\b(hasselblad|hasselbald|haselblad)\b'
+      - '\b(zeiss|ziess|zeis|biogon|planar|distagon|sonnar)\b'
+      - '\b(contax|kontax)\s*(t2|t3|g1|g2|rts)\b'
+      - '\b(mamiya|mamia)\s*(rz|rb|7)\b'
+      - '\brollei(flex)?\s*(35|2\.8|3\.5)\b'
+      - '\bpentax\s*(67|6x7)\b'
+    tippfehler: [leika, leia, sumicron, hasselbald, ziess, mamia]
+    ausschluss: [huelle, hülle, tasche, filter, gegenlichtblende, deckel, riemen,
+                 prospekt, buch, poster, repro, replika, adapter, "nur karton"]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: hifi-sweep
+    aktiv: true
+    verfahren: sweep
+    kategorie: 172
+    preis_min: 100
+    preis_max: 20000
+    schwelle: 0.70
+    muster:
+      - '\b(technics|techniks|technix|tehnics)\s*(sl|sp|1200|1210)\b'
+      - '\b(thorens|thorrens|thoren|torens)\b'
+      - '\b(linn|sondek|sondeck)\b'
+      - '\b(klipsch|klipsh|klipch|klipschorn|la\s*scala|heresy)\b'
+      - '\b(mc\s*intosh|mcintosh|makintosh)\b'
+      - '\bquad\s*(esl|303|405)\b'
+      - '\b(nakamichi|nakamishi|nacamichi)\b'
+      - '\b(revox|revoy|refox|studer|studert)\b'
+      - '\b(neumann|neuman)\b'
+      - '\b(tannoy|tanoy|accuphase|acuphase|luxman|luxmann)\b'
+      - '\bjbl\s*(l\s*100|43\d{2})\b'
+      - '\b(stax|sennheiser)\s*(sr|hd)\s*\d{3}\b'
+    tippfehler: [techniks, thorrens, klipsh, makintosh, nakamishi, revoy, neuman]
+    ausschluss: ["ta technix", gewindefahrwerk, fahrwerk, federbein, felgen,
+                 nadel, riemen, haube, prospekt, poster, nachbau, replika,
+                 auspuff, sportauspuff]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: konsolen-sweep
+    aktiv: true
+    verfahren: sweep
+    kategorie: 279
+    preis_min: 60
+    preis_max: 3000
+    schwelle: 0.70
+    muster:
+      - '\bps5\s*pro\b'
+      - '\bsteam\s*deck\s*(oled|1tb|512)\b'
+      - '\bneo\s*geo\b'
+      - '\bvirtual\s*boy\b'
+      - '\b(pc\s*engine|turbografx|supergrafx)\b'
+      - '\b(sega\s*saturn|dreamcast)\b'
+      - '\bn64\b'
+      - '\bnintendo\s*64\b'
+      - '\bgamecube\b'
+      - '\bsnes\b'
+    tippfehler: [playstaion, palystation, gamecupe, dreamcst, neogeo, nintento]
+    ausschluss: [huelle, tasche, controller einzeln, kabel, netzteil, adapter,
+                 nachbau, replika, repro, aufkleber, poster, "nur spiel"]
+    referenz_query: auto
+    referenz_marke: ""
