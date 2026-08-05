@@ -42,8 +42,41 @@ jobs:
         run: |
           git config user.name "kleinanzeigen-scanner"
           git config user.email "actions@github.com"
-          git add candidates.json seen_ads.csv runs/
+
+          # Kein Rebase. Der Scan laeuft bis zu einer Stunde, in der Zeit pusht
+          # die Routine ihre Funde. Ein Rebase kollidiert dann zwangslaeufig in
+          # candidates.json, seen_ads.csv und runs/, weil beide Seiten dieselben
+          # maschinell erzeugten Dateien anfassen. Stattdessen: HEAD auf den
+          # neuesten Stand setzen und unsere Dateien darauf legen. Der Arbeits-
+          # baum bleibt erhalten, ein Konflikt kann gar nicht entstehen.
+          git fetch -q origin main
+          git reset -q --soft origin/main
+
+          # Diese drei Dateien gehoeren der Routine, nicht dem Sammler. Haette
+          # sie waehrend des Scans Funde gemeldet, wuerde unser aelterer Stand
+          # sie sonst ueberschreiben.
+          git checkout -q origin/main -- deal_log.csv deals.json email_output.html || true
+
+          # Und danach die Warteschlange gegen das nun aktuelle Meldeprotokoll
+          # nachfiltern, damit gerade gemeldete Funde nicht wieder auftauchen.
+          python - <<'FILTER'
+          import csv, json, pathlib
+          kandidaten = pathlib.Path("candidates.json")
+          log = pathlib.Path("deal_log.csv")
+          if kandidaten.exists() and log.exists():
+              with log.open(encoding="utf-8") as datei:
+                  gemeldet = {z.get("ad_id") for z in csv.DictReader(datei)}
+              daten = json.loads(kandidaten.read_text(encoding="utf-8"))
+              vorher = len(daten.get("kandidaten", []))
+              daten["kandidaten"] = [k for k in daten.get("kandidaten", [])
+                                     if k["id"] not in gemeldet]
+              if len(daten["kandidaten"]) != vorher:
+                  kandidaten.write_text(json.dumps(daten, ensure_ascii=False, indent=2),
+                                        encoding="utf-8")
+                  print(f"{vorher - len(daten['kandidaten'])} bereits gemeldete entfernt")
+          FILTER
+
+          git add -A
           git diff --staged --quiet && echo "nichts Neues" && exit 0
-          git commit -m "Scan $(date -u +%Y-%m-%d)"
-          git pull --rebase --autostash origin main
-          git push origin main
+          git commit -q -m "Scan $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q origin HEAD:main
