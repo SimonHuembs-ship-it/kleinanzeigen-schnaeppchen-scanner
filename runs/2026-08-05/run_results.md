@@ -272,3 +272,193 @@ trägt nicht. Kein Fund, sondern nicht bewertbar.
 Kein Fund heißt nach prompt.md Schritt 5: **nur** dieses Laufprotokoll geht nach `main`.
 `deals.json`, `email_output.html` und `deal_log.csv` bleiben unverändert,
 `python -m scanner.report` wurde nicht ausgeführt, es wird keine Mail ausgelöst.
+
+---
+
+# Routine-Lauf 2026-08-05T20:25+02:00 (vierter Lauf des Tages)
+
+- Datenquelle: `candidates.json`, generiert 2026-08-05T19:59:13+02:00 (26 Minuten alt, Frist 4 h eingehalten)
+- Zeitraum des Scans: 2026-08-05T12:25:32+02:00 bis 2026-08-05T18:25:32+02:00
+- Gesichtete Anzeigen laut Scan: 211.463
+- Kandidaten in der Datei: 69
+- Bereits in `deal_log.csv` und deshalb übersprungen: 0
+- Inhaltlich geprüft: 69
+- **Gemeldete Funde: 4**
+
+Der Scan, der beim letzten Lauf um 18:25 Uhr noch `in_progress` war, ist durchgelaufen und
+hat einen komplett neuen Bestand geliefert: 69 Kandidaten statt 40, andere Warengruppen
+(erstmals Uhren im oberen Preisband, W126, USM Haller). Keine einzige ID überschneidet sich
+mit `deal_log.csv`, die Doppelmeldungssperre hatte nichts zu tun.
+
+Geprüft wurde in der Reihenfolge aus prompt.md: erst der größte absolute Abstand und die
+liquide Ware (Uhren, Apple, Drohnen), dann der Rest. Nach vier bestätigten Funden war die
+Liste abgearbeitet, die Zehner-Grenze also nicht bindend.
+
+## Funde
+
+| # | ID | Titel | Preis | Bestätigtes Preisniveau | Abstand |
+|---|---|---|---|---|---|
+| 1 | 3477232373 | Mercedes Benz 300 SE, W126 | 6.500 € | 8.700–11.000 € | 25–41 % |
+| 2 | 3477182939 | Sideboard (USM Haller-System) | 480 € | 820 € (Händler gebraucht, gleiche Konfiguration) | 41 % |
+| 3 | 3477252817 | Apple MacBook Pro M5 1TB | 1.400 € | 2.195–2.288 € | 36–39 % |
+| 4 | 3477248587 | Koga Miyata Full Pro Dura Ace | 360 € | 685–699 € | 47–48 % |
+
+Kein Fund trägt `unkenntnis_bonus`; die Sortierung richtet sich deshalb allein nach der
+absoluten Ersparnis. Die beiden Kandidaten mit `unkenntnis_bonus` (3466536786, 3476715579)
+sind unten aus sachlichen Gründen verworfen, nicht wegen der Anzeigenqualität.
+
+### Belege im Einzelnen
+
+**1. Mercedes 300 SE W126, 6.500 €.** theclassicvaluer nennt für den W126 300 SE im
+Durchschnittszustand 7.589 GBP (≈ 8.700 €); deutsche Inserate für Ende-80er-Exemplare
+beginnen bei 11.900 €, ein 1989er mit 322.000 km steht bei 16.900 €. Der Kandidat hat
+177.000 km, H-Zulassung, TÜV bis 10/2026, Garagenhaltung, frische Bremsen, Radlager und
+Frontscheibe, und der Verkäufer legt Lackkratzer und oberflächige Anrostungen selbst offen.
+Auch gegen den untersten Beleg von 8.700 € bleiben 25 % Abstand. classic-analytics selbst
+ist nicht frei abrufbar, deshalb der Umweg über theclassicvaluer und laufende Inserate;
+der Kleinanzeigen-Median (11.250 €, n = 59) war nicht die Grundlage der Entscheidung.
+Kein preiserklärender Umstand: kein Unfall, kein Defekt, für einen 37 Jahre alten W126 ist
+177.000 km wenig.
+
+**2. USM Haller Sideboard, 480 €.** Die Konfiguration (eine Klapptür oben, eine Schublade
+mit Hängehefter-Halterung unten) entspricht einem 1x2-Sideboard. Zertifizierte USM-Second-Hand-
+Partner geben genau diese Größe gebraucht für 820 € ab; der Neupreis eines vergleichbaren
+Sideboards liegt bei 1.599 €, und gebrauchte USM-Möbel handeln laut Fachhandel 15–30 % darunter,
+also 1.120–1.360 €. Selbst gegen den Händler-Gebrauchtpreis von 820 € sind 480 € noch 41 %
+darunter, und das mit offengelegten Gebrauchsspuren und fehlenden Schlüsseln. USM Haller ist
+kein Nischenprodukt, sondern eines der wertstabilsten Möbelsysteme überhaupt.
+
+**3. Apple MacBook Pro M5 1TB, 1.400 €.** Attribute nennen 14 Zoll, 24 GB RAM, 1 TB SSD,
+die Beschreibung einen M5 mit 10 Kernen und Akku bei 100 %. buyZOXS führt genau diese
+Konfiguration refurbished ab 2.288 €, neu kostet sie laut Geizhals ab 2.479 €, der
+Kleinanzeigen-Median liegt bei 2.195 € (n = 48, Streuung 1,34). Damit sind 1.400 € rund 36 %
+unter dem bestätigten Niveau. Das Modell existiert: Der M5 mit 10-Kern-CPU ist die
+Basisvariante des 14-Zoll-MacBook Pro, 24 GB / 1 TB eine reguläre CTO-Option.
+
+**4. Koga Miyata Full Pro Dura Ace, 360 €.** Zwei laufende eBay-Angebote desselben Modells
+mit Dura-Ace-Gruppe stehen bei 685 € und 699 €. Der Full Pro war Kogas Topmodell, nicht das
+Alltagsrad. Verkäufer seit 2017, Bewertung 0,92, zehn Bilder, Probefahrt angeboten, und die
+Beschreibung ist genau so knapp wie bei jemandem, der das Rad nicht als Sammlerstück begreift.
+
+## Verworfene Kandidaten
+
+### Uhren
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 2142985917 | Rolex Submariner Date 16610, Bj. 1991 | 7.995 € | Chrono24: 1991er 16610 ohne Papiere bei 9.134 €, ein Full Set mit Revision 2026 bei 8.600 €. Gegen das bestätigte Niveau von 8.600–9.100 € sind es 7–12 % Abstand, die 20-%-Schwelle ist verfehlt. Der Median von 12.400 € ist die Angebotsecke gewerblicher Anbieter, nicht der erzielbare Preis. Anzeige selbst ist unauffällig (Fachhändler, Revision, ein Jahr Gewährleistung) — nur eben kein Schnäppchen. |
+| 3477027929 | Rolex Datejust mit Brillanten | 6.900 € | Referenz nicht belastbar (Streuung 7,71). Keine Referenznummer, kein Modelljahr, keine Größe — der Marktwert ist nicht bestimmbar. Die genannten Brillanten stammen laut Anzeige von einem Londoner Juwelier, also nachträglich gesetzt; Aftermarket-Steine senken den Rolex-Wert. Dazu "100 % echt" als Textbaustein und nur Versand ohne Abholoption. |
+| 3477219438 | Rolex Lady Datejust 26, Stahlgold | 3.200 € | Chrono24 führt die Ref. 69173 mit Diamantzifferblatt bei 4.777–4.931 $ (Händler), ein Vintage-Angebot bei 2.700 €. Der Verkäufer nennt selbst ein Band, das "nur noch wenig Spannung" hat — ein ausgelängtes Stahlgold-Jubilé-Band ist die teuerste Einzelposition an dieser Uhr. Der Preis erklärt sich damit selbst; zusätzlich Bewertung 0,41. |
+| 3477021334 | Omega Seamaster Diver Chronograph, Ref. 2598.8000, Bj. 1994 | 1.850 € | Chrono24 für genau diese Referenz: 1.899 CHF, 2.270 $, 2.596 CHF, 2.695 CHF, also rund 2.030–2.880 € — alles Händlerangebote mit Gewährleistung. Im Privatmarkt liegt die Uhr darunter, ein Abstand von 20 % ist nicht belegbar. Der Median von 4.000 € stammt aus der Suche "Omega Seamaster Diver" und mischt die aktuelle Keramik-Diver-300M-Serie ein, ein Phantom. Die Anzeige selbst ist die beste im ganzen Bestand (Bewertung 1,00, elf Bilder, exakte Referenz, Versand inklusive) — der Preis ist nur fair, nicht zu niedrig. |
+| 3477225076 | Breitling Navitimer B01 Chronograph 43 | 4.555 € | Chrono24 gebraucht: 4.999–6.590 €, typisch 5.500–6.100 €. Gegen den untersten Beleg von 4.999 € sind es 9 % Abstand. 20-%-Schwelle verfehlt. |
+| 3476670704 | Tudor Black Bay Pro | 2.200 € | Wie im Lauf von 18:21 Uhr: Konto sechs Tage alt, keine Bewertung, zweizeiliger englischer Textbaustein, exakte Modellbezeichnung ohne Referenznummer, Attribut "Nur Abholung" bei gleichzeitigem Versandangebot. Betrugsmuster bei hochliquider Ware, kein `unkenntnis_bonus`. Zudem mischt der Median ("Tudor Black Bay") BB58, BB GMT und BB Pro. |
+| 3475062349 | Tudor Prince Date Ref. 74034 | 1.899 € | Konto zwei Tage alt bei einer 1.899-€-Uhr mit Versandangebot, dazu ein Werbetext in Katalogprosa samt öffentlich genannter Seriennummer. Gebrauchte 74034 liegen bei 1.800–2.500 €, ein Abstand von 20 % ist ohnehin nicht belegbar. |
+| 3476822088 | Tag Heuer Aquaracer | 850 € | Unverändert zum Lauf von 16:31 Uhr: keine Referenznummer, der Batteriewechsel weist auf ein Quarzwerk hin, gebrauchte Quarz-Aquaracer liegen bei 600–900 €. Der Median mischt die Automatikmodelle ein. Preis auf Marktniveau. |
+| 3375969368 | Jaeger LeCoultre Uhr | 1.300 € | Referenz nicht belastbar (5,03), kein Referenzmodell genannt. Unverändert nicht bewertbar. |
+| 3476543389 | Tischuhr Jaeger-LeCoultre (Atmos) | 650 € | Referenz nicht belastbar (4,89), Kaliber und Baujahr fehlen. Gegen das untere Privatniveau von 745 € kein Abstand belegbar. |
+| 3476790153 | TAG Heuer Damenuhr | 650 € | Referenz nicht belastbar (3,2). Quarz-Damenuhren dieser Serie liegen bei 250–450 €, der Preis liegt über Markt. |
+
+### Fahrzeuge und Youngtimer
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3477065220 | VW Golf 2 GTI 16v KR | 8.000 € | Die Anzeige nennt spanische Auslieferung und "Deutschpapiere würden gemacht", also noch nicht vorhandene deutsche Papiere, bei gleichzeitig behaupteter H-Zulassung — ein Widerspruch. Nach prompt.md Schritt 2e ist ein Klassiker ohne Zulassungsbescheinigung Teil II nicht billig, sondern richtig bepreist. Belegtes Niveau für einen guten Golf 2 GTI mit H liegt bei rund 10.900 €, der rechnerische Abstand wäre da, der Papierstand trägt ihn nicht. |
+| 3477090557 | Bmw e30 zu verkaufen | 6.000 € | Referenz nicht belastbar (3,71) und die Suche "Bmw verkaufen e30" mischt M3, 325i und Cabrios ein. Tatsächlich ein 316er Limousine, abgebrochenes M3-Umbauprojekt. Für den schwächsten E30 als Projektfahrzeug ist 6.000 € kein Fund. |
+| 3477204268 | Mercedes W201 190D | 3.800 € | 296.057 km, und der Verkäufer hat den Wagen vor 2,5 Monaten selbst gekauft und dreht ihn weiter. Nur "Gebrauchsspuren" genannt, keine Substanzangaben — das ist Zustand 4, nicht 3, und in dem Band ist 3.800 € richtig bepreist. |
+| 3477110107 | W124 230ce Coupe mit H | 3.250 € | Fahrzeugzustand laut Attribut "Beschädigtes Fahrzeug", 300.000 km, steht seit Jahren, Dichtungen fällig, heute abgemeldet. Der Verkäufer schreibt selbst "Absoluter Festpreis deswegen so günstig alles wurde berücksichtigt". Der Preis erklärt sich selbst. |
+| 3477056942 | Mercedes 190E W201 2.0 | 3.200 € | Lack matt, Kratzer und Dellen, und eine "leichte Undichtigkeit Windschutzscheibe Fahrerseite" — am W201 der Einstieg in Rost im Scheibenrahmen. 265.000 km. Der Preis erklärt sich selbst. |
+| 3476927039 | Mercedes Benz W201 / 190er | 2.600 € | Referenz nicht belastbar (2,74); unverändert zum Lauf von 16:31 Uhr: reparierter Frontunfall, Rost, Tieferlegung, HU abgelaufen. |
+| 3477261196 | Mercedes W124 E220 | 5.500 € | Referenz nicht belastbar (3,23), die Suche mischt Coupés und Cabrios der Baureihe ein. Kein eigenständig bestätigter Marktwert, damit kein Fund. |
+| 3477249216 | MERCEDES-BENZ W124 | 4.000 € | Referenz nicht belastbar (2,55) und der Titel nennt keine Motorisierung; die W124-Palette reicht vom 200D bis zum 500E. Ohne Modellbestimmung kein Marktwert. |
+| 3476554968 | Honda Fireblade 1000 | 4.000 € | Referenz nicht belastbar (2,83), kein Baujahr genannt, die CBR1000RR reicht von 2004 bis 2023 mit 4.000–15.000 €. Dazu Bewertung 0,00 und eine Stellvertretergeschichte ("war die ganze Zeit im Besitz meines Opas"). |
+| 3477214691 | Simson Schwalbe KR51/1 | 1.550 € | "Keine Papiere", Sitz- und Lenkschloss fehlen, Benzinhahnhebel abgebrochen, seit 2014 abgemeldet. Ohne Zulassungsbescheinigung Teil II richtig bepreist, nicht billig. Referenz zudem nicht belastbar (2,83). |
+| 3476674397 | Simson Star DDR | 1.350 € | Unverändert: Papiere und Schlüssel fehlen, Verkauf als überholungsbedürftiges Projekt. |
+
+### Apple
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3477135411 | apple macbook pro 2025 | 1.100 € | Beschreibung ist wörtlich Apples Marketingtext zum M5-MacBook-Pro, das Attribut sagt "Anderes Modell". Das Basis-M5-MacBook-Pro 14" kostet neu ab 1.449 € (Geizhals), gebraucht 1.250–1.400 €. Bei 1.100 € sind das rund 15 %, die 20-%-Schwelle ist verfehlt. |
+| 3477254771 | MacBook Pro M4 | 1.200 € | Höchstens ein Bild, Bewertung 0,53, OVP und Ladekabel fehlen. Ein M4 14" ohne Zubehör liegt bei 1.200–1.400 €, kein belegbarer Abstand. |
+| 3477011971 | Apple MacBook Pro 14 (M1 Pro, 16/1TB) | 650 € | Beschreibung besteht aus fünf Wörtern ("M1 Pro, hat nur 51 Zyklen"), nur Versand. Refurbished-M1-Pro-Geräte beginnen bei 799 € mit Garantie, privat liegt das Niveau bei 750–850 €. Gegen diesen Wert sind es unter 20 %; der Median (1.394 €) stammt aus "Apple MacBook Pro 14" und mischt M1 bis M5. |
+| 3477232538 | MacBook Air 13 M2 16GB | 480 € | Drei Dellen im Gehäuse, offengelegt. M2 Air 16/256 GB liegt gebraucht bei 550–650 €, mit Dellen darunter. Kein Abstand von 20 %. |
+| 3476947459 | MacBook Pro M2 | 590 € | Unverändert: Gebrauchtniveau 550–700 €, kein Abstand. |
+| 3476656447 | MacBook Air (2020, M1, 8/256) | 380 € | Unverändert: M1 Air 8/256 GB liegt Mitte 2026 bei 350–450 €, Preis auf Marktniveau. |
+| 3476899238 | Apple MacBook Air Laptop | 400 € | Weder Baujahr noch Chip, RAM oder SSD genannt; die Beschreibung ist maschinell klingender Fülltext über Gehäuse und Trackpad. Ohne Modellbestimmung kein Marktwert. |
+| 3477182555 | Apple MacBook Pro (13", 2019, Intel, 256 GB) | 350 € | Referenz nicht belastbar (2,81). Intel-Mac am Ende des macOS-Supports — nach prompt.md erklärt ausgelaufener Support den Preis. Beschreibung derselbe Füllbaustein wie bei 3476899238 und 3477231068. |
+| 3477231068 | Apple MacBook Pro (13", 2017) | 399 € | Referenz nicht belastbar (2,81). 2017er Intel-Mac ohne macOS-Support, dazu derselbe generische Textbaustein. Preis nicht unter Markt. |
+| 3476983653 | MacBook Pro inkl OVP (13", 2020, Intel i5) | 300 € | Referenz nicht belastbar (2,97). Verkäufer nennt selbst "Batterie hält ca. 3 Stunden" und "Service empfohlen". Intel-Mac, auslaufender Support, Akku fällig — der Preis erklärt sich selbst. |
+| 3476971684 | Apple iPhone 16 128GB Titan Black | 285 € | Rückseitenglas gebrochen, Sturzmacken, Displaykratzer, alles offengelegt. Rückglastausch ist die teuerste Reparatur am Gerät. Der Preis erklärt sich selbst. |
+| 3476768887 | iPhone 15 Pro Max | 325 € | Kameragehäuse defekt, Konto seit Mai 2026 ohne Bewertung, zwei Sätze Beschreibung. Defekt erklärt den Preis. |
+| 3476958211 | iPhone 15 Pro 256 GB | 390 € | Kameralinse gesprungen, im Titel offengelegt. Der Preis erklärt sich selbst. |
+
+### Drohnen und Kamera
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3477080971 | DJI Mini 5 Pro Fly More Combo | 585 € | Die Fly More Combo kostet **neu** ab 899 € (Geizhals, mit RC-N3), die RC-2-Variante 1.129 € UVP. Der Median von 905 € ist damit kein Gebrauchtmedian, sondern das Neupreisniveau. Gebraucht liegt die knapp ein Jahr alte Drohne bei 650–750 €, gegen diesen Wert sind 585 € rund 10–20 % — die Schwelle ist nicht sicher erreicht. Die Anzeige selbst ist sauber (Konto seit 2016, Bewertung 1,00, Käuferschutz), nur der Abstand trägt nicht. |
+| 3477227101 | Zubehör DJI Mini 3 Pro | 300 € | Verkauft wird ausdrücklich **keine Drohne**, sondern nur Restzubehör nach Drohnenverlust. Der Median (599 €) stammt aus Anzeigen für komplette Sets, die Referenzgruppe ist nicht vergleichbar. Zwei Akkus, Ladestation, RC-N1, ND-Filter und Propeller liegen zusammen bei 200–280 €. Preis auf Marktniveau. |
+| 3476687897 | DJI Mavic Pro + More Combo | 250 € | Referenz nicht belastbar (2,85). Die Mavic Pro von 2016 liegt gebraucht bei 250–350 €. Kein Abstand. |
+
+### Musikinstrumente
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3477209872 | Gibson Les Paul Studio 2013 + Grover Tuner | 650 € | Der Verkäufer legt vorbildlich offen, dass das Tronical-Stimmsystem entfernt und durch normale Mechaniken ersetzt wurde, dazu getauschte Potiknobs, Pickuprahmen und Trussrodcover sowie Lackabnutzung. Gebrauchte LP Studio liegen bei 650–950 €, mit Umbauten am unteren Rand — 650 € ist Marktniveau, nicht 20 % darunter. Der Median (2.150 €) stammt aus "Gibson Les Paul 2013" und mischt Standard und Custom ein. |
+| 3476985359 | Gibson Les Paul Studio Bj. 1996 gold | 1.350 € | Referenz nicht belastbar (2,93); der Median mischt erneut Standard-Modelle ein. Gebrauchte 90er-LP-Studio liegen bei 900–1.400 €, kein Abstand belegbar. |
+| 3477187528 | Gibson Les Paul Special TV Yellow | 1.300 € | Referenz nicht belastbar (2,99). Kein Abstand zum Gebrauchtniveau belegbar. |
+| 3476491670 | Gibson Les Paul Studio E-Gitarre mit Koffer | 1.200 € | Referenz nicht belastbar (2,58); gebrauchte LP Studio bei 900–1.300 €. Preis auf Marktniveau. |
+| 3476746718 | Gibson LP Junior Tribute DC 2019 | 1.100 € | Referenz nicht belastbar (3,56). Gebrauchtniveau 700–950 €, der getauschte Humbucker statt des originalen P90 senkt den Wert. Preis über Markt. |
+| 3476515699 | Fender Jazz Bass 1978 Player Condition | 1.750 € | Neu bundiert, Hals angeschliffen, Pickups neu gewickelt, Brücke, Elektronik, Halsplatte und Mechaniken getauscht. Umbauten dieser Tiefe senken den Sammlerwert, der Preis ist damit richtig. Der Verkäufer nennt den Zustand selbst "Player Condition". |
+
+### Design und Möbel
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3108524087 | Usm Haller Highboard Beige | 835 € | Gewerblicher Anbieter, laut Anzeige "Autorisierter USM Haller Second Hand Partner" mit Ladengeschäft. 835 € für 76 × 37 × 74 cm mit Softclose **ist** der Händler-Gebrauchtpreis, also der Marktwert selbst. Der Median mischt größere Highboards ein. |
+| 3108453085 | Original USM Haller Nachttisch beige | 820 € | Ebenfalls zertifizierter USM-Second-Hand-Händler, Preis inklusive MwSt. und Rechnung, Zustand "refurbished". Händlerpreis = Marktwert, kein Abstand. |
+| 3477076941 | USM Haller Lowboard, schwarz | 725 € | 125 × 35 × 35 cm ohne Türen und Schubladen — die günstigste USM-Konfiguration, im Gebrauchthandel 700–900 €. 725 € liegt auf Marktniveau. |
+| 3477121782 | Bürostuhl Vitra EA119 | 875 € | Referenz nicht belastbar (2,59). Ohne Angabe zu Bezug, Baujahr und Zustand der Alu-Group-Ausführung kein belegbarer Referenzwert. |
+| 3477220838 | Walter Knoll Foster 500 Sessel Leder | 1.200 € | Referenz nicht belastbar (2,52). Kein eigenständig bestätigtes Preisniveau für diese Ausführung gefunden, deshalb keine Schätzung. |
+
+### Fahrräder
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3466536786 | Trekking Bike Koga Miyata (`unkenntnis_bonus`) | 300 € | Nicht wegen der Anzeigenqualität verworfen: Referenz nicht belastbar (2,79), und es handelt sich um ein Alltags-Trekkingrad Typ "Roadrunnerlady", kein Sammlerstück wie der Full Pro. Generalüberholt 2024, sehr gut beschrieben — für ein gebrauchtes Damen-Trekkingrad ist 300 € ein normaler, kein auffälliger Preis. |
+| 3476715579 | Cube Mtb Fahrrad (`unkenntnis_bonus`) | 300 € | Ebenfalls nicht nach Anzeigenqualität: Referenz nicht belastbar (4,64), und die Anzeige nennt weder Modell noch Baujahr noch Ausstattung. Ohne bestimmbares Objekt kein Marktwert. |
+| 3477037692 | Cube Touring Pro Wave | 450 € | Der Median (1.600 €) stammt aus "Cube Touring Pro" und zieht die E-Bike-Variante Touring Hybrid Pro herein — Phantomersparnis. Ein gebrauchtes unmotorisiertes Cube Touring Pro liegt bei 400–600 €, Preis auf Marktniveau. |
+| 3458067537 | Specialized Sirrus X 2.0 | 350 € | Unverändert zum Lauf von 18:21 Uhr: Neupreis 688–899 €, aber zwei konkrete Gebrauchtvergleiche desselben Modelljahrs sind nicht auffindbar (Bicycle Blue Book und buycycle antworten mit 403). Ohne Beleg wird nicht geschätzt. |
+| 3476581313 | Cube Travel 28 Zoll | 350 € | Baujahr fehlt, Shimano Altus weist auf die Einstiegsklasse. Gebrauchtspanne 250–600 €, kein Abstand belegbar. |
+| 3477020056 | 29 Zoll TREK Marlin 6 | 369 € | Baujahr fehlt. Das Marlin 6 ist Treks Einstiegs-MTB, neu ab rund 600 €; gebraucht 300–450 €. Kein Abstand. |
+| 3476499778 | Trek Marlin 7 (2018) | 330 € | Unverändert: acht Jahre altes Einstiegs-MTB, Gebrauchtniveau 300–450 €. |
+| 3477205818 | Cube Mountainbike | 300 € | Referenz nicht belastbar (5,0), kein Modell, kein Baujahr, drei Zeilen Beschreibung. Nicht bewertbar. |
+| 3476990324 | Fischer E-Bike Trekking | 450 € | Zustand laut Attribut nur "In Ordnung", kein Modell, kein Baujahr, keine Akkuangabe. Bei E-Bikes ist der Akku der halbe Wert; ohne Kapazitätsangabe kein belastbarer Referenzwert. |
+| 3476706032 | Prophete Trekking E-Bike | 333 € | Fünf Jahre alt, 9.256 km. Prophete-Pedelecs dieser Klasse liegen gebraucht bei 300–450 €, kein Abstand. |
+
+### Übriges
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3476827083 | Mercruiser/Volvo Penta hydraulische Lenkung | 1.850 € | Referenz nicht belastbar (5,88), Nischenteil ohne Typbezeichnung. Kein belegbarer Marktwert. |
+| 3476581731 | Hilti Kernbohrgerät | 480 € | Referenz nicht belastbar (3,3), und die Anzeige nennt keine Typbezeichnung — DD 130, DD 150-U und DD 200 unterscheiden sich um den Faktor drei. Ohne Modell kein Referenzwert; geschätzt wird nicht. |
+| 3477030711 | Truma Aventa Comfort | 450 € | Referenz nicht belastbar (2,67), kein Baujahr genannt. Gebrauchte Dachklimaanlagen liegen bei 400–1.000 € je nach Alter; ohne Baujahr kein Abstand belegbar. |
+| 3465629604 | Klimaanlage Truma Aventa Comfort | 899 € | Referenz nicht belastbar (3,22), Baujahr 2011. 15 Jahre alte Anlagen liegen bei 700–1.000 €. Preis auf Marktniveau. |
+| 3476619512 | Intex Ultra XTR Frame Pool | 300 € | Komplettset neu 600–800 €; für einen gebrauchten Aufstellpool mit Sandfilter ist 300 € Marktniveau, dazu ein saisonaler Verschleißartikel. |
+| 3476833512 | LEGO 11377 Minas Tirith Figuren | 349 € | Verkauft werden nur Minifiguren, der Median stammt aus Anzeigen für komplette Sets — Referenzgruppe nicht vergleichbar. Die genannte Setnummer 11377 ist zudem keine reguläre LEGO-Nummer. |
+
+## Belegquellen dieses Laufs
+
+- theclassicvaluer.com (Buyer's Guide W126 300 SE) und laufende deutsche Inserate für den W126
+- Chrono24 für Submariner 16610, Lady-Datejust 69173, Omega 2598.80, Navitimer B01 43
+- buyZOXS und Geizhals für MacBook Pro 14" M5 24 GB / 1 TB, refurbished und neu
+- Geizhals und heise Preisvergleich für die DJI Mini 5 Pro Fly More Combo
+- eBay.de für zwei Koga Miyata Full Pro mit Dura-Ace-Gruppe
+- usm-markt.de, FLEX Büromöbel und prooffice für gebrauchte USM-Haller-Preise (die Händlerseiten
+  selbst antworten auf Direktabruf mit 403, die Preise stammen aus den Suchergebnissen)
+
+## Was committet wird
+
+Vier Funde heißt nach prompt.md Schritt 5: `deals.json`, `email_output.html`, `deal_log.csv`
+und der `runs`-Ordner gehen direkt nach `main`. `python -m scanner.report` wurde ausgeführt,
+die Änderung an `email_output.html` löst den Versand über Resend aus.
