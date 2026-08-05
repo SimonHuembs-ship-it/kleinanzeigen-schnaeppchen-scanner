@@ -271,6 +271,16 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
             })
             statistik["nach_scoring"] += 1
 
+    # Ein Sweep und ein Keyword-Ziel koennen dieselbe Anzeige finden. Der
+    # hoehere Score gewinnt, damit sie nur einmal in der Mail landet.
+    beste: dict = {}
+    for kandidat in kandidaten:
+        vorhanden = beste.get(kandidat["id"])
+        if vorhanden is None or kandidat["score"] > vorhanden["score"]:
+            beste[kandidat["id"]] = kandidat
+    statistik["doppelt_zusammengefasst"] = len(kandidaten) - len(beste)
+    kandidaten = list(beste.values())
+
     kandidaten.sort(key=lambda k: ((k["signale"]["unkenntnis_bonus"], k["ersparnis_eur"] or 0)),
                     reverse=True)
     if limit:

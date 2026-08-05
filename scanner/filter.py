@@ -64,7 +64,12 @@ def passt_zum_ziel(titel: str, ziel: dict) -> bool:
     text = normalisieren(titel).lower()
 
     for wort in ziel.get("ausschluss", []):
-        if re.search(rf"\b{re.escape(str(wort).lower())}", text):
+        begriff = str(wort).lower()
+        # Deutsche Komposita: "Kameratasche" enthaelt "tasche", aber eine
+        # Wortgrenze davor gibt es nicht. Ab fuenf Zeichen deshalb als
+        # Teilzeichenkette pruefen, darunter mit Wortgrenze gegen Fehlalarme.
+        muster = re.escape(begriff) if len(begriff) >= 5 else rf"\b{re.escape(begriff)}"
+        if re.search(muster, text):
             return False
 
     muster = ziel.get("muster") or []

@@ -163,7 +163,9 @@ ziele:
                "Leica Nachlass", "Leica Konvolut"]
     tippfehler: [leika, leia, leca, leiga, sumicron, summikron, noktilux]
     ausschluss: [huelle, tasche, filter, gegenlichtblende, deckel, riemen,
-                 prospekt, buch, poster, repro, replika]
+                 prospekt, buch, poster, repro, replika, mikroskop,
+                 vergroesserer, vergrößerer, focomat, focotar, projektor,
+                 kameratasche, stativ, blitz]
     referenz_query: auto
     referenz_marke: "Leica"
     ohne_referenz: 3
@@ -204,12 +206,14 @@ ziele:
     muster:
       - '\b(neumann|neuman)\b'
       - '\bakg\s*c\s*\d{2,3}\b'
-      - '\b(revox|revoy|refox|studer|studert)\b'
+      # refox bewusst nicht: eine echte Marke fuer Reparaturgeraete,
+      # kein Revox-Tippfehler.
+      - '\b(revox|revoy|studer|studert)\b'
       - '\b(km\s*8[④4]|u\s*8[77]|u\s*47|c\s*12)\b'
       - '\b(urei|teletronix|la[- ]2a|1176)\b'
     begriffe: ["Neumann Mikrofon", "Neumann KM84", "Neumann U87", "AKG C414",
                "Revox PR99", "Studer Tonbandmaschine", "Neumann Nachlass"]
-    tippfehler: [neuman, "neumann u 87", "akg c 414", revoy, refox, studert]
+    tippfehler: [neuman, "neumann u 87", "akg c 414", revoy, studert]
     ausschluss: [nachbau, clone, replika, china, staender, spinne, kabel,
                  popschutz, adapter, prospekt]
     referenz_query: auto
@@ -302,7 +306,9 @@ ziele:
       - '\bpentax\s*(67|6x7)\b'
     tippfehler: [leika, leia, sumicron, hasselbald, ziess, mamia]
     ausschluss: [huelle, hülle, tasche, filter, gegenlichtblende, deckel, riemen,
-                 prospekt, buch, poster, repro, replika, adapter, "nur karton"]
+                 prospekt, buch, poster, repro, replika, adapter, "nur karton", mikroskop,
+                 vergroesserer, vergrößerer, focomat, focotar, projektor,
+                 kameratasche, stativ, blitz]
     referenz_query: auto
     referenz_marke: ""
 
@@ -321,7 +327,9 @@ ziele:
       - '\b(mc\s*intosh|mcintosh|makintosh)\b'
       - '\bquad\s*(esl|303|405)\b'
       - '\b(nakamichi|nakamishi|nacamichi)\b'
-      - '\b(revox|revoy|refox|studer|studert)\b'
+      # refox bewusst nicht: eine echte Marke fuer Reparaturgeraete,
+      # kein Revox-Tippfehler.
+      - '\b(revox|revoy|studer|studert)\b'
       - '\b(neumann|neuman)\b'
       - '\b(tannoy|tanoy|accuphase|acuphase|luxman|luxmann)\b'
       - '\bjbl\s*(l\s*100|43\d{2})\b'
