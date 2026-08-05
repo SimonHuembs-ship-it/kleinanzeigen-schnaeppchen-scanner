@@ -43,11 +43,26 @@ def gesehene_ergaenzen(neu: set, stempel: str) -> None:
             schreiber.writerow([ad_id, stempel])
 
 
-def anzeigen_sammeln(api: Api, ziel: dict, von: datetime, bis: datetime, statistik: dict) -> list:
-    """Kategorie-Sweep oder Keyword-Suchen, je nach Ziel."""
+def anzeigen_sammeln(api: Api, ziel: dict, von: datetime, bis: datetime, statistik: dict,
+                     pool: list | None = None) -> list:
+    """Kategorie-Sweep oder Keyword-Suchen, je nach Ziel.
+
+    Liegt ein Pool vor, wurde ganz Kleinanzeigen bereits einmal abgefragt und
+    alle Sweep-Ziele bedienen sich daraus. Das ist der Unterschied zwischen
+    einem Abruf und vierzehn.
+    """
     gefunden = {}
 
-    if ziel.get("verfahren") == "sweep":
+    if ziel.get("verfahren") == "sweep" and pool is not None:
+        unten, oben = ziel.get("preis_min"), ziel.get("preis_max")
+        for anzeige in pool:
+            preis = anzeige.price or 0
+            if unten and preis < unten:
+                continue
+            if oben and preis > oben:
+                continue
+            gefunden[anzeige.id] = anzeige
+    elif ziel.get("verfahren") == "sweep":
         for anzeige in api.fenster(category_id=ziel["kategorie"], von=von, bis=bis,
                                    min_price=ziel.get("preis_min"),
                                    max_price=ziel.get("preis_max")):
@@ -100,6 +115,17 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
 
     budget = int(einstellungen.get("max_requests", 4000))
 
+    # Ein Sweep ueber ganz Kleinanzeigen statt einer je Kategorie. Ohne
+    # Preisuntergrenze waeren es zwei Millionen Anzeigen am Tag; ab 150 Euro
+    # bleibt ein Viertel davon, und darunter liegen fast nur Kleinteile.
+    pool = None
+    if einstellungen.get("gesamtsweep"):
+        pool = api.fenster(von=von, bis=bis,
+                           min_price=einstellungen.get("preis_ab", 150))
+        statistik["pool"] = len(pool)
+        print(f"  Gesamtsweep: {len(pool)} Anzeigen, {api.requests} Requests",
+              file=sys.stderr, flush=True)
+
     for ziel in ziele:
         if api.requests >= budget:
             statistik["budget_erschoepft"] = True
@@ -107,7 +133,7 @@ def lauf(watchlist_pfad: Path, stunden: int, limit: int | None) -> dict:
                   file=sys.stderr)
             break
         cache: dict = {}
-        anzeigen = anzeigen_sammeln(api, ziel, von, bis, statistik)
+        anzeigen = anzeigen_sammeln(api, ziel, von, bis, statistik, pool)
         print(f"  {ziel['id']}: {len(anzeigen)} Anzeigen gesichtet, "
               f"{api.requests} Requests bisher", file=sys.stderr, flush=True)
 

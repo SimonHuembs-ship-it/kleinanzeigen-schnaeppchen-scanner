@@ -92,7 +92,7 @@ class Api:
                 break
         return treffer
 
-    def fenster(self, *, category_id, von: datetime, bis: datetime,
+    def fenster(self, *, category_id=None, von: datetime, bis: datetime,
                 min_price=None, max_price=None) -> list:
         """Alle Anzeigen einer Kategorie in einem Zeitfenster.
 
@@ -106,9 +106,11 @@ class Api:
 
         while offen:
             fenster_von, fenster_bis = offen.pop()
-            basis = {"categoryId": category_id, "sortType": "DATE_DESCENDING",
+            basis = {"sortType": "DATE_DESCENDING",
                      "modAfter": fenster_von.strftime(WINDOW_FMT),
                      "modBefore": fenster_bis.strftime(WINDOW_FMT)}
+            if category_id:
+                basis["categoryId"] = category_id
             if min_price is not None:
                 basis["minPrice"] = min_price
             if max_price is not None:

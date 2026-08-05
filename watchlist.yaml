@@ -10,6 +10,10 @@
 #   tatsaechlich erzielten liegen. Bei Fahrzeugen mit 8 bis 15 Prozent belegt.
 
 einstellungen:
+  # Ein Sweep ueber ganz Kleinanzeigen statt einer je Kategorie. Alle
+  # Sweep-Ziele bedienen sich aus demselben Abruf.
+  gesamtsweep: true
+  preis_ab: 150
   rate_limit: 0.8
   mindestpunkte: 60
   # Zwischen 25 und 45 Prozent Marktwert sind Betrug und Totalschaden
@@ -17,8 +21,9 @@ einstellungen:
   mindestpunkte_tiefpreis: 80
   # Harte Obergrenze pro Lauf. Wird sie erreicht, bricht der Scan ab und
   # vermerkt das im Laufprotokoll, statt still weniger zu liefern.
-  max_requests: 6500
-  # Neun Sweeps statt sechs, dazu erzeugte Tippfehler.
+  max_requests: 15000
+  detail_limit: 20
+  referenz_limit: 60
 
 ziele:
 
@@ -366,5 +371,227 @@ ziele:
     tippfehler: [playstaion, palystation, gamecupe, dreamcst, neogeo, nintento]
     ausschluss: [huelle, tasche, controller einzeln, kabel, netzteil, adapter,
                  nachbau, replika, repro, aufkleber, poster, "nur spiel"]
+    referenz_query: auto
+    referenz_marke: ""
+
+  # -- Ganz Kleinanzeigen: die uebrigen Bereiche ------------------------------
+  # Alle folgenden Ziele bedienen sich aus dem Gesamtsweep, kosten also keinen
+  # eigenen Abruf. Preisgrenzen wirken nur noch als Plausibilitaetsrahmen.
+
+  - id: motorraeder
+    aktiv: true
+    verfahren: sweep
+    preis_min: 500
+    preis_max: 120000
+    schwelle: 0.72
+    angebotsaufschlag: 0.10
+    muster:
+      - '\bkawasaki\s*(900\s*)?z\s?1\b'
+      - '\b(honda\s*)?cb\s*750\s*four\b'
+      - '\bcbx\s*1000\b'
+      - '\bbmw\s*r\s*(90\s*s|80\s*g/?s|100\s*gs)\b'
+      - '\b(yamaha\s*)?rd\s*(350|500)\b'
+      - '\bxt\s*500\b'
+      - '\bducati\s*(916|996|998|900\s*ss|monster)\b'
+      - '\b(laverda|jota|sfc)\b'
+      - '\bvespa\s*(rally|gs|sprint|90\s*ss|50\s*ss)\b'
+      - '\bsimson\s*(s\s?5[01]|schwalbe|star|habicht|sperber|sr\s?4)\b'
+      - '\bgsx-?r\s*(750|1100)\b'
+      - '\bfireblade\b'
+      - '\b(mz|awo|jawa)\s*\d{2,3}\b'
+    tippfehler: [yahama, kawaski, ducatti, wespa, simpson, kolbenfreser]
+    ausschluss: [modellauto, "1:18", prospekt, aufkleber, helm, jacke, handschuhe,
+                 auspuff einzeln, felge, reifen, spiegel, blinker, koffer]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: camper-marine
+    aktiv: true
+    verfahren: sweep
+    preis_min: 150
+    preis_max: 40000
+    schwelle: 0.70
+    muster:
+      - '\b(dometic|waeco)\s*(magicspeed|ms[- ]?50|coolmatic|freshjet)\b'
+      - '\btruma\s*(combi|mover|aventa|vario)\b'
+      - '\bwebasto\s*(air\s*top|thermo|dual\s*top)\b'
+      - '\b(garmin|raymarine|lowrance|humminbird|simrad)\s*\w*\d{3,4}\b'
+      - '\b(yanmar|volvo\s*penta|torqeedo|honda\s*bf\d+)\b'
+      - '\baussenborder\b'
+      - '\b(schlauchboot|festrumpfschlauchboot|rib)\s+\d'
+      - '\bfritz\s*box\s*6\d{3}\b'
+    tippfehler: [domestic, waco, thurma, garmin gps, torquedo]
+    ausschluss: [prospekt, anleitung, aufkleber, ersatzteil, dichtung, halterung]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: werkzeug-maschinen
+    aktiv: true
+    verfahren: sweep
+    preis_min: 150
+    preis_max: 30000
+    schwelle: 0.68
+    muster:
+      - '\bfestool\s*\w*\s*\d{2,4}\b'
+      - '\b(hilti|mafell|fein\s*multimaster|metabo\s*\w*\d{3})\b'
+      - '\b(deckel|weiler|schaublin|emco|optimum|proxxon)\s*\w*\d{2,4}\b'
+      - '\b(drehbank|drehmaschine|fraesmaschine|fräsmaschine)\b'
+      - '\bkity|scheppach\s*\w*\d{3,4}\b'
+      - '\b(hebebuehne|hebebühne|schweissgeraet|schweißgerät)\s+\w*\d'
+      - '\b(snap[- ]?on|hazet|stahlwille|gedore)\s*\w*\d{3,4}\b'
+    tippfehler: [festol, festool ts, hilty, metabo, proxon]
+    ausschluss: [ersatzteil, kohlebuersten, kohlebürsten, koffer leer, prospekt,
+                 anleitung, aufkleber, defekt bastler]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: messtechnik
+    aktiv: true
+    verfahren: sweep
+    preis_min: 150
+    preis_max: 25000
+    schwelle: 0.68
+    muster:
+      - '\bfluke\s*\d{2,4}\b'
+      - '\b(tektronix|keysight|agilent|hewlett\s*packard|hp)\s*\w*\d{3,5}[a-z]?\b'
+      - '\brohde\s*(&|und)\s*schwarz\b'
+      - '\b(rigol|siglent|hameg)\s*\w*\d{3,4}\b'
+      - '\b(oszilloskop|spektrumanalysator|netzwerkanalysator)\b'
+    tippfehler: [fluce, tektronics, agilant, oszilloscop]
+    ausschluss: [prospekt, anleitung, tastkopf einzeln, ersatzteil, defekt bastler]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: musikinstrumente
+    aktiv: true
+    verfahren: sweep
+    preis_min: 200
+    preis_max: 60000
+    schwelle: 0.70
+    muster:
+      - '\b(fender|gibson|rickenbacker|gretsch)\s*(strat|tele|les\s*paul|sg|jazz|precision|\d{3,4})\b'
+      - '\b(martin|taylor|gibson)\s*(d-?\d{2}|om-?\d{2}|j-?\d{2})\b'
+      - '\b(marshall|vox\s*ac\s*\d{2}|fender\s*(twin|deluxe|princeton))\b'
+      - '\b(moog|sequential|prophet|oberheim|arp\s*odyssey)\b'
+      - '\broland\s*(juno|jupiter|tr-?\d{3}|sh-?\d{2}|d-?50)\b'
+      - '\bkorg\s*(ms-?20|polysix|m1|minilogue)\b'
+      - '\b(rhodes|wurlitzer|hammond\s*(b3|c3|m100)|leslie)\b'
+      - '\b(nord\s*(stage|lead|electro)|yamaha\s*(cs|dx7))\b'
+      - '\b(selmer|buffet\s*crampon|yanagisawa)\b'
+    tippfehler: [fander, gibsson, marshal, rolland, hammound, moogh]
+    ausschluss: [gurt, kabel, saiten, huelle, tasche, plektrum, aufkleber, poster,
+                 prospekt, nachbau, replika, china]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: uhren
+    aktiv: true
+    verfahren: sweep
+    preis_min: 300
+    preis_max: 150000
+    schwelle: 0.72
+    muster:
+      - '\b(rolex|tudor|omega\s*(speedmaster|seamaster|constellation))\b'
+      - '\b(iwc|jaeger|lecoultre|zenith\s*el\s*primero|breitling\s*navitimer)\b'
+      - '\b(grand\s*seiko|seiko\s*(sbdx|sla|skx))\b'
+      - '\b(sinn\s*\d{3}|nomos|junghans\s*max\s*bill|glash(ue|ü)tte)\b'
+      - '\b(heuer|longines|doxa|certina\s*ds)\b'
+    tippfehler: [rolexx, omeg, breitlin, junghanns]
+    ausschluss: [replika, replica, nachbau, homage, hommage, "1:1", fake, band einzeln,
+                 armband, box leer, prospekt, aufkleber]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: netzwerk-homelab
+    aktiv: true
+    verfahren: sweep
+    preis_min: 150
+    preis_max: 20000
+    schwelle: 0.70
+    muster:
+      - '\b(ubiquiti|unifi)\s*(udm|uxg|usw|u6|dream)\b'
+      - '\bsynology\s*(ds\d{3}\+|rs\d{3,4}|dx\d{3})\b'
+      - '\bqnap\s*ts-?\d{3}\b'
+      - '\bmikrotik\s*(ccr|crs)\d{3,4}\b'
+      - '\b(threadripper|epyc|xeon\s*(gold|platinum|w-?\d{4}))\b'
+      - '\bsupermicro\s*\w*\d{3,4}\b'
+      - '\btesla\s*(p40|p100|v100|a\d{2,3})\b'
+    tippfehler: [ubiquity, synologie, sinology, threadriper, xenon]
+    ausschluss: [netzteil einzeln, kabel, patchkabel, rack schiene, prospekt,
+                 defekt bastler, "nur karton"]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: ebike-rad
+    aktiv: true
+    verfahren: sweep
+    preis_min: 300
+    preis_max: 15000
+    schwelle: 0.70
+    muster:
+      - '\bbosch\s*(performance|cx|active\s*line)\b'
+      - '\b(brose|shimano\s*ep8|yamaha\s*pw)\b'
+      - '\b(rohloff|pinion\s*p\d|gates\s*carbon)\b'
+      - '\b(brompton|riese\s*(und|&)\s*m(ue|ü)ller|tout\s*terrain)\b'
+      - '\b(canyon|specialized|trek|cube|santa\s*cruz|yt\s*industries)\s*\w*\d?\b'
+      - '\b(dura[- ]?ace|xtr|sram\s*(red|xx1|axs))\b'
+    tippfehler: [broose, rohlof, bromton, speciallized]
+    ausschluss: [schlauch, mantel, kette einzeln, pedale, helm, schloss, prospekt,
+                 aufkleber, ersatzteil, defekt]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: design-sammeln
+    aktiv: true
+    verfahren: sweep
+    preis_min: 150
+    preis_max: 50000
+    schwelle: 0.68
+    muster:
+      - '\b(usm\s*haller|vitra|knoll|cassina|thonet|wilkhahn)\b'
+      - '\b(eames|le\s*corbusier|mies\s*van|panton|jacobsen\s*(egg|schwan))\b'
+      - '\b(braun\s*(sk|sk\d|tp1|t\d{2}|atelier|l\d{3})|dieter\s*rams)\b'
+      - '\b(wagenfeld|kpm|meissen|rosenthal\s*studio)\b'
+      - '\b(fritz\s*hansen|artek|louis\s*poulsen|flos|arteluce)\b'
+      - '\b(tecnolumen|serien|ingo\s*maurer)\b'
+    tippfehler: [vitrra, thonett, meisen, corbusie]
+    ausschluss: [nachbau, replika, replica, "im stil", inspiriert, aufkleber,
+                 prospekt, poster, katalog, ersatzteil, bezug]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: optik-drohnen
+    aktiv: true
+    verfahren: sweep
+    preis_min: 200
+    preis_max: 20000
+    schwelle: 0.70
+    muster:
+      - '\bdji\s*(mavic|inspire|air\s*\d|mini\s*\d\s*pro|ronin)\b'
+      - '\b(swarovski|zeiss\s*victory|leica\s*(geovid|noctivid)|kowa\s*tsn)\b'
+      - '\b(spektiv|fernglas)\s*\d{1,2}x\d{2}\b'
+      - '\b(schmidt\s*(und|&)\s*bender|nightforce|zeiss\s*conquest)\b'
+    tippfehler: [dij mavic, swarowski, spektif]
+    ausschluss: [huelle, tasche, akku einzeln, propeller, ersatzteil, prospekt,
+                 nachbau, spielzeug]
+    referenz_query: auto
+    referenz_marke: ""
+
+  - id: modellbau-sammler
+    aktiv: true
+    verfahren: sweep
+    preis_min: 150
+    preis_max: 20000
+    schwelle: 0.68
+    muster:
+      - '\blego\s*(1\d{4}|75\d{3}|10\d{3}|ucs|technic\s*42\d{3})\b'
+      - '\b(m(ae|ä)rklin|fleischmann|roco|trix)\s*\w*\d{4,5}\b'
+      - '\b(schuco|wiking|conrad)\s*\w*\d{3,4}\b'
+      - '\b(minichamps|autoart|cmc|bbr)\s*1[:/]1[28]\b'
+      - '\bsony\s*pvm-?\d{3,4}\w*\b'
+      - '\b(bmc|kdk|neo\s*geo\s*aes)\b'
+    tippfehler: [merklin, maerklin, fleischman, legoo]
+    ausschluss: [nachbau, replika, kopie, aufkleber, anleitung einzeln, prospekt,
+                 katalog, leer, karton]
     referenz_query: auto
     referenz_marke: ""
