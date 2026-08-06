@@ -17,6 +17,15 @@ on:
         description: "Zeitfenster in Stunden"
         default: "5"
 
+# Nie zwei Sammler gleichzeitig. Ein Lauf dauert bis zu 90 Minuten, der Takt
+# betraegt vier Stunden, aber eine Verzoegerung durch GitHub oder ein manueller
+# Start koennen sich ueberschneiden. Ohne diese Sperre gewinnt der zuletzt
+# schreibende Lauf, und die in seen_ads.csv vermerkten Anzeigen des anderen
+# gehen verloren, ohne dass jemand einen Fehler sieht.
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
