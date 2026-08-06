@@ -184,3 +184,275 @@ absoluter Ersparnis kein Kandidat mehr die 20-Prozent-Hürde gegen einen selbst 
 Marktwert nahm. Auffällig häufig lag das an aufgeblähten Medianen: Bei MacBooks, Riese-&-Müller-
 Rädern und dem Steam Deck lag der eigene, extern belegte Marktwert deutlich unter dem
 Kleinanzeigen-Median, sodass rechnerisch große „Ersparnisse" bei der Nachprüfung verschwanden.
+
+---
+
+# Laufprotokoll 6. August 2026, 19:10 Uhr (Abendlauf)
+
+- `candidates.json` generiert: **2026-08-06T16:58:26+02:00** (2 h 12 min alt, innerhalb der Vier-Stunden-Grenze aus prompt.md Schritt 1)
+- Zeitraum des Sammlers: 6. August 2026, 10:41 Uhr bis 15:41 Uhr
+- Gesichtete Anzeigen laut Sammler: **177.119**
+- Kandidaten in der Warteschlange: **211**
+- Bereits in `deal_log.csv` und damit vorab verworfen: **0**
+- Inhaltlich geprüft: **211** — davon 87 einzeln am Anzeigentext beurteilt und 11 zusätzlich per Websuche gegen externe Marktwerte gehalten
+- **Gemeldete Funde: 2**
+
+Geprüft wurde in der von prompt.md vorgegebenen Reihenfolge: zuerst der größte
+absolute Abstand zum Median und die liquiden Warengruppen (Uhren, Drohnen,
+Apple, Kameras). Die Zehner-Grenze wurde nicht erreicht, deshalb lief die
+Prüfung durch die gesamte Spitzengruppe.
+
+## Funde
+
+| # | Fund | Preis | Bestätigtes Marktniveau | Quelle der Bestätigung | Ersparnis | Ort |
+|---|---|---|---|---|---|---|
+| 1 | [USM Haller Rollcontainer mit 4 Schubladen in weiß](https://www.kleinanzeigen.de/s-anzeige/usm-haller-rollcontainer-mit-4-schubladen-in-weiss/3477815339-93-8995) | 250 € | 600–900 € privat, 1.295 € aufbereitet | zwei Händler-Vierschubladen-Container zu 1.295 € und 1.299 €, gebrauchte Dreischubladen ab 580 €, dazu zwei Dreier-Container privat zu 495 € und 500 € im selben Scan | 650 € (gegen Median 900 €) | Sindelfingen |
+| 2 | [Leica M2 Kamera](https://www.kleinanzeigen.de/s-anzeige/leica-m2-kamera/3477881358-245-2622) | 1.100 € | 1.560–3.240 € (faire Spanne), Median 2.040 € | usedcameratracker.com, Stand 29.07.2026, 147 aktive Angebote — eine der in prompt.md benannten Leica-Referenzen | 550 € (gegen Median 1.650 €) | Kettenkamp |
+
+Zum USM-Rollcontainer: `signale.unkenntnis_bonus` steht auf `false`, das
+Verkäuferprofil trägt es trotzdem — geerbtes Stück von der Großmutter, keine
+weiteren USM-Möbel im Haushalt, Gebrauchsspuren offen benannt, Versand
+ausdrücklich ausgeschlossen, weil das Möbel schwer ist. Genau das Muster aus
+der Leitidee.
+
+## Warnflags nach prompt.md Schritt 2e
+
+Keiner der beiden Funde fällt in eine Kategorie mit Pflicht-Warnflag (keine
+RTX 4090, keine Switch 2, keine AirPods, kein Apple-Gerät, kein Tesla, kein
+Porsche, kein Klassiker, kein NAS, kein Threadripper). Die kategorietypischen
+Risiken sind stattdessen im `risiko`-Feld jedes Fundes benannt: USM-Plagiate
+beim Rollcontainer, Variantenspreizung und fehlender Wartungsbeleg bei der
+Leica.
+
+## Extern gegengeprüft (Websuche)
+
+| Kandidat | Ergebnis |
+|---|---|
+| Tudor Black Bay Chrono 79360N | gebraucht ab ~3.700 US-Dollar, Full Set 4.190–4.550 US-Dollar → 3.950 € liegt im Markt |
+| Technics SL-1200LTD | gebraucht ab ~1.800 € bis 2.545 US-Dollar → 1.975 € ist Marktpreis |
+| DJI Mavic 3T | nur Neupreise belegbar (5.409 € DE / 6.809 US-Dollar), Reihe seit 01/2025 abgekündigt, kein Gebrauchtwert auffindbar → nicht geschätzt, verworfen |
+| Leica M2 | usedcameratracker: 1.699–3.520 US-Dollar, Median 2.215 US-Dollar; deutscher Markt Ø 2.382 € → Fund bestätigt |
+| USM Haller Rollcontainer 4 Schubladen | Händler 1.295 €/1.299 €, eBay-Band 369–899 €, Dreischubladen ~580 € → Fund bestätigt |
+| BMW R100GS | 6.400 € bei 27.900 km, 6.980 € bei 17.900 km, 1000PS-Angebote ab 3.500 € → bei 102.000 km kein belegbarer 20-Prozent-Abstand |
+| Riese & Müller Charger4 GT Vario | Neupreis 5.799 €, aufbereitet 2.969 €/3.149 €/3.599 € → 2.590 € trägt keine 20 Prozent |
+| MacBook Pro 14 M5 | neu ~1.799 €, drei Monate alt gebraucht 1.440–1.530 € → 1.300 € sind 12–15 Prozent |
+| Leica Summicron-R 50 mm f/2 | gebraucht 350–550 € → 600 € liegen über Markt |
+| DJI Mavic 3T Neupreisquellen und Mavic-3-Gebrauchtmarkt | siehe oben |
+| Steam Deck OLED | neu 569 €, gebraucht 400–450 € → 380 € ohne Abstand |
+
+## Verworfene Kandidaten
+
+209 Kandidaten verworfen. Für die 87 einzeln beurteilten steht der konkrete
+Grund unten; die übrigen wurden im Listen-Screening nach absolutem Abstand
+geprüft und lagen sämtlich unterhalb der Spitzengruppe, ohne eine Konstellation,
+die einen selbst bestätigten 20-Prozent-Abstand hätte tragen können.
+
+- `3477448066` — BMW e30 318i Cabrio, 5.500 €: Rost an Kotfluegel und Fahrertuer, abgenutzte Sitze, fehlende Verdeckscheibe, 208.000 km, kosmetisch unrestauriert. Das ist ein Zustand-4-Auto und zu Zustand-4-Preisen korrekt bepreist, der Median 11.700 € beschreibt gepflegte Zustand-3-Wagen.
+- `3477397486` — Mercedes SL 300 R129, 9.950 €: seit rund 10 Jahren abgestellt, Standschaeden angekuendigt, muss auf den Anhaenger. Der niedrige Preis erklaert sich vollstaendig aus dem Standschaden.
+- `3477828337` — Mercedes W124 320, 6.100 €: 301.458 km, Rost, undichte Stirndeckeldichtung, hakender Bremssattel. Hohe Laufleistung plus offene Maengel, korrekt bepreist.
+- `3477204268` — Mercedes W201 190D, 3.800 €: 296.057 km. Marktniveau fuer einen 190D mit knapp 300.000 km liegt bei 3.000 bis 5.000 €, der Abstand traegt keine 20 Prozent.
+- `3453097053` — Tudor Black Bay Chrono 79360N, 3.950 €: Chrono24 fuehrt gebrauchte 79360N ab rund 3.700 US-Dollar, Full Sets bei 4.190 bis 4.550 US-Dollar. Bei einem gewerblichen Haendler liegt der Preis damit im Markt, keine 20 Prozent Abstand.
+- `3477723678` — Technics SL-1200LTD, 1.975 €: gebrauchte LTD werden ab rund 1.800 € und bis 2.545 US-Dollar gehandelt. 1.975 € ist Marktpreis, kein Abschlag.
+- `3477261196` — Mercedes W124 E220, 5.500 €: referenz.belastbar false bei Streuung 3.23, der Median mischt Karosserie- und Motorvarianten.
+- `3428644589` — Fraesmaschine Deckel FP 3, 3.500 €: referenz.streuung 3.95 und belastbar false, der Median mischt Maschinengroessen.
+- `3477219438` — Rolex Lady Datejust 26, 3.200 €: Band ohne Spannung und ein Diamantzifferblatt ohne Herkunftsnachweis, nachtraeglich gesetzte Steine druecken den Wert. Der Preis ist fuer diesen Zustand plausibel, nicht auffaellig niedrig.
+- `3477110107` — W124 230CE Coupe, 3.250 €: n=10 und Streuung 2.38; ein Coupe gegen Limousinen gerechnet erzeugt Phantomersparnis, eigener Vergleichswert nicht erhoben.
+- `3477536876` — BMW R100GS, 3.850 €: konkrete Vergleichsangebote sind 6.400 € bei 27.900 km und 6.980 € bei 17.900 km, 1000PS listet R100GS aber ab 3.500 €. Mit 102.000 km liegt dieses Exemplar am unteren Rand des Korridors, ein 20-Prozent-Abstand laesst sich mit laufleistungsgleichen Vergleichen nicht belegen.
+- `3477331776` — Mercedes W124, 3.500 €: Titel ohne Modellangabe, damit keine vergleichbare Referenzgruppe bestimmbar.
+- `3477735534` — Mercedes W124 260E, 4.400 €: Median aus gemischten W124-Varianten, kein eigener belastbarer Vergleichswert.
+- `3477386617` — Riese & Mueller Roadster Mixte, 2.150 €: Referenzquery 'Riese Mueller Bike' ist zu weit gefasst und mischt Lastenraeder mit City-Raedern. Ein 3,5 Jahre altes Roadster mit 4.440 km liegt bei rund 2.200 bis 2.800 €, damit kein 20-Prozent-Abstand.
+- `3477687162` — Honda CBR 900 RR, 950 €: seit 5 Jahren gestanden, nicht fahrbereit, ausdruecklich als Bastler- und Teiletraeger angeboten. Preis erklaert sich selbst.
+- `3477357688` — DJI Mavic 3T, 2.700 €: kein belastbarer Gebrauchtwert auffindbar, die Reihe ist seit Januar 2025 abgekuendigt, nur Neupreise (5.409 € DE, 6.809 US-Dollar) sind belegbar. Dazu das Betrugsprofil: Konto 114 Tage alt, ausschliesslich Versand, keine Abholung, glatte Werbetexte ohne einen einzigen Mangel. Ohne Referenzwert wird nicht geschaetzt.
+- `3477249216` — Mercedes W124, 4.000 €: referenz.belastbar false bei Streuung 2.55, Median unbrauchbar.
+- `3477273944` — Mercedes W201, 3.500 €: Titel ohne Motorvariante, Referenzgruppe nicht bestimmbar.
+- `3477638337` — Yamaha RD 350 YPVS, 3.999 €: ohne TUEV, nicht fahrbereit, als Bastlerfahrzeug ausgeschrieben. Preis erklaert sich selbst.
+- `3477509845` — Specialized Turbo Levo Alloy S4, 2.400 €: die genannte Ausstattung (2.2 Rx Motor, Fox Rhythm 36, Code R) gehoert zur Vorgaengergeneration, nicht zum Levo 4. Gegen deren Gebrauchtniveau von 2.500 bis 3.500 € kein tragfaehiger Abstand.
+- `3477452359` — Simson S51, 1.700 €: ausdruecklich als defekt und Restaurationsbasis verkauft. Preis erklaert sich selbst.
+- `3468560454` — Riese & Mueller Charger4 GT Vario, 2.590 €: Neupreis 5.799 €, aufbereitete Gebrauchte konkret bei 2.969 €, 3.149 € und 3.599 €. Gegen ein bestaetigtes Privatniveau von rund 2.800 bis 3.300 € reicht der Abstand nicht auf 20 Prozent.
+- `3477209872` — Gibson Les Paul Studio 2013, 650 €: umgebaut (Stimmsystem entfernt, Hardware getauscht), Lack abgenutzt, Verkaeufer selbst unsicher beim Modell. Der Median 2.150 € mischt Standards ein; eine modifizierte Studio liegt bei 700 bis 900 €, kein 20-Prozent-Abstand.
+- `3477436322` — E-Bike No Bulls SUV, 1.599 €: Titel ohne eindeutiges Modell, Referenzgruppe nicht bestimmbar.
+- `3477448836` — Santa Cruz Nomad Custom, 1.600 €: Custom-Aufbau ohne Ausstattungsliste, Referenzgruppe nicht vergleichbar.
+- `3477438123` — TAG Heuer Monaco, 3.000 €: keine Referenznummer in der Anzeige, damit kein pruefbares Modell. 'Neue Uhr, nie getragen' bei Konto seit September 2025 und Versand. Marktwert nicht bestaetigbar.
+- `3477504333` — Ducati 900 SS, 2.000 €: referenz.streuung 3.04 und belastbar false, Median unbrauchbar. Kein eigener belegbarer Vergleichswert erhoben.
+- `3428888742` — Gibson Les Paul Special Tribute, 1.026 €: referenz.streuung 3.33 und belastbar false, Median mischt Modellreihen.
+- `3477461326` — Riese & Mueller Roadster, 2.300 €: wie oben zu weit gefasste Referenzquery, Preis im Markt fuer gebrauchte Roadster.
+- `3477578213` — Omega Constellation Pie Pan, 1.550 €: Glas und Zeiger getauscht, das senkt den Sammlerwert. Gegen ein bestaetigtes Niveau von rund 1.500 bis 2.200 € fuer Stahlgehaeuse kein 20-Prozent-Abstand.
+- `3477325496` — Simson Schwalbe, 1.499 €: kein Detailbefund, der einen Abschlag gegen bestaetigte Vergleichsangebote traegt; Schwalben in diesem Preisband sind Marktware.
+- `3477869625` — Simson Schwalbe, 1.500 €: Motor springt nicht an. Defekt offengelegt, Preis erklaert sich selbst.
+- `3477634680` — Ducati Monster 620, 1.350 €: kein TUEV, Anlasser defekt, Reifen und Oel faellig. Preis erklaert sich selbst.
+- `3477655436` — Mafell Erika 85, 790 €: referenz.streuung 6.54 und belastbar false, Median unbrauchbar.
+- `3429512456` — USM Haller Sideboard 2x3, 995 €: gewerblicher Haendler mit Rechnung und Differenzbesteuerung, das ist ein Haendlerpreis im Markt.
+- `3293163998` — USM Haller Sideboard, 845 €: gewerbliches Buromoebelangebot im normalen Aufbereiterband.
+- `3477871465` — Bergamont E-Bike, 799 €: Titel ohne Modell und Baujahr, Referenzgruppe nicht bestimmbar.
+- `3477418016` — Canyon Inflite CF SLX XXXS, 1.200 €: Rahmengroesse XXXS schraenkt den Kaeuferkreis stark ein und druckt den Preis, das erklaert den Abstand.
+- `3477701665` — Schlauchboot mit Trailer, 1.200 €: referenz.streuung 5.0 und belastbar false, der Median mischt Boote, Trailer und Motoren.
+- `3477214691` — Simson Schwalbe KR51/1, 1.550 €: referenz.streuung 2.83 und belastbar false, der Median mischt Modelle. Eigener Referenzwert nicht belegbar.
+- `2922359746` — USM Haller Highboard, 850 €: gewerbliches Angebot inklusive MwSt., Marktpreis.
+- `3477519382` — Cube Kathmandu 2022, 850 €: liegt im normalen Gebrauchtband fuer Trekkingraeder.
+- `3477682498` — BMW 316i Compact E36, 1.650 €: Preisniveau fuer einen E36 Compact ist genau dieses Band, kein auffaelliger Abstand.
+- `3477410729` — MacBook Pro 14 M5 16/512, 1.300 €: Neupreis rund 1.799 € in Deutschland, ein drei Monate altes Geraet liegt gebraucht bei 1.440 bis 1.530 €. Rund 12 bis 15 Prozent Abstand, zu wenig.
+- `3477334873` — USM Haller Highboard weiss, 899 €: liegt im normalen Gebrauchtband fuer Highboards.
+- `3477457892` — DJI Mavic Pro Platinum, 699 €: referenz.streuung 3.71 und belastbar false, der Median mischt Mavic-Generationen.
+- `3477302990` — Gibson Les Paul Junior, 1.285 €: referenz.belastbar false bei Streuung 2.69.
+- `3477642852` — Cube Reaction E-Bike, 590 €: Bosch-Hardtail ohne Baujahr, Referenzgruppe zu weit.
+- `3477279066` — Cube Stereo, 799 €: referenz.belastbar false bei Streuung 2.53.
+- `3477254771` — MacBook Pro M4, 1.200 €: kein Hinweis auf Groesse, RAM oder SSD, damit keine vergleichbare Referenzgruppe.
+- `3477187528` — Gibson Les Paul Special TV Yellow, 1.300 €: referenz.belastbar false bei Streuung 2.99.
+- `3428882991` — Gibson Les Paul Special 2005, 1.170 €: n=10 bei Streuung 2.16, Median aus gemischten Special-Jahrgaengen, kein eigener Vergleichswert erhoben.
+- `3477579718` — Vitra EA 117, 700 €: Gasfeder muss laut Anzeige demnaechst getauscht werden, gebrauchte EA 117 liegen bei 700 bis 1.200 €. Defekt offengelegt, Preis korrekt.
+- `3477579248` — Vitra EA 117, 700 €: identische Zweitanzeige desselben Verkaeufers, dieselbe Beurteilung.
+- `3477578526` — Vitra EA 117, 700 €: identische Drittanzeige desselben Verkaeufers, dieselbe Beurteilung.
+- `3477577767` — Vitra EA 117, 700 €: identische Viertanzeige desselben Verkaeufers, dieselbe Beurteilung.
+- `3477770805` — USM Haller Sideboard TV, 980 €: der Preis entspricht exakt dem p25 der Referenzgruppe, also dem unteren Rand des normalen Markts.
+- `3477750997` — Specialized Stumpjumper XL, 750 €: referenz.streuung 4.51 und belastbar false.
+- `3477780732` — Trek Madone Ultegra XL, 720 €: referenz.streuung 3.33 und belastbar false.
+- `2608519397` — Usm Haller, sideboard, beige, neuwertig, mit erhöhung, 980 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477121782` — Vitra EA 119, 875 €: referenz.belastbar false bei Streuung 2.59.
+- `3477405054` — CUBE Kathmandu  625, 1200 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3108453085` — Abholbereit Original USM Haller Nachttisch beige softclose MwSt., 820 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477818862` — MacBook Pro 16 Zoll 2019 i7 32/1TB, 415 €: Intel-Modell am Ende des macOS-Supports, dazu US-Tastatur. Der auslaufende Support ist genau der Grund, aus dem der Preis richtig ist.
+- `3477575584` — Cube Town Hybrid Pro 500, 580 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477135411` — MacBook Pro 2025, 1.100 €: die Beschreibung ist woertlich Apple-Marketingtext, es fehlt jede Angabe zu Chip, SSD und Zustand. Kein pruefbares Modell.
+- `3477336421` — Canyon Stitched Dirt Jump Bike - Neuaufbau mit Top-Komponenten, 500 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477704945` — Cube Cross Race Cyclocross, 600 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477763076` — Mountainbike Größe L TREK XCALIBER 8, 850 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477444018` — USM Haller Regal 2x2 Anthrazit mit Klapptüren, 800 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477576258` — Cube Reaction Hybrid Pro Performance 500 W, 750 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477220838` — Walter Knoll Foster 500, 1.200 €: referenz.belastbar false bei Streuung 2.52.
+- `3477508351` — MacBook Pro (14″, M3, 2023), 635 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477421261` — Canyon Rennrad RH 58, 539 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3453295619` — USM Haller Sideboard Lowboard TVBoard Highboard Schrank schwarz, 1099 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477870257` — Apple MacBook Pro 14" M3 Pro 18 GB RAM 512 GB SSD silber, 800 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477665312` — USM Haller Lowboard graphitschwarz, 700 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477661844` — Cube Cyclocross Cross Race, Grösse M, 550 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477550367` — Cube Nuroad  Black Edition  Gravel Gr.M, 720 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477336833` — Apple MacBook 14 Pro M3 512GB *Händlerware*, 799 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477330976` — Meissen Service Koralle, 300 €: referenz.streuung 4.69 und belastbar false, der Median mischt Einzelteile mit Services.
+- `3477380528` — CUBE Stereo 140 Pro 27,5 HPA Mountainbike vollgefedert, 490 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477799652` — Pegasus Solero SL | TOP ZUSTAND | Trekkingrad | 28 Zoll | 24 Gang, 329 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477317508` — 4x Vitra Eames DAR, 400 €: referenz.streuung 5.82 und belastbar false, der Median mischt Einzelstuehle mit Vierersets.
+- `3477538615` — Rennrad Cube Attain XL 60 RH, 450 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477555894` — 2x Walter Knoll Sessel, 550 €: referenz.streuung 3.14 und belastbar false.
+- `3477392389` — Gravelbike Cube Nuroad Pro S, 850 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477389716` — Cube Nuroad  Gravelbike - Größe S, 850 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477479020` — Apple Macbook Pro 1tb 16gb, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477762519` — ⚡️ Cube MTB Reaction CMPT 29 Carbon Hardtail Mountainbike DeoreXT, 599 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477370367` — DJI Mini 4 Pro Fly More Combo, 290 €: liegt im Gebrauchtband fuer die Mini-4-Pro-Combo, kein tragfaehiger Abstand.
+- `3477410211` — Cube Reaction Rahmen M, 29 Zoll Hardtail, 590 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477535010` — MacBook 13 Air, 400 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3109238745` — USM Haller - Sekretär - Schreibtisch - Perlgrau, 790 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477826778` — Cube Attain SL, 550 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477446815` — TAG Heuer Connected, 450 €: Smartwatch mit auslaufendem Software-Support, der Wertverfall erklaert den Preis.
+- `3477573639` — Apple MacBook Air in Gold, 355 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477475702` — iPhone 17 256 GB ungeoeffnet, 750 €: Beschreibung besteht aus fuenf Worten, nur Barzahlung, versiegeltes Neugeraet deutlich unter Markt. Herkunft nicht pruefbar, Abstand zum Neupreis von rund 949 € traegt zudem keine 20 Prozent gegen realistische 800 bis 870 € fuer versiegelte Ware.
+- `3477182555` — Apple MacBook Pro, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477475601` — Cube Herrenfahrrad City Fahrrad, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477673712` — MacBook Pro 14" (2023) Apple M2 Pro, 16GB RAM, 512 GB SSD, 749 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3466536786` — Trekking Bike Koga Miyata, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477265763` — MTB von CUBE Reaction Pro Rahmengröße M (29 Zoll) mit Zubehör, 720 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477597265` — Fahrrad Cube Cross Race, 550 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477749061` — Trek Mountainbike, 600 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477378608` — Trek Domane 2, 650 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477445756` — MacBook Air mit OVP, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477680949` — Clavia Nord Lead, 549 €: gebrauchte Nord Lead der ersten Generation liegen bei 500 bis 700 €, kein Abstand.
+- `3477231068` — Apple MacBook Pro, 399 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477371243` — MacBook Pro, 440 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477428126` — Cube Attain Sl, 620 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477299734` — Damen Fahrrad Trekkingbike, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477515214` — Apple iPhone 17 – 256 GB – Schwarz – Wie neu / OVP & Rechnung, 749 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477341566` — MacBook Pro 14 M1, 500 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477506154` — Cube Travel EXC, 400 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477305343` — Fahrrad Trekking-/Mountainbike-Hardtail, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477612781` — Vitra EA 108 Design Stuhl blau, 325 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477288893` — Shimano Dura-Ace FC-R9200, 330 €: neu und originalverpackt zum halben Ladenpreis, zusammen mit einer zweiten baugleichen Anzeige desselben Preisbandes im selben Scan. Bei versiegelten Neuteilen weit unter Markt ist die Herkunft nicht pruefbar.
+- `3477279567` — Cube Attain SL, 649 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477553953` — Cube Pro Series Rennrad, 349 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477205818` — Cube Mountainbike, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477414980` — Apple MacBook Air M4 13 Zoll - Himmelblau - 512 GB, 699 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477379406` — CUBE MTB Mountainbikes, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477657312` — Apple MacBook Air - Top Zustand, wie neu mit OVP, 450 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477880827` — IPhone 15 Pro Max 256GB, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477227101` — Zubehoer DJI Mini 3 Pro, 300 €: Zubehoerposten ohne Drohne, gegen Komplettsets gerechnet. Referenzgruppe nicht vergleichbar.
+- `3477302997` — Cube Mountainbike 29 Zoll, 20 Gang, Alu, Grey'n Red, 500 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477870782` — Trek Marlin 6 Mountainbike 29 Zoll, neuwertig, 400 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477232538` — MacBook Air 13 M2 16GB, 480 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477576061` — Cube 29 Zoll, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477509823` — Shimano Dura-Ace R9200, 320 €: zweite Anzeige desselben Musters, dieselbe Beurteilung.
+- `3477867095` — E-Bike Prophete Trekking Fahrrad 28", 370 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477610170` — Steam Deck OLED 512 GB, 380 €: Neupreis 569 €, gebraucht 400 bis 450 €. Kein 20-Prozent-Abstand.
+- `3477645197` — Specialized MTB 29 Zoll – hydraulische Shimano Bremsen – Rechnung, 430 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477316094` — DJI Mavic Pro, 280 €: referenz.streuung 2.74 und belastbar false.
+- `3477447287` — Fahrrad Cube 29 Zoll XL Rahmen, 320 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477460322` — iPhone 15 pro, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477360426` — Apple MacBook Pro 16" OVP, 390 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `1562527828` — 28 Zoll Damenrad   Trekking BIKE MANUFAKTUR, 390 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477343420` — Cube Mountainbike Herren - fahrbereit, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477373323` — DJI Mini 3 Pro mit RC, 400 €: gebrauchte Mini-3-Pro-Sets liegen genau in diesem Band.
+- `3477437072` — iPhone 15 Blau Zu Verkaufen, 250 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477524161` — iPhone 15 Zu Verkaufen Blau, 250 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477753893` — Trekking Fahrrad Alu Rex E-Bike 28 Zoll, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477363056` — Steam Deck OLED 1 TB, 450 €: liegt im gebrauchten Marktband, kein Abschlag.
+- `3428699979` — USM Haller Rollcontainer mit 3 Auszügen in schwarz, 495 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477395472` — Iphone 16 pro 128gb schwarz, 450 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477488857` — USM Haller Rollcontainer mit 3 Schubladen lichtgrau, 500 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477766752` — MacBook Pro Apple M1 , 460 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477862239` — MacBook Air 13“, 525 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477725483` — Thorens TD 125 MK II, 450 €: referenz.streuung 3.56 und belastbar false.
+- `3477608407` — Apple iPhone 15 Schwarz 256 GB in gutem Zustand, 349 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477855141` — iPhone 14 Pro 256 GB, 220 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477730306` — Trekkingrad Herren, 370 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477846248` — Rotwerk EDM 300 DS, 250 €: kleine Werkbankdrehmaschine im normalen Gebrauchtband.
+- `3477491858` — Iphone 16 schwarz 128gb Neu und ovp, 520 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477417542` — iPhone 14 Pro Max 256GB lila, 280 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3453304445` — USM Haller Schreibtisch Besprechungstisch schwarz 175x75, 229 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477436752` — Iphone 14 pro, 210 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477265107` — Iphone 14 pro schwarz 128 GB, 180 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477390492` — iPhone 15 Tausch!, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477433153` — CANYON Stitched Dirtbike - Größe M - Originalzustand, 450 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477479550` — iPhone 16 128 GB, 450 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477712565` — Cube Trekking Fahrrad 28 Zoll - Top Zustand, 330 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477801434` — iPhone 14 Pro 128 GB - voll funktionsfähig, 200 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3466417879` — Cube Attention Rahmengröße M, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477264282` — iPhone 15 Sehr guter Zustand, 320 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477366635` — iPhone 15 128GB, 270 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477348922` — iPhone 14 Pro, 230 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477300421` — Cube Fahrrad, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477368007` — Apple MacBook Pro 13 Zoll M1 2020 16GB RAM, 350 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477447019` — Macbook Air 2020 16GB RAM, 349 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477212229` — iPhone 14 Pro, 240 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477463074` — IPHONE 15! 128GB! WEISS!, 325 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477806377` — Apple iPhone 14 – 128 GB – Mitternacht - Glas gebrochen, 160 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477842007` — iPhone 13 Pro 256GB Sierra Blau - Rückseite beschädigt, 200 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477855140` — Vitra Softshell Chair Konferenzstuhl, 285 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477424733` — Iphone 12 pro ( 512GB ), 180 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477302936` — Walter Knoll 369 Sessel, 200 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477447809` — iPhone 14 Pro, 250 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477482504` — iPhone 13 Pro 128gb, 170 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477822206` — Meissen Porzellan Set Blaue Orchidee, 150 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477284758` — Apple MacBook Pro M1 2020 256 GB / Sehr gut, 325 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477330291` — LEGO Technic 42056, 320 €: gebraucht und unvollstaendig geprueft, gewerblicher Verkaeufer. Gebrauchte Exemplare liegen bei 250 bis 350 €, kein Abstand.
+- `3477409722` — Cube Fahrrad Herren Bike Männer 28 Zoll wie neu, 349 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477399206` — CUBE AIM SLX Kinderrad / Jugend-MTB, 349 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477362544` — iPhone 13 Pro Max, 200 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477271242` — Hilti TE 22, 230 €: referenz.belastbar false bei Streuung 2.57.
+- `3477331474` — Fahrrad Cube 26Zoll, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477447008` — iPhone 14 Pro Max, 300 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477438973` — Nintendo 64 Pikachu Edition, 279 €: lose Konsolen liegen bei 150 bis 200 €, pricecharting ist ausdruecklich als Obergrenze zu lesen. Der Preis liegt eher ueber Markt.
+- `3477399088` — iPhone 14 plus 128, 220 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477428298` — iPhone 14 128gb guter Zustand, 200 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477511658` — iPhone 13 128 GB, 150 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477441315` — iphone 13 128GB + Zubehör, 160 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477449473` — iPhone 14 128 GB, 220 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477506275` — Apple iPhone 13 – Grün, guter Zustand, 199 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477382130` — iPhone 13 mit 128 GB, 170 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477440519` — Apple iPhone 13, 180 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477436786` — iPhone 13 mini, 150 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477415645` — iPhone 13 mini, 150 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477453964` — Iphone 13 mini, 150 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477460365` — iPhone 13 128 GB mit OVP, 180 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `3477432597` — Apple iPhone 13 (128 GB) mit 86% Batterie, 170 €: im Listen-Screening nach absolutem Abstand (Rang unterhalb der einzeln recherchierten Spitzengruppe) keine Konstellation, die einen selbst bestaetigten 20-Prozent-Abstand tragen koennte; Preis liegt im normalen Gebrauchtband der Kategorie.
+- `2551547180` — Leica Summicron-R 50mm f/2, 600 €: Haendlerangebot mit einem Jahr Garantie. Das Objektiv liegt gebraucht bei 350 bis 550 €, der Preis liegt ueber Markt, nicht darunter.
+- `3477487192` — Haushaltsaufloesung 500 €: Sammelposten ohne bestimmbaren Inhalt, kein Referenzwert moeglich.
+- `3477501931` — Simson Schwalbe Scheunenfund, 825 €: referenz null, und ein Scheunenfund ohne Zustandsangabe laesst sich ohne Besichtigung nicht bewerten.
+- `3453200088` — Yamaha XT 250, 3.689 €: referenz null, kein belastbarer Vergleichswert fuer diese Sammlungsware recherchierbar.
+- `3477488597` — IFA H6 Umbau Scheunenfund, 5.000 €: referenz null, Einzelstueck mit Umbau, kein Marktwert bestimmbar.
