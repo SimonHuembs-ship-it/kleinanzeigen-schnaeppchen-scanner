@@ -1,25 +1,23 @@
 {
-  "generiert": "2026-08-09T03:20:41+02:00",
+  "generiert": "2026-08-09T07:07:44+02:00",
   "zeitraum": {
-    "von": "2026-08-08T21:56:06+02:00",
-    "bis": "2026-08-09T02:56:06+02:00"
+    "von": "2026-08-09T01:55:08+02:00",
+    "bis": "2026-08-09T06:55:08+02:00"
   },
   "statistik": {
-    "gesichtet": 45752,
-    "nach_modellmatch": 421,
-    "nach_vorfilter": 421,
-    "nach_preisschwelle": 40,
-    "nach_scoring": 28,
+    "gesichtet": 23819,
+    "nach_modellmatch": 93,
+    "nach_vorfilter": 92,
+    "nach_preisschwelle": 15,
+    "nach_scoring": 12,
     "ausschluesse": {
-      "score_zu_niedrig": 10,
-      "zahlung_ohne_schutz": 2
+      "score_zu_niedrig": 3
     },
-    "pool": 43269,
-    "ohne_referenz_verworfen": 183,
-    "referenz_gekappt": 32,
+    "pool": 21328,
+    "ohne_referenz_verworfen": 41,
     "doppelt_zusammengefasst": 0,
-    "requests": 1157,
-    "laufzeit_sekunden": 1475
+    "requests": 603,
+    "laufzeit_sekunden": 756
   },
   "kandidaten": [
     {
@@ -1457,6 +1455,73 @@
       }
     },
     {
+      "id": "3479893491",
+      "watchlist_id": "ebike-rad",
+      "titel": "Riese und Müller E Bike Bosch Cx Keilriemen",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/riese-und-mueller-e-bike-bosch-cx-keilriemen/3479893491-217-54",
+      "preis": 1500.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 3199.0,
+        "p25": 2200.0,
+        "n": 89,
+        "query": "Riese Müller Bike",
+        "korrektur": 0.0,
+        "streuung": 1.91,
+        "belastbar": true
+      },
+      "p_ratio": 0.469,
+      "ersparnis_eur": 1699.0,
+      "ort": "Bremerhaven",
+      "plz": "27578",
+      "eingestellt": "2026-08-09T06:21:07+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0e/0e483cad-4b34-41d8-bd61-ec1d631c3639?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e6/e69050cb-b178-45b9-9b73-2599f80de98d?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/33/33d581f3-14c7-4e2d-b1b1-59457b41cd00?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/80/80847bc2-779e-4a78-ac87-2561eb72f6fb?rule=$_0.JPG"
+      ],
+      "beschreibung": "Merken hat kein Sinn wie es bereits aufgefallen ist anschreiben oder woanders Kaufen.<br /><br />Hallo wir verkaufen unser wunderschönes Ebike der top Marke Riese und Müller.<br /><br />Das Modell Trekking Enviolo.<br /><br />Es befindet sich in einem einwandfreiem Zustand.<br /><br />Rahmengröse 50cm<br /><br />Akku 500Watt<br /><br />Cx Generation mit 75 nm<br /><br />Laufleistung 7550km<br /><br />In Bremerhaven abzuholen Liebe Grüße",
+      "attribute": {
+        "Art": "Weitere Fahrräder & Zubehör",
+        "Versand": "Nur Abholung",
+        "Typ": "Elektrofahrräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "163728904",
+        "name": "wdl",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-06-12",
+        "konto_alter_tage": 57,
+        "bewertung": 0.2222222222222222,
+        "abzeichen": {
+          "rating": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 61,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "6 Bilder",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate",
+          "Bewertung 0.22"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3479525774",
       "watchlist_id": "motorraeder",
       "titel": "Simson S51",
@@ -1971,6 +2036,74 @@
         "rot": [
           "Bewertung 0.69",
           "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3479896286",
+      "watchlist_id": "design-sammeln",
+      "titel": "Original Eames Vitra EA 219 Soft Pad  Chair neuwertig",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/original-eames-vitra-ea-219-soft-pad-chair-neuwertig/3479896286-93-8169",
+      "preis": 800.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 2170.5,
+        "p25": 1690.0,
+        "n": 34,
+        "query": "Eames Vitra EA 219",
+        "korrektur": 0.0,
+        "streuung": 1.71,
+        "belastbar": true
+      },
+      "p_ratio": 0.369,
+      "ersparnis_eur": 1370.5,
+      "ort": "Rheinfelden (Baden)",
+      "plz": "79618",
+      "eingestellt": "2026-08-09T06:50:58+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/77/7744f4d9-0807-43b1-845b-3da3a6c6e6d1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b1/b1460268-7a51-49ab-a806-13901e960892?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3c/3c00397a-8028-4ed4-8d59-1078add87769?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a3/a32ed326-f304-4b5f-ba77-042374040c8f?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe einen Vitra Eames EA 219 Soft Pad Chair.<br />Sehr guter Zustand<br />Gasdruckfeder voll funktionsfähig<br /><br />Keine nennenswerte Gebrauchsspuren.<br />Der Stuhl wurde nur für eine kurze Zeit benutzt und danach viele Jahre eingelagert.<br /><br />Gekauft 2019 Rechnung vorhanden und wird mitgegeben.<br /><br />Abholung oder Versand für zusätzlich 46,99€",
+      "attribute": {
+        "Versand": "Nur Abholung",
+        "Farbe": "Schwarz",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "161788722",
+        "name": "Markus",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-04-07",
+        "konto_alter_tage": 123,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 81,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "9 Bilder",
+          "Maengel offengelegt",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate",
+          "Preis nur 37% des Marktwerts"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -2700,6 +2833,74 @@
           "Konkrete Angaben zum Geraet"
         ],
         "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3479886755",
+      "watchlist_id": "ebike-rad",
+      "titel": "Verkaufe ein Canyon Gravel Bike Grail 7 e Tap in Größe S",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/verkaufe-ein-canyon-gravel-bike-grail-7-e-tap-in-groesse-s/3479886755-217-8918",
+      "preis": 1199.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1999.0,
+        "p25": 1500.0,
+        "n": 35,
+        "query": "Canyon Gravel Bike 7",
+        "korrektur": 0.0,
+        "streuung": 1.6,
+        "belastbar": true
+      },
+      "p_ratio": 0.6,
+      "ersparnis_eur": 800.0,
+      "ort": "Emmendingen",
+      "plz": "79312",
+      "eingestellt": "2026-08-09T03:13:42+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/48/48723b89-dd54-46b7-a789-2e961947d1d7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/63/63cb0b39-ffaf-4a1c-944c-1b702d66c840?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1c/1c84e17b-3746-4023-870f-96262e4f568b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d4/d4ba411e-df0b-4c48-abb2-db51f8384d51?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe ein Canyon Gravel Bike Grail 7 e Tap in Größe S in gut bis sehr gutem Zustand.<br />Die Rahmengröße ist für Personen von 163 cm bis 176 cm geeignet.<br />Das Rad wurde im Oktober 2022 für einen Neupreis von 2199,- Euro gekauft und regelmäßig gewartet. Die letzte Wartung fand vor ca. 3 Wochen an dem Rad statt und ist somit technisch, in einem einwandfreien Zustand.<br />Das Rad ist ca. 1500 Kilometer auf überwiegend geteerten Straße bewegt worden und wurde immer sorgsam behandelt.<br />Es steht in 79312 Emmendingen und kann dort gerne besichtigt und zur Probe gefahren werden.<br />Die Rechnung für den Radkauf ist vorhanden, der abgebildete Radständer ist nicht im Preis inbegriffen und wird nicht verkauft.<br />Ein Versand ist nicht möglich!<br /><br />Da ich eine Privatperson bin gewähre ich keine Rücknahme, Garantie oder Gewährleistung.",
+      "attribute": {
+        "Art": "Weitere Fahrräder & Zubehör",
+        "Versand": "Nur Abholung",
+        "Typ": "Andere Fahrräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "6750893",
+        "name": "Stefan Müller",
+        "typ": "PRIVATE",
+        "konto_seit": "2011-07-31",
+        "konto_alter_tage": 5487,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 97,
+      "signale": {
+        "gruen": [
+          "Konto seit 2011",
+          "Bewertung 1.00, zuverlaessig",
+          "Abholung moeglich",
+          "18 Bilder"
+        ],
+        "rot": [
+          "Gewerbetext auf Privatprofil"
+        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -4345,75 +4546,6 @@
         ],
         "rot": [
           "Preis nur 38% des Marktwerts"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3479054577",
-      "watchlist_id": "ebike-rad",
-      "titel": "Canyon MTB Mountainbike Grand Canyon XL",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/canyon-mtb-mountainbike-grand-canyon-xl/3479054577-217-18262",
-      "preis": 699.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 1250.0,
-        "p25": 650.0,
-        "n": 99,
-        "query": "Canyon MTB Mountainbike",
-        "korrektur": 0.0,
-        "streuung": 3.38,
-        "belastbar": false
-      },
-      "p_ratio": 0.559,
-      "ersparnis_eur": 551.0,
-      "ort": "Hamburg Fuhlsbüttel",
-      "plz": "22335",
-      "eingestellt": "2026-08-08T06:29:41+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d4/d4ed8146-294d-45be-9709-f38206d9b29f?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/94/9478dd4d-5658-403f-99b6-c7f9c25657f5?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/08/0878f48a-4db5-4554-a4c7-7be4b634f488?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3f/3fa46af4-9a42-40e6-8a8e-41e5a50b8502?rule=$_0.JPG"
-      ],
-      "beschreibung": "Biete hier mein Grand Canyon AL MTB an.<br />Baujahr 2019<br />Rahmengröße XL<br />29 Zoll<br />Relativ selten gefahren, Laufleistung ca 3000km geschätzt. Gebrauchsspuren natürlich vorhanden, sonst funktioniert alles tadellos. **Das Rad wird mit anderen Pedalen verkauft.<br /><br />Nur Abholung in HH Fuhlsbüttel.<br /><br />Privatverkauf unter Ausschluss der Sachmängelhaftung. Keine Garantie oder Rücknahme.",
-      "attribute": {
-        "Art": "Herren",
-        "Versand": "Nur Abholung",
-        "Typ": "Mountainbikes",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "39706129",
-        "name": "Ole",
-        "typ": "PRIVATE",
-        "konto_seit": "2016-06-01",
-        "konto_alter_tage": 3719,
-        "bewertung": 0.8461538461538461,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2016",
-          "Abholung moeglich",
-          "9 Bilder",
-          "Maengel offengelegt",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Bewertung 0.85"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -6346,6 +6478,84 @@
       }
     },
     {
+      "id": "3479892919",
+      "watchlist_id": "macbook",
+      "titel": "Apple MacBook Pro  16 Zoll High-End-Konfiguration",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-macbook-pro-16-zoll-high-end-konfiguration/3479892919-278-8771",
+      "preis": 499.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 850.0,
+        "p25": 470.0,
+        "n": 73,
+        "query": "Apple MacBook Pro 16",
+        "korrektur": 0.0,
+        "streuung": 3.4,
+        "belastbar": false
+      },
+      "p_ratio": 0.587,
+      "ersparnis_eur": 351.0,
+      "ort": "Calw",
+      "plz": "75365",
+      "eingestellt": "2026-08-09T06:13:29+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5f/5f04dd28-3645-4f7d-a473-52c93a06a061?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e2/e2b43ec3-9171-4c4a-bff6-ba722d8c4fb7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/29/29c43b0c-2b79-40f3-a9b0-71ca1b984e6c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/12/12d387b1-cf61-46fa-bac7-883c930354f3?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht ein Apple MacBook Pro 16 Zoll<br />(Ende 2019) in Space Grau.<br />Es handelt sich um die leistungsstarke High-End-Konfiguration mit Intel Core i9, 32 GB RAM und 1 TB SSD - ideal für Programmierung, Softwareentwicklung, Grafik- und Videobearbeitung sowie alle anspruchsvollen Anwendungen.<br />100 % funktionsfähig<br />V macOS Tahoe installiert V Touch Bar & Touch ID<br />Original Apple Netzteil und USB-C-Ladekabel<br />inklusive<br />Der optische Zustand ist gebraucht. Gebrauchsspuren sind vorhanden - Zustand bitte den Fotos entnehmen.<br />Das MacBook wurde vollständig zurückgesetzt und ist sofort einsatzbereit.<br />Versand oder Abholung möglich.<br />Bei Fragen einfach melden.<br />Privatverkauf - keine Garantie, Gewährleistung oder Rucknahme.",
+      "attribute": {
+        "Versand": "ab 1,49",
+        "Typ": "Laptop",
+        "Marke": "Apple",
+        "Modell": "MacBook Pro 16\" (2019, Intel)",
+        "Zustand": "Gut",
+        "Betriebssystem": "macOS",
+        "Bildschirmgröße (Zoll)": "16\"",
+        "Erscheinungsjahr": "2019",
+        "Prozessor": "Intel Core i9",
+        "RAM (GB)": "32 GB",
+        "Speicher (GB)": "1 TB",
+        "Farbe": "Grau"
+      },
+      "verkaeufer": {
+        "id": "133886452",
+        "name": "Fundstückchen",
+        "typ": "PRIVATE",
+        "konto_seit": "2023-09-18",
+        "konto_alter_tage": 1055,
+        "bewertung": 0.5714285714285714,
+        "abzeichen": {
+          "rating": 1,
+          "friendliness": 1,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 90,
+      "signale": {
+        "gruen": [
+          "Konto seit 2023",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "9 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.57",
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3479078778",
       "watchlist_id": "ebike-rad",
       "titel": "Cube Nulane Pro",
@@ -7784,6 +7994,80 @@
       }
     },
     {
+      "id": "3479888467",
+      "watchlist_id": "macbook",
+      "titel": "Apple MacBook Pro",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-macbook-pro/3479888467-278-7315",
+      "preis": 499.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 750.0,
+        "p25": 450.0,
+        "n": 87,
+        "query": "Apple MacBook Pro",
+        "korrektur": 0.0,
+        "streuung": 3.56,
+        "belastbar": false
+      },
+      "p_ratio": 0.665,
+      "ersparnis_eur": 251.0,
+      "ort": "Memmingen",
+      "plz": "87700",
+      "eingestellt": "2026-08-09T04:20:36+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/27/276fef91-4c4e-42ed-8be8-edae8e00d281?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/2e/2e18028a-a813-4815-b647-42055b76648b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/82/82cda293-a8e8-4799-963c-af1e5eca9de0?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/47/47003b78-ac39-418d-baba-146efb0c3a9b?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe hier mein Apple MacBook Pro, das sich in einem sehr gepflegten Zustand befindet. Es kommt in der Originalverpackung, wie auf dem Foto zu sehen.<br /><br />- Modell: MacBook Pro<br />- Farbe: Space Grau<br />- Inklusive Originalkarton<br />- Hochwertiges Aluminiumgehäuse<br />- Kompaktes und flaches Design<br /><br />Das Gerät wurde stets sorgsam behandelt und weist kaum Gebrauchsspuren auf. Es eignet sich ideal für produktives Arbeiten oder kreative Projekte unterwegs. Wenn du Interesse hast oder weitere Einzelheiten wissen möchtest, schreib mir gerne eine Nachricht.",
+      "attribute": {
+        "Versand": "ab 1,49",
+        "Marke": "Apple",
+        "Modell": "MacBook Pro 13\" (2020, Intel)",
+        "Zustand": "Sehr Gut",
+        "Betriebssystem": "macOS",
+        "Bildschirmgröße (Zoll)": "13\"",
+        "Erscheinungsjahr": "2020",
+        "RAM (GB)": "8 GB",
+        "Speicher (GB)": "256 GB",
+        "Farbe": "Silber"
+      },
+      "verkaeufer": {
+        "id": "18854182",
+        "name": "Sergio",
+        "typ": "PRIVATE",
+        "konto_seit": "2014-01-08",
+        "konto_alter_tage": 4595,
+        "bewertung": 0.5875,
+        "abzeichen": {
+          "rating": 1,
+          "friendliness": 2,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 82,
+      "signale": {
+        "gruen": [
+          "Konto seit 2014",
+          "Kaeuferschutz verfuegbar",
+          "9 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.59"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3479097592",
       "watchlist_id": "macbook",
       "titel": "MacBook Pro Spacegrau",
@@ -9167,67 +9451,6 @@
       }
     },
     {
-      "id": "3479051739",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 15 Pro Verkauf/tauschen",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-pro-verkauf-tauschen/3479051739-173-2030",
-      "preis": 390.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 599.5,
-        "p25": 465.0,
-        "n": 54,
-        "query": "iPhone Pro tauschen 15",
-        "korrektur": 0.0,
-        "streuung": 1.51,
-        "belastbar": true
-      },
-      "p_ratio": 0.651,
-      "ersparnis_eur": 209.5,
-      "ort": "Essen-Kray",
-      "plz": "45307",
-      "eingestellt": "2026-08-08T05:54:29+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bf/bf49f424-3642-4117-ba35-59142ac9ffab?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/cf/cf0f7afb-eddd-4d7c-bb64-5489ac39c2f4?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/15/1586ca14-33c3-4fc3-bd34-1589dc7c9427?rule=$_0.JPG"
-      ],
-      "beschreibung": "Hallo zusammen, ich verkaufe oder tausche mein iPhone 15 Pro in „Natural Titanium“ mit 128 GB Speicher und einer Akkukapazität von 81 %. Es handelt sich um ein US-Modell, das ausschließlich mit eSIM funktioniert; die Rückseite ist zwar gesprungen, aber ansonsten ist das Gerät in einwandfreiem Zustand. Alles funktioniert tadellos. Ich nutze das Handy täglich – bei Fragen könnt ihr mir gerne schreiben.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Silber",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "163913355",
-        "name": "Privatt",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-06-18",
-        "konto_alter_tage": 50,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 60,
-      "signale": {
-        "gruen": [
-          "Kaeuferschutz verfuegbar"
-        ],
-        "rot": [
-          "Konto juenger als 6 Monate"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "2094251785",
       "watchlist_id": "design-sammeln",
       "titel": "danish design ❗️ Louis Poulsen Lampe zu knoll 70er vitra teak PH5",
@@ -10597,6 +10820,71 @@
       }
     },
     {
+      "id": "3479887892",
+      "watchlist_id": "apple-mobil",
+      "titel": "Iphone 15 Pro Titan Blue",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-pro-titan-blue/3479887892-173-1824",
+      "preis": 400.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 580.0,
+        "p25": 500.0,
+        "n": 83,
+        "query": "Iphone Pro Titan 15",
+        "korrektur": 0.0,
+        "streuung": 1.3,
+        "belastbar": true
+      },
+      "p_ratio": 0.69,
+      "ersparnis_eur": 180.0,
+      "ort": "Grevenbroich",
+      "plz": "41515",
+      "eingestellt": "2026-08-09T03:55:20+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/93/939efd19-2ec8-4100-91b5-d60c7f49f818?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/82/82e45268-66fe-45cb-b424-b2f5a6df2f95?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b7/b742c6f7-1c73-4c9c-9fd5-6cff8657df2f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8a/8a99aced-928f-442a-b3d8-6a71768b58c1?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hiermit biete ich ein Iphone 15 Pro Titan Blau in 128 GB zum verkauf an.<br />Das handy hat gebrauchsspuren am Rahmen wie auf den bildern zu sehen.<br /><br />Alles am Handy Funktioniert einwandfrei !!<br /><br />Auf den Kamera Linsen befinden sich Schutzlisen.<br /><br />Display Nagelneu wurde vor 2 Tagen gewechselt. (Kein Orginal)<br /><br /><br />Wird nur mit Ladekabel abgegeben.<br /><br />Versand möglich. Abholung möglich.<br /><br />Der Verkauf erfolgt unter Ausschluss jeglicher Gewährleistung und Sachmängelhaftung. Keine Garantie, keine Rücknahme und keine Erstattung.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 1,49",
+        "Farbe": "Andere Farben",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "158284161",
+        "name": "Moin",
+        "typ": "PRIVATE",
+        "konto_seit": "2025-12-07",
+        "konto_alter_tage": 244,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3479097881",
       "watchlist_id": "design-sammeln",
       "titel": "Louis Poulsen AJ Royal Lampe Pendelleuchte Hängelampe",
@@ -11257,6 +11545,76 @@
       }
     },
     {
+      "id": "3479886148",
+      "watchlist_id": "apple-mobil",
+      "titel": "IPhone 14 Pro 128 GB -Silber/Weiß - voll funktionsfähig",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-pro-128-gb-silber-weiss-voll-funktionsfaehig/3479886148-173-5422",
+      "preis": 269.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 417.0,
+        "p25": 350.0,
+        "n": 76,
+        "query": "IPhone Pro GB 14 128",
+        "korrektur": 0.0,
+        "streuung": 1.29,
+        "belastbar": true
+      },
+      "p_ratio": 0.645,
+      "ersparnis_eur": 148.0,
+      "ort": "Koblenz",
+      "plz": "56075",
+      "eingestellt": "2026-08-09T02:56:07+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/67/67454fa6-2679-4bc1-8870-87dd28693c8d?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/96/96d6026e-9a36-454a-80ed-fd6cdf1f6912?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/df/df689faf-8091-4e3d-8851-cfdb58207a05?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/93/9353b672-4b41-479c-af00-1e1c4f2db1cb?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein Apple IPhone 14 Pro mit 128 GB Speicher in der Farbe Silber&#x2F;Weiß.<br /><br />Das IPhone ist technisch einwandfrei. Display, Kameras, Face ID, Lautsprecher, Mikrofon, Tasten und Touchscreen funktionieren problemlos.<br /><br />- Maximale Batteriekapazität: 79%<br />- Rückseite beschädigt<br />- Gebrauchsspuren vorhanden<br /><br />Die beschädigte Rückseite ist beim Preis selbstverständlich berücksichtigt.<br /><br />Die Handyhülle gibt es natürlich ohne Aufpreis dazu, um die Beschädigungen auf der Rückseite zu verdecken.<br /><br />Abholung und Versand nach Absprache möglich.<br /><br />Privatverkauf unter Ausschluss der Sachmangelhaftung und Rücknahme.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,49",
+        "Farbe": "Weiß",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "In Ordnung"
+      },
+      "verkaeufer": {
+        "id": "78279400",
+        "name": "Jason",
+        "typ": "PRIVATE",
+        "konto_seit": "2020-09-14",
+        "konto_alter_tage": 2154,
+        "bewertung": 0.75,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2020",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "7 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.75"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3479168218",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 14, 128 GB, schwarz",
@@ -11454,6 +11812,76 @@
         ],
         "rot": [
           "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3479891168",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 14 Pro 256gb",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-pro-256gb/3479891168-173-17662",
+      "preis": 300.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 434.5,
+        "p25": 350.0,
+        "n": 42,
+        "query": "iPhone Pro 14 256gb",
+        "korrektur": 0.0,
+        "streuung": 1.4,
+        "belastbar": true
+      },
+      "p_ratio": 0.69,
+      "ersparnis_eur": 134.5,
+      "ort": "Oberirsen",
+      "plz": "57635",
+      "eingestellt": "2026-08-09T05:54:26+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3e/3ecfa155-837d-4920-8e7c-cc994e9953d9?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/2c/2cb1bfbd-0d92-4bb9-9846-b571637421bf?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ea/ea6749c6-440a-4660-a1ba-87dc40e3cc7d?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e8/e8f50e2d-1e88-4dba-a1fc-dbaf99aa8c70?rule=$_0.JPG"
+      ],
+      "beschreibung": "Guten Tag,<br />Hier verkaufe ich mein iPhone 14 Pro.<br />Es funktioniert tadellos und hat keinerlei Einschränkungen.<br />Das Gerät hat lediglich minimale Kratzer am oberen displayrand welche so gut wie garnicht auffallen, siehe letztes Bild.<br />Bezahlung per Banküberweisung oder bar bei Abholung.<br />Mit dabei ist ein neues Kabel von Apple.<br />Mit freundlichen Grüßen",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,49",
+        "Farbe": "Schwarz",
+        "Gerät & Zubehör": "Gerät & Zubehör",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "135965721",
+        "name": "Walkenbach",
+        "typ": "PRIVATE",
+        "konto_seit": "2023-11-28",
+        "konto_alter_tage": 984,
+        "bewertung": 0.5,
+        "abzeichen": {
+          "rating": 1,
+          "friendliness": 1,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2023",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "5 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.50"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -11799,68 +12227,70 @@
       }
     },
     {
-      "id": "3479051392",
+      "id": "3479893110",
       "watchlist_id": "apple-mobil",
-      "titel": "Apple IPhone 13 256 GB Smartphone",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-13-256-gb-smartphone/3479051392-173-2116",
-      "preis": 230.0,
-      "preis_typ": "PLEASE_CONTACT",
+      "titel": "iPhone 12 Pro Max 256",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-12-pro-max-256/3479893110-173-20680",
+      "preis": 189.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
       "referenz": {
-        "median": 339.5,
-        "p25": 275.0,
+        "median": 300.0,
+        "p25": 250.0,
         "n": 74,
-        "query": "Apple IPhone GB 13 256",
+        "query": "iPhone Pro Max 12 256",
         "korrektur": 0.0,
-        "streuung": 1.45,
+        "streuung": 1.44,
         "belastbar": true
       },
-      "p_ratio": 0.677,
-      "ersparnis_eur": 109.5,
-      "ort": "Neuss",
-      "plz": "41469",
-      "eingestellt": "2026-08-08T05:47:48+02:00",
+      "p_ratio": 0.63,
+      "ersparnis_eur": 111.0,
+      "ort": "Rath-Heumar",
+      "plz": "51107",
+      "eingestellt": "2026-08-09T06:15:25+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/93/93375c92-734e-493a-ade1-0419d47b51e2?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/99/99546722-a52d-4353-a723-be38318f4cfe?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/da/da7d55e3-e057-4337-b86e-1f54a3fe4e75?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d6/d67f65c5-b221-437d-bb80-09b825960593?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9e/9eab5751-961f-4f59-9951-ff508e480d39?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ca/cad86080-249c-4056-b8e3-3bf37568c2be?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/80/8089b8ee-b0c6-47d9-8f9f-a0f21104938c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e9/e94ec562-4b69-4ee2-8c8b-6af8f2aba4c6?rule=$_0.JPG"
       ],
-      "beschreibung": "Apple iPhone 13 – 256 GB – Akku 81%<br /><br />Zum Verkauf steht ein Apple iPhone 13 mit 256 GB Speicher.<br /><br />Das Gerät ist technisch voll funktionsfähig und befindet sich insgesamt in einem guten, gebrauchten Zustand.<br /><br />Zustand<br /><br />Das iPhone weist normale Gebrauchsspuren auf:<br /><br />* Leichte Kratzer im Display (siehe Bilder)<br />* Kleine, leichte dunklere Stelle oben rechts im Display (siehe Bilder)<br />* Rahmen mit sichtbaren Gebrauchsspuren<br /><br />Abgesehen davon ist das Gerät in einem guten und gepflegten Zustand.<br /><br />Akku & Technik<br /><br />* Akkukapazität: 81%<br />* Alle Funktionen sind voll funktionsfähig<br /><br /><br />Lieferumfang<br /><br />* Apple iPhone 13 (256 GB)<br /><br />Kein Ladekabel enthalten.",
+      "beschreibung": "Verkaufe mein iPhone 12 Pro Max in Grau 256 GB.<br /><br />Das Display ist mit Panzerglas geschützt, aber leider hintern ist gebrochen. Es funktioniert einwandfrei und ohne jegliche Probleme. Die Funktionalität des Handys ist nicht beeinträchtigt – alles läuft gut.<br /><br />Technische Daten:<br /><br />* Farbe: Grau<br />* Batteriezustand: 78%<br />* Gerät funktioniert einwandfrei ohne Probleme<br /><br /><br />Simlock frei. Das Handy ist auf Werkeinstellung zurückgesetzt und mit iOS 26.<br /><br />Unrealistische Angebote werden automatisch ignoriert !!!<br /><br />Abholung bevorzugt in Köln Rath.<br /><br />Da Privatverkauf keine Garantie, Gewährleistung oder Rückgabe.",
       "attribute": {
         "Art": "Apple",
-        "Versand": "ab 7,69",
-        "Farbe": "Blau",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
+        "Versand": "ab 0,49",
+        "Farbe": "Grau",
+        "Gerät & Zubehör": "Gerät & Zubehör",
+        "Zustand": "In Ordnung"
       },
       "verkaeufer": {
-        "id": "42816517",
+        "id": "43098705",
         "name": "Privat",
         "typ": "PRIVATE",
-        "konto_seit": "2016-10-16",
-        "konto_alter_tage": 3583,
-        "bewertung": 0.85,
+        "konto_seit": "2016-10-27",
+        "konto_alter_tage": 3572,
+        "bewertung": 0.64,
         "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 1
+          "rating": 1,
+          "friendliness": 0
         },
         "anzahl_anzeigen": 0
       },
       "uebergabe": {
-        "abholung": false,
+        "abholung": true,
         "versand": true,
         "kaeuferschutz": true
       },
-      "score": 100,
+      "score": 75,
       "signale": {
         "gruen": [
           "Konto seit 2016",
+          "Abholung moeglich",
           "Kaeuferschutz verfuegbar",
-          "6 Bilder",
-          "Maengel offengelegt"
+          "12 Bilder"
         ],
-        "rot": [],
+        "rot": [
+          "Bewertung 0.64",
+          "Gewerbetext auf Privatprofil"
+        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -12175,63 +12605,6 @@
         "rot": [
           "Bewertung 0.70"
         ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3479052791",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Wohnungsauflösung, Weihnachts,- & Osterdeko",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/wohnungsaufloesung-weihnachts-osterdeko/3479052791-246-3822",
-      "preis": 999.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Leuben",
-      "plz": "01259",
-      "eingestellt": "2026-08-08T06:10:07+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0a/0ac84445-6e38-4802-afb1-f1a8533e07af?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9f/9f577cc0-7a53-42e0-b834-8839c8bd3096?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/cc/cc9eae8f-e381-42f0-a3c7-c88414874f36?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/60/60a4ec49-fc7f-4b4e-ba89-60d5689e1fed?rule=$_0.JPG"
-      ],
-      "beschreibung": "Verschiedene Aufbewahrungsdosen, Weihnachtssachen und Deko!<br />Die meisten Sachen sind neu und in sehr gutem Zustand!<br />Drei Dosen Neu&#x2F;Preis 15€&#x2F; VHB. 8€,<br />Adventskranz Rad15€, Kranz9€, Kerzen26€ zussmmen nur 20€!<br />Kleine LED Bäume4&#x2F;Stück für 1,50€ pro Baum!<br />4 Rote Kerzen16€ mit echtHolz Kerzenhalter 15€ zusammen 15€!<br />Die beiden Räucherhäuschen 2x gebraucht hand gefertigt je 5€.<br />Alle anderen Sachen bitte Preisvorschlag senden!<br />Preise sind VHB, gern ein Angebot machen!",
-      "attribute": {
-        "Art": "Weitere Dekoration",
-        "Versand": "ab 0,49",
-        "Zustand": "Neu",
-        "Farbe": "Andere Farben"
-      },
-      "verkaeufer": {
-        "id": "8568699",
-        "name": "Schön",
-        "typ": "PRIVATE",
-        "konto_seit": "2012-01-20",
-        "konto_alter_tage": 5313,
-        "bewertung": 0.8897058823529411,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 92,
-      "signale": {
-        "gruen": [
-          "Konto seit 2012",
-          "Kaeuferschutz verfuegbar",
-          "19 Bilder"
-        ],
-        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -12647,6 +13020,171 @@
         "rot": [
           "Bewertung 0.62"
         ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3399674598",
+      "watchlist_id": "kameras-leica",
+      "titel": "Voigtländer Nokton 75mm F1,5 asph. VM - Leica M - gekauft 08/25 ",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/voigtlaender-nokton-75mm-f1-5-asph-vm-leica-m-gekauft-08-25-/3399674598-245-21300",
+      "preis": 725.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Trechtingshausen",
+      "plz": "55413",
+      "eingestellt": "2026-08-09T06:42:40+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/98/98e07610-44d7-45f0-b3c3-423bac9ff3fc?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bb/bbcb76bd-dfec-4f09-b59a-79341f5408a3?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7c/7cd8964e-5711-44e4-b507-1f7688994718?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3a/3a5e8c41-9d03-4f1d-b87d-f518add8f22b?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hallo, ich biete hier das obenstehende Objektiv an. Die Linse ist in einem TopZustand, da sie praktisch ungenutzt ist. Da ich aber kaum noch Zeit für mein Hobby habe und andere Ausgaben warten, darf sie gehen. Gekauft wurde die Linse in 08&#x2F;25 - sie hat also noch mehr als ein Jahr Garantie. Die Ware wird unter Ausschluss jeglicher Gewährleistung verkauft. Kein Umtausch oder Rückgabe möglich.",
+      "attribute": {
+        "Art": "Objektiv",
+        "Versand": "ab 1,49",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "32780846",
+        "name": "Marco Hecher",
+        "typ": "PRIVATE",
+        "konto_seit": "2015-08-20",
+        "konto_alter_tage": 4006,
+        "bewertung": 0.9779411764705882,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 95,
+      "signale": {
+        "gruen": [
+          "Konto seit 2015",
+          "Bewertung 0.98, zuverlaessig",
+          "Kaeuferschutz verfuegbar",
+          "4 Bilder"
+        ],
+        "rot": [
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3479887022",
+      "watchlist_id": "notverkaeufe",
+      "titel": "18 Zoll bmw M  Felgen Original Notverkauf",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/18-zoll-bmw-m-felgen-original-notverkauf/3479887022-223-8375",
+      "preis": 400.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Bretzfeld",
+      "plz": "74626",
+      "eingestellt": "2026-08-09T03:22:11+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/91/916f4f35-b170-465d-b719-7bb959da38d4?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/74/74c928c3-09d3-4894-b798-6d649312f2b0?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/14/14c2db2d-2c22-4fb4-8d57-7fd09c0c16a1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8f/8f9a2f5b-68cd-483f-a229-4b629fcdbd89?rule=$_0.JPG"
+      ],
+      "beschreibung": "4 Originale bmw Felgen zu verkaufen keine Kratzer oder Schäden sind von einem bmw m240 I",
+      "attribute": {
+        "Art": "Reifen & Felgen",
+        "Versand": "ab 1,49"
+      },
+      "verkaeufer": {
+        "id": "154890771",
+        "name": "Samuel",
+        "typ": "PRIVATE",
+        "konto_seit": "2025-09-21",
+        "konto_alter_tage": 321,
+        "bewertung": 0.3333333333333333,
+        "abzeichen": {
+          "rating": 1,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 70,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar",
+          "4 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.33"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3479894151",
+      "watchlist_id": "notverkaeufe",
+      "titel": "Klavier KEMBLE K109 Schnäppchen wegen Haushaltsauflösung",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/klavier-kemble-k109-schnaeppchen-wegen-haushaltsaufloesung/3479894151-74-9044",
+      "preis": 500.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Waiblingen",
+      "plz": "71332",
+      "eingestellt": "2026-08-09T06:29:45+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d8/d87b950e-8214-49aa-a259-29739c0aecd4?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/31/3184edce-9e3d-481c-9ea5-dfc7059d0d66?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b7/b7888f73-8631-4a68-9c0a-bc798dfd90db?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hochwertiges Klavier Kemble Piano K 109 in einwandfreiem Zustand zum Spezialpreis wegen Haushaltsauflösung. Eine Klavierbank ist mit dabei.<br /><br />Das Klavier wurde 2017 angeschafft, selten gespielt und stand in einem gepflegten Nichtraucherhaushalt. Keine äußerlichen Mängel, Klang und Stimmung i.O.<br /><br />Neupreis 2017: 3624,00 (Rechnung liegt vor)<br /><br />Nur ernsthafte Anfragen von Selbstabholern (Eigentransport, Abholung in Waiblingen).<br /><br />Privatverkauf, daher keine Garantie oder Rücknahme - FESTPREIS -",
+      "attribute": {
+        "Versand": "Nur Abholung",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "43792701",
+        "name": "Fabian",
+        "typ": "PRIVATE",
+        "konto_seit": "2016-11-28",
+        "konto_alter_tage": 3540,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 97,
+      "signale": {
+        "gruen": [
+          "Konto seit 2016",
+          "Abholung moeglich",
+          "Preisbegruendung genannt"
+        ],
+        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
