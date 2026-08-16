@@ -1,25 +1,23 @@
 {
-  "generiert": "2026-08-16T03:12:53+02:00",
+  "generiert": "2026-08-16T06:44:57+02:00",
   "zeitraum": {
-    "von": "2026-08-15T21:41:30+02:00",
-    "bis": "2026-08-16T02:41:30+02:00"
+    "von": "2026-08-16T01:25:50+02:00",
+    "bis": "2026-08-16T06:25:50+02:00"
   },
   "statistik": {
-    "gesichtet": 66132,
-    "nach_modellmatch": 426,
-    "nach_vorfilter": 426,
-    "nach_preisschwelle": 44,
-    "nach_scoring": 19,
+    "gesichtet": 52394,
+    "nach_modellmatch": 87,
+    "nach_vorfilter": 87,
+    "nach_preisschwelle": 8,
+    "nach_scoring": 6,
     "ausschluesse": {
-      "score_zu_niedrig": 20,
-      "preis_unplausibel": 5
+      "score_zu_niedrig": 2
     },
-    "pool": 63630,
-    "ohne_referenz_verworfen": 178,
-    "referenz_gekappt": 34,
-    "doppelt_zusammengefasst": 0,
-    "requests": 1384,
-    "laufzeit_sekunden": 1883
+    "pool": 49890,
+    "ohne_referenz_verworfen": 40,
+    "doppelt_zusammengefasst": 1,
+    "requests": 877,
+    "laufzeit_sekunden": 1147
   },
   "kandidaten": [
     {
@@ -2028,6 +2026,73 @@
         ],
         "rot": [
           "Hoechstens ein Bild"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3485643126",
+      "watchlist_id": "uhren",
+      "titel": "ROLEX OYSTER 34mm                                      Festpreis",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/rolex-oyster-34mm-festpreis/3485643126-157-2025",
+      "preis": 3100.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 4490.0,
+        "p25": 3000.0,
+        "n": 35,
+        "query": "ROLEX OYSTER 34mm",
+        "korrektur": 0.0,
+        "streuung": 2.33,
+        "belastbar": true
+      },
+      "p_ratio": 0.69,
+      "ersparnis_eur": 1390.0,
+      "ort": "Hamm",
+      "plz": "59067",
+      "eingestellt": "2026-08-16T04:58:35+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f0/f08fe5ba-da53-4ef7-b825-3d1902876ee8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/35/35f5f8a9-f18d-40a1-ac8d-74edffdd82b6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/67/67e52232-d0d1-4bca-b34e-8ebc1dec1664?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/35/35941486-f80f-478e-bd27-a49ecef69a64?rule=$_0.JPG"
+      ],
+      "beschreibung": "Festpreis<br /><br />Die Rolex Oyster Perpetual &quot;Date&quot; ist ein exquisites Sammlerstück mit der Referenznummer 902-B 0381, das Eleganz und Präzision vereint. Diese Herren-Armbanduhr besticht durch ihr Edelstahlgehäuse und Armband, das in der Farbe Silber erstrahlt, und bietet mit ihrer Wasserdichtigkeit von bis zu 100 Metern (10 ATM) eine ausgezeichnete Funktionalität. Das mechanische Uhrwerk mit automatischem Aufzug garantiert eine zuverlässige Zeitmessung, während das analoge Anzeigeformat eine klassische Ästhetik verspricht.<br />privat ohne gewährleistung",
+      "attribute": {
+        "Art": "Uhren",
+        "Versand": "ab 0,49",
+        "Zustand": "Sehr Gut",
+        "Material": "Stahl"
+      },
+      "verkaeufer": {
+        "id": "164648800",
+        "name": "Hamm Westen",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-07-15",
+        "konto_alter_tage": 31,
+        "bewertung": 0.9285714285714286,
+        "abzeichen": {
+          "rating": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 75,
+      "signale": {
+        "gruen": [
+          "Bewertung 0.93, zuverlaessig",
+          "Kaeuferschutz verfuegbar",
+          "14 Bilder"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate",
+          "Gewerbetext auf Privatprofil"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -4648,73 +4713,6 @@
         ],
         "rot": [
           "Preis nur 43% des Marktwerts"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3484819026",
-      "watchlist_id": "ebike-rad",
-      "titel": "Pegasus Premio Superlite Trekkingrad",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/pegasus-premio-superlite-trekkingrad/3484819026-230-5589",
-      "preis": 349.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 999.0,
-        "p25": 400.0,
-        "n": 12,
-        "query": "Pegasus Premio Superlite",
-        "korrektur": 0.0,
-        "streuung": 2.5,
-        "belastbar": true
-      },
-      "p_ratio": 0.349,
-      "ersparnis_eur": 650.0,
-      "ort": "Olching",
-      "plz": "82140",
-      "eingestellt": "2026-08-15T03:38:55+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/eb/eb048b51-8463-4f42-91cf-0f734944aabf?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/04/04aabdd7-ac21-489c-a1d0-755d76cff844?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4f/4f7cf146-3fae-4602-8c1e-a98851f42d75?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e7/e77f3d59-b7e8-41d3-8078-1d452e41a0fb?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe ein PEGASUS Premio Superlite Trekkingrad in schwarzer Ausführung für Männer.<br /><br />Das Fahrrad ist ideal für Alltag, Stadt und längere Touren und verfügt über eine umfangreiche Ausstattung:<br /><br />* 28-Zoll-Laufräder<br />* leichter Superlite-Aluminiumrahmen<br />* Federgabel<br />* Scheibenbremsen<br />* Gepäckträger<br />* Schutzbleche vorne und hinten<br />* Beleuchtung<br />* Fahrradständer<br />* bequemer Sattel<br />* zuverlässige Shimano-Schaltung<br />* sportliche, komfortable Sitzposition<br /><br />Das Fahrrad befindet sich insgesamt in einem gebrauchten, gepflegten Zustand und weist normale Gebrauchsspuren auf. Siehe Fotos.<br /><br />Preis: 349 € VB<br /><br />Besichtigung und Probefahrt nach Absprache möglich.<br />Nur Abholung.<br /><br />Privatverkauf unter Ausschluss der Sachmängelhaftung. Keine Rücknahme.",
-      "attribute": {
-        "Art": "Radsport",
-        "Versand": "Nur Abholung",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "18207337",
-        "name": "Keil",
-        "typ": "PRIVATE",
-        "konto_seit": "2013-11-23",
-        "konto_alter_tage": 4647,
-        "bewertung": 0.8809523809523809,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 89,
-      "signale": {
-        "gruen": [
-          "Konto seit 2013",
-          "Abholung moeglich",
-          "4 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Preis nur 35% des Marktwerts"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -7583,6 +7581,76 @@
           "Bewertung 0.91, zuverlaessig",
           "Abholung moeglich",
           "4 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3485644738",
+      "watchlist_id": "macbook",
+      "titel": "Apple MacBook Laptop silber",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-macbook-laptop-silber/3485644738-278-15777",
+      "preis": 600.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 914.5,
+        "p25": 650.0,
+        "n": 34,
+        "query": "Apple MacBook Laptop",
+        "korrektur": 0.0,
+        "streuung": 2.04,
+        "belastbar": true
+      },
+      "p_ratio": 0.656,
+      "ersparnis_eur": 314.5,
+      "ort": "Geiersthal",
+      "plz": "94244",
+      "eingestellt": "2026-08-16T05:51:59+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/94/94ae1d66-1645-4170-b492-25e3e82fb194?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/dc/dc8b90ce-3d0c-4066-a263-a9f15177e904?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/09/099c929b-91b3-40ce-974d-ca74e4797a54?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/97/9788acf1-acb8-49d7-8e3a-3e6dce294763?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich biete hier mein silbernes Apple MacBook zum Verkauf an. Das Gerät präsentiert sich in einem klassischen Design und ist ein zuverlässiger Begleiter für den Alltag.<br /><br />- Gehäuse in zeitlosem Silber<br />- Markantes Apple-Logo auf dem Deckel<br />- Kompakte und flache Bauweise<br />- Hochwertige Verarbeitung<br /><br />Das Gehäuse befindet sich in einem gepflegten Zustand ohne auffällige Kratzer oder Dellen. Die Oberfläche ist glatt und weist den typischen metallischen Glanz auf.<br /><br />Schreib mir gerne, wenn du weitere Informationen benötigst.",
+      "attribute": {
+        "Versand": "Nur Abholung",
+        "Typ": "Laptop",
+        "Marke": "Apple",
+        "Modell": "Anderes Modell",
+        "Zustand": "Sehr Gut",
+        "Betriebssystem": "macOS",
+        "Bildschirmgröße (Zoll)": "13\"",
+        "Farbe": "Silber"
+      },
+      "verkaeufer": {
+        "id": "141125157",
+        "name": "Fabio",
+        "typ": "PRIVATE",
+        "konto_seit": "2024-05-23",
+        "konto_alter_tage": 814,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2024",
+          "Abholung moeglich",
+          "11 Bilder",
+          "Maengel offengelegt"
         ],
         "rot": [],
         "unkenntnis_bonus": false,
@@ -10537,70 +10605,6 @@
       }
     },
     {
-      "id": "3484817992",
-      "watchlist_id": "apple-mobil",
-      "titel": "IPhone 15 Pro 256gb",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-pro-256gb/3484817992-173-16749",
-      "preis": 400.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 595.0,
-        "p25": 540.0,
-        "n": 39,
-        "query": "IPhone Pro 15 256gb",
-        "korrektur": 0.0,
-        "streuung": 1.15,
-        "belastbar": true
-      },
-      "p_ratio": 0.672,
-      "ersparnis_eur": 195.0,
-      "ort": "Oberbilk",
-      "plz": "40227",
-      "eingestellt": "2026-08-15T03:07:43+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/cd/cd4bbccf-3258-4d60-bfcf-aadb959e7472?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/31/310ff072-709a-476d-bac9-6f379c93bac1?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/14/140faa3e-fab3-4da2-88ff-9a8e4451a65c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/35/35ee11dc-7cbc-476c-9b49-3fdc7972bcd2?rule=$_0.JPG"
-      ],
-      "beschreibung": "Batteriekapazität beträgt 84%<br /><br />Rechnung noch vorhanden",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Blau",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "In Ordnung"
-      },
-      "verkaeufer": {
-        "id": "130913191",
-        "name": "Karim",
-        "typ": "PRIVATE",
-        "konto_seit": "2023-06-04",
-        "konto_alter_tage": 1167,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 80,
-      "signale": {
-        "gruen": [
-          "Konto seit 2023",
-          "Kaeuferschutz verfuegbar",
-          "9 Bilder"
-        ],
-        "rot": [
-          "Beschreibung sehr duenn"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3485484040",
       "watchlist_id": "design-sammeln",
       "titel": "Vitra ID Trim Bürostuhl Schreibtischstuhl",
@@ -10929,6 +10933,64 @@
       }
     },
     {
+      "id": "3485644907",
+      "watchlist_id": "vintage-hifi",
+      "titel": "Plattenspieler Thorens TD 160 E",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/plattenspieler-thorens-td-160-e/3485644907-172-7905",
+      "preis": 200.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 375.0,
+        "p25": 250.0,
+        "n": 26,
+        "query": "Plattenspieler Thorens TD 160",
+        "korrektur": 0.0,
+        "streuung": 2.2,
+        "belastbar": true
+      },
+      "p_ratio": 0.533,
+      "ersparnis_eur": 175.0,
+      "ort": "Mittenwalde",
+      "plz": "15749",
+      "eingestellt": "2026-08-16T05:56:06+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4f/4fa6891a-7e62-4ab3-890d-7b0f2dcc95c6?rule=$_0.JPG"
+      ],
+      "beschreibung": "Das Gerät ist ungeprüft.<br /><br />Aus dem Nachlass meines Vaters.<br />Wegen Haushaltsauflösung verkaufen wir verschiedene Möbelstücke aus dem Haushalt.<br />Abholung und Besichtigung sind nur an folgenden Terminen möglich:<br />• 10. & 11. September",
+      "attribute": {
+        "Art": "Weiteres Audio & Hifi",
+        "Versand": "Nur Abholung",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "165417276",
+        "name": "Margarete Horstmann",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-08-08",
+        "konto_alter_tage": 7,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 67,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "Preisbegruendung genannt"
+        ],
+        "rot": [
+          "Konto juenger als 30 Tage"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3485558888",
       "watchlist_id": "apple-mobil",
       "titel": "Iphone 13 Pro",
@@ -11185,71 +11247,6 @@
       }
     },
     {
-      "id": "3484820841",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 15 Pro",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-pro/3484820841-173-3032",
-      "preis": 380.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 549.0,
-        "p25": 499.0,
-        "n": 81,
-        "query": "iPhone Pro 15",
-        "korrektur": 0.0,
-        "streuung": 1.22,
-        "belastbar": true
-      },
-      "p_ratio": 0.692,
-      "ersparnis_eur": 169.0,
-      "ort": "Aurich",
-      "plz": "26603",
-      "eingestellt": "2026-08-15T04:56:29+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/07/07e0b166-0928-4155-ace9-79725ea7755c?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe mein iPhone 15 Pro in Natural Titanium mit 128 GB.<br />Das Gerät hat minimale Gebrauchsspuren, jedoch keine Kratzer oder Risse. Die Batteriekapazität beträgt 81%, was bei einer Bildschirmzeit von etwa 10-12 Stunden täglich 2 Ladezyklen verbraucht. Das Gerät ist derzeit noch in Benutzung und kann ab dem 16.08.2026 abgeholt werden. Dabei ist der original Karton und ein originales Ladekabel (ohne Adapter). Eine Handyhülle in Titan (passend) kann gerne mitgenommen werden.<br />Der Preis ist verhandelbar.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Beige",
-        "Gerät & Zubehör": "Gerät & Zubehör",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "75895964",
-        "name": "Alea",
-        "typ": "PRIVATE",
-        "konto_seit": "2020-06-20",
-        "konto_alter_tage": 2247,
-        "bewertung": 0.0,
-        "abzeichen": {
-          "rating": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 70,
-      "signale": {
-        "gruen": [
-          "Konto seit 2020",
-          "Kaeuferschutz verfuegbar",
-          "Maengel offengelegt",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Bewertung 0.00",
-          "Hoechstens ein Bild"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3484856624",
       "watchlist_id": "ebike-rad",
       "titel": "Mountainbike von „Cube“ „Attention cmpt“",
@@ -11313,6 +11310,72 @@
         "rot": [
           "Bewertung 0.84",
           "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3485640093",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 14  mit 128",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-mit-128/3485640093-173-2142",
+      "preis": 190.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 350.0,
+        "p25": 290.0,
+        "n": 80,
+        "query": "iPhone 14 128",
+        "korrektur": 0.0,
+        "streuung": 1.41,
+        "belastbar": true
+      },
+      "p_ratio": 0.543,
+      "ersparnis_eur": 160.0,
+      "ort": "Walsum",
+      "plz": "47178",
+      "eingestellt": "2026-08-16T03:12:26+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c3/c35d27e8-7f32-4c9b-8dd2-f4b26a1bec14?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bb/bb0a6a0b-4bfc-435f-8ef4-77d9dbe4ac21?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/58/588f1e05-5f09-44ab-806f-1cbd005dfa8d?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hi hier biete ich einen iPhone 14 mit 128 funktioniert einwandfrei sehr gut bis auf kleinere Gebrauchsspuren im Display Lg",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,49",
+        "Farbe": "Schwarz",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "In Ordnung"
+      },
+      "verkaeufer": {
+        "id": "141751697",
+        "name": "Karasuayip",
+        "typ": "PRIVATE",
+        "konto_seit": "2024-06-14",
+        "konto_alter_tage": 792,
+        "bewertung": 0.3181818181818182,
+        "abzeichen": {
+          "rating": 0,
+          "friendliness": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 70,
+      "signale": {
+        "gruen": [
+          "Konto seit 2024",
+          "Kaeuferschutz verfuegbar",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.32"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -11519,72 +11582,6 @@
       }
     },
     {
-      "id": "3484820426",
-      "watchlist_id": "apple-mobil",
-      "titel": "Apple iPhone 15, 128 GB, Schwarz",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-15-128-gb-schwarz/3484820426-173-1859",
-      "preis": 315.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 450.0,
-        "p25": 360.0,
-        "n": 78,
-        "query": "Apple iPhone GB 15 128",
-        "korrektur": 0.0,
-        "streuung": 1.39,
-        "belastbar": true
-      },
-      "p_ratio": 0.7,
-      "ersparnis_eur": 135.0,
-      "ort": "Hilden",
-      "plz": "40724",
-      "eingestellt": "2026-08-15T04:39:56+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/23/2356e0f5-101f-4a58-977f-cfd2aef19912?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c9/c909f5de-c808-4a10-aa06-4a3e3f3f86c5?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe mein treues iPhone 15 in der Farbe Schwarz, das mich im Alltag stets zuverlässig begleitet hat.<br /><br />- Modell: iPhone 15<br />- Farbe: Schwarz<br />- Speicherplatz: 128 GB<br />- Batteriezustand: 80 %<br /><br />Das Gerät wurde ganz normal genutzt und befindet sich in einem gebrauchten Zustand, heißt leichte Kratzer auf der Oberfläche beziehungsweise den Bildschirm sowie circa ein bis zwei Dellen am Gehäuse, die mit einer Hülle aber kaschierbar sind. Es bietet dir mit seinen 128 GB ausreichend Platz für deine Fotos und Apps. Die matte Rückseite sieht sehr elegant aus und liegt angenehm in der Hand.<br /><br />Schreib mir gerne, falls du noch weitere Fragen zu dem Smartphone hast.<br /><br />da es sich um eine Privatverkauf handelt, ist Garantie Haftung sowie Rücknahme ausgeschlossen.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Schwarz",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "138209089",
-        "name": "alex",
-        "typ": "PRIVATE",
-        "konto_seit": "2024-02-20",
-        "konto_alter_tage": 906,
-        "bewertung": 0.5,
-        "abzeichen": {
-          "rating": 1,
-          "friendliness": 0,
-          "reliability": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 70,
-      "signale": {
-        "gruen": [
-          "Konto seit 2024",
-          "Kaeuferschutz verfuegbar",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.50"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3485622956",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 14 Plus",
@@ -11647,69 +11644,64 @@
       }
     },
     {
-      "id": "3484824692",
+      "id": "3485640609",
       "watchlist_id": "apple-mobil",
-      "titel": "Apple IPhone 14 schwarz",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-14-schwarz/3484824692-173-3262",
-      "preis": 235.0,
+      "titel": "iPhone 14 schwarz 128GB Sehr guter Zustand ❎FESTPREIS❎",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-schwarz-128gb-sehr-guter-zustand-festpreis-/3485640609-173-2434",
+      "preis": 219.0,
       "preis_typ": "SPECIFIED_AMOUNT",
       "referenz": {
-        "median": 350.0,
-        "p25": 300.0,
-        "n": 32,
-        "query": "Apple IPhone schwarz 14",
+        "median": 327.5,
+        "p25": 290.0,
+        "n": 36,
+        "query": "iPhone schwarz 14 128GB",
         "korrektur": 0.0,
-        "streuung": 1.5,
+        "streuung": 1.38,
         "belastbar": true
       },
-      "p_ratio": 0.671,
-      "ersparnis_eur": 115.0,
-      "ort": "Lüneburg",
-      "plz": "21337",
-      "eingestellt": "2026-08-15T06:20:52+02:00",
+      "p_ratio": 0.669,
+      "ersparnis_eur": 108.5,
+      "ort": "Salzgitter",
+      "plz": "38226",
+      "eingestellt": "2026-08-16T03:28:01+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/50/50097c3a-b9d5-4ebc-92ba-ca5060ca892f?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9e/9ed2aeeb-9a98-4734-99fd-a8881c162d49?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/09/092a5d21-7769-4d8a-9401-c73b6a0d3e55?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/73/7307eb42-172d-4988-afbc-59a0491bc253?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/39/3954ce02-72a5-4693-a28e-f315612d0331?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c7/c73b9d44-8a46-42af-9e4d-ae9b5f634d1c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4c/4c4867e5-32e6-407e-b69e-f68b701f3ec1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bd/bd3952c5-cf41-4e09-b4d1-61ad7f14c9a7?rule=$_0.JPG"
       ],
-      "beschreibung": "Ich verkaufe mein iPhone 14 mit 128 GB Speicher. Das Handy funktioniert einwandfrei, Face ID, Kamera, Lautsprecher usw. ohne Probleme.<br />Deutliche Gebrauchsspuren vorhanden, an den Ecken&#x2F;Rändern gibt es ein paar kleinere Beschädigungen (siehe Bilder). Ist mit einer Handyhülle aber eigentlich alles zu kaschieren.<br />Akkukapazität: 86 %",
+      "beschreibung": "Ich verkaufe mein iPhone 14 mit 128 GB Speicher in Schwarz.<br /><br />Das iPhone befindet sich in einem sehr guten, gepflegten Zustand:<br /><br />Display einwandfrei – keinerlei Kratzer oder Risse<br /><br />Rückseite ebenfalls ohne Kratzer oder Beschädigungen<br /><br />Rahmen in Top-Zustand<br /><br />️ Immer mit Hülle und Panzerglas benutzt<br /><br />Akkukapazität: 80 %<br /><br />Kein iCloud-Lock oder sonstige Sperren<br /><br />Face ID funktioniert einwandfrei<br /><br />Kameras funktionieren ebenfalls einwandfrei<br /><br />✅ Alle Funktionen können bei Abholung gerne getestet werden<br /><br />Das iPhone wird vor dem Verkauf auf Werkseinstellungen zurückgesetzt und ist somit direkt für den neuen Besitzer bereit.<br /><br />Nur Abholung in Salzgitter-Lebenstedt<br />Festpreis – keine Verhandlungen<br /><br />Bei Interesse gerne melden.",
       "attribute": {
         "Art": "Apple",
-        "Versand": "ab 6,19",
+        "Versand": "Nur Abholung",
         "Farbe": "Schwarz",
-        "Gerät & Zubehör": "Gerät & Zubehör",
-        "Zustand": "In Ordnung"
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Sehr Gut"
       },
       "verkaeufer": {
-        "id": "66209401",
-        "name": "Kleinanzeiger",
+        "id": "164999072",
+        "name": "David",
         "typ": "PRIVATE",
-        "konto_seit": "2019-08-09",
-        "konto_alter_tage": 2562,
-        "bewertung": 0.8333333333333334,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
+        "konto_seit": "2026-07-27",
+        "konto_alter_tage": 19,
+        "bewertung": null,
+        "abzeichen": {},
         "anzahl_anzeigen": 0
       },
       "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
       },
-      "score": 97,
+      "score": 79,
       "signale": {
         "gruen": [
-          "Konto seit 2019",
-          "Kaeuferschutz verfuegbar",
-          "6 Bilder",
+          "Abholung moeglich",
+          "12 Bilder",
           "Maengel offengelegt"
         ],
         "rot": [
-          "Bewertung 0.83"
+          "Konto juenger als 30 Tage"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -11845,236 +11837,6 @@
         "rot": [
           "Bewertung 0.75"
         ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3484818198",
-      "watchlist_id": "kameras-leica",
-      "titel": "Leica M11 Body schwarz – 12.000 Auslösungen, Top Zustand",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/leica-m11-body-schwarz-12-000-ausloesungen-top-zustand/3484818198-245-2031",
-      "preis": 6200.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Altenessen",
-      "plz": "45329",
-      "eingestellt": "2026-08-15T03:13:22+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/43/435128db-1d63-42fb-9df9-4fd587963c30?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c9/c974de1d-34e2-435a-9264-85c3d47047ba?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e8/e8d9e51b-5827-4ae7-b538-6786361e41b8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/61/6175cdf6-5cd5-40d4-b5b4-5702375e97aa?rule=$_0.JPG"
-      ],
-      "beschreibung": "Verkaufe meine Leica M11 (Type 2416, Art.-Nr. 20200) in schwarz lackiert. Ich gebe mein Fotografie-Hobby auf, daher wandert diese wunderschöne Kamera in neue Hände. Bei dieser Kamera handelt es sich um ein originales Austauschgerät von Leica Camera AG, Wetzlar (Rechnung vom 06.08.2024 liegt bei).<br /><br />Highlights:<br />- Nur ca. 12.000 Auslösungen<br />- Sehr guter, technisch einwandfreier Zustand<br />- Zuletzt von Leica gewartet&#x2F;geprüft (11&#x2F;2025)<br />- Auf Anfrage kann die genaue Auslöserzahl bei Leica erfragt werden<br />- Seriennummer wurde auf den Fotos unkenntlich gemacht<br /><br />Lieferumfang:<br />- Leica M11 Body schwarz<br />- 3x Original Leica Akku BP-SCL7<br />- Original Leica Ladegerät BC-SCL7<br />- Netzteil (EU + US-Adapter)<br />- USB-A auf USB-C Kabel<br />- Leica FOTOS Cable (USB-C auf Lightning)<br />- Original Leica Trageriemen<br />- Aufbewahrungstasche<br />- Komplette Originalverpackung<br />- Prüfzertifikat und sämtliche Dokumentation<br />- Rechnungskopie von Leica (Austauschgerät)<br /><br />Zustand:<br />Sehr guter Zustand. Keine sichtbaren Gebrauchsspuren. Sensor und Display einwandfrei.<br /><br />Technische Daten:<br />- 60-Megapixel Vollformat-BSI-Sensor<br />- Triple-Resolution-Technologie (60&#x2F;36&#x2F;18 MP)<br />- ISO 64-50.000<br />- Kein Tiefpassfilter<br />- Messsucher mit Vergrösserung 0,73x<br />- 64 GB interner Speicher + SD-Kartenslot<br />- USB-C-Anschluss<br />- Made in Germany<br /><br />Versand & Zahlung:<br /",
-      "attribute": {
-        "Art": "Kamera",
-        "Versand": "ab 7,69",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "1473687",
-        "name": "Herr Broncel",
-        "typ": "PRIVATE",
-        "konto_seit": "2010-01-29",
-        "konto_alter_tage": 6041,
-        "bewertung": 0.8157894736842105,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 92,
-      "signale": {
-        "gruen": [
-          "Konto seit 2010",
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "19 Bilder",
-          "Maengel offengelegt",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Bewertung 0.82",
-          "Vorkasse gefordert",
-          "Gewerbetext auf Privatprofil"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3484821465",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Kira (2 J) Schäferhündin sucht ein neues Zuhause! NOTVERKAUF",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/kira-2-j-schaeferhuendin-sucht-ein-neues-zuhause-notverkauf/3484821465-134-2827",
-      "preis": 400.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Stade",
-      "plz": "21682",
-      "eingestellt": "2026-08-15T05:19:18+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c9/c9f68f2e-c254-452f-a3c9-adf0a6445042?rule=$_0.JPG"
-      ],
-      "beschreibung": "Schweren Herzens suchen wir für unsere 2-jährige Deutsche Schäferhündin ein liebevolles neues Zuhause. Aufgrund beruflicher Veränderungen und einer Trennung können wir ihr leider nicht mehr die Zeit und Aufmerksamkeit geben, die sie verdient.<br /><br />Sie ist sehr freundlich, sehr verspielt, kinderlieb, wachsam, kuschelt gerne und besitzt alle erforderlichen Papiere. Wir wünschen uns für sie verantwortungsvolle Besitzer, die ihr ein dauerhaftes und fürsorgliches Zuhause bieten können.<br /><br />Bei Interesse oder Fragen freuen wir uns über eine Nachricht. Weitere Informationen und Fotos senden wir gerne auf Anfrage.",
-      "attribute": {
-        "Art": "Schäferhunde",
-        "Alter": "12 Monate oder älter",
-        "Geimpft und gechipt": "Ja",
-        "Behördliche Erlaubnis": "Ja"
-      },
-      "verkaeufer": {
-        "id": "74102830",
-        "name": "Privat",
-        "typ": "PRIVATE",
-        "konto_seit": "2020-04-22",
-        "konto_alter_tage": 2305,
-        "bewertung": 1.0,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 0,
-          "reliability": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 70,
-      "signale": {
-        "gruen": [
-          "Konto seit 2020",
-          "Abholung moeglich"
-        ],
-        "rot": [
-          "Hoechstens ein Bild"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3484820930",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Mazda rx7 scheunenfund",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/mazda-rx7-scheunenfund/3484820930-223-1769",
-      "preis": 1000.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Düren",
-      "plz": "52355",
-      "eingestellt": "2026-08-15T05:00:48+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/91/91d54d38-3c3c-4498-ac95-0f01b78f3d77?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/de/de83613d-ff6b-408d-b575-f2a6c07af1ef?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fb/fb7ce282-21c2-4a5f-a9d8-6c5b23526d91?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e9/e9b01927-ba58-4a28-8719-5a6cfa37881e?rule=$_0.JPG"
-      ],
-      "beschreibung": "Fahrzeug nur komplett abzugeben alle Teile vorhanden Fahrzeug läuft auch stand aber 10 Jahre in der Garage kapiere sind leider auch verloren gegangen Schlüssel ist da könnte ab Dienstag abgeholt werden",
-      "attribute": {
-        "Art": "Ersatz- & Reparaturteile",
-        "Versand": "ab 1,49"
-      },
-      "verkaeufer": {
-        "id": "77793115",
-        "name": "ao",
-        "typ": "PRIVATE",
-        "konto_seit": "2020-08-27",
-        "konto_alter_tage": 2178,
-        "bewertung": 0.0,
-        "abzeichen": {
-          "rating": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 67,
-      "signale": {
-        "gruen": [
-          "Konto seit 2020",
-          "Kaeuferschutz verfuegbar",
-          "4 Bilder"
-        ],
-        "rot": [
-          "Bewertung 0.00"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3484823439",
-      "watchlist_id": "notverkaeufe",
-      "titel": "ALTDEUTSCHLAND - UMFASSENDE SAMMLUNG AUS NACHLASS ",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/altdeutschland-umfassende-sammlung-aus-nachlass-/3484823439-234-1496",
-      "preis": 2500.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Windeck",
-      "plz": "51570",
-      "eingestellt": "2026-08-15T06:04:46+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bc/bc59b148-0fad-453b-8ee7-6ee1f24ac41b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/87/872411e9-3159-4287-b354-e13f327b5da0?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4b/4b5fce9a-d203-4462-a3f1-3bf8b18aba45?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/25/258aa77b-bd6e-4398-b02d-4b26eda657e4?rule=$_0.JPG"
-      ],
-      "beschreibung": "Siehe Bilder - hier ist nicht alles abgebildet - sehr starke umfassende Sammlung mit 768 Briefmarken aus 16 deutschen Ländern - Michel ca. 27.000 €. überwiegend auf alten Albenblättern - bei Interesse sende ich Ihnen gerne Bilder von den restlichen Sammlungsteilen. - privater Verkauf - keine Garantie - keine Rücknahme. Löse meine Sammlungen auf und habe hier noch einige weitere Posten eingestellt.",
-      "attribute": {
-        "Art": "Briefmarken",
-        "Versand": "ab 0,49",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "136910136",
-        "name": "Erlebnishof",
-        "typ": "PRIVATE",
-        "konto_seit": "2024-01-06",
-        "konto_alter_tage": 951,
-        "bewertung": 0.890625,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2024",
-          "Kaeuferschutz verfuegbar",
-          "20 Bilder",
-          "Preisbegruendung genannt"
-        ],
-        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
