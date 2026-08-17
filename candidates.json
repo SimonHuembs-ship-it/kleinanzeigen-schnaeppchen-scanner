@@ -1,26 +1,24 @@
 {
-  "generiert": "2026-08-17T03:08:47+02:00",
+  "generiert": "2026-08-17T06:44:14+02:00",
   "zeitraum": {
-    "von": "2026-08-16T21:40:03+02:00",
-    "bis": "2026-08-17T02:40:03+02:00"
+    "von": "2026-08-17T01:31:37+02:00",
+    "bis": "2026-08-17T06:31:37+02:00"
   },
   "statistik": {
-    "gesichtet": 51900,
-    "nach_modellmatch": 520,
-    "nach_vorfilter": 518,
-    "nach_preisschwelle": 39,
-    "nach_scoring": 26,
+    "gesichtet": 20843,
+    "nach_modellmatch": 87,
+    "nach_vorfilter": 87,
+    "nach_preisschwelle": 10,
+    "nach_scoring": 5,
     "ausschluesse": {
-      "score_zu_niedrig": 10,
-      "preis_unplausibel": 2,
+      "score_zu_niedrig": 4,
       "externer_link": 1
     },
-    "pool": 49381,
-    "ohne_referenz_verworfen": 183,
-    "referenz_gekappt": 106,
+    "pool": 18326,
+    "ohne_referenz_verworfen": 32,
     "doppelt_zusammengefasst": 0,
-    "requests": 1221,
-    "laufzeit_sekunden": 1724
+    "requests": 559,
+    "laufzeit_sekunden": 757
   },
   "kandidaten": [
     {
@@ -2143,6 +2141,71 @@
       }
     },
     {
+      "id": "3486728489",
+      "watchlist_id": "ebike-rad",
+      "titel": "Cube  Cargo Sport Dual Hybrid  Lastenrad",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-cargo-sport-dual-hybrid-lastenrad/3486728489-217-18843",
+      "preis": 1800.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 3290.0,
+        "p25": 2500.0,
+        "n": 21,
+        "query": "Cube Cargo Sport",
+        "korrektur": 0.0,
+        "streuung": 1.44,
+        "belastbar": true
+      },
+      "p_ratio": 0.547,
+      "ersparnis_eur": 1490.0,
+      "ort": "Lemförde",
+      "plz": "49448",
+      "eingestellt": "2026-08-17T05:45:26+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8b/8b6075f6-4d76-4247-acf7-eabdf12f26e1?rule=$_0.JPG"
+      ],
+      "beschreibung": "Biete hiermit schweren Herzens mein Lastenrad der Marke Cube an. Das Rad wurde im Rahmen eines Job-Bike Angebot in 2024 gekauft. Dann wurde es leider nur für kurze Strecken z.b. mit Kind zum Kiga oder eben mal ins Dorf zum einkaufen benutzt. Für weitere Stecken benutze ich eine anderen Bike.<br /><br />Dabei sind dann insgesamt lediglich ca. 272km angefallen. Ehrlich gesagt ist es dafür zu schade sodass ich hoffe es in einen angemesseneren Wirkungskreis abgeben zu können.<br /><br />Im groben Überblick also wie folgt:<br />Marke: Cube<br />Modell: CARGO SPORT HYBRID 500<br />Modelljahr: 2023<br />Laufleistung: 272.0 km<br />Motor: Bosch Performance Line CX<br />Akku-Kapazität: 500.0 Wh<br />Rahmenmaterial: Aluminium<br />Antriebsart: Kette<br />Schaltungsart: Kettenschaltung<br />Schaltung: Shimano Deore<br />Bremssystem: Hydraulisch<br />Bremstyp: Scheibenbremse<br />Bremse: Magura CMe, Hydr. Disc Brake<br /><br />Es wurde auf meinen Wunsch ein anderer Strahler für vorne beim Kauf verbaut ( deutlich mehr Lichtausbeute ) und es ist ein Kombi Schloss aus Kette und Felgenschloss verbaut. Außerdem ein breiterer Lenken für gemütlicheres fahren. Hab die Originalteile aber noch liegen.<br /><br />Bei weiteren Fragen einfach anschreiben, ich versuche schnellstmöglich darauf zu reagieren.<br /><br />Unter Umständen und nach Absprache und zu einem angemessenen Aufpreis könnte ich das Rad auch liefern. Das müsste man aber ganz individuell besprechen.<br /><br />Weitere Bilder folgen. S",
+      "attribute": {
+        "Art": "Weitere Fahrräder & Zubehör",
+        "Versand": "Nur Abholung",
+        "Typ": "Lastenräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "28957939",
+        "name": "Christian Becker",
+        "typ": "PRIVATE",
+        "konto_seit": "2015-03-15",
+        "konto_alter_tage": 4172,
+        "bewertung": 0.8571428571428571,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 70,
+      "signale": {
+        "gruen": [
+          "Konto seit 2015",
+          "Abholung moeglich",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Hoechstens ein Bild",
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3486069095",
       "watchlist_id": "motorraeder",
       "titel": "Suzuki GSX-R 1100 W",
@@ -2276,73 +2339,6 @@
           "Konkrete Angaben zum Geraet"
         ],
         "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3485643126",
-      "watchlist_id": "uhren",
-      "titel": "ROLEX OYSTER 34mm                                      Festpreis",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/rolex-oyster-34mm-festpreis/3485643126-157-2025",
-      "preis": 3100.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 4490.0,
-        "p25": 3000.0,
-        "n": 35,
-        "query": "ROLEX OYSTER 34mm",
-        "korrektur": 0.0,
-        "streuung": 2.33,
-        "belastbar": true
-      },
-      "p_ratio": 0.69,
-      "ersparnis_eur": 1390.0,
-      "ort": "Hamm",
-      "plz": "59067",
-      "eingestellt": "2026-08-16T04:58:35+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f0/f08fe5ba-da53-4ef7-b825-3d1902876ee8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/35/35f5f8a9-f18d-40a1-ac8d-74edffdd82b6?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/67/67e52232-d0d1-4bca-b34e-8ebc1dec1664?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/35/35941486-f80f-478e-bd27-a49ecef69a64?rule=$_0.JPG"
-      ],
-      "beschreibung": "Festpreis<br /><br />Die Rolex Oyster Perpetual &quot;Date&quot; ist ein exquisites Sammlerstück mit der Referenznummer 902-B 0381, das Eleganz und Präzision vereint. Diese Herren-Armbanduhr besticht durch ihr Edelstahlgehäuse und Armband, das in der Farbe Silber erstrahlt, und bietet mit ihrer Wasserdichtigkeit von bis zu 100 Metern (10 ATM) eine ausgezeichnete Funktionalität. Das mechanische Uhrwerk mit automatischem Aufzug garantiert eine zuverlässige Zeitmessung, während das analoge Anzeigeformat eine klassische Ästhetik verspricht.<br />privat ohne gewährleistung",
-      "attribute": {
-        "Art": "Uhren",
-        "Versand": "ab 0,49",
-        "Zustand": "Sehr Gut",
-        "Material": "Stahl"
-      },
-      "verkaeufer": {
-        "id": "164648800",
-        "name": "Hamm Westen",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-07-15",
-        "konto_alter_tage": 31,
-        "bewertung": 0.9285714285714286,
-        "abzeichen": {
-          "rating": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 75,
-      "signale": {
-        "gruen": [
-          "Bewertung 0.93, zuverlaessig",
-          "Kaeuferschutz verfuegbar",
-          "14 Bilder"
-        ],
-        "rot": [
-          "Konto juenger als 6 Monate",
-          "Gewerbetext auf Privatprofil"
-        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -3149,71 +3145,6 @@
       }
     },
     {
-      "id": "3485646907",
-      "watchlist_id": "ebike-rad",
-      "titel": "Trek Rennrad carbon sram",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/trek-rennrad-carbon-sram/3485646907-230-3128",
-      "preis": 890.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 1795.0,
-        "p25": 650.0,
-        "n": 68,
-        "query": "Trek Rennrad carbon",
-        "korrektur": 0.0,
-        "streuung": 4.15,
-        "belastbar": false
-      },
-      "p_ratio": 0.496,
-      "ersparnis_eur": 905.0,
-      "ort": "Osnabrück",
-      "plz": "49088",
-      "eingestellt": "2026-08-16T06:28:38+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/eb/ebc42fc5-0800-46b3-8c6c-47ff56b62ab3?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/81/81aef26e-1af3-46a2-94cd-596743da3e05?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7b/7b855c83-0e26-441a-9096-92857ba0bd50?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6f/6f72aa65-b039-4de0-86ad-b39471a241e8?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich biete hier mein Trek Carbon Rennrad in Rahmengröße 58 an. Es ist mit einer hochwertigen SRAM Red und Force 10-fach Ausstattung versehen, die dir ein präzises Schalten ermöglicht. Dieses Rennrad ist ideal für sportliche Fahrten und lange Touren. Es bietet eine tolle Kombination aus Leichtigkeit und Stabilität.<br />Das Rad hat einige Gebrauchsspuren, ist aber technisch top in Schuss und sofort fahrbereit.<br /><br />Bei Fragen melde dich gerne.",
-      "attribute": {
-        "Art": "Radsport",
-        "Versand": "Nur Abholung",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "6290721",
-        "name": "daniel",
-        "typ": "PRIVATE",
-        "konto_seit": "2011-06-23",
-        "konto_alter_tage": 5532,
-        "bewertung": 0.8571428571428571,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2011",
-          "Abholung moeglich",
-          "9 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3485970401",
       "watchlist_id": "motorraeder",
       "titel": "Simson Schwalbe Kr51 Hycomat",
@@ -3343,6 +3274,83 @@
         "rot": [
           "Preis nur 31% des Marktwerts",
           "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3486723692",
+      "watchlist_id": "youngtimer-alltag",
+      "titel": "bmw e36 Compact",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/bmw-e36-compact/3486723692-216-1720",
+      "preis": 1500.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 2362.5,
+        "p25": 2000.0,
+        "n": 96,
+        "query": "bmw Compact e36",
+        "korrektur": 0.1,
+        "streuung": 2.4,
+        "belastbar": true
+      },
+      "p_ratio": 0.635,
+      "ersparnis_eur": 862.5,
+      "ort": "Titz",
+      "plz": "52445",
+      "eingestellt": "2026-08-17T03:17:17+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/39/39bc6c73-c848-4cc5-9ec4-2fdd59e8dbea?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6b/6b62f4aa-2dbf-4519-a342-b41e01401bef?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b8766c24-4ee7-44d8-8a1e-781b3abeccc0?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1f/1f26a486-56a3-4edb-8cba-4864c1417e2a?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe hier meinen treuen Bimmer, der nun wegen Sitzplatzmangel seine Zukunft wo anders verbringen soll. Er fährt,bremst und markiert leicht wie jeder e36. Hier und da leichte Kampfspuren aber keinen Unfall. Ölleckstelle war bis gestern das Ölfiltergehäuse,hab dieses nun grob abgedichtet und hoffe das es ewig hält. Bremsen sind noch in Ordnung genauso wie die Kupplung und das Getriebe. Himmelstoff wurde entfernt da er duchhing, hab ihn schwarz lackiert,siehe Fotos. Nix wildes aber besser als Stoff im Gesicht wärend der Fahrt. Die Abs Sensoren müssen getauscht werden,hab auch schon welche hier liegen die mitgegeben werden. Tüv ist bald fällig aber da müsste er mit den neuen Sensoren locker drüber kommen. Airbag Lampe ist an, vermutlich Sitzplatzbelegung hinten, wenn man sie löscht bleibt sie auch weg,bis einer hinten sitzt.<br />Ansonsten ist er rostfrei und der Unterboden wurde geschweißt und konserviert. Km Stand ist nach oben geschätzt, da ich noch regelmäßig fahre, siehe Foto.<br />Das Auto wird nur abgemeldet übergeben. Auf Schrottsammler mit 250&#x2F;500€ angebote reagiere ich nicht.",
+      "attribute": {
+        "Marke": "BMW",
+        "Modell": "Weitere 3er",
+        "Kilometerstand": "250.000",
+        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
+        "Erstzulassung": "Januar 1998",
+        "Getriebe": "Manuell",
+        "Fahrzeugtyp": "Andere Fahrzeugtypen",
+        "Anzahl Türen": "2/3",
+        "HU bis": "Oktober 2026",
+        "Außenfarbe": "Grün",
+        "Material Innenausstattung": "Vollleder",
+        "Klimaanlage": "true",
+        "Radio/Tuner": "true",
+        "Sitzheizung": "true"
+      },
+      "verkaeufer": {
+        "id": "160438034",
+        "name": "Stefan",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-02-20",
+        "konto_alter_tage": 177,
+        "bewertung": 0.75,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 64,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "8 Bilder"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate",
+          "Bewertung 0.75"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -6754,76 +6762,6 @@
         "rot": [
           "Bewertung 0.33"
         ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3485644738",
-      "watchlist_id": "macbook",
-      "titel": "Apple MacBook Laptop silber",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-macbook-laptop-silber/3485644738-278-15777",
-      "preis": 600.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 914.5,
-        "p25": 650.0,
-        "n": 34,
-        "query": "Apple MacBook Laptop",
-        "korrektur": 0.0,
-        "streuung": 2.04,
-        "belastbar": true
-      },
-      "p_ratio": 0.656,
-      "ersparnis_eur": 314.5,
-      "ort": "Geiersthal",
-      "plz": "94244",
-      "eingestellt": "2026-08-16T05:51:59+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/94/94ae1d66-1645-4170-b492-25e3e82fb194?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/dc/dc8b90ce-3d0c-4066-a263-a9f15177e904?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/09/099c929b-91b3-40ce-974d-ca74e4797a54?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/97/9788acf1-acb8-49d7-8e3a-3e6dce294763?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich biete hier mein silbernes Apple MacBook zum Verkauf an. Das Gerät präsentiert sich in einem klassischen Design und ist ein zuverlässiger Begleiter für den Alltag.<br /><br />- Gehäuse in zeitlosem Silber<br />- Markantes Apple-Logo auf dem Deckel<br />- Kompakte und flache Bauweise<br />- Hochwertige Verarbeitung<br /><br />Das Gehäuse befindet sich in einem gepflegten Zustand ohne auffällige Kratzer oder Dellen. Die Oberfläche ist glatt und weist den typischen metallischen Glanz auf.<br /><br />Schreib mir gerne, wenn du weitere Informationen benötigst.",
-      "attribute": {
-        "Versand": "Nur Abholung",
-        "Typ": "Laptop",
-        "Marke": "Apple",
-        "Modell": "Anderes Modell",
-        "Zustand": "Sehr Gut",
-        "Betriebssystem": "macOS",
-        "Bildschirmgröße (Zoll)": "13\"",
-        "Farbe": "Silber"
-      },
-      "verkaeufer": {
-        "id": "141125157",
-        "name": "Fabio",
-        "typ": "PRIVATE",
-        "konto_seit": "2024-05-23",
-        "konto_alter_tage": 814,
-        "bewertung": 1.0,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 0,
-          "reliability": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2024",
-          "Abholung moeglich",
-          "11 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -10684,64 +10622,6 @@
       }
     },
     {
-      "id": "3485644907",
-      "watchlist_id": "vintage-hifi",
-      "titel": "Plattenspieler Thorens TD 160 E",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/plattenspieler-thorens-td-160-e/3485644907-172-7905",
-      "preis": 200.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 375.0,
-        "p25": 250.0,
-        "n": 26,
-        "query": "Plattenspieler Thorens TD 160",
-        "korrektur": 0.0,
-        "streuung": 2.2,
-        "belastbar": true
-      },
-      "p_ratio": 0.533,
-      "ersparnis_eur": 175.0,
-      "ort": "Mittenwalde",
-      "plz": "15749",
-      "eingestellt": "2026-08-16T05:56:06+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4f/4fa6891a-7e62-4ab3-890d-7b0f2dcc95c6?rule=$_0.JPG"
-      ],
-      "beschreibung": "Das Gerät ist ungeprüft.<br /><br />Aus dem Nachlass meines Vaters.<br />Wegen Haushaltsauflösung verkaufen wir verschiedene Möbelstücke aus dem Haushalt.<br />Abholung und Besichtigung sind nur an folgenden Terminen möglich:<br />• 10. & 11. September",
-      "attribute": {
-        "Art": "Weiteres Audio & Hifi",
-        "Versand": "Nur Abholung",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "165417276",
-        "name": "Margarete Horstmann",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-08-08",
-        "konto_alter_tage": 7,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 67,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "Preisbegruendung genannt"
-        ],
-        "rot": [
-          "Konto juenger als 30 Tage"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3486136302",
       "watchlist_id": "ebike-rad",
       "titel": "Cube Attention Mountainbike auf 29 Zoll Reifen.",
@@ -10993,72 +10873,6 @@
         ],
         "rot": [
           "Gewerbetext auf Privatprofil"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3485640093",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 14  mit 128",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-mit-128/3485640093-173-2142",
-      "preis": 190.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 350.0,
-        "p25": 290.0,
-        "n": 80,
-        "query": "iPhone 14 128",
-        "korrektur": 0.0,
-        "streuung": 1.41,
-        "belastbar": true
-      },
-      "p_ratio": 0.543,
-      "ersparnis_eur": 160.0,
-      "ort": "Walsum",
-      "plz": "47178",
-      "eingestellt": "2026-08-16T03:12:26+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c3/c35d27e8-7f32-4c9b-8dd2-f4b26a1bec14?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bb/bb0a6a0b-4bfc-435f-8ef4-77d9dbe4ac21?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/58/588f1e05-5f09-44ab-806f-1cbd005dfa8d?rule=$_0.JPG"
-      ],
-      "beschreibung": "Hi hier biete ich einen iPhone 14 mit 128 funktioniert einwandfrei sehr gut bis auf kleinere Gebrauchsspuren im Display Lg",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Schwarz",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "In Ordnung"
-      },
-      "verkaeufer": {
-        "id": "141751697",
-        "name": "Karasuayip",
-        "typ": "PRIVATE",
-        "konto_seit": "2024-06-14",
-        "konto_alter_tage": 792,
-        "bewertung": 0.3181818181818182,
-        "abzeichen": {
-          "rating": 0,
-          "friendliness": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 70,
-      "signale": {
-        "gruen": [
-          "Konto seit 2024",
-          "Kaeuferschutz verfuegbar",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.32"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -12106,70 +11920,6 @@
       }
     },
     {
-      "id": "3485640609",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 14 schwarz 128GB Sehr guter Zustand ❎FESTPREIS❎",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-schwarz-128gb-sehr-guter-zustand-festpreis-/3485640609-173-2434",
-      "preis": 219.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 327.5,
-        "p25": 290.0,
-        "n": 36,
-        "query": "iPhone schwarz 14 128GB",
-        "korrektur": 0.0,
-        "streuung": 1.38,
-        "belastbar": true
-      },
-      "p_ratio": 0.669,
-      "ersparnis_eur": 108.5,
-      "ort": "Salzgitter",
-      "plz": "38226",
-      "eingestellt": "2026-08-16T03:28:01+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/39/3954ce02-72a5-4693-a28e-f315612d0331?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c7/c73b9d44-8a46-42af-9e4d-ae9b5f634d1c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4c/4c4867e5-32e6-407e-b69e-f68b701f3ec1?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bd/bd3952c5-cf41-4e09-b4d1-61ad7f14c9a7?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe mein iPhone 14 mit 128 GB Speicher in Schwarz.<br /><br />Das iPhone befindet sich in einem sehr guten, gepflegten Zustand:<br /><br />Display einwandfrei – keinerlei Kratzer oder Risse<br /><br />Rückseite ebenfalls ohne Kratzer oder Beschädigungen<br /><br />Rahmen in Top-Zustand<br /><br />️ Immer mit Hülle und Panzerglas benutzt<br /><br />Akkukapazität: 80 %<br /><br />Kein iCloud-Lock oder sonstige Sperren<br /><br />Face ID funktioniert einwandfrei<br /><br />Kameras funktionieren ebenfalls einwandfrei<br /><br />✅ Alle Funktionen können bei Abholung gerne getestet werden<br /><br />Das iPhone wird vor dem Verkauf auf Werkseinstellungen zurückgesetzt und ist somit direkt für den neuen Besitzer bereit.<br /><br />Nur Abholung in Salzgitter-Lebenstedt<br />Festpreis – keine Verhandlungen<br /><br />Bei Interesse gerne melden.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "Nur Abholung",
-        "Farbe": "Schwarz",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "164999072",
-        "name": "David",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-07-27",
-        "konto_alter_tage": 19,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 79,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "12 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Konto juenger als 30 Tage"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3485700460",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 12 Pro",
@@ -12528,6 +12278,176 @@
         ],
         "rot": [
           "Konto juenger als 6 Monate"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3486728338",
+      "watchlist_id": "kameras-leica",
+      "titel": "Leitz Photar Objekitive",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/leitz-photar-objekitive/3486728338-245-4848",
+      "preis": 300.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Wetzlar",
+      "plz": "35576",
+      "eingestellt": "2026-08-17T05:42:25+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ea/ea931a2f-6711-4b87-8d0c-fc7937f745ee?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fa/fab67d03-4cdf-4208-817a-789d8b0d2c64?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d4/d4194334-5f94-4022-804a-416274a1995d?rule=$_0.JPG"
+      ],
+      "beschreibung": "Leitz Objektive Photar 1:5.6&#x2F;120, Photar 1:6.5&#x2F;80 und Photar 1:2.8 &#x2F;50",
+      "attribute": {
+        "Art": "Objektiv",
+        "Versand": "ab 1,49",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "161967750",
+        "name": "Familie S",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-04-13",
+        "konto_alter_tage": 125,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 60,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3486726963",
+      "watchlist_id": "notverkaeufe",
+      "titel": "Hercules P3, Baujahr 1978, originaler Zustand, Scheunenfund",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/hercules-p3-baujahr-1978-originaler-zustand-scheunenfund/3486726963-305-3678",
+      "preis": 950.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Meiningen",
+      "plz": "98617",
+      "eingestellt": "2026-08-17T05:14:03+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b3/b3db923d-d157-466a-839a-7c2351c24ce6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e6/e6dea447-113f-465b-8092-cbbd69b4a35b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/99/99aa8636-3d90-42bd-afda-36709a4197da?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/06/06d67871-7958-45ca-a8ad-a2a435f22fa2?rule=$_0.JPG"
+      ],
+      "beschreibung": "Scheunenfund, originaler Zustand, fahrbereit, Motor springt sofort an, Fahrzeug ist nur gereinigt worden, Zustand siehe Lichtbildanlage, Reifen sind rissig, Papiere sind nicht auffindbar",
+      "attribute": {
+        "Art": "Mofas & Mopeds",
+        "Kilometerstand": "1",
+        "Erstzulassung": "Juli 1978",
+        "Hubraum": "47",
+        "Leistung": "2",
+        "Getriebe": "Manuell"
+      },
+      "verkaeufer": {
+        "id": "8163974",
+        "name": "S.T.",
+        "typ": "PRIVATE",
+        "konto_seit": "2011-12-10",
+        "konto_alter_tage": 5363,
+        "bewertung": 0.3333333333333333,
+        "abzeichen": {
+          "rating": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 69,
+      "signale": {
+        "gruen": [
+          "Konto seit 2011",
+          "Abholung moeglich",
+          "13 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.33"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3486725656",
+      "watchlist_id": "notverkaeufe",
+      "titel": "Dieselameise, Multicar, IFA, Scheunenfund, Oldtimer, MZ Zschopau",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/dieselameise-multicar-ifa-scheunenfund-oldtimer-mz-zschopau/3486725656-276-224",
+      "preis": 1950.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Wismar",
+      "plz": "23970",
+      "eingestellt": "2026-08-17T04:32:46+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1a/1a046688-8670-4f6a-8aa3-5285be72dab7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6a/6a004cb8-1783-42f0-9d8d-d8a223afcba7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a8/a80bdf29-ffa3-441b-9a0c-8b6dad3f007c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/71/71335e0f-5e1f-4cfe-8190-9d5d3f6128cb?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hier biete ich eine original umgebaute Dieselameise vom Fahrzeugwerk Waltershausen an. Montiert wurde die Dieselameise laut Typenschild im Motoradwerk Zschopau. Auch der Umbau soll hier erfolgt sein.<br />Die Ameise stand bis zur Auslagerung mindestens 40Jahre nur wenige Kilometer vom Fahrzeugwerk Waltershausen entfernt trocken im Unterstand. Die gesamte Technik sieht absolut original und unverbraucht aus. Die Ameise bietet eine gute Substanz für eine Oldtimersammlung und zum gelegentlichen fahren auf Brauchtumsveranstaltungen.<br />Eine Lieferung ist grundsätzlich möglich.",
+      "attribute": {
+        "Art": "Nutzfahrzeugteile & Zubehör"
+      },
+      "verkaeufer": {
+        "id": "130408176",
+        "name": "Oldischrauber",
+        "typ": "PRIVATE",
+        "konto_seit": "2023-05-17",
+        "konto_alter_tage": 1187,
+        "bewertung": 0.75,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 84,
+      "signale": {
+        "gruen": [
+          "Konto seit 2023",
+          "Abholung moeglich",
+          "8 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.75"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
