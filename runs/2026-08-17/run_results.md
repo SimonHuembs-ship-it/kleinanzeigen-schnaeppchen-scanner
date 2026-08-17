@@ -208,3 +208,209 @@ Beleg:
   **Mercedes W124 230, 3.300 €**, **Ducati Monster 1000 ie, 3.200 €**, **Suzuki GSX-R 1100 W,
   1.200 €** — alle im ueblichen Preisband ihrer Baureihe; der Kleinanzeigen-Median liegt bei
   Youngtimern systematisch ueber dem erzielbaren Preis, weil Traumpreise lange stehenbleiben.
+
+---
+
+# Lauf 2026-08-17, abends (19:20 Uhr MESZ)
+
+`candidates.json` generiert: 2026-08-17T15:44:51+02:00 (3 h 35 min alt, innerhalb der
+Frist aus Schritt 1). Zeitraum des Sammellaufs: 2026-08-17T09:22:13+02:00 bis
+2026-08-17T14:22:13+02:00, gesichtet 178.521 Anzeigen.
+
+- Kandidaten in `candidates.json`: 189
+- davon schon in `deal_log.csv`: 0 (der Fund des Morgenlaufs, Specialized Kenevo SL, ist
+  ueber `deal_log.csv` bereits aus der Sammlung gefallen)
+- davon schon im Morgenlauf beurteilt: 109 (identische `id`, unveraenderter Preis) — die
+  Verwerfungsgruende von heute frueh stehen oben und gelten unveraendert
+- **neu seit dem Morgenlauf: 80** — diese 80 sind der eigentliche Pruefstoff dieses Laufs
+- vollstaendig inhaltlich geprueft: 34 der 80 (alle mit ueber 300 Euro Nominalersparnis,
+  dazu vollstaendig `uhren`, `tesla`, `macbook`, `apple-mobil`, `optik-drohnen`,
+  `konsolen-sweep`, `foto-sweep`; die uebrigen 46 sind iPhone-, USM-Haller- und
+  Cube-Massenware unter 300 Euro Nominalersparnis)
+- `unkenntnis_bonus` unter den neuen Kandidaten: 3 (Cube Race One 550 €, Bulls E-Trekking
+  800 €, Vitra Eames Plastic Armchair 150 €) — alle drei ausdruecklich **nicht** wegen
+  Anzeigenqualitaet abgewertet, siehe unten
+- **gemeldete Funde: 0**
+
+Damit bleiben `deals.json`, `email_output.html` und `deal_log.csv` unveraendert; committet
+wird nur dieses Laufprotokoll. Es geht keine Mail raus.
+
+Hinweis zur Recherche: die Netzwerkrichtlinie dieser Umgebung blockiert den Direktabruf von
+buycycle.com, bicyclebluebook.com, marktplatz.bike, bikeexchange.de, pedali.de und upway.de.
+Die Marktwertbestaetigung lief deshalb ausschliesslich ueber Websuche. Kleinanzeigen selbst
+wird nach Vorgabe nicht nachgesammelt, Kleinanzeigen-Inserate scheiden als Vergleichsquelle
+also aus. Wo das keine zwei konkreten Vergleichsangebote desselben Modells ergab, wurde
+verworfen statt geschaetzt.
+
+## Funde
+
+Keine.
+
+## Verworfene Kandidaten (neu seit dem Morgenlauf)
+
+### Der niedrige Preis erklaert sich von selbst
+
+- **Tesla Model Y Dual Motor AWD, EZ 11/2022, 205.000 km, 19.100 € (3486805545)** — groesste
+  Nominalersparnis der neuen Kandidaten (7.877 €) und trotzdem kein Fund, gleich dreifach.
+  Erstens steht im Text woertlich "Das Auto hat Schweizer Papieren (Preis für EU +10% Zoll
+  +19% MwSt)": auf 19.100 € gerechnet sind das rund 25.000 € frei Haus in Deutschland, also
+  praktisch der Kleinanzeigen-Median von 26.977 €. Der ausgewiesene Preis ist gar nicht der
+  Preis. Zweitens die Pflicht-Warnflag Tesla aus Schritt 2e: 205.000 km liegen weit ueber der
+  Akkugarantiegrenze (Model Y Long Range 192.000 km, Heckantrieb 160.000 km) — die Garantie
+  ist erledigt, und das ist der Hauptgrund fuer den Abschlag. Drittens nennt der Verkaeufer
+  selbst einen Riss in der Windschutzscheibe. Preis korrekt, kein Fund.
+- **Mercedes W124 230 CE, 3.200 € (3486934765)** — vorbildlich ehrliche Anzeige, aber die
+  Maengelliste erklaert den Preis vollstaendig: maessig reparierter Heckschaden vom
+  Vorbesitzer, Rost an den hinteren Radlaeufen, unterm Wischwasserbehaelter und unter der
+  Heckklappe, Front- **und** Heckscheibe gerissen, Gurtgeber defekt. Der Verkaeufer bietet
+  von sich aus ein Schlachtfahrzeug fuer die Scheiben an. Richtig bepreist.
+- **Simson S51 mit M53-Motor, 1.990 € (3137220803)** — seit 1990 nicht bewegt, nicht
+  fahrbereit, Betriebserlaubnis erst nach Fahrbereitmachung und Gutachten wieder zu erlangen.
+  Restaurationsobjekt, kein Fund.
+- **Honda CBR 929 Fireblade, Bj. 2000, 1.500 € (3486814216)** — 85.000 km auf einem
+  Supersportler sind sehr hohe Laufleistung, dazu foliert mit unfoliertem Tank. Hohe
+  Laufleistung ist nach Schritt 2 ein Grund, der den Preis erklaert.
+- **Cube Stereo 140 HPC Race 27.5, Modell 2022, 700 € (3487017715)** — der Verkaeufer
+  schreibt selbst, am Carbonrahmen gebe es einen Bereich, "bei dem ein Riss vermutet werden
+  koennte", und er koenne das weder bestaetigen noch ausschliessen. Ein moeglicherweise
+  gerissener Carbonrahmen ist genau der Abschlag. Ehrliche Anzeige, korrekt bepreist.
+- **DJI Mini 3 Pro mit ESC-Fehler, 330 € (3486958166)** — ausdruecklich als defektes
+  Bastlerobjekt verkauft, Start nicht moeglich. Kein Fund.
+- **iPhone 15 128 GB mit gebrochener Rueckseite, 240 € (3486769355)** und der uebrige
+  `apple-mobil`-Block (13 neue Kandidaten, 150–295 €) — durchweg unter 250 Euro
+  Nominalersparnis und ganz ueberwiegend durch offengelegte Schaeden erklaert. Keiner
+  erreicht 20 Prozent Abstand zu einem selbst bestaetigten Marktwert.
+
+### Zu gut, um ehrlich zu sein: Betrugsmuster nach der Leitidee
+
+- **MacBook Pro 14" M4, 16/512 GB, 659 € (3487024672)** — der auffaelligste neue Kandidat
+  (39 Prozent des Medians) und der klarste Fall der Leitidee in umgekehrter Richtung.
+  Das Produkt existiert und die Angaben sind in sich stimmig: A3112 / MW2U3D/A ist der
+  MacBook Pro 14" (Late 2024) mit M4, 10-Core CPU/GPU, 16 GB, 512 GB — das wurde per
+  Websuche geprueft (EveryMac fuehrt A3112 als Mac16,1 M4 10/10). Genau das ist das Problem:
+  exakte Teilenummer, OVP, "Akkuzustand 100%", kein einziger Mangel, Zugabe einer
+  Laptoptasche, Versand per DHL und Hermes — eine handwerklich perfekte Anzeige. Der
+  bestaetigte Marktwert liegt bei 1.672 € refurbished im Handel (MediaMarkt, Zustand
+  "Exzellent") und im privaten Gebrauchtmarkt darunter; 659 € sind rund 40 Prozent des
+  Handelsniveaus und liegen unter dem, was jeder Ankaeufer sofort zahlen wuerde. Wer
+  Teilenummer, Akkuzyklen und Displayaufloesung so praezise angibt, kennt den Wert seines
+  Geraets. Ein Konto von 2012 mit Bewertung 1,00 ist bei diesem Muster kein Gegenbeweis,
+  sondern das, was ein uebernommenes Konto aussen zeigt. Nicht gemeldet.
+- **Apple MacBook Pro 16" M1 Pro, 16/512 GB, 500 € (3486988859)** — dasselbe Muster eine
+  Stufe darunter: nur Versand, keine Abholung, Verkaeuferbewertung 0,42, und als einziger
+  Mangel eine fehlende Leertastenkappe bei einem Geraet, das im Gebrauchtmarkt deutlich
+  vierstellig bis hohes dreistelliges Niveau haelt. Dazu widerspricht das Attributfeld
+  ("Erscheinungsjahr 2020") dem Modell, den M1 Pro gibt es erst ab Ende 2021.
+- **Rolex Submariner Date, Bj. 2001, 7.750 € (3486845681)** — drei Zeilen Beschreibung, keine
+  Referenznummer, keine Seriennummer, keine Angabe zu Blatt oder Lünette, dafuer "Papiere
+  Rechnung und box" — und **nur Versand ab 0,49 €, keine Abholung**. Eine Uhr fuer 7.750 €,
+  die ausschliesslich verschickt wird und deren Modell sich nicht bestimmen laesst, wird
+  nicht gemeldet. Ohne Referenznummer ist auch kein Marktwert bestaetigbar.
+- **Rolex Datejust 36 mm, 4.000 € (3486944636)** — Verkaeufername "Berlin Watches" auf einem
+  Privatkonto, Bewertung 0,50, nur Versand, drei Zeilen Text ohne Referenznummer. Dieselbe
+  Konstellation wie oben, zusaetzlich Gewerbetext auf Privatprofil.
+
+### Referenzgruppe passt nicht: Phantomersparnis
+
+- **Giant Explore Trekking-Bike XL, 450 € (3487001273)** — der Median von 1.669 € stammt aus
+  der Suche "Giant Explore" und enthaelt damit ueberwiegend das **Giant Explore E+**, ein
+  Pedelec der 3.000-Euro-Klasse. Der Kandidat ist ein unmotorisiertes Trekkingrad mit
+  Shimano-Nexus-Nabe. Verschiedene Produkte, die Ersparnis ist ein Phantom.
+- **Vespa Sprint 50 4T, Bj. 2014, 10.500 km, 1.999 € (3486855044)** — Median 3.262 € aus
+  "Vespa Sprint Roller 50", worin die 125er Sprint mitlaeuft. Eine elf Jahre alte 50er Sprint
+  mit 10.500 km liegt selbst im Bereich des Angebotspreises.
+- **Ducati Monster 750, Bj. 2001, 26.500 km, 2.990 € (3486968507)** — Median 5.121 € aus der
+  Sammelsuche "Ducati Monster", die Monster 796, 821 und 1200 einmischt. Eigene Pruefung:
+  Vergleichsangebote fuer die 750er von 2001 liegen bei 2.600 € (36.223 km, Berlin),
+  2.700 € (6.797 km) und 3.000 € (29.000 km) — bestaetigtes Niveau also rund 2.600–3.000 €.
+  Mit 2.990 € liegt der Kandidat **im** Markt, nicht darunter.
+- **Cube Race Reaction Mountainbike, 500 € (3486953783)** — Median 1.990 € aus "Cube Race
+  Reaction", was die gesamte Reaction-Familie bis zum GTC/C:62 zusammenwirft. Der Verkaeufer
+  nennt selbst 1.450 € Neupreis und Schwalbe Rapid Rob, also ein Einstiegs-Hardtail. 500 €
+  sind dafuer normales Gebrauchtniveau.
+- **Gibson Les Paul Special 2001, 1.170 € (3486984605)** und **Gibson Les Paul Standard,
+  790 € (3472750505)** — wie im Morgenlauf: Median aus der Sammelsuche "Gibson Les Paul", die
+  Junior, Special, Studio und Standard in voellig verschiedenen Preisklassen mischt. Beim
+  Special kommt hinzu, dass der Anbieter ein gewerblicher Haendler mit Inzahlungnahme ist;
+  ein Haendlerpreis ist der Markt, nicht dessen Unterschreitung.
+- **USM-Haller-Block (7 neue Kandidaten, 190–920 €)** und uebrige `design-sammeln` — wie
+  heute frueh: der Preis haengt an Elementzahl, Massen und Farbe, ohne deren Abgleich ist
+  kein Median vergleichbar.
+
+### Marktwert nicht bestaetigbar (kein Beleg, also keine Meldung)
+
+- **BMC URS 01 FOUR Gravel, Gr. M, Kauf beim Fachhaendler 20.10.2023 mit Rechnung, 2.350 €
+  (3486805826)** — der sauberste Kandidat des Laufs nach Verkaeuferprofil: Konto seit 2015,
+  Bewertung 1,00 mit allen drei Abzeichen, nur Abholung, kein Versand, vollstaendige
+  Ausstattungsliste, Rechnung wird vorgelegt, Rad der Ehefrau. Er scheitert allein am Beleg.
+  Belegt ist nur die Neupreisseite: UVP 5.399 €, Handelsangebote 4.799 € (eBay.de, Gr. L,
+  neu) und 3.799 € fuer die schwaecher ausgestattete URS ONE. Zwei konkrete **Gebraucht**-
+  angebote desselben Modells mit derselben Ausstattung waren nicht beizubringen: buycycle,
+  Bicycle Blue Book, bikeexchange und pedali sind in dieser Umgebung gesperrt, und die
+  Suchmaschine gibt aus den Snippets nur eine unspezifische Spanne her. Damit laesst sich
+  nicht belegen, ob 2.350 € 20 Prozent unter dem Gebrauchtniveau liegen oder es treffen.
+  Nach Schritt 2 wird hier nicht geschaetzt. **Kandidat mit Wiedervorlage-Wert** — wenn er
+  morgen frueh noch in `candidates.json` steht und die Belegquellen erreichbar sind, lohnt
+  eine zweite Runde.
+- **BMC Teammachine ALR ONE, Rival eTap AXS, 54 cm, "2x um den Block gefahren", 1.500 €
+  (3486753338)** — Referenz ohnehin nicht belastbar (Streuung 2,5). Zur Neupreisseite gibt es
+  Belege (3.999 USD Listenpreis 2023), zum deutschen Gebrauchtniveau dieses Modells keine
+  zwei konkreten Angebote. Marktwert unbestaetigt.
+- **Bulls E-Trekking "Street Mover E", 800 € (3486805093)** — traegt `unkenntnis_bonus` und
+  wurde deshalb ausdruecklich **nicht** wegen des einen unscharfen Bildes oder der
+  Formulierung "500 Watt Bosch CX Akku" (verwechselt Wattstunden mit Watt, ein echtes
+  Unkenntnis-Signal) abgewertet. Die Anzeige nennt von sich aus Gebrauchsspuren und die 2025
+  erneuerten Teile, nur Abholung. Er scheitert daran, dass zum Street Mover E kein
+  Gebrauchtpreisniveau zu belegen war: Upway und die Refurbished-Vergleicher sind gesperrt,
+  die Suche liefert nur Neuangebote. Bei rund 775 € Nominalersparnis wird nicht geschaetzt.
+- **Fraesmaschine mit viel Zubehoer, 1.800 € (3486795636)** — "Erbstueck", Abholung,
+  Bewertung 0,92, Referenz nicht belastbar (Streuung 2,66). Die Anzeige nennt **keinen
+  Hersteller und kein Modell**. Ohne Modellbestimmung ist kein Marktwert bestaetigbar.
+- **Cube Reaction Hybrid E-Bike L, 3.100 km, 675 € (3486772721)** und **Cube Reaction Race
+  29", 595 € (3438696047)** — beide ohne Modelljahr, ohne Akkugroesse bzw. ohne
+  Ausstattungsvariante. Die Reaction-Familie reicht vom 700-Euro-Einsteiger bis zum
+  3.500-Euro-Modell; ohne Bestimmung kein Vergleich.
+- **Cube Stereo Race 140, 1.100 € (3486762734)** — dazu ein Widerspruch in der Anzeige selbst
+  ("Groesse: M" gegen "bin 165 und mir passt s gut") und **nur Versand ab 0,49 € fuer ein
+  komplettes Mountainbike**, keine Abholung. Kein Fund.
+
+### Marktband erreicht, aber Abstand unter 20 Prozent
+
+- **Omega Seamaster Diver 300 M, Ref. 2533.50.00 (America's Cup, Bj. 2000), Box und Papiere,
+  2.780 € (3438515446)** — bestaetigtes Niveau fuer diese Referenz gebraucht mit Box und
+  Papieren: rund 3.100 € (Chrono24-Notierung 3.597 USD), Gesamtband der Seamaster Diver 300 M
+  mit Box und Papieren 2.962–4.580 €. 2.780 € liegen damit nur rund 10 Prozent unter dem
+  belegten Niveau, Zustand ist ausserdem nur "gut". Der Anbieter ist ein Pfandhaus mit
+  Differenzbesteuerung nach §25a — ein Haendlerpreis ist der Markt.
+- **TAG Heuer Carrera Calibre 16, Ref. CV2010.BA0794 (Panamericana/Fangio), Box und Papiere,
+  1.350 € (3486788128)** — der knappste Fall des Laufs. Bestaetigte Vergleichsangebote:
+  1.690 € (Zustand gut, Deutschland) und 1.800 € (Italien), Gesamtband 931–2.090 €. Gegen
+  1.690 € sind 1.350 € exakt 20,1 Prozent Abstand — und das gegen **Haendler-Angebotspreise
+  auf Chrono24**, die systematisch ueber dem privat erzielbaren Niveau liegen. Ein Abstand,
+  der nur bei der teuersten Lesart der Referenz gerade so die Huerde reisst, ist ein
+  schwacher Fund. Nach Schritt 3 lieber keiner.
+- **Rolex Oysterdate 6694, 2.150 € (3486817347)** — der Verkaeufer legt selbst offen, dass
+  das Zifferblatt "fachmaennisch restauriert (Refinished Dial)" ist, und argumentiert im Text
+  ausfuehrlich dagegen, dass das ein Wertabschlag sei. Im Vintage-Rolex-Markt ist es genau
+  das: ein refinished dial kostet regelmaessig 30 bis 50 Prozent gegenueber einem originalen
+  Blatt. 2.150 € sind dafuer richtig bepreist, nicht guenstig.
+- **Omega Constellation Pie Pan, 1.350 € (3486785448)** — "Das Glas und die Zeiger wurden
+  getauscht". Bei einer Vintage-Constellation mindert genau das den Sammlerwert; der Median
+  aus elf Anzeigen bildet ueberwiegend originale Exemplare ab.
+- **Tudor Black Bay Bronze, Papiere von 2016, neutrale Box, 2.750 € (3461790295)** — wie beim
+  Schwestermodell heute frueh: gewerblicher Anbieter mit Differenzbesteuerung, der Preis
+  liegt im normalen Band dieser Referenz.
+- **Omega Speedmaster Reduced, Bj. ca. 1999, mit Box ohne Papiere, 1.999 € (3486867191)** —
+  Verkaeuferbewertung 0,42, Gewerbetext auf Privatprofil, 40 Hashtags unter der Anzeige und
+  "Angebote unter 1900€ sind unrealistisch": ein Wiederverkaeufer, der seinen Preisboden
+  selbst nennt. Ohne Papiere liegt die Reduced in diesem Bereich.
+- **MacBook Pro M5 14", 16/512 GB, 1.380 € (3486871929)** — der Median von 2.250 € stammt aus
+  "MacBook Pro M5" und mischt M5 Pro und M5 Max ein. Das Basis-M5-Geraet startet neu deutlich
+  darunter; 1.380 € fuer ein gebrauchtes Exemplar sind kein Abstand von 20 Prozent zum
+  Gebrauchtniveau des Basismodells.
+- **Valve Steam Deck 512 GB, 400 € (3486812476)**, **DJI Mavic Air 2, 210 € (3486839357)**,
+  **Leica R Vario-Elmar 28–70, 225 € (3486839639)**, **Vitra Eames Plastic Armchair, 150 €
+  (3486929388)** — alle vier im normalen Gebrauchtband ihrer Gattung. Der Eames Armchair
+  traegt `unkenntnis_bonus` und wurde deshalb nicht wegen der Anzeige abgewertet, sondern
+  allein wegen des Betrags: 140 € Nominalersparnis bei einem defekten Gleiter rechtfertigen
+  keine Meldung.
