@@ -1,26 +1,24 @@
 {
-  "generiert": "2026-08-26T03:07:21+02:00",
+  "generiert": "2026-08-26T06:43:18+02:00",
   "zeitraum": {
-    "von": "2026-08-25T21:41:08+02:00",
-    "bis": "2026-08-26T02:41:08+02:00"
+    "von": "2026-08-26T01:30:05+02:00",
+    "bis": "2026-08-26T06:30:05+02:00"
   },
   "statistik": {
-    "gesichtet": 51903,
-    "nach_modellmatch": 462,
-    "nach_vorfilter": 460,
-    "nach_preisschwelle": 34,
-    "nach_scoring": 21,
+    "gesichtet": 23806,
+    "nach_modellmatch": 94,
+    "nach_vorfilter": 94,
+    "nach_preisschwelle": 5,
+    "nach_scoring": 2,
     "ausschluesse": {
-      "score_zu_niedrig": 10,
-      "messenger": 2,
-      "externer_link": 1
+      "score_zu_niedrig": 2,
+      "preis_unplausibel": 1
     },
-    "pool": 49401,
-    "ohne_referenz_verworfen": 165,
-    "referenz_gekappt": 80,
+    "pool": 21309,
+    "ohne_referenz_verworfen": 40,
     "doppelt_zusammengefasst": 0,
-    "requests": 1202,
-    "laufzeit_sekunden": 1572
+    "requests": 584,
+    "laufzeit_sekunden": 792
   },
   "kandidaten": [
     {
@@ -659,6 +657,75 @@
         "rot": [
           "Bewertung 0.73",
           "Preis nur 38% des Marktwerts"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3494959997",
+      "watchlist_id": "ebike-rad",
+      "titel": "CANYON AEROAD RENNRAD SHIMANO Größe L",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/canyon-aeroad-rennrad-shimano-groesse-l/3494959997-230-1369",
+      "preis": 1100.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 3650.0,
+        "p25": 2100.0,
+        "n": 99,
+        "query": "CANYON AEROAD RENNRAD",
+        "korrektur": 0.0,
+        "streuung": 2.1,
+        "belastbar": true
+      },
+      "p_ratio": 0.301,
+      "ersparnis_eur": 2550.0,
+      "ort": "Kamen",
+      "plz": "59174",
+      "eingestellt": "2026-08-26T05:51:23+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c8/c823dece-5902-450f-8fd8-8c241a0293b8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3f/3f1240df-c2e7-4e66-bbc9-14d4e2e8f5de?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8a/8ab421a8-a11c-43a4-9ae4-73289754a897?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/00/00b1f96a-ce5f-4e60-a1e8-dda1fe16d4ee?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein Canyon Aeroad in der Größe L, das ich als Erstbesitzer ausschließlich auf der Straße gefahren bin. Das Rennrad fährt sich super schnell und befindet sich in einem gepflegten Zustand.<br /><br />- Modell: Canyon Aeroad<br />- Rahmengröße: L<br />- Farbe: Schwarz matt<br />- Schaltung: Shimano 105, 11-fach mechanisch<br />- Besonderheit: Verstärkte Aluminium-Sattelklemme in Silber<br />- Fulcrum Laufräder CLINCHER<br /><br />Das Rad ist ein zuverlässiger Begleiter für schnelle Ausfahrten. Bitte beachte, dass der Verkauf ohne Pedale, Flaschenhalter und Satteltasche erfolgt.<br /><br />Das Rad wurde stets gut gewartet und weist die üblichen Gebrauchsspuren eines gefahrenen Rennrads auf. Falls du weitere Fragen hast oder eine Besichtigung vereinbaren möchtest, schreibe mir gerne eine Nachricht.",
+      "attribute": {
+        "Art": "Radsport",
+        "Versand": "ab 65,00",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "3278493",
+        "name": "TEAM LIS",
+        "typ": "PRIVATE",
+        "konto_seit": "2010-09-28",
+        "konto_alter_tage": 5810,
+        "bewertung": 0.6693989071038251,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 82,
+      "signale": {
+        "gruen": [
+          "Konto seit 2010",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "5 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.67",
+          "Preis nur 30% des Marktwerts"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -9194,78 +9261,6 @@
       }
     },
     {
-      "id": "3494087671",
-      "watchlist_id": "macbook",
-      "titel": "Apple MacBook Pro M1 2020",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-macbook-pro-m1-2020/3494087671-278-8216",
-      "preis": 350.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 534.5,
-        "p25": 470.0,
-        "n": 44,
-        "query": "Apple MacBook Pro M1 2020",
-        "korrektur": 0.0,
-        "streuung": 1.27,
-        "belastbar": true
-      },
-      "p_ratio": 0.655,
-      "ersparnis_eur": 184.5,
-      "ort": "Wolfschlugen",
-      "plz": "72649",
-      "eingestellt": "2026-08-25T03:50:37+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/93/938de87d-95c2-4ceb-984b-1b92f4ba0550?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8f/8fee9105-2bb7-4c47-9558-535790dd0a0d?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1a/1a963964-0705-415f-b220-52d320e56f16?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/43/43afd5ae-7225-4b4e-a3e7-5a1b499d3afd?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe hier mein MacBook Pro mit dem leistungsstarken M1 Chip. Das Gerät befindet sich in einem gepflegten Zustand und ist ideal für den täglichen Einsatz geeignet.<br /><br />- Modell: MacBook Pro mit M1 Chip<br />- Gehäusefarbe: Silber<br />- Tastaturlayout: Deutsch (QWERTZ)<br />- Großes, reaktionsschnelles Trackpad<br />- Kompaktes und hochwertiges Aluminiumgehäuse<br /><br />Das Display ist klar und die Tastatur weist keine nennenswerten Abnutzungen auf. Es ist ein zuverlässiger Begleiter für Arbeit oder Studium. Das Gerät wurde stets pfleglich behandelt und weist nur kleine Gebrauchsspuren auf (siehe Bild).<br /><br />Die vordere USB-C Buchse funktioniert aktuell nicht zuverlässig und muss einmal mit Alkohol gereinigt werden. Funktioniert danach aber wieder einwandfrei.<br /><br />Schreib mir gerne, falls du weitere Informationen benötigst.",
-      "attribute": {
-        "Versand": "ab 1,49",
-        "Marke": "Apple",
-        "Modell": "MacBook Pro 13\" (M1)",
-        "Zustand": "Gut",
-        "Betriebssystem": "macOS",
-        "Bildschirmgröße (Zoll)": "13\"",
-        "Erscheinungsjahr": "2020",
-        "Prozessor": "Apple M1",
-        "RAM (GB)": "8 GB",
-        "Farbe": "Silber"
-      },
-      "verkaeufer": {
-        "id": "64870298",
-        "name": "Kevin",
-        "typ": "PRIVATE",
-        "konto_seit": "2019-06-19",
-        "konto_alter_tage": 2623,
-        "bewertung": 1.0,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2019",
-          "Kaeuferschutz verfuegbar",
-          "7 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3494412775",
       "watchlist_id": "ebike-rad",
       "titel": "Cube Access Hardtail Mountainbike 29 Zoll Kinder Mountainbike",
@@ -10359,75 +10354,6 @@
       }
     },
     {
-      "id": "3494087915",
-      "watchlist_id": "apple-mobil",
-      "titel": "Iphone 13 pro max 128 gb alles original funktioniert einwandfrei",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-13-pro-max-128-gb-alles-original-funktioniert-einwandfrei/3494087915-173-25921",
-      "preis": 200.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 350.0,
-        "p25": 300.0,
-        "n": 76,
-        "query": "Iphone pro max 13 128",
-        "korrektur": 0.0,
-        "streuung": 1.3,
-        "belastbar": true
-      },
-      "p_ratio": 0.571,
-      "ersparnis_eur": 150.0,
-      "ort": "Moabit",
-      "plz": "10555",
-      "eingestellt": "2026-08-25T04:00:31+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a0/a0f7d151-8333-4fd2-9cfe-f2a5ffe3b563?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/77/775aae7a-8a45-4b22-838d-a43d14aab8be?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/35/358ae405-5a2e-4946-8660-5d087de6faa4?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/50/50d46568-5dbd-45d5-916b-170311c64a88?rule=$_0.JPG"
-      ],
-      "beschreibung": "Zustand:<br />Das iPhone ist voll funktionsfähig und funktioniert einwandfrei.<br />Die Rückseite ist gebrochen, dies beeinträchtigt jedoch keine Funktion. Auf dem Display befinden sich einige Kratzer&#x2F;Gebrauchsspuren.<br /><br />Wichtig: Alles ist noch original. Es wurde nichts ausgetauscht, repariert oder geöffnet.<br />Das iPhone ist sofort einsatzbereit und funktioniert vollständig.<br />Akku Kapazität noch 76% Bei normalem hält es einen ganzen Tag.<br />Bitte preis ist fest<br />Das ist eine private verkaufen keine Garantie und keine Rücknahme<br />Mit freundlichen Grüßen",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Grün",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "120712899",
-        "name": "Weh.M",
-        "typ": "PRIVATE",
-        "konto_seit": "2022-07-10",
-        "konto_alter_tage": 1507,
-        "bewertung": 0.8333333333333334,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 97,
-      "signale": {
-        "gruen": [
-          "Konto seit 2022",
-          "Kaeuferschutz verfuegbar",
-          "10 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.83"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3494364732",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 14 Pro",
@@ -10750,67 +10676,6 @@
         "rot": [
           "Konto juenger als 6 Monate"
         ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3494088872",
-      "watchlist_id": "werkzeug-maschinen",
-      "titel": "Hilti TE 7-C Bohrhammer  inkl. DRS-M Staubabsaugung & Koffer",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/hilti-te-7-c-bohrhammer-inkl-drs-m-staubabsaugung-koffer/3494088872-84-3922",
-      "preis": 195.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 339.0,
-        "p25": 270.0,
-        "n": 29,
-        "query": "Hilti TE Bohrhammer 7",
-        "korrektur": 0.0,
-        "streuung": 2.15,
-        "belastbar": true
-      },
-      "p_ratio": 0.575,
-      "ersparnis_eur": 144.0,
-      "ort": "Eilenburg",
-      "plz": "04838",
-      "eingestellt": "2026-08-25T04:38:42+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f4/f4e3bbf4-14a4-493b-8a76-1453cc054c28?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0f/0fc6fcaf-5a78-4b13-acf4-66e5137e53a5?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/78/78061a31-4fb0-4822-96f6-f4b59420c7a3?rule=$_0.JPG"
-      ],
-      "beschreibung": "Hilti TE 7-C Bohrhammer inkl. DRS-M Staubabsaugung & Koffer",
-      "attribute": {
-        "Versand": "ab 9,90",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "145019096",
-        "name": "Jungpionier",
-        "typ": "PRIVATE",
-        "konto_seit": "2024-10-09",
-        "konto_alter_tage": 685,
-        "bewertung": 1.0,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 0,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 83,
-      "signale": {
-        "gruen": [
-          "Bewertung 1.00, zuverlaessig",
-          "Kaeuferschutz verfuegbar"
-        ],
-        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -12161,6 +12026,61 @@
           "4 Bilder"
         ],
         "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3494960787",
+      "watchlist_id": "vintage-hifi",
+      "titel": "Technics SL-1200M7B Lamborghini Yellow + Ortofon Concorde MKII",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/technics-sl-1200m7b-lamborghini-yellow-ortofon-concorde-mkii/3494960787-172-6611",
+      "preis": 900.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Neuburg a.d. Donau",
+      "plz": "86633",
+      "eingestellt": "2026-08-26T06:00:59+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c3/c37f9f58-1edc-41d6-b673-3aaa083c3065?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/80/8031e910-9a1e-42df-b3a8-be4247f7c9b5?rule=$_0.JPG"
+      ],
+      "beschreibung": "Technics SL-1200M7B Lamborghini Yellow Limited Edition + Ortofon Concorde MKII<br /><br />Zum Verkauf steht mein Technics SL-1200M7B Direct Drive Turntable in der exklusiven Automobili Lamborghini Yellow Edition inklusive Ortofon Concorde MKII DJ System.<br /><br />Der Technics wurde von mir tatsächlich nur ca. 4–5 Mal benutzt und befindet sich daher in einem sehr gepflegten, nahezu neuwertigen Zustand.<br /><br />Lieferumfang:<br /><br />* Technics SL-1200M7B Yellow – Automobili Lamborghini Edition<br />* Ortofon Concorde MKII DJ System<br />* Originalverpackung (OVP)<br />* sämtliches Zubehör<br />* Rechnung vom 18.08.2025<br /><br />Der Technics ist technisch selbstverständlich einwandfrei und optisch sehr gepflegt. Die Kombination aus der limitierten Lamborghini Edition und dem Ortofon-System ist besonders für Sammler und DJ-Enthusiasten interessant.<br /><br />Rechnung vom 18.08.2025 vorhanden – Herstellergarantie voraussichtlich noch bis 18.08.2027.<br /><br />Abholung wird bevorzugt. Ein versicherter Versand ist nach Absprache ebenfalls möglich.<br /><br />Privatverkauf unter Ausschluss der Sachmängelhaftung. Keine Rücknahme.",
+      "attribute": {
+        "Art": "Weiteres Audio & Hifi",
+        "Versand": "Nur Abholung",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "134444084",
+        "name": "Marius",
+        "typ": "PRIVATE",
+        "konto_seit": "2023-10-07",
+        "konto_alter_tage": 1053,
+        "bewertung": 0.8,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 72,
+      "signale": {
+        "gruen": [
+          "Konto seit 2023",
+          "Abholung moeglich"
+        ],
+        "rot": [
+          "Bewertung 0.80"
+        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
