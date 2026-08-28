@@ -89,3 +89,161 @@ bestaetigte Preisniveau in der Begruendung genannt; der Kleinanzeigen-Median die
 nur als Vorsortierung. Bei zwei Kandidaten (3495818413 Specialized Como 500 Wh,
 3496354002 Tag Heuer) liess sich kein belastbarer Referenzwert finden - sie wurden
 verworfen statt geschaetzt.
+
+---
+
+# Laufprotokoll 2026-08-28, Abendlauf
+
+- **Zeitpunkt:** 2026-08-28, 19:25 Uhr (MESZ)
+- **candidates.json generiert:** 2026-08-28T19:16:14+02:00 (rund 5 Minuten alt, aktuell)
+- **Zeitraum:** 2026-08-28T12:46 bis 17:46 (MESZ), akkumuliert ueber 24 Stunden
+- **Gesichtet:** 174.753 Anzeigen
+- **Kandidaten:** 69, davon 0 bereits in `deal_log.csv`
+- **Geprueft:** 69
+- **Gemeldet:** 2
+- **Kandidaten mit `unkenntnis_bonus`:** 1 (3497088769, verworfen - Begruendung unten)
+
+## Vorbemerkung: der Lauf hat auf den Sammler gewartet
+
+Beim Start um 19:04 Uhr MESZ war `candidates.json` noch der Stand von 06:08 Uhr,
+also 12 Stunden 56 Minuten alt. Nach Schritt 1 waere das ein Abbruch gewesen, der
+dritte in vier Laeufen. Der Sammler-Lauf 140 lief zu diesem Zeitpunkt aber bereits
+(Start 15:46 UTC) und hat um 17:16 UTC committet. Der Lauf hat diese 12 Minuten
+abgewartet und dann auf frischen Daten geurteilt - die Frist aus Schritt 1 ist
+damit eingehalten, geurteilt wurde auf einer 5 Minuten alten Datei.
+
+## Befund zum Sammler-Takt
+
+`scan.yml` steht auf `0 */4 * * *`, also sechs Laeufe am Tag. Tatsaechlich
+angelegt hat GitHub am 28.08. zwei:
+
+| Cron-Takt (UTC) | Lauf angelegt | Verspaetung |
+|---|---|---|
+| 00:00 | 03:54 (Lauf 139) | 3 h 54 |
+| 04:00 | kein Lauf | - |
+| 08:00 | kein Lauf | - |
+| 12:00 | 15:46 (Lauf 140) | 3 h 46 |
+| 16:00 | bis 17:25 kein Lauf | - |
+
+Dasselbe Muster steht schon in den Protokollen vom 27.08. (morgens und abends).
+Der Workflow ist aktiv, alle Laeufe schliessen erfolgreich ab, es haengt nichts in
+der Warteschlange - GitHub legt die geplanten Laeufe schlicht nicht an und
+verschiebt die uebrigen um knapp vier Stunden. Effektiv laeuft der Sammler zweimal
+statt sechsmal taeglich. Solange das so bleibt, trifft der Abendlauf die
+Vier-Stunden-Frist nur zufaellig. Das ist eine Infrastruktur-Frage und keine, die
+dieser Lauf loesen kann; sie gehoert dem Betreiber gemeldet.
+
+## Gemeldete Funde
+
+| # | Titel | Preis | Bestaetigtes Preisniveau | Abstand | Ort |
+|---|---|---|---|---|---|
+| 1 | DJI Mini 5 Pro Fly More Combo mit RC 2 | 580 € | neu 1.089 € (Amazon), 1.163 € (eBay.de), 1.159 USD (Best Buy); gebraucht rund 850-900 € | ca. 35 % unter Gebrauchtniveau | Neu Ulm |
+| 2 | MacBook Pro 14" 2021 | 500 € | ab 670 USD (Swappa, Aug. 2026), verkauftes 16/512-Exemplar rund 724 €; Haendlerkorridor 900-1.400 USD | ca. 30 % | Lahr (Schwarzwald) |
+
+Beide ohne mangelbedingte Preiserklaerung, beide nur Abholung - das Merkmal, das
+die Leitidee vom Betrugsprofil trennt. Bei beiden ist der Kleinanzeigen-Median
+belastbar (Streuung 1,12 bzw. 1,54) und deckt sich mit der externen Pruefung.
+
+## Geprueft und verworfen
+
+| Kandidat | Preis | Median | Grund |
+|---|---|---|---|
+| Rolex Oyster Perpetual (3496972912) | 4100 € | 7400 € | Referenz unbelastbar (Streuung 2,56; Median mischt moderne OP 41). Eigene Pruefung: Ref. 1500 liegt auf Chrono24 bei 2.400-6.000 EUR, Schnitt 3.700 EUR - 4.100 EUR liegen darueber. Verkaeuferbewertung 0,31. |
+| BMW e36 320i M Paket (3496854473) | 4900 € | 7650 € | Ausdruecklich als Bastlerfahrzeug verkauft, hintere Wagenheberaufnahmen fuer den TUEV faellig, 192.000 km. Preis erklaert sich selbst. Konto 13 Tage alt. |
+| Gibson Les Paul Junior 2010 - TV Yellow (3340097393) | 1219 € | 3699 € | Referenz unbelastbar (Streuung 2,94; Query "Gibson Les Paul 2010" mischt alle Les-Paul-Baureihen). Die Les Paul Junior ist das guenstigste LP-Modell, 1.219 EUR sind ein normaler Haendlerpreis inkl. Setup und Differenzbesteuerung. |
+| Jaeger LeCoultre Reverso Classique - Full Set (3471100731) | 3850 € | 6145 € | Referenz unbelastbar (Streuung 2,56; Median mischt Automatik- und Duoface-Reversos). Eigene Pruefung: Ref. 250.8.08 ist die Quarzvariante und steht auf Chrono24 bei rund 3.060 CHF - 3.850 EUR vom Haendler liegen darueber. |
+| IWC Uhr GST Chronograph black Dial Stahl Klassiker S (3470383772) | 3149 € | 5350 € | Referenz unbelastbar (Streuung 3,57). Eigene Pruefung: IW3707 Stahl liegt bei rund 2.600 EUR im Schnitt, Einzelangebote bei 3.212-3.328 USD - 3.149 EUR sind kein Abstand nach unten. |
+| Mercedes-Benz E200 W124 (3496844749) | 2800 € | 4927 € | Fahrzeugzustand "Beschaedigt", vom Verkaeufer als Bastler/Defekt angeboten, Loecher im Schweller, unrunder Kaltlauf. Preis erklaert sich selbst. |
+| BMW E36 318i (3497035711) | 2800 € | 4298 € | 255.000 km, Lack ausgeblichen, keine Airbags. Hohe Laufleistung erklaert den Preis; Median mischt Baujahre und Zustaende. |
+| Simson S51 4gang (3451704001) | 2500 € | 3600 € | Papiere nur beantragt, ausdruecklich als Bastlerfahrzeug ohne Restaurierung verkauft. Ohne Zulassungsbescheinigung Teil II richtig bepreist, nicht billig. |
+| Simson Schwalbe KR51 K Oldtimer (3497055452) | 2150 € | 3218 € | Papiere nur beantragt, es liegt lediglich eine Polizeibescheinigung vor. Ohne Zulassungsbescheinigung Teil II richtig bepreist. |
+| Gibson Les Paul Les Paul Modern Lite Cardinal Red Sa (3496411098) | 1000 € | 2026 € | Referenz unbelastbar (Streuung 3,08). Die Modern Lite ist das Einstiegsmodell der Reihe, gebraucht rund 900-1.000 EUR - 1.000 EUR sind Marktpreis. |
+| Omega speedmaster Automatic Chronograph Silber Dial (3497095504) | 1500 € | 2500 € | Extern bestaetigt: Ref. 3513.30.00 liegt bei rund 2.284 USD (WatchCharts). Ohne Papiere und mit Tragespuren schrumpft der Abstand unter die 20-Prozent-Schwelle. Verkaeuferkonto erst seit 25.08.2026, Versand angeboten, exakte Referenz- und Kaliberangaben - das ist das Betrugsprofil der Leitidee, nicht das Profil eines ahnungslosen Verkaeufers. |
+| Tag Heuer Automatik (3496354002) | 1100 € | 1895 € | Kein Modell genannt, Beschreibung zwei Zeilen. Der Median ueber "Tag Heuer Automatik" mischt die gesamte Modellpalette; ohne Modell kein bestaetigbarer Marktwert. |
+| Usm haller, sideboard, weiss, gebraucht, top, frei k (2415080237) | 799 € | 1575 € | Haendlerangebot ohne konkrete Konfiguration ("frei konfigurierbar", "mehrere Stueck"). Der Median gilt fuer vollstaendige Sideboards und ist damit nicht vergleichbar. |
+| Knoll Ledersessel (3497124149) | 250 € | 999 € | Kein Modell genannt ("Knoll Ledersessel"), Beschreibung eine Zeile. Referenz unbelastbar (Streuung 3,62). Ohne Modell kein bestaetigbarer Marktwert. |
+| USM Haller Sideboard / Regal grau 2x2 (2994166187) | 750 € | 1475 € | Haendlerangebot (HKMK). 750 EUR sind fuer einen 2x2-Korpus dieser Groesse der uebliche Haendlerpreis; der Median gilt fuer groessere Sideboards. |
+| Gibson Les Paul Studio 2008 – mit Originalkoffer (3497093532) | 900 € | 1625 € | Referenz unbelastbar (Streuung 4,21, n=10). Eine Les Paul Studio von 2008 mit Gebrauchsspuren liegt bei 800-1.100 EUR - 900 EUR sind Marktpreis. |
+| IWC Porsche Design Date Titan Chronograph  (1419971665) | 1595 € | 2290 € | Referenz unbelastbar (Streuung 3,79). Die IWC Porsche Design 3743 in Titan liegt bei rund 1.200-2.000 EUR; 1.595 EUR vom Haendler sind Marktmitte. Bewertung 0,71. |
+| USM Haller Sideboard (3496438500) | 900 € | 1575 € | Ein Sideboard mit 76x74x36 cm und Gebrauchsspuren liegt privat bei 700-1.100 EUR; 900 EUR sind Marktpreis. Der Median gilt fuer groessere Konfigurationen. Bewertung 0,50. |
+| USM Haller - Regal - Grün - Glasaufsatz - gebrauchte (3021035129) | 790 € | 1402 € | Referenz unbelastbar (Streuung 2,73). Haendlerangebot, Konfiguration weicht vom Median ab. |
+| Gibson Les Paul Traditional 2015 Sunburst Flame Mapl (3496846865) | 890 € | 1500 € | Wortgleiche Neueinstellung des am 26.08. gemeldeten Fundes 3494599106 (gleicher Titel, gleicher Preis 890 EUR). Bereits gemeldet, keine zweite Meldung. |
+| Apple MacBook Pro 14" (3497121841) | 750 € | 1339 € | Extern bestaetigt: MacBook Pro 14" 2021 M1 Pro 16/512 liegt bei rund 670-724 EUR (Swappa August 2026, verkauftes Exemplar). 750 EUR sind Marktpreis; der Median 1.339 EUR ist von M3-/M4-Modellen hochgezogen. |
+| KTM Trentino light Damen Trekkingrad (3496391247) | 400 € | 964 € | Das KTM Trentino ist ein Mittelklasse-Trekkingrad, neu rund 800-1.000 EUR. Gebraucht mit Gebrauchsspuren bei 350-500 EUR - 400 EUR sind Marktpreis. |
+| Drehbank mit Zubehör (3497088769) | 649 € | 1200 € | Traegt unkenntnis_bonus, aber die Anzeige nennt weder Hersteller noch Modell ("eine robuste Drehbank"). Referenz unbelastbar (Streuung 3,33; Drehbaenke reichen von 200 bis ueber 20.000 EUR). Ohne Modell kein belastbarer Referenzwert - geschaetzt wird nicht. |
+| Cube Cross Race SL Red Orange Gr. 58 viele Teile neu (3496565169) | 999 € | 1499 € | Individuell aufgebautes Gravelbike mit nachgeruesteten Laufraedern und kuerzerem Vorbau; fuer diese Aufbauvariante kein extern bestaetigbarer Marktwert. Konto juenger als sechs Monate. |
+| USM Haller Rollcontainer grau 1. Generation (2967620571) | 400 € | 900 € | Haendlerangebot mit ausgewiesenen Schaeden ("Zustand gut, Schaeden s. Fotos"). Der Schaden erklaert den Abstand zum Median unbeschaedigter Container. |
+| +++USM HALLER Lowboard, Farbe reinweiss+++ (3340264765) | 780 € | 1249 € | Haendlerangebot, 1 Element breit und 2 hoch - eine kleine Konfiguration. Der Median 1.249 EUR gilt fuer groessere Lowboards. |
+| DJI mini 5 pro Fly More Combo (3496459282) | 450 € | 890 € | Betrugsprofil: nur ein Bild, Versand mit Kaeuferschutz, Konto ohne Bewertung, 450 EUR fuer eine aktuelle Mini 5 Pro (neu rund 1.090-1.163 EUR). Titel nennt die normale Combo, der Text die Plus-Variante. |
+| Wanderreitsattel Prestige Trekker Land (3496437474) | 450 € | 855 € | Beschreibung zwei Zeilen, ohne Sitzgroesse, Kammerweite oder Baujahr. Referenzgruppe n=8; ohne Ausstattungsangaben kein bestaetigbarer Marktwert. |
+| Herrenuhr Glashütte (3496980318) | 450 € | 850 € | Beschreibung besteht aus zwei Woertern ("Uhr glashuette"), kein Modell, keine Referenz. Referenz unbelastbar (Streuung 4,04). Kein bestaetigbarer Marktwert. |
+| Macbook Pro 16” 1TB (3496974150) | 550 € | 925 € | Es handelt sich um ein MacBook Pro 16" von 2019 mit Intel Core i7. Gebraucht liegt das bei 450-650 EUR - 550 EUR sind Marktpreis. Der Median mischt Apple-Silicon-Geraete. |
+| DJI Mini 4 Pro Fly - More Combo PLUS (RC 2 + Care) (3496405816) | 340 € | 700 € | Betrugsprofil: Konto einen Tag alt, 340 EUR fuer eine Mini 4 Pro Fly More Combo Plus mit RC 2 und DJI Care - rund 51 Prozent unter dem belastbaren Median von 700 EUR. |
+| MacBook Air (3497091822) | 350 € | 710 € | Weder Chip noch Konfiguration genannt ("MacBook aus dem Jahr 2020"), Textbausteine ohne pruefbaren Inhalt ("ikonisches Apple-Logo"). Bewertung 0,62. Kein bestimmbares Modell. |
+| CUBE Fahrrad 28 Zoll (3496968183) | 425 € | 785 € | Referenz unbelastbar (Streuung 3,44). "CUBE Fahrrad 28 Zoll" ohne Modell; der Median mischt Modellreihen. |
+| Steam Deck OLED Defekt (3496955602) | 300 € | 650 € | Ausdruecklich als defekt verkauft: linke Bedienelemente ohne Funktion, keine SSD verbaut. Preis erklaert sich selbst. |
+| Stehlampe Ingo Maurer “Swingading” Rarität (3496897624) | 600 € | 950 € | Referenz wertlos (Streuung 34,55). Zur Swingading liess sich kein belegbarer Verkaufspreis finden - weder Auktionsergebnis noch Haendlerangebot. Ohne belastbaren Referenzwert wird nicht geschaetzt. |
+| USM Haller Konsole Highboard Sideboard Schwarz SALE (3446228707) | 575 € | 895 € | Referenz unbelastbar (Streuung 2,84). Haendlerangebot, Konfiguration nicht mit dem Median vergleichbar. |
+| Omlet  Eglu Cube Hühnerstall (3497088868) | 580 € | 900 € | Neu liegt der Eglu Cube bei 800-1.000 EUR, gebraucht bei 500-700 EUR - 580 EUR sind Marktpreis. Nur ein Bild, Referenzgruppe n=9. |
+| Trekkingrad Zündapp E-Bike (3496390363) | 300 € | 597 € | Zuendapp ist eine Baumarktmarke; der Median ueber "Trekkingrad" mischt Markenraeder ein. 300 EUR sind fuer ein gebrauchtes Zuendapp-Pedelec kein Abstand. |
+| Cube Fahrrad Damen (3496871058) | 350 € | 640 € | Referenz unbelastbar (Streuung 3,51). "Cube Fahrrad Damen" ohne Modell. |
+| Apple MacBook Air 13 wie neu ohne Gebrauchsspuren (3497064825) | 450 € | 734 € | Weder Modell, Baujahr noch Chip genannt. Bewertung 0,36, nur Versand. Textbaustein derselben Vorlage wie mehrere andere Apple-Anzeigen in diesem Lauf. |
+| Apple MacBook Air (3497118436) | 425 € | 700 € | Weder Modell, Baujahr noch Chip genannt, gleiche Textvorlage. Ohne Konfiguration kein bestaetigbarer Marktwert. |
+| Meissen Porzellan Figur Komödiantenkind Entwurf Känd (3313077450) | 325 € | 600 € | Referenz unbelastbar (Streuung 2,53). Meissen-Figurenpreise haengen an Entwurf, Bossierer und Schleifstrich; ohne diese Angaben kein bestaetigbarer Wert. |
+| Cube Damenrad „Ella“ (3497095389) | 350 € | 624 € | Referenz unbelastbar (Streuung 3,53). Ohne Modelljahr und Ausstattung kein bestaetigbarer Marktwert. |
+| E-Bike Trekkingrad Herrenrad mit Gepäckträgertasche (3496375850) | 475 € | 749 € | Referenz unbelastbar (Streuung 2,95). Weder Marke noch Motor genannt. |
+| DJI Mini 4 Pro mit OVP + drei AKKUs + Zubehör ohne F (3496944730) | 430 € | 700 € | Wird ausdruecklich ohne Fernsteuerung verkauft; der Median 700 EUR gilt fuer die vollstaendige Fly More Combo mit RC 2. Referenzgruppe damit nicht vergleichbar, fuer die Variante ohne RC kein belastbarer Vergleichswert. |
+| DJI Mini 4 Pro mit OVP + drei AKKUs + Zubehör  ohne  (3496393030) | 430 € | 699 € | Zweite Anzeige desselben Verkaeufers zum selben Geraet ohne Fernsteuerung - gleiche Begruendung wie 3496944730. |
+| Cubes Mountain Bike (3496842643) | 340 € | 600 € | Referenz unbelastbar (Streuung 3,50). "Cubes Mountain Bike" ohne Modell. |
+| Specialized Stumpjumper FSR Fully MTB – FOX – 26 Zol (3496846533) | 420 € | 674 € | 26-Zoll-Laufraeder, technisch veraltete Generation, laenger nicht genutzt. 420 EUR entsprechen dem Markt fuer ein Stumpjumper FSR dieser Baureihe. |
+| Fahrrad Trekking Trekkingrad weiß Gudereit top (3497086259) | 399 € | 649 € | Gudereit-Trekkingrad ohne Modell und Baujahr; 399 EUR liegen im normalen Gebrauchtkorridor. |
+| iPhone 16 256GB schwarz (3496564717) | 525 € | 771 € | Nur ein Bild, Beschreibung aus inhaltsleeren Textbausteinen ("inklusive der aktuellen Apple-Features"), keine Angabe zu Akkuzustand oder Kaufbeleg. Dieselbe Vorlage taucht in diesem Lauf bei mehreren Apple-Anzeigen verschiedener Konten auf. |
+| Thonet Stühle (3496392046) | 200 € | 435 € | Referenz unbelastbar (Streuung 4,80). "Thonet Stuehle" ohne Modellnummer; Thonet-Preise reichen von 50 bis ueber 1.000 EUR je Modell. |
+| Thorens TD 320 Plattenspieler Erstbesitz  (3496976109) | 300 € | 532 € | Extern gepruefte Angebote liegen bei 470 EUR (MK III) und 990 EUR, gebrauchte TD 320 im Schnitt deutlich darunter. Mit zerkratzter Haube, altem Elac-System und geaenderter Verkabelung sind 300 EUR kein bestaetigter 20-Prozent-Abstand. |
+| Thorens TD 320 Plattenspieler Turntable High End Tal (3496973138) | 300 € | 532 € | Zweite Anzeige desselben Geraets wie 3496976109, gleiche Begruendung. |
+| iPhone 14 pro max (3496335156) | 220 € | 450 € | Rueckseite gebrochen, Akku bei 66 Prozent, laeuft nur am Ladekabel. Preis erklaert sich selbst. |
+| Technics SL-1200 MK2 (3496477212) | 520 € | 750 € | Referenz unbelastbar (Streuung 2,59). Zustand "In Ordnung", Lampe defekt, kein Tonabnehmer dabei - 520 EUR entsprechen dem Markt fuer einen SL-1200 MK2 in diesem Zustand. |
+| iPhone 14 Pro Max (3496338984) | 230 € | 450 € | Backcover gebrochen, Display zerkratzt, deutliche Gebrauchsspuren. Preis erklaert sich selbst. |
+| Macbook Air M2 ( 256 Gb ) (3496564815) | 485 € | 699 € | Trackpad funktioniert nur zeitweise - der Defekt ist vom Verkaeufer offengelegt und erklaert den Preis. |
+| iPhone 14 Pro (3495376111) | 200 € | 405 € | Bewertung 0,14, Konto seit Dezember 2025, nur Versand. Verkaeuferprofil traegt den Fund nicht. |
+| Vitra Eames Plastic Side Chair RE DSW Stuhl Design O (3497025051) | 170 € | 375 € | Fuenf Stuehle mit Gebrauchsspuren; gebrauchte DSW-Originale liegen bei 200-300 EUR. 170 EUR sind bei sichtbarem Verschleiss kein bestaetigter 20-Prozent-Abstand. |
+| Cube Mountainbike (3496429746) | 300 € | 495 € | Referenz unbelastbar in der Sache: "Cube Mountainbike" ohne Modell und Baujahr. |
+| Fahrrad Cube Acid 29 Zoll (3496383359) | 350 € | 544 € | Cube Acid ohne Modelljahr; 350 EUR liegen im normalen Gebrauchtkorridor der Baureihe. |
+| CUBE LTD 29 Zoll Mountainbike – Fox, Shimano XT/SLX, (3496414373) | 320 € | 499 € | 320 EUR entsprechen dem Markt fuer ein aelteres Cube LTD mit XT/SLX-Mischbestueckung. |
+| Bulls Herren Trekkingrad Wild Cross (3496412914) | 350 € | 525 € | Bulls Wild Cross ohne Baujahr; 350 EUR liegen im normalen Gebrauchtkorridor. |
+| Apple iPhone 14 Pro 128GB (3496335773) | 225 € | 399 € | Akku bei 79 Prozent, nur Versand, Bewertung 0,70, Beschreibung aus derselben inhaltsleeren Vorlage wie weitere Apple-Anzeigen dieses Laufs. |
+| Apple iPhone 13 Pro 128Gb (3496565157) | 150 € | 320 € | Frontkamera defekt und ausdrueckliche Aufforderung zur Zahlung per Banueberweisung ausserhalb der Plattform - Ausschlussgrund nach Schritt 2c. |
+| !!!NOTVERKAUF!!! Speedfight 2 50ccm Top zustand (3496560107) | 750 € | keiner | Batterie defekt, Verkleidung zerkratzt. 750 EUR entsprechen dem Markt fuer eine Speedfight 2 von 2001. Kein Kleinanzeigen-Median vorhanden. |
+| Rolex Oyster Damen Uhr Notverkauf (3496564098) | 1500 € | keiner | Der Verkaeufer schreibt selbst, er koenne die Echtheit nicht garantieren; Konto vier Tage alt, Gewerbetext auf Privatprofil. Ohne Echtheitsnachweis kein bestaetigbarer Marktwert. |
+
+## Muster in diesem Lauf
+
+**Textvorlagen bei Apple-Geraeten.** Vier Anzeigen verschiedener Konten
+(3496564717, 3496335773, 3497091822, 3497118436) benutzen dieselbe Bauform:
+Aufzaehlung generischer Merkmale ohne pruefbaren Inhalt ("inklusive der aktuellen
+Apple-Features", "das ikonische Apple-Logo"), kein Akkuzustand, kein Kaufbeleg,
+keine Seriennummer. Genau die Angaben fehlen, die jemand macht, der das Geraet in
+der Hand haelt. Alle vier verworfen.
+
+**Neue Konten bei hochpreisiger Ware.** 3497095504 (Omega, Konto 3 Tage) und
+3496405816 (DJI Mini 4 Pro, Konto 1 Tag) liegen 29 bzw. 51 Prozent unter Markt und
+nennen exakte Referenz- und Ausstattungsangaben. Das ist nach der Leitidee das
+Betrugs- und nicht das Unkenntnisprofil: Wer den Wert nicht kennt, zitiert kein
+Kaliber 1152.
+
+**Der unkenntnis_bonus-Kandidat.** 3497088769 ("Drehbank mit Zubehoer", 649 €)
+traegt das Flag zu Recht - die Anzeige ist handwerklich schlecht und nennt weder
+Hersteller noch Modell. Genau daran scheitert sie aber: Drehbaenke reichen von 200
+bis ueber 20.000 EUR, der Median ist mit Streuung 3,33 wertlos, und ohne Modell
+gibt es keinen belastbaren Referenzwert. Nicht nach Anzeigenqualitaet abgewertet,
+sondern mangels bestimmbarem Produkt verworfen.
+
+**Wiedereinstellung.** 3496846865 ist wortgleich und preisgleich die am 26.08.
+gemeldete Gibson Les Paul Traditional 2015 (damals 3494599106). Neue Anzeigen-ID,
+dieselbe Ware - `deal_log.csv` greift ueber die ID nicht, inhaltlich schon.
+Nicht erneut gemeldet.
+
+## Dateien
+
+`deals.json`, `email_output.html`, `deal_log.csv` (zwei Zeilen ergaenzt) und dieses
+Protokoll werden nach `main` gepusht. Der Push loest den Versand ueber Resend aus.
