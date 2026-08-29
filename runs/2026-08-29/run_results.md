@@ -155,3 +155,158 @@ genannten Gebrauchsspuren, beide ohne mangelbedingte Preiserklaerung.
 | Bereits in `deal_log.csv` | 0 |
 | Inhaltlich geprueft | 83 |
 | Gemeldet | 2 |
+
+---
+
+# Laufprotokoll 2026-08-29, Abendlauf
+
+- **Zeitpunkt:** 2026-08-29, 19:22 Uhr (MESZ)
+- **candidates.json generiert:** 2026-08-29T19:18:04+02:00 (4 Minuten alt)
+- **Zeitraum:** 2026-08-29T12:56 bis 17:56 (MESZ), akkumuliert ueber 24 Stunden
+- **Gesichtet:** 156.721 Anzeigen
+- **Kandidaten:** 123, davon 0 bereits in `deal_log.csv`
+- **Geprueft:** 123 (43 davon bereits im Morgenlauf beurteilt, Urteile uebernommen;
+  40 erstmals im 11:55-Stand, 40 erstmals im 17:18-Stand)
+- **Gemeldet:** 2
+- **Kandidaten mit `unkenntnis_bonus`:** 1 (3497860976, Simson Schwalbe) - verworfen, siehe unten
+
+## Vorbefund: gewartet statt abgebrochen
+
+Beim Start um 19:03 Uhr war `candidates.json` 5 Stunden 08 Minuten alt (Stand
+2026-08-29T13:55:18+02:00). Die Frist in `prompt.md` Schritt 1 liegt bei vier
+Stunden, der Lauf waere also ein Abbruch gewesen - der vierte innerhalb von drei
+Tagen.
+
+Diesmal lag die Ursache nicht beim Scheduler: Sammler-Lauf 144 (Takt 16:00 UTC)
+war um 15:56 UTC planmaessig gestartet und lief noch. Statt abzubrechen wurde auf
+sein Ergebnis gewartet; um 17:18 UTC hat er committet, geurteilt wurde auf einem
+vier Minuten alten Stand. Dasselbe Vorgehen wie am 28.08. abends.
+
+Der Takt haelt damit erstmals seit dem 26.08. wieder: 00:36, 05:20 (von Hand),
+11:55 und 17:18 UTC. Der Lauf dauerte 82 Minuten - genau daran scheitert die
+Vier-Stunden-Frist strukturell, denn zwischen Cron-Zeitpunkt und fertigem Commit
+liegen bis zu anderthalb Stunden. Solange der Sammler zur vollen Stunde alle vier
+Stunden startet und bis zu 90 Minuten braucht, ist der frischeste Stand um
+19:00 MESZ im Regelfall drei bis fuenf Stunden alt.
+
+**Nebenbefund zur Frist (unveraendert seit heute Morgen):** Der Aufruftext der
+Routine nennt sechs Stunden, `prompt.md` Schritt 1 nennt vier. Massgeblich ist
+`prompt.md`. Entweder wird der Cron auf 05:00 und 17:00 UTC gelegt, damit der
+Sammler vor 07:00 und 19:00 MESZ fertig ist, oder die Frist in `prompt.md` wird
+auf sechs Stunden angehoben und damit an die Laufzeit des Sammlers angepasst.
+
+## Gemeldete Funde
+
+| # | Titel | Preis | Bestaetigtes Preisniveau | Abstand | Ort |
+|---|---|---|---|---|---|
+| 1 | Ducati Monster 750, EZ 05/1997, 35.955 km | 1.200 € | 2.400-3.100 € (1999/33.750 km 3.099 €; 1998/36.000 km 3.499 €; 1997/~34.578 km 4.500 €; 1998/55.000 km 1.950 €) | rund 50 % gegen den konservativen Wert | Harsewinkel-Greffen |
+| 2 | DJI Mini 4 Pro Fly More Combo, Kauf 06/2024 | 400 € | 600-700 € (eBay.de 689 € mit RC 2 und 700 € mit Tasche; Kleinanzeigen 600 € Nieheim komplett, 650 € Walkenried, 650-700 € Wiefelstede) | rund 33 % gegen den konservativen Wert | Loquard |
+
+Beide von Privatkonten mit langer Historie (2013 bzw. 2014) und Bewertung 1,00,
+beide mit konkreten Angaben, die nur jemand macht, der die Sache in der Hand
+hat (Wartungsstand beim Motorrad, Ladezyklen je Akku bei der Drohne).
+
+## Verworfene Kandidaten (neu seit dem Morgenlauf)
+
+### Preis erklaert sich durch offengelegten Mangel, Zustand oder Laufleistung
+
+| ID | Titel | Grund |
+|---|---|---|
+| 3498024384 | Tesla Model 3, EZ 09/2020, 12.500 € | 195.000 km. Die Akkugarantiegrenze fuer Model 3 mit Heckantrieb liegt bei 160.000 km und ist damit ueberschritten - nach `prompt.md` Schritt 2e ist das der Pflichtpruefpunkt und hier zugleich die Preiserklaerung. Variante (SR+ oder LR) wird nicht genannt. |
+| 3497827434 | Mercedes 190 W201, 2.900 € | Klimaanlage und Schiebedach ohne Funktion, Grund unbekannt, Roststellen; wird ausdruecklich "an Bastler / Schrauber / Export, keine Privatleute" verkauft. |
+| 3497793950 | BMW E36 320i Cabrio, 5.500 € | 226.000 km, "hier und da ein paar kleine Maengel", Bewertung 0,62. |
+| 3497436767 | BMW E36 318i Cabrio, 2.900 € | 340.000 km, Rost ausdruecklich genannt ("guckt euch die Bilder an"). |
+| 3497643747 | Simson S51 N, 2.100 € | Laeuft nicht (Kupplung und Gangschaltung), Seitendeckel mit Klebeband, weitere unbekannte Maengel eingeraeumt. |
+| 3497751479 | Simson Schwalbe KR51 Scheunenfund, 1.000 € | Keine Fahrzeugpapiere. Nach `prompt.md` Schritt 2e richtig bepreist, nicht billig. |
+| 3498052313 | Simson S51, 2.150 € | Ohne Papiere, Konto seit Juli 2026. Gleiche Regel. |
+| 3497860976 | Simson Schwalbe KR51/2, 1.500 € (`unkenntnis_bonus`) | Trotz Bonus verworfen, und nicht wegen der Anzeigenqualitaet: die Schwalbe ist **teilzerlegt**, "Fotos folgen" - es gibt kein einziges Bild. Bei einem zerlegten Fahrzeug bestimmt die Vollstaendigkeit den Wert, und die ist hier weder abgebildet noch beschrieben. Papiere sind vorhanden, das spricht dafuer; ohne Bilder ist der Beleg aber nicht beibringbar. |
+| 3497517903 | Ducati Monster 900, 1.999 € | "Umbau Einzelstueck" mit geaendertem Heck, Frontmaske und Sitzbank - Umbauten senken den Wert, statt ihn zu heben. HU laeuft im August 2026 aus, Bewertung 0,27. |
+| 3498078643 | Gibson Les Paul Artist 1979, 2.400 € | Halsrueckseite 2011 neu lackiert. Eine Teillackierung mindert bei einer Vintage-Gibson den Sammlerwert deutlich; der Abschlag gegen den Median 3.695 € ist genau das. |
+| 3497899313 | Junghans Max Bill mechanisch, 350 € | "Ueberdreht" steht im Titel - ein Werkschaden, der Preis ist der Reparaturabschlag. |
+| 3497843663 | MacBook Air 13" M3, 400 € | Wasserschaden, ausdruecklich als Bastlergeraet inseriert. |
+| 3497824507 | iPhone 14 Pro Max, 250 € | Salzwasserschaden, wird sehr heiss, als Ersatzteilspender inseriert. |
+| 3497486134 | iPhone 14 Pro 256 GB, 250 € | Defekt, geht nicht an, laesst sich nicht zuruecksetzen - damit auch die Aktivierungssperre nicht loesbar. |
+| 3497968152 | DJI Mini 3 Pro Fly More Combo, 299 € | Gimbal und ein Rotor defekt, als Ersatzteilspender inseriert. |
+| 3497540590 | Cube Reaction XT Race, 350 € | Carbonrahmen gebrochen, Verkauf als Ersatzteilspender. |
+| 3497504022 | Festool OF 1010, 200 € | Als defekt inseriert, Laufsohle fehlt. |
+| 3497923302 | Thonet S34 Freischwinger, 210 € | Der vordere Spannbogen fehlt und muss beschafft und eingebaut werden. |
+| 3498007651 | Ingo Maurer Spirallampe, 299 € | Glaseinsatz kaputt. |
+| 3498082895 | Louis Poulsen AJ Royal 500, 150 € | Nur der Lampenschirm ohne Innenleben; der Median 350 € gilt fuer komplette Leuchten. |
+| 3498007104 | Volvo Penta Waermetauscher, 300 € | Muss neu abgedichtet werden; Abholort Langeoog. |
+| 3497540166 | Haibike Trekking-E-Bike, 450 € | 16.056 km Laufleistung, kein Modell genannt - beim E-Bike bestimmt das Akkualter den Wert, und das erklaert den Preis. |
+| 3497856518 | Cube Touring, 412 € | Hinterreifen poroes, Streuung 7,7. |
+| 3497877718 | iPhone 14 256 GB, 250 € | Akku 83 %, "kann mal warm werden". |
+| 3497677626 | iPhone 15 128 GB, 250 € | Rueckseite gesprungen, Akku 80 %. |
+| 3497449405 | iPhone 14 Pro 128 GB, 250 € | Rueckglas kaputt, Kratzer vorne, Akku 80 %, ohne Karton und Kabel. |
+| 3497556259 | iPhone 14 Pro 128 GB, 230 € | Backcover gesprungen, Konto seit Dezember 2025, Bewertung 0,55. |
+| 3497501138 | iPhone 15 128 GB, 270 € | Akku 77 %, Kratzer im Display, Bewertung 0,45. |
+| 3497431578 | iPhone 15 128 GB, 260 € | Rueckseite gerissen. |
+| 3497431629 | iPhone 14, 220 € | Akku 77 %. |
+| 3497579555 | iPhone 14 128 GB, 230 € | Akku 75 %, Bewertung 0,52. |
+
+### Haendlerpreis bildet den Markt
+
+| ID | Titel | Grund |
+|---|---|---|
+| 3472207254 | Tudor Black Bay Chrono 79360N, 3.990 € | Gewerblicher Anbieter, differenzbesteuert, mit Box und Papieren. Chrono24 fuehrt gebrauchte 79360N bei rund 4.290 bis 5.750 US-Dollar; gegen das untere bestaetigte Niveau bleiben keine 20 % Abstand, und ein Haendlerpreis bildet diesen Markt ab, statt ihn zu unterbieten. |
+| 3497865215 | Gibson Les Paul Studio Worn Brown 2016, 749 € | City Music Bonn, gewerblich, mit Einstellservice und Gigbag. Der Preis ist der Markt fuer eine LP Studio, nicht ein Abschlag darauf. |
+| 3497478788 | Kalkhoff City Trekking, 469 € | Gewerblich, "Saisonraeumung von 999 € auf 469 €". |
+| 3497469485 | Cassina LC1, 850 € | Gewerblicher Haendler mit Ladenoeffnungszeiten; Dekobilder ausdruecklich KI-generiert. |
+| 3472367162 | Meissen Weinlaub, 6 Teller, 299 € | Gewerblicher Porzellanhaendler mit Artikelnummer. |
+| 3262286344 | Walter Knoll Foster Glastisch, 650 € | JSFurniture GbR, gewerblich. |
+| 2857960254 | Walter Knoll Bellows, 2 Tische, 450 € | Gewerblich, Streuung 3,66. |
+| 2650886544 | Vitra EA107 Aluminium Chair, 450 € | Gewerblich, differenzbesteuert, Festpreis. |
+| 3447063172 | USM Haller Tisch 100 x 200, 299 € | FIBO Bueromoebel, gewerblich, mehrfach vorhanden. |
+| 2138062817 | Volvo Penta DPS-A Auspuffgeweih, 599 € | Gewerblich, Streuung 7,74 - der Median mischt Geweihe mit kompletten Antrieben. |
+
+### Referenzgruppe nicht vergleichbar oder Marktwert nicht bestimmbar
+
+| ID | Titel | Grund |
+|---|---|---|
+| 3497847670 | Mercedes W124 E200, 4.000 € | Das Verkaeuferkonto wurde am Tag der Anzeige angelegt. Eine durchkomponierte Anzeige ("rostfreier Unterboden - eine Seltenheit", Sammlerwert des Radios) auf einem taggleichen Konto bei einem Fahrzeug mit 233.000 km ist genau das Profil, das die Leitidee als Betrugsanzeige beschreibt. |
+| 3497753991 | Rolex Datejust Oysterquartz, 3.900 € | Keine Referenznummer, Baujahr nur "vermutlich 1978", Material laut Attribut Gelbgold - zwischen einer Stahl-17000 und einer Gold-19018 liegt der Faktor drei. Bewertung 0,50, kein Abholung, weitere Informationen nur per DM. |
+| 3497684455 | TAG Heuer Carrera, 1.095 € | Weder Referenz noch Kaliber genannt. Zwischen einer Quarz-Carrera und einer Calibre 16 liegen 1.500 €; ohne Modell kein Marktwert. Box und Papiere fehlen, Konto ohne Bewertung. |
+| 3497914311 | Tudor Prince Date Hydronaut, 1.999 € | Keine Referenznummer, ohne Box und ohne Papiere, sichtbare Trage- und Kratzspuren. Der Median 2.990 € stammt aus Anzeigen mit Vollausstattung. |
+| 3497494121 | Gravelbike BMC URS 01 THREE, 2.499 € | Der Median 3.999 € entspricht exakt dem Neupreis des Modelljahrs 2021 (alltricks fuehrt das 2021er URS 01 Three ab 3.999 €) - die Referenzgruppe besteht also aus Neu- und Jungraedern, nicht aus einem Gebrauchtniveau. Fuer ein 2021er Rad mit Fremdaufbau (Rival AXS Mullet, Umbau 2023) liess sich kein belastbarer Gebrauchtwert belegen; der Beleg ist hier nicht beibringbar. |
+| 3497536143 | Steam Deck "1 TB", 360 € | "Voll aufgeruesteter Speicher" spricht fuer ein LCD-Geraet mit nachtraeglicher SSD, der Median 699 € enthaelt OLED-Modelle. Ohne Unterscheidung LCD/OLED kein Marktwert. |
+| 3497532216 | Simson Schwalbe Motor M53, 550 € | Der Median 1.125 € stammt aus Anzeigen fuer komplette Fahrzeuge, Streuung 2,94. |
+| 3497648509 | Alte Drehbank, 250 € | Weder Hersteller noch Typ noch Spitzenweite. |
+| 3233937970 | Hilti Akku-Set CPC, 200 € | Gewerbliche Verwertung, kein Geraetetyp, keine Akkugroessen. |
+| 3497562732 | Thonet Stuehle, 250 € je Stueck | Der Verkaeufer selbst ist sich bei einem der beiden Stuehle nicht sicher, ob er original ist. |
+| 3497793679 | Freischwinger "aehnlich Thonet", 400 € | Ausdruecklich Cesca-Stil, kein Original - der Median gilt fuer Markenstuecke. |
+| 3497956373 | Vitra Fiberglas Sidechair, 200 € | Die gesamte Beschreibung lautet "Bei Fragen gerne melden :)". Weder Ausfuehrung noch Alter noch Zustand. |
+| 3497944950 | Ingo Maurer "One from the Heart", 450 € | Zwei Zeilen Beschreibung, Streuung 4,13, Abholung in Basel. |
+| 3498039552 | Revox Tonband, 300 € | Streuung 10,39, der Median ist unbrauchbar; "A7" gibt es bei Revox nicht, gemeint ist vermutlich A77 - und deren Versionen unterscheiden sich um den Faktor drei. |
+| 3497772176 | iPhone 15 128 GB, 250 € | Die Beschreibung lautet vollstaendig "Kein Versand nur Abholung dieses WE". Kein Akkustand, kein Zustand, keine Angabe. |
+| 3498038510 | Cube Touring Pro, 400 € | Kein Modelljahr; der Median 1.500 € mischt aktuelle Modelljahre mit aelteren. |
+| 3497809676 / 3497839992 / 3497680831 / 3497609006 / 3497552482 / 3497610323 / 3497691892 / 3497593365 / 3497771702 / 3497774183 | Fahrraeder, 300-460 € | Durchweg ohne Modelljahr oder mit Streuung ueber 3 (`belastbar: false`). "Trek Mountainbike Fully weiss" und "Cube Nature" lassen sich nicht bepreisen. |
+| 3497455350 | USM Haller Tisch 75 x 75, 250 € | Streuung 2,55, `belastbar: false`; der Median mischt Tischgroessen von 75 x 75 bis 200 x 100. |
+
+### Bestaetigtes Preisniveau erreicht die 20 Prozent nicht
+
+| ID | Titel | Grund |
+|---|---|---|
+| 3497914248 | MacBook Air 13" M4, 512 GB, 800 € | Bestaetigt: eBay.de fuehrt ein M4 mit 16 GB / 512 GB fuer 747,71 €, gebrauchte Air-Modelle mit 512 GB liegen dort zwischen 490 und 1.089 €. Das Angebot liegt ueber dem unteren bestaetigten Wert, nicht darunter. |
+| 3498022082 | MacBook Pro 14" M1 Pro 16/512, 480 € | Gegen den heute Morgen bestaetigten unteren Gebrauchtwert (RefurbMe ab rund 590 € fuer "gut") bleiben keine 20 %. Zusaetzlich UK-Tastatur (wertmindernd in Deutschland) und ein Fremdnetzteil. |
+| 3497658076 | Gibson Les Paul Tribute, 750 € | Bestaetigt: drei Vergleichsanzeigen bei 900 € VB (Cherry Burst, Heidelberg), 900 € VB mit Koffer (Roethenbach) und 850 € VB. Abstand rund 15 %. |
+| 3497595266 | Gibson Les Paul Classic 2014, 1.450 € | Streuung 2,54, `belastbar: false`; das Gebrauchtniveau der Classic liegt bei 1.400-1.800 €. Zusaetzlich keine Abholung und Versand nur gegen Vorabueberweisung. |
+| 3497518788 | TAG Heuer Formula 1 Calibre 16, 1.250 € | Bestaetigt: eine CAZ2010.BA0876 in "sehr gut" steht auf Chrono24 bei rund 1.198 US-Dollar, die Spanne reicht bis 2.600. Mit Box und Papieren aus 2019 liegen 1.250 € auf Marktniveau. |
+| 3497560080 | LEGO 10243 Pariser Restaurant, 165 € | BrickLink-Schnitt der letzten sechs Monate fuer gebrauchte Sets: rund 201 €. Abstand 18 %, dazu 9,90 € Versand. |
+| 3497636580 | Steam Deck 512 GB LCD mit Dock, 400 € | LCD-Modell mit 512 GB liegt gebraucht bei 330-380 €, die Dockingstation bei rund 60 €. |
+| 3497500981 | MacBook Air 13" 2019, i5 / 8 / 128, 325 € | Intel-Geraet mit 128 GB, Gebrauchtniveau 250-400 €. |
+| 3497447678 | iPhone 13 mini 128 GB, 215 € | Ohne genannten Mangel, Konto seit 2015 mit Bewertung 1,00 - aber das mini liegt gebraucht bei 200-280 €, der Abstand bleibt unter 20 %. |
+| 3497941635 | Omlet Eglu Cube Huehnerstall, 350 € | Gebrauchtniveau mit automatischer Tuer 350-600 €; die Tuer funktionierte "beim letzten Gebrauch vor knapp einem Jahr". |
+
+## Zahlenwerk
+
+| Stufe | Anzahl |
+|---|---|
+| Gesichtet | 156.721 |
+| Modell-Match | 2.937 |
+| Vorfilter | 2.921 |
+| Preisschwelle | 133 |
+| Scoring | 90 |
+| Kandidaten in `candidates.json` (24-Stunden-Sammlung) | 123 |
+| Bereits in `deal_log.csv` | 0 |
+| Inhaltlich geprueft | 123 |
+| Gemeldet | 2 |
