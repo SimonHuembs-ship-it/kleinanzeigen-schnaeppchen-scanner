@@ -270,3 +270,198 @@ geprueft wurde.
 164. Ford Focus Turnier 1.6 TDCI, 2.200 EUR - referenz null und kein Modelljahr, keine Laufleistung in den Attributen. Ohne diese Angaben kein belastbarer Marktwert; 'Notverkauf' allein ist kein Beleg.
 165. Audi Q3 2.0 TDI S-line, 9.450 EUR - referenz null. Ohne Baujahr- und Laufleistungsabgleich gegen eine Fachquelle kein belastbarer Marktwert bestimmbar.
 166. VW Kaefer Brezel 1951, 48.000 EUR - Scheunenfund, zu 85 Prozent vollstaendig, Bodenblech und Endspitzen muessen geschweisst werden, Fahrzeug steht in der Schweiz. Ein unrestauriertes Restaurationsobjekt zu 48.000 EUR liegt am oberen Rand, nicht darunter; ein belastbarer Marktwert fuer genau diesen Zustand ist nicht zu belegen.
+
+---
+
+# Laufprotokoll 2026-08-30, Abendlauf
+
+**Lauf gestartet:** 30. August 2026, 19:03 Uhr (MESZ)
+**candidates.json bei Lauf-Beginn:** 2026-08-30T12:45:02+02:00, also 6 Stunden 18 Minuten alt
+und damit ueber der Vier-Stunden-Frist aus prompt.md Schritt 1.
+**Nicht abgebrochen, sondern gewartet:** Sammler-Lauf 149 war um 15:42 UTC noch in Arbeit
+(planmaessiger Cron-Takt 12:00 UTC, also 3 Stunden 42 Minuten verspaetet gestartet). Er hat um
+17:19 UTC committet. Geurteilt wurde auf einem 32 Sekunden alten Stand, gleiches Vorgehen wie
+am 28. und 29. August.
+**candidates.json final:** 2026-08-30T19:19:45+02:00
+**Zeitraum des Scans:** 2026-08-30T12:42:37+02:00 bis 2026-08-30T17:42:37+02:00
+**Gesichtet:** 187.759 Anzeigen im Fenster, Pool 185.283
+
+**Kandidaten in candidates.json:** 160 (davon 40 neu gegenueber dem 10:45-UTC-Stand)
+**Bereits in deal_log.csv:** 0
+**Inhaltlich geprueft:** 160, davon 34 einzeln recherchiert, priorisiert nach absoluter
+Ersparnis und nach Liquiditaet (Fahrzeuge, Uhren, Apple, Drohnen, Grafikkarten)
+**Gemeldete Funde:** 1
+
+## Funde
+
+| Anzeige | Titel | Preis | Bestaetigter Marktwert | Abstand |
+|---|---|---|---|---|
+| 3498539545 | MacBook Pro 14" (2023), M2 Pro, 16 GB | 700 € | 900–1.100 € privat, 1.349 € refurbished | 22–36 % |
+
+Belege fuer das Preisniveau: Kleinanzeigen-Angebote fuer MacBook Pro 14" M2 zwischen 980 und
+1.040 €; die letzten zehn eBay-Privatverkaeufe fuer 14" M2 Pro mit 512 GB zwischen 892,50 und
+2.000 €; konkretes eBay-Angebot (Artikel 197668196303) M2 Pro 32/512 in Zustand "gut" fuer
+1.200 €; mac-store24 refurbished 16/512 in Zustand A+ fuer 1.349 €. Selbst gegen den
+niedrigsten beobachteten Privatverkauf (892,50 €) liegen 700 € noch 21,5 Prozent darunter.
+
+Die Anzeige nennt Ladezyklen (192), maximale Akkukapazitaet (90 %), die macOS-Version und eine
+Macke an einer Ecke mit Fotoverweis — Angaben, die nur jemand macht, der das Geraet in der Hand
+hat. Konto seit 2021, Bewertung 1,0, Kaeuferschutz verfuegbar.
+
+## Verworfene Kandidaten mit Grund
+
+**Preis erklaert sich selbst (Defekt, Laufleistung, Zustand, wertmindernde Umbauten):**
+
+- 3498024384 Tesla Model 3, 12.500 €: 195.000 km, damit ist die Akkugarantiegrenze von
+  160.000 km fuer Model 3 Heckantrieb bereits ueberschritten. Kein Fund, sondern korrekt bepreist.
+- 3498292313 Tesla Model 3 RWD, 16.500 €: instandgesetzter Unfallschaden ohne jede Dokumentation,
+  USA-Import ohne Zugriff auf das Supercharger-Netz. Beides erklaert den Abschlag vollstaendig.
+- 3498089703 Ducati Monster 1200, 3.700 €: 58.142 km, kein Scheckheft, Zahnriemenwechsel faellig.
+  Vergleich AutoScout24: Baujahr 2014 mit 25.000 km fuer 5.000 €. Abschlag erklaert.
+- 3498200228 Ducati 900 SS I.E., 2.300 €: Blinkerrelais defekt, Batterie leer, laeuft nur mit
+  Starthilfe.
+- 3497827434 Mercedes 190 W201, 2.900 €: Roststellen, Klima und Schiebedach ohne Funktion,
+  Verkaeufer schreibt selbst "Verkauf an Bastler / Schrauber Export, keine Privatleute".
+- 3498461714 Mercedes 230 E W124, 2.650 €: 334.000 km, TUEV faellig, zwei Jahre abgemeldet,
+  "nur an Bastler und Gewerbetreibende".
+- 3497793950 BMW e36 320i Cabrio, 5.500 €: 226.000 km, "hier und da ein paar kleine Maengel".
+- 3498078643 Gibson Les Paul Artist 1979, 2.400 €: Halsrueckseite 2011 neu lackiert, starker
+  Spielabrieb an der Zarge. Nachlackierung senkt den Sammlerwert, der Verkaeufer preist das ein.
+- 3498070106 iPhone 15 Pro, 200 €: Display defekt.
+- 3498437050 iPhone 15 Pro Titanium, 270 €: kein Empfang.
+- 3498171424 und 3497843663 MacBook Air M3, 350/400 €: Wasserschaden, als Bastlergeraet angeboten.
+- 3497899313 Junghans Max Bill, 350 €: ueberdreht.
+- 3498112890 Contax T2, 599 €: Zustand als "Defekt" deklariert, Blitz vermutlich defekt. Eine T2
+  mit defektem Blitz ist kein guenstiger, sondern ein korrekt bepreister Klassiker.
+- 3497968152, 3498916270 DJI Mini 3 Pro: ausdruecklich als Bastlergeraet bzw. defekt angeboten.
+- 3498906413 Revox B225: als defekt deklariert.
+- 3498022082 MacBook Pro 14" M1 Pro, 480 €: UK-Tastatur QWERTY und Fremdhersteller-Netzteil
+  ("Replace PowerAdapter"). Die UK-Belegung druckt den deutschen Marktwert erheblich, der
+  Abschlag ist damit erklaert; dazu Versand ohne Abholoption und Konto ohne jede Bewertung.
+
+**Zahlung ausserhalb der Plattform oder Betrugsmuster im Text:**
+
+- 3498541724 Truma Aventa Compact, 745 €: "Versand (23.99) und PayPal FF bitte! Alles andere
+  funktioniert bei mir nicht." Ausdrueckliche Forderung nach PayPal Freunde-und-Familie, also
+  Zahlung ohne Kaeuferschutz.
+- 3498324593, 3498325314, 3498325430: derselbe Verkaeufer (ID 57895863, Hamburg Allermoehe) mit
+  drei Uhren gleichzeitig, davon zwei Anzeigen fuer eine "Tudor Prince Day-Date" mit Zeichen fuer
+  Zeichen identischem Text und identischem Preis von 1.799 €, eingestellt im Abstand von sieben
+  Sekunden. Zwei identische Anzeigen fuer dasselbe Einzelstueck koennen nicht beide zutreffen.
+  Dazu bietet der Verkaeufer "PayPal (Freunde oder Waren & Dienstleistungen)" an.
+- 3498247496 "NVIDIA GeForce RTX 3090 FE neu unbenutzt", 700 €: die Anzeige enthaelt gar kein
+  Angebot, sondern einen Warntext ueber Betrugsmaschen ("Ware gibt es nicht"). Kein Produkt.
+- 3498505483 Leica Summicron-R 50mm, 500 €: der Beschreibungstext enthaelt eine stehengebliebene
+  Vorlagen-Anweisung ("(Optional: Rueckdeckel / Originalverpackung ergaenzen, falls vorhanden)"),
+  also den Rest eines Textbausteins oder KI-Prompts. Preis liegt ohnehin auf Marktniveau.
+- 3498287586 Rolex GMT-Master II, 9.980 €: Versand ab 0,49 € fuer eine Uhr im fuenfstelligen
+  Bereich, keine Referenznummer, keine Box, keine Papiere, keine Abholoption, generischer Text
+  ohne einen einzigen Mangel. Das ist das Muster, vor dem prompt.md warnt: die Betrugsanzeige ist
+  handwerklich besser gemacht als das echte Schnaeppchen. Ausserdem kein Fund: bestaetigtes
+  Preisniveau der 116710LN liegt bei 11.000 bis 14.000 US-Dollar, rund 10.000 bis 12.700 Euro.
+- 3497847670 Mercedes W124 E200, 4.000 €: Konto am Tag der Anzeige angelegt (0 Tage alt), Text
+  liest sich wie erzeugt ("Auf Wunsch des Kaeufers wird der TUEV neu gemacht", "Wertanlage").
+
+**Referenzgruppe nicht vergleichbar (prompt.md Schritt 2a):**
+
+- 3498457596 CUBE E-Bike, 650 €: Median aus der Suche "CUBE Bike Bosch" mischt neue E-MTBs mit
+  einem Pedelec von 2016 mit Active-Line-Motor. 650 € sind fuer ein zehn Jahre altes E-Bike Markt.
+- 3498038510 Cube Touring Pro, 400 €: Median 1.500 € stammt ueberwiegend von der Hybrid-Variante
+  mit Motor, angeboten wird ein Trekkingrad ohne Antrieb.
+- 3498415724 Simson Star, 1.500 €: "ohne Motor". Der Median von 3.051 € gilt fuer komplette,
+  fahrbereite Mopeds. Trotz unkenntnis_bonus kein belastbarer Vergleich.
+- 3498774542 USM Haller Sideboard olivgruen, 450 €: es handelt sich laut Beschreibung um zwei
+  offene Faecher nebeneinander ohne Klappen oder Schuebe. Der Median von 1.560 € stammt von
+  Sideboards mit Klappen und Auszuegen. Fuer ein offenes Zwei-Fach-Element ist 450 € Marktniveau.
+- 3498791285 Vitra Eames Aluminium Chair Hopsak, 360 €: Median 794 € mischt die deutlich teureren
+  Lederausfuehrungen ein. Hopsak-Stoff ist die guenstigste Variante.
+- 3498143508 Longines Conquest Classic Damenuhr Quarz 29 mm, 580 €: Median 1.525 € enthaelt
+  Herren- und Automatikmodelle.
+- 3472207254 Tudor Black Bay Chronograph, 3.990 €: Median 7.220 € bei einem 25-Prozent-Quantil von
+  4.150 € — die Referenz ist in sich zerrissen. Marktniveau der 79360N liegt bei rund 3.500 bis
+  4.500 €, das Angebot liegt darin.
+- Saemtliche Kandidaten mit referenz.belastbar false oder streuung ueber 2,5 wurden nach
+  prompt.md Schritt 2a ohne Median behandelt: 3498228910, 3497865215, 3497658076, 3498421965,
+  3498310974, 3497809676, 3262286344, 2138062817, 3498259438, 3498252714, 3498112890, 3497839992,
+  3498108364, 3498299035, 3498058080, 3498287591, 2857960254, 3498211844, 3498310379, 3498219126,
+  3498144369, 3077740234, 3498294588, 3472868048, 3472867791, 3498007651, 3497944950, 3498525579,
+  3498007104, 3497856518, 3498346200, 3498039552, 3472367162, 3499160422, 3498871060, 3498797347,
+  3397648899, 3498737082, 3499066875, 3498779029, 3498820653, 3499130012, 3498973636.
+
+**Kein Zwanzig-Prozent-Abstand zum selbst bestaetigten Marktwert:**
+
+- 3499053414 Rolex Datejust 41 ungetragen Fullset, 9.550 €: Chrono24-Angebote fuer ungetragene
+  126300 liegen zwischen 7.999 und 12.500 €, typisch um 10.500 bis 11.075 €. 9.550 € liegen
+  innerhalb dieser Spanne.
+- 3498177847 IWC Aquatimer Chronograph Fullset, 2.950 €: Chrono24-Gebrauchtangebote fuer die
+  Stahlvariante ab 2.905 US-Dollar. Angebot liegt auf Marktniveau.
+- 3499139289 TAG Heuer Autavia COSC Fullset, 2.450 €: liegt unter dem 25-Prozent-Quantil der
+  Referenz von 2.490 € nur unwesentlich; Gebrauchtniveau der Autavia rund 1.900 bis 2.600 €.
+- 3497753991 Rolex Datejust Oysterquartz, 3.900 €: Marktniveau 3.500 bis 5.500 €, Angebot liegt
+  darin. Zusaetzlich Verkaeuferbewertung 0,50 und Verweis auf weitere Informationen "per DM".
+- 3497914311 Tudor Prince Date Hydronaut, 1.999 €: ohne Box und Papiere liegt das Marktniveau bei
+  1.400 bis 1.900 €, das Angebot also darueber.
+- 3497684455 TAG Heuer Carrera, 1.095 €: keine Referenznummer genannt, ohne Box und Papiere. Die
+  Carrera-Baureihe spannt 800 bis 3.000 €; ohne Referenz kein belastbarer Marktwert ermittelbar.
+- 3498143171 MacBook Pro 14" M4, 16/512, 1.200 €: refurbished bei MediaMarkt 1.672 €, privat
+  gebraucht rund 1.300 bis 1.450 €. Abstand rund 8 bis 17 Prozent, zu wenig.
+- 3497914248 MacBook Air 13" M4 512 GB, 800 €: kein belastbarer Gebrauchtwert mit zwei konkreten
+  Vergleichsangeboten zu ermitteln gewesen; gegen das geschaetzte Niveau von 950 bis 1.100 € waeren
+  es rund 16 bis 27 Prozent, das ist zu unsicher fuer eine Meldung.
+- 3498751694 MacBook Pro 14" M5, 16/512, 1.350 €: das Geraet ist fabrikneu ab 1.449 € zu haben
+  (Geizhals). Ein gebrauchtes Exemplar mit acht Ladezyklen 1.350 € ist rund 7 Prozent unter Neupreis.
+- 3498773355 MacBook Pro M1 Max 64 GB / 2 TB, 1.200 €: refurbished 16" M1 Max 64/2 TB liegt bei
+  rund 1.558 US-Dollar, also etwa 1.430 €. Abstand rund 16 Prozent. Ausserdem nennt das
+  Attributfeld "Intel Core i7" fuer eine M1-Max-Maschine, die Konfigurationsangabe ist also nicht
+  belastbar, womit sich ueberhaupt kein Marktwert festmachen laesst.
+- 3498466158 DJI Mini 5 Pro, 575 €: neu ab 638,99 € (Geizhals), Standardset mit RC-N3 rund 759 €.
+  Ein gebrauchtes Exemplar fuer 575 € liegt auf Marktniveau.
+- 3497658076 Gibson Les Paul Tribute, 750 €: das Modell ist ein plausibler Kandidat, aber es liess
+  sich nur ein einziger Vergleichswert finden (US-Haendler, 1.080 US-Dollar) und kein zweites
+  konkretes deutsches Angebot. Nach prompt.md Schritt 2a wird ohne bestaetigten Marktwert nicht
+  gemeldet. Der Kandidat ist inzwischen ohnehin aus dem 24-Stunden-Fenster gefallen.
+- 3497865215 Gibson Les Paul Studio Worn Brown, 749 €: gewerblicher Anbieter (City Music Bonn).
+  Ein Haendlerpreis ist der Marktpreis, nicht ein Abschlag darauf.
+- 3498974679 Gibson SG Standard Tribute, 890 €: Neupreis rund 1.199 €, Gebrauchtniveau 800 bis
+  950 €. Angebot liegt darin.
+
+**Youngtimer ohne belastbaren Zustandswert:**
+
+- 3498367485 Mercedes W124 300 CE-24 Automatik, 7.900 €: der Kandidat mit dem drittgroessten
+  absoluten Abstand und einer ehrlich knappen Anzeige ("Zustand dem Alter entsprechend", 13
+  Bilder, TUEV bis 09/2027). Er wird trotzdem nicht gemeldet, weil sich kein belastbarer
+  Zustand-3-Wert ermitteln liess: der Kilometerstand ist im Inserat mit 0 angegeben, also gar
+  nicht, und die Recherche liefert fuer fahrbereite C124-Coupes nur die sehr weite Spanne 10.000
+  bis 30.000 €. Erschwerend kommt hinzu, dass Handschalter 20 bis 40 Prozent ueber Automatik
+  liegen, dieses Fahrzeug also am unteren Rand der Spanne einzuordnen waere. Nach prompt.md wird
+  ein Marktwert nicht geschaetzt, sondern der fehlende Beleg festgehalten.
+- 3498504542 BMW 320i E30 Cabrio, 9.800 €: sehr ehrliche Anzeige mit offengelegten Maengeln
+  (Blasenbildung am hinteren Radlauf, Zentralverriegelung und Sitzheizung ohne Funktion, Verdeck
+  braucht Nachhilfe). Genau diese Maengel druecken den Wagen in Zustand 3 bis 4, wo 9.800 € kein
+  Abschlag von 20 Prozent mehr sind. Kein belastbarer classic-analytics-Wert auffindbar.
+- 3498830887 W124 300E (5.000 €), 3498783625 und 3498761139 W126 300 SE (5.000 / 7.350 €),
+  3499082179 BMW 316i E30 Touring (2.500 €), 3498766019 BMW e36 320i (4.999 €): gleiche Lage,
+  bei Fahrzeugen dieser Preisklasse entscheidet der Rost- und TUEV-Zustand ueber den Wert, und der
+  ist aus der Anzeige nicht zu belegen.
+- 3498221364 Leica M4 mit Elmar, 1.600 €: `referenz` ist null, und die Anzeige nennt nicht,
+  welches Elmar beiliegt (50/2.8, 50/3.5 versenkbar oder 90/4 unterscheiden sich im Wert um
+  mehrere hundert Euro). Damit ist kein Marktwert des Konvoluts bestimmbar. Zusaetzlich
+  Verkaeuferbewertung 0,20.
+- 3498290865, 3498319875, 3498297957, 3498331917, 3499095563, 3498871060: Notverkaeufe und
+  Haushaltsaufloesungen ohne Referenzwert; Konvolute ohne bestimmbaren Einzelwert.
+
+**Rest:** die uebrigen Kandidaten, ueberwiegend iPhones der Generationen 12 bis 16, Simson-Mopeds,
+Cube- und Specialized-Raeder, USM-Haller-Einzelteile und Lego-Sets, liegen samt und sonders bei
+einem p_ratio zwischen 0,45 und 0,72 gegenueber Medianen, die dem tatsaechlichen Gebrauchtniveau
+entsprechen. Keiner erreicht nach eigener Pruefung 20 Prozent Abstand.
+
+## Befund zur Taktung
+
+Der Cron-Takt von scan.yml (`0 */4 * * *`) hat auch heute nicht gehalten: der 12:00-UTC-Lauf
+wurde von GitHub erst um 15:42 UTC angelegt, 3 Stunden 42 Minuten zu spaet, und lief dann 97
+Minuten. Damit war der frischeste Stand zum Zeitpunkt des Abendlaufs 6 Stunden 18 Minuten alt.
+Das ist derselbe Befund wie am 27., 28. und 29. August. Die Empfehlung aus dem Abendlauf vom
+29. August steht unveraendert: entweder den Cron auf 05:00 und 17:00 UTC legen, sodass der
+Sammler garantiert vor 07:00 und 19:00 MESZ fertig ist, oder die Frist in prompt.md von vier auf
+sechs Stunden anheben, wie sie der Aufruftext der Routine ohnehin nennt. Ohne eine der beiden
+Aenderungen muss jeder Lauf entweder abbrechen oder wie heute auf den Sammler warten.
