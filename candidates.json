@@ -1,25 +1,23 @@
 {
-  "generiert": "2026-08-31T01:04:34+02:00",
+  "generiert": "2026-08-31T04:35:09+02:00",
   "zeitraum": {
-    "von": "2026-08-30T19:13:51+02:00",
-    "bis": "2026-08-31T00:13:51+02:00"
+    "von": "2026-08-30T23:20:07+02:00",
+    "bis": "2026-08-31T04:20:07+02:00"
   },
   "statistik": {
-    "gesichtet": 120582,
-    "nach_modellmatch": 838,
-    "nach_vorfilter": 833,
-    "nach_preisschwelle": 63,
-    "nach_scoring": 45,
+    "gesichtet": 24382,
+    "nach_modellmatch": 134,
+    "nach_vorfilter": 134,
+    "nach_preisschwelle": 15,
+    "nach_scoring": 7,
     "ausschluesse": {
-      "score_zu_niedrig": 15,
-      "preis_unplausibel": 3
+      "score_zu_niedrig": 8
     },
-    "pool": 118104,
-    "ohne_referenz_verworfen": 329,
-    "referenz_gekappt": 200,
+    "pool": 21908,
+    "ohne_referenz_verworfen": 53,
     "doppelt_zusammengefasst": 0,
-    "requests": 2203,
-    "laufzeit_sekunden": 3043
+    "requests": 649,
+    "laufzeit_sekunden": 902
   },
   "kandidaten": [
     {
@@ -1547,6 +1545,67 @@
       }
     },
     {
+      "id": "3499515419",
+      "watchlist_id": "ebike-rad",
+      "titel": "Riese & Müller UBN Five touring – E-Bike, super Zustand!",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/riese-mueller-ubn-five-touring-e-bike-super-zustand-/3499515419-217-1275",
+      "preis": 1700.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 3499.0,
+        "p25": 2928.0,
+        "n": 95,
+        "query": "Riese Müller UBN",
+        "korrektur": 0.0,
+        "streuung": 1.37,
+        "belastbar": true
+      },
+      "p_ratio": 0.486,
+      "ersparnis_eur": 1799.0,
+      "ort": "Schieder-Schwalenberg",
+      "plz": "32816",
+      "eingestellt": "2026-08-31T00:59:09+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c1/c15a41ff-7fc7-4b86-86c2-75f232f2f5db?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c5/c51e1593-923d-45c3-93f3-df9bb4b3edcb?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f1358af8-511f-4bf2-ba4c-9058e8dcde05?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/27/27819852-a3a3-4fb7-ba5b-6db6926f3f4d?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hochwertiges Riese & Müller UBN Five touring in sehr gepflegtem Zustand abzugeben.<br /><br />Wer ein leichtes, sportliches und zugleich komfortables E-Bike sucht, ist mit dem UBN Five touring bestens ausgestattet. Das Rad verbindet die hochwertige Verarbeitung von Riese & Müller mit einem modernen, minimalistischen Design und einem kraftvollen Fazua-Antrieb.<br /><br />Ausstattung & Highlights:<br /><br />Marke: Riese & Müller<br />Modell: UBN Five touring<br />E-Bike &#x2F; Pedelec<br />Fazua Ride 60 Antrieb<br />60 Nm Drehmoment<br />Akku: (430&#x2F;480 Wh)<br />Schaltung: Shimano Deore (11-Gang)<br />Rahmengröße: (57 cm)<br />Farbe: (Selva)<br />Laufleistung: (ca. 2.000 Km)<br />Baujahr: (2023)<br /><br />Zustand:<br />Das Fahrrad befindet sich in sehr guten Zustand und technisch funktioniert alles einwandfrei.<br /><br />Zubehör:<br />(Ladegerät, Schlüssel, Gepäckträger)<br /><br />Das Bike kann nach vorheriger Absprache gerne besichtigt und Probe gefahren werden.<br /><br />Privatverkauf. Keine Rücknahme oder Garantie.<br /><br />Bei Fragen gerne melden.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Elektrofahrräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "147580829",
+        "name": "radstar96",
+        "typ": "PRIVATE",
+        "konto_seit": "2025-01-07",
+        "konto_alter_tage": 600,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 94,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "7 Bilder",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3498541724",
       "watchlist_id": "camper-marine",
       "titel": "Truma Aventa Compact 2. Generation Dachklimaanlage  (NEU)",
@@ -2327,75 +2386,6 @@
         ],
         "rot": [
           "Konto juenger als 6 Monate"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3498324593",
-      "watchlist_id": "uhren",
-      "titel": "Vintage Tudor Prince herrenuhr Linen / mosaic dial swiss made",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/vintage-tudor-prince-herrenuhr-linen-mosaic-dial-swiss-made/3498324593-157-9517",
-      "preis": 1200.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 2350.0,
-        "p25": 1650.0,
-        "n": 9,
-        "query": "Vintage Tudor Prince",
-        "korrektur": 0.0,
-        "streuung": 1.67,
-        "belastbar": true
-      },
-      "p_ratio": 0.511,
-      "ersparnis_eur": 1150.0,
-      "ort": "Hamburg Allermöhe ",
-      "plz": "21035",
-      "eingestellt": "2026-08-30T01:20:58+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bf/bf0909d0-4555-4243-a723-d95f0d966ffa?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/08/084cd960-f907-42b2-81a9-b940390a7e9c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/52/52e39e65-6bcb-4111-90cf-bd9f5bea8a62?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a4/a49a314b-2904-498e-99f3-c3c9c6cf4303?rule=$_0.JPG"
-      ],
-      "beschreibung": "Privatverkauf aus meiner Sammlung<br /><br />Zum Verkauf steht eine Vintage Tudor mit Linen Dial &#x2F; Mosaic Dial und Rolex-Krone.<br /><br />Die Uhr befindet sich in sehr gutem Zustand und ist aufgrund ihres Charakters und der seltenen Zifferblattvariante besonders interessant für Sammler und Liebhaber von Vintage-Uhren.<br /><br />Die Uhr wurde nur sehr selten getragen und lag überwiegend in meiner Vitrine als Teil meiner privaten Sammlung. Entsprechend befindet sie sich in einem sehr gepflegten Zustand.<br /><br />Die Uhr wird an einem Lederarmband verkauft, ohne Stahlarmband.<br /><br />Bitte machen Sie sich anhand der Fotos selbst ein genaues Bild vom Zustand. Die Bilder sind Bestandteil der Beschreibung und zeigen den tatsächlichen Zustand der Uhr.<br /><br />Lieferumfang:<br /><br />* Tudor Vintage Uhr<br />* Lederarmband<br /><br />Es handelt sich ausschließlich um die Uhr. Box, Papiere und weiteres Zubehör sind nicht vorhanden.<br /><br />Der Versand erfolgt sorgfältig verpackt und versichert, vorzugsweise mit DHL.<br /><br />Eine persönliche Abholung ist selbstverständlich ebenfalls möglich. Bitte stimmen Sie den Termin vorab mit mir ab.<br /><br />Zahlungsmöglichkeiten:<br /><br />* Banküberweisung<br />* PayPal (Freunde oder Waren & Dienstleistungen)<br /><br />Der Preis ist fest und nicht verhandelbar. Bitte keine unrealistischen Preisangebote.<br /><br />Bei weiteren Fragen können Sie mich jederzeit gerne kontaktieren.<br /><br />Werfen Sie gerne auch einen Bl",
-      "attribute": {
-        "Art": "Uhren",
-        "Versand": "ab 6,19",
-        "Zustand": "Sehr Gut",
-        "Material": "Stahl"
-      },
-      "verkaeufer": {
-        "id": "57895863",
-        "name": "Tomasz",
-        "typ": "PRIVATE",
-        "konto_seit": "2018-08-30",
-        "konto_alter_tage": 2921,
-        "bewertung": 0.8245614035087719,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 90,
-      "signale": {
-        "gruen": [
-          "Konto seit 2018",
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "10 Bilder"
-        ],
-        "rot": [
-          "Bewertung 0.82",
-          "Gewerbetext auf Privatprofil"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -3936,71 +3926,6 @@
         ],
         "rot": [
           "Preis nur 40% des Marktwerts"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3498320057",
-      "watchlist_id": "motorraeder",
-      "titel": "Simson S51 Rahmen BJ 1983",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/simson-s51-rahmen-bj-1983/3498320057-306-4188",
-      "preis": 950.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 1611.0,
-        "p25": 1690.0,
-        "n": 9,
-        "query": "Simson Rahmen S51 1983",
-        "korrektur": 0.1,
-        "streuung": 1.18,
-        "belastbar": true
-      },
-      "p_ratio": 0.59,
-      "ersparnis_eur": 661.0,
-      "ort": "Torgau",
-      "plz": "04860",
-      "eingestellt": "2026-08-30T00:39:52+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/92/922472b0-b033-4cd9-a417-b6d4144c09de?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/33/3379612b-b89a-4f65-a21c-56d4d7036f65?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c2/c2a2eccb-19a6-4b1d-86c9-411637f86b68?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bc/bcfbd22c-2441-4147-a9bc-cb2377d55c7c?rule=$_0.JPG"
-      ],
-      "beschreibung": "Verkaufe hier diesen S51 Rahmen wie zusehen. Er ist gerade also nix verzogen. Der Lenkeranschlag ist auch noch in super Zustand nix weggeplatzt.<br /><br />Insgesamt ist er in Top Zustand für einen originalen Rahmen. Er könnte mal neu lackiert werden da die alte Lackierung nicht mehr die beste ist.<br /><br />Herzkasten kann ich auch noch dazugeben wenn Interesse besteht.<br /><br />Bevorzuge Abholung, Versand wär allerdings trotzdem machbar<br /><br />Bei Fragen gerne melden<br /><br />Der Verkauf erfolgt unter Ausschluss jeglicher Sachmöngelhaftung",
-      "attribute": {
-        "Art": "Ersatz- & Reparaturteile",
-        "Versand": "ab 10,49"
-      },
-      "verkaeufer": {
-        "id": "158233703",
-        "name": "privat",
-        "typ": "PRIVATE",
-        "konto_seit": "2025-12-05",
-        "konto_alter_tage": 267,
-        "bewertung": 0.6818181818181818,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 75,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "7 Bilder"
-        ],
-        "rot": [
-          "Bewertung 0.68"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -5729,6 +5654,72 @@
         "rot": [
           "Konto juenger als 6 Monate"
         ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3499511432",
+      "watchlist_id": "ebike-rad",
+      "titel": "E-Bike/Pedelec Trekkingrad 28\"",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/e-bike-pedelec-trekkingrad-28-/3499511432-217-7481",
+      "preis": 440.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 875.0,
+        "p25": 650.0,
+        "n": 12,
+        "query": "Bike Pedelec Trekkingrad 28",
+        "korrektur": 0.0,
+        "streuung": 3.38,
+        "belastbar": false
+      },
+      "p_ratio": 0.503,
+      "ersparnis_eur": 435.0,
+      "ort": "Passau",
+      "plz": "94034",
+      "eingestellt": "2026-08-31T00:23:22+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/43/430e9c92-0777-4c20-b29e-e80bb4706fa9?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e9/e9c1279b-6ecf-456f-b986-89b0942231d2?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/35/3594636b-d274-4a74-9430-813e93ec0cd5?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe476e72-6818-4f09-b0ea-36e019fbd662?rule=$_0.JPG"
+      ],
+      "beschreibung": "28 Zoll Herren-Trekkingrad, Stahlrahmen, 21-Gang-Schaltung, elektrischer Hilfsantrieb mit Hinterradnabenmotor und 36V-13Ah-Akku.<br />Kostengünstiger und zuverlässiger Einstieg in die E-Bike-Welt.<br />Das Fahrrad ist kaum schwerer als ein konventionelles Fahrrad. Der E-Antrieb hilft massiv beim Anfahren und an Steigungen, aber auch ohne Unterstützung fahrt sich das Fahrrad sehr leicht.<br />Reifen aufpumpen und los geht&#x27;s!<br />Abzuholen in Passau-Grubweg.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Elektrofahrräder",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "21657905",
+        "name": "Andreas Dobler",
+        "typ": "PRIVATE",
+        "konto_seit": "2014-06-09",
+        "konto_alter_tage": 4465,
+        "bewertung": 0.9333333333333333,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2014",
+          "Bewertung 0.93, zuverlaessig",
+          "Abholung moeglich",
+          "6 Bilder"
+        ],
+        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -8088,6 +8079,70 @@
       }
     },
     {
+      "id": "3499512975",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 15 – 128 GB black",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-128-gb-black/3499512975-173-19496",
+      "preis": 219.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 442.0,
+        "p25": 390.0,
+        "n": 80,
+        "query": "iPhone GB black 15 128",
+        "korrektur": 0.0,
+        "streuung": 1.28,
+        "belastbar": true
+      },
+      "p_ratio": 0.495,
+      "ersparnis_eur": 223.0,
+      "ort": "Hamburg Osdorf",
+      "plz": "22549",
+      "eingestellt": "2026-08-31T00:35:49+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6d/6de37d8a-ca81-4a3e-af51-26a3f2397c9f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/82/829ff8c9-9be9-4be0-9309-6050aa00b4f2?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0d/0dbde47a-7d9c-45a8-b88e-e872713e6add?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ef/ef73dc04-322f-4021-a865-2b4eebc74d54?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe mein iPhone 15 mit 128 GB Speicher. Perfekt für alle, die ein günstiges iPhone 15 suchen, selbst reparieren können oder Ersatzteile brauchen!<br /><br />Highlights & Zustand:<br /><br />• Display & Kamera: Das Display und die echten Kameralinsen sind voll funktionsfähig und NICHT beschädigt (siehe Fotos)!<br />• Gratis Zubehör: Ladekabel und Schutzhülle sind kostenlos dabe.<br />• Mängel: Das Glas der Rückseite und die Glasumrandung der Kamera haben Sprünge.<br />• Akku: Maximale Kapazität liegt bei 73%.<br />• SIM-Lock: Das Gerät hat einen SIM-Lock (bitte beachten).<br /><br />Abholung oder Versand!<br /><br />Privatverkauf: Keine Garantie, Gewährleistung oder Rücknahme.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,49",
+        "Farbe": "Schwarz",
+        "Gerät & Zubehör": "Zubehör",
+        "Zustand": "In Ordnung"
+      },
+      "verkaeufer": {
+        "id": "157990554",
+        "name": "Nitta",
+        "typ": "PRIVATE",
+        "konto_seit": "2025-11-27",
+        "konto_alter_tage": 276,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 88,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "5 Bilder"
+        ],
+        "rot": [
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3499408531",
       "watchlist_id": "vintage-hifi",
       "titel": "Thorens TD-160 B MK II - Laufwerk",
@@ -8339,6 +8394,71 @@
           "Abholung moeglich",
           "Kaeuferschutz verfuegbar",
           "6 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3499516286",
+      "watchlist_id": "apple-mobil",
+      "titel": "iphone 14 256GB",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-256gb/3499516286-173-15355",
+      "preis": 180.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 390.0,
+        "p25": 320.0,
+        "n": 33,
+        "query": "iphone 14 256GB",
+        "korrektur": 0.0,
+        "streuung": 1.62,
+        "belastbar": true
+      },
+      "p_ratio": 0.462,
+      "ersparnis_eur": 210.0,
+      "ort": "Mayen",
+      "plz": "56727",
+      "eingestellt": "2026-08-31T01:09:00+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/97/977bccdb-ad91-4cbb-8f29-17fe70b9ce00?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/03/037c8163-0c58-422f-bd72-251bd6830134?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/90/90523cf0-cb62-4a8d-a3a6-d8a2343fc37f?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich biete mein iphone 14 in Mitternacht blau.<br />Das Handy funktioniert einwandfrei, hat jedoch hinten an der Abdeckung sichtbare Gebrauschsschäden.<br /><br />Die Akku Kapazität beträgt 75%",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,49",
+        "Farbe": "Andere Farben",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "In Ordnung"
+      },
+      "verkaeufer": {
+        "id": "73269147",
+        "name": "Ergentin",
+        "typ": "PRIVATE",
+        "konto_seit": "2020-03-23",
+        "konto_alter_tage": 2351,
+        "bewertung": 0.95,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 95,
+      "signale": {
+        "gruen": [
+          "Konto seit 2020",
+          "Bewertung 0.95, zuverlaessig",
+          "Kaeuferschutz verfuegbar"
         ],
         "rot": [],
         "unkenntnis_bonus": false,
@@ -8736,71 +8856,6 @@
         "rot": [
           "Bewertung 0.33"
         ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3498329262",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 15 128GB 87%",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-128gb-87-/3498329262-173-2130",
-      "preis": 350.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 537.0,
-        "p25": 349.0,
-        "n": 8,
-        "query": "iPhone 15 128GB 87%",
-        "korrektur": 0.0,
-        "streuung": 1.63,
-        "belastbar": true
-      },
-      "p_ratio": 0.652,
-      "ersparnis_eur": 187.0,
-      "ort": "Moers",
-      "plz": "47447",
-      "eingestellt": "2026-08-30T02:32:51+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/59/59201ba7-7daf-4b7e-ba53-f7a858492f0f?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/63/63a8e9c4-d6eb-4bac-9618-9c8a7d0b202e?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e6/e656c8fa-e353-4b0a-ad7d-1b368944ca7c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/41/4194f830-2313-4576-9676-a9e6795e1f3e?rule=$_0.JPG"
-      ],
-      "beschreibung": "Bitte alles den Bildern entnehmen Gerät funktioniert einwandfrei mit Gebrauchsspuren im Original Zustand leider keine OVP mehr vorhanden.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Pink",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "159205465",
-        "name": "Max Mustermann",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-01-10",
-        "konto_alter_tage": 232,
-        "bewertung": 1.0,
-        "abzeichen": {
-          "rating": 2,
-          "reliability": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 95,
-      "signale": {
-        "gruen": [
-          "Kaeuferschutz verfuegbar",
-          "5 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -9851,6 +9906,139 @@
       }
     },
     {
+      "id": "3499520524",
+      "watchlist_id": "apple-mobil",
+      "titel": "Apple iPhone 14 - 128GB - Schwarz - Mit OVP",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-14-128gb-schwarz-mit-ovp/3499520524-173-4688",
+      "preis": 210.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 350.0,
+        "p25": 299.0,
+        "n": 22,
+        "query": "Apple iPhone Schwarz 14 128GB",
+        "korrektur": 0.0,
+        "streuung": 1.32,
+        "belastbar": true
+      },
+      "p_ratio": 0.6,
+      "ersparnis_eur": 140.0,
+      "ort": "Nidda",
+      "plz": "63667",
+      "eingestellt": "2026-08-31T02:22:29+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ab/ab4890f6-1bdf-4be1-9992-b32c34ce4ea2?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/42/4220e3cf-064a-4673-89fb-b9804aab08a6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/25/259706e4-3bd5-4edf-b9dd-b101ca380bd6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3c/3c476cf4-48e6-47dc-8d92-66762c9bc6bf?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein Apple iPhone 14 in der Farbe Schwarz mit 128GB Speicherplatz. Das Gerät wird inklusive der originalen Verpackung abgegeben.<br /><br />- Modell: Apple iPhone 14<br />- Speicherkapazität: 128GB<br />- Farbe: Schwarz &#x2F; Black<br />- Akkukapazität: 88%<br />- Inklusive Originalkarton<br /><br />Das Smartphone weist sichtbare Gebrauchsspuren auf, wie auf den Bildern zu erkennen ist. Die Akkukapazität liegt aktuell bei 88 Prozent. Es ist ein zuverlässiger Begleiter für den Alltag.<br /><br />Schreib mir gerne, falls du noch Fragen hast.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "Nur Abholung",
+        "Farbe": "Schwarz",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "166078782",
+        "name": "privat",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-08-31",
+        "konto_alter_tage": 0,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 67,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "7 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Konto juenger als 3 Tage"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3499520451",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 13 125 gb",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-13-125-gb/3499520451-173-1980",
+      "preis": 160.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 299.5,
+        "p25": 250.0,
+        "n": 8,
+        "query": "iPhone gb 13 125",
+        "korrektur": 0.0,
+        "streuung": 1.32,
+        "belastbar": true
+      },
+      "p_ratio": 0.534,
+      "ersparnis_eur": 139.5,
+      "ort": "Krefeld",
+      "plz": "47807",
+      "eingestellt": "2026-08-31T02:19:35+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f5/f5bcf429-a0b9-463f-acfe-eaac30972712?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/70/70c1dfe7-83eb-47df-87b0-ab93a0cb0028?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8c/8c1a4522-c39a-4acd-b295-3151f8749870?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe905a7c-a59d-472c-a5db-dccc04f1c20c?rule=$_0.JPG"
+      ],
+      "beschreibung": "Funktioniert alles ist im guten Zustand nur paar Gebrauchsspuren",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,49",
+        "Farbe": "Blau",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "In Ordnung"
+      },
+      "verkaeufer": {
+        "id": "6878401",
+        "name": "privat",
+        "typ": "PRIVATE",
+        "konto_seit": "2011-08-11",
+        "konto_alter_tage": 5499,
+        "bewertung": 0.8,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 97,
+      "signale": {
+        "gruen": [
+          "Konto seit 2011",
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.80"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3459962568",
       "watchlist_id": "apple-mobil",
       "titel": "Apple iPhone 15 128 GB Blau – Top Zustand – Ohne Kratzer",
@@ -10313,6 +10501,73 @@
       }
     },
     {
+      "id": "3499523937",
+      "watchlist_id": "apple-mobil",
+      "titel": "Apple iPhone 14 in Blau",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-14-in-blau/3499523937-173-13766",
+      "preis": 200.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 317.0,
+        "p25": 275.0,
+        "n": 40,
+        "query": "Apple iPhone Blau 14",
+        "korrektur": 0.0,
+        "streuung": 1.31,
+        "belastbar": true
+      },
+      "p_ratio": 0.631,
+      "ersparnis_eur": 117.0,
+      "ort": "Eisleben",
+      "plz": "06295",
+      "eingestellt": "2026-08-31T04:17:01+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9e/9ecd79b4-b695-421d-8e8b-a8f1e1106621?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/38/3895beaa-84be-44c9-a98b-b1b47e0dbeb8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d5/d5fe0dd2-88f2-4d3c-a333-290e1afec135?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/96/960f43d0-79d6-409f-98ce-fd069ab1594e?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein blaues iPhone 14. Es handelt sich um ein zuverlässiges Smartphone, das sich optisch in einem sehr gepflegten Zustand befindet.<br /><br />- Modell: iPhone 14<br />- Farbe: Blau<br />- Dual-Kamerasystem auf der Rückseite<br />- Glänzende Glasrückseite mit Apple-Logo<br /><br />Das Gerät wurde stets pfleglich behandelt und weist keine auffälligen Kratzer oder Beschädigungen auf. Es liegt durch das abgerundete Design angenehm in der Hand.<br /><br />Schreib mir gerne, falls du noch weitere Informationen benötigst.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,49",
+        "Farbe": "Blau",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "163942290",
+        "name": "Krg.San",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-06-20",
+        "konto_alter_tage": 71,
+        "bewertung": 0.36363636363636365,
+        "abzeichen": {
+          "rating": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 62,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar",
+          "7 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate",
+          "Bewertung 0.36"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3499479586",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 14 zu verkaufen",
@@ -10509,76 +10764,6 @@
       }
     },
     {
-      "id": "3498330393",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 12 Pro 256gb Silber / Weiß",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-12-pro-256gb-silber-weiss/3498330393-173-648",
-      "preis": 190.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 280.0,
-        "p25": 190.0,
-        "n": 25,
-        "query": "iPhone Pro Silber 12 256gb",
-        "korrektur": 0.0,
-        "streuung": 1.84,
-        "belastbar": true
-      },
-      "p_ratio": 0.679,
-      "ersparnis_eur": 90.0,
-      "ort": "Neumünster",
-      "plz": "24539",
-      "eingestellt": "2026-08-30T02:59:35+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c2/c285a735-7a49-4a61-ab11-7d184f9b00b4?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bd/bdb7b236-fa52-4374-878c-8adc91b0f11b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7e/7e897493-8bcb-48d4-a86b-b7f5f9e0563d?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/66/666d9377-4744-4fe9-af16-16e430dab8ef?rule=$_0.JPG"
-      ],
-      "beschreibung": "iPhone 12 Pro in Weiß &#x2F; Silber mit 256gb und 77% Batteriezustand<br /><br />Eine Hülle gibt es mit dazu.<br /><br />Das Gerät ist in einem super Zustand. Es hat paar Gebrauchsspuren und funktioniert einwandfrei.<br /><br />Bei Fragen gerne schreiben<br /><br />Versand möglich, Abholung bevorzugt.<br /><br />PayPal möglich",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Weiß",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "137459702",
-        "name": "Efe",
-        "typ": "PRIVATE",
-        "konto_seit": "2024-01-25",
-        "konto_alter_tage": 947,
-        "bewertung": 0.7884615384615384,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2024",
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "4 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.79"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3499496072",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 13 - 128 GB in gutem Zustand",
@@ -10648,68 +10833,6 @@
       }
     },
     {
-      "id": "3498318403",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 13 mini",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-13-mini/3498318403-173-1359",
-      "preis": 150.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 230.0,
-        "p25": 200.0,
-        "n": 69,
-        "query": "iPhone mini 13",
-        "korrektur": 0.0,
-        "streuung": 1.4,
-        "belastbar": true
-      },
-      "p_ratio": 0.652,
-      "ersparnis_eur": 80.0,
-      "ort": "Marsberg",
-      "plz": "34431",
-      "eingestellt": "2026-08-30T00:28:34+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3f/3fbdaa80-11d6-4c3d-b0b4-7195b32aae38?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a4/a477c9af-3c11-4cc8-aa9c-d0a02bfbef8f?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/49/49ee6842-dce3-496d-8905-977907d84279?rule=$_0.JPG"
-      ],
-      "beschreibung": "Das Handy funktioniert einwandfrei. Es wurde nie ohne Hülle oder Panzerfolie genutzt. Dementsprechend hat es keine Gebrauchsspuren.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,49",
-        "Farbe": "Roségold",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "161580447",
-        "name": "Linus",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-03-31",
-        "konto_alter_tage": 151,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 75,
-      "signale": {
-        "gruen": [
-          "Kaeuferschutz verfuegbar",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Konto juenger als 6 Monate"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3499483874",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 12 Pro 128 GB",
@@ -10768,130 +10891,6 @@
           "Maengel offengelegt"
         ],
         "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3498319875",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Ford Focus Turnier 1,6 TDCI sehr gepflegt Notverkauf",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/ford-focus-turnier-1-6-tdci-sehr-gepflegt-notverkauf/3498319875-216-5382",
-      "preis": 2200.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Ludwigshafen",
-      "plz": "67059",
-      "eingestellt": "2026-08-30T00:38:32+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ba/baef3fd5-85bb-430c-bb5a-910cfb7a5902?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ada43458-7a4e-44b8-943b-6e15aa96ab28?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/70/7086851d-0122-4f0b-b2b8-de64fc20e324?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7a/7ad3e8cd-2198-4395-99eb-348288f5bcbc?rule=$_0.JPG"
-      ],
-      "beschreibung": "Kurzfristig wird das Fahrzeug günstig als Notverkauf angeboten. Bitte nur ernst gemeinte Anfragen.<br /><br />Zum Verkauf steht ein Ford Focus Turnier 1.6 TDCi Diesel in Silber&#x2F;Grau.<br /><br />Das Fahrzeug befand sich rund 10 Jahre im Besitz eines unserer Angestellten und wurde in dieser Zeit regelmäßig gefahren, gepflegt und gewartet. Das Fahrzeug ist scheckheftgepflegt, die Wartungen wurden regelmäßig durchgeführt.<br /><br />Besonders hervorzuheben ist der sehr saubere und gepflegte Innenraum. Sitze, Armaturen, Verkleidungen und Kofferraum befinden sich für das Alter und die Laufleistung in einem wirklich guten und ordentlichen Zustand. Die Bilder zeigen den aktuellen Zustand des Fahrzeugs.<br /><br />Fahrzeugdaten & Ausstattung<br /><br />* Erstzulassung: 12&#x2F;2007<br />* Kilometerstand: ca. 240.000 km<br />* Motor: 1.6 TDCi Diesel<br />* Leistung: 80 kW &#x2F; 109 PS<br />* Getriebe: Schaltgetriebe<br />* TÜV&#x2F;HU: gültig bis 12&#x2F;2026<br />* Scheckheftgepflegt<br />* Klimaanlage<br />* Tempomat<br />* Multifunktionslenkrad<br />* Elektrische Fensterheber<br />* Radio&#x2F;CD<br />* Alufelgen<br />* Großer und praktischer Kombi-Kofferraum<br /><br />Bereits erneuert &#x2F; investiert<br /><br />Am Fahrzeug wurden bereits wichtige und teilweise kostenintensive Arbeiten durchgeführt:<br /><br />✓ Injektoren erneuert<br />✓ Zahnriemen gewechselt<br />✓ Wasserpumpe gewechselt<br />✓ Scheckheftgepflegt<br />✓ Wartungen regelmäßig durchgeführt<br /><br />⚠️ Beka",
-      "attribute": {
-        "Marke": "Ford",
-        "Modell": "Focus",
-        "Kilometerstand": "240.000",
-        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
-        "Erstzulassung": "Dezember 2007",
-        "Kraftstoffart": "Diesel",
-        "Getriebe": "Manuell",
-        "Fahrzeugtyp": "Kombi",
-        "HU bis": "Dezember 2026",
-        "Umweltplakette": "4 (Grün)",
-        "Außenfarbe": "Silber",
-        "Material Innenausstattung": "Stoff",
-        "Klimaanlage": "true",
-        "Radio/Tuner": "true",
-        "Scheckheftgepflegt": "true"
-      },
-      "verkaeufer": {
-        "id": "163412766",
-        "name": "Rohat Nayir",
-        "typ": "COMMERCIAL",
-        "konto_seit": "2026-06-01",
-        "konto_alter_tage": 89,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 86,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "11 Bilder",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Konto juenger als 6 Monate"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3498331917",
-      "watchlist_id": "notverkaeufe",
-      "titel": "VW Typ 1 Käfer Brezel Faltdach Scheunenfund",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/vw-typ-1-kaefer-brezel-faltdach-scheunenfund/3498331917-216-9397",
-      "preis": 48000.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Singen",
-      "plz": "78224",
-      "eingestellt": "2026-08-30T04:00:02+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6a/6a5fc6d1-912b-4d0e-bc09-fbed7be35a58?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4d/4d0b5825-78d5-4242-a41b-678f7de1a2bf?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ec/ec8aaf7d-4b04-4f7f-8dc3-7b09ead4d177?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ec/eca8a794-489a-4642-b353-5bf9837f3088?rule=$_0.JPG"
-      ],
-      "beschreibung": "VW Käfer Brezel 1951 – sehr selten – Matching Numbers – originales Faltdach<br /><br />Zum Verkauf steht mein sehr seltener VW Brezelkäfer aus dem Jahr 1951 mit originalem Faltdach.<br /><br />Der Wagen befindet sich in einem sehr guten und trockenen Restaurationszustand und bietet eine hervorragende Basis für eine hochwertige, originalgetreue Restauration. Das Fahrzeug stand rund 50 Jahre in einer trockenen Scheune.<br /><br />Zustand &#x2F; Arbeiten:<br />Das rechte Bodenblech sowie die Endspitzen müssen geschweisst werden. Ansonsten ist die Karosserie erfreulich trocken und in sehr gutem Zustand für das Alter.<br /><br />Das Fahrzeug ist zu ca. 85 % vollständig, die entsprechenden Teile sind vorhanden. Besonders erwähnenswert ist das komplett originale Interieur, welches ebenfalls vorhanden ist.<br /><br />Matching Numbers!<br /><br />Ein Schweizer Fahrzeugausweis ist vorhanden.<br /><br />Der Preis ist Verhandlungsbasis, realistische Angebote sind willkommen. Die Vorstellungen sollten jedoch nicht allzu weit vom ausgeschriebenen Preis entfernt sein.<br /><br />Offerten unter CHF 30’000.– werden nicht berücksichtigt.<br /><br />Ein äusserst seltenes und interessantes Restaurationsobjekt für Liebhaber und Sammler früher Brezelkäfer.<br /><br />Bei ernsthaftem Interesse gerne melden. Weitere Informationen und Bilder auf Anfrage. Fahrzeug steht in der Schweiz",
-      "attribute": {
-        "Marke": "Volkswagen",
-        "Modell": "Käfer",
-        "Kilometerstand": "80.000",
-        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
-        "Erstzulassung": "April 1951"
-      },
-      "verkaeufer": {
-        "id": "53481398",
-        "name": "Christian",
-        "typ": "PRIVATE",
-        "konto_seit": "2018-02-11",
-        "konto_alter_tage": 3121,
-        "bewertung": 0.3333333333333333,
-        "abzeichen": {
-          "rating": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 69,
-      "signale": {
-        "gruen": [
-          "Konto seit 2018",
-          "Abholung moeglich",
-          "9 Bilder"
-        ],
-        "rot": [
-          "Bewertung 0.33"
-        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
