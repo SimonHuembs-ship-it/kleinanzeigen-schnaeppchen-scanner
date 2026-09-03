@@ -19,6 +19,29 @@
 | [Vitra Eames EA 119 Aluminium Chair, Orange](https://www.kleinanzeigen.de/s-anzeige/original-vitra-eames-ea-119-aluminium-chair-orange/3501831809-93-7155) | 890 € | 1.495–1.975 € gebraucht (eBay.de), 1.500 € KA-Median (n=51) | rund 40 % | design-sammeln |
 | [DJI Mini 4 Pro Fly More Combo + ND-Filter](https://www.kleinanzeigen.de/s-anzeige/dji-mini-4-pro-fly-more-combo-nd-filter/3501863885-245-7244) | 400 € | 894–929 USD gebraucht (MPB), 680 € KA-Median (n=89) | rund 40 % | optik-drohnen |
 
+## Nebenbefund: die Tudor ist eine Wiedereinstellung
+
+Anzeige 3501945319 (Tudor Black Bay 58 Navy Blue, 2.349 Euro, Freising) ist
+zeichengleich mit Anzeige 3493265891, die am 24.08.2026 gemeldet wurde. Titel,
+Preis und der Verkaeufer-Suffix der URL (`-157-20462`) stimmen ueberein, nur die
+Anzeigen-ID ist neu. Die Pruefung gegen `deal_log.csv` laeuft ueber die `id` und
+faengt Wiedereinstellungen deshalb nicht; derselbe Befund wurde bereits am
+26.08. (Gibson Les Paul) und am 30.08. (Tudor Prince Day-Date) notiert.
+
+Zwei Folgerungen:
+
+1. Die Uhr steht seit mindestens zehn Tagen unverkauft zum selben Preis. Das
+   spricht dagegen, dass der Abstand zum Marktwert so gross ist wie berechnet;
+   ein Full Set mit 22 Prozent Abstand waere in zehn Tagen normalerweise weg.
+   Der Fund ist damit schwaecher, als die Mail ihn ausweist.
+2. Ein Abgleich ueber `verkaeufer.id` plus Titel plus Preis statt allein ueber
+   die Anzeigen-ID wuerde diese Klasse von Doppelmeldungen schliessen. Das ist
+   eine Aenderung an Stufe 1 beziehungsweise an Schritt 1 der Anweisung, nicht
+   etwas, das diese Routine im Lauf entscheiden sollte.
+
+Der DJI-Mini-4-Pro-Fund ist keine Wiedereinstellung: Anzeige 3497781939 vom
+29.08. traegt den Verkaeufer-Suffix `-245-27379`, die heutige `-245-7244`.
+
 ## Verworfene Kandidaten (161)
 
 - **Porsche 911 SC Targa 3.0** (3501315474, 29911 €, porsche-911): Eigene Marktpruefung: Classic-Data-Marktwert 911 SC (1977-1983) in Zustand 2 liegt im Mai 2026 bei 50.600 bis 52.300 Euro, Zustand 3 damit bei rund 30.000 Euro. Mit 265.000 km, Patina-Lack, nicht belegten Getriebearbeiten und programmierbarem Steuergeraet statt Lambdaregelung ist das Fahrzeug ein Zustand-3-Auto und mit 29.911 Euro korrekt bepreist. Der Kleinanzeigen-Median von 53.901 Euro mischt Zustand-2-Wagen ein.
