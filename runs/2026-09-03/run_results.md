@@ -205,3 +205,139 @@ Der DJI-Mini-4-Pro-Fund ist keine Wiedereinstellung: Anzeige 3497781939 vom
 - **"Cube" Trekking-Fahrrad 28"** (3501382735, 325 €, ebike-rad): Median nicht belastbar (Streuung 3.56, 23 Anzeigen) – nach prompt.md wie nicht vorhanden behandelt; ein eigener Referenzwert liess sich aus der Anzeige nicht belegen.
 - **Panasonic Leica DG Summilux 15mm F1.7 ASPH H-X015E-K MFT** (3501402824, 350 €, kameras-leica): Kein Kleinanzeigen-Median vorhanden. Das 2018 gekaufte 15-mm-Summilux liegt gebraucht ueblicherweise bei 280 bis 350 Euro, und der Originaldeckel fehlt; 350 Euro sind damit Marktpreis, kein Fund. Ich habe fuer dieses Objektiv keine zwei belastbaren Vergleichsangebote gefunden und schaetze keinen Abstand.
 - **Panasonic Leica DG Summilux 9mm F1.7 ASPH H-X09 Micro Four Thirds** (3501383345, 350 €, kameras-leica): Kein Kleinanzeigen-Median vorhanden. Eigene Pruefung: Das Objektiv kostet neu ab 411,99 Euro und gebraucht im Zustand 'near mint' 375 bis 410 Euro. 350 Euro liegen unter 20 Prozent darunter.
+
+
+# Lauf 2026-09-03, abends
+
+- **Ausgefuehrt:** 3. September 2026, 19:15 Uhr (MESZ)
+- **Datenstand `candidates.json`:** 2026-09-03T18:58:12+02:00 (17 Minuten alt, weit innerhalb der Vier-Stunden-Grenze)
+- **Zeitraum des Sammellaufs:** 2026-09-03T12:28:22+02:00 bis 2026-09-03T17:28:22+02:00
+- **Gesichtete Anzeigen:** 173.775
+- **Kandidaten in der Warteschlange:** 169
+- **Bereits in `deal_log.csv`:** 0
+- **Davon heute frueh schon geprueft und verworfen:** 89 (Begruendungen stehen im Morgenprotokoll oben, sie werden hier nicht wiederholt)
+- **Neu seit dem Morgenlauf:** 80
+- **Gemeldet:** 6
+
+Vorrang nach absoluter Ersparnis und Liquiditaet: zuerst Uhren, Apple-Geraete,
+Drohnen, Grafikkarten und die Fahrzeuge mit dem groessten Abstand, danach der
+Rest. 21 Kandidaten wurden einzeln per Websuche gegengeprueft.
+
+## Gemeldete Funde
+
+| Titel | Preis | Bestaetigter Marktwert | Abstand | Kategorie |
+|---|---|---|---|---|
+| [Rolex Explorer II 226570](https://www.kleinanzeigen.de/s-anzeige/rolex-explorer-ii-226570/3502351037-157-4763) | 6.900 € | 10.990–11.950 € bei deutschen Haendlern, WatchCharts-Marktwert rund 11.075 USD; ohne Papiere rund 9.000–9.500 € | rund 26 % | uhren |
+| [Cassina LC2 Sessel, schwarzes Leder](https://www.kleinanzeigen.de/s-anzeige/cassina-lc2-sessel-le-corbusier-schwarz-leder/3502474300-93-1158) | 1.500 € | 3.290–4.250 € im Gebrauchthandel (Sebworld, blucom 3.998 €), KA-Median 2.500 € (n=25) | ueber 40 % | design-sammeln |
+| [DJI Mini 5 Pro Fly More Combo mit RC 2](https://www.kleinanzeigen.de/s-anzeige/dji-mini-5-pro-fly-more-combo-mit-rc-2/3502617752-168-1900) | 490 € | 657,90 € gebraucht (Galaxus), neu ab 899 € (Geizhals), UVP 1.129 € mit RC 2 | 25 % zum Gebraucht-, 45 % zum Neupreis | optik-drohnen |
+| [Steam Deck OLED 512 GB](https://www.kleinanzeigen.de/s-anzeige/steam-deck-oled-512gb/3502484049-279-1684) | 250 € | 459 € zertifiziert generalueberholt bei Valve, 779 € neu seit Mai 2026 | rund 46 % | konsolen-sweep |
+| [DJI Mini 4 Pro Fly More Combo, RC 2, 4 Akkus](https://www.kleinanzeigen.de/s-anzeige/dji-mini-4-pro-fly-more-combo-mit-dji-rc-2-und-4-ak/3502572387-168-2632) | 340 € | 894–929 USD gebraucht (MPB), UVP 1.129 € | rund 60 % | optik-drohnen |
+| [Steam Deck OLED 1 TB](https://www.kleinanzeigen.de/s-anzeige/steam-deck-oled-1tb/3502582007-279-4240) | 350 € | 919 € neu seit Mai 2026 (vorher 679 €) | rund 62 % | konsolen-sweep |
+
+## Nebenbefund: die Speicherkrise hat die Konsolen-Referenz verschoben
+
+Valve hat die Steam-Deck-OLED-Preise am 27. Mai 2026 wegen der Speicherkrise
+angehoben, von 569 auf 779 Euro (512 GB) und von 679 auf 919 Euro (1 TB); das
+LCD-Modell gibt es nur noch generalueberholt ab 299 Euro. Der
+Kleinanzeigen-Median liegt mit 600 bis 700 Euro noch auf dem alten Niveau und
+unterschaetzt den heutigen Wiederbeschaffungswert damit deutlich. Fuer beide
+gemeldeten Steam Decks wurde deshalb nicht der Median, sondern der aktuelle
+Valve-Preis als Referenz gesetzt. Derselbe Effekt trug heute frueh schon die
+Verwerfung der RTX 5090: Grafikkarten und Handhelds sind 2026 teurer geworden,
+nicht billiger, und ein Angebot weit unter Median ist in diesen Kategorien
+eher ein Betrugs- als ein Schnaeppchensignal.
+
+## Nebenbefund: 89 der 169 Kandidaten waren heute frueh schon abgelehnt
+
+Die Warteschlange sammelt 24 Stunden lang an und leert sich nur ueber
+`deal_log.csv`, in das ausschliesslich gemeldete Funde eintragen werden.
+Verworfene Kandidaten laufen deshalb beim Abendlauf ein zweites Mal durch und
+werden ein zweites Mal geprueft. Beim heutigen Lauf betraf das mehr als die
+Haelfte der Liste. Ein Ablage-Vermerk fuer verworfene IDs mit Gueltigkeit bis
+zum Ende des 24-Stunden-Fensters wuerde die Doppelarbeit sparen; das ist eine
+Aenderung an Stufe 1, nicht etwas, das diese Routine im Lauf entscheiden sollte.
+
+## Verworfene Kandidaten (163)
+
+### Heute frueh bereits geprueft (89)
+
+Diese Anzeigen standen schon in der Morgenliste und sind dort einzeln
+begruendet. Es hat sich an Preis, Text und Verkaeuferprofil nichts geaendert,
+die Verwerfung bleibt bestehen.
+
+### Neu seit dem Morgenlauf (74)
+
+- **Tesla Model S 85** (3502594050, 12950 €, tesla): 319.486 km bei einem Fahrzeug von 2014 und SOH 86 Prozent. Die Laufleistung liegt beim Doppelten der Akkugarantiegrenze von 160.000 km und erklaert den Preis vollstaendig; der Median aus 19 Model-S-Anzeigen enthaelt keine Laufleistungskorrektur. Zusaetzlich gewerblicher Anbieter mit 83 Tage altem Konto ohne Bewertung.
+- **Rolex Datejust 41mm 126300 Full Set ungetragen** (3502409586, 9999 €, uhren): Eigene Pruefung: Auf Chrono24 liegen 126300 in Stahl bei 8.900 bis 11.075 Euro, ein neues Modell von 2026 beim Trusted Seller bei 10.700 Euro. 9.999 Euro sind damit Marktpreis und keine 20 Prozent Abstand. Der Kleinanzeigen-Median von 15.450 Euro besteht aus Angebotspreisen und ueberzeichnet den Markt um rund die Haelfte.
+- **Golf 2 GTI H-Kennzeichen** (3502502896, 6500 €, youngtimer-alltag): Der Titel sagt GTI, der Beschreibungstext des Verkaeufers sagt "Golf zwei GT". GT und GTI trennen im Markt mehrere tausend Euro; solange nicht geklaert ist, welches Modell verkauft wird, ist der Vergleich wertlos. Zusaetzlich 240.000 km und ein Konto juenger als sechs Monate.
+- **Rolex Datejust 41mm Gruen Neu Fullset** (3502356936, 10300 €, uhren): Gruenes Zifferblatt in der Datejust 41 liegt bei rund 12.000 bis 13.000 Euro, der Abstand betraegt damit keine 20 Prozent. Verkaeuferkonto 23 Tage alt, ohne Bewertung, bei einer ungetragenen Uhr im fuenfstelligen Bereich: das Standardmuster des Vorkassebetrugs.
+- **Mercedes Benz S-Klasse Bundeswehr w126** (3502151806, 7200 €, youngtimer-alltag): 260 SE von 1986 mit 236.241 km und beschaedigtem Fahrersitz. W126 dieser Motorisierung und Laufleistung liegen im Markt bei 6.000 bis 9.000 Euro, 7.200 Euro VB sind Marktpreis; das p25 der Referenz liegt bei 8.500 Euro und der Median mischt 500er und Coupes ein.
+- **Rolex datejust 41** (3502558741, 8900 €, uhren): Baujahr September 2011 bei einer als "Datejust 41" bezeichneten Uhr heisst Datejust II 116334, ein anderes Modell als die 126300-Referenz des Medians. Verkaeuferbewertung 0,22, dreizeilige Beschreibung, nur Versand. Kein belegbarer Fund.
+- **Weiler Drehmaschine defekt** (3502585043, 1500 €, werkzeug-maschinen): Vorschuebe defekt, ausdruecklich als Teilespender angeboten. Der Preis erklaert sich selbst; die Referenz ist mit Streuung 6,8 ohnehin nicht belastbar.
+- **Mercedes W124 230E Automatik Oldtimer** (3502393508, 4700 €, youngtimer-alltag): W124 230 E von 1988 mit 171.000 km. Classic-analytics fuehrt diese Baureihe im Zustand 3 bei rund 4.700 bis 5.500 Euro; der Preis ist korrekt und nicht zu niedrig. Der Median aus acht Anzeigen enthaelt Zustand-2-Fahrzeuge.
+- **Mercedes 300 D W124 H-Zulassung** (3502393527, 5900 €, youngtimer-alltag): 504.000 km und umfangreiche Schweissarbeiten am Fahrzeug. Die Laufleistung erklaert den Preis. Zusaetzlich Verkaeuferkonto sieben Tage alt.
+- **Mercedes Benz W124 230 E** (3502582648, 2900 €, youngtimer-alltag): Der Verkaeufer schreibt selbst "Auto braucht Zeit und Geld investieren", Motor laeuft unruhig, Batterie leer, Kabelbaum zu pruefen. Korrekt bepreistes Projektfahrzeug.
+- **Volvo 850 T5** (3502455994, 4999 €, youngtimer-alltag): Rund 400.000 km. Der Preis erklaert sich durch die Laufleistung; die Referenz ist mit Streuung 3,12 nicht belastbar und die Anzeige steht ausserdem in der Rubrik Ersatzteile.
+- **Suzuki GSX-R 750 W** (3502616287, 2000 €, motorraeder): Referenz mit Streuung 2,8 nicht belastbar. Eine GSX-R 750 W von 1994 mit 56.000 km liegt im Markt bei 2.000 bis 3.500 Euro; ohne engeren Vergleich ist kein 20-Prozent-Abstand belegbar.
+- **Tudor prince date** (3502115678, 1300 €, uhren): Eigene Pruefung: Die Ref. 79410P liegt auf Chrono24.de bei 1.479 bis 1.911 Euro, das sind Haendlerpreise mit Gewaehr. Die Uhr hat keine Papiere und der Verkaeufer schreibt selbst, dass der Revisionsstand unbekannt ist und "deswegen der niedrige Preis". Der Preis erklaert sich damit selbst. Der Median von 2.990 Euro mischt Prince-Date-Chronographen ein, die ein anderes Produkt sind.
+- **Pegasus Trekking E-Bike** (3502148575, 600 €, ebike-rad): Pegasus Premio E10 Modelljahr 2015 mit dem originalen Bosch Powerpack 400. Ein elf Jahre alter Akku ist der wertbestimmende Teil und erklaert den Preis; der Median von 2.149 Euro stammt aus aktuellen Trekking-Pedelecs.
+- **Rennrad BMC Roadmachine 01 Four Force AXS** (3502534579, 2350 €, modellbau-sammler): Kein Modelljahr genannt. Die einzige belastbare Gebrauchtreferenz, die ich finden konnte, ist eine hoeher ausgestattete Roadmachine 01 ONE von 2023, die auf buycycle fuer 2.700 Euro verkauft wurde. Damit liegt der Angebotspreis zu nah am belegbaren Gebrauchtniveau; der KA-Median von 3.849 Euro mischt Modelljahre und Ausstattungsstufen.
+- **Riese & Mueller Swing City E-Bike** (3502156305, 1500 €, ebike-rad): Kein Modelljahr, Konto juenger als sechs Monate. Der Median mischt Generationen; kein belastbarer Vergleich.
+- **Cube Stereo 140 HPC Carbon Fully** (3502135324, 1250 €, ebike-rad): Kein Modelljahr. Das Stereo 140 HPC lief ueber zehn Modelljahre mit stark unterschiedlichen Fahrwerken; der Median vergleicht nichts Bestimmtes.
+- **TUDOR Black Bay 41mm 79230N Fullset** (3502375555, 2222 €, uhren): Eigene Pruefung: Die 79230N liegt gebraucht im Full Set bei 2.421 bis 4.444 USD, das guenstigste Angebot liegt damit unter dem Angebotspreis. Zieht man den ueblichen Privatverkaufsabschlag von den Haendlerpreisen ab, bleibt kein 20-Prozent-Abstand. Zusaetzlich verlangt der Verkaeufer PayPal Freunde und legt das Versandrisiko dem Kaeufer auf.
+- **Damen Trekking E-Bike Fischer** (3502153642, 790 €, ebike-rad): Referenz mit Streuung 3,06 nicht belastbar, kein Modell und kein Baujahr genannt.
+- **BMW 316i Limo E36** (3502425383, 2000 €, youngtimer-alltag): Servolenkung defekt, Tonnenlager faellig, TUEV abgelaufen. Der Preis erklaert sich vollstaendig.
+- **Quooker CUBE** (3502224503, 960 €, ebike-rad): Referenz mit Streuung 2,55 nicht belastbar; der Median mischt Armatur-Komplettsysteme mit dem reinen CUBE-Zusatzgeraet.
+- **USM Haller Regal Reinweiss 5 Faecher** (3450998110, 870 €, design-sammeln): Gewerblicher Anbieter mit Haendlerpreis plus 109 Euro Lieferkosten. Der Median aus "USM Haller Regal 5" mischt Breiten und Hoehen (Streuung 2,17); 870 Euro fuer ein 180x75x37-Regal sind Marktniveau.
+- **Cube Stereo Hybrid 140 HPC Race 625** (3502192193, 1350 €, ebike-rad): Der Verkaeufer nennt selbst ein Haendlerankaufgebot von 1.650 Euro und schreibt, dass Bremshebel und Griffe zu erneuern sind. Der niedrige Preis erklaert sich durch den Zustand.
+- **Herrenrad Cube Touring One 54cm** (3502123868, 500 €, ebike-rad): Referenz mit Streuung 3,34 nicht belastbar, kein Modelljahr.
+- **Bosch E-Trekking Victoria Rad Damen** (3502395566, 500 €, ebike-rad): Referenz mit Streuung 2,67 nicht belastbar, weder Modell noch Akkugroesse genannt.
+- **Velo de Ville AEB 890 Trekking E-Bike** (3502183849, 1499 €, ebike-rad): Anzeige eines Rebike-Stores in Koeln-Marsdorf, also ein gewerblicher Refurbished-Preis mit Gewaehrleistung. Haendlerpreis auf Marktniveau.
+- **TAG Heuer Aquaracer Chronograph 300M** (3501982198, 830 €, uhren): Referenz mit Streuung 2,52 nicht belastbar. Die Ref. CAY111B ist ein Quarzchronograph, der gebraucht bei rund 900 bis 1.300 Euro liegt; 830 Euro sind kein 20-Prozent-Abstand. Zusaetzlich Konto 71 Tage alt und die Zusage einer "Verkaeufergarantie" auf einem Privatprofil.
+- **Eames Chair EA 217** (3502505826, 1450 €, design-sammeln): Die einzige belegbare Haendlerreferenz, die ich fand, betrifft einen EA 217 Softpad fuer 2.250 Euro, also eine hoeherwertige Variante. Fuer den hier angebotenen EA 217 ohne Softpad konnte ich keine zwei vergleichbaren Angebote finden; der Median beruht auf acht Anzeigen. Ich schaetze nicht.
+- **Cube Touring Damenrad** (3502144624, 700 €, ebike-rad): Referenz mit Streuung 4,73 nicht belastbar.
+- **Specialized E-Bike XL Rahmen** (3502147715, 950 €, ebike-rad): Referenz mit Streuung 5,0 nicht belastbar, kein Modell genannt.
+- **Honda Fireblade CBR 900 RR SC28** (3502522370, 1690 €, motorraeder): Verkaeuferbewertung 0,35. Eine SC28 von 1995 mit 75.270 km liegt im Markt bei rund 2.000 bis 3.500 Euro; der Abstand ist nicht gross genug, um das Verkaeuferprofil aufzuwiegen.
+- **Cube Stereo 120 Pro Fully Groesse S 2022** (3502132825, 1200 €, ebike-rad): Modelljahr genannt, aber der Median beruht auf nur zwoelf Anzeigen bei Streuung 2,36; ein Stereo 120 Pro von 2022 liegt gebraucht bei rund 1.200 bis 1.500 Euro. Kein belegbarer Abstand.
+- **MacBook Pro 14 (M5)** (3502623656, 1300 €, macbook): Ein M5-MacBook-Pro 14 mit 16/512 GB kostet neu 1.799 Euro und gebraucht nach einem halben Jahr rund 1.400 bis 1.500 Euro. 1.300 Euro sind kein 20-Prozent-Abstand.
+- **Gravelbike Cube Nuroad Pro Gr. S** (3502496517, 650 €, ebike-rad): Nuroad Pro ohne Modelljahr; gebraucht liegen diese Raeder bei 700 bis 900 Euro. Kein 20-Prozent-Abstand.
+- **USM Haller Sideboard Lowboard** (3502527819, 899 €, design-sammeln): Sideboard mit zwei abschliessbaren Schubladen; solche Korpusse liegen gebraucht im Handel bei 900 bis 1.400 Euro. Marktpreis. Der Median mischt Breiten (Streuung 2,07).
+- **Apple MacBook Pro 1TB wie neu** (3502175704, 980 €, macbook): Laut Attributen ein MacBook Pro 13" M1; solche Geraete mit 1 TB liegen gebraucht bei 600 bis 750 Euro. Der Angebotspreis liegt ueber dem Markt, nicht darunter. Referenz mit Streuung 2,99 ohnehin nicht belastbar.
+- **MacBook Pro 14" M2 Pro 32/1TB** (3502559855, 1100 €, macbook): Das Logicboard wurde ersetzt und eine Delle am Gehaeuse verhindert, dass der Deckel buendig schliesst. Beides erklaert den Preis; ein intaktes Geraet dieser Konfiguration liegt bei 1.300 bis 1.500 Euro.
+- **Longines HydroConquest Automatik** (3502211621, 600 €, uhren): Keine Referenznummer, keine Papiere, keine Box; die HydroConquest gibt es in Groessen und Werken mit deutlich unterschiedlichen Preisen. Ohne Modellbestimmung kein Marktwertnachweis. Konto 51 Tage alt.
+- **Specialized Allez** (3502215519, 620 €, ebike-rad): Traegt den Unkenntnis-Bonus, scheitert aber am Nachweis: Ein Allez ohne Modelljahr und Ausstattung reicht vom Einsteiger-Alurad bis zum Sprint-Rahmen, die Referenz hat Streuung 2,73. Kein Marktwert bestimmbar, und ich schaetze nicht.
+- **Sony PlayStation 5 Pro 2 TB** (3502204459, 530 €, konsolen-sweep): Der Verkaeufer verlangt ausdruecklich PayPal Freunde und schliesst Waren und Dienstleistungen aus, also Zahlung ohne Kaeuferschutz. Das ist ein Ausschlussgrund unabhaengig vom Preis; zudem liegt eine gebrauchte PS5 Pro bei rund 600 bis 650 Euro, der Abstand betraegt keine 20 Prozent.
+- **Rennrad Specialized Elite Secteur** (3502622820, 450 €, ebike-rad): Referenz mit Streuung 2,58 nicht belastbar.
+- **Trek Farley Fatbike** (3502553763, 450 €, ebike-rad): Kein Modelljahr und keine Ausstattungsangabe; die Farley-Reihe reicht von Alu bis Carbon. Median aus 17 Anzeigen mischt diese Varianten.
+- **USM Haller Sideboard schwarz** (3502450634, 1000 €, design-sammeln): Beschreibung besteht aus zwei Zeilen ohne Masse; ohne Korpusgroesse ist kein Vergleich moeglich, und der Median mischt Breiten.
+- **Original USM Haller Board in Gruen** (3318513954, 930 €, design-sammeln): Autorisierter USM-Partner mit Rechnung und 24 Monaten Gewaehrleistung, also ein Haendlerpreis. Ein 77x74x38-Board mit einer Klappe liegt im Handel genau dort.
+- **Haibike XDURO Trekking Pro** (3502211752, 400 €, ebike-rad): Der Akku ist nicht dabei. Ein Bosch-Ersatzakku kostet 500 bis 800 Euro; der Preis erklaert sich vollstaendig.
+- **Mafell Kettenstemmer** (3502554129, 700 €, werkzeug-maschinen): Referenz mit Streuung 4,6 nicht belastbar, kein Modell genannt.
+- **Truma Aventa Comfort Ausseneinheit** (3400941253, 800 €, camper-marine): Referenz mit Streuung 2,67 nicht belastbar; angeboten wird nur die Ausseneinheit, der Median enthaelt Komplettanlagen.
+- **Cube Nuroad Gravelbike** (3502112320, 850 €, ebike-rad): Modelljahr 2023 genannt, aber ein Nuroad von 2023 liegt gebraucht bei 800 bis 1.000 Euro. Kein 20-Prozent-Abstand.
+- **Cube Mountainbike Groesse S** (3502400497, 500 €, ebike-rad): Traegt den Unkenntnis-Bonus, scheitert aber am Nachweis: weder Modell noch Modelljahr genannt, Referenz mit Streuung 4,44. Kein Marktwert bestimmbar.
+- **Rennrad Cube Attain** (3502186930, 579 €, ebike-rad): Attain Modelljahr 2022 mit Claris 2x8, also die Einstiegsvariante; solche Raeder liegen gebraucht bei 550 bis 700 Euro. Der Median von 999 Euro enthaelt die hoeheren Attain-GTC-Varianten.
+- **Volvo Penta Bootsmotor mit Z-Antrieb** (3502180918, 400 €, camper-marine): Referenz mit Streuung 10,0 nicht belastbar.
+- **Fahrrad Herren Trekking** (3502373455, 350 €, ebike-rad): Weder Marke noch Modell genannt, Streuung 5,71.
+- **Cube EXC Trekkingrad Damenrad** (3502546142, 450 €, ebike-rad): Referenz mit Streuung 6,0 nicht belastbar.
+- **Diamond Chair von Knoll** (3345201576, 499 €, design-sammeln): Referenz mit Streuung 3,12 nicht belastbar; der Median mischt Originale und Nachbauten, und die Anzeige belegt die Herkunft nicht.
+- **Vitra Eames Stool Modell A** (3502511709, 600 €, design-sammeln): Der Verkaeufer legt offen, dass die Leimfuge hervorsteht. Median aus acht Anzeigen; gebrauchte Eames Stools liegen bei 900 bis 1.200 Euro, mit dem beschriebenen Mangel ist der Preis korrekt.
+- **MacBook Air (M1, rosegold)** (3502112211, 400 €, macbook): Macke im Gehaeuse, Speichergroesse nicht angegeben, Verkaeuferbewertung 0,58. Ein M1 Air mit 8/256 GB liegt bei 400 bis 450 Euro, also auf Marktniveau.
+- **iphone 16 pro** (3502217740, 400 €, apple-mobil): Die Frontkamera funktioniert bei Videoanrufen nicht. Der Defekt erklaert den Preis.
+- **4er Set Vitra Stuehle HAL Wood** (3055047580, 585 €, design-sammeln): Referenz mit Streuung 4,07 aus zehn Anzeigen nicht belastbar; der Median mischt Einzelstuehle und Sets.
+- **Specialized Stumpjumper FSR 26 Zoll** (3502405719, 350 €, ebike-rad): 26-Zoll-Laufraeder datieren das Rad auf etwa 2010; der Median enthaelt aktuelle 29-Zoll-Modelle. Phantomersparnis.
+- **Trekkingrad Herren KTM Life Force** (3502441472, 350 €, ebike-rad): Referenz mit Streuung 2,5 an der Grenze, kein Modelljahr. Kein belastbarer Vergleich.
+- **E-Bike Pedelec Citybike Trekkingrad** (3502177660, 599 €, ebike-rad): Weder Marke noch Modell im Titel, Referenz aus acht Anzeigen mit Streuung 2,84.
+- **DJI MINI 5 Pro + DJI Care Refresh** (3502604384, 600 €, optik-drohnen): Angeboten wird das Standardset mit zwei Akkus, nicht die Fly More Combo. Die Mini 5 Pro allein kostet neu 779 bis 799 Euro und gebraucht 480,90 Euro bei Galaxus. 600 Euro liegen ueber dem Gebrauchtpreis, es ist kein Fund.
+- **Trekkingrad KTM** (3502151374, 320 €, ebike-rad): Kein Modell und kein Baujahr, Streuung 2,38 bei 99 gemischten Anzeigen.
+- **29 Zoll CUBE** (3502388831, 300 €, ebike-rad): Referenz mit Streuung 3,91 nicht belastbar.
+- **Apple MacBook Air M2 Top Zustand** (3502137260, 480 €, macbook): Ein M2 Air mit 8/256 GB liegt gebraucht bei 550 bis 650 Euro, der Abstand betraegt keine 20 Prozent. Zusaetzlich Konto 80 Tage alt und Gewerbetext auf Privatprofil.
+- **MacBook Air 13 guter Zustand** (3502182997, 450 €, macbook): Titel sagt Air, die Attribute sagen MacBook Pro 13" M1; welches Geraet verkauft wird, ist unklar. Beide Varianten liegen mit 8/256 GB bei 450 bis 600 Euro, kein belegbarer Abstand.
+- **Trek Mountainbike schwarz-rot** (3502193828, 315 €, ebike-rad): Referenz mit Streuung 5,62 nicht belastbar, kein Modell genannt.
+- **Neuwertig Steam Deck OLED 512GB mit Speicherkarte** (3502122191, 360 €, konsolen-sweep): Gegen den bestaetigten Referenzpreis von 459 Euro (Valve, zertifiziert generalueberholt, mit einem Jahr Gewaehrleistung) betraegt der Abstand knapp 22 Prozent, und die Gewaehrleistung des Refurbished-Geraets gleicht diesen Rest aus. Zu knapp fuer eine Meldung.
+- **iPhone 15 128GB** (3502215432, 235 €, apple-mobil): Die Kamera nimmt auf, die Bilder erscheinen aber nicht in der Galerie, Akku bei 80 Prozent, Verkaeuferbewertung 0,30. Der Defekt erklaert den Preis.
+- **iPhone 15 Pro Grau** (3502147991, 320 €, apple-mobil): Rueckglas gesprungen. Der Schaden erklaert den Preis.
+- **iPhone 15 Pro 128gb** (3502209565, 300 €, apple-mobil): Rueckseite defekt, Verkaeuferbewertung 0,18. Der Schaden erklaert den Preis.
+- **Original Panton Chair schwarz** (3502188627, 160 €, design-sammeln): Referenz mit Streuung 3,0 nicht belastbar; der Median mischt Vitra-Originale und Nachbauten, und die Anzeige belegt die Herkunft nicht.
+- **IPhone 15 128gb Schwarz** (3502180826, 250 €, apple-mobil): Rueckseite stark beschaedigt und gerissen. Der Schaden erklaert den Preis.
+- **Cube Access Pro W Hardtail** (3502222041, 325 €, ebike-rad): Kein Modelljahr; der Median aus 99 Anzeigen mischt zehn Jahrgaenge des Access-Hardtails.
