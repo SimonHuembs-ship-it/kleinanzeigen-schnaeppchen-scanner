@@ -273,3 +273,86 @@ Ausweichquelle.
 - **Gilde Clowns * Sammlungsauflösung * top Editionen** – 999 €, `3502861078` (notverkaeufe): referenz null. Ohne Kleinanzeigen-Median und ohne belegbaren eigenen Referenzwert wird nach Schritt „Was du nicht tust“ nicht geschätzt.
 - **NOTVERKAUF!!  Motorschaden skoda octavia 1.9tdi** – 1200 €, `3502891759` (notverkaeufe): referenz null. Ohne Kleinanzeigen-Median und ohne belegbaren eigenen Referenzwert wird nach Schritt „Was du nicht tust“ nicht geschätzt.
 - **R4 TL scheunenfund als Teileträger oder zum restaurieren .** – 900 €, `3502907614` (notverkaeufe): referenz null. Ohne Kleinanzeigen-Median und ohne belegbaren eigenen Referenzwert wird nach Schritt „Was du nicht tust“ nicht geschätzt.
+
+# Lauf 2026-09-04, abends
+
+- **Ausgeführt:** 4. September 2026, 19:05 Uhr (MESZ)
+- **Datenstand `candidates.json`:** 2026-09-04T18:43:08+02:00 (22 Minuten alt, innerhalb der Vier-Stunden-Grenze)
+- **Zeitraum des Sammellaufs:** 2026-09-04T12:26:10+02:00 bis 2026-09-04T17:26:10+02:00
+- **Gesichtete Anzeigen:** 162.022
+- **Kandidaten in der Warteschlange:** 163
+- **Bereits in `deal_log.csv`:** 0
+- **Geprüft:** 163 (Vorrang nach absoluter Ersparnis und Liquidität; 41 einzeln gelesen, davon 13 per Websuche gegengeprüft)
+- **Gemeldet:** 4
+
+## Gemeldete Funde
+
+| Anzeige | Preis | Median (n) | Bestätigtes Preisniveau | Abstand |
+|---|---|---|---|---|
+| Wohnwagen HP 400 Qek Junior (3502825072) | 1.799 € | 3.700 € (20) | 2.900–4.000 € (mobile.de, autoline) | rund 38 % unter dem unteren Niveau |
+| Yamaha RD 350 YPVS 1984 (3475951001) | 3.900 € | 5.760 € (33) | 6.798–7.500 € (Classic Trader, vier 1984er Angebote) | rund 33 % auch gegen ein vorsichtiges Privatniveau von 5.800 € |
+| Riese & Müller Nevo4 GT Vario (3457478523) | 2.500 € | 3.999 € (62) | 3.790–4.599 € (Gebrauchtrad24, Upway, Kleinanzeigen) | rund 34 % unter dem günstigsten bestätigten Angebot |
+| DJI Mavic Air 2 Fly More Combo (3502850741) | 249 € | 394 € (64) | 579–649 USD gebraucht (MPB) | mindestens 37 % |
+
+## Verworfene Kandidaten
+
+### Preis erklärt sich von selbst
+
+- **BMW 320 Cabrio E30 Benzin/LPG** (3503412896, 7.700 €, youngtimer-alltag): Attribut "Beschädigtes Fahrzeug", 230.000 km, ohne TÜV, längere Standzeit, Heckscheibe defekt, Delle und Klarlackablösung. Der Median von 15.210 € gilt fahrbereiten Autos mit HU.
+- **BMW E36 Cabrio M Paket** (3503326855, 3.950 €, youngtimer-alltag): 295.000 km und HU nur bis März 2026, also abgelaufen. Die Laufleistung erklärt den Abstand zum Median vollständig.
+- **E36 Cabrio + Hardtop** (3503376113, 4.000 €, youngtimer-alltag): TÜV abgelaufen, Verdeck erneuerungsbedürftig, Türschloss und Türverkleidung fehlen, Beifahrerfenster defekt. Der Verkäufer nennt es selbst ein Sommerprojekt.
+- **Mercedes W124 300e** (3502715555, 5.500 €, youngtimer-alltag): 13 Jahre Scheunenstand, muss mit Hänger geholt werden, Auspuff abgerostet, Reifen alt, Attribut "Beschädigtes Fahrzeug".
+- **Rolex Lady-Datejust 26 mm** (3502932188, 4.000 €, uhren): Lünette nachträglich mit Aftermarket-Steinen besetzt, Box und Papiere fehlen. Beides senkt den Wert genau um die Differenz zum Median; dazu Konto 20 Tage alt.
+- **Simson Schwalbe KR51/1 K Scheunenfund** (3502853520, 1.200 €, motorraeder): Motor fest, Hauptständeraufnahme schon einmal geschweißt und erneut fällig.
+- **Simson S51 mit KBA Papieren** (3503283823, 2.200 €, motorraeder): Läuft aktuell nicht, Laufverhalten nach dem Einstellen unbekannt. Der Verkäufer benennt den Marktwert selbst korrekt.
+- **Specialized Stumpjumper evo S-Works Rahmen S4** (3502838796, 1.300 €, ebike-rad): Angeboten wird nur ein Rahmenset, der Median von 2.349 € enthält Komplettbikes. Phantomersparnis.
+- **Cube Stereo 170 Race Rahmenset** (3503175981, 629 €, ebike-rad): Ebenfalls nur Rahmen ohne Sattelstütze, Dämpfer müsste zum Service; der Median mischt komplette Räder.
+- **Omega Constellation Vintage Automatic** (3503253535, 790 €, uhren): "Spider Dial" heißt gerissenes Zifferblatt, der Titel widerspricht sich zwischen Chronometer und Chronograph, Konto 45 Tage alt.
+
+### Referenz nicht belastbar oder Marktwert nicht bestimmbar
+
+- **Rolex Lady-Datejust President Yellow Gold Diamond** (3503219765, 2.500 €, uhren): Streuung 26,63 bei 98 gemischten Anzeigen, p25 bei 300 €. Eine echte Lady President in Gelbgold liegt fünfstellig; 2.500 € bei reinem Versand, Konto seit 73 Tagen und drei Zeilen Beschreibung sind das Profil einer Betrugsanzeige, kein Fund.
+- **Omega Seamaster Chronometer Chronograph** (3503168041, 2.400 €, uhren): Streuung 3,24. Ohne Referenznummer lässt sich das Modell nicht bestimmen, damit kein belastbarer Marktwert.
+- **Tudor Prince Oysterdate Ref. 72033** (3503409342, 1.650 €, uhren): Streuung 3,56. Ohne Box und Papiere liegt eine 72033 im Bereich 1.200 bis 2.000 €, der Preis liegt mitten darin.
+- **Omega Constellation Damenuhr** (3503432978, 599 €, uhren): Streuung 3,0, Quarzuhr von 1999 ohne Zertifikat. Kein Abstand nachweisbar.
+- **TAG Heuer Formula 1** (3503246172, 575 €, uhren): Keine Referenznummer genannt; die Formula-1-Palette reicht von 300 bis 1.500 €, ein Marktwert ist so nicht bestimmbar.
+- **Zenith El Primero Rainbow** (3503193032, 2.400 €, uhren): "kein paypal nur Banküberweisung", also Zahlung ohne Käuferschutz. Zudem widerspricht die Beschreibung (44 mm, Stahl/Gold) der bekannten Rainbow-Referenz.
+- **SRAM Red AXS eTAP-Gruppe neu** (3502760286, 725 €, ebike-rad): Der Verkäufer verlangt ausdrücklich Barzahlung oder "PayPal als Freund"; dazu Streuung 3,54 und eine unvollständige Gruppe.
+- **Möbel Dieter Knoll Badezimmer XXXLutz** (3476097233, 799 €, design-sammeln): Streuung 3,34, der Median mischt Einzelmöbel und Sets.
+- **USM Haller, drei Anzeigen** (3502970804 600 €, 3502996723 650 €, 3502667076 800 €, design-sammeln): Streuung jeweils 3,27; der Median mischt Einzelelemente, Rollcontainer und ganze Anlagen.
+- **Designer Dieter Knoll Schlafzimmer** (3503332587, 519 €), **2 Walter Knoll Sessel Classic Edition** (3503164182, 560 €), **Herman Miller Eames Fiberglas Schale** (3503237303, 180 €), **6 x Vitra Eames Plastic Armchair DAR** (3502892867, 175 €), **Stuhl Dieter Knoll Leder** (3502921843, 395 €): Streuung 3,3 bis 6,0, jeweils Mischung aus Originalen, Nachbauten, Einzelstücken und Sets.
+- **Riese & Müller Charger Vario** (3502988207, 1.899 €, ebike-rad): Inhaltlich der stärkste Kandidat nach den vier gemeldeten, aber nur ein einziges konkretes Vergleichsangebot auffindbar (2.650 € VB für einen New Charger Vario mit 5.500 km, 500 Wh, Enviolo-Riemen). Zwei Belege verlangt die Regel, ein geschätzter Marktwert ist keiner.
+- **Specialized Turbo Vado SL 4.0 EQ** (3502957734, 1.300 €, ebike-rad): Zu gebrauchten Vado SL 4.0 EQ waren nur Prozentangaben ("bis zu 60 Prozent unter Neupreis") und US-Neupreise zu finden, keine konkreten Euro-Vergleichsangebote.
+- **Cube Kathmandu Hybrid One** (3503020245, 1.250 €, ebike-rad): Kein konkreter Gebrauchtpreis belegbar; dazu ein Fremdakku von E-Bike Vision statt des Bosch 625, was den Wert drückt.
+- **Apple MacBook Pro 14" M4 16/512** (3503191647, 1.100 €, macbook): Trotz sauberer Anzeige mit Originalrechnung kein konkreter Euro-Gebrauchtpreis für genau diese Konfiguration auffindbar, nur allgemeine Refurbished-Rabattangaben.
+- **MacBook Pro M2 Pro 32 GB** (3502795251, 999 €, macbook): Ohne Ladegerät, mit Delle im Displaydeckel; kein belastbarer Vergleichspreis für diese Konfiguration bestätigt.
+- **Simson Schwalbe Baujahr 1975** (3503396154, 1.500 €, motorraeder): "Lange Standzeit in der Garage", zwei Zeilen Beschreibung, keine Papiere erwähnt. Ohne Papiere ist der Median von 2.700 € nicht der richtige Vergleich.
+- **Simson Schwalbe Scheunenfund** (3503250572, 850 €, notverkaeufe): Streuung 2,59, Zustand unklar.
+- **Mafell Erika Tischkreissäge** (3503236792, 450 €), **Hilti TE 5** (3502957865, 150 €): Streuung 3,63 beziehungsweise 3,0, kein Modelljahr.
+- **Hilti TE 76-ATC Kombihammer** (3502984778, 150 €, werkzeug-maschinen): Schlagfunktion defekt, im Titel offengelegt. Der Preis ist korrekt.
+- **Panasonic Lumix mit Leica Objektiv** (3502840905, 189 €, foto-sweep): Streuung 3,12, kein Modell genannt.
+- **Ducati Monster** (3503278150, 3.750 €, motorraeder): Streuung 3,21, der Median mischt alle Monster-Baureihen von 600 bis 1200.
+- **47 weitere Fahrräder und E-Bikes** aus `ebike-rad` mit Streuung über 2,5 oder ohne genanntes Modell und Modelljahr (unter anderem 3503264250, 3503029366, 3503328734, 3503264616, 3502956348, 3502666444, 3502777634, 3503229080, 3502919653, 3502843725, 3502860706, 3503343687): Ohne Modelljahr mischt der Median mehrere Jahrgänge desselben Namens.
+
+### Marktwert bestätigt, aber Abstand unter 20 Prozent
+
+- **Rolex GMT-Master II Ref. 16710 LN** (3502706175, 9.916 €, uhren): Der größte nominale Abstand des Laufs, hält der eigenen Prüfung aber nicht stand. WatchCharts weist für die 16710 einen durchschnittlichen Transaktionspreis von rund 12.400 USD (Anfang 2026) aus, das sind etwa 11.500 €, und dieser Schnitt enthält die teureren Pepsi- und Coke-Lünetten. Für die schwarze LN-Variante bleiben rund 10.000 bis 11.000 €, damit liegen 9.916 € keine 20 Prozent darunter. Dazu: Übergabe nur per Versand bei einer Uhr dieses Werts.
+- **Tudor Black Bay Chrono, Baujahr 2019** (3502938796, 2.600 €, uhren): Gebrauchte 79350 liegen konkret bei 3.650 € und 3.880 €, das sind aber Händlerpreise mit Box, Papieren und Gewährleistung. Verkauft wird hier "Nur Uhr" ohne beides; privat ohne Papiere sind rund 3.000 € realistisch, damit bleibt kein sicherer 20-Prozent-Abstand. Bei einer papierlosen Tudor ist genau das die Konstellation, in der Fälschungen sitzen.
+- **Tudor Black Bay Chrono 79360N, neu** (3502871597, 3.990 €, uhren): Händlerkonto seit genau einem Jahr, angeboten wird eine ungetragene 2026er Uhr unter dem üblichen Gebrauchtniveau von rund 4.300 bis 4.800 €. Kein 20-Prozent-Abstand und ein Profil, das eher nach Anzahlungsmasche als nach Fund aussieht.
+- **TAG Heuer Carrera Calibre 16 Day-Date CV2A10** (3502765945, 1.650 €, uhren): Ein Komplettset ging auf dem WatchCharts-Marktplatz für 1.700 USD weg, gebrauchte CV2A10 liegen zwischen etwa 900 und 2.700 €. 1.650 € sind Marktniveau.
+- **TAG Heuer Carrera Calibre 5 Day-Date** (3502640220, 1.250 €, uhren): Dieselbe Preisklasse, dasselbe Ergebnis.
+- **Leica Q Typ 116** (3502866920, 2.799 €, kameras-leica): `referenz: null`. Gebrauchte Leica Q Typ 116 liegen bei etwa 2.000 bis 2.700 €; 2.799 € liegen mit dem Zubehör am oberen Rand, nicht darunter.
+- **Santa Cruz Bronson A R Gr. XS** (3502816879, 1.700 €, ebike-rad): Modelljahr 2019 mit getauschter Sattelstütze und Schaltung; gebrauchte Bronson dieser Generation liegen bei 1.800 bis 2.400 €, Größe XS verkleinert den Käuferkreis zusätzlich.
+- **Vitra Aluminium Chair EA 117** (3458802262, 1.000 €, design-sammeln): Original aus den 1990ern mit Patina; gebrauchte EA 117 liegen bei 800 bis 1.400 €. Der Preis liegt mitten im Markt.
+- **PS5 Pro 2TB** (3502898606, 610 €, konsolen-sweep): Neupreis 799 €, gebraucht 620 bis 700 €. Kein 20-Prozent-Abstand.
+- **DJI Mini 5 Pro** (3502915839, 600 €, optik-drohnen): Neu 799 €, gebraucht 650 bis 700 €. Wie beim Kandidaten vom 3. September kein Fund.
+- **Cube Ebike / Reaction Hybrid Baujahr 2017** (3502810524, 600 €, ebike-rad): Neuer Motor 2019, Akku 2024, Bremsen 2026 — inhaltlich plausibel, aber der Median stützt sich auf nur acht Anzeigen und ein konkreter Gebrauchtpreis für ein Reaction Hybrid von 2017 war nicht zu belegen.
+
+### Anzeige selbst spricht dagegen
+
+- **Cluster "MacBook Pro M5" zu Tiefstpreisen** (3503396226 1.000 €, 3502667365 1.299 €, 3503375286 1.399 €, 3503393262 1.499 €, macbook): Vier Anzeigen desselben Musters innerhalb von 24 Stunden — generische, maschinell klingende Beschreibungen ohne Seriennummer, Prozessor als "Sonstiger Prozessor" hinterlegt, überwiegend reiner Versand. Bei 3503375286 sagt der Titel MacBook Pro M5 und die Beschreibung MacBook Air; bei 3503396226 erwähnt der Text den M5 überhaupt nicht. Ein Marktwert wurde hier nicht gegengeprüft, weil die Anzeigen selbst nicht tragen.
+- **Apple MacBook Pro 14,2" M5 32/1 TB, neu** (3503447907, 2.250 €, macbook): Neu und originalverpackt; die Apple-Konfiguration liegt bei rund 2.500 €, damit unter 20 Prozent Abstand.
+
+## Anmerkung zum Lauf
+
+Die Warteschlange war mit 163 Kandidaten die längste bisher, aber inhaltlich dünn: 47 Einträge waren Fahrräder ohne Modelljahr, 37 iPhones mit Ersparnissen unter 200 € und 21 Designmöbel mit Streuungen über 3. Die vier Meldungen kommen aus vier verschiedenen Kategorien; keine trägt den Unkenntnis-Bonus. Der einzige Kandidat mit Bonus (3503343687, Rennrad von Trek, 450 €) wurde nicht wegen der Anzeigenqualität verworfen, sondern weil ein zehn Jahre altes Trek One Series 1.5 mit Tiagra gebraucht bei 350 bis 550 € liegt.
