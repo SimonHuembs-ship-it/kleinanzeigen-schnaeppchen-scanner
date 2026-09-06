@@ -277,3 +277,149 @@ einer Nachlassaufloesung ist das normal und kein Clustersignal.
 `konsolen-sweep` einen eigenen Realpreis-Anker statt des Angebots-Medians
 bekommen, oder gehoeren wiederkehrende Titel-Preis-Kombinationen aus dem
 deal_log automatisch als Clustersignal in die Kandidatenpruefung?
+
+
+---
+
+# Lauf 2026-09-06, abends
+
+**Zeitpunkt:** 6. September 2026, 19:10 Uhr (MESZ)
+**candidates.json generiert:** 2026-09-06T18:12:01+02:00 (rund 1 Stunde alt, innerhalb der Vier-Stunden-Grenze aus prompt.md)
+**Zeitraum des letzten Scans:** 2026-09-06T11:37:11+02:00 bis 2026-09-06T16:37:11+02:00
+**Gesichtete Anzeigen:** 186.561
+**Kandidaten in der Warteschlange:** 155
+**Bereits in deal_log.csv gemeldet:** 0
+**Geprueft:** 155 (davon 69 einzeln inhaltlich und, wo noetig, extern gegengeprueft, in der Reihenfolge absoluter Abstand und liquide Ware zuerst)
+**Gemeldet:** 1
+
+## Gemeldeter Fund
+
+| ID | Titel | Preis | Bestaetigtes Marktniveau | Abstand |
+|---|---|---|---|---|
+| 3504969130 | Thorens TD 2001 mit TP-90-Arm und Audio-Technica AT20SLA | 449 € | 750 € (TD 2001 mit Ortofon 2M Red und Zubehoer) und 850 € (TD 2001 mit RDC-Tuning, sehr guter Zustand), eBay.de-Angebote ab rund 850 € | 40 % unter dem guenstigsten bestaetigten Wert |
+
+Der Kleinanzeigen-Median (700 €, n=18) war wegen Streuung 2,74 und `belastbar: false`
+nicht verwendbar und wurde als nicht vorhanden behandelt; im Deal steht daher
+`referenz_hinweis` statt `ersparnis_eur`. Der Fund traegt keinen `unkenntnis_bonus`.
+
+## Zwei Beobachtungen zu diesem Lauf
+
+**Der einzige Kandidat mit `unkenntnis_bonus` wurde verworfen** (3504663298, Vitra
+Buerostuhl Meda, 150 €). Nicht wegen der duennen Anzeige, sondern weil die Anzeige
+keine Variante nennt und die Vergleichsangebote (eBay.de, 195 bis 299 €) deshalb
+nicht sicher dasselbe Produkt zeigen.
+
+**Ein Fund wurde nach dem Schreiben von deals.json wieder zurueckgezogen**
+(3504583348, USM Haller Rollcontainer weiss, 300 €). Die Haendlerangebote fuer
+aufbereitete Exemplare (580 bis 770 €) sahen nach einem klaren Abstand aus, bis die
+Gegenpruefung zwei nahezu identische weisse Dreischubladen-Rollcontainer im selben
+Kandidatenstapel zeigte, zu 395 € (3504480852) und 380 € (3505032681). Das private
+Preisniveau liegt damit bei rund 390 €, und die fehlenden Schluessel sowie die
+schiefe Schublade erklaeren den Rest der Luecke. Lehre fuer kuenftige Laeufe: wenn
+mehrere Exemplare desselben Artikels gleichzeitig in der Warteschlange stehen, sind
+sie das bessere Vergleichsangebot als jeder Haendlerpreis.
+
+## Externe Pruefung
+
+Direktabrufe bleiben blockiert (audio-markt.de wurde mit EGRESS_BLOCKED
+abgewiesen); alle Marktwerte stammen aus Websuch-Treffern mit konkret genannten
+Angeboten. Kandidaten, deren Marktwert sich so nicht mit zwei Vergleichsangeboten
+belegen liess, wurden verworfen statt geschaetzt.
+
+## Verworfene Kandidaten
+
+### Einzeln geprueft
+
+| ID | Titel | Preis | Grund |
+|---|---|---|---|
+| 3505062244 | BMW E30 CABRIO  325i | 7950 € | Anzeige nennt selbst Restaurationsobjekt mit Durchrostungen und aufgeschnittenem Verdeck; der niedrige Preis erklaert sich damit. |
+| 3505015798 | Rolex Day-Date 36 - 18 Karat Gold | 15900 € | Day-Date 36 in Gold ohne Papiere: bestaetigtes Niveau 15.000 bis 31.000 Euro, das p25 der Vergleichsgruppe liegt mit 14.499 Euro unter dem Angebotspreis; kein 20-Prozent-Abstand. |
+| 3504659811 | Honda CRX Del Sol    Auffahrunfall | 1500 € | Auffahrunfall, 286.000 km, Referenz nicht belastbar (Streuung 2,65); Preis erklaert sich selbst. |
+| 3504504834 | Rolex Datejust 31 FULLSET | mit Box & Papiere | 8000 € | Ref. 68273 wird von Haendlern zu 6.690 bis 8.250 Euro angeboten; 8.000 Euro privat sind Marktpreis, der Median mischt moderne Datejust 31. |
+| 3504641137 | Mercedes 200E w124 | 2999 € | 317.000 km, Lackarbeiten noetig, Verkaeuferbewertung 0,19; hohe Laufleistung erklaert den Preis. |
+| 3505231952 | Mercedes Benz 190E w201 | 3250 € | Kopfdichtung defekt, Oel im Wasser; Defekt erklaert den Preis. |
+| 3505165557 | E36 cabrio 320i | 5500 € | 226.000 km und offene Maengelliste (Tacho, Servoschlaeuche, Fenster); Preis erklaert sich selbst. |
+| 3470148884 | Specialized Turbo Vado SL 5.0  superleichtes Trekking - E- | 1350 € | Aufbereitete Vado SL 5.0 werden ab 1.399 Euro angeboten, das Angebot liegt bei 1.350 Euro; kein 20-Prozent-Abstand. |
+| 3505101695 | Weiler Drehmaschine | 2600 € | Referenz nicht belastbar (Streuung 6,0), Werbetext ohne Typenbezeichnung, und eine Drehmaschine wird nicht fuer 2,99 Euro versandt. |
+| 3505295737 | BMW R 100 GS Dakar Oldtimer Scheunenfund | 3000 € | Scheunenfund nach langer Standzeit, technischer Zustand ungeprueft; Preis erklaert sich selbst. |
+| 3504637463 | W124 Mercedes Oldtimer Limousine | 4100 € | 340.000 km, kein TUEV, ausdrueckliches Projektfahrzeug; Preis erklaert sich selbst. |
+| 3505411458 | Ducati Monster S2R 800 | 1800 € | Springt nicht mehr an; Defekt erklaert den Preis. |
+| 3505362888 | Rolex datejust 36 mm pie pan silber Zifferblatt ref. 1601 | 4100 € | Referenz nicht belastbar (Streuung 3,66), Haendlertext mit Garantie und Echtheitszusage auf Privatprofil; 4.100 Euro sind fuer eine 1601 Marktpreis. |
+| 3504674412 | Suzuki GsxR  750 | 1500 € | Referenz nicht belastbar (Streuung 3,15), Baujahr 1993 mit 50.000 km ohne aktuellen TUEV. |
+| 3504631359 | Suzuki GSXR 750 | 1500 € | Referenz nicht belastbar (Streuung 3,15), Superbike-Umbau senkt den Wert bei Sammlern. |
+| 3504961375 | Simson Schwalbe, 12V Vape , Motor überholt , technisch top | 1500 € | Simson nur per Versand ohne Abholung; fuer ein zulassungspflichtiges Fahrzeug unglaubwuerdig. |
+| 3504666406 | Cube Stereo ONE 55, Carbon, XL-Fully, neuwertig | 1850 € | Neupreis der passenden Variante mit 3.499 Euro belegt, aber kein konkretes Gebrauchtangebot desselben Modells mit Preis auffindbar; der 20-Prozent-Abstand ist damit nicht belegbar. |
+| 3504832756 | CUBE Stereo 140 hpc sl Größe M | 1350 € | Gebrauchtniveau des Stereo 140 HPC SL von 2021 nicht mit zwei konkreten Angeboten belegbar. |
+| 3505016363 | Simson s51 | 2000 € | Ebenfalls nur Versand, Konto seit August 2025, Tuningumbau ohne Papiernachweis. |
+| 3504791692 | Velo de Ville AEB 890 Trekking E-Bike Tiefeinsteiger | 1499 € | Gewerbliches Rebike-Store-Angebot mit Aufbereitung; der refurbished-Preis ist hier der Marktpreis. |
+| 3505135433 | Suzuki GSXR 750 K1 | 1150 € | Sturzschaden und Rennstreckenumbau, steht seit 2014; Preis erklaert sich selbst. |
+| 3504820448 | Bulls Copperhead Evo 2 E-Mountainbike  Bosch CX | 1400 € | Text liest sich wie ein Haendlerangebot (Sorglospaket, Reparaturschutz); 1.400 Euro liegen nur 22 Prozent unter dem p25 und sind extern nicht bestaetigt. |
+| 3504614711 | Cannondale Tesoro Neo Bosch CX Ebike | 1000 € | 1.000 Euro liegen rund 17 Prozent unter dem Niveau vergleichbarer Raeder; kein belegter 20-Prozent-Abstand. |
+| 3504987436 | Simson S51 moped  12v  4 gang | 2500 € | Papiere erst beim KBA beantragt; ohne Papiere ist das Moped nicht billig, sondern richtig bepreist. |
+| 3504785796 | Alcove Sofa – 2-Sitzer Vitra | 1600 € | Angebotspreis entspricht exakt dem p25 der Vergleichsgruppe (1.600 Euro). |
+| 3505264383 | Simson S50 mit Papiere | 2200 € | Motor klappert und Elektrik defekt; die Maengel erklaeren den Preis. |
+| 3505307092 | Omega Speedmaster Mark 2 | 1800 € | Referenz nicht belastbar (Streuung 5,32), Glas stark verkratzt; kein belegter 20-Prozent-Abstand. |
+| 3504741728 | Cube E -bike Hybrid | 1250 € | Keine Modellbezeichnung, daher kein Vergleichsangebot moeglich. |
+| 3504617444 | Brompton C line 6 Gang M type/S type  | 950 € | Nur ein konkretes Vergleichsangebot (aufbereitet 1.230 Euro), dazu Lenkerumbau S auf M; Marktwert nicht mit zwei vergleichbaren Angeboten belegbar. |
+| 3504535711 | Canyon Rennrad (Shimano Ultegra Schaltgruppe & Bremsen)‼️ | 450 € | Referenz nicht belastbar (Streuung 2,59), Modellbezeichnung fehlt vollstaendig. |
+| 3505292592 | Simson S51 3 Gang | 1350 € | Zwei Rahmen zum Wiederaufbau ohne Typenschild; Preis erklaert sich selbst. |
+| 3504738835 | Cube Kathmandu | 1250 € | Angabe "Bosch-Antrieb von 2001" ist technisch unmoeglich; Modelljahr und damit Marktwert unklar. |
+| 3504717064 | Gazelle Bosch Active Line Mittelmotor | 750 € | Titel nennt Gazelle, der Text ein Giant Entour; Verkaeuferbewertung 0,36. |
+| 3504776870 | Cube Reaction Pro M|29|Neuwertig|XT|Rockshox AIR|MTB | 950 € | Konto seit Mai 2026, nur Versand, Preis nahe Neupreis: Betrugsprofil. |
+| 3504810373 | E-Bike von Cube | 800 € | Referenz nicht belastbar (Streuung 3,5), keine Modellangabe, Verkaeuferbewertung 0,45. |
+| 3504588786 | GIANT Explore E+ O E-Bike E-Trekkingbike | 650 € | Verkaeuferbewertung 0,50, kein externes Vergleichsangebot mit Preis gefunden. |
+| 3504639640 | MacBook Pro M3 TOP ZUSTAND | 805 € | Konto juenger als drei Tage, nur Versand: Betrugsprofil, kein Fund. |
+| 3504729161 | CUBE Stereo Hybrid 120 HPA Race 500 з Bosch 500 Wh | 1000 € | Verkaeuferbewertung 0,33, Text teilweise maschinell uebersetzt. |
+| 3505382665 | Haibike Sduro Trekking | 350 € | Reifen abgefahren, Display verkratzt, Alter unbekannt; die Maengel erklaeren den Preis weitgehend. |
+| 3504557990 | Maralunga Cassina Magistretti Zweisitzer in tollem Zustand | 999 € | Vergleichsangebot fuer einen Maralunga-Zweisitzer in Stoff, sehr guter Zustand: 950 Euro; das Angebot liegt mit 999 Euro darueber. |
+| 3504557155 | Cube Touring Hybrid One Gr. M E-Bike E-Trekking Bosch 625W | 1399 € | Gewerbliches Angebot mit zwoelf Monaten Gewaehrleistung; der Haendlerpreis ist der Marktpreis. |
+| 3504497625 | USM Haller Sideboard 2x2 anthrazitgrau, Original | 850 € | USM-Sideboard 2x2 nur per Versand ohne Abholung: fuer ein schweres Stahlmoebel unglaubwuerdig. |
+| 3505303349 | Truma Mover smart M  Rangierhilfe für Wohnwagen | 800 € | Referenz nicht belastbar (Streuung 9,09), p25 liegt bei 275 Euro; kein belegter Abstand. |
+| 3504590579 | USM Haller Sideboard | 850 € | Ebenfalls nur Versand, dazu nur ein Bild und keine Zustandsangabe. |
+| 3481377198 | USM Haller  Sideboard | 990 € | 990 Euro liegen ueber dem p25 von 975 Euro der Vergleichsgruppe. |
+| 3504388422 | Cube E-Bike 54 Rahmen gebraucht | 500 € | Referenz nicht belastbar (Streuung 3,28), Angebotspreis entspricht dem p25. |
+| 3505320364 | PlayStation 5 PS5 Pro 2 TB+ Disc Laufwerk + OVP + Controll | 509 € | PS5 Pro nur per Versand zu rund halbem Median: gleiches Massenmuster wie die uebrigen PS5-Pro-Anzeigen dieses Laufs. |
+| 3505265412 | PS5 Pro Konsole (2 TB) NEU | 550 € | Verlangt PayPal Freunde plus Gebuehr, also Zahlung ausserhalb des Kaeuferschutzes: klares Betrugssignal. |
+| 3504622895 | Specialized Roval Rapide CLX Hinterrad Carbon | 690 € | Referenz nicht belastbar (Streuung 4,49), p25 liegt mit 599 Euro unter dem Angebotspreis. |
+| 3504576395 | Tag Heuer Formula 1 Chronograph in schwarz Topzustand Full | 890 € | Verlangt PayPal Freunde; zudem ist der Preis fuer eine Formula-1-Quarzuhr nicht unter Markt, der Median mischt neuere Modelle. |
+| 3504583348 | USM Haller Rollcontainer weiß mit 3 Schubladen | 300 € | Zunaechst als Fund gefuehrt und nach Gegenpruefung wieder verworfen: im selben Kandidatenstapel stehen zwei nahezu identische weisse USM-Rollcontainer mit drei Schubladen zu 395 und 380 Euro. Das private Preisniveau liegt also bei rund 390 Euro, nicht bei den 580 bis 770 Euro der aufbereiteten Haendlerangebote, und der Abstand von 300 Euro wird durch die fehlenden Schluessel und die schiefe Schublade weitgehend erklaert. |
+| 3504752619 | Canyon Roadlite AL SL 8.0 | 460 € | Rahmengroesse XXL mit engem Kaeuferkreis, kein externes Vergleichsangebot mit Preis gefunden. |
+| 3504395497 | Cube Race One 29 Mountainbike | 385 € | Referenz nicht belastbar (Streuung 3,63), Baujahr fehlt. |
+| 3504679049 | PlayStation 5 Pro PS5 Pro 2TB Controller Konsole OVP TOP Z | 590 € | Gleiches PS5-Pro-Muster, Verkaeuferbewertung 0,69. |
+| 3504536456 | Cube Stereo 160 HPA Pro 27,5” Fully 160mm | 600 € | 600 Euro liegen 25 Prozent unter dem p25, aber ohne Baujahr ist kein Marktwert belegbar. |
+| 3504363773 | Cube Bike zu verkaufen | 450 € | Referenz nicht belastbar (Streuung 4,59), keine Modellangabe. |
+| 3505089302 | DJI Mini 5 Pro Fly More Combo (DJI RC 2) + DJI Care Refres | 520 € | Passt in das im deal_log dokumentierte DJI-Mini-Muster (nur Versand, rund halber Marktwert, seit dem 12. August wiederholt), das im Morgenlauf als Cluster zurueckgezogen wurde. |
+| 3504684474 | PS5 PRO Top zustand | 750 € | Gleiches PS5-Pro-Muster, Textbaustein ohne konkrete Angaben, nur Versand. |
+| 3504480852 | USM Haller Rollcontainer weiß mit 3 Schubladen | 395 € | Weisser USM-Rollcontainer mit Dellen in der Deckplatte zu 395 Euro: liegt auf dem privaten Preisniveau vergleichbarer Angebote. |
+| 3504547000 | DJI Mini 3 Pro | 250 € | Gleiches DJI-Mini-Muster, dazu Dreizeilenanzeige ohne Zubehoerangabe. |
+| 3505340840 | DJI Mini 4 Pro Fly More Combo mit RC 2 | 400 € | Gleiches DJI-Mini-Muster wie oben. |
+| 3505032681 | Original USM Haller Rollcontainer | 380 € | Weisser USM-Rollcontainer zu 380 Euro, nur Versand: liegt ebenfalls auf dem privaten Preisniveau. |
+| 3504534064 | Thorens TD 320 Plattenspieler Turntable High End Talisman  | 300 € | 300 Euro liegen praktisch auf dem p25 von 299 Euro. |
+| 3504663298 | Vitra Bürostuhl Meda | 150 € | Einziger Kandidat mit unkenntnis_bonus. Gebrauchte Meda werden bei eBay.de zu 195 bis 299 Euro angeboten, die Anzeige nennt aber keine Variante (Meda, Meda 2, Slim, mit oder ohne Armlehnen); die Vergleichbarkeit ist damit nicht zu sichern und 150 Euro sind privat kein belegter 20-Prozent-Abstand. |
+| 3504394283 | Lego 10232 Palace Cinema auf Vollständigkeit geprüft | 170 € | Set unvollstaendig (zwei Steine ersetzt) und altersverfaerbt; 170 Euro sind dafuer Marktpreis. |
+| 3504715975 | DDR Anhänger HP400 Festpreis | 150 € | Anhaenger zerlegt und zum Restaurieren; Preis erklaert sich selbst. |
+| 3504727705 | Nintendo 64 Konsole mit Controller & 7 Spielen | 180 € | Referenz nicht belastbar (Streuung 3,0); pricecharting ist als Obergrenze zu lesen, 180 Euro fuer Konsole plus sieben Spiele sind Marktpreis. |
+| 3504702711 | Leica 90mm 2.0 Summicron-M 11136 1995 o. 1997 | 790 € | Kein Median vorhanden. Recherche: Leica Classic Store fuehrt gebrauchte 11136 von 690 bis 1.250 Euro; 790 Euro liegen mitten in dieser Spanne. |
+| 3498322069 | Opel Zafira 1,9 Diesel NOTVERKAUF!! Einsteigen und Losfahr | 2000 € | Kein Median. 310.000 km bei Baujahr 2008; hohe Laufleistung erklaert den Preis. |
+
+### Gruppenweise verworfen
+
+**apple-mobil (35 Anzeigen)** — Sammelbefund iPhone-Cluster: reine Versandangebote zu rund der Haelfte des Medians, austauschbare Textbausteine, keine Seriennummer, kein Nachweis zur Aktivierungssperre. Gleiches Massenmuster wie das im deal_log dokumentierte Cluster, extern nicht bestaetigt.
+
+IDs: 3504358495, 3504365444, 3504434236, 3504526763, 3504564038, 3504571280, 3504577919, 3504579681, 3504609657, 3504651329, 3504653996, 3504675055, 3504686703, 3504692170, 3504703634, 3504709715, 3504718957, 3504719850, 3504729705, 3504731673, 3504734326, 3504747198, 3504752411, 3504755000, 3504764096, 3504774530, 3504790321, 3504790622, 3504805914, 3504809178, 3504830877, 3504969154, 3504999497, 3505055731, 3505129451
+
+**ebike-rad (27 Anzeigen)** — Sammelbefund Fahrraeder ohne Modell- oder Baujahrangabe: ohne diese Angaben ist kein Vergleichsangebot auffindbar, der Median mischt Marken- und Baujahrsgenerationen.
+
+IDs: 3496627726, 3504360605, 3504362009, 3504421460, 3504471611, 3504473761, 3504490760, 3504568553, 3504601522, 3504603004, 3504605768, 3504662884, 3504663090, 3504674074, 3504721060, 3504738479, 3504744844, 3504758888, 3504773980, 3504797868, 3504823837, 3505115653, 3505140250, 3505261078, 3505298144, 3505363719, 3505395715
+
+**macbook (11 Anzeigen)** — Sammelbefund MacBook-Cluster: Versand ohne Abholung, Preise um die Haelfte des Medians, teils sehr junge Konten. Ohne Pruefung auf iCloud-Aktivierungssperre und MDM vor Ort nicht meldbar.
+
+IDs: 3504463110, 3504477808, 3504491022, 3504552876, 3504596176, 3504736980, 3504747203, 3505177684, 3505208366, 3505358857, 3505410401
+
+**design-sammeln (10 Anzeigen)** — Sammelbefund Designmoebel-Einzelstuecke (Eames, Panton, Thonet, KPM, Panthella, USM-Schreibtisch): Original und Nachbau sind nur am Label zu unterscheiden, ohne Labelnachweis kein belegbarer Marktwert.
+
+IDs: 3347116147, 3504369910, 3504425658, 3504427765, 3504487920, 3504510857, 3504715195, 3504794395, 3504825634, 3505137577
+
+**werkzeug-maschinen (2 Anzeigen)** — Sammelbefund Hilti-Geraete zu 150 Euro Festpreis: ohne Seriennummer und Kaufbeleg nicht meldbar.
+
+IDs: 3504622743, 3505405760
