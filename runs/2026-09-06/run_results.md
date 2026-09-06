@@ -233,3 +233,47 @@ Ersparnis gegenüber dem jeweils bestätigten Marktwert.
 | 3504222868 | Tele Leitz APO-TELYT-R 180mm / f 3.4 E60, OVP, wie neu | 460 € | Eigene Recherche ergibt für das APO-Telyt-R 180/3.4 (11242) ein Niveau von 400 bis 750 Euro (Leica Classic Store 408 Euro, Leica Store Firenze 750 Euro, eBay-Verkauf 499 USD); 460 Euro liegen mitten darin. |
 | 3504702711 | Leica 90mm 2.0 Summicron-M 11136 1995 o. 1997 | 790 € | Summicron-M 90/2 pre-ASPH streut zwischen rund 600 und 1.600 Euro (Leica Classic Store 1.200 Euro, eBay 1.621 Euro, Rockwell nennt 600 Euro als Schnäppchenniveau) – bei 790 Euro kein belastbarer 20-Prozent-Abstand nachweisbar. |
 | 3498322069 | Opel Zafira 1,9 Diesel NOTVERKAUF!! Einsteigen und Losfahren | 2000 € | Kein Kleinanzeigen-Median vorhanden und kein eigener Marktwert recherchiert – nach Prüfvorrang nicht erreicht. |
+
+## Nachtrag nach dem Versand: Wiederholungsmuster im deal_log
+
+Nach dem Push ist mir beim Durchsehen von `deal_log.csv` ein Muster
+aufgefallen, das ich vor der Entscheidung haette pruefen muessen:
+
+- **DJI Mini 4 Pro Fly More Combo:** seit dem 12. August 11-mal gemeldet, immer
+  zwischen 320 und 400 Euro, gegen ein Referenzniveau von 650 bis 700 Euro
+  (12.08. / 14.08. / 19.08. / 22.08. / 25.08. / 26.08. / 29.08. / 03.09. /
+  05.09. und heute).
+- **Steam Deck OLED:** seit dem 12. August 12-mal gemeldet, immer zwischen 250
+  und 470 Euro gegen 600 bis 735 Euro.
+
+Auffaellig ist zusaetzlich die URL-Endung der Drohnen-Inserate: `-298-8307` am
+14.08., 19.08., 22.08. und 25.08., `-168-8307` heute. Das letzte Segment
+wiederholt sich ueber vier Wochen und zwei Kategorien hinweg.
+
+Ein liquides, gut bekanntes Geraet wird nicht 11-mal in vier Wochen 45 Prozent
+unter Markt von wechselnden Konten angeboten, alle ausschliesslich per Versand,
+keines mit Abholung. Zwei Lesarten, beide entwerten den Fund:
+
+1. Es ist ein wiederkehrendes Betrugscluster – dann gehoert es nicht in die Mail.
+2. Das private Kleinanzeigen-Niveau fuer diese beiden Geraete liegt tatsaechlich
+   bei 330 bzw. 360 Euro – dann ist mein aus Haendler- und eBay-Preisen
+   bestaetigter Marktwert fuer diesen Marktplatz zu hoch angesetzt, und der
+   20-Prozent-Abstand existiert nicht.
+
+**Damit ziehe ich zwei der vier Funde zurueck:** 3504512062 (DJI Mini 4 Pro)
+und 3504620034 (Steam Deck OLED). Sie stehen in der bereits versandten Mail vom
+6. September; eine zweite Mail habe ich bewusst nicht ausgeloest, weil ein
+erneuter Push auf `email_output.html` nur eine zweite Mail erzeugt und die erste
+nicht zuruecknimmt. Beide bleiben in `deal_log.csv`, damit sie nicht erneut
+gemeldet werden.
+
+**Weiterhin belastbar:** 3503936189 (Vitra EA 117) und 3503739791 (Leica
+Summicron-M 50 mm). Beide nur Abholung beziehungsweise Nachlassverkauf mit
+Seriennummer, beide ohne Entsprechung im Wiederholungsmuster. Der Leica-Verkaeufer
+(URL-Endung `-245-2733`) hatte am 28.08. bereits ein 35er Summicron im Log – bei
+einer Nachlassaufloesung ist das normal und kein Clustersignal.
+
+**Offene Frage fuer den naechsten Lauf:** Sollen `optik-drohnen` und
+`konsolen-sweep` einen eigenen Realpreis-Anker statt des Angebots-Medians
+bekommen, oder gehoeren wiederkehrende Titel-Preis-Kombinationen aus dem
+deal_log automatisch als Clustersignal in die Kandidatenpruefung?
