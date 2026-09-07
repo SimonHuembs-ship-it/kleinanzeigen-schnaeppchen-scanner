@@ -1,26 +1,23 @@
 {
-  "generiert": "2026-09-07T00:46:00+02:00",
+  "generiert": "2026-09-07T04:03:41+02:00",
   "zeitraum": {
-    "von": "2026-09-06T18:50:13+02:00",
-    "bis": "2026-09-06T23:50:13+02:00"
+    "von": "2026-09-06T22:52:56+02:00",
+    "bis": "2026-09-07T03:52:56+02:00"
   },
   "statistik": {
-    "gesichtet": 130820,
-    "nach_modellmatch": 1190,
-    "nach_vorfilter": 1185,
-    "nach_preisschwelle": 84,
-    "nach_scoring": 60,
+    "gesichtet": 17073,
+    "nach_modellmatch": 59,
+    "nach_vorfilter": 59,
+    "nach_preisschwelle": 5,
+    "nach_scoring": 3,
     "ausschluesse": {
-      "messenger": 1,
-      "score_zu_niedrig": 17,
-      "preis_unplausibel": 6
+      "score_zu_niedrig": 2
     },
-    "pool": 128339,
-    "ohne_referenz_verworfen": 392,
-    "referenz_gekappt": 421,
+    "pool": 14596,
+    "ohne_referenz_verworfen": 23,
     "doppelt_zusammengefasst": 0,
-    "requests": 2483,
-    "laufzeit_sekunden": 3347
+    "requests": 484,
+    "laufzeit_sekunden": 645
   },
   "kandidaten": [
     {
@@ -4663,6 +4660,74 @@
       }
     },
     {
+      "id": "3505845444",
+      "watchlist_id": "ebike-rad",
+      "titel": "Canyon Hardtail",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/canyon-hardtail/3505845444-217-4779",
+      "preis": 350.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 750.0,
+        "p25": 480.0,
+        "n": 76,
+        "query": "Canyon Hardtail",
+        "korrektur": 0.0,
+        "streuung": 2.19,
+        "belastbar": true
+      },
+      "p_ratio": 0.467,
+      "ersparnis_eur": 400.0,
+      "ort": "Dietzhölztal",
+      "plz": "35716",
+      "eingestellt": "2026-09-07T00:36:27+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/18/1856fd0f-c27f-4d48-a644-5efb68399969?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/30/305d410c-1652-4c68-b570-a406d738a302?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d8/d8f7c080-e222-4c9e-8ca1-6e56746172a7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e2/e23075ff-a3e1-47e7-b463-279bf4bca38f?rule=$_0.JPG"
+      ],
+      "beschreibung": "Sehr gut erhalten, kleine Gebrauchsspuren die aber nicht stören.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Mountainbikes",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "117776716",
+        "name": "Sheldor",
+        "typ": "PRIVATE",
+        "konto_seit": "2022-03-17",
+        "konto_alter_tage": 1634,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 97,
+      "signale": {
+        "gruen": [
+          "Konto seit 2022",
+          "Abholung moeglich",
+          "8 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Beschreibung sehr duenn"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3505261078",
       "watchlist_id": "ebike-rad",
       "titel": "Pegasus Damen Trekkingrad mit Korb",
@@ -7046,6 +7111,70 @@
       }
     },
     {
+      "id": "3505840385",
+      "watchlist_id": "apple-mobil",
+      "titel": "Apple iPhone 15 512 GB Schwarz",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-15-512-gb-schwarz/3505840385-173-13077",
+      "preis": 450.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 680.0,
+        "p25": 600.0,
+        "n": 76,
+        "query": "Apple iPhone GB 15 512",
+        "korrektur": 0.0,
+        "streuung": 1.25,
+        "belastbar": true
+      },
+      "p_ratio": 0.662,
+      "ersparnis_eur": 230.0,
+      "ort": "Neustadt an der Aisch",
+      "plz": "91413",
+      "eingestellt": "2026-09-06T23:59:08+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/84/84ed1320-dc42-4387-b4e3-a7ce8cd020c6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/02/02042464-2455-4fcb-b62a-5d5dc9a25624?rule=$_0.JPG"
+      ],
+      "beschreibung": "iPhone 15 mit 512 GB zu verkaufen.<br /><br />Batteriezustand: 79 %<br /><br />Das Handy funktioniert einwandfrei. Am Gehäuse sind ein paar kleine Kratzer vorhanden, ansonsten ist es in einem guten Zustand.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,99",
+        "Modell": "iPhone 15",
+        "Farbe": "Schwarz",
+        "Gerät & Zubehör": "Gerät & Zubehör",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "166019225",
+        "name": "Özqn",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-08-29",
+        "konto_alter_tage": 8,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 65,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Konto juenger als 30 Tage"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3504715195",
       "watchlist_id": "design-sammeln",
       "titel": "große KPM Vase Blumen handbemalt Zepter u. roter Reichsapfel",
@@ -8361,72 +8490,6 @@
         ],
         "rot": [
           "Bewertung 0.64"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3504692170",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 15 – Sehr guter Zustand – 85 %",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-sehr-guter-zustand-85-/3504692170-173-9367",
-      "preis": 370.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 530.0,
-        "p25": 400.0,
-        "n": 17,
-        "query": "iPhone 15 85",
-        "korrektur": 0.0,
-        "streuung": 1.38,
-        "belastbar": true
-      },
-      "p_ratio": 0.698,
-      "ersparnis_eur": 160.0,
-      "ort": "Freiburg im Breisgau",
-      "plz": "79114",
-      "eingestellt": "2026-09-05T23:56:53+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8a/8a39a322-68c4-47f2-a0dd-53507da3c6d8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a8/a805c6a5-19f3-437a-ad3f-a9a8b86090c3?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/04/04a054ac-2e4d-4fc8-8ee8-b5ba8dd68f63?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ee/ee886768-3ed8-425b-a893-9227354f635f?rule=$_0.JPG"
-      ],
-      "beschreibung": "Zum Verkauf steht ein iPhone 15 in sehr gutem, gepflegtem Zustand.<br /><br />Details:<br /><br />* iPhone 15<br />* Batteriekapazität: 85 %<br />* Sehr guter &#x2F; nahezu neuwertiger Zustand<br />* Immer mit Schutzglas verwendet<br />* Originalverpackung vorhanden<br />* Keine Beschädigungen oder Kratzer<br />* Das Gerät funktioniert einwandfrei<br /><br />Das iPhone kann bei der Abholung selbstverständlich besichtigt und getestet werden.<br /><br />Abholung bevorzugt.<br />Bei Interesse gerne melden.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,99",
-        "Modell": "iPhone 15",
-        "Farbe": "Schwarz",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "165842890",
-        "name": "Artem",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-08-22",
-        "konto_alter_tage": 14,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 97,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "9 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Konto juenger als 30 Tage"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -9918,78 +9981,6 @@
       }
     },
     {
-      "id": "3504703634",
-      "watchlist_id": "apple-mobil",
-      "titel": "IPhone 14 - 128 GB Midnight",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-128-gb-midnight/3504703634-173-9181",
-      "preis": 189.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 320.0,
-        "p25": 280.0,
-        "n": 81,
-        "query": "IPhone GB Midnight 14 128",
-        "korrektur": 0.0,
-        "streuung": 1.25,
-        "belastbar": true
-      },
-      "p_ratio": 0.591,
-      "ersparnis_eur": 131.0,
-      "ort": "Heidelberg",
-      "plz": "69123",
-      "eingestellt": "2026-09-06T01:18:09+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/78/784a5098-3a11-4015-a504-d35a3bbfc384?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/51/5150c7c1-25fa-4e7c-ba31-23e7974c806b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aa82cd1d-0cd5-4498-99ea-438420e9086c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3b/3b8865ae-8d7f-4bb2-bbdb-1d574c8c4454?rule=$_0.JPG"
-      ],
-      "beschreibung": "Preis: 189 € VB<br /><br />Zum Verkauf steht mein iPhone 14 mit 128 GB Speicher in Midnight (Schwarz).<br /><br />Das iPhone funktioniert grundsätzlich und kann über MagSafe problemlos geladen werden. Der normale Ladeanschluss über das Ladekabel funktioniert allerdings nicht mehr, nachdem Flüssigkeit in den Anschluss gelangt ist. Der Zustand wird daher ausdrücklich so verkauft.<br /><br />Akkukapazität: 72 %<br /><br />Zustand:<br /><br />* sichtbare Gebrauchsspuren vorhanden<br />* mehrere Kratzer auf dem Display, siehe Fotos<br />* Gebrauchsspuren am Rahmen<br />* Display hat eine deutlich sichtbare längere Beschädigung&#x2F;Kratzer, siehe Bilder<br />* Lightning-Anschluss lädt nicht mehr<br />* MagSafe-Laden funktioniert<br />* ansonsten lässt sich das Gerät normal bedienen<br /><br />Lieferumfang:<br /><br />* iPhone 14, 128 GB, Midnight<br />* Originalverpackung (OVP) + Lightning Kabel<br /><br /><br />Ich möchte den Zustand mit den Bildern möglichst transparent darstellen, damit es hinterher keine Missverständnisse gibt. Das Handy wird daher ausdrücklich mit den genannten Mängeln verkauft.<br /><br />189 € VB<br /><br />Abholung bevorzugt, Versand nach Absprache möglich.<br /><br />Privatverkauf: Keine Garantie, Gewährleistung oder Rücknahme. Der Verkauf erfolgt unter Ausschluss der Sachmängelhaftung.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,99",
-        "Modell": "iPhone 14",
-        "Farbe": "Schwarz",
-        "Gerät & Zubehör": "Gerät & Zubehör",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "76279107",
-        "name": "Adriana",
-        "typ": "PRIVATE",
-        "konto_seit": "2020-07-03",
-        "konto_alter_tage": 2255,
-        "bewertung": 0.6818181818181818,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 90,
-      "signale": {
-        "gruen": [
-          "Konto seit 2020",
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "6 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.68",
-          "Gewerbetext auf Privatprofil"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3504752411",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 12 Pro Max in sehr gutem Zustand 128GB",
@@ -10455,66 +10446,66 @@
       }
     },
     {
-      "id": "3504709715",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 13 256gb",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-13-256gb/3504709715-173-1572",
-      "preis": 215.0,
-      "preis_typ": "PLEASE_CONTACT",
+      "id": "3505845363",
+      "watchlist_id": "werkzeug-maschinen",
+      "titel": "Hilti TE 2 Bohrhammer Set im Koffer inkl. Bohrer & Zubehör",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/hilti-te-2-bohrhammer-set-im-koffer-inkl-bohrer-zubehoer/3505845363-84-6068",
+      "preis": 160.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
       "referenz": {
-        "median": 320.0,
-        "p25": 259.0,
-        "n": 38,
-        "query": "iPhone 13 256gb",
+        "median": 270.0,
+        "p25": 195.0,
+        "n": 34,
+        "query": "Hilti TE Bohrhammer 2",
         "korrektur": 0.0,
-        "streuung": 1.47,
+        "streuung": 2.05,
         "belastbar": true
       },
-      "p_ratio": 0.672,
-      "ersparnis_eur": 105.0,
-      "ort": "Barmen",
-      "plz": "42285",
-      "eingestellt": "2026-09-06T03:14:01+02:00",
+      "p_ratio": 0.593,
+      "ersparnis_eur": 110.0,
+      "ort": "Hohenlinden",
+      "plz": "85664",
+      "eingestellt": "2026-09-07T00:35:47+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a0/a010d63e-40f5-42ba-9061-59d848424390?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/af/af9f0afb-8a5e-4cd1-b01a-b915033d7d65?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/76/76c8aec1-696f-4973-aeb5-7c493c3c296d?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1b/1b11087c-10e4-4901-89e6-88fb26a89460?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/84/844671e8-d10a-47a9-b821-ff6f9351dafe?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9e/9e020f6e-6523-49d0-9b9f-934bd8de67e2?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f1018752-e66b-4b51-b96e-2820d922eae2?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ca/caa22c6c-65c1-4d9d-9638-d18d1495fce1?rule=$_0.JPG"
       ],
-      "beschreibung": "iPhone 13 Blau – 256 GB<br /><br />Ich verkaufe mein iPhone 13 in Blau mit 256 GB Speicher. Das Handy funktioniert einwandfrei und ist komplett original.<br /><br />Batteriezustand: 78 % – hält bei normaler Nutzung problemlos den ganzen Tag.<br />Display komplett ohne Kratzer.<br />Kamera funktioniert einwandfrei. An der Kameralinse befindet sich ein kleiner Kratzer, der beim Fotografieren nicht auffällt und die Bildqualität nicht beeinträchtigt.<br />Am Gehäuse befinden sich kleine Gebrauchsspuren, siehe Fotos.<br /><br />✅ 256 GB<br />✅ Alles original<br />✅ Face ID funktioniert<br />✅ Kamera funktioniert einwandfrei<br />✅ Keine technischen Probleme<br /><br />Preis ist verhandelbar, aber bitte keine unrealistischen Angebote.<br /><br />Bei Interesse oder Fragen gerne Privatnachricht.",
+      "beschreibung": "Sehr gut erhaltene Hilti TE 2 Bohrhammer mit SDS-Plus Aufnahme<br />Original Hilti<br />Transportkoffer<br />Mehrteiliges SDS-Plus Betonbohrer-Set Tiefenanschlag<br />Bedienungsanleitung<br />Hilti Schmierfett zur Pflege der Werkzeugaufnahme<br /><br />Zustand: neuwertig, nur einmal verwendet Gepflegt, voll funktionsfähig und sauber.<br /><br />Versand 6,99€ oder Abholung",
       "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,99",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
+        "Versand": "ab 2,99",
+        "Zustand": "Sehr Gut"
       },
       "verkaeufer": {
-        "id": "130369277",
-        "name": "Erik",
+        "id": "135498278",
+        "name": "Angel",
         "typ": "PRIVATE",
-        "konto_seit": "2023-05-15",
-        "konto_alter_tage": 1209,
-        "bewertung": 0.08823529411764706,
+        "konto_seit": "2023-11-11",
+        "konto_alter_tage": 1030,
+        "bewertung": 0.5543478260869565,
         "abzeichen": {
-          "rating": 0
+          "rating": 1,
+          "friendliness": 1,
+          "reliability": 1
         },
         "anzahl_anzeigen": 0
       },
       "uebergabe": {
-        "abholung": false,
+        "abholung": true,
         "versand": true,
         "kaeuferschutz": true
       },
-      "score": 82,
+      "score": 87,
       "signale": {
         "gruen": [
           "Konto seit 2023",
+          "Abholung moeglich",
           "Kaeuferschutz verfuegbar",
-          "5 Bilder",
-          "Maengel offengelegt"
+          "5 Bilder"
         ],
         "rot": [
-          "Bewertung 0.09"
+          "Bewertung 0.55"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -10851,139 +10842,6 @@
           "Maengel offengelegt"
         ],
         "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3504702711",
-      "watchlist_id": "kameras-leica",
-      "titel": "Leica 90mm 2.0 Summicron-M 11136 1995 o. 1997",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/leica-90mm-2-0-summicron-m-11136-1995-o-1997/3504702711-245-29994",
-      "preis": 790.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Urdenbach",
-      "plz": "40593",
-      "eingestellt": "2026-09-06T01:08:21+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5a/5a2e5988-9163-449c-8ca6-78f6c2ca2cf0?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/be/be59aa65-f5dd-4acc-8b72-98d07af55007?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/43/4326f54a-d9ed-4b52-a0c2-c9f43c6a6349?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d1/d1746fd2-913f-4105-a480-26a7f563189e?rule=$_0.JPG"
-      ],
-      "beschreibung": "Leica Summicron-M 90mm 2.0 mit Köcher sowie beiden Deckeln.<br />Klare Linsen mit einem sehr schönem Bokeh Baujahr 1997 pre. Aspherical.<br />Ich habe das Objektiv mit meiner Sony und Adapter verwendet und an meiner RD1 will mich aber verkleinern. Ich bin für realistische Preisvorschläge offen!<br />Bitte eine eigene Kamera zum Ausprobieren mitbringen.<br />Versand ungerne aber kann man drüber reden.<br /><br />Das ist ein Privatverkauf, keine Rückgabe,<br />keine Garantie und keine Gewährleistung.",
-      "attribute": {
-        "Art": "Objektiv",
-        "Versand": "Nur Abholung",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "27941910",
-        "name": "Patrick",
-        "typ": "PRIVATE",
-        "konto_seit": "2015-02-03",
-        "konto_alter_tage": 4232,
-        "bewertung": 0.9545454545454546,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 97,
-      "signale": {
-        "gruen": [
-          "Konto seit 2015",
-          "Bewertung 0.95, zuverlaessig",
-          "Abholung moeglich",
-          "8 Bilder"
-        ],
-        "rot": [
-          "Gewerbetext auf Privatprofil"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3498322069",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Opel Zafira 1,9 Diesel NOTVERKAUF!! Einsteigen und Losfahren",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/opel-zafira-1-9-diesel-notverkauf-einsteigen-und-losfahren/3498322069-216-1416",
-      "preis": 2000.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Plettenberg",
-      "plz": "58840",
-      "eingestellt": "2026-09-06T01:00:30+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/30/30fc7b1f-579c-4047-be1e-e42a57dd6c99?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/53/538dfd5c-cf3d-4d15-aef6-7b888ae48c42?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fc/fcc11200-62b9-4372-afbf-2ff02a19678b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c2/c26dfe25-5178-4055-a4f6-10db7ae20a76?rule=$_0.JPG"
-      ],
-      "beschreibung": "Zum Verkauf steht mein gepflegter Opel Zafira 1.9 Diesel, Baujahr 2008.<br /><br />Das Fahrzeug befindet sich insgesamt in einem sehr guten und gepflegten Zustand und fährt und bremst super. Ich hatte mit dem Fahrzeug nie größere Probleme.<br /><br />Daten & Ausstattung:<br /><br />* Baujahr: 2008<br />* Motor: 1.9 Diesel<br />* 7-Sitzer<br />* TÜV bis Juli 2027<br />* Reifen nagelneu 8-9 mm Profil Allwetter , Rechnung vorhanden<br />* Bremsen neu, Rechnung vorhanden<br />* Lichter vorne und hinten<br />* Auspuff wurde neu drangeschweißt<br />* Tankvolumen: 56 Liter<br />* Fernseher&#x2F;Monitor im Innenraum an der B-Säule – funktioniert einwandfrei, ideal für Kinder auf längeren Fahrten<br />* Gepflegter Innenraum und allgemein sehr guter Zustand<br /><br />- Keilriemen neu<br /><br />Bekannter Mangel:<br />Die ABS-Leuchte bzw. ESP-Leuchte ist im Tacho an. Nach meinem Kenntnisstand liegt es an einem ABS-Sensor vorne rechts oder links. Ich bin mir nicht sicher, welche Seite betroffen ist. Wenn der Sensor repariert bzw. ausgetauscht wird, sollte nach meiner Kenntnis auch die ESP-Anzeige verschwinden.<br /><br />- Anlasser sollte gewechselt werden, ggf kann ich das auch neu bestellen und dranbauen lassen gegen Aufpreis.<br /><br />Kosten 60-90€<br />Einbau 120-200€ (Schwer)<br /><br /><br />Das Fahrzeug ist fahrbereit und fährt sowie bremst einwandfrei.<br /><br />Preis: 2.000 VERHANDELBAR<br />WER 1800€ bietet kann es abholen kommen.<br /><br /><br />Bei Fragen gerne schreiben",
-      "attribute": {
-        "Marke": "Opel",
-        "Modell": "Zafira",
-        "Kilometerstand": "310.000",
-        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
-        "Erstzulassung": "März 2008",
-        "Kraftstoffart": "Diesel",
-        "Leistung": "120",
-        "Getriebe": "Manuell",
-        "Fahrzeugtyp": "Limousine",
-        "Anzahl Türen": "4/5",
-        "HU bis": "Juli 2027",
-        "Umweltplakette": "4 (Grün)",
-        "Schadstoffklasse": "Euro4",
-        "Außenfarbe": "Schwarz",
-        "Material Innenausstattung": "Stoff",
-        "Leichtmetallfelgen": "true",
-        "Klimaanlage": "true",
-        "Radio/Tuner": "true",
-        "Tempomat": "true",
-        "Antiblockiersystem (ABS)": "true"
-      },
-      "verkaeufer": {
-        "id": "132316788",
-        "name": "Privat",
-        "typ": "PRIVATE",
-        "konto_seit": "2023-07-24",
-        "konto_alter_tage": 1139,
-        "bewertung": 0.2777777777777778,
-        "abzeichen": {
-          "rating": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 81,
-      "signale": {
-        "gruen": [
-          "Konto seit 2023",
-          "Abholung moeglich",
-          "8 Bilder",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Bewertung 0.28"
-        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
