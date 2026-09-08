@@ -144,3 +144,207 @@ Der Trek Slash 9 (3506615365) ist der einzige Kandidat, der am Nachweis und nich
 an der Sache gescheitert ist: ehrliche Anzeige, offengelegter Verschleiß, nur
 Abholung, Bewertung 0,96. Fehlt allein das Modelljahr. Taucht er mit Baujahr
 oder mit einer Rahmennummer erneut auf, ist er ohne Weiteres bestätigbar.
+
+# Lauf 2026-09-08, abends
+
+- **Ausgeführt:** 8. September 2026, 19:03–19:40 Uhr (MESZ)
+- **Datenstand bei Laufbeginn:** 2026-09-08T11:15:58+02:00, also 7 h 48 min alt
+- **Datenstand bei der Beurteilung:** 2026-09-08T19:23:14+02:00, wenige Minuten alt
+- **Zeitraum des maßgeblichen Sammellaufs:** 2026-09-08T12:39:28+02:00 bis 2026-09-08T17:39:28+02:00
+- **Gesichtete Anzeigen:** 151.840
+- **Kandidaten in der Warteschlange:** 130
+- **Bereits in `deal_log.csv`:** 0
+- **Bereits in früheren Laufprotokollen verworfen:** 50
+- **Heute Abend einzeln beurteilt:** 81 (40 aus der 11:15-Liste, 40 neu im 19:23-Fenster, 1 zwischenzeitlich aus der Warteschlange gefallen)
+- **Per Websuche gegengeprüft:** 11 Positionen
+- **Gemeldet:** 0
+- **Kandidaten mit `unkenntnis_bonus`:** 1 (vorrangig geprüft, siehe unten)
+
+## Schritt 1: Frist überschritten, dann doch frische Daten
+
+Der Sammellauf um 12:00 UTC ist von GitHub erneut nicht angelegt worden — dasselbe
+Muster wie am 7. September abends. Bei Laufbeginn war `candidates.json` deshalb
+7 h 48 min alt und damit weit über der Vier-Stunden-Grenze aus `prompt.md`
+Schritt 1.
+
+Ein Sammellauf war zu diesem Zeitpunkt aber bereits seit 86 Minuten in Arbeit
+(Actions-Lauf 34246136002, gestartet 15:39 UTC). Statt sofort abzubrechen wurde
+er abgewartet; er hat um 17:23 UTC nach 104 Minuten committet. Beurteilt wurde
+ausschließlich der frische Stand von 19:23 Uhr, für den die Frist eingehalten
+ist. Die Wartezeit ist mit der Vorprüfung der alten Warteschlange gefüllt worden,
+deren 40 noch nie beurteilte Kandidaten sämtlich auch in der frischen Liste
+stehen.
+
+**Anmerkung zur Frist:** Die Kurzfassung des Routinen-Prompts nennt sechs Stunden,
+`prompt.md` Schritt 1 nennt vier. Maßgeblich ist `prompt.md`. Der Stand war mit
+7 h 48 min über beiden Grenzen, die Frage ist für diesen Lauf also ohne Folgen,
+sollte aber weiterhin in einer der beiden Quellen angeglichen werden. Sie steht
+jetzt zum dritten Mal in Folge im Protokoll.
+
+## Befund des Laufs: zwei Produktfamilien tragen 28 Prozent aller Meldungen
+
+Beim Abgleich gegen `deal_log.csv` ist ein Muster aufgefallen, das nicht einen
+einzelnen Kandidaten betrifft, sondern die bisherige Meldepraxis:
+
+| Produktfamilie | Meldungen | Zeitraum | Preis/Median |
+|---|---|---|---|
+| DJI Mini (3/4/5 Pro, überwiegend Fly More Combo) | 30 | 5. Aug – 7. Sep | 0,46 – 0,70 |
+| Steam Deck OLED (512 GB und 1 TB) | 13 | 12. Aug – 6. Sep | 0,41 – 0,67 |
+| **zusammen** | **43 von 155** | | |
+
+Fast jeden zweiten Tag eine DJI-Drohne, jeden zweiten Tag ein Steam Deck, immer
+im selben schmalen Rabattband um die Hälfte des Marktwerts. Genau das ist das
+Gegenteil dessen, wonach der Scanner laut Leitidee sucht. Ein ahnungsloser
+Verkäufer erzeugt einen zufälligen Abstand bei einem zufälligen Gegenstand.
+Ein gleichbleibender Abschlag von rund 50 Prozent, konzentriert auf die zwei
+Warengruppen mit der höchsten Liquidität und der eindeutigsten Produktidentität,
+ist die Signatur eines Anzeigenbetriebs, nicht die einer Serie ehrlicher
+Fehlpreise.
+
+Der heutige Zulauf stützt das:
+
+- **3506789926** (DJI Mini 5 Pro, 520 €) und **3506782117** (DJI Mini 4 Pro,
+  335 €) stehen beide in **Bonndorf** (PLZ 79848, rund 7.000 Einwohner), unter
+  zwei verschiedenen Privatkonten (angelegt 2014 und 2024), beide ausschließlich
+  Versand ohne Abholung, beide rund 50 Prozent unter Median. Zwei nicht
+  verbundene Privatverkäufer desselben Kleinstorts mit demselben Produkttyp am
+  selben Vormittag sind kein Zufall.
+- **3507027449** (Steam Deck OLED 1 TB, 340 €) ist von den 13 gemeldeten Steam
+  Decks nicht zu unterscheiden; am 22. August ist ein Steam Deck OLED 1 TB zum
+  auf den Euro identischen Preis von 340 € gemeldet worden.
+- Von acht Drohnen-Kandidaten heute bieten sechs keine Abholung an.
+
+Beide Familien sind heute deshalb verworfen worden. **Empfehlung für die erste
+Stufe:** `optik-drohnen` und `konsolen-sweep` brauchen eine Sonderregel — bei
+hochliquider, exakt bepreisbarer Elektronik ohne Abholmöglichkeit ist ein
+Abstand von 50 Prozent ein Warnsignal und kein Kaufsignal. Die bereits
+gemeldeten 43 Fälle wären eine Nachkontrolle wert.
+
+## Warum null Funde
+
+Neben dem Cluster-Befund hat ein zweiter, rein handwerklicher Grund die meisten
+Kandidaten gekostet: **die `referenz.query` der ersten Stufe ist markenbreit
+statt modellscharf.** Der Median vergleicht dann verschiedene Produkte und
+täuscht einen Abstand vor, den es nicht gibt. Drei belegte Beispiele aus diesem
+Lauf:
+
+1. `Ducati SS Supersport 900` (Median 4.342 €) fängt die moderne SuperSport
+   939/950 mit ein. Die 1998er 900 SS i.e. des Kandidaten wird privat für
+   2.300–4.500 € gehandelt, das Angebot lag bei 2.990 €.
+2. `Riese Müller Bike` (Median 3.449 €) mischt Charger, Delite und Superdelite
+   mit Neupreisen bis 8.000 € in einen Topf mit einem Multicharger von 2020
+   (Neupreis 4.699 €).
+3. `Specialized Mountainbike` (Median 670 €) reicht vom Hardrock bis zum
+   Stumpjumper.
+
+## Verworfene Kandidaten mit Begründung
+
+### Zahlung außerhalb der Plattform gefordert
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| Leica Summilux-M 35 mm ASPH Red Scale (3507125708) | 2.800 € | Der wertvollste Kandidat des Abends und die klarste Verwerfung: „Bezahlung: PayPal Friends oder Banküberweisung. Bei Abholung nur PayPal Friends oder Echtzeitüberweisung möglich. **Keine Bargeldzahlung gewünscht.**" Bargeld bei Abholung abzulehnen und stattdessen auf eine unwiderrufliche Zahlungsart zu bestehen, kehrt jede normale Übergabe um |
+| MacBook Air 15" M2 512 GB (3507189946) | 410 € | „Zahlung nur paypal freunde" |
+| MacBook Air 13" M1 512 GB (3507181601) | 320 € | „Zahlung nur Paypal freunde" |
+| Valve Steam Deck 1 TB OLED (3507194785) | 450 € | „PayPal an Freunde bei Versand"; zusätzlich kein Abstand zum p25 von 450 € |
+| iPhone 16 E / 16 / 16 Plus (3506797141) | 340 € | „Nur für Selbstabholer gegen Barzahlung oder Paypal (Freunde)". Zusätzlich nennt die Anzeige drei verschiedene Modelle: Titel „iPhone 16 E", Attribut „iPhone 16", Text „iPhone 16 Plus". Konto 14 Tage alt |
+
+### Preis erklärt sich von selbst (Defekt, Schaden, Verschleiß, ausgelaufener Support)
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| Honda Fireblade 1000RR SC57 (3507200160) | 5.000 € | „stand lange in der Garage, hat demnach keine HU und keinen TÜV. Batteriewechsel, Ölwechsel und Reifenwechsel wären notwendig" |
+| Mercedes-Benz 190E W201 Automatik (3507084262) | 5.000 € | Attribut „Beschädigtes Fahrzeug", 249.990 km |
+| Simson S51 mit KBA-Papieren (3506779685) | 1.850 € | Gewerblicher Simson-Händler: „Gute Basis, sollte dennoch komplett restauriert werden" |
+| Canyon Torque AL (3506795865) | 1.000 € | „bis auf das hiterad das einen kleinen achter hat dadurch auch der günstige preis" – der Verkäufer nennt den Grund selbst; zusätzlich Konto 45 Tage alt, Modelljahr fehlt |
+| Shimano Dura-Ace 9100/9200 Gruppe (3507030673) | 300 € | „deutliche Gebrauchsspuren", Schaltröllchen fällig, Kurbel vom Shimano-Rückruf betroffen |
+| iPhone 14 Pro Max 256 GB (3507037424) | 250 € | Frontglas durch Sturz gesprungen; Text nennt zudem erst 256, dann 128 GB |
+| iPhone 14 Pro Max 256 GB lila (3506722221) | 330 € | Riss im Display unten links, Akku 77 % |
+| iPhone 14 Pro 256 GB (3506738352) | 289 € | Backcover gerissen, starke Displaykratzer, „ideal für Bastler oder als Ersatzteilspender" |
+| iPhone 14 Pro Max 128 GB (3506741272) | 299 € | Akku 77 %, nicht originales Display, „hängt manchmal und springt gelegentlich" |
+| iPhone 15 Pro (3506701409) | 370 € | Akkukapazität 78 % |
+| iPhone 15 128 GB pink (3506693934) | 250 € | „Macken und leichte Kratzer am Display" |
+| iPhone 14 (3506769332) | 270 € | Batteriezustand 81 % |
+| iPhone 12 Pro Max 256 GB (3506756265) | 235 € | Akku 77 %, System meldet Serviceempfehlung |
+| iPhone 12 Pro Max 256 GB Silber (3506718531) | 235 € | Akkukapazität 70–80 % |
+| MacBook Pro 13,3" 2020, Intel i5 (3506801208) | 300 € | Intel-Mac, aus dem macOS-Support gelaufen – der Abstand ist der Support, nicht der Preis |
+| MacBook Pro 16" 2019, Intel i7 (3506808010) | 310 € | Dasselbe |
+| MacBook Air 13" 2020, Intel i5 (3507056629) | 420 € | Dasselbe; zusätzlich p25 der Vergleichsgruppe bei 499 € |
+| Thonet Mart Stam S 33 (3506748036) | 160 € | Sitzleder an der Naht der Rückenlehne beschädigt; Preis entspricht exakt dem p25 |
+| Boxspringbett Dieter Knoll (3507157845) | 350 € | Acht Jahre alt, gebrauchte Matratzen und Topper – kein belastbarer Gebrauchtmarkt |
+
+### Produkt oder Konfiguration existiert so nicht
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| Apple MacBook Air in Gold (3506977967) | 500 € | Die Attribute nennen „MacBook Air 13" (M2)", Erscheinungsjahr 2022, Prozessor „Intel Core i3" und 128 GB. Das M2 Air gab es nie in Gold, nie mit Intel-Chip und nie mit 128 GB. Diese Kombination existiert nicht |
+
+### Referenzgruppe oder Modell nicht bestimmbar
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| Drehmaschine Weiler Commodore (2685581770) | 4.900 € | Gewerblicher Maschinenhändler, Median `belastbar: false` (Streuung 3,7, n=8), p25 bei 3.700 € – das Angebot liegt darüber |
+| Hebebühne 3,2 t Nussbaum (3506749855) | 800 € | Median `belastbar: false` (Streuung 3,55), Verkäuferbewertung 0,23, kein Typ genannt |
+| MacBook Pro M1 „500gb" (3506758022) | 500 € | Baujahr und Konfiguration fehlen, die Beschreibung bricht mitten im Lieferumfang ab („Inklusive .") |
+| FENDER Jazz Bass (3507065012) | 635 € | Median `belastbar: false` (Streuung 3,59). Zwischen Player-Serie (gebraucht 600–800 €) und American Professional (1.100–1.400 €) liegt der Faktor zwei; die Anzeige nennt nur „Fender Jazz Bass, 2017 produziert" |
+| Truma Combi (E) (3507190729) | 600 € | Median `belastbar: false`. Titel und Text widersprechen sich: verkauft wird laut Text die **Gas**-Combi, der Titel nennt die Combi **E**. Zwischen beiden liegt ein deutlicher Preisunterschied |
+| Sammlung Auflösung (3507217662) | 450 € | Konvolut aus Funko Pops, Feuerzeugen und Sammelkarten; Median `belastbar: false` (Streuung 5,56). Ein Mischposten hat keinen Referenzwert |
+| USM Haller Sideboard Mattsilber (3507198657) | 850 € | Keine Maßangabe, Konfiguration nicht bestimmbar; p25 bei 899 € |
+| Riese & Müller E-Bike Lastenrad (3506689525) | 1.700 € | Knappste Verwerfung des Abends, siehe unten |
+
+### Kein 20-Prozent-Abstand zum bestätigten Marktwert
+
+| Kandidat | Preis | Bestätigter Marktwert | Grund |
+|---|---|---|---|
+| Rolex GMT-Master II „Batman" 116710BLNR, 2015 (3507069437) | 11.500 € | 15.250–17.320 $ auf Chrono24, umgerechnet rund 14.000–15.900 € | Chrono24 sind Händlerpreise mit Käuferschutzaufschlag; privat liegt die Referenz bei 12.500–14.000 €. Dazu fehlt die Auslieferungskarte, was regelmäßig 5–10 Prozent kostet. Damit bleiben keine belegbaren 20 Prozent. Die Uhr ist mit Revision von 2024 fair bepreist – aber fair ist kein Fund. Zusätzlich nur Versand bei 11.500 € |
+| Glashütte Original Senator (3506721641) | 3.850 € | ab 3.798 € (Chrono24, gebrauchte Senator Automatik in Stahl) | Das Angebot liegt am unteren Rand der bestätigten Spanne, nicht darunter. Die Referenz 13932030304 ließ sich keinem Katalogmodell zuordnen; ohne bestimmtes Modell kein belastbarer Vergleich. Nur Versand |
+| Ducati 900 SS i.e., Bj. 1998 (3506689739) | 2.990 € | 2.300–4.500 € privat (Kleinanzeigen-Angebote 1998er i.e. bei 2.300 und 2.499 €) | Ehrliche Anzeige, HU bis 2028, Bewertung 0,94 seit 2012 – aber der Median von 4.342 € stammt aus der modernen SuperSport 939/950. Gegen das echte 900-SS-Niveau liegt der Preis mittendrin |
+| Riese & Müller Multicharger GT Vario, Bj. 2020 (3506689525) | 1.700 € | Neupreis 4.699 € | Sechs Jahre alt; nach üblicher Abschreibung von Lasten-E-Bikes (30–40 Prozent Restwert privat) liegt der Korridor bei 1.400–1.900 €. Die gefundenen Vergleichspreise (rebike 3.799 €, Upway) sind Händler-Refurbished mit einem Jahr Garantie und damit ein anderer Markt. Anzeige nennt weder Laufleistung noch Akkuzustand – bei einem 2020er Akku ist das der entscheidende Posten |
+| Steam Deck OLED 1 TB (3507027449) | 340 € | Valve refurbished 1 TB 549 € mit Garantie, privat 480–550 € | Der Abstand wäre da. Verworfen aus dem Cluster-Befund oben: nicht unterscheidbar von den 13 seit dem 12. August gemeldeten Steam Decks, am 22. August einer zum identischen Preis von 340 € |
+| KTM Macina Leasingrad (3506798955) | 1.700 € | Neupreis laut Verkäufer 3.800 € | Bosch Intuvia und Performance Line (nicht CX) datieren das Rad auf 2017–2019; ein sieben Jahre altes Trekking-Pedelec mit 5.060 km liegt bei 1.300–1.800 € |
+| Specialized Turbo Levo Hardtail Comp 2020 (3506789797) | 1.500 € | – | Der p25 der eigenen Vergleichsgruppe liegt bei 1.299 € und damit **unter** dem Angebot |
+| Zeiss Victory 8x56 B T*P* (3506979127) | 600 € | – | p25 bei 625 €; das ältere B-T*P*-Modell (vor der FL-Serie) liegt gebraucht bei 500–800 €. Zusätzlich „KEIN DIREKT KAUF!!!" und Gewerbetext auf Privatprofil |
+| Omega Seamaster Ladymatic vergoldet (3507184337) | 349 € | – | Der Median von 1.070 € stammt aus vergoldeten **Herren**-Seamastern. Eine hartvergoldete Damenuhr der 70er/80er mit 22 mm Gehäuse und Kratzern im Acrylglas liegt bei 300–600 €. Die Anzeige ist ehrlich und detailliert, der Preis ist marktgerecht |
+| Steam Deck 512 GB LCD (3506699801) | 399 € | – | LCD-Modell, nicht OLED; Gebrauchtniveau 300–420 € |
+| USM Haller Sideboard Anthrazit 77×52×75 (3506976321) | 650 € | – | Nach dem am 6. September belegten Abschlag vom Händler- auf das private Niveau liegt ein Sideboard dieser Größe privat bei 500–700 €; dazu Kratzer außen und innen |
+| USM Haller Regal mit farbiger Einlage (3506687425) | 950 € | – | p25 bei 750 €, keine Maßangabe, ein Bild |
+| USM Haller Rollcontainer 3 Schubladen Reinweiß (3507096075) | 499 € | – | Dasselbe private Niveau wie am 8. September morgens dokumentiert: rund 390 € |
+| USM Haller Schublade Goldgelb (3506732667) | 350 € | – | p25 bei 400 €; die vier Befestigungsschrauben fehlen |
+| 4 Thonet Stühle (3506805018) | 200 € | – | Der Preis ist **200 € pro Stuhl**, nicht 200 € für vier. Die erste Stufe hat den Stückpreis als Gesamtpreis gelesen – es gibt keinen Abstand |
+| Hühnerstall Omlet Eglu Cube (3507190589) | 480 € | – | Gebrauchte Eglu Cube liegen bei 400–650 € |
+| Rotwerk Drehmaschine EDM 300 DS (3506382922) | 270 € | – | Hobbymaschine, Beschreibung erschöpft sich in „Siehe Fotos"; absoluter Abstand 242 € |
+| MacBook Pro 14" M4 16/1 TB (3506994907) | 1.200 € | – | Gebrauchtniveau 1.400–1.600 €, damit rund 20 Prozent knapp verfehlt; zusätzlich nur Versand und Gewerbetext auf Privatprofil |
+| iPhone 15 256 GB (3506772090) | 390 € | – | p25 bei 500 €, Kratzer offengelegt – marktgerecht |
+| iPhones ohne Mangel unterhalb des Prüfvorrangs (3507020901, 3506947184, 3507208461, 3507045375, 3507042930, 3507117697, 3506737368) | 199–250 € | – | Absoluter Abstand jeweils unter 175 €; jeweils auf oder nahe dem p25 |
+| Fahrräder ohne bestätigten Abstand (3506776433, 3506758139, 3506704963, 3506742473, 3506687344, 3506695023, 3507120442, 3507206321, 3507074303, 3506954134, 3507072976, 3506956587, 3507174867, 3507180459, 3507182456, 3507023527) | 300–895 € | – | Fortschreibung des Sammelbefunds `ebike-rad`: die Mediane entstehen aus der Marke statt aus dem Modell. In jedem Einzelfall liegt das Angebot auf oder über dem p25 der eigenen Vergleichsgruppe beziehungsweise auf dem bestätigten Niveau der genannten Ausstattung |
+
+### Aus Risikoprofil verworfen
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| DJI Mini 5 Pro Fly More Combo (3506789926) | 520 € | Siehe Cluster-Befund. Bonndorf, nur Versand, sehr ausführlicher Werbetext mit exakten Flugstatistiken und ohne jeden Mangel – die von der Leitidee beschriebene Handschrift der guten Anzeige, nicht des ahnungslosen Verkäufers |
+| DJI Mini 4 Pro Fly More Combo (3506782117) | 335 € | Zweite Drohne aus demselben 7.000-Einwohner-Ort am selben Vormittag, anderes Konto, ebenfalls nur Versand |
+| DJI Mini 4 Pro mit 3 Akkus (3506741935) | 400 € | Set ohne Controller gegen einen Median aus vollständigen Combos – nicht vergleichbar |
+| MacBook Air 13,6" M4 16/256 (3506699485) | 590 € | Konto 120 Tage alt, Kontoname „Www", nur Versand, und der Text ist ein reines Datenblatt ohne eine einzige gerätespezifische Angabe (kein Akkuzyklus, kein Kaufdatum, kein Zubehör) |
+| MacBook Pro 14" M4 neuwertig (3507031513) | 1.100 € | Verkäuferbewertung 0,24. Ein halbes Jahr altes Gerät „mit Restgarantie", aber „Keine Rechnung vorhanden" – ohne Kaufbeleg ist bei einem neuwertigen MacBook die Herkunftsfrage offen |
+| iPhone 15 Pro Max weiß (3506365713) | 329 € | Konto einen Tag alt, nur Versand, generischer Text ohne Akkuangabe |
+
+### Vorrangig geprüft: Kandidat mit `unkenntnis_bonus`
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| Specialized Mountainbike (3506742574) | 330 € | Wie vorgesehen **nicht** wegen der schwachen Anzeige abgewertet und zuerst geprüft. Verworfen aus der Sache heraus: 3x9-Schaltung, SR-Suntour-Klasse und Scheibenbremsen weisen auf ein Einsteiger-Hardtail (Hardrock/Rockhopper) hin, das gebraucht bei 250–400 € liegt. Der Median über „Specialized Mountainbike" mischt das mit Stumpjumper und Enduro. Bei 330 € kein Abstand, sondern der Marktpreis |
+
+## Was für den nächsten Lauf hängen bleibt
+
+1. **Der Cluster-Befund ist die eigentliche Nachricht dieses Laufs.** Solange
+   `optik-drohnen` und `konsolen-sweep` weiter mit rund 50 Prozent Abstand
+   nachlaufen, produziert die erste Stufe täglich Kandidaten, die nach der
+   Leitidee eigentlich Ausschlusskriterien erfüllen.
+2. **Modellscharfe `referenz.query`.** Vier der fünf knappsten Verwerfungen
+   dieses Laufs gehen auf markenbreite Suchbegriffe zurück. Eine Query, die den
+   Modellnamen aus `attribute` statt aus dem Titel zieht, würde die Trefferquote
+   sichtbar heben.
+3. **Der ausgefallene 12:00-UTC-Slot** ist heute zum zweiten Mal binnen zwei Tagen
+   aufgetreten. Ohne den nachlaufenden 15:39-Lauf hätte der Abendlauf abbrechen
+   müssen.
