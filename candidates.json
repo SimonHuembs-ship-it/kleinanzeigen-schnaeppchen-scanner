@@ -1,26 +1,24 @@
 {
-  "generiert": "2026-09-09T00:38:27+02:00",
+  "generiert": "2026-09-09T04:22:31+02:00",
   "zeitraum": {
-    "von": "2026-09-08T19:09:58+02:00",
-    "bis": "2026-09-09T00:09:58+02:00"
+    "von": "2026-09-08T23:08:33+02:00",
+    "bis": "2026-09-09T04:08:33+02:00"
   },
   "statistik": {
-    "gesichtet": 47622,
-    "nach_modellmatch": 665,
-    "nach_vorfilter": 665,
-    "nach_preisschwelle": 45,
-    "nach_scoring": 33,
+    "gesichtet": 22339,
+    "nach_modellmatch": 115,
+    "nach_vorfilter": 115,
+    "nach_preisschwelle": 7,
+    "nach_scoring": 5,
     "ausschluesse": {
-      "score_zu_niedrig": 9,
-      "zahlung_ohne_schutz": 1,
-      "preis_unplausibel": 2
+      "score_zu_niedrig": 1,
+      "preis_unplausibel": 1
     },
-    "pool": 45151,
-    "ohne_referenz_verworfen": 253,
-    "referenz_gekappt": 146,
+    "pool": 19869,
+    "ohne_referenz_verworfen": 40,
     "doppelt_zusammengefasst": 0,
-    "requests": 1324,
-    "laufzeit_sekunden": 1708
+    "requests": 593,
+    "laufzeit_sekunden": 838
   },
   "kandidaten": [
     {
@@ -1079,6 +1077,88 @@
       }
     },
     {
+      "id": "3507486464",
+      "watchlist_id": "youngtimer-alltag",
+      "titel": "BMW E36 316i Automatik",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/bmw-e36-316i-automatik/3507486464-216-28198",
+      "preis": 1890.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 3420.0,
+        "p25": 2490.0,
+        "n": 27,
+        "query": "BMW Automatik E36 316i",
+        "korrektur": 0.1,
+        "streuung": 2.41,
+        "belastbar": true
+      },
+      "p_ratio": 0.553,
+      "ersparnis_eur": 1530.0,
+      "ort": "Tann (Niederbay)",
+      "plz": "84367",
+      "eingestellt": "2026-09-09T00:15:56+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/61/61eb7aaa-2f65-46de-9dc5-ef0f9d812e94?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/82/8291f5e6-a1f1-4a0d-89b7-842194c7c62f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/da/da1e6e44-3380-4e61-88e3-7bfd335584a3?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/97/97757ce6-cd94-47e2-b978-aed900303c5c?rule=$_0.JPG"
+      ],
+      "beschreibung": "Motor und Getriebe laufen einwandfrei .<br />Motor Öl und Getriebe öl neu gewechselt.<br />Bremsen vorne neu gewechselt.<br />Luftfilter, Innenraum Filter gewechselt<br />Zündkerzen sind neue<br />Batterie neu<br />Seiten Spiegel Automatisch<br />Das Auto voll funktionstüchtig und noch angemeldet<br />Winter und Sommerreifen auf Alufelgen.<br />Kein Rost<br />Gebrauchsspuren vorhanden wie Kratzer und Dellen",
+      "attribute": {
+        "Marke": "BMW",
+        "Modell": "Weitere 3er",
+        "Kilometerstand": "188.000",
+        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
+        "Erstzulassung": "Januar 1994",
+        "Kraftstoffart": "Benzin",
+        "Leistung": "102",
+        "Getriebe": "Automatik",
+        "Fahrzeugtyp": "Coupé",
+        "Anzahl Türen": "2/3",
+        "HU bis": "Mai 2028",
+        "Umweltplakette": "4 (Grün)",
+        "Schadstoffklasse": "Euro2",
+        "Außenfarbe": "Silber",
+        "Material Innenausstattung": "Teilleder",
+        "Leichtmetallfelgen": "true",
+        "Radio/Tuner": "true",
+        "Bluetooth": "true",
+        "Schiebedach/Panoramadach": "true",
+        "Nichtraucher-Fahrzeug": "true",
+        "Antiblockiersystem (ABS)": "true"
+      },
+      "verkaeufer": {
+        "id": "159948546",
+        "name": "NJ",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-02-03",
+        "konto_alter_tage": 217,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 97,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "7 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3506779685",
       "watchlist_id": "motorraeder",
       "titel": "Simson S51 mit KBA Papiere",
@@ -1476,6 +1556,72 @@
           "11 Bilder",
           "Maengel offengelegt",
           "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3507497581",
+      "watchlist_id": "uhren",
+      "titel": "Tag Heuer Chronograph",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/tag-heuer-chronograph/3507497581-157-1319",
+      "preis": 1150.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 2350.0,
+        "p25": 1250.0,
+        "n": 98,
+        "query": "Tag Heuer Chronograph",
+        "korrektur": 0.0,
+        "streuung": 3.19,
+        "belastbar": false
+      },
+      "p_ratio": 0.489,
+      "ersparnis_eur": 1200.0,
+      "ort": "Billerbeck",
+      "plz": "48727",
+      "eingestellt": "2026-09-09T03:04:08+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4a/4a806fad-dec1-4b3d-9292-1a620c6af0d8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b4/b47c9d14-b4df-4193-a984-e864673017f8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/df/dfa8876f-cb6f-4b4f-8108-3a1a19ce52cd?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/73/734e2cd7-fefa-4658-96bc-40bb57d0ca9c?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf kommt hier ein Heuer Chronograph. Die Uhr hat ein Eta Valjoux 7750 Automatikwerk mit verschraubter Krone.<br />Die Uhr zeigt leichte Tragespuren. Technisch ist sie in einem sehr guten Zustand. Sie wurde nicht oft getragen,da ich mehrere Uhren habe.<br />In einem vernünftigen Rahmen kann man über den Preis sprechen.<br />Sachmängelhaftung und Rücknahme sind ausgeschlossen. Evtl Versand trägt der Käufer.",
+      "attribute": {
+        "Art": "Uhren",
+        "Versand": "ab 0,99",
+        "Zustand": "Gut",
+        "Material": "Stahl"
+      },
+      "verkaeufer": {
+        "id": "78244828",
+        "name": "John Peschke",
+        "typ": "PRIVATE",
+        "konto_seit": "2020-09-13",
+        "konto_alter_tage": 2186,
+        "bewertung": 0.9459459459459459,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2020",
+          "Bewertung 0.95, zuverlaessig",
+          "Kaeuferschutz verfuegbar",
+          "5 Bilder"
         ],
         "rot": [],
         "unkenntnis_bonus": false,
@@ -3009,6 +3155,65 @@
       }
     },
     {
+      "id": "3507491305",
+      "watchlist_id": "uhren",
+      "titel": "Jaeger-LeCoultre Vintage Quartz",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/jaeger-lecoultre-vintage-quartz/3507491305-157-8612",
+      "preis": 1300.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1940.0,
+        "p25": 999.0,
+        "n": 30,
+        "query": "Jaeger LeCoultre Vintage",
+        "korrektur": 0.0,
+        "streuung": 3.0,
+        "belastbar": false
+      },
+      "p_ratio": 0.67,
+      "ersparnis_eur": 640.0,
+      "ort": "Laufenburg (Baden)",
+      "plz": "79725",
+      "eingestellt": "2026-09-09T01:01:34+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b0/b058f442-b6bb-4547-9b75-175ebb66d46b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/71/7196ad12-d9f5-4722-a3fb-0ea8980732e1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/36/3665454b-1199-4b6e-882f-4c1b4fa78260?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht eine elegante Jaeger-LeCoultre Vintage-Uhr aus den 70er&#x2F;80er Jahren. Ein Schweizer Klassiker in top gepflegtem Zustand!<br />​Marke: Jaeger-LeCoultre<br />​Gehäuse: Komplett aus rostfreiem Edelstahl (Kissen-&#x2F;Tonneau-Form).<br />​Werk: Schweizer Quarzwerk (mit Q-Logo) funktioniert einwandfrei und sehr präzise.<br />​Details: Silber-weiss Zifferblatt, Datumsanzeige auf 3 Uhr, schwarzes Lederband.<br />​Zustand: Sehr gut erhalten, normale minimale Altersspuren (siehe Fotos).<br />​Lieferumfang: Nur die Uhr (ohne Box&#x2F;Papiere).",
+      "attribute": {
+        "Art": "Uhren",
+        "Versand": "ab 0,99",
+        "Zustand": "Sehr Gut",
+        "Material": "Stahl"
+      },
+      "verkaeufer": {
+        "id": "29051724",
+        "name": "Pino",
+        "typ": "PRIVATE",
+        "konto_seit": "2015-03-18",
+        "konto_alter_tage": 4192,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 80,
+      "signale": {
+        "gruen": [
+          "Konto seit 2015",
+          "Kaeuferschutz verfuegbar"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3507031513",
       "watchlist_id": "macbook",
       "titel": "MacBook Pro 14“ M4 neuwertig",
@@ -3357,55 +3562,47 @@
       }
     },
     {
-      "id": "3506677156",
-      "watchlist_id": "macbook",
-      "titel": "MacBook Pro 14",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/macbook-pro-14/3506677156-278-16333",
-      "preis": 980.0,
+      "id": "3507491990",
+      "watchlist_id": "ebike-rad",
+      "titel": "Cube Stereo Race....  XL /22",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-stereo-race-xl-22/3507491990-217-6651",
+      "preis": 1200.0,
       "preis_typ": "PLEASE_CONTACT",
       "referenz": {
-        "median": 1523.5,
-        "p25": 1100.0,
-        "n": 74,
-        "query": "MacBook Pro 14",
+        "median": 1750.0,
+        "p25": 1300.0,
+        "n": 81,
+        "query": "Cube Stereo Race 22",
         "korrektur": 0.0,
-        "streuung": 1.82,
+        "streuung": 2.38,
         "belastbar": true
       },
-      "p_ratio": 0.643,
-      "ersparnis_eur": 543.5,
-      "ort": "Zeilsheim",
-      "plz": "65931",
-      "eingestellt": "2026-09-08T01:10:09+02:00",
+      "p_ratio": 0.686,
+      "ersparnis_eur": 550.0,
+      "ort": "Illertissen",
+      "plz": "89257",
+      "eingestellt": "2026-09-09T01:08:55+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ef/eff64402-379a-4395-b47d-0366c692d4cf?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/04/04837520-7e18-473a-9cfa-064ddb6623b4?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/46/4622380a-28a2-48da-870c-5a52a0a7efa6?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b1/b162e3be-6690-45bd-9581-2b59d5c5226b?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/05aa68a8-023f-47db-9973-3769dd246437?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f2/f2395bfa-f46c-41e4-a59c-cce3e9916af1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c0/c02be7be-3dac-41e0-983e-b8e498499f82?rule=$_0.JPG"
       ],
-      "beschreibung": "Apple MacBook Pro 14” M1 Pro – 16 GB RAM – 512 GB SSD – kaum benutzt – neuwertig<br /><br />Beschreibung<br /><br />Apple MacBook Pro 14 Zoll – 16 GB Unified Memory – 512 GB SSD<br /><br />Zum Verkauf steht ein Apple MacBook Pro 14” in neuwertigem Zustand. Das MacBook wurde kaum benutzt und befindet sich entsprechend in einem sehr guten Zustand.<br /><br />Technische Daten:<br /><br />* MacBook Pro 14,2 Zoll<br />* Apple M1 Pro Chip<br />* 8-Core CPU &#x2F; 14-Core GPU<br />* 16 GB Unified Memory<br />* 512 GB SSD<br />* 14,2” Liquid Retina XDR Display<br />* 3 × Thunderbolt 4 &#x2F; USB-C<br />* HDMI-Anschluss<br />* SDXC-Kartensteckplatz<br />* MagSafe 3 Ladeanschluss<br />* WLAN & Bluetooth<br />* Modell: A2442<br />* Baujahr: 2021<br /><br />Das Gerät wurde nur sehr wenig genutzt und ist optisch wie technisch in einem sehr guten, nahezu neuwertigen Zustand.<br /><br />Lieferumfang:<br />MacBook Pro 14” und ggf. vorhandenes Original-Zubehör.<br /><br />Privatverkauf. Der Verkauf erfolgt unter Ausschluss der Sachmängelhaftung. Keine Rücknahme.<br /><br />Bei Fragen gerne melden.",
+      "beschreibung": "Verkaufe mein Cube aus Zeitmangel. Es steht leider seit 1,5 Jahren in der Garage da ich keine Zeit mehr dafür habe. Es ist technisch in einen sehr guten Zustand. Es würde natürlich für Berg Touren genutzt und hat natürlich für so ein Rad leichte Gebrauchsspuren. 170 mm Federweg.<br /><br />Ausstattung Sram Code R Bremsen, Sram GX Schaltung ,Fox Float Dämpfer, und ne 36 Fox Gabel.<br /><br />Bike wird bei Besichtigung natürlich vorher geputzt.",
       "attribute": {
+        "Art": "Herren",
         "Versand": "Nur Abholung",
-        "Typ": "Laptop",
-        "Marke": "Apple",
-        "Modell": "MacBook Pro 14\" (M4)",
-        "Zustand": "Neu",
-        "Betriebssystem": "Sonstiges",
-        "Erscheinungsjahr": "2021",
-        "Speicher (GB)": "512 GB",
-        "Farbe": "Grau"
+        "Typ": "Mountainbikes",
+        "Zustand": "Gut"
       },
       "verkaeufer": {
-        "id": "63452991",
-        "name": "Ana",
+        "id": "48848660",
+        "name": "sm",
         "typ": "PRIVATE",
-        "konto_seit": "2019-04-25",
-        "konto_alter_tage": 2692,
-        "bewertung": 0.8333333333333334,
+        "konto_seit": "2017-07-18",
+        "konto_alter_tage": 3339,
+        "bewertung": 0.3333333333333333,
         "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
+          "rating": 1
         },
         "anzahl_anzeigen": 0
       },
@@ -3414,15 +3611,15 @@
         "versand": false,
         "kaeuferschutz": false
       },
-      "score": 84,
+      "score": 72,
       "signale": {
         "gruen": [
-          "Konto seit 2019",
+          "Konto seit 2017",
           "Abholung moeglich",
-          "4 Bilder"
+          "Maengel offengelegt"
         ],
         "rot": [
-          "Bewertung 0.83"
+          "Bewertung 0.33"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -9811,6 +10008,74 @@
       }
     },
     {
+      "id": "3507492233",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 13 128gb",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-13-128gb/3507492233-173-26995",
+      "preis": 185.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 279.5,
+        "p25": 210.0,
+        "n": 40,
+        "query": "iPhone 13 128gb",
+        "korrektur": 0.0,
+        "streuung": 1.67,
+        "belastbar": true
+      },
+      "p_ratio": 0.662,
+      "ersparnis_eur": 94.5,
+      "ort": "Kiel - Vorstadt",
+      "plz": "24103",
+      "eingestellt": "2026-09-09T01:11:48+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/01/012c3122-f0ff-416c-ae0b-2ce9a1096dbf?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bc/bc7735f8-9def-486e-8088-1781eaa45b9f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/cd/cd8dfab3-1f49-4157-863e-2b3806f0fe55?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/eb/eb4dd9eb-382c-4a2e-965a-200f8ef8bd5c?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe mein iPhone 13 mit 128 GB Speicher.<br /><br />Das iPhone ist voll funktionsfähig und funktioniert einwandfrei.<br /><br />Das Display sieht wie neu aus und ist kratzerfrei. Auch die Rückseite ist ohne Kratzer. Am Gehäuse sind lediglich minimale Gebrauchsspuren bzw. leichte Kratzer zu erkennen (siehe Fotos).<br /><br />Die Akkukapazität beträgt 77%.<br /><br />Insgesamt befindet sich das iPhone in einem sehr guten optischen und technischen Zustand.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,99",
+        "Modell": "iPhone 13",
+        "Farbe": "Schwarz",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "140063733",
+        "name": "Benni-191",
+        "typ": "PRIVATE",
+        "konto_seit": "2024-04-17",
+        "konto_alter_tage": 874,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2024",
+          "Kaeuferschutz verfuegbar",
+          "10 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3507451360",
       "watchlist_id": "apple-mobil",
       "titel": "IPhone 13 mini 256gb",
@@ -9997,125 +10262,6 @@
           "Maengel offengelegt"
         ],
         "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3500741534",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Notverkauf. Hochwertige Küche mit Siemens und Bosch Geräten",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/notverkauf-hochwertige-kueche-mit-siemens-und-bosch-geraeten/3500741534-86-5422",
-      "preis": 1000.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Koblenz",
-      "plz": "56075",
-      "eingestellt": "2026-09-08T01:00:30+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/85/857b3248-6ae3-4c5f-a892-020aa3ac0b6d?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/45/4598b049-a337-430a-ac8d-6768c43e7154?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ea/eac956d2-ebc5-40d5-a588-08428253025d?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c2/c2f177bf-184c-42d6-9138-0ab6cc308d51?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich biete meine gebrauchte Einbauküche an. Die Küche befindet sich insgesamt in einem guten Zustand.<br /><br />Der Wasserhahn ist zwei Jahre alt.<br /><br />Das Spülbecken hat Risse und muss erneuert werden.<br /><br />Die Arbeitsplatte hat Spuren aber kann durchaus nochmal so verwendet werden.<br /><br />Alle Geräte von Bosch oder Siemens.<br /><br />Das Induktionsfeld (leider kleiner Schaden, siehe Foto) ist kein Jahr alt. (NP 1000 Euro)<br /><br />Sidebyside Kühlschrank verkaufe ich in einem anderen Angebot.<br /><br />Verfügbar ab Mitte Oktober oder nach Absprache auch früher.<br /><br />Der Kaufpreis ist symbolisch und richtet sich danach ob die Küche selbst abgebaut wird und wann dies geschieht.",
-      "attribute": {
-        "Art": "Küchenschränke",
-        "Versand": "ab 2,99",
-        "Farbe": "Weiß",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "68585566",
-        "name": "Michael",
-        "typ": "PRIVATE",
-        "konto_seit": "2019-10-29",
-        "konto_alter_tage": 2505,
-        "bewertung": 0.9210526315789473,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2019",
-          "Bewertung 0.92, zuverlaessig",
-          "Kaeuferschutz verfuegbar",
-          "4 Bilder"
-        ],
-        "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3506678764",
-      "watchlist_id": "notverkaeufe",
-      "titel": "bmw 116d e87 notverkauf",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/bmw-116d-e87-notverkauf/3506678764-216-1416",
-      "preis": 1100.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Plettenberg",
-      "plz": "58840",
-      "eingestellt": "2026-09-08T01:32:49+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/20/201f5131-d5bb-4b6b-b185-0578378bdfe8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5c/5c893ec5-b414-42bb-90fd-801c0f85f636?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9b/9b4f47ff-f889-4a3c-8d68-ba46cff99d61?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a1/a14a5568-9a56-4393-9e08-7a4463f60eca?rule=$_0.JPG"
-      ],
-      "beschreibung": "HARDYSCHEIBE MUSS NEU 50€ teil kosten !!<br /><br />Auto ist fahrbereit<br /><br />Bmw 116d e87 bj 2009<br /><br />Langstrecken Fahrzeug<br /><br />Motor top<br />Getriebe top<br /><br />Alpine endstufe mit boxen<br /><br />6 gang schalter<br />Motor läuft sehr ruhig<br /><br />Jegliche schäden etc vom vorbesitzer<br /><br />2 schlüssel vorhanden<br /><br />Da dies ein Privat verkauf ist verkaufe ich das Fahrzeug unter Ausschluss jeglicher Sachmängelhaftung.<br /><br />Keine Garantie.<br /><br />Auto wird als bastler fahrzeug verkauft",
-      "attribute": {
-        "Marke": "BMW",
-        "Modell": "116",
-        "Kilometerstand": "257.000",
-        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
-        "Erstzulassung": "Januar 2009",
-        "Kraftstoffart": "Diesel",
-        "Leistung": "116",
-        "Getriebe": "Manuell",
-        "Anzahl Türen": "2/3",
-        "HU bis": "Mai 2027",
-        "Umweltplakette": "4 (Grün)"
-      },
-      "verkaeufer": {
-        "id": "165010698",
-        "name": "anonym",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-07-28",
-        "konto_alter_tage": 41,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 74,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "11 Bilder"
-        ],
-        "rot": [
-          "Konto juenger als 6 Monate"
-        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
