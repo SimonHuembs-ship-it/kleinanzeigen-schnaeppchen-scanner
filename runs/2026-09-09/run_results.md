@@ -96,3 +96,121 @@ Die vier gleichförmigen DJI-Mini-5-Pro-Anzeigen bei rund 50 Prozent des Medians
 kein Zufall. Falls das Muster abends wiederkehrt, lohnt es sich, in Stufe 1 einen
 Filter zu prüfen, der „nur Versand, kein Abholtermin, Preis unter 60 Prozent des
 Medians, Konto ohne weitere Anzeigen“ zusammen bewertet.
+
+---
+
+# Lauf 2026-09-09, abends
+
+- Laufzeitpunkt: 2026-09-09, 19:04 Uhr (MESZ)
+- **Datenstand bei Laufbeginn unbrauchbar:** `candidates.json` war zu Beginn 7 h 41 min alt
+  (generiert 11:23 Uhr MESZ), also weit über der Vier-Stunden-Grenze aus Schritt 1.
+  Grund: Der Sammellauf zum Cron-Termin 12:00 UTC wurde von GitHub erst um 15:33 UTC
+  angelegt und lief bei Prüfbeginn noch (Run 199, `in_progress` seit 1 h 31 min).
+  Statt abzubrechen wurde er abgewartet, wie schon am 7. und 8. September abends;
+  er hat um 17:08 UTC committet.
+- **Beurteilt wurde ausschließlich der frische Stand:** `candidates.json` generiert
+  2026-09-09 19:08 Uhr (MESZ), bei Prüfbeginn 1 Minute alt.
+- Zeitraum der Sammlung: 2026-09-09 12:33 Uhr bis 17:33 Uhr
+- Gesichtete Anzeigen laut Sammler: 184.560
+- Kandidaten in der Liste: 157, davon keiner bereits in `deal_log.csv`
+- Davon neu gegenüber dem Morgenlauf: 80. Die übrigen 77 waren bereits im Morgenlauf
+  einzeln geprüft und verworfen; ihre Bewertung wurde übernommen und nicht neu aufgerollt.
+- Inhaltlich geprüft: 80 (die neuen), davon 22 mit externer Marktwertrecherche
+- Gemeldete Funde: 1
+
+## Funde
+
+| Titel | Preis | Bestätigtes Preisniveau | Abstand | Ort |
+|---|---|---|---|---|
+| [mafell MT 55 cc Tauchsäge + Führungsschiene F 160](https://www.kleinanzeigen.de/s-anzeige/mafell-mt-55-cc-tauchsaege-und-fuehrungsschiene/3507536778-84-473) | 325 € | 455 € / 676 € / 711 € gebraucht, neu 709–795 € | 29 % unter dem günstigsten, über 50 % unter dem gängigen Niveau | Preetz |
+
+Marktwert über drei konkrete Gebrauchtangebote desselben Modells bestätigt: 455,04 € (eBay,
+verhandelbar, zzgl. 48,10 € Versand), 675,69 € und 710,95 € (eBay). Neupreis 709,24 €
+(MidiMAX) bzw. 794,92 € (MaxiMAX). Der Kleinanzeigen-Median von 600 € (n=9, Streuung 1,46,
+`belastbar: true`) liegt in derselben Größenordnung und wurde nicht als alleiniger Beleg
+verwendet. Im Angebot ist zusätzlich die Führungsschiene F 160 enthalten.
+Der niedrige Preis erklärt sich nicht aus der Anzeige: Zustand „sehr gut“, kein Defekt genannt,
+nur Abholung. Warnhinweis in der Mail: Konto erst 28 Tage alt, keine Bewertung, zweizeilige
+Anzeige ohne Baujahr oder Kaufbeleg — Herkunft ungeklärt.
+
+## Verworfene Kandidaten
+
+### Sofortige Verwerfung wegen Zahlung außerhalb des Käuferschutzes
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| Technics SL-1210 MK2 (3507832647) | 310 € | „Bei Versand Zahlung per PayPal Freunde. Kein PayPal Waren & Dienstleistungen und kein ‚Sicher bezahlen‘.“ Ausdrücklicher Ausschluss jedes Käuferschutzes. |
+
+### Referenzgruppe nicht vergleichbar (Phantomersparnis)
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| Honda CB 750 Four „Motor kpl. revidiert“ (3508009747) | 2.200 € | Angeboten wird **nur der Motor** (`Art: Ersatz- & Reparaturteile`), der Median von 6.232 € stammt aus vollständigen Motorrädern. Größte nominale Ersparnis des Laufs und reine Phantomersparnis. |
+| BMW E36 Coupe, 220.000 km (3507601494) | 5.000 € | Median 8.099 € aus der Abfrage „BMW Coupe E36“ mischt 316i bis M3 (Streuung 2,45). Belastbarer Eigenwert für ein 320i-Coupé mit 220.000 km nicht zu beschaffen: gefundene Vergleichsangebote betreffen Exemplare mit 106.800 km und Scheckheft (10.950 €). Kein Marktwert geschätzt. Der Verkäufer schreibt zudem selbst, ihm sei „durchaus bewusst, wie gefragt die E36 Coupes sind“. |
+| Leica Summicron 2/50, 11819 (3507791676) | 1.100 € | `belastbar: false`, Streuung 3,75 — der Median mischt sämtliche Summicron-Brennweiten. Eigene Prüfung: gebrauchte 11819 bei 1.179 € (eBay); 1.100 € erreichen die 20 % nicht. |
+| Gibson Les Paul Studio Ebony 2010 USA (3507789572) | 1.250 € | `belastbar: false`, Streuung 4,55; der Median mischt Studio, Standard und Custom. p25 liegt mit 1.098 € unter dem Angebot. |
+| Mafell Erika 85 Unterflur-Zugsäge (3507803819) | 500 € | `belastbar: false`, Streuung 4,14 bei n=8. Zudem ist laut Anzeige der Anschlag defekt — bei einer Zugsäge das wertbestimmende Bauteil. Preis erklärt sich selbst. |
+| BMC Teammachine SLR Seven, RH 51 (3507968583) | 1.200 € | `belastbar: false`, Streuung 3,85. Eigene Recherche ergab zwei konkrete Gebrauchtangebote desselben Modells mit Shimano 105: 1.599 € (ReloopBikes, aufbereitet) und 1.725 € (Alltricks, aufbereitet), Neupreis 2.899 €. Beide sind Händlerware mit Gewährleistung; ein privater Verkauf ohne Gewährleistung liegt darunter, womit die 20 % gegenüber einem gleichartigen Privatniveau nicht belegbar sind. Knappste Verwerfung des Laufs. |
+
+### Preis erklärt sich von selbst
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| iPhone 15 Pro Max 256 GB (3507548970) | 300 € | Display ersetzt (kein Original) **und gerissen**, Rückkamera ersetzt (kein Original), Akku 91 % bei 425 Zyklen. Der Verkäufer legt alles offen; der Preis ist für diesen Zustand richtig. |
+| Mercedes-Benz W124 260 E (3507901676) | 3.490 € | Als beschädigtes Fahrzeug eingestellt, erhöhter Ölverbrauch mit sichtbarer Qualmbildung, unruhiger Motorlauf, defektes Türstellbein. |
+| Mercedes Benz W124 260E, 270.226 km (3507560096) | 4.700 € | `belastbar: false`, Streuung 2,88; zudem Roststellen, kein Checkheft, Radio ohne Funktion. |
+| Simson Schwalbe KR51/2 Tuning (3507853197) | 2.600 € | „Der Rahmen ist ein Ungarn Modell und hat somit keine Papiere.“ Ohne Papiere richtig bepreist, nicht billig. Verkäuferbewertung 0,25. |
+| Simson Schwalbe KR51/1 (3508001961) | 1.300 € | „Keine Papiere vorhanden“, dazu wurden keine Startversuche unternommen — Motor ungeprüft. |
+| Simson S50 mit KBA-Papieren (3507577290) | 1.650 € | „Sollte dennoch komplett restauriert werden.“ Gewerbliches Konto. |
+| Simson schwalbe (3507525413) | 1.900 € | „Läuft im Moment noch nicht … muss also was dran gemacht werden.“ |
+| DJI Mini 3 Pro für Bastler (3507976888) | 250 € | Dreharmgelenk gebrochen, Gimbal und rechte Frontbacke fehlen. Median stammt aus funktionsfähigen Geräten. |
+| Trek Domane SL 5, Bj. 2016 (3507517376) | 900 € | Median 1.950 € stammt ganz überwiegend aus neueren Scheibenbrems-Domane; das angebotene Rad ist ein zehn Jahre altes Felgenbrems-Modell mit Riss in der Carbonverkleidung des Vorderrads. Zwei konkrete Vergleichsangebote für Modelljahr 2016 waren nicht zu beschaffen, Marktwert bewusst nicht geschätzt. |
+
+### Vertrauensprofil trägt keinen Fund
+
+| Kandidat | Preis | Grund |
+|---|---|---|
+| IWC Fliegeruhr Chronograph „Le Petit Prince“ (3507929862) | 3.000 € | Verkäuferkonto **am selben Tag angelegt** (0 Tage), keine Bewertung, und die Garantiekarte ist ausdrücklich blanko. Bei einer Uhr dieser Größenordnung trägt das kein Fund, unabhängig vom Abstand zum Median. |
+| BMC Teammachine R01 (3507958705) | 3.000 € | Konto 34 Tage alt, nur Versand, und die Anzeige verweigert Angaben: „Genaueres per PN“. |
+| Flos Snoopy Lampe (3507930284) | 300 € | „Ein halbes Jahr alt“, Neupreis rund 1.000 €, nur Versand, und der Beschreibungstext ist wörtlich aus einer Händlerbeschreibung übernommen. Repliken der Snoopy sind in dieser Preisklasse die Regel. |
+| LEGO Technic 42143 Ferrari Daytona SP3 (3507130535) | 150 € | Gebrauchtniveau rund 248 € komplett, 294 € versiegelt — der Abstand wäre da. Aber: Konto 5 Tage alt, nur Versand, und die Vollständigkeit eines auf 3.778 Teile zerlegten Sets ist vor der Zahlung nicht prüfbar. Nicht überzeugt. |
+| Rolex Lady-Datejust 6917 (3507891033) | 3.690 € | Gewerblicher Händler mit Werbetext, `belastbar: false`, Streuung 2,73. Kein privater Fehlpreis. |
+
+### Nach eigener Prüfung im Markt, Mindestabstand nicht erreicht
+
+| Kandidat | Preis | Bestätigtes Niveau | Grund |
+|---|---|---|---|
+| Rolex Datejust 41, Ref. 126300, Fullset 2022 (3507877365) | 8.400 € | 7.650–9.506 € privat | Chrono24 führt ein Exemplar von Dezember 2022 bei 8.950 €, private Fullsets zwischen 8.180 € und 9.506 €, ein Uhrforum-Angebot bei 7.650 €. Der Preis liegt mitten in dieser Spanne. Größte nominale Ersparnis unter den Uhren — und keine. Positiv anzumerken: Übergabe ausdrücklich nur persönlich in der Bank, kein Versandmuster. |
+| Apple MacBook Pro 14" M5, 16/512 GB (3507914678) | 1.499 € | 1.250–1.350 € | Median 2.419 € mischt M5-Pro- und M5-Max-Konfigurationen. Gebrauchte Basis-M5 liegen bei 1.300 € (eBay, privat) und rund 1.250–1.350 € (RefurbMe, aufbereitet). Das Angebot liegt **über** dem Markt. |
+| Cube Stereo Hybrid 140 HPC SLX, Bj. 2023, 10.081 km (3507606253) | 1.750 € | 2.249–2.299 € aufbereitet | Zwei konkrete Vergleichsangebote (Upway 2.299 €, Bikemarkt ab 2.249 €) betreffen aufbereitete Räder mit Gewährleistung und deutlich geringerer Laufleistung (3.264 bzw. 7.258 km). Gegen ein gleichartiges Privatniveau sind die 20 % nicht belegbar. Vorbildlich ehrliche Anzeige mit voller Historie. |
+| Trek Slash 8, Bj. 2023 (3507588112) | 1.400 € | nicht belegbar | Delle in der Hinterradfelge offengelegt. Zwei konkrete Vergleichsangebote für Slash 8 Modelljahr 2023 waren nicht zu beschaffen (gefunden wurde nur ein Slash 7 bei 2.620 €). Kein Marktwert geschätzt. |
+| Aussenborder Parsun 15 PS EFI, 9/2023, 65 Bh (3508006947) | 1.275 € | nur ein Vergleichsangebot | Ein gebrauchter Parsun 15 PS bei 1.700 € auf eBay, Neupreis 2.099 € — die Variante (EFI, Kurzschaft, Handstart) ließ sich beim Vergleichsangebot nicht bestätigen, ein zweites fehlt. Zudem „Fotos folgen“. |
+| Cassina Le Corbusier LC 1 Sessel (3507872744) | 1.000 € | — | p25 liegt bei 1.100 €, Abstand unter 20 %; „Es ist ein Original“ ohne jeden Nachweis. |
+| Riese und Müller Birdy World (3507577602) | 800 € | — | p25 liegt exakt beim Angebotspreis. |
+| Walter Knoll FK Lederstuhl (3507566125, 3507565492) | je 800 € | — | p25 850 €, Abstand unter 20 %; dieselbe Anzeige doppelt eingestellt. |
+| EMTB E-Mountainbike Cube (3507575487) | 1.150 € | — | Kein Modell genannt. Ohne Modell kein Marktwert. |
+| USM Haller Sideboard (3507539800, 950 €; 3507869183, 690 €), USM Haller Tisch (3507595569, 400 €) | | — | `belastbar: false`, Streuung 2,64 bis 3,27; USM-Mediane mischen Ein- bis Vierfachbreiten. Bewertung wie am 8. und 9. September morgens. |
+| Übrige 14 Anzeigen der Watchlist `apple-mobil` | 180–260 € | — | Größte absolute Ersparnis 185 €; kein Kandidat erreicht 20 % Abstand zu einem bestätigten Niveau. Bei 3507615139 ausdrücklich Sturzschaden, bei 3507516353 „an Bastler“. |
+| Übrige MacBooks (3507956570, 3507900805, 3507778378, 3507980156, 3507923169, 3507920472, 3508043322) | 320–500 € | — | Abstand jeweils unter 20 % zum bestätigten Gebrauchtniveau; bei 3507980156 und 3507923169 zusätzlich `belastbar: false` (Streuung 2,98). |
+| Übrige Räder (3507502375, 3507508456, 3507592555, 3507590739, 3507514165, 3508016402, 3508071042, 3508072693, 3507965430, 3508067681, 3507525561) | 300–1.150 € | — | Durchgehend ohne Modelljahr oder Akkuangabe, mehrfach `belastbar: false` (Streuung bis 4,55). |
+| Übrige Design- und Sammelstücke (3507963292, 3507574548, 3507589998, 3507966831), Bruno Söhnle Uhr (3507509940), Gibson-Anzeigen (3507798437, 3507984254, 3507763544), Simson S51 (3507502795, 3507912635), Simson Schwalbe (3507884088, 3508060828) | | — | Jeweils Mindestabstand nicht erreicht oder Median nicht belastbar; bei 3507502795 zusätzlich Konto 50 Tage alt und Anzeige ohne Angabe zu Papieren, was bei Simson den Wert bestimmt. |
+
+## Hinweise für den nächsten Lauf
+
+**Der Sammler ist zum dritten Abend in Folge zu spät.** Am 7., 8. und 9. September wurde
+der Cron-Termin 12:00 UTC von GitHub nicht zur geplanten Zeit angelegt; die tatsächlichen
+Startzeiten der letzten Läufe waren 02:08, 08:27 und 15:33 UTC — Verzögerungen von zwei
+bis dreieinhalb Stunden. Statt der geplanten sechs Läufe pro Tag kommen vier bis fünf
+zustande. Der Abendlauf trifft dadurch regelmäßig auf einen Datenstand, der die
+Vier-Stunden-Grenze aus Schritt 1 reißt, und muss den laufenden Scan abwarten.
+Das ist kein Einzelfall mehr, sondern der Normalzustand. Zwei mögliche Abhilfen:
+den Cron auf `0 3,7,11,15,19,23 * * *` vorziehen, damit auch bei drei Stunden Verzug
+noch frische Daten vor 19:00 Uhr MESZ vorliegen, oder die Vier-Stunden-Grenze in
+`prompt.md` auf den tatsächlichen Takt anheben und das Abwarten des laufenden Scans
+als reguläres Verhalten festschreiben, statt es dreimal in Folge als Abweichung zu
+protokollieren.
+
+Zweiter Punkt: Von 157 Kandidaten waren 77 bereits am Morgen geprüft und verworfen.
+Verworfene Kandidaten bleiben 24 Stunden im Pool, weil nur gemeldete über `deal_log.csv`
+verschwinden. Eine zweite Logdatei für begründet verworfene IDs würde dem Abendlauf
+die Hälfte der Arbeit ersparen.
