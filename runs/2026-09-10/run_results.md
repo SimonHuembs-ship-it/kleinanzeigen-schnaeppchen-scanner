@@ -90,3 +90,107 @@ Belege: Geizhals listet die PS5 Pro 2 TB im September 2026 neu ab 919 €, heise
 ## Anmerkung zur Datenlage
 
 Auffällig in diesem Lauf: mehrere Kandidaten mit den höchsten Rohersparnissen scheiterten nicht an der Prüfung des Angebots, sondern an der Referenzgruppe. Queries wie „Apple MacBook Pro", „Rolex Oyster Perpetual", „BMW Coupe E36" oder „Gibson Les Paul 2010" mischen Ausstattungs- und Modellvarianten mit stark unterschiedlichen Marktwerten und erzeugen Phantomersparnisse von 300 bis 3.000 Euro. Beim MacBook Pro M5 lag der Median mit 2.419 € sogar über dem aktuellen Neupreis von 1.449 €.
+
+---
+
+# Lauf 2026-09-10, 19:05 Uhr (abends)
+
+- `candidates.json` generiert: 2026-09-10T18:52:42+02:00 (11 Minuten alt, weit innerhalb der Vier-Stunden-Grenze)
+- Zeitraum des letzten Scans: 2026-09-10T12:29 bis 2026-09-10T17:29
+- Gesichtet laut Statistik: 186.954 Anzeigen
+- Kandidaten in der Datei: 165
+- Bereits in `deal_log.csv`: 0
+- Bereits im Morgenprotokoll dieses Tages geprüft und dort verworfen: 25 (Rolex Submariner/Datejust/Lady-Datejust, IWC, Tudor Prince, Union Glashütte, MSI RTX 5080, DJI Mini 5 Pro, DJI Mini 4 Pro, DJI Mavic Pro, PS5-Pro-Angebote, BMW E30/E36, iPhone 17 Pro Max, iPhone 16 Pro, Specialized Diverge/Stumpjumper, Kreidler Vitality, Cube Reaction Hybrid, Vitra Grand Repos, Meuser Drehbank, Hilti TE 70-ATC, Thorens TD 145, Notverkäufe). Diese Befunde übernehme ich unverändert.
+- Neu inhaltlich geprüft: 140 gesichtet, 46 im Detail (Priorität: größter absoluter Abstand, dann liquide Ware – Uhren, Apple, Drohnen, Konsolen)
+- **Gemeldete Funde: 2**
+
+## Funde
+
+| Preis | Titel | Bestätigter Marktwert | Abstand | Ort |
+|---|---|---|---|---|
+| 1.650 € | [Riese & Müller Charger3 GT vario](https://www.kleinanzeigen.de/s-anzeige/riese-mueller-charger3-gt-vario-e-lastenrad/3508455364-217-3448) | Händler-Refurbs 2.133–3.500 €, Kleinanzeigen-Median privat 2.949 € (n=41, Streuung 1,38) | 25–35 % unter belegtem Niveau | Berlin-Schöneberg |
+| 360 € | [Valve Steam Deck OLED 512 GB mit Zubehörpaket](https://www.kleinanzeigen.de/s-anzeige/valve-steam-deck-oled-512-gb-ssd-mit-zubehoerpaket/3508760784-279-7337) | Valve generalüberholt 459 € mit Garantie, gebraucht eBay ~500 €, Kleinanzeigen ab 599 €, neu 779 € | 22 % unter dem Refurbished-Preis allein für das Gerät, Dock und 1-TB-Karte ungerechnet | Straubing |
+
+Belege Riese & Müller: bikeflip führt ein Charger 3 Enviolo GT Vario für 2.132,81 € und ein Charger 3 GT Touring 2021 für 2.524,78 €, bikeboerse ein 2021er GT Vario mit 430 km für 3.500 €, Upway/JobRad Loop vergleichbare Refurbs. Das Rad hat 3.950 km, wurde im August 2026 inspiziert, wird nur zur Abholung angeboten und ist im Titel fälschlich als „E-Lastenrad" bezeichnet – ein Charger3 GT ist ein Trekkingrad.
+
+Belege Steam Deck: Valve verkauft generalüberholte OLED-Geräte mit 512 GB für 459 € mit voller Garantie (mydealz), der Neupreis liegt seit Mai 2026 bei 779 € (ComputerBase), gebrauchte Geräte gehen auf eBay bei rund 500 € und auf Kleinanzeigen ab 599 € weg. Im Paket enthalten sind zusätzlich Dock, SanDisk Extreme Pro 1 TB, Tasche und zwei Netzteile, dazu OVP und Händlerrechnung vom Dezember 2025.
+
+## Verworfene Kandidaten mit Begründung
+
+### Uhren
+- **Rolex Sea Dweller Stahl 44 mm, 7.500 €** (3508714411) – Widerspruch im Inserat: die 44-mm-Sea-Dweller (126600) kam 2017 auf den Markt, das angegebene Baujahr 2008 gehört zur 40-mm-16600. Modell und Jahr passen nicht zusammen, Konto seit 2025, Bewertung 0,61, nur Versand. Verworfen.
+- **Rolex Datejust 36, 6.500 €, Fullset von Dezember 2023** (3508904381) – bestätigtes Niveau für die 126200 mit schwarzem Zifferblatt und Jubilee-Band: 7.400 bis 11.000 € auf Chrono24, rund 7.000 € für ein gepflegtes Gebrauchtes. Der Abstand liegt bei 12 bis 19 Prozent und damit unter der Schwelle.
+- **Rolex Datejust 16030 von 1988 mit Papieren, 5.650 €** (3508814835) – konkrete Vergleichsangebote: 5.365 € (1988, UK), 5.555 € (Trusted Seller mit Papieren), 6.290 € (1987 Pre-Wimbledon mit zwei Jahren Garantie). Der Preis liegt mitten im Markt, dazu gewerblicher Verkäufer. Nebenbefund: die Beschreibung nennt „Plexiglas", die 16030 hat ab Werk Saphirglas – der Text stammt vermutlich aus einer Händlervorlage.
+- **Omega Seamaster Diver 300M, Ref. 212.30.41.20.01.003, Full Set, frisch überholt, 3.000 €** (3508697041) – handwerklich das ehrlichste Uhreninserat des Laufs (Konto seit 2013, Bewertung 0,97, Rechnung des Uhrmachermeisters mit zwölf Monaten Garantie, nur Abholung). Der Chrono24-Durchschnitt für diese Referenz liegt aber bei rund 3.200 US-Dollar, umgerechnet etwa 2.760 €, Spanne 2.600 bis 4.400 Dollar. Der Preis liegt damit **über** dem bestätigten Marktwert, der Kleinanzeigen-Median von 4.650 € aus nur elf Anzeigen ist zu hoch angesetzt.
+- **Omega Seamaster Professional 300m Vintage 36 mm, 1.350 €** (3508875610) – Heliumventil fehlt, Krone lässt sich nicht zuschrauben: die Wasserdichtigkeit ist dahin. Der Preis erklärt sich aus dem Defekt.
+- **Tudor Black Bay 58 Blau Fullset, 2.550 €** (3508659886) – Verkäuferkonto zwei Tage alt, keine Bewertung, makelloses Inserat mit vollständigem Zubehör und Versandangebot in der betrugsanfälligsten Kategorie. Genau das polierte Profil, das die Leitidee beschreibt.
+- **TAG Heuer Carrera Chronograph, 1.095 €** (3508680963) – keine Referenznummer, kein Baujahr, ohne Box und Papiere. Die Carrera-Reihe reicht von rund 1.200 bis über 6.000 €; ohne Modellbestimmung ist kein Marktwert belegbar. Nicht geschätzt, sondern verworfen.
+- **TAG Heuer Formula 1 Full Set, 800 €** (3508387395) – ebenfalls ohne Referenznummer und Gehäusegröße; die Formula-1-Reihe spannt 600 bis 2.500 € neu. Kein belegbarer Referenzwert.
+- **Longines Hydroconquest L3.781.4069, 850 €** (3508692074) – Verkäuferbewertung 0,37. Das ist der schlechteste Wert im gesamten Kandidatenfeld und wiegt schwerer als der rechnerische Abstand.
+- **TAG Heuer Damenuhr, 450 €** (3508764155) und **TAG Heuer Golf Watch Tiger Woods, 890 €** (3508500154) – Referenz nicht belastbar (Streuung 2,84 bzw. 4,70).
+
+### Apple
+- **MacBook Pro 14" M5, 1 TB, 1.490 €** (3508685629) – **Betrugsmuster**: Konto sieben Tage alt, nur Versand, ausdrücklicher Ausschluss der Kleinanzeigen-Zahlungsabwicklung („nehme nicht an der eBay Zahlungsabwicklung teil"), dazu Zeitdruck („kann heute noch verschickt werden bis 17:00 Uhr"). Verworfen.
+- **MacBook Air 15" M4, 16/256, gekauft am 10.08.2026, Garantie bis 08/2027, 740 €** (3508878579) – ein vier Wochen altes Gerät mit Restgarantie zu 45 Prozent unter Neupreis, Verkäuferbewertung 0,50, nur Versand. Nicht überzeugt.
+- **MacBook Air 15" M4, 16/256, 500 €** (3508310829) – dasselbe Muster, noch stärker: AppleCare bis 2027, Rechnung, 16 Ladezyklen, nur Versand, Gewerbetext auf Privatprofil.
+- **MacBook Pro 14" M4, 16/512, Zustand „Neu", 1.100 €** (3508254806) – Konto einen Tag alt. Immerhin nur Abholung, was das Versandbetrugsrisiko nimmt, aber der Median von 1.799 € ist für die Basis-M4-Konfiguration zu hoch angesetzt; gegen das reale Gebrauchtniveau kein belegbarer 20-Prozent-Abstand.
+- **MacBook Pro 14" M1 Pro, 16 GB/1 TB, 650 €** (3508290777) und **16 GB/512 GB, 650 €** (3508866813) – hier korrigiert die eigene Recherche den Median deutlich nach unten: gebrauchte MacBook Pro 14" M1 Pro werden auf Kleinanzeigen aktuell zwischen 680 und 999 € gehandelt, typisch 700 bis 800 €, ein Händler-Refurb mit 1 TB liegt bei 945 €. Der Kleinanzeigen-Median von 999 € bzw. 1.110 € überzeichnet. Beim 1-TB-Gerät kommen offengelegte Dellen an beiden Seiten und 313 Ladezyklen dazu; beim 512-GB-Gerät widersprechen sich Anzeige (Versand) und Text („nur an Selbstabholer"). Beide unter 20 Prozent.
+- **MacBook Pro 16" M1 Pro, 32/512, 935 €** (3508427790) – Akku bei 83 Prozent, Kratzer am Displaygehäuse, QWERTY-Layout statt deutscher Tastatur. Der Abschlag erklärt sich.
+- **MacBook Air 15" M2, 490 €** (3508334231) – Netzteil fehlt; abzüglich Ersatznetzteil Marktniveau.
+- **iPhone 15, 170 €** (3508237419) – Backcover gebrochen, Reparatur laut Verkäufer rund 100 €. Preis erklärt sich.
+- **Übrige iPhones (100 bis 350 €, 13/14/15/16-Reihe)** – wie am Morgen durchweg offengelegte Schäden oder Abstände unter 20 Prozent gegen das reale Gebrauchtniveau.
+
+### Konsolen
+- **Steam Deck OLED 512 GB, 230 €** (3508431685) – der größte rechnerische Abstand des Laufs (50 Prozent unter dem Valve-Refurbished-Preis) und trotzdem kein Fund: Die Beschreibung gibt das komplette Datenblatt bis hin zur APU-Bezeichnung wieder und vergleicht das Gerät mit Legion Go, Xbox Ally und OneXPlayer. Wer die Spezifikationen so genau kennt, kennt auch den Preis. Diese Kombination aus Fachwissen im Text, Preis weit unter der Hälfte und ausschließlichem Versand ist das Muster, das die Leitidee als Betrugsprofil beschreibt.
+- **Steam Deck 512 GB (LCD), 300 €** (3508870110) – L1-Schultertaste nach Sturz defekt, Reparaturversuch gescheitert. Preis erklärt sich.
+- **Steam Deck 512 GB mit JSAUX-Backcover, 389 €** (3508391950) – LCD-Modell, gegen das passende Vergleichsniveau kein 20-Prozent-Abstand.
+
+### Drohnen
+- **DJI Mini 4 Pro ohne Fernsteuerung, 350 €** (3508763863) – die Drohne ist ohne Fernsteuerung nicht flugfähig, eine DJI RC 2 kostet gebraucht rund 300 €. Zusammen liegt man beim Median. Kein Fund.
+- **DJI Mini 4 Pro mit einem Akku, 370 €** (3508311137) – wie am Morgen: kein Fly-More-Combo, gegen den passenden Vergleichswert kein 20-Prozent-Abstand.
+- **DJI Mavic Pro Platinum, 250 €** (3508887309) – Modell von 2017, dazu Drittanbieter-Akkus statt DJI-Originalen. Marktgerecht.
+- **DJI Mini 3 Pro Defekt/Bastler, 270 €** (3508879423) und **DJI Mavic Pro Platinum Fly More, 275 €** (3508482726) – Defekt bzw. Referenz nicht belastbar (Streuung 2,83).
+
+### Fahrzeuge und Zweiräder
+- **BMW 318 E30, 6.000 €** (3508763044) – nicht fahrbereit, steht seit zwei Jahren, Rost an den üblichen Stellen, kein TÜV. Projektfahrzeug, Preis erklärt sich.
+- **Simson S51 Neuaufbau 4-Gang, 2.350 €** (3508751828) – sehr sorgfältig gemachter Neuaufbau, aber auf MZA-Rahmen ohne Typenschild und ohne Fahrgestellnummer. Der Verkäufer sagt es selbst: der Käufer muss sich eine Nummer besorgen. Ohne Papiere ist das Fahrzeug nicht billig, sondern richtig bepreist.
+- **Simson S51 Bj. 1982, 1.950 €** (3508145597) – keine Papiere vorhanden, Blinker vorne, Spiegel, Chokeknopf und Spritzschutz fehlen. Gleiche Regel.
+- **Simson Star SR 4-2 zum Neuaufbau, 1.100 €** (3508095087), **Simson Star, 1.300 €** (3508648492), **SR 2 Scheunenfund, 450 €** (3508311811) – Teileträger bzw. unvollständige Scheunenfunde; der Median stammt von fahrbereiten Fahrzeugen.
+- **Yamaha XT 500 Alu-Tank, 550 €** (3508909478) – Einzelteil, Referenz mit Streuung 11,8 wertlos.
+
+### Fahrräder und E-Bikes
+- **Canyon Aeroad CF, 999 €** (3508440143) – Shimano 105 mechanisch, 11-fach, Fulcrum Clincher: das ist eine Aeroad-Generation von etwa 2015. Der Median von 3.650 € stammt überwiegend von Aeroad CF SLX und CFR mit elektronischer Schaltung. Phantomersparnis.
+- **Canyon Exceed CF SL Rahmen, 500 €** (3508885938) und **Trek Checkpoint ALR Rahmenset, 649 €** (3508715350) – jeweils nur Rahmen bzw. Rahmenset, der Median gilt für komplette Räder. Referenzgruppe nicht vergleichbar.
+- **Specialized Chisel ohne Laufräder, 450 €** (3508408128) – dasselbe: unvollständiges Rad gegen komplette Räder.
+- **Cube Supreme Hybrid 500, 1.100 €** (3508341806) – über 6.000 km auf einem Akku von 2023. Der Abschlag erklärt sich über den Akkuzustand.
+- **Haibike Trekking EQ S2, 500 €** (3508186351) – 288-Wh-Akku, das ist ein Modell von etwa 2014; der Median mischt aktuelle 500- und 625-Wh-Räder ein.
+- **HaiBike Trekking 400 Wh, 580 €** (3508482914) – gewerblicher Verkäufer seit 2025, kein Modellname, „wegen Krankheit abzugeben" auf einem Gewerbekonto.
+- **Cube XCM Touring Pro Damen-E-Bike, 1.100 €** (3508415353) – ein Modell dieses Namens führt Cube nicht; XCM ist eine Suntour-Gabel. Ohne Modellbestimmung kein Marktwert.
+- **Cube Stereo Fully, 550 €** (3508227633) – kein Modelljahr, keine Komponenten genannt. Die Baureihe Stereo reicht von 500 bis über 5.000 €.
+- **Cube Nuroad Gr. L, 600 €** (3508640032) – Shimano Claris, also die Einstiegsvariante mit rund 1.000 € Neupreis. Der Median gilt für höhere Ausstattungen.
+- **Cube Cross Pro HPA, 650 €** (3508112803) – der Verkäufer nennt den Neupreis mit 999 € selbst. Gegen den ist 650 € für ein gebrauchtes Rad kein Fund.
+- **Cube Reaction C:62 Pro, 650 €** (3508753395) und **Cube Reaction C:62 SL Bj. 2019, 600 €** (3508871913) – beide ehrlich beschrieben, aber ohne belastbaren externen Vergleichswert für die jeweilige Modellgeneration; beim SL zusätzlich getauschte Kurbelgarnitur und getauschtes Hinterrad.
+- **Trek Remedy 7 Bj. 2019, 900 €** (3508335164) – zwei Jahre unbewegt in der Gartenhütte, Gabel- und Dämpferservice steht damit an; kein bestätigter Abstand.
+- **Canyon Neuron AL 7.0, 799 €** (3508433527), **Canyon Ultimate F8 AL, 359 €** (3508430113), **Trek Farley Fatbike, 600 €** (3508286658), **Trek Marlin 4/7, Specialized Crave, Trek Superfly, Cube Attention, Cube AMS, KTM Trekkingrad, Grand Canyon AL, Prophete Entdecker (150 bis 300 € Abstand)** – durchweg ohne Modelljahr oder mit Referenzquery über mehrere Generationen; keiner mit bestätigtem 20-Prozent-Abstand.
+- **Canyon Fully, 700 €** (3508146510) – Konto zwei Tage alt, kein Modellname, generischer Text.
+- **Übrige E-Bikes und Räder mit `belastbar: false`** (Cube Bike 450 €, TREK Fahrrad 490 €, Canyon Rennrad 750 €, Canyon Endurace 899 €, Specialized Mountainbike 400 €, Damen E-Bike Cube 850 €, Winora 690 €, Victoria 300/400/580 €, Focus 950 €, Roval-Laufradsatz 600 €, Cube Touring Pro 430 €, Cube MTB 480/500 €, Cube Top MTB 490 €, Specialized Epic 500 €, Specialized Sirrus 700 €) – Referenzgruppe mischt verschiedene Produkte, Median zählt nicht.
+
+### Design, Instrumente, HiFi, Werkzeug
+- **USM Haller Sideboard schwarz, 800 €** (3508418998) – reiner Werbetext ohne Maße und ohne Elementzahl. Ein USM-Preis hängt vollständig von der Konfiguration ab; ohne sie ist kein Marktwert bestimmbar.
+- **USM Haller Sideboard weiß 150 × 38 × 78 cm, 950 €** (3508681658) – Maße genannt, aber 38 cm entspricht keiner USM-Standardtiefe (35 oder 50 cm), die Konfiguration bleibt unklar; Abholung zudem in Ermatingen in der Schweiz, also mit Einfuhr. Kein bestätigter Abstand.
+- **USM Haller Regal graphitschwarz, 650 €** (3508803018) und **Cassina Wink, 600 €** (3508727398) – Referenz nicht belastbar (Streuung 3,46 bzw. 3,25).
+- **Vitra EA117 Alu Chair von 1987, 666 €** (3508480152) – Stoffbezug und starke Chrompatina; für ein patiniertes Stoffexemplar ist das Marktniveau, der Median von 1.550 € enthält Leder- und Neuexemplare.
+- **„Original Charles Eames Alu Chair", 370 €** (3458022024) – vier Zeilen Text, kein Modellkürzel, kein Echtheitsnachweis, nur Versand. Der Alu Chair ist eines der meistkopierten Möbelstücke überhaupt; ohne Nachweis nicht bewertbar.
+- **Sofa Dieter Knoll, 850 €** (3508316083) – der Verkäufer nennt den XXXLutz-Preis von 2.399 € selbst; große Polstergarnituren verlieren gebraucht 60 bis 70 Prozent. Marktgerecht.
+- **Gibson SG mit repariertem Headstockbreak, 745 €** (3508211190) – ein reparierter Halsbruch ist genau der Grund, warum der Preis unter dem Median liegt.
+- **Gibson Les Paul Tribute, 899 €** (3508215393) und **1.200 €** (3508387119) – Referenz nicht belastbar, die Query mischt Studio, Tribute und Standard.
+- **Thorens TD 160 MK II, 250 €** (3508033211) – Konto drei Tage alt, Nachlass-Geschichte, und die Anzeige bietet Versand an, während der Text „Kein Versand" sagt. Widersprüchlich.
+- **Vitra Bürostuhl 280 €, Thonet S34 275 €, Wilkhahn-Tisch 190 €, Eames Plastic Chair 195 €** – Streuung über 2,5 oder Abstand unter 20 Prozent.
+- **Hilti TE 70-ATC 550 €, Hilti Bohrmaschine 150 €, Meuser Drehbank 850 €, PKW-Anhänger HP400 150 €** – kein belastbarer Referenzwert, wie schon am Morgen festgehalten.
+- **Notverkäufe (Entrümpelung 398 €, E-Scooter 600 €)** – keine Referenz, keine bewertbare Ware.
+
+## Anmerkung zur Datenlage
+
+Der Abendlauf bestätigt den Morgenbefund und schärft ihn: In vier Fällen lag der Kleinanzeigen-Median nach eigener Recherche **über** dem tatsächlichen Marktwert – bei der Omega Seamaster (4.650 € Median gegen rund 2.760 € bestätigt), beim MacBook Pro 14" M1 Pro (999 bzw. 1.110 € Median gegen 700 bis 800 € reales Niveau), beim MacBook Pro M4 und beim Cube Cross Pro, wo der Verkäufer den Neupreis selbst nennt. Die eigene Bestätigung des Marktwerts ist damit nicht Formsache, sondern hat in diesem Lauf mehr Kandidaten aussortiert als jedes Betrugssignal.
+
+Umgekehrt fiel der größte rechnerische Abstand des Laufs, das Steam Deck OLED für 230 €, nicht durch die Preisprüfung, sondern durch die Leitidee: ein Text auf Datenblatt-Niveau bei einem Preis unter der Hälfte passt nicht zusammen.
