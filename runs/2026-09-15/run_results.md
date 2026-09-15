@@ -168,3 +168,83 @@ Für die Ducati Monster 900 i.e. (1.700 €, 81.222 km) ließ sich kein tragfäh
 Vergleichswert finden: Die auffindbaren Angebote (4.500 € für eine Dark, 8.990 € für
 ein Exemplar mit 23.637 km) betreffen deutlich laufleistungsärmere Fahrzeuge. Statt
 zu schätzen, bleibt der Kandidat unbewertet und ungemeldet.
+
+---
+
+# Lauf 2026-09-15, 19:04 Uhr (abends) — abgebrochen, veraltete Datenbasis
+
+**Ergebnis: keine Prüfung, keine Funde, keine Mail.** Abbruch nach Schritt 1 der
+Anweisung, weil `candidates.json` zu alt ist. Es ist der zweite Abendabbruch in
+Folge, aus derselben Ursache wie am 14. September.
+
+## Befund
+
+- `candidates.json` generiert: `2026-09-15T12:01:51+02:00`
+- Laufzeitpunkt der Routine: `2026-09-15T19:04+02:00`
+- Alter der Datei: **7,0 Stunden** — die Grenze in `prompt.md` Schritt 1 liegt bei
+  vier Stunden, die Kurzfassung des Auftrags nennt sechs. Beide sind überschritten.
+- Zeitraum des letzten Sammellaufs: `2026-09-15T06:03:29+02:00` bis `2026-09-15T11:03:29+02:00`
+- Gesichtet in diesem Sammellauf: 133.695 Anzeigen · nach Modellmatch 1.294 ·
+  nach Preisschwelle 92 · nach Scoring 62
+- Kandidaten in der Warteschlange: **127**, davon 0 bereits in `deal_log.csv`
+- Jüngste Anzeige in der Liste: `2026-09-15T10:59:37+02:00`
+
+Die Liste ist nicht leer, sondern nicht aktuell: Alles, was seit 11:03 Uhr
+eingestellt wurde — acht Stunden Kleinanzeigen-Tag, darunter der komplette
+Feierabend-Zeitraum — fehlt. Genau dafür ist die Frist da, deshalb wurde kein
+Kandidat inhaltlich geprüft und nichts gemeldet.
+
+## Ursache: der 12-UTC-Sammellauf startete mit fast vier Stunden Verspätung
+
+`.github/workflows/scan.yml` läuft per Cron alle vier Stunden (00, 04, 08, 12, 16 UTC).
+
+| Takt | Run | Start (UTC) | Verspätung | Status |
+|---|---|---|---|---|
+| 04 UTC | #226 | 02:27 | — | erfolgreich, Commit `Scan 2026-09-15T02:40Z` |
+| 08 UTC | #227 | 09:03 | 63 min | erfolgreich, Commit `Scan 2026-09-15T10:01Z` (die vorliegende Datei) |
+| 12 UTC | #228 | 15:54 | 234 min | **läuft um 19:04 Uhr noch** |
+| 16 UTC | — | — | — | bis 19:04 Uhr kein Run angelegt |
+
+Anders als gestern ist kein Takt komplett ausgefallen, der 12-UTC-Lauf wurde aber
+so spät gestartet, dass sein Ergebnis zum Abendlauf noch nicht vorliegt: Run #228
+läuft seit 69 Minuten, frühere Läufe brauchten 13 bis 105 Minuten. Der
+16-UTC-Takt fehlt bislang ganz. Die Verspätung ist kein Fehlschlag der Action,
+sondern GitHubs bekannte Verzögerung geplanter Workflows unter Last.
+
+**Folge für den Takt der Routine:** Ein Abendlauf um 19:00 Uhr Ortszeit (17:00 UTC)
+braucht den 12- oder 16-UTC-Sammellauf. Beide liegen so nah an der
+Vier-Stunden-Grenze, dass schon eine normale GitHub-Verspätung den Abendlauf
+kippt. Der Morgenlauf um 07:00 Ortszeit (05:00 UTC) ist robuster, weil der
+04-UTC-Takt nachts kaum verzögert wird — er lief heute früh und lieferte vier Funde.
+Wer den Abendlauf zuverlässig haben will, muss an dieser Stelle etwas ändern;
+mögliche Ansätze, zur Entscheidung des Betreibers, nicht von mir umgesetzt:
+
+- einen zusätzlichen Cron-Eintrag kurz vor dem Abendlauf (z. B. `0 14 * * *`),
+  damit ein verspäteter 12-UTC-Lauf nicht der einzige Kandidat ist,
+- oder den Abendlauf der Routine um ein bis zwei Stunden nach hinten legen.
+
+## Warteschlange zum Zeitpunkt des Abbruchs
+
+Ungeprüft, nur zur Einordnung, sortiert nach dem Kleinanzeigen-Median — der laut
+`prompt.md` kein Beleg ist und hier ausdrücklich nicht bestätigt wurde:
+
+| Anzeige | Preis | Median-Abstand | Referenz belastbar | Eingestellt |
+|---|---|---|---|---|
+| Tesla Model 3 Performance Dual Motor | 15.000 € | 11.999 € | ja (1,35) | 14.09. 23:24 |
+| Rolex Cosmograph Daytona | 25.500 € | 10.490 € | ja (2,19) | 14.09. 16:59 |
+| Mercedes W124 Coupé 320 | 8.400 € | 9.150 € | ja (2,00) | 14.09. 18:00 |
+| Yanmar Minibagger (`unkenntnis_bonus`) | 7.500 € | 7.300 € | ja (2,32) | 14.09. 17:04 |
+| Mercedes SL 500 R129 | 10.500 € | 6.668 € | ja (1,46) | 15.09. 10:03 |
+| Porsche 944 Oldtimer | 8.900 € | 6.355 € | ja (1,90) | 14.09. 11:15 |
+| VW Corrado G60 | 4.500 € | 6.210 € | ja (1,87) | 14.09. 21:59 |
+
+Der Tesla und die Daytona standen bereits heute früh in der Liste und wurden dort
+geprüft und verworfen (Lockpreis im Text bzw. kein 20-Prozent-Abstand); sie tauchen
+wieder auf, weil Verworfenes nicht in `deal_log.csv` landet. Alle Kandidaten
+bleiben in der Warteschlange, `deal_log.csv` wurde nicht angefasst, es geht nichts
+verloren.
+
+## Committet
+
+Nur diese Datei, nach `main`. `deals.json`, `email_output.html` und `deal_log.csv`
+bleiben unverändert, damit kein Versand ausgelöst wird.
