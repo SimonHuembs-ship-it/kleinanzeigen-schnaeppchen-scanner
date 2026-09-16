@@ -142,3 +142,96 @@ Pflicht-Warnflags nach prompt.md Schritt 2e: keine der gelisteten Kategorien (RT
 - **Lego 10261 Achterbahn inkl. Power Functions / Motor mit OVP** (3513305299, 225 €, nominell 106 € unter Median): Nach Prioritaet (absoluter Abstand, liquide Ware) nachrangig: Referenzgruppe mischt Varianten und der eigene Marktwert wurde nicht auf einen 20-%-Abstand bestaetigt. Ein Median ohne eigene Bestaetigung ist kein Beleg.
 - **Hilti Bolzensetzgerät** (3513233811, 160 €, nominell 105 € unter Median): Referenz nicht belastbar (Streuung 2,61); kein eigener Marktwertbeleg recherchiert, damit kein belegbarer 20-%-Abstand.
 
+
+---
+
+# Lauf 2026-09-16, 19:05 Uhr (abends) — abgebrochen, veraltete Datenbasis
+
+**Ergebnis: keine Prüfung, keine Funde, keine Mail.** Abbruch nach Schritt 1 der
+Anweisung, weil `candidates.json` zu alt ist. Es ist der **dritte Abendabbruch in
+Folge** (14., 15. und 16. September), jedes Mal aus derselben Ursache.
+
+## Befund
+
+- `candidates.json` generiert: `2026-09-16T11:57:03+02:00`
+- Laufzeitpunkt der Routine: `2026-09-16T19:05+02:00`
+- Alter der Datei: **7,1 Stunden** — die Grenze in `prompt.md` Schritt 1 liegt bei
+  vier Stunden, die Kurzfassung des Auftrags nennt sechs. Beide sind überschritten.
+- Zeitraum des letzten Sammellaufs: `2026-09-16T05:55:53+02:00` bis `2026-09-16T10:55:53+02:00`
+- Gesichtet in diesem Sammellauf: 133.089 Anzeigen · nach Modellmatch 1.320 ·
+  nach Preisschwelle 85 · nach Scoring 58
+- Kandidaten in der Warteschlange: **124**, davon 0 bereits in `deal_log.csv`
+- Älteste Anzeige in der Liste: `2026-09-15T10:58:34+02:00`
+- Jüngste Anzeige in der Liste: `2026-09-16T10:54:59+02:00`
+- Kandidaten mit `unkenntnis_bonus`: 2
+- Größter nomineller Abstand in der Warteschlange: Tesla Model 3 mit FSD-Paket,
+  7.063 € unter Median (extern ungeprüft, da kein Kandidat inhaltlich beurteilt wurde)
+
+Die Liste ist nicht leer, sondern nicht aktuell: Alles, was seit 10:55 Uhr eingestellt
+wurde — über acht Stunden Kleinanzeigen-Tag, darunter der komplette Feierabend-Zeitraum,
+in dem private Verkäufer inserieren — fehlt. Genau dafür ist die Frist da, deshalb wurde
+kein Kandidat inhaltlich geprüft und nichts gemeldet.
+
+Von den 124 Kandidaten sind **84 bereits im Morgenlauf geprüft und verworfen** worden;
+nur **40 sind seither neu hinzugekommen**. Verworfene Kandidaten landen nicht in
+`deal_log.csv` und tauchen deshalb bis zum Ablauf des 24-Stunden-Fensters immer wieder
+in der Warteschlange auf. Für einen Abendlauf auf frischen Daten wäre der tatsächlich
+neue Anteil also klein — der Wert des Abendlaufs liegt fast vollständig in den Anzeigen
+des Nachmittags und Abends, und genau die fehlen.
+
+## Ursache: der 12-UTC-Sammellauf startete mit 3¾ Stunden Verspätung und läuft noch
+
+`.github/workflows/scan.yml` läuft per Cron alle vier Stunden (00, 04, 08, 12, 16, 20 UTC).
+
+| Takt | Run | Start (UTC) | Verspätung | Status |
+|---|---|---|---|---|
+| 00 UTC | #231 | 02:21 | 141 min | erfolgreich, Commit `Scan 2026-09-16T02:35Z` |
+| 04 UTC | — | — | — | **kein Run angelegt** |
+| 08 UTC | #232 | 08:55 | 56 min | erfolgreich, Commit `Scan 2026-09-16T09:57Z` |
+| 12 UTC | #233 | 15:45 | 225 min | **läuft noch** (seit 79 Minuten), noch kein Commit |
+| 16 UTC | — | — | — | bis 17:05 UTC kein Run angelegt |
+
+Damit ist der jüngste vorliegende Stand der 08-UTC-Lauf, dessen Ergebnis um 09:57 UTC
+committet wurde. Bis zum Abendlauf um 17:05 UTC vergehen dadurch über sieben Stunden.
+
+Das Muster ist nicht neu, sondern der Normalfall: GitHub legt die geplanten Läufe
+regelmäßig ein bis vier Stunden zu spät an und lässt einzelne Takte ganz aus. In den
+letzten drei Tagen sind so pro Tag nur vier der sechs Takte gelaufen. Zusätzlich ist
+Lauf #229 (16-UTC-Takt am 15. September, gestartet 19:21 UTC) nach elf Minuten
+fehlgeschlagen; der Folgelauf war wieder erfolgreich, ein wiederkehrender Fehler ist
+daraus nicht abzuleiten.
+
+Der Morgenlauf um 07:00 Uhr MESZ trifft es nicht, weil der 00-UTC-Takt selbst mit zwei
+Stunden Verspätung noch rechtzeitig fertig wird. Der Abendlauf um 19:00 Uhr MESZ hängt
+dagegen am 12-UTC-Takt, und dessen Verspätung schlägt voll durch.
+
+## Was das strukturell bedeutet
+
+Der Abendlauf ist bei der aktuellen Taktung nicht zuverlässig durchführbar. Drei
+Abende in Folge ohne Meldung heißt: Anzeigen, die zwischen Vormittag und Abend
+eingestellt werden, erreichen die Meldung erst am nächsten Morgen — bei liquider Ware
+wie Drohnen, Uhren, Apple-Geräten und Grafikkarten ist das regelmäßig zu spät. Genau
+den Fall beschreibt `prompt.md` mit dem reservierten Fund vom 5. August.
+
+Mögliche Ansätze, alle außerhalb dessen, was diese Routine selbst entscheiden darf:
+
+1. **Cron entzerren.** Feste Zeiten statt `*/4` und mit Vorlauf vor den Urteilsläufen,
+   etwa `0 1,9,13 * * *` statt `0 */4 * * *`. Ein auf 13 UTC gelegter Takt hätte selbst
+   bei drei Stunden Verspätung noch Puffer bis 17 UTC.
+2. **Sammler vom Urteilslauf aus anstoßen.** Die Routine könnte den Scan per
+   `workflow_dispatch` selbst starten, statt auf GitHubs Scheduler zu warten. Das
+   verschöbe den Abendlauf allerdings um die Scan-Laufzeit von bis zu 90 Minuten.
+3. **Abendlauf später legen**, etwa auf 21:00 Uhr MESZ, damit der 12-UTC-Takt auch mit
+   Verspätung sicher vorliegt.
+4. **Frist anheben.** Die Vier-Stunden-Grenze in `prompt.md` und die Sechs-Stunden-Grenze
+   in der Kurzfassung des Auftrags widersprechen sich ohnehin. Das behebt aber nur das
+   Symptom: die Datenlücke am Nachmittag bliebe bestehen.
+
+Empfehlung ist Ansatz 1, weil er die Ursache trifft und die Datenbasis des Abendlaufs
+tatsächlich verjüngt, statt die Prüfung nur auf ältere Daten zuzulassen.
+
+## Commit
+
+Nach `prompt.md` Schritt 5 wird bei null gemeldeten Funden **nur** dieses Laufprotokoll
+nach `main` gepusht. `email_output.html`, `deals.json` und `deal_log.csv` bleiben
+unverändert, damit keine Mail ausgelöst wird.
