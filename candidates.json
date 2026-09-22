@@ -1,26 +1,24 @@
 {
-  "generiert": "2026-09-22T01:52:15+02:00",
+  "generiert": "2026-09-22T04:39:49+02:00",
   "zeitraum": {
-    "von": "2026-09-21T19:55:31+02:00",
-    "bis": "2026-09-22T00:55:31+02:00"
+    "von": "2026-09-21T23:24:55+02:00",
+    "bis": "2026-09-22T04:24:55+02:00"
   },
   "statistik": {
-    "gesichtet": 105399,
-    "nach_modellmatch": 1655,
-    "nach_vorfilter": 1651,
-    "nach_preisschwelle": 88,
-    "nach_scoring": 65,
+    "gesichtet": 26352,
+    "nach_modellmatch": 126,
+    "nach_vorfilter": 126,
+    "nach_preisschwelle": 15,
+    "nach_scoring": 7,
     "ausschluesse": {
-      "score_zu_niedrig": 16,
-      "preis_unplausibel": 5,
-      "externer_link": 2
+      "preis_unplausibel": 2,
+      "score_zu_niedrig": 6
     },
-    "pool": 102900,
-    "ohne_referenz_verworfen": 431,
-    "referenz_gekappt": 823,
+    "pool": 23856,
+    "ohne_referenz_verworfen": 38,
     "doppelt_zusammengefasst": 0,
-    "requests": 2266,
-    "laufzeit_sekunden": 3403
+    "requests": 661,
+    "laufzeit_sekunden": 893
   },
   "kandidaten": [
     {
@@ -5040,6 +5038,76 @@
       }
     },
     {
+      "id": "3519828003",
+      "watchlist_id": "macbook",
+      "titel": "MacBook Pro",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/macbook-pro/3519828003-278-17009",
+      "preis": 350.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 680.0,
+        "p25": 449.0,
+        "n": 85,
+        "query": "MacBook Pro",
+        "korrektur": 0.0,
+        "streuung": 3.12,
+        "belastbar": false
+      },
+      "p_ratio": 0.515,
+      "ersparnis_eur": 330.0,
+      "ort": "Kalk",
+      "plz": "51103",
+      "eingestellt": "2026-09-22T03:09:42+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/94/94f2e975-b13d-4e33-86e0-3f9fd94bfe5f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f0/f07c4a06-ae23-48a0-a0f8-fec633c0b2b7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/60/601835e2-4b25-4a86-b35d-436e7cc71d99?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fe16fcd5-4bd4-46ed-9056-b77986e8b97c?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht mein MacBook Pro.<br /><br />Das MacBook funktioniert technisch einwandfrei und kann ganz normal genutzt werden. Es weist allerdings deutliche Gebrauchsspuren auf. Außerdem ist eine Beschädigung vorhanden, die auf den Bildern gut zu sehen ist. Daher wird das MacBook ausdrücklich mit den vorhandenen Gebrauchsspuren bzw. der Beschädigung verkauft.<br /><br />Bitte schaut euch die Bilder vor dem Kauf genau an. Die Beschädigung und Gebrauchsspuren sind Bestandteil des Angebots.<br /><br />Privatverkauf: Keine Garantie, Gewährleistung oder Rücknahme.<br /><br />Bei Fragen gerne schreiben.",
+      "attribute": {
+        "Versand": "ab 2,99",
+        "Typ": "Laptop",
+        "Marke": "Apple",
+        "Modell": "MacBook Pro 13\" (2020, Intel)",
+        "Zustand": "Gut",
+        "Bildschirmgröße (Zoll)": "13\"",
+        "Erscheinungsjahr": "2020",
+        "RAM (GB)": "8 GB",
+        "Speicher (GB)": "256 GB",
+        "Farbe": "Silber"
+      },
+      "verkaeufer": {
+        "id": "166596215",
+        "name": "akgnxss",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-09-18",
+        "konto_alter_tage": 4,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 65,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar",
+          "7 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Konto juenger als 30 Tage",
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3519695622",
       "watchlist_id": "design-sammeln",
       "titel": "USM Haller Korpus offen",
@@ -5504,6 +5572,74 @@
         "rot": [
           "Bewertung 0.67",
           "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3519824825",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 16 pro",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-16-pro/3519824825-173-9306",
+      "preis": 450.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 750.0,
+        "p25": 675.0,
+        "n": 81,
+        "query": "iPhone pro 16",
+        "korrektur": 0.0,
+        "streuung": 1.19,
+        "belastbar": true
+      },
+      "p_ratio": 0.6,
+      "ersparnis_eur": 300.0,
+      "ort": "Zuffenhausen",
+      "plz": "70435",
+      "eingestellt": "2026-09-22T01:46:54+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/70/70971bc4-3eb5-42ea-a9b2-f68c746b4ee5?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/89/89fa2f08-9509-443a-8c84-cfd347158e45?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0f/0ff12b9a-b966-4db1-baf6-2e9174784d9c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/70/70f5f37b-f342-4f20-9162-b3b5abd2a093?rule=$_0.JPG"
+      ],
+      "beschreibung": "Apple iPhone 16 Pro 128 GB – Titan Schwarz<br /><br />Ich verkaufe mein gebrauchtes iPhone 16 Pro in Titan Schwarz.<br /><br />Daten:<br /><br />* iPhone 16 Pro<br />* 128 GB Speicher<br />* Farbe: Titan Schwarz<br />* Batteriekapazität: 89 %<br />* Ladezyklen: 782<br />* Erstnutzung: Dezember 2024<br />* Produktionsdatum: Oktober 2024<br />* Originalverpackung vorhanden<br /><br />Das iPhone weist deutliche Gebrauchsspuren am Gehäuse auf. Bitte die Fotos genau beachten.<br /><br />Verkauf erfolgt wie auf den Bildern zu sehen.<br /><br />Privatverkauf unter Ausschluss der Sachmängelhaftung und Rücknahme.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,99",
+        "Modell": "iPhone 16 Pro",
+        "Farbe": "Schwarz",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "87468525",
+        "name": "Tom",
+        "typ": "PRIVATE",
+        "konto_seit": "2021-08-15",
+        "konto_alter_tage": 1863,
+        "bewertung": 0.5,
+        "abzeichen": {
+          "rating": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 82,
+      "signale": {
+        "gruen": [
+          "Konto seit 2021",
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.50"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -6168,72 +6304,6 @@
         "rot": [
           "Bewertung 0.62"
         ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3518921737",
-      "watchlist_id": "macbook",
-      "titel": "MacBook Air",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/macbook-air/3518921737-278-3163",
-      "preis": 500.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 750.0,
-        "p25": 480.0,
-        "n": 81,
-        "query": "MacBook Air",
-        "korrektur": 0.0,
-        "streuung": 1.88,
-        "belastbar": true
-      },
-      "p_ratio": 0.667,
-      "ersparnis_eur": 250.0,
-      "ort": "Mitte",
-      "plz": "30159",
-      "eingestellt": "2026-09-21T01:09:06+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/41/41f18f43-64d7-481f-8baf-5ba9e85b84b7?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a4/a4d9f9cd-ef70-491e-9ff6-d042d1910e9c?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe mein MacBook Air<br />Es ist kaum benutzt worden jedoch durch einen Familien Mitglied eine Aktivierungssperre bekommen hat und ich somit keinen Zugriff mehr auf das Mac habe wer sich also damit auskennt oder sonstiges kann es gerne abkaufen<br />Wer sich damit nicht auskennt kann es ebenfalls kaufen :)<br />Ich hafte für gar nichts wenn es gekauft ist werde ich das sofort zu dem jenigen zuschicken und dann bin ich raus aus dem Thema",
-      "attribute": {
-        "Versand": "ab 2,99",
-        "Typ": "Laptop",
-        "Marke": "Apple",
-        "Modell": "MacBook Air 13\" (M4)",
-        "Zustand": "Sehr Gut",
-        "Betriebssystem": "macOS",
-        "Bildschirmgröße (Zoll)": "13\"",
-        "Erscheinungsjahr": "2025",
-        "Prozessor": "Apple M4",
-        "RAM (GB)": "16 GB",
-        "Speicher (GB)": "256 GB",
-        "Farbe": "Silber"
-      },
-      "verkaeufer": {
-        "id": "136768185",
-        "name": "Leon",
-        "typ": "PRIVATE",
-        "konto_seit": "2023-12-31",
-        "konto_alter_tage": 994,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 80,
-      "signale": {
-        "gruen": [
-          "Konto seit 2023",
-          "Kaeuferschutz verfuegbar"
-        ],
-        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -7163,6 +7233,73 @@
       }
     },
     {
+      "id": "3519830036",
+      "watchlist_id": "apple-mobil",
+      "titel": "Apple iPhone 15 Pro – 256 GB – Black Titanium",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-15-pro-256-gb-black-titanium/3519830036-173-2862",
+      "preis": 400.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 600.0,
+        "p25": 550.0,
+        "n": 77,
+        "query": "Apple iPhone Pro 15 256",
+        "korrektur": 0.0,
+        "streuung": 1.18,
+        "belastbar": true
+      },
+      "p_ratio": 0.667,
+      "ersparnis_eur": 200.0,
+      "ort": "Barsinghausen",
+      "plz": "30890",
+      "eingestellt": "2026-09-22T04:24:21+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1a/1a1d666f-a2e9-4744-887a-e7971a66b784?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/43/4318f84c-eeb7-464b-bd8e-8ffd1f27f907?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht ein Apple iPhone 15 Pro mit 256 GB Speicher, 8 GB RAM und Dual-SIM. Das Gerät ist in der Farbe Black Titanium und befindet sich optisch in einem guten gebrauchten Zustand. Die Kameralinsen sowie das Display sind unbeschädigt.<br /><br />Speicher: 256 GB<br />Farbe: Black Titanium<br />Dual-SIM<br /><br />Bei Abholung bar oder Bei Versand Wero oder Überweisung<br />Abholort ist Gronau<br /><br />Privatverkauf, keine Garantie oder Rücknahme.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,99",
+        "Modell": "iPhone 15 Pro",
+        "Farbe": "Andere Farben",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "41262513",
+        "name": "Felix",
+        "typ": "PRIVATE",
+        "konto_seit": "2016-08-11",
+        "konto_alter_tage": 3693,
+        "bewertung": 0.75,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 90,
+      "signale": {
+        "gruen": [
+          "Konto seit 2016",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar"
+        ],
+        "rot": [
+          "Bewertung 0.75"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3519109908",
       "watchlist_id": "ebike-rad",
       "titel": "Cube Mountainbike MTB olivgrün",
@@ -7424,44 +7561,51 @@
       }
     },
     {
-      "id": "3518920908",
-      "watchlist_id": "optik-drohnen",
-      "titel": "DJI Mavic Pro Platinum Drohne mit Fernsteuerung",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/dji-mavic-pro-platinum-drohne-mit-fernsteuerung/3518920908-168-2156",
-      "preis": 350.0,
+      "id": "3519828550",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 14 Pro 128GB Dunkellila – Technisch einwandfrei",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-pro-128gb-dunkellila-technisch-einwandfrei/3519828550-173-9245",
+      "preis": 230.0,
       "preis_typ": "SPECIFIED_AMOUNT",
       "referenz": {
-        "median": 514.5,
-        "p25": 349.0,
-        "n": 92,
-        "query": "DJI Mavic Pro",
+        "median": 400.0,
+        "p25": 350.0,
+        "n": 19,
+        "query": "iPhone Pro Dunkellila 14 128GB",
         "korrektur": 0.0,
-        "streuung": 4.3,
-        "belastbar": false
+        "streuung": 1.29,
+        "belastbar": true
       },
-      "p_ratio": 0.68,
-      "ersparnis_eur": 164.5,
-      "ort": "Meiderich/Beeck",
-      "plz": "47138",
-      "eingestellt": "2026-09-21T00:59:42+02:00",
+      "p_ratio": 0.575,
+      "ersparnis_eur": 170.0,
+      "ort": "Heilbronn",
+      "plz": "74072",
+      "eingestellt": "2026-09-22T03:29:48+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0f/0f7b071c-3ad3-44b2-8429-051b85671e48?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/057a975b-a56e-445f-960a-91a2b1504a8c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6b/6b9e04fd-2a05-4a00-a0ad-fd35da1ce1a8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c8/c829268c-1326-47e8-a24c-f8724885cf95?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ca/ca878fa6-99bb-4eb6-b9b2-07ec4d7a2ee1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d6/d6134dcf-226c-478f-acf8-6b87ed32f423?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/44/44fe54da-4c45-4748-bbb7-7bb8bc49d60d?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ba/ba2df560-7637-4b24-9799-c8158439ddc8?rule=$_0.JPG"
       ],
-      "beschreibung": "Ich verkaufe meine DJI Mavic Pro Platinum Drohne inklusive der passenden Fernsteuerung. Das Set wurde bisher weniger als 15-mal genutzt und befindet sich in einem sehr guten Zustand.<br /><br />- Modell: DJI Mavic Pro Platinum<br />- Inklusive Fernbedienung mit Display<br />- Faltbares Design für einfachen Transport<br />- Graue Farbgebung<br />- Kompakte Bauweise<br /><br />Die Drohne ist ideal für Luftaufnahmen und lässt sich dank der klappbaren Arme sehr gut verstauen. Sie weist kaum Gebrauchsspuren auf und wurde stets pfleglich behandelt.<br /><br />Falls du Fragen zu dem Gerät hast, schreib mir gerne eine Nachricht.",
+      "beschreibung": "ich verkaufe hier mein treues iPhone 14 Pro mit 128 GB Speicher in der Farbe Dunkellila. Das Gerät ist jetzt knapp vier Jahre alt und hat mich nie im Stich gelassen.<br /><br /><br />Technischer Zustand:<br />Funktion: 100 % funktionstüchtig. Alles läuft absolut einwandfrei (Kameras, Dynamic Island, FaceID, Lautsprecher, Anschlüsse etc.).<br /><br />Akkukapazität: Liegt aktuell bei 73 %. Der Akku hält je nach Nutzung noch gut durch, sollte für die volle Höchstleistung in Zukunft aber eventuell mal getauscht werden.<br /><br />Optischer Zustand (wichtig – bitte Fotos genau anschauen):<br />Das iPhone wurde intensiv genutzt und weist rundherum deutliche optische Spuren auf:<br /><br />Das Display und die Rückseite haben sichtbare Kratzer (siehe Bilder).<br /><br />Der Rahmen hat rundherum Abnutzungen, kleine Macken und Farbabplatzungen (Dies&#x2F;Das&#x2F;Kratzer).<br /><br />Auf der Rückseite ist ein deutlicher Abdruck von einem MagSafe-Zubehör&#x2F;Hülle zu sehen.<br /><br />Wichtig: Es gibt keine tiefen Brüche oder Risse im Glas, es handelt sich rein um kosmetische Gebrauchsspuren, die die Nutzung nicht einschränken. Mit einer Hülle und einer Panzerfolie sieht man die meisten Spuren im Alltag gar nicht mehr.<br /><br />Lieferumfang:<br />iPhone 14 Pro 128GB (ohne weiteres Zubehör)<br /><br />Perfekt für alle, die ein technisch topaktuelles Pro-Modell mit einer genialen Kamera suchen und denen kleinere optische Schönheitsfehler egal sind!",
       "attribute": {
-        "Versand": "ab 0,99"
+        "Art": "Apple",
+        "Versand": "ab 6,19",
+        "Modell": "iPhone 14 Pro",
+        "Farbe": "Lila",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "In Ordnung"
       },
       "verkaeufer": {
-        "id": "153268193",
-        "name": "Mahmood",
+        "id": "73842172",
+        "name": "Burak",
         "typ": "PRIVATE",
-        "konto_seit": "2025-07-24",
-        "konto_alter_tage": 423,
-        "bewertung": null,
-        "abzeichen": {},
+        "konto_seit": "2020-04-14",
+        "konto_alter_tage": 2352,
+        "bewertung": 0.2857142857142857,
+        "abzeichen": {
+          "rating": 0
+        },
         "anzahl_anzeigen": 0
       },
       "uebergabe": {
@@ -7469,14 +7613,17 @@
         "versand": true,
         "kaeuferschutz": true
       },
-      "score": 95,
+      "score": 82,
       "signale": {
         "gruen": [
+          "Konto seit 2020",
           "Kaeuferschutz verfuegbar",
-          "10 Bilder",
+          "7 Bilder",
           "Maengel offengelegt"
         ],
-        "rot": [],
+        "rot": [
+          "Bewertung 0.29"
+        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -7620,68 +7767,6 @@
       }
     },
     {
-      "id": "3518924500",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 15 Plus 256Gb",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-plus-256gb/3518924500-173-2451",
-      "preis": 350.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 500.0,
-        "p25": 449.0,
-        "n": 19,
-        "query": "iPhone Plus 15 256Gb",
-        "korrektur": 0.0,
-        "streuung": 1.22,
-        "belastbar": true
-      },
-      "p_ratio": 0.7,
-      "ersparnis_eur": 150.0,
-      "ort": "Braunschweig",
-      "plz": "38114",
-      "eingestellt": "2026-09-21T01:53:26+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aa66c333-23bd-4902-974d-c3bc83ced862?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/03/03482e62-478f-4bef-9e47-cba714243768?rule=$_0.JPG"
-      ],
-      "beschreibung": "Zum Verkauf steht dieses iPhone 15 Plus mit 256Gb in der Farbe Rosé. Es hat noch eine Akkukapazität von 87%. Es befindet sich in einem einwandfreien Zustand.<br /><br />Versand ist möglich, Versandkosten kommen jedoch extra hinzu und übernimmt der Käufer.<br /><br />Bar bei Abholung möglich oder Überweisung bei Versand möglich.<br /><br />Preis ist Festpreis und nicht verhandelbar, Preisverhandlungen werden direkt gelöscht!<br /><br />Privatverkauf, daher keine Garantie oder Rücknahme.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 6,19",
-        "Modell": "iPhone 15 Plus",
-        "Farbe": "Pink",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "166454030",
-        "name": "Privat",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-09-13",
-        "konto_alter_tage": 7,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 70,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar"
-        ],
-        "rot": [
-          "Konto juenger als 30 Tage"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3519709080",
       "watchlist_id": "apple-mobil",
       "titel": "Apple iPhone 14",
@@ -7816,6 +7901,68 @@
         "rot": [
           "Bewertung 0.44",
           "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3519827524",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 15 Plus 256Gb",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-plus-256gb/3519827524-173-2451",
+      "preis": 350.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 500.0,
+        "p25": 449.0,
+        "n": 19,
+        "query": "iPhone Plus 15 256Gb",
+        "korrektur": 0.0,
+        "streuung": 1.22,
+        "belastbar": true
+      },
+      "p_ratio": 0.7,
+      "ersparnis_eur": 150.0,
+      "ort": "Braunschweig",
+      "plz": "38114",
+      "eingestellt": "2026-09-22T02:54:00+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ee/eeb81ff6-6238-42b5-ab20-5fe2acac68b9?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/46/4664f5f7-b5de-423d-99a0-845551819f37?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht dieses iPhone 15 Plus mit 256Gb in der Farbe Rosé. Es hat noch eine Akkukapazität von 87%. Es befindet sich in einem einwandfreien Zustand.<br /><br />Versand ist möglich, Versandkosten kommen jedoch extra hinzu und übernimmt der Käufer.<br /><br />Bar bei Abholung möglich oder Überweisung bei Versand möglich.<br /><br />Preis ist Festpreis und nicht verhandelbar, Preisverhandlungen werden direkt gelöscht!<br /><br />Privatverkauf, daher keine Garantie oder Rücknahme.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 6,19",
+        "Modell": "iPhone 15 Plus",
+        "Farbe": "Pink",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "166454030",
+        "name": "Privat",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-09-13",
+        "konto_alter_tage": 8,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 70,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar"
+        ],
+        "rot": [
+          "Konto juenger als 30 Tage"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -8081,69 +8228,67 @@
       }
     },
     {
-      "id": "3518921342",
+      "id": "3519821530",
       "watchlist_id": "apple-mobil",
-      "titel": "iPhone 14 Pro 128 Gb",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-pro-128-gb/3518921342-173-6414",
-      "preis": 275.0,
-      "preis_typ": "PLEASE_CONTACT",
+      "titel": "iphone 14 128 gb  schwarz Top zustand",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-128-gb-schwarz-top-zustand/3519821530-173-9286",
+      "preis": 220.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
       "referenz": {
-        "median": 400.0,
-        "p25": 360.0,
-        "n": 70,
-        "query": "iPhone Pro Gb 14 128",
+        "median": 350.0,
+        "p25": 299.0,
+        "n": 75,
+        "query": "iphone gb schwarz 14 128",
         "korrektur": 0.0,
-        "streuung": 1.25,
+        "streuung": 1.33,
         "belastbar": true
       },
-      "p_ratio": 0.688,
-      "ersparnis_eur": 125.0,
-      "ort": "Hadern",
-      "plz": "81375",
-      "eingestellt": "2026-09-21T01:04:36+02:00",
+      "p_ratio": 0.629,
+      "ersparnis_eur": 130.0,
+      "ort": "Stuttgart-Ost",
+      "plz": "70184",
+      "eingestellt": "2026-09-22T01:01:38+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/20/20a9b2bd-26b9-41fd-9efe-c31a5855abe4?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/61/61be3ad4-bf6d-421f-b939-92484898cbb3?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6b/6b24377a-00dc-4812-a0ca-b05f260bbd17?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3e/3ecf9366-6116-4419-a2ee-55b382bd4bcd?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4d/4df957b4-f807-4ea6-b954-2a8c139ded53?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/02/0296fdac-cad4-4450-b142-d2a0eac36134?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/07/072a5099-7558-4416-b8d6-2f794883d045?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/31/3101ab6d-654d-4499-8f41-a698ec5f698c?rule=$_0.JPG"
       ],
-      "beschreibung": "Hallo<br /><br />Biete hier ein noch gut erhaltenes iPhone 14 Pro 128 gb<br />Das Gerät hat ein lcd Schaden (Display Schaden)<br />Aber kein Glas Bruch es hat sich auch nicht weiter gebildet Touch funktioniert zu 100% auf dem restlichen Display und stört auch nicht oder beeinträchtigt nicht die Funktion des Gerätes<br />Kann gerne vor Ort getestet werden<br /><br /><br />Es is von jeglicher iCloud und Sperre entfernt von mir<br />Somit<br /><br />iCloud frei<br />Simlock frei<br />Face ID funktioniert<br />Alles noch Orginal<br /><br /><br />Verkaufe nichts destro trotzt als defekt<br />Verkaufe als privat Person daher keine Garantie oder Gewährleistungsansprüche",
+      "beschreibung": "Iphone 14 128 gb schwarz Top zustand keine kratzer akku kapazitet 85 Prozent alles funktioniert einwandfrei mit lade kabel",
       "attribute": {
         "Art": "Apple",
-        "Versand": "Nur Abholung",
-        "Modell": "iPhone 14 Pro",
+        "Versand": "ab 0,99",
         "Farbe": "Schwarz",
         "Gerät & Zubehör": "Gerät & Zubehör",
-        "Zustand": "Defekt"
+        "Zustand": "Sehr Gut"
       },
       "verkaeufer": {
-        "id": "77717687",
-        "name": "S.a",
+        "id": "155424827",
+        "name": "tayac",
         "typ": "PRIVATE",
-        "konto_seit": "2020-08-24",
-        "konto_alter_tage": 2218,
-        "bewertung": 0.54,
+        "konto_seit": "2025-10-10",
+        "konto_alter_tage": 346,
+        "bewertung": 0.40625,
         "abzeichen": {
           "rating": 1,
-          "friendliness": 1,
-          "reliability": 1
+          "friendliness": 0
         },
         "anzahl_anzeigen": 0
       },
       "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
       },
-      "score": 69,
+      "score": 70,
       "signale": {
         "gruen": [
-          "Konto seit 2020",
-          "Abholung moeglich",
-          "7 Bilder"
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder",
+          "Maengel offengelegt"
         ],
         "rot": [
-          "Bewertung 0.54"
+          "Bewertung 0.41"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -8284,68 +8429,58 @@
       }
     },
     {
-      "id": "3518924973",
-      "watchlist_id": "apple-mobil",
-      "titel": "Apple iPhone 12 Pro - Graphite",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-12-pro-graphite/3518924973-173-23496",
-      "preis": 150.0,
+      "id": "3519827830",
+      "watchlist_id": "notverkaeufe",
+      "titel": "Pokemon Grading Karten Sammlungsauflösung",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/pokemon-grading-karten-sammlungsaufloesung/3519827830-234-6825",
+      "preis": 999.0,
       "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 230.0,
-        "p25": 200.0,
-        "n": 73,
-        "query": "Apple iPhone Pro 12",
-        "korrektur": 0.0,
-        "streuung": 1.5,
-        "belastbar": true
-      },
-      "p_ratio": 0.652,
-      "ersparnis_eur": 80.0,
-      "ort": "Seevorstadt-Ost/Großer Garten",
-      "plz": "01307",
-      "eingestellt": "2026-09-21T02:03:38+02:00",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Mitte",
+      "plz": "90419",
+      "eingestellt": "2026-09-22T03:03:35+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/82/82b09f11-b210-4e70-b819-44c76259a3bc?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aada8aaa-96f6-4235-825b-f9205906f180?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b6/b6ca79e7-ad12-4a4d-9681-2cb1ec771a23?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/99/9997ce58-ffbf-4d4e-9f85-a709c5066fab?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/40/40ee4c86-1b7f-4431-9e9c-585bed332975?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/94/945ea3ee-3195-436b-9379-d763a1dd2633?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/81/81801457-2782-46ea-b8db-cd1509da0b61?rule=$_0.JPG"
       ],
-      "beschreibung": "Ich verkaufe mein Apple iPhone 12 Pro in der Farbe Graphite. Das Smartphone überzeugt durch sein elegantes Design und die hochwertige Verarbeitung.<br /><br />- Modell: iPhone 12 Pro<br />- Farbe: Graphite<br />- Dreifach-Kamerasystem auf der Rückseite<br />- Mattes Glas-Finish<br />- Hochwertiger Edelstahlrahmen<br /><br />Das Gerät befindet sich in einem gepflegten Zustand und wurde stets sorgsam behandelt. Es weist die typischen, sehr dezenten Gebrauchsspuren auf, die bei normaler Nutzung entstehen. Bei Interesse oder Fragen schreib mir gerne eine Nachricht.",
+      "beschreibung": "Leute ich hab keine Lust mehr. Ich spiel das Pokémon Game nicht mehr mit.<br /><br />Nachdem ich jetzt gegradete Karten über Cardmarket zurück nehmen musste weil Menschen nicht zufrieden waren mit dem Zustand.<br /><br />Und ich mein Geld nicht bekomme weil ich angeblich nur 1999 Energie Karten versendet habe anstatt wie beschrieben ca. 2000 muss ich gestehen das ich keine Lust mehr habe.<br /><br />Alle müssen weg so schnell wie möglich. Will damit nichts mehr zu tun haben.<br /><br />Macht mir einigermaßen faire Angebote dann wird man sich schnell einig<br /><br />Preise und Zustand den Bildern entnehmen<br /><br />Bezahlung über PayPal, Banküberweisung und Barzahlung möglich<br /><br />Abholung in Nürnberg Johannis",
       "attribute": {
-        "Art": "Apple",
+        "Art": "Sammelkartenspiele",
         "Versand": "ab 0,99",
-        "Modell": "iPhone 12 Pro Max",
-        "Farbe": "Andere Farben",
-        "Gerät & Zubehör": "Gerät & Zubehör",
-        "Zustand": "Gut"
+        "Zustand": "Sehr Gut"
       },
       "verkaeufer": {
-        "id": "145977798",
-        "name": "Private Anbieter",
+        "id": "85866601",
+        "name": "Stefan",
         "typ": "PRIVATE",
-        "konto_seit": "2024-11-09",
-        "konto_alter_tage": 680,
-        "bewertung": 0.3,
+        "konto_seit": "2021-06-11",
+        "konto_alter_tage": 1928,
+        "bewertung": 1.0,
         "abzeichen": {
-          "rating": 0
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 2
         },
         "anzahl_anzeigen": 0
       },
       "uebergabe": {
-        "abholung": false,
+        "abholung": true,
         "versand": true,
         "kaeuferschutz": true
       },
-      "score": 70,
+      "score": 100,
       "signale": {
         "gruen": [
+          "Konto seit 2021",
+          "Bewertung 1.00, zuverlaessig",
+          "Abholung moeglich",
           "Kaeuferschutz verfuegbar",
-          "5 Bilder",
-          "Maengel offengelegt"
+          "Preisbegruendung genannt"
         ],
-        "rot": [
-          "Bewertung 0.30"
-        ],
+        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
