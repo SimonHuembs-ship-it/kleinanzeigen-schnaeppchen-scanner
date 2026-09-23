@@ -192,3 +192,238 @@
 | `3520689800` | Voigtländer Color-Skopar 28mm F2.8 VM Leica M OVP Rest-Gar | 450 € | Kein Kleinanzeigen-Median vorhanden. Das Voigtlaender Color-Skopar 28mm liegt gebraucht bei etwa 480 bis 550 Euro, 450 Euro sind keine 20 Prozent darunter. |
 | `3520693309` | Tannoy Reveal 5A Active Monitor Speakers | 400 € | Kein Median vorhanden, und Titel (Reveal 5A) und Beschreibung (Reveal Active, dunkelblau) bezeichnen zwei verschiedene Produkte. Kein belastbarer Referenzwert. |
 | `3520688613` | Puch Maxi-S Mofa – Originalzustand / Scheunenfund / Restau | 1200 € | Keine Papiere vorhanden, nur Typenschild. Ohne Zulassungsbescheinigung Teil II ist der Preis richtig, nicht zu niedrig. |
+
+# Laufprotokoll 2026-09-23, Abendlauf
+
+**Lauf:** 23. September 2026, 19:02 bis 19:25 Uhr (MESZ)
+**candidates.json generiert:** 2026-09-23T19:14:34+02:00 (wenige Minuten alt)
+**Zeitraum der Sammlung:** 2026-09-23T12:46:27+02:00 bis 2026-09-23T17:46:27+02:00 (Ansammlung der letzten 24 Stunden)
+**Gesichtete Anzeigen:** 179.487
+**Kandidaten in candidates.json:** 156
+**Bereits in deal_log.csv (vor Pruefung verworfen):** 0
+**Neu gegenueber dem Morgenlauf:** 80 (40 aus dem 09:52-UTC-Scan, 40 aus dem 17:14-UTC-Scan)
+**Kandidaten mit `unkenntnis_bonus`:** 1
+**Gemeldete Funde:** 3
+
+## Datenbasis: zum dritten Mal abgewartet statt abgebrochen
+
+Beim Start um 19:02 Uhr war `candidates.json` von 11:52 Uhr, also 7,2 Stunden alt und damit klar
+ueber der Abbruchgrenze aus prompt.md Schritt 1 (vier Stunden; Kurzfassung sechs). Scan #267 lief
+zu diesem Zeitpunkt noch: gestartet 15:46 UTC, committet 17:14 UTC, Laufzeit 88 Minuten. Wie am
+17.09. und am 22.09. wurde er abgewartet, danach war die Datenbasis frisch und die Pruefung konnte
+regulaer stattfinden. Die Wartezeit wurde genutzt, um die 40 Kandidaten aus dem 09:52-UTC-Scan
+vorab zu pruefen; diese Urteile stehen unten und blieben nach dem Pull gueltig.
+
+Die Ursache ist unveraendert die Cron-Auslieferung, nicht der Scanner-Code. Alle 267 Scan-Laeufe
+stehen auf `success`, aber GitHub startet die Laeufe stark verzoegert: Der 12-UTC-Slot ist heute
+erst um 15:46 UTC gestartet, der 16-UTC-Slot war um 17:15 UTC noch nicht angelegt. Bei 88 Minuten
+Laufzeit ist um 17:00 UTC, wenn die Abendroutine urteilt, der letzte *fertige* Scan deshalb
+regelmaessig sieben Stunden alt, waehrend der naechste noch laeuft.
+
+**Empfehlung an den Betreiber, unveraendert seit dem 17.09.:** Den Cron der Scan-Action von
+`0 */4 * * *` auf etwa `0 1,5,9,13,16 * * *` umstellen oder den 16-UTC-Lauf auf 15:00 UTC
+vorziehen. Dann liegt vor der Abendroutine ein fertiger Scan vor, statt dass sie in die Luecke
+zwischen zwei Laeufen faellt. Heute war es der dritte Abendlauf in Folge, der nur durch Warten
+zustande kam.
+
+## Funde
+
+| # | Anzeige | Preis | Median (KA) | Bestaetigter Marktwert | Abstand | Kategorie |
+|---|---|---|---|---|---|---|
+| 1 | [Thonet - Kaffeehausstuhl](https://www.kleinanzeigen.de/s-anzeige/thonet-kaffeehausstuhl/3521267527-88-19207) | 165 € / Stueck | 349 € (n=49, Streuung 2,25) | 249 € (Thonet 214 F mit Armlehnen, eBay.de) und 399 € (Thonet 214 M, eBay.de); neu 894 bis 1.011 € (thonet.de, prooffice.de) | 34 % unter dem guenstigsten Gebrauchtvergleich, 59 % unter dem teureren | design-sammeln |
+| 2 | [Besprechungstisch Original Vitra Eames Segmented Konferenztisch](https://www.kleinanzeigen.de/s-anzeige/besprechungstisch-original-vitra-eames-segmented-konferenztisch/3520802382-88-7690) | 1.118 € | 1.800 € (n=19, Streuung 2,8 - **nicht belastbar, nicht verwendet**) | 2.100 € inkl. MwSt. fuer einen gebrauchten Eames Segmented Table Bootsform 200 x 115 cm im Vitra Circle Store Campus, dem herstellereigenen Gebrauchtkanal; die runde Variante ø110 cm dort 1.180 €; neu ab rund 3.150 € (einrichten-design, design-bestseller) | rund 47 % unter dem herstellereigenen Gebrauchtpreis | design-sammeln |
+| 3 | [Korg Minilogue XD](https://www.kleinanzeigen.de/s-anzeige/korg-minilogue-xd/3520800728-74-4606) | 305 € | 450 € (n=19, Streuung 1,12) | 387 € und 439 € auf eBay.de, 450 € fuer ein Exemplar in sehr gutem Zustand; neu ab 551,93 € (Geizhals) | 21 % unter dem guenstigsten, 32 % unter dem teuersten Gebrauchtvergleich | musikinstrumente |
+
+Der Thonet-Kandidat traegt `unkenntnis_bonus` und steht deshalb an erster Stelle. Ein Foto, keine
+Modellnummer, "Patina wurde belassen", "Preis pro Stueck" - genau das Profil, das die Anweisung
+beschreibt. Die Anzeigenqualitaet wurde nicht gegen ihn gewertet.
+
+Pflicht-Warnflags nach prompt.md Schritt 2e: Keine der gelisteten Kategorien (RTX 4090, Switch 2,
+AirPods, Apple-Geraet, Tesla, Porsche 991/992, Klassiker ohne Brief, NAS mit Platten, Threadripper
+Pro) trifft auf einen der drei Funde zu. Die Einzelrisiken stehen in der Mail.
+
+## Warum die grossen Abstaende ausgeschieden sind
+
+- **Mercedes-Benz R129 300 SL 24V, 7.500 EUR (`3521099089`):** groesster absoluter Abstand des
+  Laufs (6.607 EUR unter Median). 151.000 **Meilen**, also rund 243.000 km, gewerblicher
+  Verkaeufer, US-Import, und der Text bietet das Auto ausdruecklich als "interessante Basis fuer
+  einen Haendler bzw. Gewerbetreibenden, der das Fahrzeug weiter aufbereiten und fertigstellen
+  moechte" an. Der Median von 14.107 EUR vergleicht fertige deutsche R129 mit Kilometerstaenden.
+  Ein US-Import ohne Zulassungsbescheinigung Teil II ist nach prompt.md Schritt 2e nicht billig,
+  sondern richtig bepreist.
+- **Rolex Cellini Ref. 3810, 2.400 EUR (`3521182087`):** Referenz nicht belastbar (Streuung 2,94).
+  Eigene Pruefung auf Chrono24: eine 3810 Damenuhr in Weissgold liegt bei 1.861 EUR (Import aus
+  Japan) bis 3.111 EUR (Exemplar von 1972, unpoliert, mit Box und Papieren). Das Angebot hat weder
+  Box noch Papiere und liegt damit im Markt, nicht darunter.
+- **DJI Mavic 4 Pro Creators Combo, 1.000 EUR (`3520794974`):** Die Lieferumfangsliste ist Wort
+  fuer Wort die Herstellerliste der 512GB Creator Combo (2.973,95 EUR neu bei airclip.de), nur die
+  Fernsteuerung ist auf "DJI RC 2" geaendert - zur Creator Combo gehoert die RC Pro 2. Dazu 34 %
+  des Neupreises, eine Not-Legende ("aus finanziellen Gruenden") und ein Wegwerf-Kontoname.
+  Kein Fund, sondern eine Betrugsanzeige.
+- **Rolex Datejust 41 Grau Full Set, 8.500 EUR (`3520708873`):** nur rund 6 % unter dem
+  guenstigsten Chrono24-Angebot derselben Referenz (9.050 EUR privat, 9.450 EUR Trusted Seller).
+  Dazu das Betrugsmuster: Versand mit Kaeuferschutz statt Abholung, generischer Aufzaehlungstext
+  ohne Referenznummer, Seriennummer oder Papierfotos.
+- **Leica M8, 1.200 EUR (`3521065944`):** Die Anzeige verlangt "PayPal for friends & family", also
+  Zahlung ohne Kaeuferschutz - nach prompt.md Schritt 2c ein Ausschlussgrund. Unabhaengig davon
+  liessen sich die Preisangaben nicht in Einklang bringen: usedcameratracker.com nennt fuer die M8
+  2026 gleichzeitig eine Spanne von 2.185 bis 2.629 US-Dollar und ein guenstigstes aktives Angebot
+  von 687 US-Dollar bei MPB.
+- **RTX 3090 24 GB, 720 EUR (`3521211371`):** Der Gebrauchtmarkt fuer die 3090 liegt laut
+  borncity.com und eBay-Daten bei 800 bis 950 EUR; 720 EUR sind rund 10 % darunter und damit unter
+  der Schwelle. Dazu eine Manli-Karte mit sichtbaren Waermeleitpastenresten am Chip und eine
+  Verkaeuferbewertung von 0,58. Der Median von 1.299 EUR ist zu hoch angesetzt.
+- **Technics SL-1210 MK2, 500 EUR (`3521090414`):** hifishark.com ist die vorgesehene Referenz,
+  und auf gebrauchte-veranstaltungstechnik.de steht ein SL-1210 MK2 fuer exakt 500 EUR. Der Preis
+  ist Marktpreis, kein Abstand.
+- **DJI Mini 4 Pro Fly More Combo, 450 EUR (`3520794831`):** Verkaeuferprofil und Anzeige sind
+  einwandfrei (Konto seit 2013, Bewertung 0,88, Rechnung vom 20.05.2025, Ladezyklen der drei Akkus
+  einzeln genannt, Vorfuehrung bei Abholung angeboten). Verworfen wegen der Ausstattung: Das
+  Angebot hat die RC-N2 ohne Bildschirm, die beiden Gebrauchtvergleiche von 590 EUR (eBay.de,
+  Top-Zustand) und 689 EUR (gewerblich) enthalten die teurere RC 2. Rechnet man die Fernsteuerung
+  heraus, liegt der Abstand nur noch bei rund 12 bis 24 % und damit nicht sicher ueber der
+  Zwanzig-Prozent-Schwelle. Der knappste Fall des Laufs.
+- **Cube Supreme Hybrid Pro 625 Wave, 1.000 EUR (`3520824380`):** Rechnung 03/2024, 1.766 km,
+  Lackkratzer offengelegt, Verkaeufer seit 2011 mit allen Abzeichen. Verworfen, weil sich kein
+  Gebrauchtpreisniveau extern bestaetigen liess: auffindbar waren nur Neupreise (2.199 EUR im
+  Abverkauf, 3.149 bis 3.199 EUR regulaer). Upway, Rebike, bikeflip und jobrad-loop sind aus dieser
+  Umgebung nicht abrufbar. Ein Urteil allein aus Neupreis und Kleinanzeigen-Median waere die
+  Schaetzung, die prompt.md verbietet.
+
+## Verworfene Kandidaten mit Grund
+
+### Aus dem 17:14-UTC-Scan (40 neue Kandidaten)
+
+- `3521106955` BMW e36 320i, 4.350 €: TUEV abgelaufen, Delle und Kratzer, Blech ueber der
+  Wagenheberaufnahme faellig. Offengelegte Maengel erklaeren den Preis.
+- `3521136811` Gibson Les Paul Studio, 1.000 €: Referenz nicht belastbar (2,52), der Median aus
+  "Gibson Les Paul" mischt Studio, Standard und Custom.
+- `3521128348` Gibson Les Paul Special Plus 2001, 1.100 €: Festpreis im Marktband fuer eine
+  25 Jahre alte Special Plus mit sichtbaren Gebrauchsspuren, kein bestaetigter Abstand von 20 %.
+- `3282152724` USM Haller Sideboard graphitschwarz, 995 €: gewerblicher Haendler (PRO-Konto), und
+  der Median aus "USM Haller Sideboard" mischt Korpusse verschiedener Groesse und Modulzahl.
+- `3521046006` USM Haller Sideboard weiss, 1.000 €: dieselbe Referenzschwaeche, keine Angabe zu
+  Groesse oder Modulzahl.
+- `3521161163` USM Haller Highboard schwarz, 950 €: 110 x 75 x 35 cm mit drei Ebenen liegt im
+  Gebrauchtband, der Median aus Highboards aller Groessen ist nicht vergleichbar.
+- `3520973219` MacBook Pro 14 M5 1TB, 1.350 €: drei Monate altes Geraet der aktuellen Generation zu
+  rund 60 % des Listenpreises, Abholung ausgeschlossen, Verkaeuferbewertung 0,63. Genau das
+  Profil, vor dem prompt.md bei Apple warnt.
+- `3521114109` MacBook Air 13 M4 16/256, 600 €: Bewertung 0,63, nur Versand, kein Ladegeraet; die
+  ausdrueckliche Zusicherung "keine iCloud-Sperre" ersetzt keine Pruefung.
+- `3521048248` Original Charles Eames Konferenztisch Vitra, 500 €: beschrieben als runder Tisch auf
+  vierbeinigem Metallgestell - das ist kein Eames Segmented Table und keine belegte Vitra-Variante.
+  Produktidentitaet nicht feststellbar.
+- `3521259195` TAG Heuer Formula 1 CAU111A Full Set, 850 €: die CAU111A liegt gebraucht im selben
+  Bereich; der Median von 1.300 € mischt Automatikmodelle ein.
+- `3521048569` Omega Seamaster Automatic vergoldet, 700 €: Baujahr laut Verkaeufer unsicher,
+  Armband moeglicherweise nicht original, Bewertung 0,33; der Median aus "Omega Seamaster
+  Automatic" mischt moderne Seamaster ein.
+- `3521197050` PlayStation 5 Pro, 735 €: Attribute nennen 1 TB und zwei Controller, der Text 2 TB
+  und ungeoeffnete OVP. Widerspruch, Konto ohne Bewertung, nur Versand.
+- `3521149872` DJI Air 3, 380 €: Riss im Glas des unteren Sensors nach Bruchlandung offengelegt.
+- `3521047777` DJI Mini 4 Pro Fly More Combo Plus mit RC 2, 410 €: Konto sechs Wochen alt,
+  Geschenk-Legende, 37 % des Neupreises der Plus-Combo - Betrugsprofil, nicht Schnaeppchen.
+- `3521191350` DJI Mavic Pro Fly More Combo, 310 €: Drohne von 2016, Referenz nicht belastbar (4,63).
+- `3521011934` iPhone 14 Pro Max, 200 €: Sturzschaden, Nicht-Original-Display, Akku schwach, Geraet
+  laut Verkaeufer langsam.
+- `3521186913` iPhone 15 rosa, 200 €: Display kaputt.
+- `3521174939` iPhone 14 128 GB, 160 €: Riss auf der Rueckseite.
+- `3521198270` MacBook Pro 16" 2019 i9, 400 €: Intel-Generation am Ende des macOS-Supports -
+  ausgelaufener Support erklaert den Preis nach prompt.md Schritt 2a.
+- `3521210860` MacBook Pro M1 8 GB, 300 €: Display beschaedigt, als Bastlergeraet angeboten.
+- `3520988461` Nintendo 3DS XL SNES Edition, 300 €: pricecharting ist laut Anweisung als Obergrenze
+  zu lesen; 300 € fuer ein Geraet mit normalen Gebrauchsspuren ohne OVP sind kein Abstand.
+- `3521252895` Eames Fiberglass Armchair, 390 €: Verfaerbungen offengelegt, Preis im Gebrauchtband.
+- `3521084031` Vitra Eames Chair, 300 €: Referenz nicht belastbar (5,37), Modellvariante unklar.
+- `3521247297` Vitra Physix Buerostuhl, 320 €: Macke im Mesh und Kratzer offengelegt, Preis im
+  Gebrauchtband.
+- `3521226715` Freischwinger "Thonet Art", 211 €: "Thonet Art" heisst im Stil von Thonet, nicht von
+  Thonet - die Referenzgruppe passt nicht.
+- `3468333930` George Nelson Couchtisch, 620 €: Referenz nicht belastbar (5,29), weder Hersteller
+  noch Modell belegt.
+- `3521193119` Meissen Mokkaservice, 519 €: der Median mischt Services unterschiedlicher Teilezahl
+  und Dekore; ohne Dekornummer und Stueckzahl kein vergleichbarer Marktwert.
+- `3520997334` E-Bike Cube Cross Pro, 550 €: Referenz nicht belastbar (2,6), kein Modelljahr.
+- `3521239404` Trek Damen-Rennrad, 419 €: kein Modell, Referenz nicht belastbar (2,73), Konto seit
+  Oktober 2025 ohne Bewertung.
+- `3521032235` Cube Elly Cruise, 480 €: der Median von 825 € stammt aus einer Abfrage, die Pedelecs
+  einschliesst; die Elly Cruise ist ein Cityrad ohne Motor.
+- `3521160683` Cube City-Rad, 450 €: Baujahr 2019, Median mischt juengere Raeder.
+- `3520994284` Cube Aim Race 2023, 430 €: Referenz nicht belastbar (3,01), Neupreis der Aim Race
+  liegt bei rund 700 €.
+- `3521259713` Specialized Rennrad Gr. 58, 399 €: kein Modell und kein Baujahr genannt.
+- `3521073536` Simson Sperber Motor, 520 €: Verkaeufer kann zum Zustand des Motors nichts sagen,
+  Referenz nicht belastbar (3,88).
+
+### Aus dem 09:52-UTC-Scan (40 Kandidaten, waehrend der Wartezeit geprueft)
+
+- `3520845480` Drehmaschine Weiler Praktikant 160, 6.800 €: Referenz nicht belastbar (2,66),
+  extern nur "Preis auf Anfrage" oder ein teilueberholtes Haendlerexemplar zu 24.500 EUR.
+- `3520805004` E.Bike Riese & Mueller, 1.580 €: kein Modellname, 8.000 km; der Median mischt die
+  gesamte Modellpalette.
+- `3500634149` Riese & Mueller Roadster GT urban, 1.450 €: Modell und Ausstattung praezise genannt,
+  993 km - aber zum ausgelaufenen Roadster GT urban waren keine konkreten Gebrauchtpreise zu
+  bekommen.
+- `3520801031` Trekking e-Bike Giant, 500 €: kein Modell, Referenz nicht belastbar (4,29).
+- `3520721896` Trek Fuel EX Fully, 460 €: Baujahr unbekannt, Median mischt E-Fullys ein.
+- `3520775504` Canyon Ultimate SLX, 1.500 €: Rahmen ohne Sattelstuetze, Referenz nicht belastbar.
+- `3520717032` Canyon Ultimate CF SL 7 XXS, 1.400 €: Abstand zum bestaetigbaren Niveau unter 20 %.
+- `3520749428` Cube Reaction PRO 29, 585 €: Referenz nicht belastbar (2,92), Baujahr fehlt.
+- `3520722377` Simson Schwalbe KR 51/1, 1.590 €: keine Fahrzeugpapiere vorhanden.
+- `3520735513` LIQ E-MTB mit Bosch CX, 1.100 €: No-Name-Marke gegen einen Median aus Markenraedern.
+- `3520826746` Trek Procaliber 9.5, 780 €: nur Neupreise bestaetigbar, Bewertung 0,74.
+- `3520722577` Cube Rennrad, 700 €: kein Modell, Referenz nicht belastbar (4,71).
+- `3520795447` Cube Reaction HPA 29, 500 €: Anzeige nennt ein "E-Mountainbike", die Reaction HPA
+  ist kein Pedelec; Bewertung 0,42.
+- `3520837193` Cube Mountainbike, 300 € und `3520788817` CUBE Fahrrad 2023, 300 €: kein Modell,
+  Referenz nicht belastbar.
+- `3520808231` USM Haller Regal aus 3 PC-Trolleys, 599 €: der Median bezieht sich auf Regalkorpusse,
+  nicht auf Trolleys; Gewerbetext auf Privatprofil.
+- `3520728659` USM Haller Rollcontainer, 499 €: Preis gilt pro Container, der Median aus
+  Einzelanzeigen laesst sich nicht bestaetigen.
+- `3520805598` Midcentury Sofa Knoll/France & Son, 350 €: Hersteller laut Verkaeufer selbst nicht
+  zuzuordnen; Referenz nicht belastbar (7,12).
+- `3520784313` Knoll Antimott Teak Schlafsofa, 400 €: Flecken im Bezug offengelegt.
+- `3520794484` Vitra ID Trim Buerostuhl, 230 €: Konto seit Mai 2026, zwei Zeilen Beschreibung.
+- `3520810525` Apple MacBook Space Grau M1, 420 €: Referenz nicht belastbar (2,81), Abstand unter
+  20 %.
+- `3520809138` MacBook Pro M1 512 GB, 300 €: im Text steht "PREIS: 650 EUR", im Preisfeld 300 EUR;
+  Konto 31 Tage alt. Koederpreis.
+- `3520799711` DJI Mavic Pro erste Generation, 250 €: gewerblicher Verkaeufer mit Bewertung 0,47,
+  Funktion ausdruecklich nicht zugesichert.
+- `3520729690` Omega Seamaster Cosmic, 499 €: das bestaetigbare Niveau fuer eine Cosmic Day-Date
+  liegt im Bereich des Preises.
+- `3520757780` iPhone 15 Pro 128 GB, 330 €: Display und Rueckseite gebrochen.
+- `3520749999` iPhone 15 128 GB, 280 €: Sprung im Display.
+- `3520786767` iPhone 15 128 GB, 290 €: Zustand "Defekt", schwarzer Fleck im Display.
+- `3520780575` Apple iPhone 15 schwarz, 300 €: Hauptkamera nach Sturz ohne Funktion.
+- `3520715769` iPhone 14 Pro Max 128 GB, 260 €: Rueckseite defekt, Akku 75 %.
+- `3520845953` iPhone 15 256 GB, 275 €: Displaykratzer und Akku 84 % offengelegt, Bewertung 0,40.
+- `3520838471` iPhone 15, 300 €: Bewertung 0,16, Beschreibung ohne Speichergroesse und Akkuwert.
+- `3520790909` iPhone 15 Apple gebraucht, 330 €: Konto am Vortag angelegt, nur Versand.
+- `3520774032` iPhone 14 "top Zustand", 185 €: Anzeige nennt 64 GB und "iPhone 13 Features" - ein
+  iPhone 14 mit 64 GB existiert nicht, das Modell ist nicht bestimmbar.
+- `3520783138` iPhone 13, 150 €: Konto seit Juli 2026, vier Woerter Beschreibung, nur Versand.
+
+### Bereits im Morgenlauf geprueft und verworfen
+
+Die uebrigen 76 Kandidaten standen schon am Morgen in `candidates.json` und sind oben im
+Morgenprotokoll mit Grund aufgefuehrt. Sie wurden nicht erneut aufgerollt; stichprobenartig
+nachgesehen wurden die groessten Abstaende (Rolex Daytona 116503, Ducati 900 SS Koenigswelle,
+Golf 2 G60) - die Begruendungen tragen unveraendert.
+
+## Methodik dieses Laufs
+
+Geprueft wurden 80 Kandidaten (die seit dem Morgenlauf hinzugekommenen), zuerst nach absolutem
+Abstand zum Median und innerhalb der liquiden Kategorien Drohnen, Uhren, Apple und Grafikkarten.
+Jeder gemeldete Fund hat einen extern bestaetigten Marktwert aus mindestens zwei konkreten
+Vergleichsangeboten oder dem herstellereigenen Gebrauchtkanal; das bestaetigte Preisniveau steht
+jeweils in der Begruendung. Kein Fund stuetzt sich auf den Kleinanzeigen-Median allein.
+
+Einschraenkung dieser Umgebung: Der Egress-Proxy blockiert upway.de, mpb.com, ebay.de,
+bikeflip.com, gebrauchtmaschinen.de und cbw-maschinen.com fuer den Direktabruf. Preise waren
+deshalb nur ueber die Websuche und deren Zusammenfassungen zu bekommen. Drei Kandidaten
+(Cube Supreme Hybrid Pro 625, Riese & Mueller Roadster GT urban, Trek Procaliber 9.5) sind allein
+daran gescheitert, dass sich kein Gebrauchtpreis belegen liess - sie sind nicht widerlegt, nur
+nicht bestaetigt.
