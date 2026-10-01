@@ -1,26 +1,25 @@
 {
-  "generiert": "2026-10-01T02:07:56+02:00",
+  "generiert": "2026-10-01T05:23:16+02:00",
   "zeitraum": {
-    "von": "2026-09-30T20:19:25+02:00",
-    "bis": "2026-10-01T01:19:25+02:00"
+    "von": "2026-10-01T00:06:05+02:00",
+    "bis": "2026-10-01T05:06:05+02:00"
   },
   "statistik": {
-    "gesichtet": 102493,
-    "nach_modellmatch": 1373,
-    "nach_vorfilter": 1369,
-    "nach_preisschwelle": 81,
-    "nach_scoring": 49,
+    "gesichtet": 42076,
+    "nach_modellmatch": 87,
+    "nach_vorfilter": 87,
+    "nach_preisschwelle": 13,
+    "nach_scoring": 4,
     "ausschluesse": {
-      "score_zu_niedrig": 23,
-      "preis_unplausibel": 7
+      "score_zu_niedrig": 7,
+      "preis_unplausibel": 1,
+      "zahlung_ohne_schutz": 1
     },
-    "pool": 99969,
-    "ohne_referenz_verworfen": 361,
-    "referenz_gekappt": 646,
-    "detail_gekappt": 2,
+    "pool": 39554,
+    "ohne_referenz_verworfen": 33,
     "doppelt_zusammengefasst": 0,
-    "requests": 2125,
-    "laufzeit_sekunden": 2910
+    "requests": 783,
+    "laufzeit_sekunden": 1030
   },
   "kandidaten": [
     {
@@ -277,6 +276,88 @@
         ],
         "rot": [
           "Bewertung 0.74"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3527767419",
+      "watchlist_id": "youngtimer-alltag",
+      "titel": "Mercedes-Benz W124 230 CE Coupe ZKD defekt",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/mercedes-benz-w124-230-ce-coupe-zkd-defekt/3527767419-216-1811",
+      "preis": 3500.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 7200.0,
+        "p25": 6490.0,
+        "n": 50,
+        "query": "Mercedes Benz CE W124 230",
+        "korrektur": 0.1,
+        "streuung": 1.54,
+        "belastbar": true
+      },
+      "p_ratio": 0.486,
+      "ersparnis_eur": 3700.0,
+      "ort": "Arnsberg",
+      "plz": "59821",
+      "eingestellt": "2026-10-01T02:46:21+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1e/1ebb2ab6-746a-4e8f-b2c1-d2f824453cfb?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/27/2796b796-6d34-46f3-9c68-5337ed6f2847?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/36/36f30724-f5d9-4665-b9c0-060c3590fda0?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/98/985477b2-3320-41dd-932e-dd5e2d26d980?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht ein Mercedes-Benz W124 230 CE Coupe.<br /><br />4 elektr. Fensterheber, Tempomat, Sitzheizung, AHK, SSD<br />Karo Austattung Brasil ,orthopädische Sitze.<br />Die Innenaustattung ist in einem guten Zustand<br />( keine durchscheuerte Fahrersitzlehne).<br />Alle 4 Wagenheberaufnahmen sind ok.<br /><br />Das Fahrzeug wird ausdrücklich als Bastlerfahrzeug verkauft, da aktuell ein Schaden an der Zylinderkopfdichtung vorliegt.<br />Das Fahrzeug ist angemeldet und kann probegefahren werden.<br /><br /><br />Fahrzeugdaten:<br />• Modell: W124 230 CE (Coupe)<br />• Motor: 2.3L 4-Zylinder (M102)<br />• Getriebe: Automatik<br />• Kilometerstand: 316890<br />• 24.01.1991<br />• TÜV&#x2F;AU: Neu<br />• Farbe:Rauchsilber Metallic<br /><br /><br />Privatverkauf. Der Verkauf erfolgt unter Ausschluss jeglicher Gewährleistung, Garantie oder Rücknahme. Gekauft wie gesehen.<br /><br />Tel. 0174&#x2F;4197647 (nach 19 Uhr)",
+      "attribute": {
+        "Marke": "Mercedes Benz",
+        "Kilometerstand": "316.890",
+        "Fahrzeugzustand": "Beschädigtes Fahrzeug",
+        "Erstzulassung": "Januar 1991",
+        "Kraftstoffart": "Benzin",
+        "Leistung": "136",
+        "Getriebe": "Automatik",
+        "Fahrzeugtyp": "Coupé",
+        "Anzahl Türen": "2/3",
+        "HU bis": "September 2028",
+        "Umweltplakette": "4 (Grün)",
+        "Material Innenausstattung": "Stoff",
+        "Anhängerkupplung": "true",
+        "Leichtmetallfelgen": "true",
+        "Radio/Tuner": "true",
+        "Schiebedach/Panoramadach": "true",
+        "Sitzheizung": "true",
+        "Tempomat": "true",
+        "Antiblockiersystem (ABS)": "true"
+      },
+      "verkaeufer": {
+        "id": "39294667",
+        "name": "Detlev Gundlach",
+        "typ": "PRIVATE",
+        "konto_seit": "2016-05-16",
+        "konto_alter_tage": 3789,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 82,
+      "signale": {
+        "gruen": [
+          "Konto seit 2016",
+          "Abholung moeglich",
+          "7 Bilder"
+        ],
+        "rot": [
+          "Gewerbetext auf Privatprofil"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -1310,72 +1391,6 @@
         ],
         "rot": [
           "Bewertung 0.65"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3526960985",
-      "watchlist_id": "ebike-rad",
-      "titel": "Riese & Müller Charger 4 Mixte GT Vario",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/riese-mueller-charger-4-mixte-gt-vario/3526960985-217-839",
-      "preis": 2500.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 3859.0,
-        "p25": 3000.0,
-        "n": 97,
-        "query": "Riese Müller Charger 4",
-        "korrektur": 0.0,
-        "streuung": 1.47,
-        "belastbar": true
-      },
-      "p_ratio": 0.648,
-      "ersparnis_eur": 1359.0,
-      "ort": "Buesum",
-      "plz": "25761",
-      "eingestellt": "2026-09-30T04:02:43+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/72/72748453-d125-4776-832a-1134b93f7b37?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/dc/dcf6fe9b-7add-4b3f-baac-b955438947ce?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/37/37004a12-2569-432d-b19e-a116f67ec317?rule=$_0.JPG"
-      ],
-      "beschreibung": "Riese & Müller Charger 4 Mixte GT Vario - neuwertig, nur ca.<br />1.030 km<br />Zum Verkauf steht mein Riese & Müller Charger 4 Mixte<br />GT Vario mit Riemenantrieb.<br />Das Fahrrad wurde am 28.07.2026 gekauft und befindet sich entsprechend in einem sehr guten, nahezu neuwertigen Zustand. Aktuell hat es ca. 1.030 km Laufleistung. Da das Fahrrad derzeit noch genutzt wird, können noch einige Kilometer dazukommen.<br />Details:<br />* Modell: Riese & Müller Charger 4 Mixte GT Vario<br />* Rahmengröße: 53 cm<br />* Riemenantrieb<br />* Kaufdatum: 28.07.2026<br />* Laufleistung: aktuell ca. 1.030 km<br />* Alle Papiere und Unterlagen vorhanden<br />* Sehr gepflegter Zustand<br />Das Fahrrad kann bei ernsthaftem Interesse gerne vor Ort besichtigt werden.<br />Nur Selbstabholung.<br />Bei Fragen oder Interesse einfach gerne melden.",
-      "attribute": {
-        "Art": "Herren",
-        "Versand": "Nur Abholung",
-        "Typ": "Elektrofahrräder",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "12822706",
-        "name": "Kai",
-        "typ": "PRIVATE",
-        "konto_seit": "2012-12-15",
-        "konto_alter_tage": 5036,
-        "bewertung": 0.7916666666666666,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 84,
-      "signale": {
-        "gruen": [
-          "Konto seit 2012",
-          "Abholung moeglich",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Bewertung 0.79"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -3424,6 +3439,74 @@
       }
     },
     {
+      "id": "3527765027",
+      "watchlist_id": "konsolen-sweep",
+      "titel": "Sony PlayStation 5 Pro (PS5 Pro) Weiß 2TB *Blitzversand*",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/sony-playstation-5-pro-ps5-pro-weiss-2tb-blitzversand-/3527765027-279-1137",
+      "preis": 640.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1100.0,
+        "p25": 1049.0,
+        "n": 12,
+        "query": "Sony PlayStation Pro 5 PS5 2TB",
+        "korrektur": 0.0,
+        "streuung": 1.14,
+        "belastbar": true
+      },
+      "p_ratio": 0.582,
+      "ersparnis_eur": 460.0,
+      "ort": "Kevelaer",
+      "plz": "47623",
+      "eingestellt": "2026-10-01T01:50:32+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b83927cf-66e5-43a8-97a0-547bf86aca79?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/64/649d215a-0307-4ecc-b707-f492b21878d7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/99/99ac6ccf-0d47-42af-8b23-1ec7c921dd2e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5f/5f2aaacd-fb75-4384-8205-fe7eb640d927?rule=$_0.JPG"
+      ],
+      "beschreibung": "Sony PlayStation 5 Pro – 2 TB – Modell CFI-7021<br /><br />Zum Verkauf steht eine **Sony PlayStation 5 Pro mit 2 TB Speicher.<br /><br />Die Konsole wurde gebraucht, befindet sich aber in einem guten gebrauchten Zustand. Vorhandene Gebrauchsspuren sind auf den Fotos zu sehen.<br /><br />Die PS5 Pro wurde von mir getestet und funktioniert **einwandfrei**.<br /><br />Die **Originalrechnung von MediaMarkt vom 26.07.2025** ist vorhanden.<br /><br />Lieferumfang:<br /><br />* Sony PlayStation 5 Pro 2 TB<br />* DualSense Wireless Controller<br />* Originalverpackung<br />* HDMI-Kabel<br />* Stromkabel<br />* LAN-Kabel<br />* Originalrechnung von MediaMarkt<br /><br />Der genaue Zustand und Lieferumfang sind den Fotos zu entnehmen.<br /><br />Bei Fragen gerne melden.",
+      "attribute": {
+        "Art": "PlayStation",
+        "Versand": "ab 2,99",
+        "Modell": "PS5 Pro",
+        "Zustand": "Sehr Gut",
+        "Speicher (GB)": "2 TB",
+        "Farbe": "Weiß"
+      },
+      "verkaeufer": {
+        "id": "16216927",
+        "name": "M. Klucken",
+        "typ": "PRIVATE",
+        "konto_seit": "2013-07-25",
+        "konto_alter_tage": 4815,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2013",
+          "Kaeuferschutz verfuegbar",
+          "9 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3527021129",
       "watchlist_id": "ebike-rad",
       "titel": "E-Bike Damen Trekking",
@@ -3483,69 +3566,6 @@
           "11 Bilder"
         ],
         "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3526958700",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 17 Pro Max 512GB in OVP",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-17-pro-max-512gb-in-ovp/3526958700-173-11713",
-      "preis": 850.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 1299.0,
-        "p25": 1190.0,
-        "n": 38,
-        "query": "iPhone Pro Max 17 512GB",
-        "korrektur": 0.0,
-        "streuung": 1.14,
-        "belastbar": true
-      },
-      "p_ratio": 0.654,
-      "ersparnis_eur": 449.0,
-      "ort": "Ludwigsau",
-      "plz": "36251",
-      "eingestellt": "2026-09-30T03:03:16+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f0/f09d4dd2-c962-4414-9975-20c00ca4a73b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/37/37edca0b-bb20-4fa2-94a0-987686ad904c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0f/0f7df582-1c0d-4088-86d8-a2383e02b2a4?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich biete hier ein Apple iPhone 17 Pro Max mit 512 GB Speicherplatz an. Das Gerät wird inklusive der Originalverpackung abgegeben.<br /><br />- Modell: iPhone 17 Pro Max<br />- Speicherkapazität: 512 GB<br />- Farbe: Auffälliges Orange<br />- Inklusive Originalverpackung<br />- Frei von Sperren, sofort einsatzbereit<br /><br />Das Smartphone befindet sich in einem sehr guten Zustand ohne sichtbare Kratzer oder Beschädigungen. Es ist frei für alle Karten und kann direkt mit dem WLAN verbunden werden. Da ich selbst kein iPhone-Nutzer bin, sucht es nun einen neuen Besitzer.<br /><br />War ein Geschenk für meine Freundin vor ca 6 Monaten, allerdings sind wir seit kurzem getrennt und verkaufe es nun, Rechnung Ladekabel liegen bei ihr,Sie ist bei Ihrem neuen und ignoriert alle Fragen und Telefonate,daher schwierig mit den Zubehör und Rechnung,sollte sie das nicht stören wird es sich am Preis bemerkbar machen, und sollte sich in Zukunft alles normalisieren reiche ich alles nach.<br /><br />Schreib mir gerne, falls du noch weitere Fragen hast.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,99",
-        "Modell": "iPhone 17 Pro Max",
-        "Farbe": "Orange",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "166818747",
-        "name": "Emil Mehmet",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-09-25",
-        "konto_alter_tage": 4,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 65,
-      "signale": {
-        "gruen": [
-          "Kaeuferschutz verfuegbar",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Konto juenger als 30 Tage"
-        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -5264,72 +5284,6 @@
       }
     },
     {
-      "id": "3526957640",
-      "watchlist_id": "hifi-sweep",
-      "titel": "Revox B-77",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/revox-b-77/3526957640-172-4016",
-      "preis": 500.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 749.5,
-        "p25": 350.0,
-        "n": 86,
-        "query": "Revox 77",
-        "korrektur": 0.0,
-        "streuung": 3.4,
-        "belastbar": false
-      },
-      "p_ratio": 0.667,
-      "ersparnis_eur": 249.5,
-      "ort": "Flöha ",
-      "plz": "09557",
-      "eingestellt": "2026-09-30T02:31:13+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f9/f97cc5a5-cb6a-4fbd-ad47-db0912a6ed0f?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e2/e2aaa5bc-c373-487a-8bd1-c1fe59bee5ae?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6d/6d528308-0e72-4996-8784-1079f62cf475?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/86/86032c92-14c2-440b-af26-77a81a83f977?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe ein Revox B77 Tonbandgerät. Das Gerät befindet sich in gutem Zustand und ist voll funktionsfähig. Keine Defekte, keine Beschädigungen. Technisch und optisch gepflegt, dem Alter entsprechend gut. Alle Funktionen arbeiten einwandfrei.<br /><br />Der Revox B77 ist ein klassisches 1&#x2F;4-Zoll-Tonbandgerät der Schweizer Firma Revox und gilt bis heute als eine der besten Bandmaschinen überhaupt. Er verfügt über ein 3-Motoren-Laufwerk mit Direktantrieb und drei separate Tonköpfe für Aufnahme, Wiedergabe und Löschen. Die Bandgeschwindigkeiten betragen 9,5&#x2F;19 cm&#x2F;s (Standardversion). Das Gerät spielt Bänder bis 26,5 cm (10,5&quot;) Spulendurchmesser ab.‌￼‌￼<br /><br />Wichtiger Hinweis:<br />Nur Versand! Keine Abholung und keine Selbstabholung möglich. Der Versand erfolgt ausschließlich per Paketdienst, gut verpackt und versichert. Versandkosten nach Zielort oder auf Anfrage.<br /><br />Privatverkauf: keine Garantie, keine Rücknahme, kein Umtausch.<br /><br />Bei Fragen gerne schreiben.",
-      "attribute": {
-        "Art": "Weiteres Audio & Hifi",
-        "Versand": "ab 2,99",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "62066266",
-        "name": "Lena Dehrbeck",
-        "typ": "PRIVATE",
-        "konto_seit": "2019-02-28",
-        "konto_alter_tage": 2770,
-        "bewertung": 0.868421052631579,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 62,
-      "signale": {
-        "gruen": [
-          "Konto seit 2019",
-          "Kaeuferschutz verfuegbar",
-          "10 Bilder"
-        ],
-        "rot": [
-          "Abholung ausgeschlossen"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3527676442",
       "watchlist_id": "ebike-rad",
       "titel": "KTM Life Trekkingrad Damen",
@@ -5832,6 +5786,68 @@
           "9 Bilder"
         ],
         "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3527769073",
+      "watchlist_id": "optik-drohnen",
+      "titel": "DJI Mavic Pro Drohne - ca. 5 Stunden Flugzeit",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/dji-mavic-pro-drohne-ca-5-stunden-flugzeit/3527769073-168-34",
+      "preis": 300.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 525.0,
+        "p25": 300.0,
+        "n": 10,
+        "query": "DJI Mavic Pro 5",
+        "korrektur": 0.0,
+        "streuung": 2.6,
+        "belastbar": false
+      },
+      "p_ratio": 0.571,
+      "ersparnis_eur": 225.0,
+      "ort": "Burg-Grambke",
+      "plz": "28719",
+      "eingestellt": "2026-10-01T03:27:43+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5d/5d8cf29f-fc01-4646-a28a-cb32b2ba3744?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a5/a51dc34b-dc7c-49eb-9f7f-f6a44b582bbe?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fd/fdb825ac-bd74-47c7-91f0-fa22dfd9aa74?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe meine DJI Mavic Pro Drohne, die bisher nur etwa 5 Stunden in der Luft war. Sie befindet sich in einem sehr gepflegten Zustand.<br /><br />- Modell: DJI Mavic Pro<br />- Flugzeit: ca. 5 Stunden<br />- Farbe: Grau<br />- Kompaktes, faltbares Design<br /><br />Die Drohne ist ideal für Einsteiger und Fortgeschrittene, die ein zuverlässiges Modell suchen. Bitte beachte, dass keine Ersatz-Flügelblätter im Lieferumfang enthalten sind. Das Gerät wurde stets vorsichtig behandelt und weist nur minimale Gebrauchsspuren auf. Schreib mir gerne, falls du weitere Informationen benötigst.",
+      "attribute": {
+        "Versand": "ab 6,19"
+      },
+      "verkaeufer": {
+        "id": "164585880",
+        "name": "Luhac",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-07-13",
+        "konto_alter_tage": 79,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 87,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar",
+          "Maengel offengelegt",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate"
+        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -6345,6 +6361,74 @@
           "Abholung moeglich"
         ],
         "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3527769266",
+      "watchlist_id": "apple-mobil",
+      "titel": "Iphone 15 Apple",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-15-apple/3527769266-173-4508",
+      "preis": 315.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 500.0,
+        "p25": 444.0,
+        "n": 77,
+        "query": "Iphone Apple 15",
+        "korrektur": 0.0,
+        "streuung": 1.35,
+        "belastbar": true
+      },
+      "p_ratio": 0.63,
+      "ersparnis_eur": 185.0,
+      "ort": "Modautal",
+      "plz": "64397",
+      "eingestellt": "2026-10-01T03:34:09+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/05a68009-4eee-47ed-8226-29af62ad097d?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6e/6ea8762a-bfeb-4367-8aa5-2eb548e9efc3?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ce/ceb80694-4b6f-446d-8cf9-8fa728aac6a9?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/49/49666952-0cc2-42b7-a1e6-fbeae0d21221?rule=$_0.JPG"
+      ],
+      "beschreibung": "ich verkaufe mein iPhone 15 wegen Neuanschaffung.<br /><br />Das Smartphone befindet sich in einem TOP Zustand<br /><br />Zustand: Keine Kratzer. Das Gerät wurde vom ersten Tag an ausschließlich in einer Schutzhülle getragen.<br /><br />Funktion: Alles funktioniert einwandfrei und ohne Probleme<br />77% Akku<br />128gb<br /><br />Originalität: Es wurde nie repariert, alle Teile sind original (nichts getauscht).<br /><br />Lieferumfang: Die Originalverpackung (OVP) sowie das komplette Originalzubehör sind komplett vorhanden und im Lieferumfang enthalten.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,99",
+        "Modell": "iPhone 15",
+        "Farbe": "Weiß",
+        "Gerät & Zubehör": "Gerät & Zubehör",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "162035751",
+        "name": "Vladyslav",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-04-16",
+        "konto_alter_tage": 167,
+        "bewertung": 0.3333333333333333,
+        "abzeichen": {
+          "rating": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 62,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar",
+          "4 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate",
+          "Bewertung 0.33"
+        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -7540,75 +7624,6 @@
       }
     },
     {
-      "id": "3526959758",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 14 Pro 256gb",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-pro-256gb/3526959758-173-2790",
-      "preis": 300.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 435.0,
-        "p25": 370.0,
-        "n": 30,
-        "query": "iPhone Pro 14 256gb",
-        "korrektur": 0.0,
-        "streuung": 1.3,
-        "belastbar": true
-      },
-      "p_ratio": 0.69,
-      "ersparnis_eur": 135.0,
-      "ort": "Northeim",
-      "plz": "37154",
-      "eingestellt": "2026-09-30T03:18:47+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/67/673c635b-f05c-4f8a-8444-3e98e23aa9aa?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fa/fad190ae-bdd9-4e20-b702-dafaca331596?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/dc/dcdd54b0-f319-48ed-b6c7-3bbed4891014?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/79/79fe690b-721c-468f-92c3-6d98557bef7d?rule=$_0.JPG"
-      ],
-      "beschreibung": "Hallo,<br /><br />Ich biete hier mein ca 3 Jahre altes IPhone 14 Pro an.<br />Verkaufe es wegen Umstieg auf 18 Pro<br /><br />Funktion ist voll gegeben.<br />Akkuzustand ist bei 78%<br />Hält trotzdem einen guten Tag.<br /><br />Wie aber auf den Bildern zusehen, ist der Display zerkratzt.<br />Die Aussenhülle hat leider sich durch eine Hartschalenhülle gelitten.<br /><br />Zustand bitte den Bilder entnehmen.<br />Keine Kratze auf den Kamera.<br /><br />Versand und Paypal möglich<br />Keine Garantie oder Rückgabe!<br /><br />Mit freundlichen Grüßen Rafael",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "Versand möglich",
-        "Modell": "iPhone 14 Pro",
-        "Farbe": "Grau",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "129672560",
-        "name": "Rafael Morawietz",
-        "typ": "COMMERCIAL",
-        "konto_seit": "2023-04-20",
-        "konto_alter_tage": 1259,
-        "bewertung": 0.8166666666666667,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 84,
-      "signale": {
-        "gruen": [
-          "Konto seit 2023",
-          "Abholung moeglich",
-          "6 Bilder"
-        ],
-        "rot": [
-          "Bewertung 0.82"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3527750858",
       "watchlist_id": "apple-mobil",
       "titel": "Apple iPhone 13 Pro Sierra Blau / 128 GB",
@@ -8194,64 +8209,6 @@
           "Maengel offengelegt"
         ],
         "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3526956218",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Honda NX 250 & Moto Guzzi – Scheunenfund / Paket für Bastler",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/honda-nx-250-moto-guzzi-scheunenfund-paket-fuer-bastler/3526956218-305-1694",
-      "preis": 1600.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Eitorf",
-      "plz": "53783",
-      "eingestellt": "2026-09-30T01:55:23+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a0/a0b49951-a56c-4f45-b540-e2b6091e590b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/80/8069a90a-0a7f-413a-876c-52fe1ccbd284?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ac/aca9ef9a-ab53-496f-a289-66a5fb8d6c18?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7c/7c5ec515-6f32-441e-bb45-a88823576be2?rule=$_0.JPG"
-      ],
-      "beschreibung": "Hallo,<br />verkaufe hier zwei alte Motorräder (Honda NX 250 und eine Moto Guzzi) zusammen als Paket.<br /><br />Die Maschinen standen jetzt über Jahre einfach nur bei uns in der Garage &#x2F; Tiefgarage rum. Da bei uns absolut niemand Verwendung dafür hat und ich selber null Ahnung von den Dingern habe, gebe ich sie jetzt so ab, wie sie stehen.<br /><br />Schlüssel und Papiere sind über die Jahre leider nicht mehr auffindbar gewesen.<br /><br />Verkauf ausdrücklich als Bastlerfahrzeuge &#x2F; Projekte zum Wiederaufbau oder als Teilespender ohne Garantie, Gewährleistung oder Rücknahme.<br /><br />Nur an Selbstabholer mit Transporter oder Anhänger. Barzahlung bei Abholung.",
-      "attribute": {
-        "Art": "Motorräder",
-        "Marke": "Honda"
-      },
-      "verkaeufer": {
-        "id": "59676075",
-        "name": "Mia Zozin",
-        "typ": "PRIVATE",
-        "konto_seit": "2018-11-13",
-        "konto_alter_tage": 2877,
-        "bewertung": 0.8,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 72,
-      "signale": {
-        "gruen": [
-          "Konto seit 2018",
-          "Abholung moeglich",
-          "7 Bilder"
-        ],
-        "rot": [
-          "Bewertung 0.80",
-          "Gewerbetext auf Privatprofil"
-        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
