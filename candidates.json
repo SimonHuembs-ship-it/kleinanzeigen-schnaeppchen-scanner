@@ -1,27 +1,24 @@
 {
-  "generiert": "2026-10-05T01:29:07+02:00",
+  "generiert": "2026-10-05T05:14:05+02:00",
   "zeitraum": {
-    "von": "2026-10-04T19:36:42+02:00",
-    "bis": "2026-10-05T00:36:42+02:00"
+    "von": "2026-10-05T00:01:40+02:00",
+    "bis": "2026-10-05T05:01:40+02:00"
   },
   "statistik": {
-    "gesichtet": 110825,
-    "nach_modellmatch": 1636,
-    "nach_vorfilter": 1635,
-    "nach_preisschwelle": 113,
-    "nach_scoring": 68,
+    "gesichtet": 20142,
+    "nach_modellmatch": 131,
+    "nach_vorfilter": 131,
+    "nach_preisschwelle": 13,
+    "nach_scoring": 6,
     "ausschluesse": {
-      "score_zu_niedrig": 24,
-      "externer_link": 4,
-      "preis_unplausibel": 8
+      "score_zu_niedrig": 4,
+      "externer_link": 3
     },
-    "pool": 108295,
-    "ohne_referenz_verworfen": 456,
-    "referenz_gekappt": 775,
-    "detail_gekappt": 9,
+    "pool": 17607,
+    "ohne_referenz_verworfen": 56,
     "doppelt_zusammengefasst": 0,
-    "requests": 2411,
-    "laufzeit_sekunden": 3144
+    "requests": 598,
+    "laufzeit_sekunden": 745
   },
   "kandidaten": [
     {
@@ -3970,6 +3967,67 @@
       }
     },
     {
+      "id": "3531795592",
+      "watchlist_id": "ebike-rad",
+      "titel": "Cube eBike",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-ebike/3531795592-217-1849",
+      "preis": 1250.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 1899.5,
+        "p25": 550.0,
+        "n": 10,
+        "query": "Cube eBike",
+        "korrektur": 0.0,
+        "streuung": 3.73,
+        "belastbar": false
+      },
+      "p_ratio": 0.658,
+      "ersparnis_eur": 649.5,
+      "ort": "Bocholt",
+      "plz": "46395",
+      "eingestellt": "2026-10-05T04:15:51+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bc/bca53178-b7fa-4b1e-a9fe-450c3cc62c5f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f5/f5907a93-06d2-42f9-961d-74c96d4fde32?rule=$_0.JPG"
+      ],
+      "beschreibung": "Das Rad ist noch in einem top Zustand.Kette und Ritzel sind neu.<br />Das Rad hat ein cx Motor der 85 Newton m zieht.Akku hat 625 w",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "ab 0,99",
+        "Typ": "Cityräder",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "4804637",
+        "name": "Ralf",
+        "typ": "PRIVATE",
+        "konto_seit": "2011-02-23",
+        "konto_alter_tage": 5702,
+        "bewertung": null,
+        "abzeichen": {
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 80,
+      "signale": {
+        "gruen": [
+          "Konto seit 2011",
+          "Kaeuferschutz verfuegbar"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3530659686",
       "watchlist_id": "ebike-rad",
       "titel": "Trekkingbike von KTM",
@@ -4350,75 +4408,6 @@
         ],
         "rot": [
           "Preis nur 42% des Marktwerts"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3530549290",
-      "watchlist_id": "ebike-rad",
-      "titel": "Cube Reaction Hybrid E Bike MTB Bosch 29 Zoll CX 625\"",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-reaction-hybrid-e-bike-mtb-bosch-29-zoll-cx-625-/3530549290-217-9287",
-      "preis": 1150.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 1700.0,
-        "p25": 1450.0,
-        "n": 78,
-        "query": "Cube Reaction Hybrid 29 625",
-        "korrektur": 0.0,
-        "streuung": 1.31,
-        "belastbar": true
-      },
-      "p_ratio": 0.676,
-      "ersparnis_eur": 550.0,
-      "ort": "Stuttgart-Mitte",
-      "plz": "70182",
-      "eingestellt": "2026-10-04T01:21:21+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6c/6c1918df-75a1-42bb-a56a-3be2cace0550?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/60/601fc139-e762-4c70-8c64-79bacd984af6?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5d/5d7c7187-6893-4147-b9ef-99fbd7fc4791?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a8/a8912d6a-6cb8-429a-9ffe-9f15e5e6d1f3?rule=$_0.JPG"
-      ],
-      "beschreibung": "Das Fahrrad ist technisch einwandfrei und wurde regelmäßig gepflegt. Ideal für Alltag, Touren und Gelände. Fahrrad ist insgesamt in gutem Zustand, letztes Jahr frisch inspiziert. Die hinteren Bremsbeläge (4-Kolben-Bremse) wurden erneuert. Dabei ist offenbar ein Fehler an der Hinterradbremse entstanden, sodass Bremsöl ausgetreten und inzwischen ausgelaufen ist. Die Bremse muss daher neu befüllt bzw. entlüftet werden. Ersatzöl kostet nur wenige Euro. Ansonsten ist das Fahrrad fahrbereit. Verkauf wegen Neuanschaffun<br /><br />Ausstattung:<br /><br />✅ Bosch Performance Line CX Motor<br />✅ Bosch PowerTube 625 Wh Akku<br />✅ Hydraulische 4-Kolben-Scheibenbremsen<br />✅ Federgabel<br />✅ Schwalbe Smart Sam Reifen<br />✅ Schutzblech und Seitenständer<br />✅ Handyhalterung und Klingel<br /><br />Daten:<br /><br />* Baujahr: 2020<br />* Laufleistung: ca. 9.800 km<br />* Rahmengröße: M<br />* Geeignet für Fahrer von ca. 1,68 m bis 1,80 m (je nach Schrittlänge)<br />* Zustand: gepflegt mit normalen Gebrauchsspuren<br /><br />75 NM<br /><br />Motor und Akku funktionieren einwandfrei. Probefahrt nach Absprache möglich.<br /><br />Neu Preis lag bei 3199€<br />Privatverkauf, daher keine Garantie, Gewährleistung oder Rücknahme.",
-      "attribute": {
-        "Art": "Herren",
-        "Versand": "ab 0,99",
-        "Typ": "Elektrofahrräder",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "65999215",
-        "name": "Feru",
-        "typ": "PRIVATE",
-        "konto_seit": "2019-08-01",
-        "konto_alter_tage": 2620,
-        "bewertung": 0.875,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2019",
-          "Kaeuferschutz verfuegbar",
-          "4 Bilder",
-          "Maengel offengelegt",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Gewerbetext auf Privatprofil"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -4943,72 +4932,6 @@
         "rot": [
           "Preis nur 28% des Marktwerts"
         ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3530545220",
-      "watchlist_id": "ebike-rad",
-      "titel": "Haibike Sduro Ebike Trekking 5.0 Bosch Performance Line CX",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/haibike-sduro-ebike-trekking-5-0-bosch-performance-line-cx/3530545220-217-15243",
-      "preis": 690.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 1150.0,
-        "p25": 799.0,
-        "n": 19,
-        "query": "Haibike Sduro Ebike 5.0",
-        "korrektur": 0.0,
-        "streuung": 1.74,
-        "belastbar": true
-      },
-      "p_ratio": 0.6,
-      "ersparnis_eur": 460.0,
-      "ort": "Schwäbisch Hall",
-      "plz": "74523",
-      "eingestellt": "2026-10-04T00:45:25+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d2/d24af63d-b35c-431a-9693-97c8a4580699?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/54/54f053b3-e8c9-4283-9261-68967beb9af0?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4c/4c959f78-f9a1-4927-ac12-ae07ba75f60d?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e7/e7948fa7-4810-4cbe-b8c1-3edb7eda452e?rule=$_0.JPG"
-      ],
-      "beschreibung": "Haibike Sduro Ebike Trekking 5.0<br /><br />Bosch Performance Line CX Motor<br />Bosch 500 Akku<br />11867 km Laufleistung<br />Reichweite 90 km im Eco Modus<br />Rahmenhöhe L entspricht 56 cm<br /><br />Guter gebrauchter Zustand<br /><br />War regelmäßig beim Service",
-      "attribute": {
-        "Art": "Herren",
-        "Versand": "ab 0,99",
-        "Typ": "Elektrofahrräder",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "73338604",
-        "name": "Privat",
-        "typ": "PRIVATE",
-        "konto_seit": "2020-03-26",
-        "konto_alter_tage": 2382,
-        "bewertung": 0.8541666666666666,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2020",
-          "Kaeuferschutz verfuegbar",
-          "13 Bilder",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -6169,6 +6092,75 @@
       }
     },
     {
+      "id": "3531790328",
+      "watchlist_id": "macbook",
+      "titel": "MacBook Air M4 256GB",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/macbook-air-m4-256gb/3531790328-278-7430",
+      "preis": 600.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 990.0,
+        "p25": 890.0,
+        "n": 23,
+        "query": "MacBook Air M4 256GB",
+        "korrektur": 0.0,
+        "streuung": 1.12,
+        "belastbar": true
+      },
+      "p_ratio": 0.606,
+      "ersparnis_eur": 390.0,
+      "ort": "Leidersbach",
+      "plz": "63849",
+      "eingestellt": "2026-10-05T01:34:28+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/97/972c6e34-1378-4a50-ab97-9fb7ae2cd3cf?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fd/fda5119c-b649-4651-b91c-d552764cad11?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e0/e09cd182-dbd0-40dc-b862-d862edf5d5eb?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hallo, verkaufe hier mein benutztes MacBook Air M4 in Mitternacht (schwarz&#x2F;grau). Das MacBook hat optisch keine Fehler und technisch auch Einwandfrei. Im Lieferumfang ist alles mit was beim Kauf (Anfang 2026) dabei war. Versand oder Abholung möglich, aber lieber Abholung.",
+      "attribute": {
+        "Versand": "ab 9,90",
+        "Typ": "Laptop",
+        "Marke": "Apple",
+        "Modell": "MacBook Air 13\" (M4)",
+        "Zustand": "Sehr Gut",
+        "Betriebssystem": "macOS",
+        "Bildschirmgröße (Zoll)": "13\"",
+        "Erscheinungsjahr": "2026",
+        "Prozessor": "Apple M4",
+        "RAM (GB)": "16 GB",
+        "Speicher (GB)": "256 GB",
+        "Farbe": "Schwarz"
+      },
+      "verkaeufer": {
+        "id": "167018042",
+        "name": "wiesertim",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-10-01",
+        "konto_alter_tage": 3,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 70,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar"
+        ],
+        "rot": [
+          "Konto juenger als 30 Tage"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3530816743",
       "watchlist_id": "ebike-rad",
       "titel": "LIQBike E-Bike mit Bosch Active Line Plus Mittelmotor",
@@ -6904,6 +6896,70 @@
       }
     },
     {
+      "id": "3531791069",
+      "watchlist_id": "apple-mobil",
+      "titel": "Iphone 16 512 GB",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-16-512-gb/3531791069-173-2107",
+      "preis": 500.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 800.0,
+        "p25": 750.0,
+        "n": 81,
+        "query": "Iphone GB 16 512",
+        "korrektur": 0.0,
+        "streuung": 1.16,
+        "belastbar": true
+      },
+      "p_ratio": 0.625,
+      "ersparnis_eur": 300.0,
+      "ort": "Kaarst",
+      "plz": "41564",
+      "eingestellt": "2026-10-05T01:48:26+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/45/45e9cad3-fb5d-4546-8e89-c78d3ad26382?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe mein Iphone da ich mir ein neues zugelegt habe. Das Iphone funktioniert einwandfrei. Hat kaum kratzer oder dellen. Allerdings ist es verbogen. Ich weiss nicht wieso, jedenfalls wirkt es sich nicht auf die Leistung des Geräts aus. Der Akku ist bei 90%",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "Nur Abholung",
+        "Modell": "iPhone 16",
+        "Farbe": "Pink",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "153876841",
+        "name": "dbbym3",
+        "typ": "PRIVATE",
+        "konto_seit": "2025-08-16",
+        "konto_alter_tage": 414,
+        "bewertung": null,
+        "abzeichen": {
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 73,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Hoechstens ein Bild"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3530646069",
       "watchlist_id": "ebike-rad",
       "titel": "Pegasus Solero SL Fahrrad City & Trekking",
@@ -6967,76 +7023,6 @@
         ],
         "rot": [
           "Gewerbetext auf Privatprofil"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3530544396",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 16 Pro",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-16-pro/3530544396-173-3072",
-      "preis": 425.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 720.0,
-        "p25": 650.0,
-        "n": 75,
-        "query": "iPhone Pro 16",
-        "korrektur": 0.0,
-        "streuung": 1.23,
-        "belastbar": true
-      },
-      "p_ratio": 0.59,
-      "ersparnis_eur": 295.0,
-      "ort": "Wolfsburg",
-      "plz": "38444",
-      "eingestellt": "2026-10-04T00:39:51+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e6/e666a807-8c65-46b7-a208-7702d715f634?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/16/16ef5ae8-a826-4d86-aa12-7b255de0b220?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/77/77bea837-9840-46da-a958-3dd2701688a3?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f7/f768ea4a-2317-4d02-850b-07760ff27081?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe mein iPhone 16 Pro. Es hat einen Riss im Display, funktioniert aber einwandfrei. Siehe Fotos. Die Akkukapazität liegt bei 91 %. Bei Interesse können Sie mich gerne kontaktieren.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "ab 0,99",
-        "Modell": "iPhone 16 Pro",
-        "Farbe": "Schwarz",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "90620279",
-        "name": "Privart",
-        "typ": "PRIVATE",
-        "konto_seit": "2021-12-14",
-        "konto_alter_tage": 1754,
-        "bewertung": 0.4166666666666667,
-        "abzeichen": {
-          "rating": 1,
-          "friendliness": 0,
-          "reliability": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 82,
-      "signale": {
-        "gruen": [
-          "Konto seit 2021",
-          "Kaeuferschutz verfuegbar",
-          "10 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.42"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -7173,6 +7159,72 @@
         ],
         "rot": [
           "Preis nur 30% des Marktwerts"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3531788385",
+      "watchlist_id": "apple-mobil",
+      "titel": "Apple iPhone 15 weiß mit Originalverpackung",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-15-weiss-mit-originalverpackung/3531788385-173-983",
+      "preis": 220.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 500.0,
+        "p25": 450.0,
+        "n": 36,
+        "query": "Apple iPhone weiß 15",
+        "korrektur": 0.0,
+        "streuung": 1.31,
+        "belastbar": true
+      },
+      "p_ratio": 0.44,
+      "ersparnis_eur": 280.0,
+      "ort": "Köln Altstadt",
+      "plz": "50667",
+      "eingestellt": "2026-10-05T01:05:37+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5f/5fde10a2-cac7-4266-a1dc-5f0caa51e9e6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d9/d94f3089-ba87-445b-872c-15c297b32529?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f11d8606-a0a3-48a4-b648-2d8d56404c33?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bd/bd78276d-88b1-4241-8e04-4a549048eb52?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein Apple iPhone 15 in der Farbe Weiß. Das Smartphone wird zusammen mit der passenden Originalverpackung abgegeben.<br /><br />- Modell: iPhone 15<br />- Farbe: Weiß<br />- Inklusive Originalverpackung<br />- Dual-Kamerasystem auf der Rückseite<br />- Hochwertiges Design mit mattem Glasrücken<br /><br />Das Gerät befindet sich in einem sehr gepflegten Zustand und weist kaum sichtbare Gebrauchsspuren auf. Es ist ein zuverlässiger Begleiter für den Alltag und macht optisch einiges her. Bei weiteren Fragen zu dem iPhone schreib mir gerne eine Nachricht.",
+      "attribute": {
+        "Art": "Apple",
+        "Versand": "ab 0,99",
+        "Modell": "iPhone 15",
+        "Farbe": "Weiß",
+        "Gerät & Zubehör": "Gerät",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "127441374",
+        "name": "Jeanette",
+        "typ": "PRIVATE",
+        "konto_seit": "2023-01-28",
+        "konto_alter_tage": 1345,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 87,
+      "signale": {
+        "gruen": [
+          "Konto seit 2023",
+          "Kaeuferschutz verfuegbar",
+          "5 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Preis nur 44% des Marktwerts"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -8033,71 +8085,6 @@
       }
     },
     {
-      "id": "3530557637",
-      "watchlist_id": "apple-mobil",
-      "titel": "Apple iPhone 15 wie neu",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-15-wie-neu/3530557637-173-1740",
-      "preis": 280.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 474.5,
-        "p25": 420.0,
-        "n": 74,
-        "query": "Apple iPhone 15",
-        "korrektur": 0.0,
-        "streuung": 1.31,
-        "belastbar": true
-      },
-      "p_ratio": 0.59,
-      "ersparnis_eur": 194.5,
-      "ort": "Iserlohn",
-      "plz": "58642",
-      "eingestellt": "2026-10-04T04:12:19+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a3/a3ec688e-97b8-4557-b5d2-7b9fc206e214?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/56/56a15793-bfca-4bf5-815a-d548f838fade?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fd/fdfbf700-488c-443d-a644-a385bca1605f?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ce/ce222599-71db-4e03-8729-4256a1fab9b7?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe hier mein Apple iPhone, das sich durch sein modernes Design mit der Dynamic Island auszeichnet. Das Gerät befindet sich in einem gepflegten Zustand und ist sofort einsatzbereit.<br /><br />- Apple Smartphone mit iOS Betriebssystem<br />- Markante Dynamic Island am oberen Displayrand<br />- Hochauflösendes Display<br />- Intuitive Benutzeroberfläche mit allen Standard-Apps<br /><br />Das Display ist klar und die Bedienung läuft flüssig. Es weist keine Gebrauchsspuren auf. Bei Interesse oder weiteren Fragen schreib mir gerne eine Nachricht.",
-      "attribute": {
-        "Art": "Apple",
-        "Versand": "Nur Abholung",
-        "Modell": "iPhone 15",
-        "Farbe": "Schwarz",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "166902441",
-        "name": "Benn",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-09-28",
-        "konto_alter_tage": 6,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 79,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "5 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Konto juenger als 30 Tage"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3531605664",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 13, grün. 256GB",
@@ -8433,223 +8420,51 @@
       }
     },
     {
-      "id": "3530551903",
+      "id": "3531791497",
       "watchlist_id": "apple-mobil",
-      "titel": "iPhone 14 Pro Max mit Bildschirm Riss",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-pro-max-mit-bildschirm-riss/3530551903-173-1032",
-      "preis": 295.0,
+      "titel": "iPhone 14 128 GB Midnight Blue",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-14-128-gb-midnight-blue/3531791497-173-9442",
+      "preis": 180.0,
       "preis_typ": "SPECIFIED_AMOUNT",
       "referenz": {
-        "median": 440.0,
-        "p25": 380.0,
-        "n": 75,
-        "query": "iPhone Pro Max 14",
+        "median": 299.0,
+        "p25": 270.0,
+        "n": 77,
+        "query": "iPhone GB Midnight 14 128",
         "korrektur": 0.0,
-        "streuung": 1.32,
+        "streuung": 1.29,
         "belastbar": true
       },
-      "p_ratio": 0.67,
-      "ersparnis_eur": 145.0,
-      "ort": "Remscheid",
-      "plz": "42853",
-      "eingestellt": "2026-10-04T01:55:05+02:00",
+      "p_ratio": 0.602,
+      "ersparnis_eur": 119.0,
+      "ort": "Hamburg Wilhelmsburg",
+      "plz": "21109",
+      "eingestellt": "2026-10-05T01:57:08+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4a/4a9327a7-a89f-40a7-9342-0aa8369e7d0e?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/28/28ea4acb-1c44-4741-9679-2d9e60e43bba?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/76/762dfad0-743c-4778-9765-30f10e884a04?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5b/5ba04460-2806-44d6-8ecf-2334ea3fd266?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a5/a57a44f2-4935-4b72-ab9c-c0bf7e554021?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/2e/2e493320-dd43-4373-896a-0b0baa083458?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/85/850871d6-9a44-47c0-bc92-6fbd2403e691?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/60/60d9bf3c-90c3-443c-96d6-1c72eb2eca8f?rule=$_0.JPG"
       ],
-      "beschreibung": "iPhone 14 Pro Max mit Schaden am Bildschirm, verbunden mit zwei leichten Rissen durch den Bildschirm. Komplett funktionsfähig, mit Ladekabel und gratis 3 Panza-Glasfolien. Akkukapazität bei 76%. Mit 256gb",
+      "beschreibung": "Das IPhone kann Ende Oktober abgeholt werden.<br />Kaum sichtbare Spuren<br />Es funktioniert alles<br /><br />Cloud ist frei gemacht<br />Werkseinstellung<br /><br /><br />Ovp ist dabei sowie Lightning Kabel",
       "attribute": {
         "Art": "Apple",
         "Versand": "Nur Abholung",
-        "Modell": "iPhone 14 Pro Max",
-        "Farbe": "Gold",
-        "Gerät & Zubehör": "Gerät",
-        "Zustand": "In Ordnung"
-      },
-      "verkaeufer": {
-        "id": "167025718",
-        "name": "IK",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-10-01",
-        "konto_alter_tage": 2,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 67,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "8 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Konto juenger als 3 Tage"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3530552855",
-      "watchlist_id": "werkzeug-maschinen",
-      "titel": "Hilti SD 5000-22 Trockenbauschrauber",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/hilti-sd-5000-22-trockenbauschrauber/3530552855-84-4298",
-      "preis": 200.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 299.5,
-        "p25": 230.0,
-        "n": 14,
-        "query": "Hilti SD Trockenbauschrauber 5000 22",
-        "korrektur": 0.0,
-        "streuung": 1.52,
-        "belastbar": true
-      },
-      "p_ratio": 0.668,
-      "ersparnis_eur": 99.5,
-      "ort": "Ostend",
-      "plz": "60314",
-      "eingestellt": "2026-10-04T02:10:15+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/60/60ab172b-96bb-4427-9064-6e6f6bc2342e?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/49/49a4320a-df82-43b5-9d69-2619736934de?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ca/ca2ef8d5-406b-4e5c-9be4-2570ddff9121?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c4/c440c6d8-0524-41e4-8713-1e2d87bc3065?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe hier meinen Hilti SD 5000-22 Trockenbauschrauber, der sich noch in der Originalverpackung befindet.<br /><br />- Modell: Hilti SD 5000-22<br />- Akku-Trockenbauschrauber<br />- Inklusive Bedienungsanleitung<br />- Farbe: Hilti-Rot mit schwarzen Akzenten<br />- Lieferung im Originalkarton<br /><br />Das Gerät ist ideal für präzise Verschraubungen im Trockenbau geeignet und liegt dank der ergonomischen Form gut in der Hand. Wie auf den Bildern zu sehen, ist das Gerät ist Neu und Ohne Akku und Ladegerät.<br />Es handelt sich um ein zuverlässiges Werkzeug für anspruchsvolle Projekte.<br /><br />Schreib mir gerne, falls du weitere Informationen benötigst.",
-      "attribute": {
-        "Versand": "ab 2,99"
-      },
-      "verkaeufer": {
-        "id": "165589181",
-        "name": "marzk",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-08-14",
-        "konto_alter_tage": 51,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 72,
-      "signale": {
-        "gruen": [
-          "Kaeuferschutz verfuegbar",
-          "5 Bilder"
-        ],
-        "rot": [
-          "Konto juenger als 6 Monate"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3530552861",
-      "watchlist_id": "kameras-leica",
-      "titel": "Leica Q2 Summilux 28mm",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/leica-q2-summilux-28mm/3530552861-245-6742",
-      "preis": 2550.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Hammelburg",
-      "plz": "97762",
-      "eingestellt": "2026-10-04T02:10:24+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4c/4c40c826-d7ec-4f4e-a37a-04c2c460542e?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1f/1ffd4e6f-f5e6-4061-9aa9-f9bc6ff3424c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6d/6da9f993-6291-49a7-a24e-b56545747a5b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/85/856e4cb0-6d97-412c-9810-2ababb3c821f?rule=$_0.JPG"
-      ],
-      "beschreibung": "Leica Q2<br />Leichte Gebrauchsspuren sie Bilder. Funktionen einwandfrei. Mit Ovp, Bilder hierzu folgen",
-      "attribute": {
-        "Art": "Kamera",
-        "Versand": "ab 2,99",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "18930940",
-        "name": "Sebastian Mützel",
-        "typ": "PRIVATE",
-        "konto_seit": "2014-01-13",
-        "konto_alter_tage": 4646,
-        "bewertung": 0.9553571428571429,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2014",
-          "Bewertung 0.96, zuverlaessig",
-          "Kaeuferschutz verfuegbar",
-          "6 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3530554112",
-      "watchlist_id": "vintage-hifi",
-      "titel": "Technics SL1210 MK2, sehr guter Zustand, Sammlerstück",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/technics-sl1210-mk2-sehr-guter-zustand-sammlerstueck/3530554112-172-6426",
-      "preis": 750.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Au-Haidhausen",
-      "plz": "81541",
-      "eingestellt": "2026-10-04T02:35:04+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bc/bc06e44a-ed13-4858-8f71-d420e9d78884?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7b/7bb11b42-f4af-44e7-9919-b7e5a069560c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/db/db669384-1086-460a-a51c-a1a6ac2dccc1?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/91/91d6a835-94b4-4e39-a259-6cf90a7ec490?rule=$_0.JPG"
-      ],
-      "beschreibung": "Hallo zusammen. Ich verkaufe meinen technics SL1210 mk2. Er funktioniert einwandfrei und sieht auch schick aus. Als ich ihn mir vor einigen Jahren gekauft habe hab ich beim Service alles checken lassen, Tonarm, pitch und Bremse einstellen lassen und Lager überholt. Alle Teile sind original. Ich bin nicht der erste Besitzer, aber nachdem der pitch fader keine Kratzer hat, gehe ich nicht davon aus dass er je in einem Club stand.<br /><br />Laut der Serien Nummer (NH9IF11133) ist er aus dem Jahr 1979. also dem Release Jahr der mk2 Serie und damit fast noch ikonischer. Einen der ersten noch originalen mk2s in dem Zustand zu finden ist Special finde ich, deswegen habe ich mich lange nicht von ihm trennen können. Ich finds beeindruckend dass er 47 Jahre alt ist und läuft wie am ersten Tag. Ein Hoch auf die technics<br /><br />Gerne ausgiebig testen, Nadeln Platten etc sind vor Ort, Paypal vor Ort is möglich.",
-      "attribute": {
-        "Art": "Weiteres Audio & Hifi",
-        "Versand": "Nur Abholung",
+        "Modell": "iPhone 14",
+        "Farbe": "Blau",
+        "Gerät & Zubehör": "Gerät & Zubehör",
         "Zustand": "Sehr Gut"
       },
       "verkaeufer": {
-        "id": "53710278",
-        "name": "Sim",
+        "id": "166465633",
+        "name": "Dr. D",
         "typ": "PRIVATE",
-        "konto_seit": "2018-02-22",
-        "konto_alter_tage": 3145,
-        "bewertung": 0.9183673469387755,
+        "konto_seit": "2026-09-13",
+        "konto_alter_tage": 21,
+        "bewertung": 1.0,
         "abzeichen": {
           "rating": 2,
-          "friendliness": 1,
-          "reliability": 2
+          "reliability": 1
         },
         "anzahl_anzeigen": 0
       },
@@ -8658,62 +8473,11 @@
         "versand": false,
         "kaeuferschutz": false
       },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2018",
-          "Bewertung 0.92, zuverlaessig",
-          "Abholung moeglich",
-          "6 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3530554643",
-      "watchlist_id": "notverkaeufe",
-      "titel": "G2 PRO ABE NOTVERKAUF",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/g2-pro-abe-notverkauf/3530554643-168-360",
-      "preis": 480.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Mettlach",
-      "plz": "66693",
-      "eingestellt": "2026-10-04T02:47:01+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ec/ec765ad0-591c-46b3-a14f-50e898c50bdb?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6e/6ee6dafe-b58f-4659-b945-367d8aa2acae?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich hatte Flipsky 75100 v2 pro aber möchte ich gern behalten der originale Controller wird mit gegeben<br />Eroller hat komplett Neuen Reifen erst 30km mit dem neuen Reifen insgesamt 500km<br /><br />Eroller is angemeldet<br /><br />Orangen Teile wurden schwarz gefärbt.<br />Paar kleine Kratzer<br />Sonst läuft alles perfekt<br /><br />Ist ein Notverkauf deswegen bitte schnell melden<br /><br />2025 Version.<br /><br />Kann durch ein Aufpreis auch versendet werden.<br /><br /><br />Alle Originale Teile werden mitgegeben",
-      "attribute": {
-        "Versand": "Nur Abholung"
-      },
-      "verkaeufer": {
-        "id": "166780116",
-        "name": "Felijjx",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-09-23",
-        "konto_alter_tage": 10,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 79,
+      "score": 64,
       "signale": {
         "gruen": [
           "Abholung moeglich",
-          "Maengel offengelegt",
-          "Konkrete Angaben zum Geraet"
+          "4 Bilder"
         ],
         "rot": [
           "Konto juenger als 30 Tage"
@@ -8723,37 +8487,41 @@
       }
     },
     {
-      "id": "3530548238",
-      "watchlist_id": "notverkaeufe",
-      "titel": "wohnungssauflösung Küche Wohnzimmer allles !!!",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/wohnungssaufloesung-kueche-wohnzimmer-allles-/3530548238-239-1999",
-      "preis": 1600.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
+      "id": "3531789733",
+      "watchlist_id": "vintage-hifi",
+      "titel": "Accuphase E-305",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/accuphase-e-305/3531789733-172-1748",
+      "preis": 2400.0,
+      "preis_typ": "PLEASE_CONTACT",
       "referenz": null,
       "p_ratio": null,
       "ersparnis_eur": null,
-      "ort": "Castrop-Rauxel",
-      "plz": "44579",
-      "eingestellt": "2026-10-04T01:10:07+02:00",
+      "ort": "Velbert",
+      "plz": "42555",
+      "eingestellt": "2026-10-05T01:24:24+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/69/694b9a35-9dbc-4ed3-a183-69b5566f5698?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f1/f14e26ae-7a63-45f3-896e-7e9dbe8ed726?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b8/b81a799f-49a7-4d38-b17d-6dd430f0115e?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/83/83486c7a-3aa4-4e21-ab73-6cbf8f980cf0?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/92/92fb5598-97c9-47fb-80aa-22c9c9bf7a1d?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9c/9cd733c4-b25a-4bc5-993e-a7a0e5d470d3?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a4/a4ae62a9-9a60-4b33-872d-c2c79966def7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b6/b6249285-6e04-4846-87fb-bb5a9802b218?rule=$_0.JPG"
       ],
-      "beschreibung": "Aufgrund meines Umzugs und Zeitmangels verkaufe ich meine komplette Wohnungseinrichtung nur zusammen. Keine Einzelstücke!<br /><br /><br />Die Möbel sind ca. 2 Jahre alt und insgesamt in einem relativ guten Zustand, mit sehr wenigen Gebrauchsspuren.<br /><br />küche + wohnzimmer + schlafzimmer ( alles )<br /><br />Kleiderschrank mit 3 Türen<br />Ein bequemes Bett und Schreibtisch<br />* 1 Schuhschränke<br />* Kleine Kommode mit Schubladen 3 Monaten alt<br />* 2 Teppiche<br />* TV-Schrank<br />* Couchtisch<br />* Badezimmerspiegel, der gleichzeitig als Schrank genutzt werden kann<br />Eine voll ausgestattete Küche:<br />Esstisch mit 4 Stühle<br />Kühlschrank<br />Backofen<br />Waschmaschine<br />Spülmaschine<br />Mikrowelle<br /><br />Bei Interesse bitte gerne melden<br />Nur Abholung möglich und kein Versand",
+      "beschreibung": "Biete hier meinen Accuphase E-305 Vollverstärker in gepflegtem Zustand zum Kauf an.<br /><br />Ich hatte mir diesen speziell für meinen selbstgebautes Masse-Laufwerk zugelegt, da der E-305 bekannt ist für seinen exzellenten Phonoverstärker, und wobei ich einen MC-Tonabnehmer von Audio-Technica verwendet habe.<br />Ich habe den Verstärker zudem ausschließlich für den Phono-Betrieb, und daher wirklich selten genutzt.<br />Auf dem letztem Bild seht ihr meinen 2-ten ( All-In-One ) Verstärker X35 von Cocktail-Audio, welchen ich für den täglichen Gebrauch nutze,<br />und daneben eine Schalteinheit von Dynavox für die Wahl des Verstärkers.<br /><br />Nur Abholung !<br /><br />Natürlich kann der Verstärker vor Ort ausgiebig getestet werden !<br />Für den Sound-Check habe ich Reverenz-Boxen von TDL aus den 80ern. Es wäre jedoch vorteilhaft wenn ein Kopfhörer mit 6,35 Klinke mitgebracht würde, da ich keinen besitze.<br /><br />Ich gehe davon aus, dass der Käufer sich darüber bewusst ist,<br />dass ich als Privatperson hier letztlich keine Gewährleistung&#x2F;Garantie geben kann, bzw. werde.<br /><br />PS:<br />Ich habe mir die Mühe gemacht den inneren Zustand zu zeigen, welchen ihr auf dem Bild mit demontiertem Deckel erkennen könnt.<br />Beim Kauf packe ich die Bilder, sowie einige Daten ( Prospekte ) auf einen USB-Stick.",
       "attribute": {
-        "Art": "Wohnungsauflösungen"
+        "Art": "Weiteres Audio & Hifi",
+        "Versand": "Nur Abholung",
+        "Zustand": "Sehr Gut"
       },
       "verkaeufer": {
-        "id": "132818087",
-        "name": "Tita",
+        "id": "24474051",
+        "name": "Till Erpenbeck",
         "typ": "PRIVATE",
-        "konto_seit": "2023-08-11",
-        "konto_alter_tage": 1149,
-        "bewertung": 0.2676056338028169,
+        "konto_seit": "2014-09-28",
+        "konto_alter_tage": 4389,
+        "bewertung": 1.0,
         "abzeichen": {
-          "rating": 0
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
         },
         "anzahl_anzeigen": 0
       },
@@ -8762,16 +8530,15 @@
         "versand": false,
         "kaeuferschutz": false
       },
-      "score": 84,
+      "score": 82,
       "signale": {
         "gruen": [
-          "Konto seit 2023",
+          "Konto seit 2014",
           "Abholung moeglich",
-          "12 Bilder",
-          "Maengel offengelegt"
+          "14 Bilder"
         ],
         "rot": [
-          "Bewertung 0.27"
+          "Gewerbetext auf Privatprofil"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
