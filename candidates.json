@@ -1,24 +1,27 @@
 {
-  "generiert": "2026-10-14T05:02:34+02:00",
+  "generiert": "2026-10-14T12:14:58+02:00",
   "zeitraum": {
-    "von": "2026-10-13T23:42:23+02:00",
-    "bis": "2026-10-14T04:42:23+02:00"
+    "von": "2026-10-14T06:08:20+02:00",
+    "bis": "2026-10-14T11:08:20+02:00"
   },
   "statistik": {
-    "gesichtet": 27239,
-    "nach_modellmatch": 288,
-    "nach_vorfilter": 288,
-    "nach_preisschwelle": 18,
-    "nach_scoring": 11,
+    "gesichtet": 159578,
+    "nach_modellmatch": 1395,
+    "nach_vorfilter": 1391,
+    "nach_preisschwelle": 100,
+    "nach_scoring": 71,
     "ausschluesse": {
-      "score_zu_niedrig": 6,
-      "messenger": 1
+      "score_zu_niedrig": 19,
+      "externer_link": 1,
+      "preis_unplausibel": 7,
+      "messenger": 2
     },
-    "pool": 24711,
-    "ohne_referenz_verworfen": 111,
+    "pool": 157053,
+    "ohne_referenz_verworfen": 424,
+    "referenz_gekappt": 598,
     "doppelt_zusammengefasst": 1,
-    "requests": 815,
-    "laufzeit_sekunden": 1210
+    "requests": 2833,
+    "laufzeit_sekunden": 3997
   },
   "kandidaten": [
     {
@@ -136,6 +139,232 @@
           "Konto seit 2023",
           "Kaeuferschutz verfuegbar",
           "6 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540484751",
+      "watchlist_id": "tesla",
+      "titel": "Tesla Model 3",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/tesla-model-3/3540484751-216-20191",
+      "preis": 15000.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 23849.55,
+        "p25": 22490.0,
+        "n": 84,
+        "query": "Tesla Model 3",
+        "korrektur": 0.1,
+        "streuung": 1.33,
+        "belastbar": true
+      },
+      "p_ratio": 0.629,
+      "ersparnis_eur": 8849.55,
+      "ort": "Amelinghausen",
+      "plz": "21385",
+      "eingestellt": "2026-10-14T10:05:39+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bb/bba79c53-4040-41f9-be2f-5989d270770a?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0c/0ccf1dd3-9ff8-4052-b381-8b31682a124f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ac/ac094089-48a2-45ec-bd12-54217e27577f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/89/8983c5e1-e536-4d29-90a6-f8f757926bd7?rule=$_0.JPG"
+      ],
+      "beschreibung": "Tesla Model 3 bj 2023 das Auto fährt einwandfrei. Nur Karosserie Schaden das Auto lädt noch ist in einem top Zustand für seine Verhältnisse. Keine Airbags ausgelöst 155.000 km gelaufen. Bei Interesse gerne melden. Der Preis ist verhandelbar und basiert auf den Restwert von dem Gutachten.",
+      "attribute": {
+        "Marke": "Tesla",
+        "Modell": "Model 3",
+        "Kilometerstand": "155.000",
+        "Fahrzeugzustand": "Beschädigtes Fahrzeug",
+        "Erstzulassung": "März 2023"
+      },
+      "verkaeufer": {
+        "id": "165566644",
+        "name": "Adi24",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-08-13",
+        "konto_alter_tage": 62,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 86,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "5 Bilder",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540431037",
+      "watchlist_id": "youngtimer-alltag",
+      "titel": "BMW 316i E30",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/bmw-316i-e30/3540431037-216-4544",
+      "preis": 5000.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 8099.1,
+        "p25": 6000.0,
+        "n": 73,
+        "query": "BMW 316i E30",
+        "korrektur": 0.1,
+        "streuung": 1.83,
+        "belastbar": true
+      },
+      "p_ratio": 0.617,
+      "ersparnis_eur": 3099.1,
+      "ort": "Bad Soden am Taunus",
+      "plz": "65812",
+      "eingestellt": "2026-10-14T09:05:04+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/17/1728be57-d0d8-45b5-85a3-3af90669bf1a?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ce/ce0cbd48-5ae9-4ace-83d7-0d8622900604?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b2/b21cbac2-4150-4edd-ad2c-7fab5c0cce6a?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4b/4b5e0bbb-7a59-480b-8745-7aeff321425d?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zu verkaufen ist dieser 316i E30 im original Zustand.<br /><br />Der BMW war erst kurz ein Vorführwagen bei BMW und war dann lange in dem Besitz von einem älteren Herren. Dort stand der BMW immer in eine klimatisierten Garage und wurde gut gepflegt.<br />Danach ging der BMW dann in die Hände des nächsten Besitzers über, der den ihn auch ca. 15 Jahre Jahre ab und zu gefahren ist.<br /><br />Technisch steht das Auto super da, wurde allerdings in den letzten Jahren kaum mehr bewegt.<br /><br />Optisch hat das Auto mittlerweile ein paar Mängel, die aber für geübte Hände kein riesen Problem darstellen sollten und neue Reifen sollte er bekommen, da er auf älteren Winterreifen in der Garage steht.<br /><br />Das Auto ist noch angemeldet, allerdings ist der TÜV aktuell abgelaufen. Für mich steht einem neuen TÜV nichts im Wege!",
+      "attribute": {
+        "Marke": "BMW",
+        "Modell": "316",
+        "Kilometerstand": "220.000",
+        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
+        "Erstzulassung": "Mai 1986",
+        "Kraftstoffart": "Benzin",
+        "Leistung": "90",
+        "Getriebe": "Manuell",
+        "Anzahl Türen": "2/3",
+        "HU bis": "September 2026",
+        "Außenfarbe": "Grau",
+        "Material Innenausstattung": "Stoff",
+        "Radio/Tuner": "true",
+        "Nichtraucher-Fahrzeug": "true"
+      },
+      "verkaeufer": {
+        "id": "50765845",
+        "name": "Fabian Peter",
+        "typ": "PRIVATE",
+        "konto_seit": "2017-10-10",
+        "konto_alter_tage": 3290,
+        "bewertung": 0.8166666666666667,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 84,
+      "signale": {
+        "gruen": [
+          "Konto seit 2017",
+          "Abholung moeglich",
+          "7 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.82"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540498560",
+      "watchlist_id": "youngtimer-alltag",
+      "titel": "Mercedes Benz W124 E220",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/mercedes-benz-w124-e220/3540498560-216-7656",
+      "preis": 4000.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 6750.0,
+        "p25": 4500.0,
+        "n": 35,
+        "query": "Mercedes Benz W124 E220",
+        "korrektur": 0.1,
+        "streuung": 2.33,
+        "belastbar": true
+      },
+      "p_ratio": 0.593,
+      "ersparnis_eur": 2750.0,
+      "ort": "Regensburg",
+      "plz": "93053",
+      "eingestellt": "2026-10-14T10:25:06+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c5/c54b10c2-90f6-4b80-805d-642a9fc7eb9a?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c3/c3f0cda7-7997-4bb8-94ec-3a463911cd1b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8b/8b31acb6-a6c9-4fef-987e-5f9837b6c119?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/26/2674c04e-32c0-4ba9-9f2e-9ae4ee8ca3d1?rule=$_0.JPG"
+      ],
+      "beschreibung": "Grüß Gott,<br />überlege meinen treuen 124er zu verkaufen.<br />Das Fahrzeug ist aktuell in dritter Hand bei mir und wurde von mir über vier Jahre gefahren und hat mich nie im Stich gelassen.<br />Ich möchte auf einen jungen gebrauchten umsteigen, da ab nächstem Jahr ein neuer Job tägliches Autofahren voraussetzt.<br />Bei Fragen bitte einfach schreiben.<br />Rost an Kotflügeln und Heckklappe.<br />Der Unterboden ist aufgrund der Konservierung rostarm.<br />Klima, Wischwasserdüsen und Antenne ohne Funktion.",
+      "attribute": {
+        "Marke": "Mercedes Benz",
+        "Modell": "E 220",
+        "Kilometerstand": "288.000",
+        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
+        "Erstzulassung": "Dezember 1994",
+        "Kraftstoffart": "Benzin",
+        "Leistung": "150",
+        "Getriebe": "Manuell",
+        "Fahrzeugtyp": "Limousine",
+        "Anzahl Türen": "4/5",
+        "HU bis": "September 2026",
+        "Umweltplakette": "4 (Grün)",
+        "Schadstoffklasse": "Euro2",
+        "Außenfarbe": "Blau",
+        "Material Innenausstattung": "Stoff",
+        "Anhängerkupplung": "true",
+        "Leichtmetallfelgen": "true",
+        "Klimaanlage": "true",
+        "Radio/Tuner": "true",
+        "Bluetooth": "true",
+        "Freisprecheinrichtung": "true",
+        "Schiebedach/Panoramadach": "true",
+        "Nichtraucher-Fahrzeug": "true",
+        "Antiblockiersystem (ABS)": "true"
+      },
+      "verkaeufer": {
+        "id": "79842913",
+        "name": "Fabian Gerlach",
+        "typ": "PRIVATE",
+        "konto_seit": "2020-11-10",
+        "konto_alter_tage": 2163,
+        "bewertung": 0.8846153846153846,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 94,
+      "signale": {
+        "gruen": [
+          "Konto seit 2020",
+          "Abholung moeglich",
+          "19 Bilder"
         ],
         "rot": [],
         "unkenntnis_bonus": false,
@@ -281,6 +510,220 @@
         ],
         "rot": [
           "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540528896",
+      "watchlist_id": "youngtimer-alltag",
+      "titel": "Mercedes W124 / E 200",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/mercedes-w124-e-200/3540528896-216-2226",
+      "preis": 2500.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 4950.0,
+        "p25": 3990.0,
+        "n": 86,
+        "query": "Mercedes W124 200",
+        "korrektur": 0.1,
+        "streuung": 1.88,
+        "belastbar": true
+      },
+      "p_ratio": 0.505,
+      "ersparnis_eur": 2450.0,
+      "ort": "Bernburg (Saale)",
+      "plz": "06406",
+      "eingestellt": "2026-10-14T10:55:05+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b4/b4314c10-adfb-42d9-9c20-2ce9e8659f65?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bf/bf938a07-863e-4b78-a122-2728d4c30947?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d9/d9f056d3-57c3-4bd4-a944-8c318debcd22?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d9/d9f6b276-f380-409f-8db9-eb7f7a474f96?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe meinen Mercedes W124 200E.<br />Habe den Wagen 1,5 Jahre gefahren, der letzte TÜV war Anfang 2024 abgelaufen. Steht nun schon ein paar Monate. Wurde aber dennoch immer mal laufen gelassen und bewegt. Wegen Umzug und Jobwechsel gebe ich ihn im jetzigen Zustand ab.<br />Er springt gut an, Motor läuft sauber und leise.<br />​Erneuerte Teile der letzten Monate: 4x Stoßdämpfer, 4x Federn, Querlenker hinten komplett, neuer Endschalldämpfer (frisch aus der Werkstatt). Bei der Durchsicht wurden keine Schweißarbeiten festgestellt.<br />​Für den TÜV (H-Gutachten) wäre noch zu erledigen: Bremse hinten erneuern&#x2F;reinigen (Standzeit), Querlenkerbuchsen vorne tauschen, Bremsleitungen reinigen.<br />​Das elektrische Schiebedach fährt auf&#x2F;zu (Hubfunktion ohne Funktion), abnehmbare Oris-Anhängerkupplung montiert (Schlüssel fehlt), altersgemäße Gebrauchsspuren wie Kratzer&#x2F;Lackmängel, Beule in der Fahrertür (passende Ersatz-Fahrertür liegt bei), Sommer und Winterreifenauf Alufelgen, wobei die originalen &quot;Gullideckel&quot; überarbeitet&#x2F;lacliert werden sollten.<br />​Bei Interesse einfach melden!<br />​Privatverkauf ohne Gewährleistung, Garantie oder Rücknahme.",
+      "attribute": {
+        "Marke": "Mercedes Benz",
+        "Modell": "E 200",
+        "Kilometerstand": "200.000",
+        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
+        "Erstzulassung": "April 1989",
+        "Kraftstoffart": "Benzin",
+        "Leistung": "118",
+        "Getriebe": "Manuell",
+        "Fahrzeugtyp": "Limousine",
+        "Anzahl Türen": "4/5",
+        "Außenfarbe": "Schwarz",
+        "Material Innenausstattung": "Stoff",
+        "Anhängerkupplung": "true",
+        "Leichtmetallfelgen": "true",
+        "Radio/Tuner": "true",
+        "Schiebedach/Panoramadach": "true",
+        "Antiblockiersystem (ABS)": "true"
+      },
+      "verkaeufer": {
+        "id": "51329035",
+        "name": "R.B.",
+        "typ": "PRIVATE",
+        "konto_seit": "2017-11-03",
+        "konto_alter_tage": 3266,
+        "bewertung": 0.5238095238095238,
+        "abzeichen": {
+          "rating": 1,
+          "friendliness": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 87,
+      "signale": {
+        "gruen": [
+          "Konto seit 2017",
+          "Abholung moeglich",
+          "10 Bilder",
+          "Maengel offengelegt",
+          "Preisbegruendung genannt"
+        ],
+        "rot": [
+          "Bewertung 0.52",
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540441025",
+      "watchlist_id": "ebike-rad",
+      "titel": "Riese & Müller Roadster E-Bike Enviolo Schaltung",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/riese-mueller-roadster-e-bike-enviolo-schaltung/3540441025-217-16945",
+      "preis": 1350.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 3380.0,
+        "p25": 2500.0,
+        "n": 93,
+        "query": "Riese Müller Roadster",
+        "korrektur": 0.0,
+        "streuung": 1.54,
+        "belastbar": true
+      },
+      "p_ratio": 0.399,
+      "ersparnis_eur": 2030.0,
+      "ort": "Rednitzhembach",
+      "plz": "91126",
+      "eingestellt": "2026-10-14T09:11:10+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f7/f76841da-e89c-4f80-a7d5-2eba51cac6f0?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d1/d17c4aa4-0eb2-46da-9522-7388829a92f4?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5a/5adfc5b0-ca23-4be6-a549-4afe75af2a3d?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/98/9806ab44-1e0e-4a06-9e7f-4c01edcabfcb?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein gepflegtes Riese & Müller Roadster E-Bike, das mir treue Dienste geleistet hat. Es ist ein zuverlässiger Begleiter für den Alltag und längere Touren.<br /><br />- Modell: Riese & Müller Roadster<br />- Schaltung: Enviolo Nabenschaltung<br />- Beleuchtung: Supernova Scheinwerfer<br />- Laufleistung: 10.000 km<br />- Farbe: Mattgrau<br />-625wh Akku<br />- Inklusive Gepäckträger und Schutzblechen<br /><br />Das Fahrrad befindet sich in einem guten Zustand und wurde stets pfleglich behandelt. Die Enviolo-Schaltung ermöglicht ein stufenloses und komfortables Schalten, während das Supernova-Licht für eine hervorragende Ausleuchtung sorgt. Es sind normale Gebrauchsspuren vorhanden, die bei der Laufleistung üblich sind.<br /><br />Schreib mir gerne, falls du weitere Fragen hast.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Elektrofahrräder",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "162486199",
+        "name": "Adrian",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-05-01",
+        "konto_alter_tage": 166,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 81,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "4 Bilder",
+          "Maengel offengelegt",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate",
+          "Preis nur 40% des Marktwerts"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540493349",
+      "watchlist_id": "werkzeug-maschinen",
+      "titel": "CNC Fräsmaschine",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cnc-fraesmaschine/3540493349-84-2654",
+      "preis": 1590.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 3500.0,
+        "p25": 800.0,
+        "n": 76,
+        "query": "CNC Fräsmaschine",
+        "korrektur": 0.0,
+        "streuung": 12.38,
+        "belastbar": false
+      },
+      "p_ratio": 0.454,
+      "ersparnis_eur": 1910.0,
+      "ort": "Worpswede",
+      "plz": "27726",
+      "eingestellt": "2026-10-14T10:13:27+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d3/d3f325d4-6fe3-460c-9c10-895e1f7e0edc?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b5/b5479a54-6764-4d9a-ace3-a7334c961fce?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1f/1fdfaa6f-7469-4c3c-95f6-f7b1feb0b58a?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d1/d1387520-084b-4e92-b704-4d542ea79cc5?rule=$_0.JPG"
+      ],
+      "beschreibung": "Biete hier diese Profi CNC Fräs und Graviermaschine an.<br /><br />Die Flecken sind nur leichte Verschmutzungen und das kann leicht gereinigt werden.<br /><br />Komplett incl. Mach3 Steuerung und PC und alles was man sonst so braucht.<br /><br />Verfahrweg ca 40 x 40 cm<br /><br />Dies ist eine Profi Maschine mit der auch allerfeinste Gravuren gefertigt werden können.<br />Unheimlich stabil und genauigkeit!<br /><br />So lange online, so lange auch da.<br /><br />Kein Versand !<br />Abholung oder Lieferung",
+      "attribute": {
+        "Versand": "Nur Abholung",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "146589145",
+        "name": "privat",
+        "typ": "PRIVATE",
+        "konto_seit": "2024-11-30",
+        "konto_alter_tage": 682,
+        "bewertung": 0.7386363636363636,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 72,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "9 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.74"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -1098,6 +1541,71 @@
       }
     },
     {
+      "id": "3540434138",
+      "watchlist_id": "musikinstrumente",
+      "titel": "Gibson Les Paul Studio 2008, Natural/Worn - reparierter Hals",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-les-paul-studio-2008-natural-worn-reparierter-hals/3540434138-74-4823",
+      "preis": 690.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1874.5,
+        "p25": 1000.0,
+        "n": 14,
+        "query": "Gibson Les Paul 2008",
+        "korrektur": 0.0,
+        "streuung": 4.0,
+        "belastbar": false
+      },
+      "p_ratio": 0.368,
+      "ersparnis_eur": 1184.5,
+      "ort": "Seligenstadt",
+      "plz": "63500",
+      "eingestellt": "2026-10-14T09:00:37+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c1/c1846685-e377-4dbc-a536-2d6ef758cdad?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c7/c7aa75a6-08f0-4b0c-8ded-51f576169aa1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/39/390c16ec-945c-4c2d-92e0-c8d0c44d18d1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/29/290a90e2-af2d-4c9f-8875-3a73555551be?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe meine Gibson Les Paul Studio aus dem Jahr 2008 in natürlicher Holzoptik.<br /><br />Die Gitarre hat über die Jahre einen sehr schönen, individuellen Charakter entwickelt. Sie weist deutliche Gebrauchsspuren auf, insbesondere auf der Rückseite. Die Optik ist entsprechend nicht neuwertig – wer eine makellose Sammlergitarre sucht, ist hier nicht richtig. Wer dagegen ein echtes Spielerinstrument mit Charakter sucht, könnte hier genau das Richtige finden.<br /><br />Wichtige Informationen zum Zustand<br /><br />Der Hals der Gitarre war in der Vergangenheit einmal gerissen und wurde anschließend fachmännisch von einem Gitarrenbauer repariert.<br /><br />Der reparierte Bereich ist sichtbar. Ich möchte das ausdrücklich transparent angeben, damit der Käufer genau weiß, was er bekommt.<br /><br />Nach der Reparatur war die Gitarre problemlos spielbar. Spielbarkeit und Klang waren durch die Reparatur aus meiner Erfahrung nicht beeinträchtigt. Die Gitarre steht allerdings seit ungefähr zehn Jahren überwiegend als Dekoration im Wohnzimmer und wurde in dieser Zeit kaum bzw. nicht regelmäßig gespielt.<br /><br />Ausstattung<br /><br />* Gibson Les Paul Studio<br />* Baujahr: 2008<br />* natürliche Holzoptik &#x2F; Natural-Worn-Look<br />* deutliche Gebrauchsspuren vorhanden<br />* fachmännisch reparierter Halsbruch<br />* Gitarrenkoffer ist vorhanden und wird mitgegeben<br /><br />Warum ich sie verkaufe<br /><br />Die Gitarre hat mich viele Jahre begleitet und ist eigentlich vi",
+      "attribute": {
+        "Versand": "Nur Abholung",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "24873060",
+        "name": "Kevin Wolf",
+        "typ": "PRIVATE",
+        "konto_seit": "2014-10-11",
+        "konto_alter_tage": 4385,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 89,
+      "signale": {
+        "gruen": [
+          "Konto seit 2014",
+          "Abholung moeglich",
+          "12 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Preis nur 37% des Marktwerts"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3540017865",
       "watchlist_id": "musikinstrumente",
       "titel": "Gibson Les paul Studio worn brown",
@@ -1289,33 +1797,163 @@
       }
     },
     {
-      "id": "3539472333",
+      "id": "3540414390",
       "watchlist_id": "ebike-rad",
-      "titel": "Fully Cube Stereo Pro 120 Größe S",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/fully-cube-stereo-pro-120-groesse-s/3539472333-217-5780",
-      "preis": 1150.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
+      "titel": "Simplon Kagu Bosch CX • Damen und Herren geeignet",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/simplon-kagu-bosch-cx-damen-und-herren-geeignet/3540414390-217-2040",
+      "preis": 1399.0,
+      "preis_typ": "PLEASE_CONTACT",
       "referenz": {
-        "median": 2200.0,
-        "p25": 1249.0,
-        "n": 99,
-        "query": "Fully Cube Stereo 120",
+        "median": 2499.0,
+        "p25": 1800.0,
+        "n": 19,
+        "query": "Simplon Kagu Bosch",
         "korrektur": 0.0,
-        "streuung": 2.24,
+        "streuung": 2.17,
         "belastbar": true
       },
-      "p_ratio": 0.523,
-      "ersparnis_eur": 1050.0,
-      "ort": "Kallmünz",
-      "plz": "93183",
-      "eingestellt": "2026-10-13T05:54:36+02:00",
+      "p_ratio": 0.56,
+      "ersparnis_eur": 1100.0,
+      "ort": "Essen-Kettwig",
+      "plz": "45219",
+      "eingestellt": "2026-10-14T08:27:40+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/09/0924c8ed-8857-4236-b9c2-611502ab193a?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/25/25b2e27a-d901-424c-a227-e52bb5f6879e?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1b/1bdab264-e205-4a52-88dc-acd3e6a0a0f5?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f8/f8c37c10-e717-42a7-8c3d-40e3e6a07400?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/68/68b10c25-7cb0-4881-9988-1ef871352df7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/12/1271a206-57d4-4c6c-951c-2692587443f5?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fb/fbd83507-0635-4c0f-acb7-d3411c3693ca?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f8/f88ad5d8-9486-4ca0-a0a7-4dc1fe43b29a?rule=$_0.JPG"
       ],
-      "beschreibung": "Cube Fully Stereo Pro 120 Größe S<br /><br />Empfohlene Körpergröße 155- 172cm<br /><br />Das Stereo 120 Pro setzt im Trail Einsatz neue Maßstäbe in puncto Komfort, Kontrolle und Agilität. Wie es das macht?<br />Zunächst mit seiner RockShox Judy Silver Luftfederkabel und dem Manitou Radium Expert Luftdämpfer, die sämtliche Buckel und Löcher glattbügeln wie nichts.<br />Souveräne Bremsmanöver und Geschwindigkeitskontrolle sind das Spezialgebiet der leistungsstarken hydraulischen MT Thirty Scheibenbremsen von Magura in Kombination mit supergriffigen Schwalbe Reifen.<br />Verfügt ausserdem wegen ihres weiten Übersetzungsbereichs und einfachen Handlings über eine Stam NX Eagle 1x12 Schaltung damit klickt man sich auf dem Trail supergeschmeidig von Gang zu Gang.<br />Sattelstütze absenkbar<br /><br />Hersteller Cube<br />Federungsart Vollfederung<br />Rahmenmaterial Alu<br />Anzahl der Gänge 12 Gang<br />Farbe Hellgrau &#x2F; Orange<br />Reifengröße 29Zoll",
+      "beschreibung": "Letzte Preis-Anfragen werden ignoriert.<br />Kein Notverkauf.<br />Das Rad wird nicht zum Schleuderpreis verkauft.<br /><br />Verkauft wird ein sehr gepflegtes, verkehrstaugliches Simplon Kagu Bosch CX.<br /><br />Kein Wartungstau. Jährlicher Service in der Fachwerkstatt, zuletzt im März 2025.<br /><br />Kleinere Lackkratzer sind vorhanden. Das Rad ist ja auch schon 3 Jahre im Gebrauch.<br /><br />Modelljahr 2022<br /><br />Pearlwhite Glossy&#x2F; Black Glossy<br /><br />Fahrradgröße XS<br /><br />Akkukapazität 625 Wh<br /><br />Drehmoment am Antrieb max. 75Nm<br /><br />Hoher Neupreis 5.568,95 €<br /><br />Schwerlast geeignet.<br /><br />Betriebsanleitung, div. Aufkleber und Rechnung vorhanden.<br /><br />Die Fotos sind Teil der Beschreibung – auf Wunsch können wir gerne weitere Fotos zur Verfügung stellen.<br /><br />Farb- und Detailabweichungen zwischen Foto und Original sind fototechnisch bedingt möglich.<br /><br />Falls Ihr Fragen habt oder weitere Fotos wünscht, meldet Euch einfach bei mir!<br /><br />Privatverkauf – daher keine Garantie sowie Gewährleistung&#x2F;Rückgabe.<br /><br />Ich bin kein Händler, sondern nach BGB eine Privatperson und schließe hiermit die nach neuem EU-Recht vorgeschriebene Gewährleistung und Umtauschrecht von einem Jahr auf alle hier angebotenen Produkte aus. Markennamen sind gesetzlich geschützt und der hier genannte Markenname dient lediglich der Artikelbezeichnung.",
+      "attribute": {
+        "Art": "Damen",
+        "Versand": "Nur Abholung",
+        "Typ": "Elektrofahrräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "71097314",
+        "name": "Testfahrer",
+        "typ": "PRIVATE",
+        "konto_seit": "2020-01-05",
+        "konto_alter_tage": 2473,
+        "bewertung": 0.773109243697479,
+        "abzeichen": {
+          "rating": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 84,
+      "signale": {
+        "gruen": [
+          "Konto seit 2020",
+          "Abholung moeglich",
+          "4 Bilder",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Bewertung 0.77",
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540481911",
+      "watchlist_id": "ebike-rad",
+      "titel": "KTM Macina Sport Pro Trekking E-Bike",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/ktm-macina-sport-pro-trekking-e-bike/3540481911-217-1399",
+      "preis": 1200.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 2299.0,
+        "p25": 2099.0,
+        "n": 78,
+        "query": "KTM Macina Sport",
+        "korrektur": 0.0,
+        "streuung": 1.14,
+        "belastbar": true
+      },
+      "p_ratio": 0.522,
+      "ersparnis_eur": 1099.0,
+      "ort": "Rheinberg",
+      "plz": "47495",
+      "eingestellt": "2026-10-14T10:01:14+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/50/5068146c-80f7-4ff9-9668-4c156bdce80b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0d/0d4de5bc-410b-418b-ae9b-037f24f3872e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c7/c7951f53-9d31-458b-a2f8-80e3c01d798f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/36/367933ab-581f-4c7d-bd8d-6050ca8153d8?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe umständehalber mein KTM Trekking E-Bike.<br />Das Rad wurde kaum benutzt und hat erst 1500km auf dem Tacho.<br />Es ist sogar noch die Original Schutzfolie auf dem Display.<br />Nachgerüstet wurde eine gefederte Sattelstütze.<br />Die Original Sattelstütze ist vorhanden.<br />Originalrechnung ist vorhanden.<br />Spezifikationen:<br />Größe: L<br />Batteriekapazität: 625 Wh<br />Batterie entfernbar: Ja<br />Motor: Bosch Performance Line CX<br /><br />Eine Besichtigung und Probefahrt sind nach Absprache gerne möglich. Der Verkauf erfolgt ausschließlich an Selbstabholer.<br /><br />Bitte nur realistische Anfragen. Der Preis ist dem guten Zustand, der geringen Laufleistung, der vorhandenen Rechnung und dem Zubehör entsprechend angesetzt.<br /><br />Zahlung bevorzugt per Echtzeitüberweisung bei Abholung. Alternativ ist Barzahlung nach vorheriger Absprache möglich. Die Übergabe erfolgt erst nach vollständigem Zahlungseingang bzw. erfolgreicher Prüfung der Zahlung.<br /><br />Privatverkauf unter Ausschluss jeglicher Sachmängelhaftung. Keine Rücknahme",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Elektrofahrräder",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "74644226",
+        "name": "Steffen",
+        "typ": "PRIVATE",
+        "konto_seit": "2020-05-09",
+        "konto_alter_tage": 2348,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2020",
+          "Abholung moeglich",
+          "5 Bilder",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540414304",
+      "watchlist_id": "ebike-rad",
+      "titel": "Cube Mountainbike Größe L neuwertig",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-mountainbike-groesse-l-neuwertig/3540414304-217-8272",
+      "preis": 470.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1499.0,
+        "p25": 450.0,
+        "n": 94,
+        "query": "Cube Mountainbike Größe",
+        "korrektur": 0.0,
+        "streuung": 5.11,
+        "belastbar": false
+      },
+      "p_ratio": 0.314,
+      "ersparnis_eur": 1029.0,
+      "ort": "Berg",
+      "plz": "88276",
+      "eingestellt": "2026-10-14T08:27:30+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/36/36ca9fab-4240-434e-9992-a4dfdf76c93e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/46/46ba2d66-8231-42cf-9819-101ad4c8913c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/90/90fe7ecf-e220-44bf-a103-26da3e55ee6e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ce/ceead9db-cc84-4cef-93a9-26912ce0916b?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein fast neues Mountainbike der Marke Cube in der Rahmengröße L. Das Rad ist erst drei Monate alt und wurde bisher nur etwa 20 Kilometer gefahren, weshalb es sich in einem neuwertigen Zustand befindet.<br /><br />- Rahmengröße: L<br />- Farbe: Anthrazit&#x2F;Grau<br />- Inklusive Schutzblech<br />- Inklusive Lichtanlage<br />- Bereifung: Schwalbe Smart Sam<br />- Stabiler Seitenständer montiert<br /><br />Das Bike ist sehr gepflegt und weist keine Gebrauchsspuren auf. Es eignet sich hervorragend für entspannte Touren oder den täglichen Weg. Melde dich gerne bei mir, wenn du Fragen hast oder eine Probefahrt machen möchtest.<br /><br />NEUPREIS 650 EURO<br /><br />Rechnung liegt vor",
       "attribute": {
         "Art": "Herren",
         "Versand": "Nur Abholung",
@@ -1323,12 +1961,12 @@
         "Zustand": "Sehr Gut"
       },
       "verkaeufer": {
-        "id": "87852274",
-        "name": "privat",
+        "id": "3559744",
+        "name": "Privat",
         "typ": "PRIVATE",
-        "konto_seit": "2021-08-29",
-        "konto_alter_tage": 1870,
-        "bewertung": 0.8285714285714286,
+        "konto_seit": "2010-10-24",
+        "konto_alter_tage": 5833,
+        "bewertung": 0.8636363636363636,
         "abzeichen": {
           "rating": 2,
           "friendliness": 1,
@@ -1341,15 +1979,16 @@
         "versand": false,
         "kaeuferschutz": false
       },
-      "score": 84,
+      "score": 89,
       "signale": {
         "gruen": [
-          "Konto seit 2021",
+          "Konto seit 2010",
           "Abholung moeglich",
-          "9 Bilder"
+          "9 Bilder",
+          "Maengel offengelegt"
         ],
         "rot": [
-          "Bewertung 0.83"
+          "Preis nur 31% des Marktwerts"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -1620,6 +2259,143 @@
       }
     },
     {
+      "id": "3540490203",
+      "watchlist_id": "ebike-rad",
+      "titel": "Haibike Trekking 8 E-Bike Herren",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/haibike-trekking-8-e-bike-herren/3540490203-217-5781",
+      "preis": 1250.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 2199.0,
+        "p25": 1789.0,
+        "n": 59,
+        "query": "Haibike Trekking Bike 8",
+        "korrektur": 0.0,
+        "streuung": 1.64,
+        "belastbar": true
+      },
+      "p_ratio": 0.568,
+      "ersparnis_eur": 949.0,
+      "ort": "Regenstauf",
+      "plz": "93128",
+      "eingestellt": "2026-10-14T10:10:16+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/12/123c3c92-59b9-471a-bf7e-fe367b71e53a?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/da/da35e365-8e2a-4f73-94f3-70dc280d0b58?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/64/647e7636-de79-47bf-8e62-53edc2882b03?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein zuverlässiges Haibike Trekking E-Bike in einem schönen Dunkelblau. Es ist ideal für längere Touren oder den täglichen Weg zur Arbeit geeignet.<br /><br />- Marke: Haibike<br />- Modelltyp: Trekking<br />- Motor: Bosch System<br />- Bereifung: Schwalbe Al Grounder<br />- Ausstattung: Gepäckträger und Schutzbleche inklusive<br />- Federgabel für hohen Fahrkomfort<br /><br />Das Fahrrad ist sehr stabil gebaut und bietet durch die hochwertige Ausstattung ein angenehmes Fahrgefühl. Es befindet sich in einem sehr guten Zustand und wurde stets pfleglich behandelt. Bei Interesse oder weiteren Fragen schreib mir gerne eine Nachricht.<br />Kleinere Kratzen vorhanden<br /><br />Keine Rücknahme oder Gewährleistung&#x2F;Garantie<br /><br />Kann gerne besichtigt werden.<br /><br />Ca. 2,5 Jahre alt. Nur ca. 1000km gefahren.<br /><br />Neupreis 3300€<br /><br />Realistische Preisvorstellungen können gerne unterbreitet werden.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "ab 0,99",
+        "Typ": "Elektrofahrräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "15089079",
+        "name": "Marco",
+        "typ": "PRIVATE",
+        "konto_seit": "2013-05-18",
+        "konto_alter_tage": 4896,
+        "bewertung": 0.8333333333333334,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 70,
+      "signale": {
+        "gruen": [
+          "Konto seit 2013",
+          "Kaeuferschutz verfuegbar",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Bewertung 0.83",
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540474363",
+      "watchlist_id": "youngtimer-alltag",
+      "titel": "BMW E36 316i",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/bmw-e36-316i/3540474363-216-4751",
+      "preis": 2000.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 2902.05,
+        "p25": 1999.0,
+        "n": 94,
+        "query": "BMW E36 316i",
+        "korrektur": 0.1,
+        "streuung": 2.25,
+        "belastbar": true
+      },
+      "p_ratio": 0.689,
+      "ersparnis_eur": 902.05,
+      "ort": "Fritzlar",
+      "plz": "34560",
+      "eingestellt": "2026-10-14T10:00:06+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d7/d7b87088-b995-4c7d-8ab7-b0f165bd4752?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/79/79ebcb9b-3ee4-482d-a958-270bc2a1ade4?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b4/b4ea7d87-75b7-48b4-80c1-56cc4ee9bc10?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ff/ffd7851b-2231-48dd-a5a0-f3a74458cac2?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe hier meinen BMW E36 316i Compact.<br /><br />Der BMW steht optisch schön da und ist mit seiner sportlichen Optik ein echter Hingucker.<br /><br />Ausstattung & Details:<br /><br />* 1.6-Liter-Benziner<br />* Schaltgetriebe<br />* Ca. 285.000 km Laufleistung<br />* Noch ca. 1 Jahr TÜV<br />* Blau-schwarze Teillederausstattung<br />* Sitzheizung<br />* Alufelgen<br />* Original BMW Bavaria Radio<br />* Blue Line Sportfahrwerk (eingetragen)<br />* Sportauspuff mit ABE<br /><br />Zustand & Fahrverhalten:<br /><br />Der Motor läuft sehr schön, ruhig und sauber. Trotz seiner Laufleistung läuft der BMW wirklich gut.<br /><br />Durch das eingetragene Blue Line Sportfahrwerk hat der BMW ein sehr sportliches und direktes Fahrverhalten. Er liegt satt und stabil auf der Straße, fast wie ein Brett, und macht besonders in Kurven richtig Spaß.<br /><br />Die vorderen Kotflügel wurden bereits erneuert und die hinteren Radläufe wurden schon ausgebessert.<br /><br />An der Wagenheberaufnahme ist ganz leichter Rost vorhanden, allerdings nichts Auffälliges. Dem Alter entsprechend sind normale Gebrauchsspuren vorhanden.<br /><br />Bei Fragen oder Interesse gerne melden. Besichtigung und Probefahrt nach Absprache möglich.<br /><br />Privatverkauf unter Ausschluss der Sachmängelhaftung.",
+      "attribute": {
+        "Marke": "BMW",
+        "Modell": "Weitere 3er",
+        "Kilometerstand": "285.000",
+        "Fahrzeugzustand": "Unbeschädigtes Fahrzeug",
+        "Erstzulassung": "September 1996",
+        "Kraftstoffart": "Benzin"
+      },
+      "verkaeufer": {
+        "id": "15559317",
+        "name": "Tanja",
+        "typ": "PRIVATE",
+        "konto_seit": "2013-06-15",
+        "konto_alter_tage": 4869,
+        "bewertung": 0.9230769230769231,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2013",
+          "Bewertung 0.92, zuverlaessig",
+          "Abholung moeglich",
+          "5 Bilder",
+          "Maengel offengelegt",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3539741608",
       "watchlist_id": "macbook",
       "titel": "Macbook Pro M3 16 GB RAM",
@@ -1834,6 +2610,71 @@
       }
     },
     {
+      "id": "3540390824",
+      "watchlist_id": "ebike-rad",
+      "titel": "Brompton Rad",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/brompton-rad/3540390824-217-29984",
+      "preis": 850.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1690.0,
+        "p25": 999.0,
+        "n": 37,
+        "query": "Brompton Rad",
+        "korrektur": 0.0,
+        "streuung": 2.6,
+        "belastbar": false
+      },
+      "p_ratio": 0.503,
+      "ersparnis_eur": 840.0,
+      "ort": "Lörick",
+      "plz": "40547",
+      "eingestellt": "2026-10-14T07:23:14+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a2/a2083a2e-78ad-47e7-9155-ab4f80037103?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/12/121d3a13-822d-47ea-8660-5dd0db67129b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/28/281df0e8-bccb-4e67-a03f-1d3eddfcef8f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/85/854917a2-9f5c-44f9-9457-534f2d012875?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein zuverlässiges Brompton Faltrad aus dem Jahr 2017 (Typ C) in klassischem Weiß. Es lässt sich gewohnt kompakt zusammenfalten und ist damit der ideale Begleiter für die Stadt, beim Pendeln oder auf Reisen.<br /><br />- Baujahr 2017<br />- Farbe: Weiß<br />- 3 Gänge<br />- Original Brompton Rahmen und Komponenten<br />- Schutzbleche vorne und hinten<br />- Integrierte Transportrollen<br />- Gepäckträgeraufnahme vorne<br />- Kompaktes, bewährtes Faltsystem<br /><br />Das Fahrrad ist voll funktionsfähig und befindet sich in einem guten Zustand. Es bietet die gewohnte Wendigkeit und Qualität, die man von einem Brompton erwartet.<br /><br />Schreib mir gerne, falls du weitere Informationen benötigst.",
+      "attribute": {
+        "Art": "Zubehör",
+        "Versand": "ab 0,99",
+        "Typ": "Klappräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "141019731",
+        "name": "Diego",
+        "typ": "PRIVATE",
+        "konto_seit": "2024-05-20",
+        "konto_alter_tage": 876,
+        "bewertung": 0.5,
+        "abzeichen": {
+          "rating": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 67,
+      "signale": {
+        "gruen": [
+          "Konto seit 2024",
+          "Kaeuferschutz verfuegbar",
+          "14 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.50"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3539866486",
       "watchlist_id": "ebike-rad",
       "titel": "E-Bike mit Bosch Active Line Plus Mittelmotor",
@@ -2027,6 +2868,70 @@
         ],
         "rot": [
           "Bewertung 0.50"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540516231",
+      "watchlist_id": "motorraeder",
+      "titel": "Simson S51 B 1-4 zerlegt / in Teilen",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/simson-s51-b-1-4-zerlegt-in-teilen/3540516231-305-24231",
+      "preis": 1800.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 2565.0,
+        "p25": 780.0,
+        "n": 28,
+        "query": "Simson zerlegt Teilen S51 1 4",
+        "korrektur": 0.1,
+        "streuung": 5.37,
+        "belastbar": false
+      },
+      "p_ratio": 0.702,
+      "ersparnis_eur": 765.0,
+      "ort": "St. Lorenz Nord",
+      "plz": "23558",
+      "eingestellt": "2026-10-14T10:36:47+02:00",
+      "bilder": [],
+      "beschreibung": "Bilder folgen!<br />Ich biete eine komplett zerlegte S51 B 1-4 von 1984 an, welche ich selbst irgendwann wieder von Grund auf neu aufbauen wollte. Motor und Getriebe sind nicht zerlegt und liefen bis zum Ausbau problemlos - dies ist allerdings schon etwa 5 Jahre her.<br />Der Rahmen ist bereits neu pulverbeschichtet, ein neuer Chromlenker ist dabei, ein kompletter E-Satz und ein Simson S51 Schraubenset aus Edelstahl.<br />Natürlich gibt es auch die Papiere und das Typenschild dazu.<br />Ich habe in den nächsten Jahren weder den Platz, noch die Zeit für den Wiederaufbau, daher hoffe ich, dass sich ein anderer findet, der sich diesem Projekt gerne annehmen möchte.<br />Es müssen natürlich noch diverse Teile besorgt und andere neu lackiert werden, daher geht hier nochmal ein bisschen Geld rein. Originalfarbe war übrigens rot.<br />Bei Fragen gerne melden!",
+      "attribute": {
+        "Art": "Mofas & Mopeds",
+        "Marke": "Simson",
+        "Kilometerstand": "999",
+        "Erstzulassung": "Januar 1984",
+        "Hubraum": "50",
+        "Getriebe": "Manuell"
+      },
+      "verkaeufer": {
+        "id": "16615943",
+        "name": "Sebastian Wr",
+        "typ": "PRIVATE",
+        "konto_seit": "2013-08-20",
+        "konto_alter_tage": 4802,
+        "bewertung": 0.96875,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 85,
+      "signale": {
+        "gruen": [
+          "Konto seit 2013",
+          "Bewertung 0.97, zuverlaessig",
+          "Abholung moeglich"
+        ],
+        "rot": [
+          "Hoechstens ein Bild"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -2680,6 +3585,137 @@
       }
     },
     {
+      "id": "3540446598",
+      "watchlist_id": "design-sammeln",
+      "titel": "Usm Haller Regal Sideboard weiß",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/usm-haller-regal-sideboard-weiss/3540446598-88-1582",
+      "preis": 850.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1474.5,
+        "p25": 850.0,
+        "n": 94,
+        "query": "Usm Haller Regal",
+        "korrektur": 0.0,
+        "streuung": 2.58,
+        "belastbar": false
+      },
+      "p_ratio": 0.576,
+      "ersparnis_eur": 624.5,
+      "ort": "Elberfeld-West",
+      "plz": "42117",
+      "eingestellt": "2026-10-14T09:18:59+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/21/21e93d0a-c63e-4ce6-b906-bcd754c38e95?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/50/50a83c51-8221-42ff-b013-a32f1f35ceae?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c8/c89438bb-5887-4e25-aa4e-b428ee6cfa5f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9c/9c8fa0bd-3834-4392-89f6-4f314304f616?rule=$_0.JPG"
+      ],
+      "beschreibung": "Usm Haller Regal Sideboard weiß.\n\nMaße: Breite: 152, Höhe 74cm, Tiefe 50cm\n\n\nEine differenzbesteuerte Rechnung nach § 25a UStG wird erstellt.",
+      "attribute": {
+        "Art": "Regale",
+        "Versand": "Nur Abholung",
+        "Farbe": "Weiß"
+      },
+      "verkaeufer": {
+        "id": "162687789",
+        "name": "David Jaspers",
+        "typ": "PRO",
+        "konto_seit": "2026-05-07",
+        "konto_alter_tage": 159,
+        "bewertung": 0.9166666666666666,
+        "abzeichen": {
+          "rating": 2,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 74,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "5 Bilder"
+        ],
+        "rot": [
+          "Konto juenger als 6 Monate"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540535959",
+      "watchlist_id": "ebike-rad",
+      "titel": "Cube mit Ultegra",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-mit-ultegra/3540535959-217-465",
+      "preis": 499.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1100.0,
+        "p25": 650.0,
+        "n": 96,
+        "query": "Cube Ultegra",
+        "korrektur": 0.0,
+        "streuung": 3.38,
+        "belastbar": false
+      },
+      "p_ratio": 0.454,
+      "ersparnis_eur": 601.0,
+      "ort": "Dassow",
+      "plz": "23942",
+      "eingestellt": "2026-10-14T10:54:13+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3e/3e500257-0fba-4e3f-add5-566dee8de8aa?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/93/93a976d2-6220-460d-b7d4-85849c3b725f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/49/49394476-cf00-4678-b0f3-398904d56945?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b7/b79e1ae6-cd37-472f-8c51-af7fab6d8f3a?rule=$_0.JPG"
+      ],
+      "beschreibung": "Sehr gepflegtes Rennrad der Marke Cube . Technisch in einwandfreiem Zustand. Ultegra und 105er Komponenten. RH 58",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "ab 0,99",
+        "Typ": "Rennräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "27061745",
+        "name": "Antje",
+        "typ": "PRIVATE",
+        "konto_seit": "2014-12-30",
+        "konto_alter_tage": 4305,
+        "bewertung": 0.7625,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 82,
+      "signale": {
+        "gruen": [
+          "Konto seit 2014",
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.76"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3540229542",
       "watchlist_id": "ebike-rad",
       "titel": "Cube Reaction One Mountainbike 29\" Carbon Rahmengröße XL",
@@ -2932,6 +3968,145 @@
           "7 Bilder"
         ],
         "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540513851",
+      "watchlist_id": "apple-mobil",
+      "titel": "Apple iPhone 12 Pro - 512 GB - Grau",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-12-pro-512-gb-grau/3540513851-173-3449",
+      "preis": 277.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 870.0,
+        "p25": 300.0,
+        "n": 47,
+        "query": "Apple iPhone Pro 12 512",
+        "korrektur": 0.0,
+        "streuung": 4.16,
+        "belastbar": false
+      },
+      "p_ratio": 0.318,
+      "ersparnis_eur": 593.0,
+      "ort": "Schöneberg",
+      "plz": "10825",
+      "eingestellt": "2026-10-14T10:33:16+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/eb/eb2cae55-65a2-4bb7-979b-f8cc9b5eb1d8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1e/1e12c405-312c-4d3b-9e4e-4f0c0f4dcc83?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9f/9fd83d7e-5742-4b26-9688-0ad307d88c79?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein iPhone 12 Pro in der Farbe Grau, da es bereit für einen neuen Besitzer ist.<br /><br />- Modell: iPhone 12 Pro<br />- Speicher: 512 GB<br />- Farbe: Grau<br />- Akkukapazität: 79%<br />- Ladezyklen: 380<br /><br />Das Gerät befindet sich in einem guten Zustand ohne Risse oder sonstige Schäden. Es weist lediglich leichte Gebrauchsspuren auf, die im Alltag entstanden sind. Das Smartphone wurde stets pfleglich behandelt.<br /><br />Ich freue mich auf deine Anfrage.<br />Abholung bevorzugt! Nur Bar oder PayPal, Freunde.<br /><br />Dies ist ein Privatverkauf unter Ausschuss der Sachmängelhaftung.<br />Verkauf erfolgt wie besichtigt und unter Ausschuss jeglicher Gewährleistung für sichtbar e und unsichtbare Mängel.<br /><br />Ohne Zubehör.",
+      "attribute": {
+        "Marke": "Apple",
+        "Versand": "ab 0,99",
+        "Farbe": "Grau",
+        "Speicher (GB)": "512 GB",
+        "Zustand": "Sehr Gut",
+        "Akkuzustand": "Schwach (< 80%)",
+        "Displaygröße (Zoll)": "5,0 – 5,9\"",
+        "Arbeitsspeicher (RAM)": "2 GB"
+      },
+      "verkaeufer": {
+        "id": "137513647",
+        "name": "Mirieh",
+        "typ": "PRIVATE",
+        "konto_seit": "2024-01-27",
+        "konto_alter_tage": 990,
+        "bewertung": 0.8666666666666667,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 83,
+      "signale": {
+        "gruen": [
+          "Konto seit 2024",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Preis nur 32% des Marktwerts",
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540472298",
+      "watchlist_id": "design-sammeln",
+      "titel": "Meissen Kaffee Porzellan MOKKASERVICE Blumen Mokka für 6 Personen",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/meissen-kaffee-porzellan-mokkaservice-blumen-mokka-fuer-6-personen/3540472298-86-9671",
+      "preis": 519.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 1099.5,
+        "p25": 495.0,
+        "n": 26,
+        "query": "Meissen Kaffee Porzellan 6",
+        "korrektur": 0.0,
+        "streuung": 3.03,
+        "belastbar": false
+      },
+      "p_ratio": 0.472,
+      "ersparnis_eur": 580.5,
+      "ort": "Mitte",
+      "plz": "10555",
+      "eingestellt": "2026-10-14T09:50:13+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/dd/dd5b1c1e-1fb5-43cd-9d03-1d3181c3b96e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3d/3d958b6b-c7db-41aa-8a21-03c93c8de957?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/41/41835a13-db16-48b1-9b7a-6c751446d6a6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9b/9bbe2d87-c535-46a5-955d-ad7a8b892834?rule=$_0.JPG"
+      ],
+      "beschreibung": "Kaffeeservice der weltbekannten Marke „Meissen“. Jedes Teil des Services hat einen Goldrand und ein florales Muster. Alle Teile sind ohne Mängel. Das Service wurde nie benutzt. Ein sehr feines und schönes Service. Privatverkauf ohne Gewährleistung und ohne Rücknahme.",
+      "attribute": {
+        "Art": "Geschirr",
+        "Versand": "ab 18,99",
+        "Farbe": "Bunt",
+        "Zustand": "Neu"
+      },
+      "verkaeufer": {
+        "id": "122684176",
+        "name": "Inna",
+        "typ": "PRIVATE",
+        "konto_seit": "2022-09-19",
+        "konto_alter_tage": 1486,
+        "bewertung": 0.8571428571428571,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 80,
+      "signale": {
+        "gruen": [
+          "Konto seit 2022",
+          "Kaeuferschutz verfuegbar",
+          "8 Bilder"
+        ],
+        "rot": [
+          "Gewerbetext auf Privatprofil"
+        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -3196,6 +4371,71 @@
       }
     },
     {
+      "id": "3540491090",
+      "watchlist_id": "musikinstrumente",
+      "titel": "Gibson Les Paul Traditional 2015",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-les-paul-traditional-2015/3540491090-74-8119",
+      "preis": 1200.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1750.0,
+        "p25": 1190.0,
+        "n": 31,
+        "query": "Gibson Les Paul 2015",
+        "korrektur": 0.0,
+        "streuung": 2.35,
+        "belastbar": true
+      },
+      "p_ratio": 0.686,
+      "ersparnis_eur": 550.0,
+      "ort": "Karlsbad",
+      "plz": "76307",
+      "eingestellt": "2026-10-14T10:11:08+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/eb/eb357827-ed3e-4403-b8d7-8b9920338490?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/66/66ade74d-bb45-4885-ae9b-c8e17e9ec035?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1b/1b2562af-c826-438d-af34-333103d72fb1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/50/50cb347e-1668-4acb-abd8-f2033b78b7c6?rule=$_0.JPG"
+      ],
+      "beschreibung": "zum Verkauf steht eine Gibson Les Paul Traditional aus dem Jahr 2015, in neuwertigem Zustand, ebenso die Bünde. Die Gitarre hat ein unglaubliches Sustain was auch dem sehr fetten Hals geschuldet ist, es ist der fetteste Hals den eine Gibson Les Paul zu bieten hat, so wie manche 58er Paulas. Spielt sich sehr gut, 59 tribute Humbucker, sehr flache Saitenlage und optisch ein Hingucker durch das Flametop. Gewicht 3,9KG. Koffer dabei.<br /><br />Privatverkauf, keine Rücknahme.",
+      "attribute": {
+        "Versand": "Nur Abholung",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "47950346",
+        "name": "Daddl",
+        "typ": "PRIVATE",
+        "konto_seit": "2017-06-09",
+        "konto_alter_tage": 3414,
+        "bewertung": 0.74,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 84,
+      "signale": {
+        "gruen": [
+          "Konto seit 2017",
+          "Abholung moeglich",
+          "9 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.74"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3539878839",
       "watchlist_id": "uhren",
       "titel": "Omega Constellation Chronometer Quartz Bicolor Edelstahl Quarzuhr",
@@ -3323,73 +4563,6 @@
         ],
         "rot": [
           "Bewertung 0.67"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3539471282",
-      "watchlist_id": "design-sammeln",
-      "titel": "USM Haller Möbel in Reinweiß – Sideboards, Highboards & Regale",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/usm-haller-moebel-in-reinweiss-sideboards-highboards-regale/3539471282-88-15340",
-      "preis": 555.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 1062.0,
-        "p25": 599.0,
-        "n": 80,
-        "query": "USM Haller Möbel",
-        "korrektur": 0.0,
-        "streuung": 2.91,
-        "belastbar": false
-      },
-      "p_ratio": 0.523,
-      "ersparnis_eur": 507.0,
-      "ort": "Weingarten",
-      "plz": "88250",
-      "eingestellt": "2026-10-13T05:41:08+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1c/1c745303-42d2-4f04-af20-846877de1ff7?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/08/08b28666-e81e-4b67-afcd-d0f43bce66a8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d8/d8363027-1093-4fa1-a0bf-c667aedaaccf?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0d/0df327e5-ce23-41c2-a2cd-13ee611e58b8?rule=$_0.JPG"
-      ],
-      "beschreibung": "Zum Verkauf stehen originale USM Haller Möbel in Reinweiß. Es sind unterschiedliche Konfigurationen, darunter Sideboards, Highboards und Regale.<br /><br />Die Möbel befinden sich in einem gepflegten, aufbereiteten Zustand mit wenigen bis keinen Kratzern und leichten, altersüblichen Gebrauchsspuren.<br /><br />Die Maße und Ausführungen sind den Bildern zu entnehmen.<br /><br />Der angegebene Preis gilt nicht für alle Möbel zusammen.<br />Preise bitte individuell anfragen.<br /><br />Bei Interesse oder Fragen gerne melden.",
-      "attribute": {
-        "Art": "Regale",
-        "Versand": "ab 9,90",
-        "Farbe": "Weiß",
-        "Zustand": "Sehr Gut",
-        "Material": "Stahl"
-      },
-      "verkaeufer": {
-        "id": "136132339",
-        "name": "Ilja",
-        "typ": "PRIVATE",
-        "konto_seit": "2023-12-05",
-        "konto_alter_tage": 1042,
-        "bewertung": 0.6,
-        "abzeichen": {
-          "rating": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 82,
-      "signale": {
-        "gruen": [
-          "Konto seit 2023",
-          "Kaeuferschutz verfuegbar",
-          "15 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.60"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -3592,50 +4765,314 @@
       }
     },
     {
-      "id": "3539470275",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 17 Pro Max in Blau - 3 Monate alt, Top Zustand",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-17-pro-max-in-blau-3-monate-alt-top-zustand/3539470275-173-16982",
-      "preis": 950.0,
-      "preis_typ": "PLEASE_CONTACT",
+      "id": "3540475518",
+      "watchlist_id": "kameras-leica",
+      "titel": "Leica M Summicron 2/50mm Objektiv",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/leica-m-summicron-2-50mm-objektiv/3540475518-245-9434",
+      "preis": 600.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
       "referenz": {
-        "median": 1449.5,
-        "p25": 1099.0,
-        "n": 10,
-        "query": "iPhone Pro Max 17 3",
+        "median": 1100.0,
+        "p25": 580.0,
+        "n": 75,
+        "query": "Leica Summicron Objektiv 2 50mm",
         "korrektur": 0.0,
-        "streuung": 1.36,
-        "belastbar": true
+        "streuung": 2.93,
+        "belastbar": false
       },
-      "p_ratio": 0.655,
-      "ersparnis_eur": 499.5,
-      "ort": "Dessau",
-      "plz": "06842",
-      "eingestellt": "2026-10-13T05:25:02+02:00",
+      "p_ratio": 0.545,
+      "ersparnis_eur": 500.0,
+      "ort": "Altona",
+      "plz": "22769",
+      "eingestellt": "2026-10-14T09:53:55+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/42/422e37fc-fef9-4c4f-bd6f-b7b252d483e0?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/24/24852eb3-e736-4d71-bec3-8f003e7705c3?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c1/c174238d-2235-4b48-b636-d73570fac192?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/15/15373efb-07da-4576-bc8c-ed63e3bbc928?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c3/c3a11f10-840f-4565-a009-664c2d59e5de?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aa67247d-0f13-4047-85af-17c7aaef4f4f?rule=$_0.JPG"
       ],
-      "beschreibung": "Ich verkaufe mein blaues iPhone 17 Pro Max, das ich vor drei Monaten neu erworben habe. Es befindet sich in einem hervorragenden Zustand ohne jegliche Kratzer oder Beschädigungen.<br /><br />- Farbe: Blau<br />- Akkukapazität: 100%<br />- Alter: 3 Monate<br />- Zustand: Sehr gepflegt, wie neu<br /><br />Das Gerät wurde stets pfleglich behandelt und weist keinerlei Gebrauchsspuren auf. Es ist technisch einwandfrei und der Akku ist noch in vollem Umfang leistungsfähig.<br /><br />Da es sich um einen Privatverkauf handelt, schließe ich jegliche Garantie oder Gewährleistung aus. Bei weiteren Fragen kannst du dich gerne bei mir melden.<br /><br />Es kann sofort geholt werden.",
+      "beschreibung": "Ich verkaufe mein Leica M Summicron 2&#x2F;50mm Objektiv, da ich meine Ausrüstung verkleinere.<br /><br />- Brennweite: 50mm<br />- Lichtstärke: 1:2<br />- Leica M-Bajonett Anschluss<br />- Manuelle Fokussierung<br />- Inklusive Objektivdeckel<br /><br />Das Objektiv ist ein Klassiker und bekannt für seine hervorragende Abbildungsleistung. Es ist schwarz gehalten und weist die typische, hochwertige Verarbeitung auf. Die Blenden- und Fokusringe lassen sich geschmeidig drehen.<br /><br />Das Objektiv befindet sich in einem gepflegten Zustand mit nur geringen Gebrauchsspuren am Gehäuse. Die Linsen sind klar und frei von Kratzern.<br /><br />Schreib mir gerne, falls du Fragen hast.",
       "attribute": {
-        "Marke": "Apple",
-        "Versand": "ab 0,99",
-        "Modell": "iPhone 17 Pro Max",
-        "Farbe": "Blau",
-        "Speicher (GB)": "256 GB",
-        "Zustand": "Sehr Gut",
-        "Betriebssystem": "iOS",
-        "Akkuzustand": "Neu (100%)"
+        "Art": "Objektiv",
+        "Versand": "ab 7,69",
+        "Zustand": "Sehr Gut"
       },
       "verkaeufer": {
-        "id": "165086837",
-        "name": "Max44",
+        "id": "16950546",
+        "name": "E.K.",
         "typ": "PRIVATE",
-        "konto_seit": "2026-07-31",
-        "konto_alter_tage": 73,
+        "konto_seit": "2013-09-10",
+        "konto_alter_tage": 4782,
+        "bewertung": 0.8114754098360656,
+        "abzeichen": {
+          "rating": 2,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 97,
+      "signale": {
+        "gruen": [
+          "Konto seit 2013",
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.81"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540446004",
+      "watchlist_id": "ebike-rad",
+      "titel": "Diamant Trekking Fahrrad – neuwertig",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/diamant-trekking-fahrrad-neuwertig/3540446004-217-3352",
+      "preis": 520.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1000.0,
+        "p25": 549.0,
+        "n": 61,
+        "query": "Diamant Trekking Fahrrad",
+        "korrektur": 0.0,
+        "streuung": 3.64,
+        "belastbar": false
+      },
+      "p_ratio": 0.52,
+      "ersparnis_eur": 480.0,
+      "ort": "Friedrichshain",
+      "plz": "10245",
+      "eingestellt": "2026-10-14T09:18:12+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7d/7d923cc3-a3a3-4446-92fc-7e8c5db6a1a4?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/22/2226f16d-1139-4535-b764-be0eac6ab9f6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/80/8014198e-cae7-4036-90db-04e3c18294a0?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d5/d5584bd9-48a2-4661-b351-52830a694abe?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe ein Diamant 018Trekking-Fahrrad in neuwertigem und sehr gepflegtem Zustand. Ideal für den Alltag, die Stadt oder längere Fahrradtouren.<br /><br />Ausstattung:<br /><br />* Diamant Trekking<br />* Farbe: Violett&#x2F;Grün<br />* Leichter Aluminiumrahmen<br />* Kettenschaltung – 24 Gänge (3 × 8)<br />* Scheibenbremsen<br />* Nabendynamo mit Beleuchtung<br />* Gepäckträger<br />* Sattelstütze<br />* ✨ Neuwertiger, sehr gepflegter Zustand<br />RH ca 58 cm<br />Das Fahrrad ist technisch einwandfrei und sofort fahrbereit. Bau Jahr2025<br /><br />Besichtigung und Probefahrt nach Absprache möglich.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Cross- & Trekkingräder",
+        "Zustand": "Neu"
+      },
+      "verkaeufer": {
+        "id": "137828868",
+        "name": "ZE",
+        "typ": "PRIVATE",
+        "konto_seit": "2024-02-06",
+        "konto_alter_tage": 980,
+        "bewertung": 0.75,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 84,
+      "signale": {
+        "gruen": [
+          "Konto seit 2024",
+          "Abholung moeglich",
+          "8 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.75"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540454968",
+      "watchlist_id": "design-sammeln",
+      "titel": "KPM Kurland 1. Wahl Service Porzellan Tasse Teller Platte wie neu",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/kpm-kurland-1-wahl-service-porzellan-tasse-teller-platte-wie-neu/3540454968-86-999",
+      "preis": 260.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 725.0,
+        "p25": 280.0,
+        "n": 22,
+        "query": "KPM Kurland Wahl 1",
+        "korrektur": 0.0,
+        "streuung": 7.14,
+        "belastbar": false
+      },
+      "p_ratio": 0.359,
+      "ersparnis_eur": 465.0,
+      "ort": "Mülheim",
+      "plz": "51067",
+      "eingestellt": "2026-10-14T09:29:41+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/53/5394bb89-c71b-4fd6-bb40-6afd793c5fcf?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4d/4d76f96b-d9ad-4d41-9035-7fc00b8f6cfb?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d3/d37d07b6-c252-40ce-9077-d35c75f756cf?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b9/b94dffda-30b4-483f-be0f-e8de32dd8a83?rule=$_0.JPG"
+      ],
+      "beschreibung": "KPM Kurland, 1. Wahl wie neu, super Zustand.<br /><br />6 Kaffeetassen, 8 cm Durchmesser, 7 cm hoch 200,-€<br />4 Suppentassen 10,5 cm Durchmesser 120,- €<br />6 große Untertassen Unterteller für große Tassen 17 cm Durchmesser 100,-€<br />Platte 33 cm lang, 26,5 cm breit 80,- €<br /><br />oder alles zusammen für 260,-",
+      "attribute": {
+        "Art": "Geschirr",
+        "Versand": "ab 2,99",
+        "Farbe": "Weiß",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "129958043",
+        "name": "Privat",
+        "typ": "PRIVATE",
+        "konto_seit": "2023-04-30",
+        "konto_alter_tage": 1262,
+        "bewertung": 0.9696969696969697,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 87,
+      "signale": {
+        "gruen": [
+          "Konto seit 2023",
+          "Bewertung 0.97, zuverlaessig",
+          "Kaeuferschutz verfuegbar",
+          "7 Bilder"
+        ],
+        "rot": [
+          "Preis nur 36% des Marktwerts"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540550331",
+      "watchlist_id": "netzwerk-homelab",
+      "titel": "Ubiquiti UniFi USW Pro Max 24 PoE Switch mit Rechnung",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/ubiquiti-unifi-usw-pro-max-24-poe-switch-mit-rechnung/3540550331-225-2745",
+      "preis": 390.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 842.0,
+        "p25": 349.0,
+        "n": 8,
+        "query": "Ubiquiti UniFi USW 24",
+        "korrektur": 0.0,
+        "streuung": 3.15,
+        "belastbar": false
+      },
+      "p_ratio": 0.463,
+      "ersparnis_eur": 452.0,
+      "ort": "Weener",
+      "plz": "26826",
+      "eingestellt": "2026-10-14T11:07:14+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/33/33a7d0a7-8237-4c3e-8b0e-f7a9f76718fd?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/05/0539dcbe-134a-4a2d-a32c-2b027e1f0354?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ad817e4a-f259-4b16-b654-48c99fc3db20?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/61/614a1f3d-95b9-4749-af9d-3911b34bce5b?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe meinen Ubiquiti UniFi USW Pro Max 24 PoE Netzwerk-Switch.<br /><br />Der Switch wurde etwa 1,5 Jahre genutzt und befindet sich in einem guten, gepflegten Zustand.<br /><br />Details:<br /><br />Modell: Ubiquiti UniFi USW Pro Max 24 PoE<br /><br />24-Port Managed Netzwerk-Switch<br /><br />PoE-Unterstützung<br /><br />Etwa 1,5 Jahre in Gebrauch<br /><br />Guter optischer Zustand<br /><br />Originalrechnung von MediaMarkt vorhanden<br /><br />Garantie über MediaMarkt<br /><br />Der Switch eignet sich ideal für anspruchsvolle Heimnetzwerke, Büros oder professionelle UniFi-Installationen.<br /><br />Abholung in 26831 Bunde möglich. Eine Besichtigung ist nach Absprache selbstverständlich möglich.<br /><br />Bei Abholung ist ein kleiner Preisnachlass möglich.<br /><br />Bei Fragen gerne melden!<br /><br />Privatverkauf unter Ausschluss der Sachmängelhaftung. Keine Rücknahme.",
+      "attribute": {
+        "Art": "Netzwerk & Modem",
+        "Versand": "ab 7,69",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "162006456",
+        "name": "Tobi",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-04-15",
+        "konto_alter_tage": 182,
         "bewertung": 1.0,
         "abzeichen": {
           "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "4 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540455802",
+      "watchlist_id": "ebike-rad",
+      "titel": "Cube Gravel Bike",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-gravel-bike/3540455802-217-7618",
+      "preis": 750.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1199.0,
+        "p25": 799.0,
+        "n": 99,
+        "query": "Cube Gravel Bike",
+        "korrektur": 0.0,
+        "streuung": 2.19,
+        "belastbar": true
+      },
+      "p_ratio": 0.626,
+      "ersparnis_eur": 449.0,
+      "ort": "Kempten",
+      "plz": "87439",
+      "eingestellt": "2026-10-14T09:30:46+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7b/7bd2cd7c-cb82-4030-9af2-16c57b600193?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8f/8f77ff99-1d3c-4061-b83e-e9fe756b6000?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b7/b7be2d15-046b-4c54-a80c-7e8a202878bc?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/61/61d2fe86-b16c-40d8-9e96-e72796371f3e?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe Gravel Bike der Marke Cube Cross Race Pro in sehr gute zustand.RH-53cm. 2020. Schaltung Schimano 105... Siehe Fotos",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "ab 0,99",
+        "Typ": "Rennräder",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "129534186",
+        "name": "privat",
+        "typ": "PRIVATE",
+        "konto_seit": "2023-04-15",
+        "konto_alter_tage": 1277,
+        "bewertung": 0.7222222222222222,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
           "reliability": 0
         },
         "anzahl_anzeigen": 0
@@ -3645,16 +5082,80 @@
         "versand": true,
         "kaeuferschutz": true
       },
-      "score": 63,
+      "score": 82,
       "signale": {
         "gruen": [
+          "Konto seit 2023",
           "Kaeuferschutz verfuegbar",
-          "Maengel offengelegt"
+          "15 Bilder"
         ],
         "rot": [
-          "Konto juenger als 6 Monate",
-          "Gewerbetext auf Privatprofil"
+          "Bewertung 0.72"
         ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540409347",
+      "watchlist_id": "musikinstrumente",
+      "titel": "Gibson les Paul Tribute P90",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-les-paul-tribute-p90/3540409347-74-34",
+      "preis": 820.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 1249.5,
+        "p25": 800.0,
+        "n": 22,
+        "query": "Gibson les Paul P90",
+        "korrektur": 0.0,
+        "streuung": 2.12,
+        "belastbar": true
+      },
+      "p_ratio": 0.656,
+      "ersparnis_eur": 429.5,
+      "ort": "Burg-Grambke",
+      "plz": "28719",
+      "eingestellt": "2026-10-14T08:17:29+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ed/ed8ada21-8b11-40f0-b88b-cf0706609c46?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/64/647adec3-1ebc-4946-8457-a765ea5908a4?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/2c/2cf1cd75-f636-45e7-9611-2e9c13df4de9?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a5/a5b94e07-4c64-4ea8-a712-b57fc418ec29?rule=$_0.JPG"
+      ],
+      "beschreibung": "Die Gitarre ist in tadellosen Zustand, aber ich habe noch eine Special mit P90ern die ich einfach lieber spiele. Deswegen darf sie weiter ziehen.<br /><br />- Korpus in mattem Schwarz<br />- Zwei cremefarbene P90 Tonabnehmer<br />- Cremefarbenes Schlagbrett<br />- Griffbrett mit Trapez-Inlays<br /><br />Die Gitarre bietet durch die P90 Pickups einen sehr vielseitigen Sound zwischen warmen Jazz-Tönen und bissigem Rock.<br /><br />Der Preis ist minimal verhandelbar, Dauerbeobachter die auf eine Preissenkung warten können gerne weiter ziehen.<br />Macht mir einfach ein faires Angebot.<br />Ich verkaufe nicht über das Kl-anz. Verkaufsportal &quot;direkt kaufen&quot;, Abholung wird bevorzugt, Versand ist aber grundsätzlich möglich.",
+      "attribute": {
+        "Versand": "ab 18,99",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "19571176",
+        "name": "Weber",
+        "typ": "PRIVATE",
+        "konto_seit": "2014-02-21",
+        "konto_alter_tage": 4617,
+        "bewertung": 0.8917525773195877,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2014",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder"
+        ],
+        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -3847,6 +5348,71 @@
         ],
         "rot": [
           "Bewertung 0.83"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540440173",
+      "watchlist_id": "konsolen-sweep",
+      "titel": "Ps5 pro 2TB Top Zustand",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/ps5-pro-2tb-top-zustand/3540440173-279-123",
+      "preis": 770.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 1175.0,
+        "p25": 850.0,
+        "n": 10,
+        "query": "pro Ps5 2TB",
+        "korrektur": 0.0,
+        "streuung": 1.46,
+        "belastbar": true
+      },
+      "p_ratio": 0.655,
+      "ersparnis_eur": 405.0,
+      "ort": "Vitte",
+      "plz": "18565",
+      "eingestellt": "2026-10-14T09:09:57+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c1/c144de07-0336-4d01-b5cb-62f351d2d34e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b6/b68fb051-08b4-4698-b8e9-e3bd5a520f4e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/db/dba861ee-fc4e-4e64-b3a1-54e353eb64c8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9f/9fc4cf74-c217-4c91-a46d-2aa525f4b7b7?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ps5 pro mit 2Tb Speicher in einem einwandfreien und sehr guten Zustand<br /><br />-Konsole funktioniert einwandfrei und ist in einem top Zustand<br />-Controller dabei<br />-Ovp dabei<br />- Rechnung leider nicht mehr vorhanden<br />-Paypal Käuferschutz bei Versand",
+      "attribute": {
+        "Art": "PlayStation",
+        "Versand": "ab 2,99",
+        "Modell": "PS5 Pro",
+        "Zustand": "Sehr Gut",
+        "Speicher (GB)": "2 TB",
+        "Farbe": "Weiß",
+        "Anzahl Controller": "1"
+      },
+      "verkaeufer": {
+        "id": "166815296",
+        "name": "MK",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-09-25",
+        "konto_alter_tage": 18,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 62,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar",
+          "5 Bilder"
+        ],
+        "rot": [
+          "Konto juenger als 30 Tage"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -4524,6 +6090,262 @@
           "Bewertung 0.97, zuverlaessig",
           "Abholung moeglich",
           "14 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540380166",
+      "watchlist_id": "optik-drohnen",
+      "titel": "DJI Air 3 Drohne -",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/dji-air-3-drohne-/3540380166-168-1028",
+      "preis": 350.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 700.0,
+        "p25": 380.0,
+        "n": 25,
+        "query": "DJI Air Drohne 3",
+        "korrektur": 0.0,
+        "streuung": 2.16,
+        "belastbar": true
+      },
+      "p_ratio": 0.5,
+      "ersparnis_eur": 350.0,
+      "ort": "Siegen",
+      "plz": "57072",
+      "eingestellt": "2026-10-14T06:29:20+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/51/51d85058-33e9-4898-959b-8cf9013e0575?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9e/9e2df98d-3c7b-4271-ade5-8b6514b1d92b?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe hier eine DJI Air 3 Drohne<br /><br />- Modell: DJI Air 3<br />- Inklusive Fernsteuerung mit Display<br />- Kompaktes, faltbares Design<br />- Hochwertige Kameraausstattung<br /><br />Sensor hinten rechts muss erneuert werden oder das Abdeckungsglas",
+      "attribute": {
+        "Versand": "ab 0,99"
+      },
+      "verkaeufer": {
+        "id": "39138152",
+        "name": "N.S",
+        "typ": "PRIVATE",
+        "konto_seit": "2016-05-09",
+        "konto_alter_tage": 3809,
+        "bewertung": 0.9166666666666666,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 95,
+      "signale": {
+        "gruen": [
+          "Konto seit 2016",
+          "Bewertung 0.92, zuverlaessig",
+          "Kaeuferschutz verfuegbar"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540511343",
+      "watchlist_id": "ebike-rad",
+      "titel": "Fahrrad Cube Nulane ONE - mineralgrey´n´black",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/fahrrad-cube-nulane-one-mineralgrey-n-black/3540511343-230-8284",
+      "preis": 650.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 999.5,
+        "p25": 790.0,
+        "n": 84,
+        "query": "Fahrrad Cube Nulane",
+        "korrektur": 0.0,
+        "streuung": 1.96,
+        "belastbar": true
+      },
+      "p_ratio": 0.65,
+      "ersparnis_eur": 349.5,
+      "ort": "Denzlingen",
+      "plz": "79211",
+      "eingestellt": "2026-10-14T10:30:45+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/28/281274a6-7a25-4f31-a595-b483ea249a4e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0e/0e32055d-8658-4658-b324-7a2a94ec5f0e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/11/11680b18-c65b-41fd-9c64-562d81f8470b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/69/696fa426-bc67-4f03-bab3-4e12084bd16a?rule=$_0.JPG"
+      ],
+      "beschreibung": "Cube Nulane ONE Da28 53 Trapez<br />Unbenutzt!<br />10,3 kg und sorgt für müheloses Fahren – ideal für lange Strecken und schnelle Trainingseinheiten.<br />Technische Highlights:<br /><br />Hydraulische Scheibenbremsen (Tektro HD-R280): Für jederzeit sicheres Bremsen, egal bei welchen Bedingungen.<br />Carbon Starrgabel: Die CUBE TS Disc Gabel<br />Kettenschaltung von Shimano Cues 9-Gang Schaltwerk<br /><br /><br />Das Nulane ONE ist speziell als Damenrad konzipiert und bietet mit seinem Trapezrahmen und dem CUBE Flat Race Bar nicht nur eine sportliche, sondern auch eine bequeme Sitzposition. Der ACID Nuance Lite Sattel und die ACID Travel Griffe sorgen dafür, dass du auch bei langen Touren komfortabel unterwegs bist.<br /><br /><br />Fabrikat: Cube<br />Zulässiges Gesamtgewicht: 115 kg<br />Jahr: 2025<br /><br />Ausstattung:<br />Schutzblech<br />Gepäckträger<br />Cube FM pro Ständer<br /><br />Neupreis 799 + Zubehör gesamt 906,80 €",
+      "attribute": {
+        "Art": "Radsport",
+        "Versand": "Nur Abholung",
+        "Zustand": "Neu"
+      },
+      "verkaeufer": {
+        "id": "9255920",
+        "name": "Elisabeth Ansorge",
+        "typ": "PRIVATE",
+        "konto_seit": "2012-03-17",
+        "konto_alter_tage": 5324,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 94,
+      "signale": {
+        "gruen": [
+          "Konto seit 2012",
+          "Abholung moeglich",
+          "9 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540519825",
+      "watchlist_id": "uhren",
+      "titel": "Vintage OMEGA Seamaster",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/vintage-omega-seamaster/3540519825-157-9505",
+      "preis": 650.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 999.0,
+        "p25": 629.0,
+        "n": 81,
+        "query": "Vintage OMEGA Seamaster",
+        "korrektur": 0.0,
+        "streuung": 2.7,
+        "belastbar": false
+      },
+      "p_ratio": 0.651,
+      "ersparnis_eur": 349.0,
+      "ort": "Hamburg Ottensen",
+      "plz": "22763",
+      "eingestellt": "2026-10-14T10:39:14+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a2/a29f3838-b862-4a28-8121-16807fa64c62?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/41/4138755c-b1ba-4e12-8110-21bbd31f66b9?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e6/e65c2755-a640-4c93-9320-a8e226da66ba?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7e/7ee3950b-383a-4151-94c5-9aacd954e41e?rule=$_0.JPG"
+      ],
+      "beschreibung": "Guten Tag,<br /><br />ich biete aus meiner Sammlung eine Omega an.<br />In der Uhr schlummert ein OMEGA 1012 Werk, welches ursprünglich ein Werk für die Omega Genève war.<br />Das Gehäuse und Zifferblatt sind das einer Seamaster.<br /><br />Ich habe die Uhr 2023 im Service bei einem Uhrmacher gehabt, den Beleg dafür habe ich nicht mehr.<br /><br />Die Uhr hat kürzlich ein neues Wildlederarmband von Chroonoo im Wert von 35 EUR erhalten.<br /><br />Die Ganggenauigkeit ist sehr gut.<br /><br />Bei Fragen, gern fragen.",
+      "attribute": {
+        "Art": "Uhren",
+        "Versand": "ab 6,19",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "10786917",
+        "name": "Lukas",
+        "typ": "PRIVATE",
+        "konto_seit": "2012-07-14",
+        "konto_alter_tage": 5204,
+        "bewertung": 0.6727272727272727,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 67,
+      "signale": {
+        "gruen": [
+          "Konto seit 2012",
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.67"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540478099",
+      "watchlist_id": "ebike-rad",
+      "titel": "Cube Nuroad Race Gravelbike 56/M",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-nuroad-race-gravelbike-56-m/3540478099-217-21250",
+      "preis": 650.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 999.0,
+        "p25": 925.0,
+        "n": 11,
+        "query": "Cube Nuroad Race 56",
+        "korrektur": 0.0,
+        "streuung": 1.51,
+        "belastbar": true
+      },
+      "p_ratio": 0.651,
+      "ersparnis_eur": 349.0,
+      "ort": "Molfsee",
+      "plz": "24113",
+      "eingestellt": "2026-10-14T09:56:57+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/cd/cd645339-b95b-4228-b749-b0f897527b63?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1b/1b285413-5b94-4fa3-aabc-9e2a8af8becb?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9b/9b93ae9b-e19a-4c7e-b066-21f756a3865a?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4c/4cf83632-59dd-4bab-aa39-9c15f4870a5a?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht mein Cube Nuroad Gravelbike. Ich habe es selbst gebraucht gekauft, merke aber, dass ich eine Rahmengröße größer brauche. Rücklicht ist neu, Gepäckträger und Schutzbleche sind montiert. Luftpumpe und kleine Satteltasche mit Werkzeug und Ersatzschlauch wird ebenfalls mit verkauft. Ständer kann ich ebenfalls noch einen anbauen.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "ab 0,99",
+        "Typ": "Cross- & Trekkingräder",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "7302742",
+        "name": "Nikolai",
+        "typ": "PRIVATE",
+        "konto_seit": "2011-09-18",
+        "konto_alter_tage": 5504,
+        "bewertung": 0.9875,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2011",
+          "Bewertung 0.99, zuverlaessig",
+          "Kaeuferschutz verfuegbar",
+          "8 Bilder"
         ],
         "rot": [],
         "unkenntnis_bonus": false,
@@ -5400,6 +7222,141 @@
       }
     },
     {
+      "id": "3540378422",
+      "watchlist_id": "ebike-rad",
+      "titel": "Canyon Torque Ex Vertride XL",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/canyon-torque-ex-vertride-xl/3540378422-217-6340",
+      "preis": 559.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 850.0,
+        "p25": 699.0,
+        "n": 12,
+        "query": "Canyon Torque Ex",
+        "korrektur": 0.0,
+        "streuung": 1.43,
+        "belastbar": true
+      },
+      "p_ratio": 0.658,
+      "ersparnis_eur": 291.0,
+      "ort": "Mittenwald",
+      "plz": "82481",
+      "eingestellt": "2026-10-14T06:16:34+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ba/bad33edf-42af-45f5-adcd-f768904be154?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/61/61680403-1a35-4757-b067-1fb8fde5057b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/de/dea06e76-f4ad-4563-bb11-76a3c99b2b0a?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ee/ee16e3e6-facf-4740-8ec1-a4ad8952fec3?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe Canyon Torque Ex Vertride in XL (ca 175-190 cm) 180 mm Federweg, Shimano 4 Kolben Bremse, Dartmoor Revolt Radsatz (nur 1 Saison gefahren), Naben mit 56 Rastpunkten, Works Components Steuersatz für flacheren Lenkwinkel<br />Es wird noch auf die Rock Shox Totem Gabel umgebaut (1 Saison gefahren, neben dem Rad zu sehen)<br /><br /><br />Preis ist VB",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Mountainbikes",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "24643120",
+        "name": "Christian Auer",
+        "typ": "PRIVATE",
+        "konto_seit": "2014-10-03",
+        "konto_alter_tage": 4393,
+        "bewertung": 0.9047619047619048,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2014",
+          "Bewertung 0.90, zuverlaessig",
+          "Abholung moeglich",
+          "5 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540483985",
+      "watchlist_id": "design-sammeln",
+      "titel": "USM Haller Schreibtisch 200 x 75 (Schwarz/Chrom)",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/usm-haller-schreibtisch-200-x-75-schwarz-chrom-/3540483985-93-16339",
+      "preis": 200.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 487.5,
+        "p25": 399.0,
+        "n": 28,
+        "query": "USM Haller Schreibtisch 200 75",
+        "korrektur": 0.0,
+        "streuung": 1.38,
+        "belastbar": true
+      },
+      "p_ratio": 0.41,
+      "ersparnis_eur": 287.5,
+      "ort": "Altstadt-Lehel",
+      "plz": "80333",
+      "eingestellt": "2026-10-14T10:03:32+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7a/7a9cfac0-c35a-4fa4-bc43-c17604b41fab?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f2/f2a6747a-2cfc-4737-8cb2-1966c93bb231?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/cb/cb3c578f-2301-4638-903d-4fca97b5b5dc?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/5e/5e72037a-60d1-459c-891d-ba1a0247bf74?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe einen hochwertigen USM Haller Schreibtisch in Schwarz mit verchromten Tischbeinen.<br /><br />Maße: 200 × 75 cm<br /><br />Zustand:<br />Der Schreibtisch befindet sich in einem guten, gebrauchten Zustand. Er weist lediglich die üblichen, altersbedingten Gebrauchsspuren wie kleinere Kratzer auf, ist aber insgesamt gepflegt und voll funktionsfähig.<br /><br />Die verchromten Tischbeine können für den Transport einfach abgeschraubt werden, wodurch sich der Tisch leichter transportieren lässt.<br /><br />Bei Interesse oder Fragen gerne melden. Besichtigung nach Absprache in München Grünwald möglich.",
+      "attribute": {
+        "Versand": "ab 0,99",
+        "Farbe": "Schwarz",
+        "Zustand": "Sehr Gut",
+        "Material": "Holz"
+      },
+      "verkaeufer": {
+        "id": "27196094",
+        "name": "Sch",
+        "typ": "PRIVATE",
+        "konto_seit": "2015-01-05",
+        "konto_alter_tage": 4299,
+        "bewertung": 0.8571428571428571,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2015",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "5 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Preis nur 41% des Marktwerts"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3539957819",
       "watchlist_id": "optik-drohnen",
       "titel": "DJI Mini 4 Pro Fly More Combo - Plus inkl. RC2, Care",
@@ -5457,6 +7414,64 @@
           "Kaeuferschutz verfuegbar",
           "6 Bilder",
           "Maengel offengelegt"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540523327",
+      "watchlist_id": "optik-drohnen",
+      "titel": "DJI Mini 5 Pro Fly More Combo (DJI RC 2)",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/dji-mini-5-pro-fly-more-combo-dji-rc-2-/3540523327-168-1182",
+      "preis": 620.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 894.0,
+        "p25": 820.0,
+        "n": 58,
+        "query": "DJI Mini Pro 5 2",
+        "korrektur": 0.0,
+        "streuung": 1.1,
+        "belastbar": true
+      },
+      "p_ratio": 0.694,
+      "ersparnis_eur": 274.0,
+      "ort": "Nettetal",
+      "plz": "41334",
+      "eingestellt": "2026-10-14T10:42:28+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e8/e837ee7b-685e-4405-b915-79a81a4c781f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8c/8c0857c7-1b87-48d7-9b5c-80ea60d0f9d0?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4d/4d9f79de-3f2d-456b-a0ba-bd625caf3e80?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hallo<br />Aus gesundheitlichen Gründen muss ich leider meine Drohne verkaufen. Sie ist kaum benutzt und noch komplett. Es ist die DJI Mini 5 Pro mit der DJI RC 2 Fernbedienung( mit Display), 3 Akkus & Ladestation, Filterset und praktischer Tasche.<br />Bei Interesse gerne melden.<br />LG",
+      "attribute": {
+        "Versand": "ab 0,99"
+      },
+      "verkaeufer": {
+        "id": "51239744",
+        "name": "Kokot",
+        "typ": "PRIVATE",
+        "konto_seit": "2017-10-30",
+        "konto_alter_tage": 3270,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 80,
+      "signale": {
+        "gruen": [
+          "Konto seit 2017",
+          "Kaeuferschutz verfuegbar"
         ],
         "rot": [],
         "unkenntnis_bonus": false,
@@ -5713,6 +7728,259 @@
       }
     },
     {
+      "id": "3540402235",
+      "watchlist_id": "camper-marine",
+      "titel": "Volvo Penta  Spiegelplatte",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/volvo-penta-spiegelplatte/3540402235-211-3200",
+      "preis": 250.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 450.0,
+        "p25": 295.0,
+        "n": 9,
+        "query": "Volvo Penta Spiegelplatte",
+        "korrektur": 0.0,
+        "streuung": 3.22,
+        "belastbar": false
+      },
+      "p_ratio": 0.556,
+      "ersparnis_eur": 200.0,
+      "ort": "Celle",
+      "plz": "29221",
+      "eingestellt": "2026-10-14T08:10:08+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/04/04ef0195-61b9-43ae-9313-497bbc2a52f8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6b/6b77e0d1-9c7d-4c09-8b4f-fded5262b90c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/72/7275f501-63c5-4040-a094-06855340af31?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d5/d5bb901c-cbdd-4db7-b880-b59a9fe26096?rule=$_0.JPG"
+      ],
+      "beschreibung": "Spiegelplatte wurde von außen gesandstrahlt und grundiert.<br /><br />Bezahlung bei Paypal oder in Bar bei abholung.",
+      "attribute": {
+        "Art": "Motorboote"
+      },
+      "verkaeufer": {
+        "id": "52035351",
+        "name": "Jendrik Meyerhof",
+        "typ": "PRIVATE",
+        "konto_seit": "2017-12-04",
+        "konto_alter_tage": 3235,
+        "bewertung": 0.9166666666666666,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 94,
+      "signale": {
+        "gruen": [
+          "Konto seit 2017",
+          "Abholung moeglich",
+          "4 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540495297",
+      "watchlist_id": "ebike-rad",
+      "titel": "Cube Mountainbike Herrenfahrrad",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-mountainbike-herrenfahrrad/3540495297-217-2588",
+      "preis": 400.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 600.0,
+        "p25": 330.0,
+        "n": 33,
+        "query": "Cube Mountainbike Herrenfahrrad",
+        "korrektur": 0.0,
+        "streuung": 4.55,
+        "belastbar": false
+      },
+      "p_ratio": 0.667,
+      "ersparnis_eur": 200.0,
+      "ort": "Edewecht",
+      "plz": "26188",
+      "eingestellt": "2026-10-14T10:15:28+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/92/92d80435-704a-4af7-9ce1-aa1cb5bae072?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/47/4796a935-3ec3-468e-837f-d332b796bec6?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a6/a620c213-51f9-4832-9ac4-1d5e118f73f8?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0a/0a344c57-4330-404b-87c8-d276bcba2b56?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich verkaufe mein treues Mountainbike der Marke Cube, das mich auf vielen Wegen begleitet hat. Es ist ein zuverlässiger Begleiter für Touren im Gelände oder den täglichen Weg.<br /><br />- Marke: Cube<br />- Modell: Mountainbike<br />- Farbe: Schwarz mit weißen Details<br />- A4usgestattet mit Schutzblechen vorne und hinten<br />- Profilierte Reifen für guten Halt<br /><br />Das Fahrrad befindet sich in einem gebrauchten Zustand mit den üblichen Nutzungsspuren, die bei einem Mountainbike nicht ausbleiben. Es ist stabil gebaut und bietet ein angenehmes Fahrgefühl. Melde dich gerne, wenn du weitere Informationen benötigst oder eine Probefahrt vereinbaren möchtest.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Mountainbikes",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "161963202",
+        "name": "S.n",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-04-13",
+        "konto_alter_tage": 183,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 82,
+      "signale": {
+        "gruen": [
+          "Abholung moeglich",
+          "5 Bilder"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540426813",
+      "watchlist_id": "modellbau-sammler",
+      "titel": "Lego Technic 42056 Porsche GT3 RS MOC",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/lego-technic-42056-porsche-gt3-rs-moc/3540426813-23-8374",
+      "preis": 200.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 399.5,
+        "p25": 320.0,
+        "n": 48,
+        "query": "Lego Technic Porsche 42056 GT3",
+        "korrektur": 0.0,
+        "streuung": 2.03,
+        "belastbar": true
+      },
+      "p_ratio": 0.501,
+      "ersparnis_eur": 199.5,
+      "ort": "Öhringen",
+      "plz": "74613",
+      "eingestellt": "2026-10-14T08:49:17+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f6/f670d208-c30a-45ad-8fb9-334bdf98ca1f?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/28/28c2dcd9-9142-4c4e-b902-60a70a10e0fd?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/71/71116b53-1f50-4b10-b40e-3c90e6983e26?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e8/e82ddcb5-d2e1-4738-af6c-b2a613c2c9ca?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht das Set des Porsche GT3 RS als Blaue ausführung. Das Set wurde mühsam aus einzelt gekauften Teile gebaut (LEGO sowie andere Marken sind verbaut). Die Felgen sind aus dem 3D Drucker! Nicht alle Orangenen Teile aus dem Original haben sich durch Blaue ersetzen lassen, diese sind dann Schwarz oder Grau.<br />Die Gummis für die Schaltwippen sind normale Haushaltsgummis.<br />Bei Fragen gerne melden.<br /><br />Hier der Hinweis da es sich um einen Privatverkauf handelt; Keine Garantie; Keine Gewährleistung; Keine Rücknahme!",
+      "attribute": {
+        "Art": "LEGO & Duplo",
+        "Versand": "ab 6,19",
+        "Zustand": "Gut"
+      },
+      "verkaeufer": {
+        "id": "12460725",
+        "name": "Sergej",
+        "typ": "PRIVATE",
+        "konto_seit": "2012-11-16",
+        "konto_alter_tage": 5079,
+        "bewertung": null,
+        "abzeichen": {},
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 80,
+      "signale": {
+        "gruen": [
+          "Konto seit 2012",
+          "Kaeuferschutz verfuegbar",
+          "6 Bilder"
+        ],
+        "rot": [
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540510248",
+      "watchlist_id": "ebike-rad",
+      "titel": "CUBE MOUNTAINBIKE",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/cube-mountainbike/3540510248-217-2951",
+      "preis": 300.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 490.0,
+        "p25": 330.0,
+        "n": 32,
+        "query": "CUBE MOUNTAINBIKE",
+        "korrektur": 0.0,
+        "streuung": 2.73,
+        "belastbar": false
+      },
+      "p_ratio": 0.612,
+      "ersparnis_eur": 190.0,
+      "ort": "Visselhövede",
+      "plz": "27374",
+      "eingestellt": "2026-10-14T10:29:40+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/61/61f8f5a0-a146-42d6-bed9-b07aadf765c4?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3f/3f92bbbe-760b-40c5-833f-82e6d1a1b8ac?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ff/fff6c084-b791-47d9-92bb-2ad274cf5004?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c2/c2b6f0ac-cdd2-42f2-bab1-fed33cf1e4e1?rule=$_0.JPG"
+      ],
+      "beschreibung": "Möchte dieses CUBE Mountainbike verkaufen.<br />Gabel und Sattel gefedert. Scheibenbremse vorne und hinten.<br />27 Gänge.<br />Bei Fragen schreiben Sie mir gerne.<br />Mit freundlichen Grüßen",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "Nur Abholung",
+        "Typ": "Mountainbikes",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "8238525",
+        "name": "The Doctor 46",
+        "typ": "PRIVATE",
+        "konto_seit": "2011-12-18",
+        "konto_alter_tage": 5413,
+        "bewertung": 0.8387096774193549,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 2,
+          "reliability": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 84,
+      "signale": {
+        "gruen": [
+          "Konto seit 2011",
+          "Abholung moeglich",
+          "8 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.84"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3540356147",
       "watchlist_id": "apple-mobil",
       "titel": "iPhone 15 Pro 128 Gb - Neuwertig",
@@ -5785,6 +8053,210 @@
       }
     },
     {
+      "id": "3540412407",
+      "watchlist_id": "konsolen-sweep",
+      "titel": "Steam Deck 512 GB LCD mit Docking Station",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/steam-deck-512-gb-lcd-mit-docking-station/3540412407-279-1111",
+      "preis": 400.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 580.0,
+        "p25": 548.0,
+        "n": 57,
+        "query": "Steam Deck GB 512",
+        "korrektur": 0.0,
+        "streuung": 1.13,
+        "belastbar": true
+      },
+      "p_ratio": 0.69,
+      "ersparnis_eur": 180.0,
+      "ort": "Innenstadt-Ost",
+      "plz": "44135",
+      "eingestellt": "2026-10-14T08:23:49+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/88/88c8899a-7aaf-4789-94d3-98bee15088d1?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4c/4c633151-a4a6-4d5a-aa7b-c356d1f34441?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fa/fa14f3e3-8f07-450a-802e-73339ca1d9ff?rule=$_0.JPG"
+      ],
+      "beschreibung": "Moin,<br /><br />Biete hier meine kaum genutztes Steam Deck. Hab es nur selten genutzt um mal auf der Couch abends zu spielen, aber seit einiger Zeit liegt sie nur noch herum.<br /><br />Der Akku Status beträgt immer noch 100%. Es gibt keinerlei Kratzer oder ähnliches. Ist seit Anfang an in einer Schutzhülle und mit einem Bildschirmschutz ausgerüstet.<br /><br />Mit dabei gibt&#x27;s eine Menge Zubehör. Vieles davon noch<br />in der original Verpackung ungeöffnet, sowieso wie zb die Docking Station.<br /><br /><br />Nur Abholung, kein Versand",
+      "attribute": {
+        "Art": "Steam",
+        "Versand": "Nur Abholung",
+        "Modell": "Steam Deck",
+        "Zustand": "Neu",
+        "Speicher (GB)": "512 GB",
+        "Farbe": "Schwarz"
+      },
+      "verkaeufer": {
+        "id": "45197250",
+        "name": "Prietzel",
+        "typ": "PRIVATE",
+        "konto_seit": "2017-02-08",
+        "konto_alter_tage": 3534,
+        "bewertung": null,
+        "abzeichen": {
+          "friendliness": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 97,
+      "signale": {
+        "gruen": [
+          "Konto seit 2017",
+          "Abholung moeglich",
+          "Maengel offengelegt"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540419286",
+      "watchlist_id": "design-sammeln",
+      "titel": "Vitra Bürostuhl / Drehstuhl - ergonomisch - netzrücken",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/vitra-buerostuhl-drehstuhl-ergonomisch-netzruecken/3540419286-93-16355",
+      "preis": 215.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 395.0,
+        "p25": 239.0,
+        "n": 51,
+        "query": "Vitra Bürostuhl Drehstuhl",
+        "korrektur": 0.0,
+        "streuung": 6.27,
+        "belastbar": false
+      },
+      "p_ratio": 0.544,
+      "ersparnis_eur": 180.0,
+      "ort": "Maxvorstadt",
+      "plz": "80799",
+      "eingestellt": "2026-10-14T08:37:02+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a6/a6b215a8-eda2-4f18-87ec-32f31f5cfb6d?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/e9/e9bc6000-ee9e-4a8d-8179-a173a49b0932?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d4/d497349e-c477-4e5a-add4-6d201116eb2e?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/bf/bfd6434c-8948-47a4-bbf6-76c426e83ae6?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht ein hochwertiger Bürodrehstuhl des renommierten Schweizer Möbelherstellers Vitra.<br /><br />Der Stuhl überzeugt durch sein zeitloses, funktionales Design, eine ergonomisch geformte Rückenlehne mit atmungsaktivem Netzgewebe und einen angenehmen Sitzkomfort.<br /><br />Ausstattung:<br /><br />• Original Vitra Markenstuhl<br />• Hohe, ergonomisch geformte Netzrückenlehne<br />• Gepolsterte Sitzfläche in Schwarz<br />• Armlehnen mit komfortablen Auflagen<br />• Hochwertiges 5-Stern-Fußkreuz in Aluminiumoptik<br />• Drehbar und mit Rollen ausgestattet<br />• Modernes, zeitloses Design<br />• Ideal für Büro, Homeoffice oder Arbeitszimmer<br /><br />Zustand:<br /><br />Gebrauchter Zustand mit alters- und nutzungsbedingten Gebrauchsspuren. Der optische Zustand ist auf den Originalfotos gut erkennbar.<br /><br />Besichtigung und Probesitzen nach Vereinbarung möglich.<br /><br />Abholung in München.<br /><br />Privatverkauf: Der Verkauf erfolgt unter Ausschluss jeglicher Sachmängelhaftung. Keine Rücknahme. Der Ausschluss gilt nicht für Ansprüche wegen Verletzung von Leben, Körper oder Gesundheit sowie bei vorsätzlicher oder grob fahrlässiger Pflichtverletzung.",
+      "attribute": {
+        "Versand": "ab 0,99",
+        "Farbe": "Schwarz",
+        "Zustand": "Sehr Gut",
+        "Material": "Sonstige"
+      },
+      "verkaeufer": {
+        "id": "61114735",
+        "name": "Amabile",
+        "typ": "PRIVATE",
+        "konto_seit": "2019-01-19",
+        "konto_alter_tage": 2824,
+        "bewertung": 0.42857142857142855,
+        "abzeichen": {
+          "rating": 1,
+          "friendliness": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2019",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "4 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.43"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3540483463",
+      "watchlist_id": "apple-mobil",
+      "titel": "iPhone 13 Pro Max 512 GB schwarz",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-13-pro-max-512-gb-schwarz/3540483463-173-986",
+      "preis": 250.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 429.0,
+        "p25": 375.0,
+        "n": 73,
+        "query": "iPhone Pro Max 13 512",
+        "korrektur": 0.0,
+        "streuung": 1.23,
+        "belastbar": true
+      },
+      "p_ratio": 0.583,
+      "ersparnis_eur": 179.0,
+      "ort": "Köln Altstadt",
+      "plz": "50678",
+      "eingestellt": "2026-10-14T10:02:57+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/dd/dd2513b3-239b-4e95-b393-0052ce99f560?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8c/8cc2db1d-ed29-4693-aa7a-0398c93e2359?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/42/4282556e-0307-4697-9159-90cdf8010377?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/14/14f4092c-21d6-4061-a0ba-954916fbad8f?rule=$_0.JPG"
+      ],
+      "beschreibung": "ch verkaufe mein iPhone 13 Pro Max mit 512 GB Speicher.<br /><br />Die Kameras funktionieren grundsätzlich alle, allerdings gibt es folgende Einschränkungen:<br /><br />* Frontkamera: Selfies und Videos funktionieren problemlos. Lediglich Face ID funktioniert nicht mehr.<br />* Rückkamera: Fotos und Videos können ganz normal aufgenommen werden. Bei starkem Zoom kann es allerdings vorkommen, dass die Kamera nicht mehr optimal fokussiert.<br /><br />Abgesehen von diesen Einschränkungen sind die Kameras weiterhin nutzbar.<br /><br />Bei Fragen gerne melden!<br /><br />Abzuholen in der Kölner Südstadt.<br /><br />Da es ein Privatverkauf ist keine Garantie oder Rücknahme möglich gekauft wie gesehen",
+      "attribute": {
+        "Marke": "Apple",
+        "Versand": "ab 0,99",
+        "Modell": "iPhone 13 Pro Max",
+        "Farbe": "Schwarz",
+        "Speicher (GB)": "512 GB",
+        "Zustand": "Gut",
+        "Betriebssystem": "iOS",
+        "Arbeitsspeicher (RAM)": "2 GB"
+      },
+      "verkaeufer": {
+        "id": "13943820",
+        "name": "Caro",
+        "typ": "PRIVATE",
+        "konto_seit": "2013-03-10",
+        "konto_alter_tage": 4965,
+        "bewertung": 0.78125,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2013",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "5 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.78"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3540367861",
       "watchlist_id": "apple-mobil",
       "titel": "Apple iPhone 15 128 GB Schwarz – voll funktionsfähig",
@@ -5848,269 +8320,6 @@
         "rot": [
           "Bewertung 0.38"
         ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3539472896",
-      "watchlist_id": "apple-mobil",
-      "titel": "Apple iPhone 15",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-15/3539472896-173-1121",
-      "preis": 350.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 500.0,
-        "p25": 400.0,
-        "n": 71,
-        "query": "Apple iPhone 15",
-        "korrektur": 0.0,
-        "streuung": 1.5,
-        "belastbar": true
-      },
-      "p_ratio": 0.7,
-      "ersparnis_eur": 150.0,
-      "ort": "Tönisvorst",
-      "plz": "47918",
-      "eingestellt": "2026-10-13T06:00:20+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3a/3a3a8fb7-91fa-4066-a1e8-af4b06a60031?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/11/11b621c2-dba7-42bf-8330-4aafc4c8ff5d?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/60/604936c8-e05b-44f6-90db-bb78f2d9a3a5?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f3/f3adf89d-07ea-449e-9422-5bc86497b211?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich biete hier ein Apple iPhone 15 an. Das Gerät befindet sich in einem guten Zustand und zeigt beim Starten das Apple-Logo.<br /><br />- Modell: iPhone 15<br />- Farbe: Schwarz<br />- Mit Dynamic Island<br /><br />Das Smartphone wurde pfleglich behandelt und weist die üblichen Gebrauchsspuren auf, die bei normaler Nutzung entstehen. Es ist ein zuverlässiger Begleiter für den Alltag.<br /><br />Ich freue mich auf deine Nachricht bei Interesse.",
-      "attribute": {
-        "Marke": "Apple",
-        "Versand": "ab 0,99",
-        "Modell": "iPhone 15",
-        "Farbe": "Blau",
-        "Speicher (GB)": "128 GB",
-        "Zustand": "Gut",
-        "Akkuzustand": "Sehr gut (95 – 99%)"
-      },
-      "verkaeufer": {
-        "id": "161105546",
-        "name": "berte",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-03-15",
-        "konto_alter_tage": 211,
-        "bewertung": 0.2,
-        "abzeichen": {
-          "rating": 0,
-          "friendliness": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 70,
-      "signale": {
-        "gruen": [
-          "Kaeuferschutz verfuegbar",
-          "5 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.20"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3539477220",
-      "watchlist_id": "design-sammeln",
-      "titel": "USM Haller Tisch klein 75x75 schwarz",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/usm-haller-tisch-klein-75x75-schwarz/3539477220-93-8325",
-      "preis": 150.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 295.0,
-        "p25": 200.0,
-        "n": 29,
-        "query": "USM Haller Tisch 75x75",
-        "korrektur": 0.0,
-        "streuung": 2.48,
-        "belastbar": true
-      },
-      "p_ratio": 0.508,
-      "ersparnis_eur": 145.0,
-      "ort": "Weil am Rhein",
-      "plz": "79576",
-      "eingestellt": "2026-10-13T06:31:18+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7c/7c6f155a-903e-42aa-b4d1-a213d4072e53?rule=$_0.JPG"
-      ],
-      "beschreibung": "USM Tisch schwarz 75x75",
-      "attribute": {
-        "Versand": "ab 0,99",
-        "Farbe": "Schwarz",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "53226445",
-        "name": "matt",
-        "typ": "PRIVATE",
-        "konto_seit": "2018-01-31",
-        "konto_alter_tage": 3176,
-        "bewertung": 0.7777777777777778,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 0,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 70,
-      "signale": {
-        "gruen": [
-          "Konto seit 2018",
-          "Kaeuferschutz verfuegbar"
-        ],
-        "rot": [
-          "Bewertung 0.78"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3539472498",
-      "watchlist_id": "design-sammeln",
-      "titel": "USM Haller Tische 175 x 75",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/usm-haller-tische-175-x-75/3539472498-93-8325",
-      "preis": 300.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 442.5,
-        "p25": 345.0,
-        "n": 80,
-        "query": "USM Haller Tische 175 75",
-        "korrektur": 0.0,
-        "streuung": 1.59,
-        "belastbar": true
-      },
-      "p_ratio": 0.678,
-      "ersparnis_eur": 142.5,
-      "ort": "Weil am Rhein",
-      "plz": "79576",
-      "eingestellt": "2026-10-13T05:56:12+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7f/7fc1efb5-7a55-4fde-b756-a5d9059f11f5?rule=$_0.JPG"
-      ],
-      "beschreibung": "Weitere Folgende Varianten sind verfügbar<br />Weiß 200 x 100 - 400 Euro<br />75 x 75 - 150 Euro",
-      "attribute": {
-        "Versand": "Nur Abholung",
-        "Farbe": "Schwarz",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "53226445",
-        "name": "matt",
-        "typ": "PRIVATE",
-        "konto_seit": "2018-01-31",
-        "konto_alter_tage": 3176,
-        "bewertung": 0.7777777777777778,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 0,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 60,
-      "signale": {
-        "gruen": [
-          "Konto seit 2018",
-          "Abholung moeglich"
-        ],
-        "rot": [
-          "Bewertung 0.78",
-          "Hoechstens ein Bild"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3539475923",
-      "watchlist_id": "apple-mobil",
-      "titel": "iPhone 13 Pro Max 256 GB – Rückglas gebrochen, funktionsfähig",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-13-pro-max-256-gb-rueckglas-gebrochen-funktionsfaehig/3539475923-173-9447",
-      "preis": 249.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 372.5,
-        "p25": 335.0,
-        "n": 56,
-        "query": "iPhone Pro Max 13 256",
-        "korrektur": 0.0,
-        "streuung": 1.19,
-        "belastbar": true
-      },
-      "p_ratio": 0.668,
-      "ersparnis_eur": 123.5,
-      "ort": "Hamburg Bergstedt",
-      "plz": "22359",
-      "eingestellt": "2026-10-13T06:22:39+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/01/01609101-2fb0-47bf-888c-7e85097efc68?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fc/fc90c4f9-a1d5-4427-a6d5-9cb12c532abb?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/54/54ca33e8-76f9-459c-9472-2d11af8dce52?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a0/a05c80cf-f03f-4774-a757-54e9f8b854cc?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe mein Apple iPhone 13 Pro Max mit 256 GB Speicher.<br /><br />Das iPhone ist voll funktionsfähig. Auch die Kameras funktionieren ohne Einschränkungen. Die maximale Akkukapazität beträgt 82 %.<br /><br />Wichtig zum Zustand: Nach einem Sturz ist die Glasrückseite stark gesplittert, auch im Bereich rund um die Kameras. Der Schaden ist auf den Fotos deutlich zu sehen. Die Vorderseite hat leichte Kratzer und Gebrauchsspuren. Das Display und die Bedienung funktionieren.<br /><br />Bitte die Fotos beachten. Verkauf im abgebildeten Zustand mit beschädigtem Rückglas. Die Einstufung als „Defekt“ bezieht sich auf das gebrochene Rückglas.<br /><br />Lieferumfang: iPhone 13 Pro Max. Keine Originalverpackung und kein Ladekabel dabei.<br /><br />249 € VB.<br />Abholung in 22359 Hamburg-Bergstedt oder Versand innerhalb Deutschlands nach Absprache. Versand und Verpackung kosten insgesamt 6,90 € zusätzlich: 6,19 € DHL-Porto plus 0,71 € Verpackungspauschale. Die Plattform zeigt nur das DHL-Porto von 6,19 € an.<br /><br />Privatverkauf.",
-      "attribute": {
-        "Marke": "Apple",
-        "Versand": "ab 6,19",
-        "Modell": "iPhone 13 Pro Max",
-        "Speicher (GB)": "256 GB",
-        "Zustand": "Defekt",
-        "Arbeitsspeicher (RAM)": "6 GB"
-      },
-      "verkaeufer": {
-        "id": "31017778",
-        "name": "Zhiyin Zhang",
-        "typ": "PRIVATE",
-        "konto_seit": "2015-06-04",
-        "konto_alter_tage": 4148,
-        "bewertung": 1.0,
-        "abzeichen": {
-          "rating": 2,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2015",
-          "Bewertung 1.00, zuverlaessig",
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "6 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -6246,202 +8455,6 @@
           "Maengel offengelegt"
         ],
         "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3539474764",
-      "watchlist_id": "apple-mobil",
-      "titel": "Apple iPhone 12 Pro – 128 GB – Pazifikblau – voll funktionsfähig",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-12-pro-128-gb-pazifikblau-voll-funktionsfaehig/3539474764-173-9397",
-      "preis": 175.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 250.0,
-        "p25": 200.0,
-        "n": 47,
-        "query": "Apple iPhone Pro 12 128",
-        "korrektur": 0.0,
-        "streuung": 1.5,
-        "belastbar": true
-      },
-      "p_ratio": 0.7,
-      "ersparnis_eur": 75.0,
-      "ort": "Singen",
-      "plz": "78224",
-      "eingestellt": "2026-10-13T06:14:53+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4d/4d4dbfc8-4c2d-48cc-a62d-60c160a4ca44?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/88/8834bd48-061d-4b2c-8996-0c948d42c469?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d3/d3b7e311-365c-48c3-aa66-2f03ff5b39ca?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/65/65c7feba-6b0b-42f3-911a-4a5ec81d7037?rule=$_0.JPG"
-      ],
-      "beschreibung": "Apple iPhone 12 Pro – 128 GB – Pazifikblau – voll funktionsfähig<br /><br />Preis: 179 € VB<br /><br />Zum Verkauf steht ein gepflegtes Apple iPhone 12 Pro mit 128 GB Speicher in der schönen Farbe Pazifikblau.<br /><br />Das Gerät stammt aus der Modellreihe 2020 und ist technisch voll funktionsfähig.<br /><br />Zustand und Ausstattung:<br /><br />* Apple iPhone 12 Pro mit 128 GB Speicher<br />* Farbe: Pazifikblau<br />* Voll funktionsfähig<br />* Gepflegter Allgemeinzustand<br />* Nur leichte, altersübliche Gebrauchsspuren<br />* Kameras und sonstige Funktionen einwandfrei<br />* Auf Werkseinstellungen zurückgesetzt<br /><br />Hinweis zum Display:<br /><br />Rechts oben am Display befinden sich zwei kleine Risse im Glas, die auf den beigefügten Fotos deutlich zu erkennen sind. Die Beschädigungen beeinträchtigen die Funktion und Bedienung des iPhones nicht.<br /><br />Ansonsten befindet sich das Gerät in einem gepflegten Zustand und funktioniert zuverlässig.<br /><br />Das iPhone kann bei Abholung selbstverständlich besichtigt und überprüft werden.<br /><br />Preis: 179 € Verhandlungsbasis<br /><br />Privatverkauf unter Ausschluss jeglicher Sachmängelhaftung. Keine Garantie oder Rücknahme. Der Haftungsausschluss gilt nicht bei arglistig verschwiegenen Mängeln oder gesetzlich zwingender Haftung.",
-      "attribute": {
-        "Marke": "Apple",
-        "Versand": "ab 0,99",
-        "Modell": "iPhone 12 Pro",
-        "Farbe": "Blau",
-        "Speicher (GB)": "128 GB",
-        "Zustand": "Gut",
-        "Betriebssystem": "iOS",
-        "Akkuzustand": "Schwach (< 80%)",
-        "Displaygröße (Zoll)": "6,0 – 6,4\"",
-        "Arbeitsspeicher (RAM)": "6 GB",
-        "SIM-Karten-Steckplätze": "Single SIM"
-      },
-      "verkaeufer": {
-        "id": "76279014",
-        "name": "Schneider Roland",
-        "typ": "PRIVATE",
-        "konto_seit": "2020-07-03",
-        "konto_alter_tage": 2292,
-        "bewertung": 0.3333333333333333,
-        "abzeichen": {
-          "rating": 1,
-          "reliability": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2020",
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "7 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.33"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3539469033",
-      "watchlist_id": "kameras-leica",
-      "titel": "Leica M Monochrom 10 760 Digitalkamera OVP !",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/leica-m-monochrom-10-760-digitalkamera-ovp-/3539469033-245-9518",
-      "preis": 1550.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Hamburg Lohbrügge",
-      "plz": "21031",
-      "eingestellt": "2026-10-13T05:00:33+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0e/0e937210-ebf2-488f-911d-ac370aca4c73?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a1/a1b854ea-ab04-44dc-94fd-36558fb72e0f?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/83/835c9889-27c1-42dd-a828-96c7e5cea1ab?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f9/f97890a0-4081-4a95-a4b5-cd10bb56fee5?rule=$_0.JPG"
-      ],
-      "beschreibung": "Leica M Monochrom 10 760 Digitalkamera<br /><br />Original Verpackung<br /><br />Seriennummer 04344786<br /><br />Die Leica Monochrom befindet sich in einem exzellenten Zustand !<br />Das Display ist tadellos. Der Sucher ist sauber und klar.<br />Kaum Gebrauchsspuren vorhanden ( siehe bitte Bilder )<br /><br />Die Anzahl der Auslösungen beträgt nur 2835<br /><br />Das IR-Filter-Deckglas des Kodak-CCD Sensors ist korrodiert !<br />Aus diesem Grund wird die Kamera als „ defekt &quot; angeboten !<br /><br />Eine hervorragende Grundlage für einen Tausch der Schutzschicht von Infrarot-Sperrfilters.<br /><br /><br />Lieferumfang :<br /><br />Leica M Monochrom 10 760 Digitalkamera<br />Leica Original Verpackung<br />Leica Anleitung<br />Leica Prüfzertifikat<br />Ladegerät und Batterie ( Drittanbieter )<br /><br />Abholung erwünscht. Ansonsten ist auch ein Versand möglich.<br />Der Versand erfolgt versichert ( Transportversicherung bis 2500€ ) mit DHL.<br /><br /><br />Verkauf von Privat, daher keine Gewährleistung und keine Rücknahme.",
-      "attribute": {
-        "Art": "Kamera",
-        "Versand": "Nur Abholung",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "134615704",
-        "name": "Christof",
-        "typ": "PRIVATE",
-        "konto_seit": "2023-10-13",
-        "konto_alter_tage": 1095,
-        "bewertung": 0.8852459016393442,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2023",
-          "Abholung moeglich",
-          "20 Bilder",
-          "Maengel offengelegt",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Gewerbetext auf Privatprofil"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3539469882",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Große Disney- & Micky Maus Sammlungsauflösung",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/grosse-disney-micky-maus-sammlungsaufloesung/3539469882-234-8397",
-      "preis": 500.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Vaihingen an der Enz",
-      "plz": "71665",
-      "eingestellt": "2026-10-13T05:18:01+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/81/810d2754-fd85-4002-a8a7-67d8e0681e29?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/2c/2cdde2ad-0bfb-4e47-a3d5-cdf18faead5b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/31/31eaac0b-772c-4bae-b5cb-38883a7288d5?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/dd/dd537e7f-db55-4825-87d0-f14ce54a19ee?rule=$_0.JPG"
-      ],
-      "beschreibung": "Große Disney- & Micky Maus Sammlungsauflösung – Vintage Raritäten, Comics, Figuren, Poster<br /><br />Hallo Disney-Fans, Nostalgiker und Sammler,<br />ich löse meine vielseitige und über Jahre gepflegte Walt Disney Sammlung auf. Es handelt sich um ein riesiges, abwechslungsreiches Gesamtpaket mit weit über 50 Positionen (viele Einzelteile). Von echten Vintageschätzen aus den 1940er bis 1980er Jahren über Comics bis hin zu Sammlerfiguren und Deko ist alles dabei!<br /><br />Highlights der Sammlung:<br />• Antiquarisches Highlight: Eine originale, sehr alte Schuco Bigo Bello Micky Maus Figur (ca. 1950er Jahre).<br />• Alte Comic-Raritäten: Original Micky Maus Hefte aus dem Jahr 1964 (Nr. 39, 40, 41, 42) sowie rare Ehapa KLASSIK ALBEN und seltene Superbände (z.B. „Mickys größte Schau“ 1978).<br />• Historische Kinderbücher: Darunter ein sehr gut erhaltenes, altes Bambi Buch (1941&#x2F;1949), „Donald und die Ameisen“ (1965), „Das Dschungelbuch“ (1968&#x2F;1970) sowie 6 seltene Pestalozzi-Minibücher (1968–1986).<br />• Exklusive Fan-Artikel: 11 seltene Plakate vom „Micky Maus-Klub“, Disney Briefmarkensets, limitierte Simba „Collectors Club No.5 Celebration Edition“ und ein französisches Rennauto von Vilac.<br />• Großes Figuren-Konvolut: Über 25 Figuren (Bullyland, Ü-Eier etc.) u.a. mit Micky, Quack, Pumba, Panzerknacker und Schneewittchen.<br />• Deko & Lifestyle: Zahlreiche gerahmte Disney-Wandbilder in verschiedenen Größen (z.B. großes Micky-Bild 90x60 cm, Winnie Pooh), neuwert",
-      "attribute": {
-        "Art": "Weiteres Sammeln",
-        "Versand": "Nur Abholung",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "128196986",
-        "name": "Daniel Schäfer",
-        "typ": "PRIVATE",
-        "konto_seit": "2023-02-25",
-        "konto_alter_tage": 1325,
-        "bewertung": 1.0,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2023",
-          "Bewertung 1.00, zuverlaessig",
-          "Abholung moeglich",
-          "20 Bilder",
-          "Maengel offengelegt",
-          "Preisbegruendung genannt"
-        ],
-        "rot": [
-          "Gewerbetext auf Privatprofil"
-        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
