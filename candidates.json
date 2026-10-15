@@ -1,26 +1,23 @@
 {
-  "generiert": "2026-10-15T01:43:28+02:00",
+  "generiert": "2026-10-15T04:36:37+02:00",
   "zeitraum": {
-    "von": "2026-10-14T19:50:28+02:00",
-    "bis": "2026-10-15T00:50:28+02:00"
+    "von": "2026-10-14T23:21:48+02:00",
+    "bis": "2026-10-15T04:21:48+02:00"
   },
   "statistik": {
-    "gesichtet": 102828,
-    "nach_modellmatch": 1440,
-    "nach_vorfilter": 1439,
-    "nach_preisschwelle": 86,
-    "nach_scoring": 60,
+    "gesichtet": 27990,
+    "nach_modellmatch": 140,
+    "nach_vorfilter": 140,
+    "nach_preisschwelle": 5,
+    "nach_scoring": 2,
     "ausschluesse": {
-      "score_zu_niedrig": 17,
-      "messenger": 1,
-      "preis_unplausibel": 8
+      "score_zu_niedrig": 3
     },
-    "pool": 100348,
-    "ohne_referenz_verworfen": 451,
-    "referenz_gekappt": 597,
+    "pool": 25513,
+    "ohne_referenz_verworfen": 48,
     "doppelt_zusammengefasst": 0,
-    "requests": 2263,
-    "laufzeit_sekunden": 3179
+    "requests": 672,
+    "laufzeit_sekunden": 888
   },
   "kandidaten": [
     {
@@ -3785,72 +3782,6 @@
       }
     },
     {
-      "id": "3540363998",
-      "watchlist_id": "design-sammeln",
-      "titel": "Flos Arco Bogenleuchte",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/flos-arco-bogenleuchte/3540363998-82-9673",
-      "preis": 1000.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 1550.0,
-        "p25": 700.0,
-        "n": 10,
-        "query": "Flos Arco Bogenleuchte",
-        "korrektur": 0.0,
-        "streuung": 2.85,
-        "belastbar": false
-      },
-      "p_ratio": 0.645,
-      "ersparnis_eur": 550.0,
-      "ort": "Mitte",
-      "plz": "10559",
-      "eingestellt": "2026-10-14T01:27:36+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/25/256f20ff-1ee2-41ba-8cfd-59311e207059?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/31/31587ad8-ae45-440e-bec1-ca57620dd4f8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fe/fef45400-bf5f-46af-8db1-4559b467dc41?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/17/17643c96-43b5-4d3e-b34a-6e5433581875?rule=$_0.JPG"
-      ],
-      "beschreibung": "Bei Interesse gerne melden :)<br /><br />Leuchte aus Ersatzteilen zusammengesetzt. Alle wesentlichen Bauteile stammen vom Hersteller. Die eingesetzte Glühbirne ist ein kompatibles Nachbauteil.<br /><br />Nur Abholung möglich.<br /><br />Der Verkauf erfolgt unter Ausschluss der Sachmängelhaftung. Nach Übergabe wird keine Garantie übernommen.",
-      "attribute": {
-        "Versand": "ab 2,99",
-        "Farbe": "Silber",
-        "Zustand": "Gut",
-        "Material": "Marmor"
-      },
-      "verkaeufer": {
-        "id": "87885554",
-        "name": "Sean-Aidan",
-        "typ": "PRIVATE",
-        "konto_seit": "2021-08-30",
-        "konto_alter_tage": 1870,
-        "bewertung": 0.5,
-        "abzeichen": {
-          "rating": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 87,
-      "signale": {
-        "gruen": [
-          "Konto seit 2021",
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "5 Bilder"
-        ],
-        "rot": [
-          "Bewertung 0.50"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3540491090",
       "watchlist_id": "musikinstrumente",
       "titel": "Gibson Les Paul Traditional 2015",
@@ -4039,72 +3970,6 @@
       "signale": {
         "gruen": [
           "Konto seit 2015",
-          "Abholung moeglich",
-          "6 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3540367898",
-      "watchlist_id": "ebike-rad",
-      "titel": "Trek Fuel EX 7, fully/Enduro/Trail wie neu",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/trek-fuel-ex-7-fully-enduro-trail-wie-neu/3540367898-217-4559",
-      "preis": 1150.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 1650.0,
-        "p25": 1100.0,
-        "n": 51,
-        "query": "Trek Fuel EX 7",
-        "korrektur": 0.0,
-        "streuung": 1.82,
-        "belastbar": true
-      },
-      "p_ratio": 0.697,
-      "ersparnis_eur": 500.0,
-      "ort": "Eschborn",
-      "plz": "65760",
-      "eingestellt": "2026-10-14T02:41:37+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/35/35f0e37a-4d68-48c4-84d6-5ac0f8c310ad?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d5/d5bac219-9e9b-4ce2-9c1a-fdabde5e37ea?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/f8/f8111986-93cd-4941-b1e1-eff59701d43f?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/89/892586ad-75eb-4214-aa43-826db428e991?rule=$_0.JPG"
-      ],
-      "beschreibung": "Zum Verkauf steht mein Trek Fuel EX 7 in nahezu neuwertigem Zustand.<br /><br />Das Bike ist sehr hochwertig ausgestattet und eignet sich perfekt für Trail- und Tourenfahrten. Durch die M&#x2F;L-Rahmengröße und 29-Zoll-Laufräder ist es besonders für eine Körpergröße von ca. 171–181 cm geeignet.<br /><br />Ausstattung:<br /><br />Rahmen: M&#x2F;L<br />Laufräder: 29 Zoll<br />Federgabel: RockShox<br />Dämpfer: Fox<br />hochwertige Komponenten und insgesamt sehr gute Ausstattung<br /><br />Das Fahrrad befindet sich in einem nahezu neuen Zustand. Es sind keine Kratzer oder sonstige Gebrauchsspuren vorhanden.Originale Unterlagen&#x2F;Dokumente sind vorhanden.Bei Fragen oder Interesse an einer Besichtigung und Probefahrt gerne melden. Keine Rückgabe oder Garantie.",
-      "attribute": {
-        "Art": "Herren",
-        "Versand": "Nur Abholung",
-        "Typ": "Mountainbikes",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "150351217",
-        "name": "Vadim",
-        "typ": "PRIVATE",
-        "konto_seit": "2025-04-08",
-        "konto_alter_tage": 553,
-        "bewertung": 0.9,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 2
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Bewertung 0.90, zuverlaessig",
           "Abholung moeglich",
           "6 Bilder",
           "Maengel offengelegt"
@@ -5966,6 +5831,71 @@
       }
     },
     {
+      "id": "3541247243",
+      "watchlist_id": "konsolen-sweep",
+      "titel": "Steam Deck OLED 512 GB ,  ungeöffnete Dockingstation  - OVP",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/steam-deck-oled-512-gb-ungeoeffnete-dockingstation-ovp/3541247243-279-2240",
+      "preis": 300.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 580.0,
+        "p25": 550.0,
+        "n": 81,
+        "query": "Steam Deck OLED 512",
+        "korrektur": 0.0,
+        "streuung": 1.13,
+        "belastbar": true
+      },
+      "p_ratio": 0.517,
+      "ersparnis_eur": 280.0,
+      "ort": "Magdeburg",
+      "plz": "39126",
+      "eingestellt": "2026-10-15T01:01:27+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/3c/3cff90e5-759f-47ef-896e-eae69ec759ff?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fa/fa719470-abd8-4137-988a-6dcdc0b17316?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/58/586309ad-073e-4713-b189-0a5565ccb0c7?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/83/838eb88c-094e-4216-9ee8-d8e68409a2b8?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe mein Steam Deck OLED mit 512 GB Speicher inklusive originaler Valve Dockingstation.",
+      "attribute": {
+        "Art": "Steam",
+        "Versand": "ab 0,99"
+      },
+      "verkaeufer": {
+        "id": "18275467",
+        "name": "Marcel",
+        "typ": "PRIVATE",
+        "konto_seit": "2013-11-26",
+        "konto_alter_tage": 4705,
+        "bewertung": 0.8,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 82,
+      "signale": {
+        "gruen": [
+          "Konto seit 2013",
+          "Kaeuferschutz verfuegbar",
+          "9 Bilder"
+        ],
+        "rot": [
+          "Bewertung 0.80"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3540523327",
       "watchlist_id": "optik-drohnen",
       "titel": "DJI Mini 5 Pro Fly More Combo (DJI RC 2)",
@@ -7266,74 +7196,6 @@
       }
     },
     {
-      "id": "3540367861",
-      "watchlist_id": "apple-mobil",
-      "titel": "Apple iPhone 15 128 GB Schwarz – voll funktionsfähig",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-15-128-gb-schwarz-voll-funktionsfaehig/3540367861-173-20920",
-      "preis": 290.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 450.0,
-        "p25": 390.0,
-        "n": 61,
-        "query": "Apple iPhone GB 15 128",
-        "korrektur": 0.0,
-        "streuung": 1.28,
-        "belastbar": true
-      },
-      "p_ratio": 0.644,
-      "ersparnis_eur": 160.0,
-      "ort": "Vacha",
-      "plz": "36404",
-      "eingestellt": "2026-10-14T02:40:36+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ad/ad2001f6-ad9c-4701-9d8f-1555438b4d4c?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a3/a32c8f9d-4573-47df-a44a-90504ba2671c?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe mein schwarzes Apple iPhone 15 mit 128 GB Speicher.<br /><br />Das iPhone befindet sich in einem sehr guten optischen Zustand und wurde pfleglich behandelt.<br /><br />Details:<br /><br />* Farbe: Schwarz<br />* Speicher: 128 GB<br />* Zustand: Sehr gut<br />* Akkukapazität: 84 %<br /><br />Das iPhone eignet sich super für den Alltag und funktioniert bei normaler Nutzung zuverlässig.<br /><br />Bei Interesse oder Fragen gerne melden!<br /><br />Abholung bevorzugt, Versand nach Absprache möglich.",
-      "attribute": {
-        "Marke": "Apple",
-        "Versand": "ab 0,99",
-        "Modell": "iPhone 15",
-        "Farbe": "Schwarz",
-        "Speicher (GB)": "128 GB",
-        "Zustand": "Sehr Gut",
-        "Betriebssystem": "iOS",
-        "Akkuzustand": "In Ordnung (80 – 84%)"
-      },
-      "verkaeufer": {
-        "id": "134220032",
-        "name": "Celin Schließmann",
-        "typ": "PRIVATE",
-        "konto_seit": "2023-09-30",
-        "konto_alter_tage": 1109,
-        "bewertung": 0.375,
-        "abzeichen": {
-          "rating": 1,
-          "friendliness": 0
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 75,
-      "signale": {
-        "gruen": [
-          "Konto seit 2023",
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar"
-        ],
-        "rot": [
-          "Bewertung 0.38"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3541137582",
       "watchlist_id": "werkzeug-maschinen",
       "titel": "Hilti Bohrhammer Staubabsaugung neu.",
@@ -8079,6 +7941,79 @@
       }
     },
     {
+      "id": "3541249631",
+      "watchlist_id": "apple-mobil",
+      "titel": "Verkaufe iPhone 14",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/verkaufe-iphone-14/3541249631-173-4614",
+      "preis": 250.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 360.0,
+        "p25": 300.0,
+        "n": 78,
+        "query": "iPhone 14",
+        "korrektur": 0.0,
+        "streuung": 1.43,
+        "belastbar": true
+      },
+      "p_ratio": 0.694,
+      "ersparnis_eur": 110.0,
+      "ort": "Eichenzell",
+      "plz": "36124",
+      "eingestellt": "2026-10-15T01:29:41+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/97/97a6af48-2c64-448e-aa60-94c5599d4eec?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/51/5136bae7-b888-45e2-8745-b33de8e89c9c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/4e/4ebf3f0e-a7c0-4297-b64c-85dd09356add?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/46/46e51eb6-9834-4865-bed3-89b75aa32d7d?rule=$_0.JPG"
+      ],
+      "beschreibung": "Hallo, hiermit verkaufe ich mein iPhone 14 mit 128gb in der Farbe dunkelblau. Das Handy befindet sich in einem guten Zustand mit 81 Prozent Akku Kapazität und üblichen Gebrauchsspuren . Habe das Handy bis vor 2 Wochen noch genutzt da ich mir ein neues zugelegt habe brauche ich das nicht mehr. Das Handy läuft Flüssig und macht keinerlei Probleme. Mit dazu gibt es noch eine passende Hülle in der Farbe Schwarz",
+      "attribute": {
+        "Marke": "Apple",
+        "Versand": "ab 0,99",
+        "Modell": "iPhone 14",
+        "Farbe": "Blau",
+        "Speicher (GB)": "128 GB",
+        "Zustand": "Gut",
+        "Betriebssystem": "iOS",
+        "Akkuzustand": "In Ordnung (80 – 84%)",
+        "Displaygröße (Zoll)": "6,0 – 6,4\"",
+        "Arbeitsspeicher (RAM)": "8 GB",
+        "SIM-Karten-Steckplätze": "Single SIM"
+      },
+      "verkaeufer": {
+        "id": "143417790",
+        "name": "Backfisch",
+        "typ": "PRIVATE",
+        "konto_seit": "2024-08-14",
+        "konto_alter_tage": 791,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 0,
+          "reliability": 0
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2024",
+          "Kaeuferschutz verfuegbar",
+          "10 Bilder",
+          "Maengel offengelegt"
+        ],
+        "rot": [],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3541112914",
       "watchlist_id": "werkzeug-maschinen",
       "titel": "Hilti TE 7-C Bohrhammer - Gebraucht, Top Zustand",
@@ -8271,117 +8206,6 @@
           "7 Bilder"
         ],
         "rot": [],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3540361101",
-      "watchlist_id": "vintage-hifi",
-      "titel": "Technics SL-1200M7GLE Gold 55th Anniversary Nr. 123x / 5000 - OVP",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/technics-sl-1200m7gle-gold-55th-anniversary-nr-123x-5000-ovp/3540361101-172-2073",
-      "preis": 1799.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Derendorf",
-      "plz": "40468",
-      "eingestellt": "2026-10-14T00:58:30+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1d/1d2a8180-30a3-42e2-b32c-02b2b2bd3e07?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/41/41ac84ac-b6f0-4510-96d3-bb16b613a1fc?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d6/d6efef21-caf7-4c14-b19a-70fc4b611e30?rule=$_0.JPG"
-      ],
-      "beschreibung": "Zum Verkauf steht mein Technics SL-1200M7GLE in Gold, 55th Anniversary Limited Edition - Nr. 123x von weltweit nur 5.000 Stück Gold (niedrige Nummer).<br />Ich trenne mich nur, weil ich nach dem Kauf des goldenen noch einen grauen bekommen konnte und der graue besser zu meiner Einrichtung passt und der goldene zwar wunderschön ist, aber bei mir nur im Karton stehen würde.<br />Technischer Mehrwert der 55th Edition:<br />Nicht nur Gold-Akzente - die 55th hat einen gold-eloxierten Tonarm aus Magnesium (statt Aluminium beim normalen MK7). Leichter, steifer, bessere Dämpfung = besseres Tracking, weniger Resonanzen. Echter klanglicher Mehrwert, nicht nur Optik. Dazu Gold Badge mit individueller Nummer und Gold Slipmat.<br />Zustand:<br />NEU, unbenutzt, OVP - original versiegelt, ungeöffnet. Fotos sind die echte Box.<br />Seriennummer: HR6GAE012xx (volle Nummer bei Abholung)<br />Original Panasonic Rechnung vom 12.10.2026 vorhanden - wird bei Abholung im Original mitgegeben.<br />Weltweit 12.000 Stück limitiert, seit 13.10. bei Technics ausverkauft.<br />Preis: 1.799€ - Das ist mein letzter Preis. Bitte von weiteren Preisverhandlungen absehen. Der Preis ist fair und bereits unter den aktuellen Marktpreisen.<br />Abholung & Versand:<br />Bevorzugt Abholung in Düsseldorf - da könnt ihr euch den versiegelten Zustand selbst ansehen.<br />Versand ist möglich nach Überweisung vorab + 25€ versicherter Versand (2.000€ versichert) mit lückenloser Video-Doku des versiegelten Zustands vor Üb",
-      "attribute": {
-        "Art": "Weiteres Audio & Hifi",
-        "Versand": "Nur Abholung"
-      },
-      "verkaeufer": {
-        "id": "25255407",
-        "name": "Jürgen Wichmann",
-        "typ": "PRIVATE",
-        "konto_seit": "2014-10-23",
-        "konto_alter_tage": 4373,
-        "bewertung": 1.0,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 82,
-      "signale": {
-        "gruen": [
-          "Konto seit 2014",
-          "Abholung moeglich",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Gewerbetext auf Privatprofil"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3540369896",
-      "watchlist_id": "notverkaeufe",
-      "titel": "Zwei ibanez Notverkauf..",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/zwei-ibanez-notverkauf-/3540369896-74-9205",
-      "preis": 475.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": null,
-      "p_ratio": null,
-      "ersparnis_eur": null,
-      "ort": "Uhldingen-Mühlhofen",
-      "plz": "88690",
-      "eingestellt": "2026-10-14T03:40:38+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1f/1f44f692-49cd-4765-8f88-3b2bbe9fd563?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9e/9ee5a41a-6adc-401d-89cf-b362039f29e3?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fc/fca33c85-7317-4441-a4ab-370008f07c18?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b2/b2afc2fd-4fae-4bdd-b0d7-e49810d22fdf?rule=$_0.JPG"
-      ],
-      "beschreibung": "Im Auftrag zwei Gitarren eine ibanez AE grand Konzert AE 400 von 1983 und eine neuwertige Artcore ibanez. Wegen Umzug. Neue Seiten und Spiel fertig, eventuell auch noch einen Verstärker kostenlos dazu.",
-      "attribute": {
-        "Versand": "ab 2,99",
-        "Zustand": "Gut"
-      },
-      "verkaeufer": {
-        "id": "156123765",
-        "name": "Mimo",
-        "typ": "PRIVATE",
-        "konto_seit": "2025-11-03",
-        "konto_alter_tage": 344,
-        "bewertung": 0.43333333333333335,
-        "abzeichen": {
-          "rating": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": false,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 70,
-      "signale": {
-        "gruen": [
-          "Kaeuferschutz verfuegbar",
-          "5 Bilder",
-          "Preisbegruendung genannt"
-        ],
-        "rot": [
-          "Bewertung 0.43"
-        ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
