@@ -1,27 +1,23 @@
 {
-  "generiert": "2026-10-21T01:42:51+02:00",
+  "generiert": "2026-10-21T04:44:51+02:00",
   "zeitraum": {
-    "von": "2026-10-20T19:49:09+02:00",
-    "bis": "2026-10-21T00:49:09+02:00"
+    "von": "2026-10-20T23:30:59+02:00",
+    "bis": "2026-10-21T04:30:59+02:00"
   },
   "statistik": {
-    "gesichtet": 104253,
-    "nach_modellmatch": 1379,
-    "nach_vorfilter": 1377,
-    "nach_preisschwelle": 97,
-    "nach_scoring": 62,
+    "gesichtet": 25519,
+    "nach_modellmatch": 148,
+    "nach_vorfilter": 148,
+    "nach_preisschwelle": 10,
+    "nach_scoring": 6,
     "ausschluesse": {
-      "preis_unplausibel": 5,
-      "score_zu_niedrig": 22,
-      "zahlung_ohne_schutz": 2
+      "score_zu_niedrig": 4
     },
-    "pool": 101772,
-    "ohne_referenz_verworfen": 438,
-    "referenz_gekappt": 568,
-    "detail_gekappt": 6,
+    "pool": 23037,
+    "ohne_referenz_verworfen": 56,
     "doppelt_zusammengefasst": 0,
-    "requests": 2250,
-    "laufzeit_sekunden": 3221
+    "requests": 657,
+    "laufzeit_sekunden": 831
   },
   "kandidaten": [
     {
@@ -1432,6 +1428,73 @@
       }
     },
     {
+      "id": "3547214318",
+      "watchlist_id": "ebike-rad",
+      "titel": "Santa Cruz Heckler – Größe L – guter Zustand",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/santa-cruz-heckler-groesse-l-guter-zustand/3547214318-217-3165",
+      "preis": 2200.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 3899.0,
+        "p25": 3100.0,
+        "n": 99,
+        "query": "Santa Cruz Heckler",
+        "korrektur": 0.0,
+        "streuung": 1.64,
+        "belastbar": true
+      },
+      "p_ratio": 0.564,
+      "ersparnis_eur": 1699.0,
+      "ort": "Südstadt-Bult",
+      "plz": "30173",
+      "eingestellt": "2026-10-21T01:42:33+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/78/78173ff8-d55a-4e4c-b86d-2076e623900b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/af/afa75bb6-b549-40e9-87aa-2336499eff4b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/cc/cc54bf91-a628-4765-ae45-f2a6b48fdbd5?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/09/092a010e-ccf0-4e33-ab42-82d7f138b39c?rule=$_0.JPG"
+      ],
+      "beschreibung": "Zum Verkauf steht mein Santa Cruz Heckler in Größe L. Das Bike befindet sich in einem guten, gepflegten Zustand . Es funktioniert technisch einwandfrei und ist bereit für die nächste Runde auf dem Trail.<br /><br />Details :<br /><br />Santa Cruz Heckler<br />Rahmengröße: L<br />gepflegter, guter Gesamtzustand<br />technisch fahrbereit<br />normale Gebrauchsspuren vorhanden<br /><br /><br />Die Rechnung ist ebenso Vorhanden , das heckler hat ca 1700km runter<br /><br /><br />Das Fahrrad kann gerne vor Ort besichtigt und bei Interesse auch Probe gefahren werden.<br /><br />Privatverkauf: Keine Garantie, Gewährleistung oder Rücknahme.",
+      "attribute": {
+        "Art": "Herren",
+        "Versand": "ab 0,99",
+        "Typ": "Mountainbikes",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "166900204",
+        "name": "Hel",
+        "typ": "PRIVATE",
+        "konto_seit": "2026-09-27",
+        "konto_alter_tage": 23,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 77,
+      "signale": {
+        "gruen": [
+          "Kaeuferschutz verfuegbar",
+          "17 Bilder",
+          "Maengel offengelegt",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Konto juenger als 30 Tage",
+          "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3546977903",
       "watchlist_id": "vintage-hifi",
       "titel": "Technics SL-1200 LTD Limited Edition mit Ortofon Concorde Elite",
@@ -1618,75 +1681,6 @@
         ],
         "rot": [
           "Konto juenger als 6 Monate"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3546296038",
-      "watchlist_id": "ebike-rad",
-      "titel": "CONWAY Cairon T E-Trekkingrad",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/conway-cairon-t-e-trekkingrad/3546296038-217-6934",
-      "preis": 1100.0,
-      "preis_typ": "SPECIFIED_AMOUNT",
-      "referenz": {
-        "median": 2599.0,
-        "p25": 950.0,
-        "n": 10,
-        "query": "CONWAY Cairon Trekkingrad",
-        "korrektur": 0.0,
-        "streuung": 3.16,
-        "belastbar": false
-      },
-      "p_ratio": 0.423,
-      "ersparnis_eur": 1499.0,
-      "ort": "Untersiemau",
-      "plz": "96253",
-      "eingestellt": "2026-10-20T02:13:24+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/6e/6e48d2a3-47b2-43ce-80cd-803ce5efd238?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1f/1f868617-8f80-4b5c-8754-a4b285a0b04d?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b0/b02d81e5-ab0e-413e-8791-6f668662cfc8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1e/1e4ed1ea-6dd5-4403-a34c-ee1feada8915?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich verkaufe mein gepflegtes CONWAY Cairon T E-Trekkingrad mit Bosch-Mittelmotor und großem PowerTube-Akku mit 625 Wh.<br />Das Fahrrad wurde am 06.05.2021 gekauft und hat laut Bosch-Display erst 652,2 km Gesamtstrecke. Es wurde somit nur sehr wenig gefahren.<br />Ausstattung:<br />\t●\tCONWAY Cairon T E-Trekkingrad-Serie<br />\t●\tBosch Performance Line Cruise Mittelmotor<br />\t●\tBosch PowerTube 625 Wh Akku<br />\t●\tBosch Intuvia Display<br />\t●\tUnterstützung bis 25 km&#x2F;h<br />\t●\tRahmengröße: 60 cm<br />\t●\tReifengröße: 28 Zoll<br />\t●\tGefederte Federgabel<br />\t●\tHydraulische Scheibenbremsen<br />\t●\tGepäckträger<br />\t●\tSchutzbleche<br />\t●\tFahrradständer<br />\t●\tKomfortsattel<br />\t●\tGroße Gepäckträgertasche inklusive<br />Zustand und Historie: Das Fahrrad befindet sich in einem guten gebrauchten Zustand mit normalen Gebrauchsspuren. Der Kilometerstand beträgt lediglich 652,2 km.<br />Ein Bosch-eBike-Servicebericht vom 22.05.2023 liegt vor. Darin wurden für Display, Motor und Akku keine Fehlercodes gemeldet.<br />Lieferumfang:<br /><br />\t●\tCONWAY Cairon T E-Trekkingrad<br />\t●\tBosch PowerTube 625 Wh Akku<br />\t●\tOriginal Bosch Ladegerät<br />\t●\tAkkuschlüssel<br />\t●\tKaufrechnung vom 06.05.2021<br />\t●\tOriginal-Bedienungsanleitungen<br />\t●\tGepäckträgertasche<br />Preis: 1.399 € VB<br />Besichtigung und Probefahrt nach Absprache möglich. Nur Abholung.<br />Privatverkauf unter Ausschluss der Sachmängelhaftung, keine Garantie und keine Rücknahme.",
-      "attribute": {
-        "Art": "Herren",
-        "Versand": "Nur Abholung",
-        "Typ": "Elektrofahrräder",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "65146494",
-        "name": "Achim Püls",
-        "typ": "PRIVATE",
-        "konto_seit": "2019-06-30",
-        "konto_alter_tage": 2668,
-        "bewertung": 0.8666666666666667,
-        "abzeichen": {
-          "rating": 2,
-          "friendliness": 1,
-          "reliability": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 100,
-      "signale": {
-        "gruen": [
-          "Konto seit 2019",
-          "Abholung moeglich",
-          "8 Bilder",
-          "Maengel offengelegt",
-          "Konkrete Angaben zum Geraet"
-        ],
-        "rot": [
-          "Preis nur 42% des Marktwerts"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -3075,6 +3069,71 @@
         "rot": [
           "Preis nur 32% des Marktwerts"
         ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3547217932",
+      "watchlist_id": "uhren",
+      "titel": "Aquaracer TAG HEUER Box, Beschreibung  authentic code",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/aquaracer-tag-heuer-box-beschreibung-authentic-code/3547217932-157-1413",
+      "preis": 999.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": {
+        "median": 1745.0,
+        "p25": 1299.0,
+        "n": 98,
+        "query": "Aquaracer TAG HEUER",
+        "korrektur": 0.0,
+        "streuung": 1.77,
+        "belastbar": true
+      },
+      "p_ratio": 0.572,
+      "ersparnis_eur": 746.0,
+      "ort": "Sundern (Sauerland)",
+      "plz": "59846",
+      "eingestellt": "2026-10-21T02:59:00+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/1a/1a166cc1-2daf-4141-be62-bb0a72fd6c1c?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/22/22f96942-9b74-4179-8d16-710eb3b24666?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/b3/b3c64746-91ce-4078-a6dd-8c1be6cc3e69?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/2b/2bc3c393-29c6-4eec-9bd2-c20d32d12d72?rule=$_0.JPG"
+      ],
+      "beschreibung": "WAY131 M BA0748<br />Quarz<br />300 (30ATM)<br />Edelstahl<br />Gr.35mm<br />Original Box<br />Beschreibung<br />Code<br />Neupreis 3300 Euro<br />Die Uhr ist in einem sehr guten ungebrauchten Zustand<br />Wurde nur einmal getragen",
+      "attribute": {
+        "Art": "Uhren",
+        "Versand": "ab 6,19",
+        "Zustand": "Sehr Gut",
+        "Material": "Metall"
+      },
+      "verkaeufer": {
+        "id": "5214744",
+        "name": "LU",
+        "typ": "PRIVATE",
+        "konto_seit": "2011-03-28",
+        "konto_alter_tage": 5685,
+        "bewertung": 1.0,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 92,
+      "signale": {
+        "gruen": [
+          "Konto seit 2011",
+          "Kaeuferschutz verfuegbar",
+          "4 Bilder"
+        ],
+        "rot": [],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
       }
@@ -4527,6 +4586,73 @@
       }
     },
     {
+      "id": "3547218456",
+      "watchlist_id": "uhren",
+      "titel": "Doxa Sub 200 Caribbean (Full Set)",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/doxa-sub-200-caribbean-full-set-/3547218456-157-18665",
+      "preis": 880.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": {
+        "median": 1272.0,
+        "p25": 1000.0,
+        "n": 8,
+        "query": "Doxa Sub Caribbean 200",
+        "korrektur": 0.0,
+        "streuung": 1.32,
+        "belastbar": true
+      },
+      "p_ratio": 0.692,
+      "ersparnis_eur": 392.0,
+      "ort": "Bitburg",
+      "plz": "54634",
+      "eingestellt": "2026-10-21T03:12:52+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/c4/c4924e59-40ed-4589-aa87-2992a0e7fa50?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7d/7d3fc194-ec45-4711-ae91-f333fc65462b?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/57/577c290d-b89d-4bd0-8102-df08ecc7bc19?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/de/de1c11b2-0272-4121-aeb7-d20414ae3df7?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe eine ikonische Doxa Sub 200 Caribbean Taucheruhr. Schweizer Tradition und markantes Design in sehr gutem Zustand mit nur minimalen Tragespuren.<br />Das Set kommt als Full Set inklusive der originalen Doxa-Reisebox mit Reißverschluss, Außenkarton, Hangtag und der ausgefüllten Garantiekarte (Kaufdatum: 29.03.2021).<br />• Referenz: 799.10.201.10<br />• Zifferblatt & Lünette: Dunkelblau (Caribbean) mit kontrastierenden goldfarbenen Indizes und Zeigern.<br />• Armband: Originales Doxa „Beads of Rice“ Edelstahlarmband mit Faltschließe und Taucherverlängerung.<br />• Seriennummer: 52467 (100% original, passend zur Garantiekarte).<br /><br /><br />Der Preis ist ein absoluter Festpreis!<br />Bei Fragen oder für weitere Fotos gerne melden.",
+      "attribute": {
+        "Art": "Uhren",
+        "Versand": "ab 0,99",
+        "Zustand": "Sehr Gut"
+      },
+      "verkaeufer": {
+        "id": "56008288",
+        "name": "Mill Sugeay",
+        "typ": "PRIVATE",
+        "konto_seit": "2018-06-06",
+        "konto_alter_tage": 3058,
+        "bewertung": 0.3384615384615385,
+        "abzeichen": {
+          "rating": 1,
+          "friendliness": 0,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": false,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 79,
+      "signale": {
+        "gruen": [
+          "Konto seit 2018",
+          "Kaeuferschutz verfuegbar",
+          "14 Bilder",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Bewertung 0.34"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
       "id": "3547179549",
       "watchlist_id": "ebike-rad",
       "titel": "Cube Mountainbike Herren, fast neu",
@@ -4714,76 +4840,6 @@
         ],
         "rot": [
           "Bewertung 0.80"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
-      "id": "3546295928",
-      "watchlist_id": "macbook",
-      "titel": "Apple MacBook Pro M1 13” – 16 GB RAM / 512 GB SSD",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-macbook-pro-m1-13-16-gb-ram-512-gb-ssd/3546295928-278-9425",
-      "preis": 300.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 660.0,
-        "p25": 599.0,
-        "n": 23,
-        "query": "Apple MacBook Pro M1 13 16",
-        "korrektur": 0.0,
-        "streuung": 1.25,
-        "belastbar": true
-      },
-      "p_ratio": 0.455,
-      "ersparnis_eur": 360.0,
-      "ort": "Hamburg Hamm",
-      "plz": "20535",
-      "eingestellt": "2026-10-20T02:11:31+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/da/dad20422-9159-4583-bf67-765cf092d1cc?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7f/7fb8309d-b654-421f-ac34-c751fa295cc8?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/fb/fb3eafee-21d3-466a-a16c-9eeaf67b6dc5?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/a8/a87fbdec-b548-4c9d-acd9-5e092b40fff8?rule=$_0.JPG"
-      ],
-      "beschreibung": "Verkaufe mein Apple MacBook Pro 13,3 Zoll (M1, 2020) mit 16 GB Arbeitsspeicher und 512 GB SSD.<br /><br />Technische Daten:<br /><br />* Apple M1 Chip<br />* 16 GB RAM<br />* 512 GB SSD<br />* 13,3-Zoll-Retina-Display<br />* Touch Bar<br />* Modell A2338<br /><br />Zustand:<br /><br />Das MacBook weist Gebrauchsspuren auf und wird daher zu einem entsprechend reduzierten Preis angeboten.<br /><br />* Akku: zuletzt angezeigte maximale Kapazität 66 %, macOS meldete „Service empfohlen“<br />* Display: Tastaturabdrücke, Kratzer und kleine Druckstellen<br />* Schwarze Displayblende unterhalb des Displays beschädigt<br />* Rückseite mit Gebrauchsspuren und Rückständen eines früheren Aufklebers<br /><br />Das Gerät ließ sich bei meiner letzten eigenen Nutzung einschalten. Ob alle Funktionen aktuell einwandfrei arbeiten, kann ich nicht garantieren.<br /><br />Ideal für jemanden, der ein MacBook mit M1-Chip zu einem günstigen Preis sucht und die genannten Mängel akzeptiert.<br /><br />Besichtigung und Test nach Absprache möglich.<br /><br />Privatverkauf. Die gesetzlichen Rechte bei Sachmängeln bleiben unberührt, soweit sie nicht wirksam ausgeschlossen werden können.",
-      "attribute": {
-        "Versand": "ab 2,99",
-        "Typ": "Laptop",
-        "Marke": "Apple",
-        "Modell": "MacBook Pro 13\" (M1)",
-        "Zustand": "In Ordnung",
-        "Betriebssystem": "macOS",
-        "RAM (GB)": "16 GB",
-        "Speicher (GB)": "512 GB"
-      },
-      "verkaeufer": {
-        "id": "149162147",
-        "name": "Lasse",
-        "typ": "PRIVATE",
-        "konto_seit": "2025-03-01",
-        "konto_alter_tage": 597,
-        "bewertung": 0.5,
-        "abzeichen": {
-          "rating": 1
-        },
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": true,
-        "kaeuferschutz": true
-      },
-      "score": 90,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "Kaeuferschutz verfuegbar",
-          "7 Bilder",
-          "Maengel offengelegt"
-        ],
-        "rot": [
-          "Bewertung 0.50"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -5054,50 +5110,54 @@
       }
     },
     {
-      "id": "3546293689",
+      "id": "3547220731",
       "watchlist_id": "apple-mobil",
-      "titel": "iPhone 17 256gb blau",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/iphone-17-256gb-blau/3546293689-173-2028",
-      "preis": 680.0,
+      "titel": "Apple iPhone 16, 6,1“, 128 GB, blaugrün (Teal), OVP, neuwertig",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/apple-iphone-16-6-1-128-gb-blaugruen-teal-ovp-neuwertig/3547220731-173-20285",
+      "preis": 450.0,
       "preis_typ": "SPECIFIED_AMOUNT",
       "referenz": {
-        "median": 1009.5,
-        "p25": 720.0,
-        "n": 28,
-        "query": "iPhone blau 17 256gb",
+        "median": 779.0,
+        "p25": 673.0,
+        "n": 19,
+        "query": "Apple iPhone GB 16 6 1",
         "korrektur": 0.0,
-        "streuung": 1.6,
+        "streuung": 1.4,
         "belastbar": true
       },
-      "p_ratio": 0.674,
-      "ersparnis_eur": 329.5,
-      "ort": "Steele",
-      "plz": "45276",
-      "eingestellt": "2026-10-20T01:37:20+02:00",
+      "p_ratio": 0.578,
+      "ersparnis_eur": 329.0,
+      "ort": "Boos (Nahe)",
+      "plz": "55595",
+      "eingestellt": "2026-10-21T04:20:20+02:00",
       "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/96/96432738-a2a5-46d2-af97-9c86102b1b8b?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/34/34d60a15-20ad-4de4-9205-851b8dae58d7?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/73/73b0e4a0-52b7-4069-a732-d75e8b157b9e?rule=$_0.JPG"
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0a/0af85bbe-0cab-4b8d-b713-be0d5a512c29?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7f/7fd09e53-d78c-4a94-b13f-d28d1ecc89f9?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/70/70127cf8-6d8f-4389-8902-0a28529fa9ce?rule=$_0.JPG",
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/91/919bf646-618a-4220-bb1c-9a70ec287ec7?rule=$_0.JPG"
       ],
-      "beschreibung": "Verkaufe meinen iPhone 17 mit 256gb<br />100% Akkukapazität<br />Nur mit Panzerglas und Hülle getragen bei Interesse gerne melden<br />Tausch mit 17pro Orange nur Zuzahlung meiner Seite aus",
+      "beschreibung": "Apple iPhone 16, 6,1“, 128 GB, blaugrün (Teal), OVP, neuwertig<br /><br />Ich verkaufe mein Apple iPhone 16 mit 128 GB Speicher in der wunderschönen Farbe Blaugrün (Teal).<br /><br />Das iPhone wurde vom ersten Tag an mit Schutzhülle und Panzerglas geschützt und befindet sich in einem sehr gepflegten Zustand.<br /><br />Technische Daten und Zustand:<br /><br />* Apple iPhone 16<br />* 128 GB Speicher<br />* Farbe: Blaugrün (Teal)<br />* Maximale Akkukapazität: 91 %<br />* Ladezyklen: 689<br />* Batteriezustand laut Apple: Normal<br />* Erstinbetriebnahme: Dezember 2024<br />* Originalverpackung (OVP) vorhanden<br /><br />Das Gerät kann nach Absprache gerne besichtigt werden.<br /><br />Privatverkauf unter Ausschluss jeglicher Sachmängelhaftung. Keine Garantie meinerseits und keine Rücknahme.",
       "attribute": {
         "Marke": "Apple",
         "Versand": "ab 0,99",
-        "Modell": "iPhone 17",
-        "Farbe": "Blau",
-        "Speicher (GB)": "256 GB",
+        "Modell": "iPhone 16",
+        "Farbe": "Andere Farben",
+        "Speicher (GB)": "8 GB",
         "Zustand": "Sehr Gut",
-        "Betriebssystem": "iOS",
-        "Akkuzustand": "Neu (100%)"
+        "Akkuzustand": "Gut (85 – 94%)",
+        "Displaygröße (Zoll)": "6,0 – 6,4\"",
+        "Arbeitsspeicher (RAM)": "8 GB"
       },
       "verkaeufer": {
-        "id": "163659921",
-        "name": "Vale",
+        "id": "131087531",
+        "name": "Privat",
         "typ": "PRIVATE",
-        "konto_seit": "2026-06-09",
-        "konto_alter_tage": 132,
-        "bewertung": null,
-        "abzeichen": {},
+        "konto_seit": "2023-06-10",
+        "konto_alter_tage": 1228,
+        "bewertung": 0.40396341463414637,
+        "abzeichen": {
+          "rating": 1
+        },
         "anzahl_anzeigen": 0
       },
       "uebergabe": {
@@ -5105,13 +5165,15 @@
         "versand": true,
         "kaeuferschutz": true
       },
-      "score": 60,
+      "score": 67,
       "signale": {
         "gruen": [
-          "Kaeuferschutz verfuegbar"
+          "Konto seit 2023",
+          "Kaeuferschutz verfuegbar",
+          "7 Bilder"
         ],
         "rot": [
-          "Konto juenger als 6 Monate"
+          "Bewertung 0.40"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
@@ -7722,68 +7784,6 @@
       }
     },
     {
-      "id": "3546296791",
-      "watchlist_id": "ebike-rad",
-      "titel": "hardtail cube bike",
-      "url": "https://www.kleinanzeigen.de/s-anzeige/hardtail-cube-bike/3546296791-217-157",
-      "preis": 350.0,
-      "preis_typ": "PLEASE_CONTACT",
-      "referenz": {
-        "median": 500.0,
-        "p25": 399.0,
-        "n": 99,
-        "query": "hardtail cube bike",
-        "korrektur": 0.0,
-        "streuung": 3.38,
-        "belastbar": false
-      },
-      "p_ratio": 0.7,
-      "ersparnis_eur": 150.0,
-      "ort": "Stadtmitte",
-      "plz": "18055",
-      "eingestellt": "2026-10-20T02:28:18+02:00",
-      "bilder": [
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/13/13497162-0fb1-4949-ae3b-8fe7da7f65b2?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/0f/0f602ef2-17f5-45c9-8640-8b43c8ca4b5a?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/aa/aa29ebfe-f8db-42f2-847e-d97d73612157?rule=$_0.JPG",
-        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/ba/ba3e0b9a-5971-4a54-b3a0-2afc83e0219b?rule=$_0.JPG"
-      ],
-      "beschreibung": "Ich möchte mein treues Cube Mountainbike nach zwei Jahren in neue Hände geben. Es hat mir viel Freude bereitet und ist ein zuverlässiger Begleiter für verschiedene Untergründe.<br /><br />- Marke: Cube<br />- Farbe: Grau<br />- Bereifung: Schwalbe Smart Sam<br />- Inklusive Flaschenhalter<br />- Mit Schutzblech vorne<br /><br />Das Fahrrad befindet sich in einem sehr guten Zustand. Alles funktioniert einwandfrei und es fährt sich wirklich klasse. Leider sind die Papiere bei meinem letzten Umzug verloren gegangen.<br /><br />Bei Fragen zum Rad melde dich gerne.",
-      "attribute": {
-        "Art": "Herren",
-        "Versand": "Nur Abholung",
-        "Typ": "Andere Fahrräder",
-        "Zustand": "Sehr Gut"
-      },
-      "verkaeufer": {
-        "id": "162249255",
-        "name": "Steven",
-        "typ": "PRIVATE",
-        "konto_seit": "2026-04-23",
-        "konto_alter_tage": 179,
-        "bewertung": null,
-        "abzeichen": {},
-        "anzahl_anzeigen": 0
-      },
-      "uebergabe": {
-        "abholung": true,
-        "versand": false,
-        "kaeuferschutz": false
-      },
-      "score": 74,
-      "signale": {
-        "gruen": [
-          "Abholung moeglich",
-          "4 Bilder"
-        ],
-        "rot": [
-          "Konto juenger als 6 Monate"
-        ],
-        "unkenntnis_bonus": false,
-        "tippfehler_im_titel": null
-      }
-    },
-    {
       "id": "3546464273",
       "watchlist_id": "apple-mobil",
       "titel": "Apple iPhone 14 Pro Max",
@@ -8308,6 +8308,114 @@
         ],
         "rot": [
           "Gewerbetext auf Privatprofil"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3547215161",
+      "watchlist_id": "vintage-hifi",
+      "titel": "Technics SL-1200M7GLE GOLD Neu & Ungeöffnet 55th anniversary",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/technics-sl-1200m7gle-gold-neu-ungeoeffnet-55th-anniversary/3547215161-172-5187",
+      "preis": 1699.0,
+      "preis_typ": "SPECIFIED_AMOUNT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Bobenheim-Roxheim",
+      "plz": "67240",
+      "eingestellt": "2026-10-21T01:57:26+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/8c/8c12ea3f-1922-4a4a-9096-17265f2ece47?rule=$_0.JPG"
+      ],
+      "beschreibung": "Ich biete hier einen Technics SL-1200M7GLE an. Ungeöffnet und Neu! Rechnung liegt bei! Privatverkauf! Keine Garantie und Rücknahme!<br /><br />Zahlung via PayPal, Überweisung oder idealerweise per Barzahlung bei Abholung!",
+      "attribute": {
+        "Art": "Weiteres Audio & Hifi",
+        "Versand": "ab 10,49",
+        "Zustand": "Neu"
+      },
+      "verkaeufer": {
+        "id": "85315720",
+        "name": "Privat",
+        "typ": "PRIVATE",
+        "konto_seit": "2021-05-21",
+        "konto_alter_tage": 1978,
+        "bewertung": 0.9456521739130435,
+        "abzeichen": {
+          "rating": 2,
+          "friendliness": 1,
+          "reliability": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": true,
+        "kaeuferschutz": true
+      },
+      "score": 100,
+      "signale": {
+        "gruen": [
+          "Konto seit 2021",
+          "Abholung moeglich",
+          "Kaeuferschutz verfuegbar",
+          "Konkrete Angaben zum Geraet"
+        ],
+        "rot": [
+          "Hoechstens ein Bild"
+        ],
+        "unkenntnis_bonus": false,
+        "tippfehler_im_titel": null
+      }
+    },
+    {
+      "id": "3547219511",
+      "watchlist_id": "notverkaeufe",
+      "titel": "vmax new vx4 NOTVERKAUF!!!!",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/vmax-new-vx4-notverkauf-/3547219511-168-7618",
+      "preis": 1200.0,
+      "preis_typ": "PLEASE_CONTACT",
+      "referenz": null,
+      "p_ratio": null,
+      "ersparnis_eur": null,
+      "ort": "Kempten",
+      "plz": "87439",
+      "eingestellt": "2026-10-21T03:42:18+02:00",
+      "bilder": [
+        "https://img.kleinanzeigen.de/api/v1/prod-ads/images/42/42173dbe-c020-4956-b45e-4e74befed453?rule=$_0.JPG"
+      ],
+      "beschreibung": "Verkaufe meinen vmax new vx4 da ich ihn nicht mehr benötige er is nur knapp 1 monat alst und ist fast wie neu der ständer is abmontiert aber gibt es natürlich auch dazu und er ist etwas schmutzig und ein reflektor an der Seite hatt einen riss war aber leider von Anfang an so meldet euch gerne einfach und macht Angebote auch gerne tauschangebote",
+      "attribute": {
+        "Versand": "Nur Abholung"
+      },
+      "verkaeufer": {
+        "id": "121636709",
+        "name": "Felix",
+        "typ": "PRIVATE",
+        "konto_seit": "2022-08-14",
+        "konto_alter_tage": 1528,
+        "bewertung": 0.4375,
+        "abzeichen": {
+          "rating": 1
+        },
+        "anzahl_anzeigen": 0
+      },
+      "uebergabe": {
+        "abholung": true,
+        "versand": false,
+        "kaeuferschutz": false
+      },
+      "score": 60,
+      "signale": {
+        "gruen": [
+          "Konto seit 2022",
+          "Abholung moeglich",
+          "Maengel offengelegt"
+        ],
+        "rot": [
+          "Bewertung 0.44",
+          "Hoechstens ein Bild"
         ],
         "unkenntnis_bonus": false,
         "tippfehler_im_titel": null
